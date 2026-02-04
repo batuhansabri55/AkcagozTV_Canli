@@ -10,31 +10,31 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u
 ############################
 
 # Ana – Catchup AUTO
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
 
 # Ana 2 – Catchup LIVE
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (LIVE)
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (LIVE)
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/playlist.m3u8
 
 # Yedek 1 – FHD
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" group-title="🖥️ CANLI | Ulusal",ATV FHD
+#EXTINF:-1 tvg-id="ATV" tvg-name="TR: ATV FHD" http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",TR: ATV FHD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 
 # Yedek 2 – HD
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" group-title="🖥️ CANLI | Ulusal",ATV HD
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV HD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8
 
 # Yedek 3 – SD
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" group-title="🖥️ CANLI | Ulusal",ATV SD
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV SD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 
 # Yedek 4 – GOLD
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" group-title="🖥️ CANLI | Ulusal",ATV GOLD
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV GOLD
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/46
 
 # Yedek 5 – Alternatif
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" group-title="🖥️ CANLI | Ulusal",ATV ALT
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV ALT
 http://95.174.71.114/TR-ATV/index.m3u8
 
 ############################
