@@ -12,9 +12,9 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u
 # Ana – Catchup AUTO
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="ATV" tvg-name="ATV FHD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV FHD
+#EXTINF:-1  tvg-id="atv.tr" tvg-name="ATV FHD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/46
-#EXTINF:0 user-agent="Firefox" tvg-id="ATV" tvg-name="ATV HD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV HD
+#EXTINF:-1  tvg-id="atv.tr" tvg-name="ATV HD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/45
 
 # Ana 2 – Catchup LIVE
@@ -48,9 +48,9 @@ http://95.174.71.114/TR-ATV/index.m3u8
 # Ana – Catchup AUTO
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="Kanal D" tvg-name="KANAL D FHD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D FHD
+#EXTINF:-1  tvg-id="Kanal D" tvg-name="KANAL D FHD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/40
-#EXTINF:0 user-agent="Firefox" tvg-id="Kanal D" tvg-name="KANAL D HD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D HD
+#EXTINF:-1  tvg-id="Kanal D" tvg-name="KANAL D HD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/39
 
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" group-title="🖥️ CANLI | Ulusal",KANAL D HD
@@ -81,9 +81,9 @@ http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
 
 #EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD (Ana)
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="Show TV" tvg-name="SHOW TV FHD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD
+#EXTINF:-1  tvg-id="Show TV" tvg-name="SHOW TV FHD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/42
-#EXTINF:0 user-agent="Firefox" tvg-id="Show TV" tvg-name="SHOW TV HD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV HD
+#EXTINF:-1  tvg-id="Show TV" tvg-name="SHOW TV HD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/43
 
 #EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" group-title="🖥️ CANLI | Ulusal",SHOW TV SD
@@ -181,9 +181,9 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31363
 
 #EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",BEYAZ TV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/beyaztv/beyaztv.isml/playlist.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="BEYAZ TV" tvg-name="BEYAZ TV FHD" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV FHD
+#EXTINF:-1  tvg-id="BEYAZ TV" tvg-name="BEYAZ TV FHD" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/25
-#EXTINF:0 user-agent="Firefox" tvg-id="BEYAZ TV" tvg-name="BEYAZ TV HD" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV HD
+#EXTINF:-1  tvg-id="BEYAZ TV" tvg-name="BEYAZ TV HD" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/24
 
 #EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" group-title="🖥️ CANLI | Ulusal",BEYAZ TV FHD (1080p) (Ana)
@@ -242,7 +242,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/19
 
 #EXTINF:-1 tvg-id="a2.tr" tvg-name="A2" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",A2 ⏪⏩
 https://dsmartgo-live.ercdn.net/a2/a2.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="A2" tvg-name="A2 HD" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2 HD
+#EXTINF:-1  tvg-id="A2" tvg-name="A2 HD" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2 HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/9
 
 #EXTINF:-1 tvg-id="a2.tr" tvg-name="A2" group-title="🖥️ CANLI | Ulusal",A2 FHD (1080p) (Ana)
@@ -260,7 +260,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/9
 
 #EXTINF:-1 tvg-id="360tv.tr" tvg-name="360 TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",360 TV ⏪⏩
 https://dsmartgo-live.ercdn.net/360/360.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="360" tvg-name="360 TV HD" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV HD
+#EXTINF:-1  tvg-id="360" tvg-name="360 TV HD" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/16
 
 #EXTINF:-1 tvg-id="360tv.tr" tvg-name="360 TV" group-title="🖥️ CANLI | Ulusal",360 TV FHD (1080p) (Ana)
@@ -278,9 +278,9 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/16
 
 #EXTINF:-1 tvg-id="trt1.tr" tvg-name="TRT 1" group-title="🖥️ CANLI | Ulusal",TRT 1 2K (1440p) (Ultra)
 https://tv-trt1.medya.trt.com.tr/master_1440.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="TRT 1" tvg-name="TRT 1 FHD" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 FHD
+#EXTINF:-1  tvg-id="TRT 1" tvg-name="TRT 1 FHD" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/337667
-#EXTINF:0 user-agent="Firefox" tvg-id="TRT 1" tvg-name="TRT 1 HD" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 HD
+#EXTINF:-1  tvg-id="TRT 1" tvg-name="TRT 1 HD" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/48
 
 #EXTINF:-1 tvg-id="trt1.tr" tvg-name="TRT 1" group-title="🖥️ CANLI | Ulusal",TRT 1 FHD (1080p) (Ana)
@@ -473,9 +473,9 @@ http://65.108.239.207/sozcutv/tracks-v1a1/mono.ts.m3u8
 #######################
 #EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK 
 https://habertino.testworker0y.workers.dev/channel/Q05OIFTDnFJL
-#EXTINF:0 user-agent="Firefox" tvg-id="CNN TÜRK" tvg-name="CNN TURK FHD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK FHD
+#EXTINF:-1  tvg-id="CNN TÜRK" tvg-name="CNN TURK FHD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/149
-#EXTINF:0 user-agent="Firefox" tvg-id="CNN TÜRK" tvg-name="CNN TURK HD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK HD
+#EXTINF:-1  tvg-id="CNN TÜRK" tvg-name="CNN TURK HD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/150
 
 #EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK 
@@ -575,9 +575,9 @@ https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/habergloba
 
 #EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",𝚄̈𝙻𝙺𝙴 𝚃𝚅 ⏪⏩
 https://dsmartgo-live.ercdn.net/ulketv/ulketv.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="Ülke TV" tvg-name="ULKE TV FHD" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ULKE TV FHD
+#EXTINF:-1  tvg-id="Ülke TV" tvg-name="ULKE TV FHD" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ULKE TV FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/132
-#EXTINF:0 user-agent="Firefox" tvg-id="Ülke TV" tvg-name="ULKE TV HD" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ULKE TV HD
+#EXTINF:-1  tvg-id="Ülke TV" tvg-name="ULKE TV HD" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ULKE TV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/133
 
 #EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",𝚄̈𝙻𝙺𝙴 𝚃𝚅 ⏪⏩
@@ -612,9 +612,9 @@ https://dsmartgo-live.ercdn.net//flashhaber/flashhaber.m3u8
 #######################
 #EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",𝙰 𝙷𝙰𝙱𝙴𝚁 
 http://87.121.104.29:145/ahberyt/stream.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="A Haber" tvg-name="A HABER FHD" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER FHD
+#EXTINF:-1  tvg-id="A Haber" tvg-name="A HABER FHD" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/139
-#EXTINF:0 user-agent="Firefox" tvg-id="A Haber" tvg-name="A HABER HD" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER HD
+#EXTINF:-1  tvg-id="A Haber" tvg-name="A HABER HD" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/140
 
 #EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",𝙰 𝙷𝙰𝙱𝙴𝚁 
@@ -656,7 +656,7 @@ https://yayin30.haber100.com/live/finansturk/chunklist_w1525613919.m3u8
 #######################
 #EXTINF:-1 tvg-id="ekoltv.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",𝙴𝙺𝙾𝙻 𝚃𝚅 FHD
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV
+#EXTINF:-1  tvg-id="NULL" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/255109
 
 #EXTINF:-1 tvg-id="ekoltv.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",𝙴𝙺𝙾𝙻 𝚃𝚅 
@@ -673,9 +673,9 @@ https://dsmartgo-live.ercdn.net/ekoltv/ekoltv.m3u8
 #######################
 #EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",𝚃𝚅𝙽𝙴𝚃 
 https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="TVNET" tvg-name="TVNET FHD" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET FHD
+#EXTINF:-1  tvg-id="TVNET" tvg-name="TVNET FHD" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/54676
-#EXTINF:0 user-agent="Firefox" tvg-id="TVNET" tvg-name="TVNET HD" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET HD
+#EXTINF:-1  tvg-id="TVNET" tvg-name="TVNET HD" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232353
 
 #EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",𝚃𝚅𝙽𝙴𝚃 
@@ -710,9 +710,9 @@ https://dsmartgo-live.ercdn.net//tgrthaber//tgrthaber.m3u8
 #######################
 #EXTINF:-1 tvg-id="24tv.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",𝟸𝟺 𝚃𝚅 FHD
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="KANAL 24" tvg-name="24 TV FHD" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV FHD
+#EXTINF:-1  tvg-id="KANAL 24" tvg-name="24 TV FHD" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/142
-#EXTINF:0 user-agent="Firefox" tvg-id="KANAL 24" tvg-name="24 TV HD" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV HD
+#EXTINF:-1  tvg-id="KANAL 24" tvg-name="24 TV HD" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232354
 
 #EXTINF:-1 tvg-id="24tv.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",𝟸𝟺 𝚃𝚅 HD
