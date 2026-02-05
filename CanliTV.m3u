@@ -163,25 +163,25 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/33
 # 📺 TV8 (PRO)
 ###########################
 
-#EXTINF:-1 tvg-id="TV8" tvg-name="TV 8 FHD" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal"TV 8 FHD
+#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal"TV8 FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/31
 
-#EXTINF:-1 tvg-id="TV8" tvg-name="TV 8 HD" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal"TV 8 HD
+#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8 " tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal"TV8 HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/30
 
-#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV8 ⏪⏩
+#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV8 ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/tv8/tv8.isml/playlist.m3u8
 
-#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" group-title="🖥️ CANLI | Ulusal",TV8 FHD (1080p) (Ana)
+#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal",TV8 FHD (1080p) (Ana)
 https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8_1080p.m3u8
 
-#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" group-title="🖥️ CANLI | Ulusal",TV8 FHD (Alternatif)
+#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal",TV8 FHD (Alternatif)
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=83w6tt9aq7pr&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
 
-#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" group-title="🖥️ CANLI | Ulusal",TV8 ⏪⏩
+#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal",TV8 ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/tv8/tv8.isml/tv8.m3u8
 
-#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" group-title="🖥️ CANLI | Ulusal",TV8 🌟 
+#EXTINF:-1 tvg-id="tv8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal",TV8 🌟 
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31
 
 ############################
