@@ -86,10 +86,10 @@ http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
 #EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD (Ana)
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 
-#EXTINF:-1 tvg-id="Show TV" tvg-name="SHOW TV FHD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV FHD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/42
 
-#EXTINF:-1 tvg-id="Show TV" tvg-name="SHOW TV HD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV HD
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV HD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/43
 
 #EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV SD
