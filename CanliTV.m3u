@@ -24,7 +24,7 @@ https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/playlist.m3u8
 
 # Yedek 1 – FHD
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV FHD" http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",,ATV FHD
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8F
 
 # Yedek 2 – HD
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",,ATV HD
@@ -1234,7 +1234,7 @@ https://dsmartgo-live.ercdn.net//discoveryscience//discoveryscience.m3u8
 #######################
 # 📺 DMAX
 #######################
-#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX FHD" tvg-logo="http://logo.multicms.info/tvlogo/dmax.png" group-title="🖥️ TR Belgesel",DMAX FHD
+#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX FHD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/274
 
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX  (Resmi)" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX 
