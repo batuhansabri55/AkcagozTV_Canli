@@ -48,10 +48,10 @@ http://95.174.71.114/TR-ATV/index.m3u8
 ############################
 
 # Ana – Catchup AUTO
-#EXTINF:-1 tvg-id="Kanal D" tvg-name="KANAL D FHD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D FHD
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D FHD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/40
 
-#EXTINF:-1 tvg-id="Kanal D" tvg-name="KANAL D HD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D HD
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D HD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/39
 
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩
