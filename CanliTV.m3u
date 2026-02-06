@@ -525,38 +525,38 @@ http://65.108.239.207/sozcutv/tracks-v1a1/mono.ts.m3u8
 #######################
 # 📺 CNN TÜRK
 #######################
-#EXTINF:-1 tvg-id="CNN TÜRK" tvg-name="CNN TURK FHD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK FHD
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK FHD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/149
 
-#EXTINF:-1 tvg-id="CNN TÜRK" tvg-name="CNN TURK HD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK HD
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK HD" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/150
 
-#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK 
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK 
 https://habertino.testworker0y.workers.dev/channel/Q05OIFTDnFJL
 
-#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK 
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK 
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
 
-#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK 🌟
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/149
 
-#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK ⏪⏩
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/cnnturk/cnnturk.isml/cnnturk.m3u8
 
-#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK ⏪⏩ 
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK ⏪⏩ 
 https://dsmartgo-live.ercdn.net/dsmartgo/cnnturk/cnnturk.isml/playlist.m3u8
 
-#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" group-title="🖥️ TR Haber",CNN TURK 
+#EXTINF:-1 tvg-id="cnnturk.tr" tvg-name="CNN TURK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TURK 
 http://65.108.239.207:80/cnn/tracks-v1a1/mono.ts.m3u8
 
 #######################
 # 📺 HABERTÜRK
 #######################
 
-#EXTINF:-1 tvg-id="HABERTURK" tvg-name="HABER TURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK FHD
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABER TURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/147
 
-#EXTINF:-1 tvg-id="HABERTURK" tvg-name="HABER TURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK HD
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABER TURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/148
 
 #EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABERTURK ⏪⏩
