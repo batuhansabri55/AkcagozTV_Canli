@@ -808,63 +808,77 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40495
 # 📺 ÜLKE TV
 #######################
 
-#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ULKE TV FHD" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ULKE TV FHD
+# 🥇 ANA – PANEL FHD
+#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/132
 
-#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ULKE TV HD" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ULKE TV HD
+# 🥈 ANA YEDEK – PANEL HD
+#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV YEDEK
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/133
 
-#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",𝚄̈𝙻𝙺𝙴 𝚃𝚅 ⏪⏩
-https://dsmartgo-live.ercdn.net/ulketv/ulketv.m3u8
+# 🥈 YEDEK – RESMÎ CDN
+#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV YEDEK
+https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",𝚄̈𝙻𝙺𝙴 𝚃𝚅 ⏪⏩
-https://dsmartgo-live.ercdn.net//ulketv//ulketv.m3u8
-
-#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",𝚄̈𝙻𝙺𝙴 𝚃𝚅 
+# 🟡 YEDEK – ALTERNATİF
+#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV YEDEK
 http://87.121.104.29:145/ultetv/stream.m3u8
 
-#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",𝚄̈𝙻𝙺𝙴 𝚃𝚅 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/132
+# 🟡 CATCHUP – D-SMART GO
+#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",ÜLKE TV ⏪⏩
+https://dsmartgo-live.ercdn.net/ulketv/ulketv.m3u8
 
-#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",𝚄̈𝙻𝙺𝙴 𝚃𝚅 
-https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
+# 🚨 ACİL – PANEL
+#EXTINF:-1 tvg-id="ulketv.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV 🌟
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/132
 
 #######################
 # 📺 FLASH HABER
 #######################
-#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",𝙵𝙻𝙰𝚂𝙷 𝙷𝙰𝙱𝙴𝚁 FHD
+
+# 🥇 ANA – FHD
+#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
 
-#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",𝙵𝙻𝙰𝚂𝙷 𝙷𝙰𝙱𝙴𝚁 
+# 🥈 YEDEK – CDN
+#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER YEDEK
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_0.m3u8
 
-#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",𝙵𝙻𝙰𝚂𝙷 𝙷𝙰𝙱𝙴𝚁 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/99597
+# 🟡 CATCHUP – D-SMART GO
+#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",FLASH HABER ⏪⏩
+https://dsmartgo-live.ercdn.net/flashhaber/flashhaber.m3u8
 
-#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",𝙵𝙻𝙰𝚂𝙷 𝙷𝙰𝙱𝙴𝚁 ⏪⏩
-https://dsmartgo-live.ercdn.net//flashhaber/flashhaber.m3u8
+# 🚨 ACİL – PANEL
+#EXTINF:-1 tvg-id="flashhaber.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER 🌟
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/99597
 
 #######################
 # 📺 A HABER
 #######################
 
-#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER FHD" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER TiviMivi
+# 🥇 ANA – FHD (TiviMivi)
+#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER
 https://cdn-eu.tivimivi.com/streams/123/master.m3u8
 
-#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER HD" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER HD
+# 🥈 YEDEK – HD (Panel)
+#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER YEDEK
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/140
 
-#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",𝙰 𝙷𝙰𝙱𝙴𝚁 
-http://87.121.104.29:145/ahberyt/stream.m3u8
-
-#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",𝙰 𝙷𝙰𝙱𝙴𝚁 
+# 🥉 YEDEK – CDN 1
+#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER YEDEK
 http://65.108.239.207/ahaber/index.m3u8
 
-#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",𝙰 𝙷𝙰𝙱𝙴𝚁 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/139
+# 🟢 YEDEK – CDN 2
+#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER YEDEK
+http://87.121.104.29:145/ahberyt/stream.m3u8
 
-#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",𝙰 𝙷𝙰𝙱𝙴𝚁 ⏪⏩
-https://dsmartgo-live.ercdn.net//ahaber//ahaber.m3u8
+# 🟡 CATCHUP – D-SMART GO
+#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",A HABER ⏪⏩
+https://dsmartgo-live.ercdn.net/ahaber/ahaber.m3u8
+
+# 🚨 ACİL – PANEL
+#EXTINF:-1 tvg-id="ahaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER 🌟
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/139
 
 #######################
 # 📺 HALK TV
