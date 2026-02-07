@@ -582,25 +582,25 @@ http://65.108.239.207:80/cnn/tracks-v1a1/mono.ts.m3u8
 # 📺 HABERTÜRK
 #######################
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/f/fb/Haberturk_gazetesi_logosu.jpg" group-title="🖥️ TR Haber",HABERTURK TiviMivi
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBNtEFcpXhVp-deml2LmoNjhuZXI4xGQffRQ&s" group-title="🖥️ TR Haber",Habertürk TV TiviMivi
 https://cdn-eu.tivimivi.com/streams/110/master.m3u8
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/f/fb/Haberturk_gazetesi_logosu.jpg" group-title="🖥️ TR Haber",HABERTURK 
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBNtEFcpXhVp-deml2LmoNjhuZXI4xGQffRQ&s" group-title="🖥️ TR Haber",Habertürk TV
 https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=7te101th52u7&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABERTURK ⏪⏩
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",Habertürk TV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/playlist.m3u8
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" group-title="🖥️ TR Haber",HABERTURK 
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv.m3u8
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" group-title="🖥️ TR Haber",HABERTURK 
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV
 https://tv.ensonhaber.com/haberturk/haberturk_720p.m3u8
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" group-title="🖥️ TR Haber",HABERTURK 🌟
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/148
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" group-title="🖥️ TR Haber",HABERTURK ⏪⏩
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/haberturk.m3u8
 #######################
 # 📺 NTV
