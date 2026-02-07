@@ -598,13 +598,13 @@ http://65.108.239.207:80/cnn/tracks-v1a1/mono.ts.m3u8
 # 📺 HABERTÜRK
 #######################
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABER TURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK TiviMivi
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK TiviMivi
 https://cdn-eu.tivimivi.com/streams/110/master.m3u8
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABER TURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK FHD
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK FHD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/147
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABER TURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK HD
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/148
 
 #EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABERTURK ⏪⏩
