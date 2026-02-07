@@ -16,7 +16,7 @@ https://cdn-eu.tivimivi.com/streams/121/master.m3u8
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV HD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV HD
 http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
 
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
 
 # Ana 2 – Catchup LIVE
