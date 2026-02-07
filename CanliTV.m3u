@@ -1581,20 +1581,25 @@ https://dsmartgo-live.ercdn.net/tarihtv/tarihtv.m3u8
 #######################
 # 📺 BBC EARTH
 #######################
+# 🥇 ANA
 #EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC Earth HD" tvg-logo="http://logo.multicms.info/tvlogo/bbcearth.png" group-title="🖥️ TR Belgesel",BBC Earth HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/258
 
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH  (Resmi)" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",𝙱𝙱𝙲 𝙴𝙰𝚁𝚃𝙷 
+# 🥈 YEDEK
+#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH (Resmi)" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH
 https://dt-sinema.pantonum1.workers.dev/bbc.m3u8
 
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",𝙱𝙱𝙲 𝙴𝙰𝚁𝚃𝙷 
+# ⭐ YEDEK 2
+#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH
 http://uro-levene-1012.mywire.org/index.php?id=314485&token=DeaTHLesS
 
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",𝙱𝙱𝙲 𝙴𝙰𝚁𝚃𝙷 🌟
+# ⭐ YEDEK 3
+#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/258
 
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",𝙱𝙱𝙲 𝙴𝙰𝚁𝚃𝙷 ⏪⏩
-https://dsmartgo-live.ercdn.net//bbcearth//bbcearth.m3u8
+# ⏪⏩ YEDEK 4
+#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH
+https://dsmartgo-live.ercdn.net/bbcearth/bbcearth.m3u8
 
 #######################
 # 📺 VIASAT HISTORY
