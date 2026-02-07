@@ -564,10 +564,10 @@ http://65.108.239.207:80/cnn/tracks-v1a1/mono.ts.m3u8
 # 📺 HABERTÜRK
 #######################
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK TiviMivi
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK TiviMivi
 https://cdn-eu.tivimivi.com/streams/110/master.m3u8
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABER TURK HD
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/148
 
 #EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABERTURK ⏪⏩
@@ -873,22 +873,22 @@ http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=912900&exte
 
 # 📺 BENGÜTÜRK
 #######################
-#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="Bengu Turk" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Belgesel",Bengu Turk
+#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/61595
 
-#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6edd1622-84fd-4ebf-a50b-7e95787ee427.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
+#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
 https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
 
-#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6edd1622-84fd-4ebf-a50b-7e95787ee427.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 🌟
+#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/61595
 
-#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6edd1622-84fd-4ebf-a50b-7e95787ee427.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
+#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
 https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 
-#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6edd1622-84fd-4ebf-a50b-7e95787ee427.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
+#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
 https://ensonhaber-live.ercdn.net/benguturk/benguturk_720p.m3u8
 
-#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/6edd1622-84fd-4ebf-a50b-7e95787ee427.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
+#EXTINF:-1 tvg-id="benguturk.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",𝙱𝙴𝙽𝙶𝚄̈𝚃𝚄̈𝚁𝙺 
 https://ensonhaber-live.ercdn.net/benguturk/benguturk_480p.m3u8
 
 #######################
@@ -978,16 +978,16 @@ https://dsmartgo-live.ercdn.net//trthaber//trthaber.m3u8
 #######################
 # 📺 AKİT TV
 #######################
-#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKIT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Belgesel",AKIT TV
+#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",𝙰𝙺𝙸̇𝚃 𝚃𝚅 
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/117
 
-#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKİT TV" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/76a7dd67-cee1-4c70-914e-551d77e09661.png" group-title="🖥️ TR Haber",𝙰𝙺𝙸̇𝚃 𝚃𝚅 
+#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",𝙰𝙺𝙸̇𝚃 𝚃𝚅 
 https://akittv-live.ercdn.net/akittv/akittv.m3u8
 
-#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKİT TV" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/76a7dd67-cee1-4c70-914e-551d77e09661.png" group-title="🖥️ TR Haber",𝙰𝙺𝙸̇𝚃 𝚃𝚅 
+#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",𝙰𝙺𝙸̇𝚃 𝚃𝚅 
 https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
 
-#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKİT TV" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/76a7dd67-cee1-4c70-914e-551d77e09661.png" group-title="🖥️ TR Haber",𝙰𝙺𝙸̇𝚃 𝚃𝚅 ⏪⏩
+#EXTINF:-1 tvg-id="akittv.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",𝙰𝙺𝙸̇𝚃 𝚃𝚅 ⏪⏩
 https://dsmartgo-live.ercdn.net/akit//akit.m3u8
 
 #######################
@@ -1110,9 +1110,11 @@ https://streams.uzunmuhalefet.com/stream/50237544-8084-4092-b09c-234af5f951af.m3
 
 #######################
 # 📺 CNBC-E
-#EXTINF:-1 tvg-logo="https://cdn-tr.tivimivi.com/images//channels/1724096135976_CNBC-E.jpg" group-title="TiviMivi",CNBC-E
-https://cdn-eu.tivimivi.com/streams/120/master.m3u8
 #######################
+
+#EXTINF:-1 tvg-id="CNBC-E.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E TiviMivi
+https://cdn-eu.tivimivi.com/streams/120/master.m3u8
+
 #EXTINF:-1 tvg-id="CNBC-E.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/254694
 
