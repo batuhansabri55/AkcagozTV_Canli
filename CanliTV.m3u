@@ -971,26 +971,26 @@ https://dsmartgo-live.ercdn.net/tvnet/tvnet.m3u8
 #######################
 # 📺 TGRT HABER
 #######################
-#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER FHD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232352
 
-#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/222870
-
-#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/A/SU/13405/Thumbnail.png?v=636926423353172180" group-title="🖥️ TR Haber",𝚃𝙶𝚁𝚃 𝙷𝙰𝙱𝙴𝚁 HD
+# 🥇 ANA (FHD)
+#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER
 https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_720p.m3u8
 
-#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/A/SU/13405/Thumbnail.png?v=636926423353172180" group-title="🖥️ TR Haber",𝚃𝙶𝚁𝚃 𝙷𝙰𝙱𝙴𝚁 SD
+# 🥈 YEDEK (SD – Resmi)
+#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER YEDEK
 https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber.m3u8
 
-#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/A/SU/13405/Thumbnail.png?v=636926423353172180" group-title="🖥️ TR Haber",𝚃𝙶𝚁𝚃 𝙷𝙰𝙱𝙴𝚁 SD 1
+# 🥉 YEDEK 2 (Resmi Alternatif)
+#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER Alternatif
 https://canli.tgrthaber.com/tgrt.m3u8
 
-#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/A/SU/13405/Thumbnail.png?v=636926423353172180" group-title="🖥️ TR Haber",𝚃𝙶𝚁𝚃 𝙷𝙰𝙱𝙴𝚁 🌟
+# ⭐ YEDEK 3
+#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232352
 
-#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/A/SU/13405/Thumbnail.png?v=636926423353172180" group-title="🖥️ TR Haber",𝚃𝙶𝚁𝚃 𝙷𝙰𝙱𝙴𝚁 ⏪⏩
-https://dsmartgo-live.ercdn.net//tgrthaber//tgrthaber.m3u8
+# ⏪⏩ Catchup
+#EXTINF:-1 tvg-id="tgrthaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TGRT HABER ⏪⏩
+https://dsmartgo-live.ercdn.net/tgrthaber/tgrthaber.m3u8
 
 ##############################################
 # 📺 24 TV
