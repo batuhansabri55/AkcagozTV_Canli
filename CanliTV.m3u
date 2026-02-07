@@ -1484,51 +1484,61 @@ https://dsmartgo-live.ercdn.net/discoveryscience/discoveryscience.m3u8
 #######################
 # 📺 DMAX
 #######################
-
-#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX TiviMivi
+# 🥇 ANA
+#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
 https://cdn-eu.tivimivi.com/streams/119/master.m3u8
 
+# 🥈 YEDEK
+#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
+http://87.121.104.29:145/dmax/stream.m3u8
 
-#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/274
-
-#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/dmax/dmax.isml/dmax.m3u8
-
-#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX 🌟
+# ⭐ YEDEK 2
+#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/274#/m3u/
 
-#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX 
-http://87.121.104.29:145/dmax/stream.m3u8
+# ⭐ YEDEK 3
+#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/274
+
+# ⏪⏩ YEDEK 4
+#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
+https://dsmartgo-live.ercdn.net/dsmartgo/dmax/dmax.isml/dmax.m3u8
 
 
 #######################
 # 📺 TLC
 #######################
-
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",𝚃𝙻𝙲 TiviMivi
+# 🥇 ANA
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
 https://cdn-eu.tivimivi.com/streams/115/master.m3u8
 
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",𝚃𝙻𝙲 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/14
-
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",𝚃𝙻𝙲 ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/tlc/tlc.isml/tlc.m3u8
-
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",𝚃𝙻𝙲 
-https://belgeselpatr0n.testworker0y.workers.dev/channel/VExD
-
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC HD" tvg-logo="http://logo.multicms.info/logoslar/tlc.png" group-title="🖥️ TR Belgesel",TLC HD
+# 🥈 YEDEK
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/14
 
+# ⭐ YEDEK 2
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
+https://belgeselpatr0n.testworker0y.workers.dev/channel/VExD
+
+# ⭐ YEDEK 3
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/14
+
+# ⏪⏩ YEDEK 4
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
+https://dsmartgo-live.ercdn.net/dsmartgo/tlc/tlc.isml/tlc.m3u8
 
 
+#######################
+# 📺 HABITAT TV
+#######################
+# 🥇 ANA
 #EXTINF:-1 tvg-id="habitat.tr" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="🖥️ TR Belgesel",HABITAT TV
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/78416
 
-#EXTINF:-1 tvg-id="habitat.tr" tvg-name="Habitat tv" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp0ZKuTj_opDSyJmFlsDrqFzXumauqnZoa-w&s" group-title="🖥️ TR Belgesel",Habitat Tv
+# 🥈 YEDEK
+#EXTINF:-1 tvg-id="habitat.tr" tvg-name="HABITAT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp0ZKuTj_opDSyJmFlsDrqFzXumauqnZoa-w&s" group-title="🖥️ TR Belgesel",HABITAT TV
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/78416
-
 
 #######################
 # 📺 LOVE NATURE
