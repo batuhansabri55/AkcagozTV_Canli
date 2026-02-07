@@ -6,99 +6,111 @@
 https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 
 ############################
-# 📺 ATV (PRO)
+# 📺 ATV (OPTİMİZE)
 ############################
 
-# Ana – Catchup AUTO
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV FHD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV TiviMivi
+# 🥇 ANA – RESMÎ (Tivibu / Tivimivi)
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 
 https://cdn-eu.tivimivi.com/streams/121/master.m3u8
 
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV HD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV HD
-http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
-
+# 🥈 ANA YEDEK – RESMÎ (D-Smart Go) CATCHUP AUTO
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
 
-# Ana 2 – Catchup LIVE
+# 🥈 ANA YEDEK 2 – RESMÎ (D-Smart Go) LIVE
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (LIVE)
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/playlist.m3u8
 
-# Yedek 1 – FHD
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV FHD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV FHD
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8F
+# 🥉 YEDEK – CDN (FHD)
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV FHD
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 
-# Yedek 2 – HD
+# 🥉 YEDEK – CDN (HD)
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV HD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8
 
-# Yedek 3 – SD
+# 🥉 YEDEK – CDN (SD)
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV SD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 
-# Yedek 4 – GOLD
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV GOLD
+# 🥉 YEDEK – CDN (DÜŞÜK)
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 360p
+http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
+
+# 🚨 ACİL – PANEL (🌟)
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/46
 
-# Yedek 5 – Alternatif
+# 🚨 ACİL – ALTERNATİF PANEL
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV ALT
 http://95.174.71.114/TR-ATV/index.m3u8
 
 ############################
-# 📺 KANAL D (PRO)
+# 📺 KANAL D (OPTİMİZE)
 ############################
 
-# Ana – Catchup AUTO
-#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D FHD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D TiviMivi
+# 🥇 ANA – RESMÎ (DEMİRÖREN CDN) + CATCHUP LIVE
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩
+https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8
+
+# 🥈 ANA YEDEK – RESMÎ (TIVIMIVI)
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D
 https://cdn-eu.tivimivi.com/streams/113/master.m3u8
 
-#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D HD" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/39
-
-#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩
+# 🥈 ANA YEDEK 2 – CDN (TURKNET) CATCHUP AUTO
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩ (AUTO)
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 
+# 🥉 YEDEK – CDN (HD)
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D HD
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_720p.m3u8
 
-# Yedek 1 – FHD LIVE (Catchup var)
-#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D FHD
-https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8
-
-#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D SD YEDEK
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web
-
-# Yedek 2 – SD (Catchup YOK)
+# 🥉 YEDEK – RESMÎ (SD – WEB)
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D SD
 https://demiroren.daioncdn.net/kanald/kanald.m3u8
 
-# Yedek 3 – GOLD (Catchup YOK)
+# 🥉 YEDEK – RESMÎ (SD – APP)
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D SD (APP)
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web
+
+# 🚨 ACİL – PANEL (🌟)
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40
 
-# Yedek 4 – Alternatif (Catchup YOK)
+# 🚨 ACİL – ALTERNATİF (DUHNET)
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D ALT
 http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
 
+# 🚨 ACİL – PANEL (TOMTV)
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" group-title="🖥️ CANLI | Ulusal",KANAL D PANEL
+http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/39
+
 ############################
-# 📺 SHOW TV (PRO)
+# 📺 SHOW TV (OPTİMİZE)
 ############################
 
-#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD (Ana)
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
+# 🥇 ANA – RESMÎ (CİNER / DAION CDN) FHD
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV
+https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8
 
-#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV FHD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD
-https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=7te02zjyafvh&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
-
-#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV HD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV TiviMivi
+# 🥈 ANA YEDEK – RESMÎ (TIVIMIVI)
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV
 https://cdn-eu.tivimivi.com/streams/109/master.m3u8
 
-#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" group-title="🖥️ CANLI | Ulusal",SHOW TV SD
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
-
-#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" group-title="🖥️ CANLI | Ulusal",SHOW TV ⏪⏩
+# 🥈 ANA YEDEK 2 – RESMÎ (D-SMART GO) + CATCHUP
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",SHOW TV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/showtv/showtv.isml/showtv.m3u8
 
-#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" group-title="🖥️ CANLI | Ulusal",SHOW TV 🌟 
+# 🥉 YEDEK – CDN (FHD – TURKNET)
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD
+https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
+
+# 🥉 YEDEK – CDN (SD)
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV SD
+https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
+
+# 🚨 ACİL – PANEL (🌟)
+#EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/42
 
 ############################
