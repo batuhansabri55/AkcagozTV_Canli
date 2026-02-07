@@ -410,6 +410,8 @@ http://uro-levene-1012.mywire.org/index.php?id=314597&token=DeaTHLesS
 #EXTINF:-1 tvg-id="tabiitv.tr" tvg-name="TABII TV" group-title="🖥️ CANLI | Ulusal",TABII TV Ana
 https://ceokzokgtd.erbvr.com/tabiitv/tabiitv.m3u8
 
+#EXTINF:-1 tvg-id="tabiitv.tr" tvg-name="TABII TV" group-title="🖥️ CANLI | Ulusal",TABII TV Ana FHD
+https://ceokzokgtd.erbvr.com/tabiitv/tabiitv_1080p.m3u8 
 ############################
 # 📺 TIVI TÜRK (PRO)
 ############################
@@ -500,6 +502,11 @@ https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 
 #EXTINF:-1 tvg-id="kanal7avrupa.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA Alternatif
 http://line.liveott.ru:80/play/live.php?stream=912465&extension=ts
+
+#EXTINF:-1 tvg-id="tv4.tr" tvg-name="TV4" group-title="🖥️ CANLI | Ulusal",TV4
+http://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
+
+
 
 #######################
 # 📺 (TR) HABER KANALLARI
@@ -616,9 +623,9 @@ https://dsmartgo-live.ercdn.net/dsmartgo/ntv/ntv.isml/ntv.m3u8
 https://cdn-eu.tivimivi.com/streams/116/master.m3u8
 
 #EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100 HD" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232356
+https://tv100-live.daioncdn.net/tv100/tv100_720p.m3u8
 
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 FHD
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 
 #EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 
@@ -731,9 +738,9 @@ https://dsmartgo-live.ercdn.net//ahaber//ahaber.m3u8
 https://cdn-eu.tivimivi.com/streams/103/master.m3u8
 
 #EXTINF:-1 tvg-id="halktv.tr" tvg-name="HALK TV HD" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232357
+https://halktv-live.daioncdn.net/halktv/halktv_720p.m3u8
 
-#EXTINF:-1 tvg-id="halktv.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",𝙷𝙰𝙻𝙺 𝚃𝚅 
+#EXTINF:-1 tvg-id="halktv.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",𝙷𝙰𝙻𝙺 𝚃𝚅 FHD
 https://halktv-live.daioncdn.net/halktv/halktv_1080p.m3u8
 
 #EXTINF:-1 tvg-id="halktv.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",𝙷𝙰𝙻𝙺 𝚃𝚅 
@@ -759,7 +766,7 @@ https://yayin30.haber100.com/live/finansturk/chunklist_w1525613919.m3u8
 # 📺 EKOL TV
 #######################
 #EXTINF:-1 tvg-id="ekoltv.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/255109
+https://ekoltv-live.ercdn.net/ekoltv/ekoltv_720p.m3u8 
 
 #EXTINF:-1 tvg-id="ekoltv.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",𝙴𝙺𝙾𝙻 𝚃𝚅 FHD
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
@@ -825,7 +832,7 @@ https://dsmartgo-live.ercdn.net//tgrthaber//tgrthaber.m3u8
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/142
 
 #EXTINF:-1 tvg-id="24tv.tr" tvg-name="24 TV HD" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232354
+https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
 
 #EXTINF:-1 tvg-id="24tv.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",𝟸𝟺 𝚃𝚅 FHD
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
