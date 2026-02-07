@@ -87,7 +87,7 @@ http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 
 #EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV FHD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV FHD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/42
+https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=7te02zjyafvh&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
 
 #EXTINF:-1 tvg-id="showtv.tr" tvg-name="SHOW TV HD" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV TiviMivi
 https://cdn-eu.tivimivi.com/streams/109/master.m3u8
@@ -574,8 +574,8 @@ http://65.108.239.207:80/cnn/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK TiviMivi
 https://cdn-eu.tivimivi.com/streams/110/master.m3u8
 
-#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/148
+#EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTURK FAMILYHD
+https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=7te101th52u7&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
 
 #EXTINF:-1 tvg-id="haberturk.tr" tvg-name="HABERTURK" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABERTURK ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/playlist.m3u8
@@ -599,7 +599,7 @@ https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/haberturk.m3u8
 https://cdn-eu.tivimivi.com/streams/128/master.m3u8
 
 #EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV HD" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/152
+https://dogus.daioncdn.net/ntv/ntv_1080p.m3u8?token=e8c0dec16bf84c8cc187224d13811c0e705fd2c58b25d7ee&sid=7te15ul6hi4e&app=c68bddbe-3dbf-49f7-892a-93de5ae37f1f&ce=3
 
 #EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",NTV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/ntv/ntv.isml/playlist.m3u8
