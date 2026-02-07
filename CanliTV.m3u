@@ -494,14 +494,14 @@ http://uro-levene-1012.mywire.org/index.php?id=314597&token=DeaTHLesS
 #EXTINF:-1 tvg-id="tabiitv.tr" tvg-name="TABII TV" group-title="🖥️ CANLI | Ulusal",TABII TV FHD
 https://ceokzokgtd.erbvr.com/tabiitv/tabiitv_1080p.m3u8
 
-#EXTINF:-1 tvg-id="tabiitv.tr" tvg-name="TABII TV" group-title="🖥️ CANLI | Ulusal",TABII TV
+#EXTINF:-1 tvg-id="tabiitv.tr" tvg-name="TABII TV" tvg-logo="https://egirisim.com/wp-content/uploads/2023/05/trt-tabii.png" group-title="🖥️ CANLI | Ulusal",TABII TV
 https://ceokzokgtd.erbvr.com/tabiitv/tabiitv.m3u8
 
 
 ############################
 # 📺 TIVI TÜRK
 ############################
-#EXTINF:-1 tvg-id="tiviturk.tr" tvg-name="TIVI TÜRK" group-title="🖥️ CANLI | Ulusal",TIVI TÜRK
+#EXTINF:-1 tvg-id="tiviturk.tr" tvg-name="TIVI TÜRK" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhR9TBSKSKuGW1BMl8ESZDU2ejc4IN7JFvhg&s"vgroup-title="🖥️ CANLI | Ulusal",TIVI TÜRK
 https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
 
 
