@@ -14,7 +14,7 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 https://cdn-eu.tivimivi.com/streams/121/master.m3u8
 
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV HD" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/45
+http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
 
 #EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
@@ -659,7 +659,7 @@ https://dsmartgo-live.ercdn.net/tv100/tv100.m3u8
 https://cdn-eu.tivimivi.com/streams/140/master.m3u8
 
 #EXTINF:-1 tvg-id="haberglobal.tr" tvg-name="HABER GLOBAL HD" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232359
+https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 
 #EXTINF:-1 tvg-id="haberglobal.tr" tvg-name="HABER GLOBAL" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2021/01/haber-global.jpg" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",𝙷𝙰𝙱𝙴𝚁 𝙶𝙻𝙾𝙱𝙰𝙻 ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/playlist.m3u8
@@ -772,6 +772,8 @@ https://dsmartgo-live.ercdn.net/dsmartgo/halktv/halktv.isml/playlist.m3u8
 #EXTINF:-1 tvg-id="FinansTurkTV.tr" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV
 https://yayin30.haber100.com/live/finansturk/chunklist_w1525613919.m3u8
 
+#EXTINF:-1 tvg-id="FinansTurkTV.tr" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV
+https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #######################
 
 # 📺 EKOL TV
@@ -1098,6 +1100,9 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50841
 
 #EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png?v=636948480200618498" group-title="🖥️ TR Haber",𝙱𝙻𝙾𝙾𝙼𝙱𝙴𝚁𝙶 TiviMivi
 https://cdn-eu.tivimivi.com/streams/111/master.m3u8
+
+#EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png?v=636948480200618498" group-title="🖥️ TR Haber",𝙱𝙻𝙾𝙾𝙼𝙱𝙴𝚁𝙶 𝙷T
+https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8
 
 #EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png?v=636948480200618498" group-title="🖥️ TR Haber",𝙱𝙻𝙾𝙾𝙼𝙱𝙴𝚁𝙶 𝙷T
 https://ensonhaber-live.ercdn.net/bloomberght/bloomberght_720p.m3u8
