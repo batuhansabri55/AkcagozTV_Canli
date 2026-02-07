@@ -676,50 +676,65 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/149
 # 📺 HABERTÜRK
 #######################
 
-#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBNtEFcpXhVp-deml2LmoNjhuZXI4xGQffRQ&s" group-title="🖥️ TR Haber",Habertürk TV TiviMivi
+# 🥇 ANA – TiviMivi
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="HABERTÜRK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTÜRK
 https://cdn-eu.tivimivi.com/streams/110/master.m3u8
 
-#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBNtEFcpXhVp-deml2LmoNjhuZXI4xGQffRQ&s" group-title="🖥️ TR Haber",Habertürk TV
-https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=7te101th52u7&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
+# 🥈 ANA YEDEK – RESMÎ CDN (1080p)
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="HABERTÜRK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTÜRK
+https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8
 
-#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",Habertürk TV ⏪⏩
+# 🟡 CATCHUP – D-SMART GO (AUTO)
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="HABERTÜRK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABERTÜRK ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/playlist.m3u8
 
-#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV
+# 🟡 YEDEK 1 – TURKNET CDN
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="HABERTÜRK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTÜRK YEDEK
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv.m3u8
 
-#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV
+# 🟡 YEDEK 2 – ENSOHABER (720p)
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="HABERTÜRK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTÜRK YEDEK
 https://tv.ensonhaber.com/haberturk/haberturk_720p.m3u8
 
-#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV 🌟
+# 🟡 YEDEK 3 – D-SMART (Direct)
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="HABERTÜRK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTÜRK YEDEK
+https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/haberturk.m3u8
+
+# 🚨 ACİL – PANEL
+#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="HABERTÜRK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Habert%C3%BCrktv.jpg" group-title="🖥️ TR Haber",HABERTÜRK 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/148
 
-#EXTINF:-1 tvg-id="haberturktv.tr" tvg-name="Habertürk TV" group-title="🖥️ TR Haber",Habertürk TV ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/haberturk.m3u8
 #######################
 # 📺 NTV
 #######################
 
-#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV FHD" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV TiviMivi
+# 🥇 ANA – TiviMivi
+#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV
 https://cdn-eu.tivimivi.com/streams/128/master.m3u8
 
-#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV HD" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV HD
-https://dogus.daioncdn.net/ntv/ntv_1080p.m3u8?token=e8c0dec16bf84c8cc187224d13811c0e705fd2c58b25d7ee&sid=7te15ul6hi4e&app=c68bddbe-3dbf-49f7-892a-93de5ae37f1f&ce=3
+# 🥈 ANA YEDEK – RESMÎ CDN (1080p)
+#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV
+https://dogus.daioncdn.net/ntv/ntv_1080p.m3u8
 
-#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",NTV ⏪⏩
+# 🟡 CATCHUP – D-SMART GO (AUTO)
+#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",NTV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/ntv/ntv.isml/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" group-title="🖥️ TR Haber",NTV 
+# 🟡 YEDEK 1 – D-SMART (Direct)
+#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV YEDEK
+https://dsmartgo-live.ercdn.net/dsmartgo/ntv/ntv.isml/ntv.m3u8
+
+# 🟡 YEDEK 2 – RESMÎ CDN (SD)
+#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV YEDEK
+https://dogus.daioncdn.net/ntv/ntv.m3u8
+
+# 🟡 YEDEK 3 – GitHub Liste
+#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV YEDEK
 https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/ntv.m3u8
 
-#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" group-title="🖥️ TR Haber",NTV 
-https://dogus.daioncdn.net/ntv/ntv.m3u8?app=7c4bb802-0c41-409e-8cd2-799984995694
-
-#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" group-title="🖥️ TR Haber",NTV 🌟
+# 🚨 ACİL – PANEL
+#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/152
-
-#EXTINF:-1 tvg-id="ntv.tr" tvg-name="NTV" group-title="🖥️ TR Haber",NTV ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/ntv/ntv.isml/ntv.m3u8
 
 #######################
 # 📺 TV 100
