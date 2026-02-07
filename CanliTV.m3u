@@ -947,22 +947,25 @@ https://dsmartgo-live.ercdn.net/ekoltv/ekoltv.m3u8
 #######################
 # 📺 TVNET
 #######################
-#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET FHD" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET FHD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/54676
 
-#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET HD" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/232353
-
-#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",𝚃𝚅𝙽𝙴𝚃 
+# 🥇 ANA (FHD)
+#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET
 https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 
-#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",𝚃𝚅𝙽𝙴𝚃 
+# 🥈 YEDEK (HD)
+#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET YEDEK
 https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8
 
-#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",𝚃𝚅𝙽𝙴𝚃 🌟
+# 🥉 YEDEK 2 (FHD – Alternatif)
+#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET Alternatif
+http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/54676
+
+# ⭐ YEDEK 3
+#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232353
 
-#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",𝚃𝚅𝙽𝙴𝚃 ⏪⏩
+# ⏪⏩ Catchup
+#EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TVNET ⏪⏩
 https://dsmartgo-live.ercdn.net/tvnet/tvnet.m3u8
 
 #######################
