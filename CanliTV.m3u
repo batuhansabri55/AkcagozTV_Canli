@@ -218,78 +218,95 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/31
 
 ############################
-# 📺 SHOW MAX (PRO)
+# 📺 SHOW MAX (OPTİMİZE)
 ############################
 
-#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOWMAX HD" tvg-logo="https://cdn-tr.tivimivi.com/images//channels/1724096167580_Show-Max.jpg" group-title="🖥️ CANLI | Ulusal",SHOWMAX TiviMivi
+# 🥇 ANA – RESMÎ (TIVIMIVI)
+#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://cdn-tr.tivimivi.com/images//channels/1724096167580_Show-Max.jpg" group-title="🖥️ CANLI | Ulusal",SHOW MAX
 https://cdn-eu.tivimivi.com/streams/112/master.m3u8
 
-#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOWMAX HD" tvg-logo="http://logo.multicms.info/tvlogo/showmax.png" group-title="🖥️ CANLI | Ulusal",SHOWMAX HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/31363
-
-#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2025/09/showmax.webp" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",SHOW MAX ⏪⏩
+# 🥈 ANA YEDEK – RESMÎ (D-SMART GO) + CATCHUP AUTO
+#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://cdn-tr.tivimivi.com/images//channels/1724096167580_Show-Max.jpg" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",SHOW MAX ⏪⏩
 https://dsmartgo-live.ercdn.net/showmax/showmax.m3u8
 
-#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2025/09/showmax.webp" group-title="🖥️ CANLI | Ulusal",SHOW MAX Ana
+# 🥉 YEDEK – CDN (TURKNET)
+#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://cdn-tr.tivimivi.com/images//channels/1724096167580_Show-Max.jpg" group-title="🖥️ CANLI | Ulusal",SHOW MAX
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8
 
-#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2025/09/showmax.webp" group-title="🖥️ CANLI | Ulusal",SHOW MAX ⏪⏩
-https://dsmartgo-live.ercdn.net/showmax/showmax.m3u8
+# 🥉 YEDEK – PANEL (TOMTV)
+#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://cdn-tr.tivimivi.com/images//channels/1724096167580_Show-Max.jpg" group-title="🖥️ CANLI | Ulusal",SHOW MAX PANEL
+http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/31363
 
-#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2025/09/showmax.webp" group-title="🖥️ CANLI | Ulusal",SHOW MAX 🌟 
+# 🚨 ACİL – PANEL (🌟)
+#EXTINF:-1 tvg-id="showmax.tr" tvg-name="SHOW MAX" tvg-logo="https://cdn-tr.tivimivi.com/images//channels/1724096167580_Show-Max.jpg" group-title="🖥️ CANLI | Ulusal",SHOW MAX 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31363
 
 ############################
-# 📺 BEYAZ TV (PRO)
+# 📺 BEYAZ TV (OPTİMİZE)
 ############################
 
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV FHD" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV FHD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/25
-
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV HD" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/24
-
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",BEYAZ TV ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/beyaztv/beyaztv.isml/playlist.m3u8
-
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" group-title="🖥️ CANLI | Ulusal",BEYAZ TV FHD (1080p) (Ana)
+# 🥇 ANA – RESMÎ CDN (1080p)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
 
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" group-title="🖥️ CANLI | Ulusal",BEYAZ TV (Alternatif)
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8 
-
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" group-title="🖥️ CANLI | Ulusal",BEYAZ TV FHD (Alternatif)
+# 🥈 ANA YEDEK – RESMÎ CDN (Alternatif 1080p)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV
 https://beyaztv.daioncdn.net/beyaztv/beyaztv_1080p.m3u8?&sid=83w7myc3qcz1&app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3
 
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" group-title="🖥️ CANLI | Ulusal",BEYAZ TV ⏪⏩
+# 🥉 YEDEK – RESMÎ CDN (SD)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV
+https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8
+
+# 🥈 ANA YEDEK – D-SMART GO (CATCHUP AUTO)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",BEYAZ TV ⏪⏩
+https://dsmartgo-live.ercdn.net/dsmartgo/beyaztv/beyaztv.isml/playlist.m3u8
+
+# 🥉 YEDEK – D-SMART GO (LIVE)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV
 https://dsmartgo-live.ercdn.net/dsmartgo/beyaztv/beyaztv.isml/beyaztv.m3u8
 
-#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" group-title="🖥️ CANLI | Ulusal",BEYAZ TV 🌟 
+# 🟡 YEDEK – PANEL (FHD)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV PANEL
+http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/25
+
+# 🟡 YEDEK – PANEL (HD)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV PANEL
+http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/24
+
+# 🚨 ACİL – PANEL (🌟)
+#EXTINF:-1 tvg-id="beyaztv.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/25
 
 ############################
-# 📺 KANAL 7 (PRO)
+# 📺 KANAL 7 (OPTİMİZE)
 ############################
 
-#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7 FHD" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 FHD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/22
-
-#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7 HD" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50845
-
-#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL 7 ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/kanal7/kanal7.isml/playlist.m3u8
-
-#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" group-title="🖥️ CANLI | Ulusal",KANAL 7 FHD (1080p) (Ana)
+# 🥇 ANA – RESMÎ CDN (1080p)
+#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
 
-#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" group-title="🖥️ CANLI | Ulusal",KANAL 7 FHD (Alternatif)
+# 🥈 ANA YEDEK – RESMÎ CDN (Alternatif 1080p)
+#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7
 https://kanal7.daioncdn.net/kanal7/kanal7_1080p.m3u8?&sid=83w827nps8w4&app=f99587ad-1637-494d-8255-da35b09d17a1&ce=3
 
-#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" group-title="🖥️ CANLI | Ulusal",KANAL 7 ⏪⏩
+# 🥈 ANA YEDEK – D-SMART GO (CATCHUP AUTO)
+#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL 7 ⏪⏩
+https://dsmartgo-live.ercdn.net/dsmartgo/kanal7/kanal7.isml/playlist.m3u8
+
+# 🥉 YEDEK – D-SMART GO (LIVE)
+#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7
 https://dsmartgo-live.ercdn.net/dsmartgo/kanal7/kanal7.isml/kanal7.m3u8
 
-#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" group-title="🖥️ CANLI | Ulusal",KANAL 7 🌟 
+# 🟡 YEDEK – PANEL (FHD)
+#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 PANEL
+http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/22
+
+# 🟡 YEDEK – PANEL (HD)
+#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 PANEL
+http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50845
+
+# 🚨 ACİL – PANEL (🌟)
+#EXTINF:-1 tvg-id="kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/22
 
 ############################
