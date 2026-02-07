@@ -503,8 +503,19 @@ https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 #EXTINF:-1 tvg-id="kanal7avrupa.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA Alternatif
 http://line.liveott.ru:80/play/live.php?stream=912465&extension=ts
 
+
 #EXTINF:-1 tvg-id="tv4.tr" tvg-name="TV4" group-title="🖥️ CANLI | Ulusal",TV4
 http://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
+
+#EXTINF:-1 tvg-id="bır.tr" tvg-name="BIR TV" tvg-logo="https://www.birtv.tv/assets/upload/637f83951df60.png.webp" group-title="🖥️ CANLI | Ulusal",BIR TV 
+https://edge.socialsmart.tv/birtv/bant1/chunks.m3u8
+
+#EXTINF:-1 tvg-id="SAGLIK CHANEL.tr" tvg-name="SAGLIK CHANEL" tvg-logo="https://yt3.googleusercontent.com/ugKadTxw4KFETz9WUiPKfte541955WEqHbqpqzJtA9dNaIjNnpz6GWdvzBkI9Tb-Ib1QKKtGnQ=s160-c-k-c0x00ffffff-no-rj" group-title="🖥️ CANLI | Ulusal",SAGLIK CHANEL
+https://live.euromediacenter.com/saglikchannel/tracks-v1a1/mono.m3u8
+
+
+#EXTINF:-1 tvg-id="ONS TV .tr" tvg-name="ONS TV" tvg-logo="https://onstv.com.tr/images/gallery/uploaded/2/onstv-logo.png" group-title="🖥️ CANLI | Ulusal",ONS TV
+https://cdn-onstv.yayin.com.tr/onstv/index.m3u8
 
 
 
