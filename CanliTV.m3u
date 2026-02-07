@@ -739,26 +739,34 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/152
 #######################
 # 📺 TV 100
 #######################
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100 FHD" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 TiviMivi
+
+# 🥇 ANA – TiviMivi
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100
 https://cdn-eu.tivimivi.com/streams/116/master.m3u8
 
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100 HD" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 HD
-https://tv100-live.daioncdn.net/tv100/tv100_720p.m3u8
-
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 FHD
+# 🥈 ANA YEDEK – RESMÎ CDN (1080p)
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 
+# 🥈 YEDEK – ENSONHABER CDN (1080p)
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 YEDEK
 https://ensonhaber-live.ercdn.net/tv100/tv100_1080p.m3u8
 
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50939
+# 🟡 YEDEK – RESMÎ CDN (720p)
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 YEDEK
+https://tv100-live.daioncdn.net/tv100/tv100_720p.m3u8
 
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 
-https://tv100.daioncdn.net/tv100/tv100_480p.m3u8?&sid=83wakwr5pjdn&app=356e7599-d81d-4357-935a-355a1ad9846e&ce=2
+# 🟡 YEDEK – RESMÎ CDN (480p)
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 YEDEK
+https://tv100.daioncdn.net/tv100/tv100_480p.m3u8
 
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" group-title="🖥️ TR Haber",𝚃𝚅 𝟷𝟶𝟶 ⏪⏩
+# 🟡 CATCHUP – D-SMART GO
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TV 100 ⏪⏩
 https://dsmartgo-live.ercdn.net/tv100/tv100.m3u8
+
+# 🚨 ACİL – PANEL
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 🌟
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50939
 
 #######################
 # 📺 HABER GLOBAL
