@@ -1906,45 +1906,47 @@ https://mn-nl.mncdn.com/doguyg_drone/cgtn/playlist.m3u8
 #EXTINF:-1 tvg-id="BizimEvTV.tr" tvg-name="BİZİMEV TV" tvg-logo="https://i.imgur.com/eJa6sFY.png" group-title="🖥️ TR Belgesel",BİZİMEV TV
 http://5.178.103.239:82/yt1/s/bizimev.m3u8
 
+#######################
+#🖥️ SINEMA 7/24
+#######################
 
-
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",YAKINDA SINEMALARDA
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",YAKINDA SINEMALARDA
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/19291
 
-#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/png/cac143893c2e56485498895df040b2b1.png" group-title="🖥️ SINEMA 7/24",beIN Series HD
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN Series HD
 https://ds.ayakkabiparti.lol/bsseries1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/png/b2d030cf4ca567bf7c8358b15c8177a9.png" group-title="🖥️ SINEMA 7/24",beIN MOVIES TÜRK
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES TÜRK
 https://ds.ayakkabiparti.lol/bsturk/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",KEMAL SUNAL
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",KEMAL SUNAL
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13741
 
-#EXTINF:-1 group-title="🖥️ SINEMA 7/24",KEMAL SUNAL
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",KEMAL SUNAL
 https://goldvod.site/live/hpgdiscoo/123456/336.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",ŞENER ŞEN
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",ŞENER ŞEN
 https://goldvod.site/live/hpgdiscoo/123456/10152.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",YEŞİLÇAM
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",YEŞİLÇAM
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13731
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",YEŞİLÇAM 
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",YEŞİLÇAM 
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/64002
 
-#EXTINF:-1 group-title="🖥️ SINEMA 7/24",FIX CINEMA YEŞİLÇAM
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",FIX CINEMA YEŞİLÇAM
 https://goldvod.site/live/hpgdiscoo/123456/325.m3u8
 
-#EXTINF:-1 group-title="🖥️ SINEMA 7/24",SUPER TÜRK TV
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SUPER TÜRK TV
 https://goldvod.site/live/hpgdiscoo/123456/463.m3u8
 
-#EXTINF:-1 group-title="🖥️ SINEMA 7/24",YEŞİLÇAM KOMEDİ
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",YEŞİLÇAM KOMEDİ
 https://goldvod.site/live/hpgdiscoo/123456/181.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",TÜRK KOMEDİ
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",TÜRK KOMEDİ
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/59396
 
-#EXTINF:-1 group-title="🖥️ SINEMA 7/24",YEŞİLÇAM KLASİK
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",YEŞİLÇAM KLASİK
 https://goldvod.site/live/hpgdiscoo/123456/182.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SİNEMA TV YERLİ
@@ -1959,22 +1961,22 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/216
 #EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",MOVIESMART TÜRK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/64828
 
-#EXTINF:-1 group-title="🖥️ SINEMA 7/24",FIX CINEMA FANTASTIC
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",FIX CINEMA FANTASTIC
 https://goldvod.site/live/hpgdiscoo/123456/320.m3u8
 
-#EXTINF:-1 group-title="🖥️ SINEMA 7/24",DİZİ TV
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",DİZİ TV
 https://goldvod.site/live/hpgdiscoo/123456/461.m3u8
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 7
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 7
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/154
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/YFikY1XDy-DacBZ_NoPJwjrQpj_xxd56p-iPUxuz-uS1F5OgEiLlWxH3Diflx_9_zOeISmYbxwGnLq47ls5Itz4=w240-h480-rw" group-title="🖥️ SINEMA 7/24",CINE VISION 5
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE VISION 5
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115713
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL AKSİYON
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL AKSİYON
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13739
 
-#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/png/1883f1dfa1e69b6788849eaab4b1f8e7.png" group-title="🖥️ SINEMA 7/24",beIN MOVIES ACTION 1
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES ACTION 1
 https://ds.ayakkabiparti.lol/bsaction1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
 #EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AKSİYON
@@ -1989,10 +1991,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/166
 #EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE 2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103141
 
-#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/png/a2f7541d9a7a2947275ba3b3d3b6cb47.png" group-title="🖥️ SINEMA 7/24",beIN MOVIES FAMILY
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES FAMILY
 https://ds.ayakkabiparti.lol/bsfamily/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL KOMEDİ
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL KOMEDİ
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13735
 
 #EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ
@@ -2001,113 +2003,112 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/168
 #EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ 2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103143
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL WESTERN
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL WESTERN
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/56020
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL BEST PICTURES
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL BEST PICTURES
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/64149
 
-#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/png/05607925151ae07d26cdf2c93b99e006.png" group-title="🖥️ SINEMA 7/24",beIN MOVIES PREMIER
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES PREMIER
 https://ds.ayakkabiparti.lol/bspremier1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/jpg/a5e035e5aad903052fdb35a3a7984518.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES BOX OFFICE 1
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES BOX OFFICE 1
 https://ds.ayakkabiparti.lol/box1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/jpg/6c4faa576fe3d2fe9e850efd5c57005d.jpg" group-title="🖥️ SINEMA 7/24",FX
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",FX
 https://saran-live.ercdn.net/fx/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL SONVİZYON
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL SONVİZYON
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/222407
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL CHOICE
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL CHOICE
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/223731
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL FANTEZİ
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL FANTEZİ
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13734
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL BİLİM KURGU
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL BİLİM KURGU
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13736
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL DRAM
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL DRAM
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13733
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL KORKU
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL KORKU
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13737
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS INFO
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS INFO
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20037
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 2
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20035
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 3
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 3
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20034
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 4
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 4
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20033
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 5
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 5
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20032
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 6
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 6
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20031
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 7
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 7
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20030
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 8
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20029
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 9
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 9
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20028
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bNJW113tbKk/hq720.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 10
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",UNIVERSAL MARVEL STUDIOS 10
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/20027
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 1
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 1
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/160
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 2
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/159
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 3
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 3
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/158
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 4
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 4
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/157
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 5
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 5
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/156
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 6
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 6
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/155
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBXqYdAorG7ZvcOrSxMG-Q7YoP9e61fa-Q&s" group-title="🖥️ SINEMA 7/24",CINE BOX 8
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE BOX 8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/230514
 
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfTORPrIjOMc24SbFjp9xtKVD35MROHgR7g&s" group-title="🖥️ SINEMA 7/24",LOCA 1
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",LOCA 1
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115706
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfTORPrIjOMc24SbFjp9xtKVD35MROHgR7g&s" group-title="🖥️ SINEMA 7/24",LOCA 2
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",LOCA 2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115707
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfTORPrIjOMc24SbFjp9xtKVD35MROHgR7g&s" group-title="🖥️ SINEMA 7/24",LOCA 3
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",LOCA 3
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115708
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/YFikY1XDy-DacBZ_NoPJwjrQpj_xxd56p-iPUxuz-uS1F5OgEiLlWxH3Diflx_9_zOeISmYbxwGnLq47ls5Itz4=w240-h480-rw" group-title="🖥️ SINEMA 7/24",CINE VISION 1
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE VISION 1
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115709
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/YFikY1XDy-DacBZ_NoPJwjrQpj_xxd56p-iPUxuz-uS1F5OgEiLlWxH3Diflx_9_zOeISmYbxwGnLq47ls5Itz4=w240-h480-rw" group-title="🖥️ SINEMA 7/24",CINE VISION 2
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE VISION 2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115710
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/YFikY1XDy-DacBZ_NoPJwjrQpj_xxd56p-iPUxuz-uS1F5OgEiLlWxH3Diflx_9_zOeISmYbxwGnLq47ls5Itz4=w240-h480-rw" group-title="🖥️ SINEMA 7/24",CINE VISION 3
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE VISION 3
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115711
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/YFikY1XDy-DacBZ_NoPJwjrQpj_xxd56p-iPUxuz-uS1F5OgEiLlWxH3Diflx_9_zOeISmYbxwGnLq47ls5Itz4=w240-h480-rw" group-title="🖥️ SINEMA 7/24",CINE VISION 4
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE VISION 4
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115712
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/YFikY1XDy-DacBZ_NoPJwjrQpj_xxd56p-iPUxuz-uS1F5OgEiLlWxH3Diflx_9_zOeISmYbxwGnLq47ls5Itz4=w240-h480-rw" group-title="🖥️ SINEMA 7/24",CINE VISION 6
+#EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE VISION 6
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115714
 
 #EXTINF:-1 tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",FILM SCREEN
