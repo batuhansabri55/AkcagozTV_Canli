@@ -49,8 +49,12 @@ http://95.174.71.114/TR-ATV/index.m3u8
 # 📺 KANAL D (OPTİMİZE)
 ############################
 
+
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩ (AUTO)
+https://dsmartgo-live.ercdn.net/dsmartgo/kanald/kanald.isml/kanald.m3u8
+
 # 🥇 ANA – RESMÎ (DEMİRÖREN CDN) + CATCHUP LIVE
-#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D 
 https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8
 
 # 🥈 ANA YEDEK – RESMÎ (TIVIMIVI)
@@ -58,7 +62,7 @@ https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8
 https://cdn-eu.tivimivi.com/streams/113/master.m3u8
 
 # 🥈 ANA YEDEK 2 – CDN (TURKNET) CATCHUP AUTO
-#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩ (AUTO)
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩ 
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 
 # 🥉 YEDEK – CDN (HD)
