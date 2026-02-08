@@ -1375,7 +1375,6 @@ https://goldvod.site/live/hpgdiscoo/123456/131.m3u8
 #EXTINF:-1 tvg-id="apara.tr" tvg-name="A PARA" tvg-logo="https://dsmart-static-v2.ercdn.net/content/v/7e/13515/Thumbnail.png" group-title="🖥️ TR Haber",A PARA Yedek
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50841
 
-
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="apara.tr" tvg-name="A PARA" tvg-logo="https://dsmart-static-v2.ercdn.net/content/v/7e/13515/Thumbnail.png" group-title="🖥️ TR Haber",A PARA 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50841
@@ -1419,6 +1418,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31415
 #######################
 # 📺 CNBC-E
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="cnbce.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
@@ -1447,7 +1447,6 @@ http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/97172
 #EXTINF:-1 tvg-id="universalbelgesel.tr" tvg-name="UNIVERSAL BELGESEL" tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="🖥️ TR Belgesel",UNIVERSAL BELGESEL (YEDEK)
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/97172
 
-
 #######################
 # 📺 UNIVERSAL DISCOVERY
 #######################
@@ -1460,6 +1459,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/253585
 
 #######################
 # 📺 DISCOVERY CHANNEL
+
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="discoverychannel.tr" tvg-name="DISCOVERY CHANNEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/discovery.png" group-title="🖥️ TR Belgesel",DISCOVERY CHANNEL
@@ -1468,6 +1468,9 @@ https://dsmartgo-live.ercdn.net/discoverychannel/discoverychannel.m3u8
 # 🥈 YEDEK
 #EXTINF:-1 tvg-id="discoverychannel.tr" tvg-name="DISCOVERY CHANNEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/discovery.png" group-title="🖥️ TR Belgesel",DISCOVERY CHANNEL
 https://dt-sinema.pantonum1.workers.dev/discovery.m3u8
+
+#EXTINF:-1 tvg-id="discoverychannel.tr" tvg-name="DISCOVERY CHANNEL" tvg-logo="http://logo.multicms.info/tvlogo/discoveryhd.png" group-title="🖥️ TR Belgesel",DISCOVERY CHANNEL
+https://goldvod.site/live/hpgdiscoo/123456/158.m3u8
 
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="discoverychannel.tr" tvg-name="DISCOVERY CHANNEL" tvg-logo="http://logo.multicms.info/tvlogo/discoveryhd.png" group-title="🖥️ TR Belgesel",DISCOVERY CHANNEL
@@ -1483,7 +1486,9 @@ http://65.108.239.207:80/discovery/index.m3u8
 
 #######################
 # 📺 NATIONAL GEOGRAPHIC
+https://goldvod.site/live/hpgdiscoo/123456/9953.m3u8
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="natgeo.tr" tvg-name="NATIONAL GEOGRAPHIC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeo.png" group-title="🖥️ TR Belgesel",NATIONAL GEOGRAPHIC
 https://saran-live.ercdn.net/natgeo/index.m3u8
@@ -1491,6 +1496,9 @@ https://saran-live.ercdn.net/natgeo/index.m3u8
 # 🥈 YEDEK
 #EXTINF:-1 tvg-id="natgeo.tr" tvg-name="NATIONAL GEOGRAPHIC HD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeo.png" group-title="🖥️ TR Belgesel",NATIONAL GEOGRAPHIC HD
 https://saran-live.ercdn.net/natgeohd/index.m3u8
+
+#EXTINF:-1 tvg-id="natgeo.tr" tvg-name="NATIONAL GEOGRAPHIC HD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeo.png" group-title="🖥️ TR Belgesel",NATIONAL GEOGRAPHIC HD
+https://goldvod.site/live/hpgdiscoo/123456/155.m3u8
 
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="natgeo.tr" tvg-name="NATIONAL GEOGRAPHIC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeo.png" group-title="🖥️ TR Belgesel",NATIONAL GEOGRAPHIC
@@ -1519,6 +1527,9 @@ https://saran-live.ercdn.net/natgeowild/index.m3u8
 #EXTINF:-1 tvg-id="natgeowild.tr" tvg-name="NAT GEO WILD 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeowild.png" group-title="🖥️ TR Belgesel",NAT GEO WILD
 https://dsmartgo-live.ercdn.net/natgeowild/natgeowild.m3u8
 
+#EXTINF:-1 tvg-id="natgeowild.tr" tvg-name="NAT GEO WILD HD" tvg-logo="http://logo.multicms.info/tvlogo/natgeowild.png" group-title="🖥️ TR Belgesel",NAT GEO WILD HD
+https://goldvod.site/live/hpgdiscoo/123456/820.m3u8
+
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="natgeowild.tr" tvg-name="NAT GEO WILD HD" tvg-logo="http://logo.multicms.info/tvlogo/natgeowild.png" group-title="🖥️ TR Belgesel",NAT GEO WILD HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/282
@@ -1538,6 +1549,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/282
 #######################
 # 📺 TRT BELGESEL
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-name="TRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
@@ -1549,6 +1561,9 @@ https://tv-trtbelgesel.medya.trt.com.tr/master_1440.m3u8
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-name="TRT BELGESEL HD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
 http://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
+
+#EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-name="TRT BELGESEL HD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
+https://goldvod.site/live/hpgdiscoo/123456/94.m3u8
 
 # ⭐ YEDEK 3
 #EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-name="TRT BELGESEL HD" tvg-logo="http://logo.multicms.info/tvlogo/trtbelgeselhd.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
@@ -1599,6 +1614,9 @@ https://cdn-eu.tivimivi.com/streams/119/master.m3u8
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
 http://87.121.104.29:145/dmax/stream.m3u8
 
+#EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
+https://goldvod.site/live/hpgdiscoo/123456/682.m3u8
+
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/274#/m3u/
@@ -1611,10 +1629,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/274
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX
 https://dsmartgo-live.ercdn.net/dsmartgo/dmax/dmax.isml/dmax.m3u8
 
-
 #######################
 # 📺 TLC
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
 https://cdn-eu.tivimivi.com/streams/115/master.m3u8
@@ -1635,7 +1653,6 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/14
 #EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
 https://dsmartgo-live.ercdn.net/dsmartgo/tlc/tlc.isml/tlc.m3u8
 
-
 #######################
 # 📺 HABITAT TV
 #######################
@@ -1650,9 +1667,14 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/78416
 #######################
 # 📺 LOVE NATURE
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="http://logo.multicms.info/logoslar/lovenaturehd.png" group-title="🖥️ TR Belgesel",LOVE NATURE
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50428
+
+
+#EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/lovenature.png" group-title="🖥️ TR Belgesel",LOVE NATURE
+https://goldvod.site/live/hpgdiscoo/123456/9954.m3u8
 
 # 🥈 YEDEK
 #EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/lovenature.png" group-title="🖥️ TR Belgesel",LOVE NATURE
@@ -1669,6 +1691,7 @@ https://dsmartgo-live.ercdn.net/lovenature/lovenature.m3u8
 #######################
 # 📺 TARİH TV
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARIH TV
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/140595
@@ -1687,7 +1710,9 @@ https://dsmartgo-live.ercdn.net/tarihtv/tarihtv.m3u8
 
 #######################
 # 📺 BBC EARTH
+
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC Earth HD" tvg-logo="http://logo.multicms.info/tvlogo/bbcearth.png" group-title="🖥️ TR Belgesel",BBC Earth HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/258
@@ -1711,6 +1736,7 @@ https://dsmartgo-live.ercdn.net/bbcearth/bbcearth.m3u8
 #######################
 # 📺 VIASAT HISTORY
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="http://logo.multicms.info/tvlogo/VIASAT-HISTORY.jpg" group-title="🖥️ TR Belgesel",VIASAT HISTORY
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/47970
@@ -1727,10 +1753,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/347158
 #EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY
 https://dsmartgo-live.ercdn.net/viasathistory/viasathistory.m3u8
 
-
 #######################
 # 📺 VIASAT EXPLORER
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="ViasatExplorer.tr" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="🖥️ TR Belgesel",VIASAT EXPLORER
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/234449
@@ -1743,7 +1769,6 @@ http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913161&exte
 #EXTINF:-1 tvg-id="ViasatExplorer.tr" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="🖥️ TR Belgesel",VIASAT EXPLORER 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/234449
 
-
 #######################
 # 📺 DA VINCI
 #######################
@@ -1755,10 +1780,10 @@ http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/253
 #EXTINF:-1 tvg-id="DaVinci.tr" tvg-name="DA VINCI" tvg-logo="http://logo.multicms.info/tvlogo/davincilearning.png" group-title="🖥️ TR Belgesel",DA VINCI 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/253
 
-
 #######################
 # 📺 BEIN IZ
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ HD" tvg-logo="http://logo.multicms.info/tvlogo/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/270
@@ -1767,6 +1792,9 @@ http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/270
 #EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ
 http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=1925951&extension=ts&play_token=D6FOSZ2TGR
 
+#EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ
+https://goldvod.site/live/hpgdiscoo/123456/173.m3u8
+
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/270
@@ -1774,6 +1802,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/270
 #######################
 # 📺 BEIN GURME
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="BeinGurme.tr" tvg-name="BEIN GURME HD" tvg-logo="http://logo.multicms.info/tvlogo/beingurme.png" group-title="🖥️ TR Belgesel",BEIN GURME HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/271
@@ -1786,10 +1815,10 @@ http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913165&exte
 #EXTINF:-1 tvg-id="BeinGurme.tr" tvg-name="BEIN GURME" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beingurme.png" group-title="🖥️ TR Belgesel",BEIN GURME 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/271
 
-
 #######################
 # 📺 YABAN TV
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV HD" tvg-logo="http://logo.multicms.info/tvlogo/yaban.png" group-title="🖥️ TR Belgesel",YABAN TV HD
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/15018
@@ -1797,6 +1826,9 @@ http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/15018
 # 🥈 YEDEK
 #EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV
 http://uro-levene-1012.mywire.org/index.php?id=10768&token=DeaTHLesS
+
+#EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV
+https://goldvod.site/live/hpgdiscoo/123456/447.m3u8
 
 # ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV 🌟
@@ -1806,10 +1838,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/15018
 #EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV
 http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913177&extension=ts&play_token=bIpar87N8b
 
-
 #######################
 # 📺 ÇİFTÇİ TV
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="CiftciTV.tr" tvg-name="ÇİFTÇİ TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/ciftcitv.png" group-title="🖥️ TR Belgesel",ÇİFTÇİ TV
 http://stream.taksimbilisim.com:1935/ciftcitv/smil:ciftcitv.smil/playlist.m3u8
@@ -1822,10 +1854,10 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" tvg-name="ÇİFTÇİ TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/ciftcitv.png" group-title="🖥️ TR Belgesel",ÇİFTÇİ TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 
-
 #######################
 # 📺 TGRT BELGESEL
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT BELGESEL (Resmi)" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tgrtbelgesel.png" group-title="🖥️ TR Belgesel",TGRT BELGESEL
 https://tgrt-live.ercdn.net/tgrtbelgesel/tgrtbelgesel.m3u8
@@ -1834,10 +1866,13 @@ https://tgrt-live.ercdn.net/tgrtbelgesel/tgrtbelgesel.m3u8
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tgrtbelgesel.png" group-title="🖥️ TR Belgesel",TGRT BELGESEL
 http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913178&extension=ts&play_token=sOrMUhSsqY
 
+#EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tgrtbelgesel.png" group-title="🖥️ TR Belgesel",TGRT BELGESEL
+https://goldvod.site/live/hpgdiscoo/123456/96.m3u8
 
 #######################
 # 📺 LIFE TV
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="LifeTV.tr" tvg-name="LIFE TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Discovery_Life_logo_2016.svg/960px-Discovery_Life_logo_2016.svg.png" group-title="🖥️ TR Belgesel",LIFE TV
 https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/playlist.m3u8
@@ -1846,26 +1881,26 @@ https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/playlist.m3u8
 #EXTINF:-1 tvg-id="LifeTV.tr" tvg-name="LIFE TV" tvg-logo="http://logo.multicms.info/tvlogo/lifetv.jpg" group-title="🖥️ TR Belgesel",LIFE TV
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/51093
 
-
 #######################
 # 📺 NATURE TIME
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="NatureTime.tr" tvg-name="NATURE TIME" tvg-logo="https://framerusercontent.com/images/CVIY2hHRmFpulUpKkIuIziHhvPs.png" group-title="🖥️ TR Belgesel",NATURE TIME
 https://amg00090-blueantmedia-naturetime-samsungfr-yakbf.amagi.tv/playlist/amg00090-blueantmedia-naturetime-samsungfr/playlist.m3u8
 
-
 #######################
 # 📺 CGTN BELGESEL
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="CGTNBelgesel.tr" tvg-name="CGTN BELGESEL" tvg-logo="https://i.ibb.co/s9gLmqv/cgtnch.png" group-title="🖥️ TR Belgesel",CGTN BELGESEL
 https://mn-nl.mncdn.com/doguyg_drone/cgtn/playlist.m3u8
 
-
 #######################
 # 📺 BİZİMEV TV
 #######################
+
 # 🥇 ANA
 #EXTINF:-1 tvg-id="BizimEvTV.tr" tvg-name="BİZİMEV TV" tvg-logo="https://i.imgur.com/eJa6sFY.png" group-title="🖥️ TR Belgesel",BİZİMEV TV
 http://5.178.103.239:82/yt1/s/bizimev.m3u8
