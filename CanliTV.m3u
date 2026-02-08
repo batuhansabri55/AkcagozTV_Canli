@@ -14,7 +14,7 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 https://cdn-eu.tivimivi.com/streams/121/master.m3u8
 
 # 🥈 ANA YEDEK – RESMÎ (D-Smart Go) CATCHUP AUTO
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV cat
+#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
 
 # 🥈 ANA YEDEK 2 – RESMÎ (D-Smart Go) LIVE
