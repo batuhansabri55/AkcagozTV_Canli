@@ -170,42 +170,43 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/37
 ############################
 
 # 🥇 ANA – RESMÎ (TIVIMIVI)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV
+
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV
 https://cdn-eu.tivimivi.com/streams/108/master.m3u8
 
 # 🥈 ANA YEDEK – RESMÎ (D-SMART GO) + CATCHUP AUTO
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",NOW TV ⏪⏩
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",NOW TV ⏪⏩
 https://dsmartgo-live.ercdn.net/dsmartgo/foxtv/foxtv.isml/playlist.m3u8
 
 # 🥈 ANA YEDEK 2 – RESMÎ (D-SMART GO – DİREKT PROFİL)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV
 https://dsmartgo-live.ercdn.net/dsmartgo/foxtv/foxtv.isml/foxtv.m3u8
 
 # 🥉 YEDEK – CDN (HD – 720p)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV HD
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV HD
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 
 # 🥉 YEDEK – CDN (SD)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV SD
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV SD
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 
 # 🥉 YEDEK – CDN (360p)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV 360p
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV 360p
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_360p.m3u8
 
 
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV 360
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV 360
 
 # 🚨 ACİL – PANEL (ALT)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV ALT
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV ALT
 http://95.174.71.114:80/TR-FOX/index.m3u8
 
 # 🚨 ACİL – PANEL (TOMTV)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV 
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV 
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/33
 
 # 🚨 ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="nowtv.tr" tvg-name="NOW TV" tvg-logo="https://logo.multicms.info/TVlogolar/NowTV.png" group-title="🖥️ CANLI | Ulusal",NOW TV 🌟
+#EXTINF:-1 tvg-id="NOWTV.tr@SD" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/33
 
 ############################
