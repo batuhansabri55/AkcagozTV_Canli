@@ -14,39 +14,39 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 ############################
 
 # 1. ANA – RESMÎ (Tivibu / Tivimivi)
-#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV (Tivimivi)
+#EXTINF:-1 tvg-id="ATV.tr@SD@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV (Tivimivi)
 https://cdn-eu.tivimivi.com/streams/121/master.m3u8
 
 # 2. ANA YEDEK – RESMÎ (D-Smart Go) CATCHUP AUTO
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="auto" catchup-days="7" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (Auto)
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="auto" catchup-days="7" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (Auto)
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
 
 # 3. ANA YEDEK 2 – RESMÎ (D-Smart Go) LIVE
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="live" catchup-days="7" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (Live)
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="live" catchup-days="7" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (Live)
 https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/playlist.m3u8
 
 # 4. YEDEK – CDN (FHD)
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 1080p FHD
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 1080p FHD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 
 # 5. YEDEK – CDN (HD)
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 720p HD
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 720p HD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8
 
 # 6. YEDEK – CDN (SD)
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV SD
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV SD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 
 # 7. YEDEK – CDN (DÜŞÜK)
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 360p
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 360p
 http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
 
 # 8. ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 🌟 (Premium)
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 🌟 (Premium)
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/46
 
 # 9. ACİL – ALTERNATİF PANEL
-#EXTINF:-1 tvg-id="atv.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV ALT (IP)
+#EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV ALT (IP)
 http://95.174.71.114/TR-ATV/index.m3u8
 
 
@@ -551,7 +551,7 @@ https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
 ############################
 # 📺 KIBRIS ADA TV
 ############################
-#EXTINF:-1 tvg-id="kibrisadatv.tr" tvg-name="KIBRIS ADA TV" group-title="🖥️ CANLI | Ulusal",KIBRIS ADA TV
+#EXTINF:-1 tvg-id="kibrisadATV.tr@SD" tvg-name="KIBRIS ADA TV" group-title="🖥️ CANLI | Ulusal",KIBRIS ADA TV
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314601&extension=ts
 
 
@@ -2190,7 +2190,7 @@ http://iptv.prosto.tv:7000/ch348/video.m3u8
 https://live.artidijitalmedya.com/artidijital_grt/grt1/chunks.m3u8
 #EXTINF:-1 tvg-id="mavikaradeniz.tr" tvg-name="MAVİ KARADENİZ TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgZe93uU0IH5jUI46H4EBbB9-8A6adZkw6w&s" group-title="🖥️ TR Yerel TV",MAVİ KARADENİZ TV
 https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playlist.m3u8
-#EXTINF:-1 tvg-id="fortunatv.tr" tvg-name="FORTUNA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnpQBcdzAzJYaDzseN-c8AK4NwQkM5H0V7Q&s" group-title="🖥️ TR Yerel TV",FORTUNA TV
+#EXTINF:-1 tvg-id="fortunATV.tr@SD" tvg-name="FORTUNA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnpQBcdzAzJYaDzseN-c8AK4NwQkM5H0V7Q&s" group-title="🖥️ TR Yerel TV",FORTUNA TV
 https://clvd26.socialsmart.tv/ftvturk/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="alanyaposta.tr" tvg-name="ALANYA POSTA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMh5z1V636mrUN6V6TFrc6TKNQFyGumNUmZg&s" group-title="🖥️ TR Yerel TV",ALANYA POSTA TV
 https://api-tv3.yayin.com.tr/postatv/postatv/chunklist_w187509663.m3u8
@@ -2214,7 +2214,7 @@ https://live.artidijitalmedya.com/artidijital_estv/estv/chunks.m3u8
 https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/chunklist_w1063282680_b756000.m3u8
 #EXTINF:-1 tvg-id="vangolutv.tr" tvg-name="VAN GÖLÜ TV" tvg-logo="https://yt3.googleusercontent.com/FzdGPgdmaiM6GMq6Iz59JPonIEKkVhaXYEMjwAr2IrOUXGgFDMBj9qB0ois6EFqsOW-xw5VuNa4=s900-c-k-c0x00ffffff-no-rj" group-title="🖥️ TR Yerel TV",VAN GÖLÜ TV
 https://cdn1-vangolutv.yayin.com.tr/vangolutv/amlst:vangolutv/playlist.m3u8
-#EXTINF:-1 tvg-id="viyanatv.tr" tvg-name="VİYANA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTa_uiW20w3XfO7NCjvAIGoIgNpPjsNhLsg&s" group-title="🖥️ TR Yerel TV",VİYANA TV
+#EXTINF:-1 tvg-id="viyanATV.tr@SD" tvg-name="VİYANA TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTa_uiW20w3XfO7NCjvAIGoIgNpPjsNhLsg&s" group-title="🖥️ TR Yerel TV",VİYANA TV
 http://nrttn172.kesintisizyayin.com:29010/nrttn/nrttn/playlist.m3u8
 #EXTINF:-1 tvg-id="worldturktv.tr" tvg-name="WORLD TÜRK TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7NAbCN_gNIkRi7fNHxw0Ct31GQi41Esw&s" group-title="🖥️ TR Yerel TV",WORLD TÜRK TV
 https://live.artidijitalmedya.com/artidijital_worldturk/worldturk/playlist.m3u8
@@ -2785,7 +2785,7 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
 https://tv-trtspor2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="fbtv.tr" tvg-name="FB TV" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/06bc7085-065e-473e-b4aa-ec56ed3455f5.png" group-title="🖥️ TR SPOR",FB TV
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="nbatv.tr" tvg-name="NBA TV" tvg-logo="http://logo.multicms.info/logoslar/nba.png" group-title="🖥️ TR SPOR",NBA TV
+#EXTINF:-1 tvg-id="nbATV.tr@SD" tvg-name="NBA TV" tvg-logo="http://logo.multicms.info/logoslar/nba.png" group-title="🖥️ TR SPOR",NBA TV
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/67
 #EXTINF:-1 tvg-id="tjktv.tr" tvg-name="TJK TV" tvg-logo="http://logo.multicms.info/logoslar/tjk.png" group-title="🖥️ TR SPOR",TJK TV
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/54
