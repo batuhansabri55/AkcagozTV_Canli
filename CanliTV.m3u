@@ -27,6 +27,9 @@ https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/playlist.m3u8
 #EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 1080p FHD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 
+#EXTINF:-1 tvg-id="ATV.tr@SD@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV tivi
+https://cdn-eu.tivimivi.com/streams/121/master.m3u8
+
 # 5. YEDEK – CDN (HD)
 #EXTINF:-1 tvg-id="ATV.tr@SD" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 720p HD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8
