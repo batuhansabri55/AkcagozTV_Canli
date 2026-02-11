@@ -554,7 +554,7 @@ https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
 ############################
 # 📺 KIBRIS ADA TV
 ############################
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="KIBRIS ADA TV" group-title="🖥️ CANLI | Ulusal",KIBRIS ADA TV
+#EXTINF:-1 tvg-id="kıbrısada.tr" tvg-name="KIBRIS ADA TV" group-title="🖥️ CANLI | Ulusal",KIBRIS ADA TV
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314601&extension=ts
 
 
@@ -581,10 +581,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/28
 ############################
 # 📺 ATV AVRUPA
 ############################
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV AVRUPA" group-title="🖥️ CANLI | Ulusal",ATV AVRUPA
+#EXTINF:-1 tvg-id="ATVAvrupa.tr" tvg-name="ATV AVRUPA" group-title="🖥️ CANLI | Ulusal",ATV AVRUPA
 http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=912464&extension=ts&play_token=LnNGrWvipx
 
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV AVRUPA" group-title="🖥️ CANLI | Ulusal",ATV AVRUPA Alternatif
+#EXTINF:-1 tvg-id="ATVAvrupa.tr" tvg-name="ATV AVRUPA" group-title="🖥️ CANLI | Ulusal",ATV AVRUPA Alternatif
 http://line.godofiptv.com:80/play/live.php?stream=912464&extension=ts
 
 
