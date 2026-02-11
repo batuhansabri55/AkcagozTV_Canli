@@ -989,11 +989,11 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/5
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV
+#EXTINF:-1 tvg-id="FinansTurkTV" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 
 # 🥈 YEDEK
-#EXTINF:-1 tvg-id="" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV YEDEK
+#EXTINF:-1 tvg-id="FinansTurkTV" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV YEDEK
 https://yayin30.haber100.com/live/finansturk/chunklist_w1525613919.m3u8
 
 #######################
@@ -1157,11 +1157,11 @@ http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=912900&exte
 https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
 
 # 🥈 YEDEK (HD)
-#EXTINF:-1 tvg-id="BenguturkTV.tr@SD" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK HD
+#EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK HD
 https://ensonhaber-live.ercdn.net/benguturk/benguturk_720p.m3u8
 
 # 🥉 YEDEK (SD)
-#EXTINF:-1 tvg-id="BenguturkTV.tr@SD" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK SD
+#EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK SD
 https://ensonhaber-live.ercdn.net/benguturk/benguturk_480p.m3u8
 
 # ⭐ YEDEK 3
@@ -1169,7 +1169,7 @@ https://ensonhaber-live.ercdn.net/benguturk/benguturk_480p.m3u8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/61595
 
 # 🧯 YEDEK 4 (IPTV)
-#EXTINF:-1 tvg-id="BenguturkTV.tr@SD" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber","TÜRK Alternatif
+#EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber","TÜRK Alternatif
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/61595
 
 #######################
@@ -1305,19 +1305,19 @@ https://dsmartgo-live.ercdn.net/akit/akit.m3u8
 #######################
 
 # 🥇 ANA (IPTV – FHD)
-#EXTINF:-1 tvg-id="" tvg-name="KRT TV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e8/20210903112243%21KRT_TV_logosu.png" group-title="🖥️ TR Haber",KRT TV
+#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e8/20210903112243%21KRT_TV_logosu.png" group-title="🖥️ TR Haber",KRT TV
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/15281
 
 # 🥈 YEDEK (IPTV – HD)
-#EXTINF:-1 tvg-id="" tvg-name="KRT TV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e8/20210903112243%21KRT_TV_logosu.png" group-title="🖥️ TR Haber",KRT TV HD
+#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e8/20210903112243%21KRT_TV_logosu.png" group-title="🖥️ TR Haber",KRT TV HD
 https://goldvod.site/live/hpgdiscoo/123456/220.m3u8
 
 # 🥉 YEDEK 2 (OTT)
-#EXTINF:-1 tvg-id="" tvg-name="KRT TV" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/krt-tv-logo.jpg" group-title="🖥️ TR Haber",KRT TV Alternatif
+#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/krt-tv-logo.jpg" group-title="🖥️ TR Haber",KRT TV Alternatif
 http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=912910&extension=ts&play_token=jwfkr32feu
 
 # ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="" tvg-name="KRT TV" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/krt-tv-logo.jpg" group-title="🖥️ TR Haber",KRT TV 🌟
+#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/krt-tv-logo.jpg" group-title="🖥️ TR Haber",KRT TV 🌟
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/15281
 
 #######################
