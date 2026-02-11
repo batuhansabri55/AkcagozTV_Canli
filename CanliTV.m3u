@@ -1930,6 +1930,13 @@ http://5.178.103.239:82/yt1/s/bizimev.m3u8
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",YAKINDA SINEMALARDA
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/19291
 
+
+#EXTINF:-1 tvg-id="10" tvg-name="ViziTürk Komedi" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/viziturk_komedi_TmR.png" group-title="🖥️ SINEMA 7/24", ViziTürk Komedi
+https://tv.cdn-vizi.workers.dev/?ID=10
+
+#EXTINF:-1 tvg-id="10" tvg-name="ViziTürk Komedi" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/viziturk_komedi_TmR.png" group-title="🖥️ SINEMA 7/24", ViziTürk Komedi
+https://tv.cdn-vizi.workers.dev/?ID=11
+
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN Series HD
 https://ds.ayakkabiparti.lol/bsseries1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
