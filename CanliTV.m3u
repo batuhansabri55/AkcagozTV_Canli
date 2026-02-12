@@ -270,17 +270,6 @@ https://atv-switch.huseyinakcagoz.workers.dev/ntv
 https://atv-switch.huseyinakcagoz.workers.dev/tv100
 
 
-"/tv100":[
-
-
-"https://cdn-eu.tivimivi.com/streams/116/master.m3u8",
-"https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8",
-"https://ensonhaber-live.ercdn.net/tv100/tv100_1080p.m3u8",
-"https://tv100-live.daioncdn.net/tv100/tv100_720p.m3u8",
-"https://goldvod.site/live/hpgdiscoo/123456/110.m3u8",
-"https://tv100.daioncdn.net/tv100/tv100_480p.m3u8",
-"https://dsmartgo-live.ercdn.net/tv100/tv100.m3u8",
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50939"
 
 #######################
 # 📺 HABER GLOBAL
@@ -288,38 +277,18 @@ https://atv-switch.huseyinakcagoz.workers.dev/tv100
 
 # 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL
-https://cdn-eu.tivimivi.com/streams/140/master.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/HaberGlobal.tr
 
-# 🥈 ANA YEDEK – RESMÎ CDN (1080p)
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL YEDEK
-https://haberglobal-live.daioncdn.net/haberglobal/haberglobal_1080p.m3u8
+"/HaberGlobal.tr":[
 
-# 🥈 YEDEK – ENSONHABER (720p)
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL YEDEK
-https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
-
-# 🟡 YEDEK – ALTERNATİF (GENEL)
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL YEDEK
-https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
-
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL YEDEK
-https://goldvod.site/live/hpgdiscoo/123456/113.m3u8
-
-# 🟡 YEDEK – WORKER
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL YEDEK
-https://habertino.testworker0y.workers.dev/channel/SGFiZXIgR2xvYmFs
-
-# 🟡 CATCHUP – D-SMART GO
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABER GLOBAL ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/playlist.m3u8
-
-# 🟡 CATCHUP – D-SMART GO (ALTERNATİF)
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/haberglobal.m3u8
-
-# 🚨 ACİL – PANEL
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40495
+"https://cdn-eu.tivimivi.com/streams/140/master.m3u8",
+"https://haberglobal-live.daioncdn.net/haberglobal/haberglobal_1080p.m3u8",
+"https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8",
+"https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8",
+"https://habertino.testworker0y.workers.dev/channel/SGFiZXIgR2xvYmFs",
+"https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/playlist.m3u8",
+"https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/haberglobal.m3u8",
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40495"
 
 #######################
 # 📺 ÜLKE TV
