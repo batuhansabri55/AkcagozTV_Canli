@@ -201,24 +201,19 @@ https://atv-switch.huseyinakcagoz.workers.dev/tgrteu.tr
 #EXTINF:-1 tvg-id="ShowTurk.tr" tvg-name="SHOW TÜRK" group-title="🖥️ CANLI | Ulusal",SHOW TÜRK
 https://atv-switch.huseyinakcagoz.workers.dev/ShowTurk.tr
 
-  "ShowTurk.tr":[
-
-"https://mn-nl.mncdn.com/doguyg_eurostar/live_1080p3000000kbps/index.m3u8",
-"https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/estar.m3u8",
-"https://tgrt-live.ercdn.net/tgrteu/tgrteu.m3u8"
-
-
-https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8
-
-#EXTINF:-1 tvg-id="ShowTurk.tr" tvg-name="SHOW TÜRK" group-title="🖥️ CANLI | Ulusal",SHOW TÜRK Alternatif
-https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8
-
-#EXTINF:-1 tvg-id="ShowTurk.tr" tvg-name="SHOW TÜRK" group-title="🖥️ CANLI | Ulusal",SHOW TÜRK Alternatif
-https://goldvod.site/live/hpgdiscoo/123456/9516.m3u8
+  
 ############################
 # 📺 KANAL 7 AVRUPA
 ############################
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA
+
+"ShowTurk.tr":[
+
+
+"https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8",
+"https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8",
+"https://goldvod.site/live/hpgdiscoo/123456/9516.m3u8"
+
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA Alternatif
