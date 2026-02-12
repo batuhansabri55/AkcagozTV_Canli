@@ -188,34 +188,25 @@ https://atv-switch.huseyinakcagoz.workers.dev/EuroD.tr
 
 
 ############################
-# 📺 EURO STAR
-############################
-#EXTINF:-1 tvg-id="EuroStar.tr" tvg-name="EURO STAR" group-title="🖥️ CANLI | Ulusal",EURO STAR
-https://atv-switch.huseyinakcagoz.workers.dev/EuroStar.tr
-
-
-############################
 # 📺 TGRT EU
 ############################
 #EXTINF:-1 tvg-id="TGRTEU.tr" tvg-name="TGRT EU" group-title="🖥️ CANLI | Ulusal",TGRT EU
+https://atv-switch.huseyinakcagoz.workers.dev/TGRTEU.tr
 
-  "EuroStar.tr":[
-
-
-
-"https://mn-nl.mncdn.com/doguyg_eurostar/live_1080p3000000kbps/index.m3u8",
-"https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/estar.m3u8"
-
-
-https://tgrt-live.ercdn.net/tgrteu/tgrteu.m3u8
-
-#EXTINF:-1 tvg-id="TGRTEU.tr" tvg-name="TGRT EU" group-title="🖥️ CANLI | Ulusal",TGRT EU
-https://goldvod.site/live/hpgdiscoo/123456/63.m3u8
 
 ############################
 # 📺 SHOW TÜRK
 ############################
 #EXTINF:-1 tvg-id="ShowTurk.tr" tvg-name="SHOW TÜRK" group-title="🖥️ CANLI | Ulusal",SHOW TÜRK
+
+
+  "TGRTEU.tr":[
+
+"https://mn-nl.mncdn.com/doguyg_eurostar/live_1080p3000000kbps/index.m3u8",
+"https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/estar.m3u8",
+"https://tgrt-live.ercdn.net/tgrteu/tgrteu.m3u8"
+
+
 https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8
 
 #EXTINF:-1 tvg-id="ShowTurk.tr" tvg-name="SHOW TÜRK" group-title="🖥️ CANLI | Ulusal",SHOW TÜRK Alternatif
