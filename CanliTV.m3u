@@ -85,31 +85,7 @@ https://atv-switch.huseyinakcagoz.workers.dev/BeyazTV.tr
 
 # 🥇 ANA – RESMÎ CDN (1080p)
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7
-https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-
-# 🥈 ANA YEDEK – RESMÎ CDN (Alternatif 1080p)
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7
-https://kanal7.daioncdn.net/kanal7/kanal7_1080p.m3u8?&sid=83w827nps8w4&app=f99587ad-1637-494d-8255-da35b09d17a1&ce=3
-
-# 🥈 ANA YEDEK – D-SMART GO (CATCHUP AUTO)
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL 7 ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/kanal7/kanal7.isml/playlist.m3u8
-
-# 🥉 YEDEK – D-SMART GO (LIVE)
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7
-https://dsmartgo-live.ercdn.net/dsmartgo/kanal7/kanal7.isml/kanal7.m3u8
-
-# 🟡 YEDEK – PANEL (FHD)
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 PANEL
-https://goldvod.site/live/hpgdiscoo/123456/512.m3u8
-
-# 🟡 YEDEK – PANEL (HD)
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 PANEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50845
-
-# 🚨 ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/22
+https://atv-switch.huseyinakcagoz.workers.dev/Kanal7.tr
 
 ############################
 # 📺 TEVE 2 (OPTİMİZE)
