@@ -15,7 +15,7 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 
 # 1. ANA – RESMÎ (Tivibu / Tivimivi)
 
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV TEST
+#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 
 https://atv-switch.huseyinakcagoz.workers.dev/atv
 
 
@@ -23,7 +23,7 @@ https://atv-switch.huseyinakcagoz.workers.dev/atv
 # 📺 KANAL D (OPTİMİZE)
 ############################
 
-#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩ (AUTO)
+#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D 
 https://atv-switch.huseyinakcagoz.workers.dev/kanald
 
 
@@ -34,6 +34,16 @@ https://atv-switch.huseyinakcagoz.workers.dev/kanald
 # 🥇 ANA – RESMÎ (DYG DIGITAL / PUHU TV)
 #EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV" tvg-logo="http://logo.multicms.info/logoslar/star.png" group-title="🖥️ CANLI | Ulusal",STAR TV
 https://atv-switch.huseyinakcagoz.workers.dev/star
+
+
+
+############################
+# 📺 SHOW TV (OPTİMİZE)
+############################
+
+# 🥇 ANA – RESMÎ (CİNER / DAION CDN) FHD
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV
+https://atv-switch.huseyinakcagoz.workers.dev/show
 
 ############################
 # 📺 NOW TV (OPTİMİZE)
