@@ -16,7 +16,8 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 # 1. ANA – RESMÎ (Tivibu / Tivimivi)
 
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV TEST
-https://atv-switch.huseyinakcagoz.workers.dev/
+https://atv-switch.huseyinakcagoz.workers.dev/atv
+
 
 
 ############################
@@ -24,7 +25,8 @@ https://atv-switch.huseyinakcagoz.workers.dev/
 ############################
 
 #EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩ (AUTO)
-https://atv-switch.huseyinakcagoz.workers.dev/
+https://atv-switch.huseyinakcagoz.workers.dev/kanald
+
 
 ############################
 # 📺 STAR TV (OPTİMİZE)
