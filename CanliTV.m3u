@@ -206,41 +206,39 @@ https://atv-switch.huseyinakcagoz.workers.dev/ShowTurk.tr
 # 📺 KANAL 7 AVRUPA
 ############################
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA
+https://atv-switch.huseyinakcagoz.workers.dev/Kanal7.tr
 
-"ShowTurk.tr":[
-
-
-"https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8",
-"https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8",
-"https://goldvod.site/live/hpgdiscoo/123456/9516.m3u8"
-
-https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
-
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA Alternatif
-http://line.liveott.ru:80/play/live.php?stream=912465&extension=ts
-
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA Alternatif
-https://goldvod.site/live/hpgdiscoo/123456/7.m3u8
 
 ############################
 # 📺 DİĞER KANALLAR
 ############################
 #EXTINF:-1 tvg-id="TV4.tr" tvg-name="TV4" group-title="🖥️ CANLI | Ulusal",TV4
-http://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/TV4.tr
 
-#EXTINF:-1 tvg-id="TV4.tr" tvg-name="TV4" group-title="🖥️ CANLI | Ulusal",TV4
-http://0802domain9.xyz:8880/play/link/a39d04af-a774-492b-8e61-7ebc64e9eebf/eyJpdiI6Ino2V2RzRkJDL1FwSVZ1d2MwM2M4cHc9PSIsInZhbHVlIjoiSi9jbVY0dW1mQUxNZ1Y3NmNRaVkxcmRBbkZQSTB1cGE4SFg3SEpoZ2szZ1dsVWlrSHQvNzRMWWw4OU9wMUUwRCIsIm1hYyI6ImIxZjYxMzQxYzhhMzZkY2EzY2I1MGE5M2Q3MGEyOGY5ZTU2ZjI3NzUzMGZlNDNkMzc0YTU1NzViMDEzZWYzYmIiLCJ0YWciOiIifQ==.m3u?useIntId=0
+#EXTINF:-1 tvg-id="BIR TV" tvg-name="BIR TV" tvg-logo="https://www.birtv.tv/assets/upload/637f83951df60.png.webp" group-title="🖥️ CANLI | Ulusal",BIR TV
+https://atv-switch.huseyinakcagoz.workers.dev/BIR TV
 
-
-
-#EXTINF:-1 tvg-id="" tvg-name="BIR TV" tvg-logo="https://www.birtv.tv/assets/upload/637f83951df60.png.webp" group-title="🖥️ CANLI | Ulusal",BIR TV
-https://edge.socialsmart.tv/birtv/bant1/chunks.m3u8
 
 #EXTINF:-1 tvg-id="saglikchannel.tr" tvg-name="SAGLIK CHANNEL" group-title="🖥️ CANLI | Ulusal",SAGLIK CHANNEL
-https://live.euromediacenter.com/saglikchannel/tracks-v1a1/mono.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/saglikchannel.tr"
 
-#EXTINF:-1 tvg-id="" tvg-name="ONS TV" tvg-logo="https://onstv.com.tr/images/gallery/uploaded/2/onstv-logo.png" group-title="🖥️ CANLI | Ulusal",ONS TV
-https://cdn-onstv.yayin.com.tr/onstv/index.m3u8
+#EXTINF:-1 tvg-id="ONS TV" tvg-name="ONS TV" tvg-logo="https://onstv.com.tr/images/gallery/uploaded/2/onstv-logo.png" group-title="🖥️ CANLI | Ulusal",ONS TV
+https://atv-switch.huseyinakcagoz.workers.dev/ONS TV
+
+############################
+# 📺 KIBRIS ADA TV
+############################
+
+#EXTINF:-1 tvg-id="kıbrısada.tr" tvg-name="KIBRIS ADA TV" group-title="🖥️ CANLI | Ulusal",KIBRIS ADA TV
+https://atv-switch.huseyinakcagoz.workers.dev/kıbrısada.tr
+
+
+
+############################
+# 📺 KIBRIS KANAL T
+############################
+#EXTINF:-1 tvg-id="KanalT.tr" tvg-name="KIBRIS KANAL T" group-title="🖥️ CANLI | Ulusal",KIBRIS KANAL T
+https://atv-switch.huseyinakcagoz.workers.dev/KanalT.tr
 
 
 
