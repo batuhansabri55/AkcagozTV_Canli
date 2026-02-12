@@ -110,23 +110,8 @@ https://atv-switch.huseyinakcagoz.workers.dev/A2TV.tr
 
 # 🥇 ANA – RESMÎ CDN (1080p)
 #EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV
-https://turkmedya-live.ercdn.net/tv360/tv360_1080p.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/360TV.tr
 
-# 🥈 ANA YEDEK – D-SMART GO (CATCHUP AUTO)
-#EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",360 TV ⏪⏩
-https://dsmartgo-live.ercdn.net/360/360.m3u8
-
-# 🥉 YEDEK – RESMÎ CDN (HD)
-#EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV
-https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
-
-# 🟡 YEDEK – PANEL (HD)
-#EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV PANEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/16
-
-# 🚨 ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/16
 
 ############################
 # 📺 TRT 1 (OPTİMİZE)
@@ -134,34 +119,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/16
 
 # 🥇 ANA – RESMÎ TRT (2K / 1440p)
 #EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1
-https://tv-trt1.medya.trt.com.tr/master_1440.m3u8
-
-# 🥈 ANA YEDEK – RESMÎ TRT (1080p)
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1
-https://tv-trt1.medya.trt.com.tr/master_1080.m3u8
-
-# 🥉 YEDEK – RESMÎ TRT (720p)
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1
-https://tv-trt1.medya.trt.com.tr/master_720.m3u8
-
-# 🥈 ANA YEDEK – TIVIMIVI (HD)
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1
-https://cdn-eu.tivimivi.com/streams/105/master.m3u8
-
-# 🟡 YEDEK – D-SMART GO (LIVE)
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/trt1/trt1.isml/trt1.m3u8
-
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 PANEL
-https://goldvod.site/live/hpgdiscoo/123456/9513.m3u8
-
-# 🟡 YEDEK – PANEL (FHD)
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 PANEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/337667
-
-# 🚨 ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/51
+https://atv-switch.huseyinakcagoz.workers.dev/TRT1.tr
 
 ############################
 # 📺 TRT 2 (OPTİMİZE)
@@ -169,26 +127,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/51
 
 # 🥇 ANA – RESMÎ TRT CDN
 #EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2
-https://tv-trt2.medya.trt.com.tr/master.m3u8
-
-# 🥈 ANA YEDEK – RESMÎ ALTERNATİF CDN
-#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2
-https://trn03.tulix.tv/gt-trt2/playlist.m3u8
-
-# 🟡 YEDEK – D-SMART GO (LIVE)
-#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2 ⏪⏩
-https://dsmartgo-live.ercdn.net/dsmartgo/trt2/trt2.isml/trt2.m3u8
-
-#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2 PANEL
-https://goldvod.site/live/hpgdiscoo/123456/124.m3u8
-
-# 🟡 YEDEK – PANEL (HD)
-#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2 PANEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/40980
-
-# 🚨 ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40980
+https://atv-switch.huseyinakcagoz.workers.dev/TRT2.tr
 
 ############################
 # 📺 GZT TV (OPTİMİZE)
@@ -196,15 +135,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40980
 
 # 🥇 ANA – RESMÎ CDN (MNCDN)
 #EXTINF:-1 tvg-id="GZT.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" group-title="🖥️ CANLI | Ulusal",GZT TV
-https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/GZT.tr
 
-# 🥈 ANA YEDEK – RESMÎ CDN (Chunklist)
-#EXTINF:-1 tvg-id="GZT.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" group-title="🖥️ CANLI | Ulusal",GZT TV
-https://mn-nl.mncdn.com/gzttv/gzttv/chunklist.m3u8
-
-# 🟡 YEDEK – D-SMART GO (CATCHUP AUTO)
-#EXTINF:-1 tvg-id="GZT.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",GZT TV ⏪⏩
-https://dsmartgo-live.ercdn.net/gzt/gzt.m3u8
 
 ############################
 # 📺 TRT TÜRK (OPTİMİZE)
@@ -212,41 +144,21 @@ https://dsmartgo-live.ercdn.net/gzt/gzt.m3u8
 
 # 🥇 ANA – RESMÎ TRT CDN
 #EXTINF:-1 tvg-id="TRTTurk.tr" tvg-name="TRT TÜRK" tvg-logo="https://logo.multicms.info/tvlogo/trtturk.png" group-title="🖥️ CANLI | Ulusal",TRT TÜRK
-https://tv-trtturk.medya.trt.com.tr/master.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/TRTTurk.tr
 
-# 🥈 ANA YEDEK – ALTERNATİF CDN
-#EXTINF:-1 tvg-id="TRTTurk.tr" tvg-name="TRT TÜRK" tvg-logo="https://logo.multicms.info/tvlogo/trtturk.png" group-title="🖥️ CANLI | Ulusal",TRT TÜRK
-https://streams.uzunmuhalefet.com/stream/d8fcd134-0f23-4883-ae8f-4c04cc3cc49a.m3u8
-
-# 🟡 YEDEK – PANEL (HD)
-#EXTINF:-1 tvg-id="TRTTurk.tr" tvg-name="TRT TÜRK" tvg-logo="https://logo.multicms.info/tvlogo/trtturk.png" group-title="🖥️ CANLI | Ulusal",TRT TÜRK PANEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/234447
-
-# 🚨 ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="TRTTurk.tr" tvg-name="TRT TÜRK" tvg-logo="https://logo.multicms.info/tvlogo/trtturk.png" group-title="🖥️ CANLI | Ulusal",TRT TÜRK 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/234447
-
-############################
-# 📺 KARMA ULUSAL KANALLAR (TEK LİSTE)
-############################
 
 ############################
 # 📺 TRT EBA
 ############################
 #EXTINF:-1 tvg-id="TRTEBA.tr" tvg-name="TRT EBA" group-title="🖥️ CANLI | Ulusal",TRT EBA
-http://uro-levene-1012.mywire.org/index.php?id=314597&token=DeaTHLesS
+https://atv-switch.huseyinakcagoz.workers.dev/TRTEBA.tr
 
-#EXTINF:-1 tvg-id="TRTEBA.tr" tvg-name="TRT EBA" group-title="🖥️ CANLI | Ulusal",TRT EBA
-https://goldvod.site/live/hpgdiscoo/123456/78.m3u8
 
 ############################
 # 📺 TABII TV
 ############################
-#EXTINF:-1 tvg-id="" tvg-name="TABII TV" group-title="🖥️ CANLI | Ulusal",TABII TV FHD
-https://ceokzokgtd.erbvr.com/tabiitv/tabiitv_1080p.m3u8
-
-#EXTINF:-1 tvg-id="" tvg-name="TABII TV" tvg-logo="https://egirisim.com/wp-content/uploads/2023/05/trt-tabii.png" group-title="🖥️ CANLI | Ulusal",TABII TV
-https://ceokzokgtd.erbvr.com/tabiitv/tabiitv.m3u8
+#EXTINF:-1 tvg-id="TABII TV" tvg-name="TABII TV" group-title="🖥️ CANLI | Ulusal",TABII TV FHD  
+https://atv-switch.huseyinakcagoz.workers.dev/TABII TV
 
 
 ############################
@@ -254,72 +166,70 @@ https://ceokzokgtd.erbvr.com/tabiitv/tabiitv.m3u8
 ############################
 
 #EXTINF:-1 tvg-id="tiviturk.tr" tvg-name="TIVI TÜRK" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhR9TBSKSKuGW1BMl8ESZDU2ejc4IN7JFvhg&s" group-title="🖥️ CANLI | Ulusal",TIVI TÜRK
-https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/tiviturk.tr
+
+
 
 
 ############################
 # 📺 KIBRIS ADA TV
 ############################
+
 #EXTINF:-1 tvg-id="kıbrısada.tr" tvg-name="KIBRIS ADA TV" group-title="🖥️ CANLI | Ulusal",KIBRIS ADA TV
-http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314601&extension=ts
+https://atv-switch.huseyinakcagoz.workers.dev/kıbrısada.tr
+
 
 
 ############################
 # 📺 KIBRIS KANAL T
 ############################
-#EXTINF:-1 tvg-id="KanalT.tr" tvg-name="KIBRIS KANAL T" group-title="🖥️ CANLI | Ulusal",KIBRIS KANAL T
-http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314602&extension=ts
+#EXTINF:-1 tvg-id="KIBRIS KANAL T" tvg-name="KIBRIS KANAL T" group-title="🖥️ CANLI | Ulusal",KIBRIS KANAL T
+https://atv-switch.huseyinakcagoz.workers.dev/KIBRIS KANAL T
+
 
 
 ############################
 # 📺 TV 8.5
 ############################
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8.5" group-title="🖥️ CANLI | Ulusal",TV 8.5 FHD
-https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web
+#EXTINF:-1 tvg-id="TV 8.5.tr" tvg-name="TV 8.5" group-title="🖥️ CANLI | Ulusal",TV 8.5 FHD
+https://atv-switch.huseyinakcagoz.workers.dev/TV 8.5.tr
 
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8.5" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV 8.5 ⏪⏩
-https://dsmartgo-live.ercdn.net/tv8_5/tv8_5.m3u8
-
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8.5" group-title="🖥️ CANLI | Ulusal",TV 8.5 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/28
 
 
 ############################
 # 📺 ATV AVRUPA
 ############################
 #EXTINF:-1 tvg-id="ATVAvrupa.tr" tvg-name="ATV AVRUPA" group-title="🖥️ CANLI | Ulusal",ATV AVRUPA
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=912464&extension=ts&play_token=LnNGrWvipx
-
-#EXTINF:-1 tvg-id="ATVAvrupa.tr" tvg-name="ATV AVRUPA" group-title="🖥️ CANLI | Ulusal",ATV AVRUPA Alternatif
-http://line.godofiptv.com:80/play/live.php?stream=912464&extension=ts
+https://atv-switch.huseyinakcagoz.workers.dev/ATVAvrupa.tr
 
 
 ############################
 # 📺 EURO D
 ############################
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EURO D" group-title="🖥️ CANLI | Ulusal",EURO D
-https://viamotionhsi.netplus.ch/live/eds/eurod/browser-HLS8/eurod.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/EuroD.tr
 
-#EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EURO D" group-title="🖥️ CANLI | Ulusal",EURO D 
-https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/track_4_1000/playlist.m3u8
-
-#EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EURO D" group-title="🖥️ CANLI | Ulusal",EURO D Alternatif
-https://goldvod.site/live/hpgdiscoo/123456/14.m3u8
 
 ############################
 # 📺 EURO STAR
 ############################
 #EXTINF:-1 tvg-id="EuroStar.tr" tvg-name="EURO STAR" group-title="🖥️ CANLI | Ulusal",EURO STAR
-https://mn-nl.mncdn.com/doguyg_eurostar/live_1080p3000000kbps/index.m3u8
-
-#EXTINF:-1 tvg-id="EuroStar.tr" tvg-name="EURO STAR" group-title="🖥️ CANLI | Ulusal",EURO STAR Alternatif
-https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/estar.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/EuroStar.tr
 
 
 ############################
 # 📺 TGRT EU
 ############################
 #EXTINF:-1 tvg-id="TGRTEU.tr" tvg-name="TGRT EU" group-title="🖥️ CANLI | Ulusal",TGRT EU
+
+  "EuroStar.tr":[
+
+
+
+"https://mn-nl.mncdn.com/doguyg_eurostar/live_1080p3000000kbps/index.m3u8",
+"https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/estar.m3u8"
+
+
 https://tgrt-live.ercdn.net/tgrteu/tgrteu.m3u8
 
 #EXTINF:-1 tvg-id="TGRTEU.tr" tvg-name="TGRT EU" group-title="🖥️ CANLI | Ulusal",TGRT EU
