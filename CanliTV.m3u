@@ -36,7 +36,6 @@ https://atv-switch.huseyinakcagoz.workers.dev/kanald
 https://atv-switch.huseyinakcagoz.workers.dev/star
 
 
-
 ############################
 # 📺 SHOW TV (OPTİMİZE)
 ############################
@@ -231,23 +230,8 @@ https://dsmartgo-live.ercdn.net/habermozaik/habermozaik.m3u8
 
 # 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" group-title="🖥️ TR Haber",SÖZCÜ TV
-https://cdn-eu.tivimivi.com/streams/117/master.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/SozcuTV.tr
 
-# 🥈 ANA YEDEK – D-SMART GO (CATCHUP AUTO)
-#EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",SÖZCÜ TV ⏪⏩
-https://dsmartgo-live.ercdn.net/sozcutv/sozcutv.m3u8
-
-# 🟡 YEDEK 1 – CDN
-#EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" group-title="🖥️ TR Haber",SÖZCÜ TV YEDEK
-http://65.108.239.207:80/sozcutv/index.m3u8
-
-# 🟡 YEDEK 2 – Alternatif CDN
-#EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" group-title="🖥️ TR Haber",SÖZCÜ TV YEDEK
-http://65.108.239.207/sozcutv/tracks-v1a1/mono.ts.m3u8
-
-# 🚨 ACİL – PANEL
-#EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" group-title="🖥️ TR Haber",SÖZCÜ TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232355
 
 #######################
 # 📺 CNN TÜRK
@@ -255,6 +239,15 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232355
 
 # 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="CNNTurk.tr" tvg-name="CNN TÜRK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TÜRK
+
+"/SozcuTV.tr":[
+"https://cdn-eu.tivimivi.com/streams/117/master.m3u8",
+"https://dsmartgo-live.ercdn.net/sozcutv/sozcutv.m3u8",
+"http://65.108.239.207:80/sozcutv/index.m3u8",
+"http://65.108.239.207/sozcutv/tracks-v1a1/mono.ts.m3u8",
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232355"
+
+
 https://cdn-eu.tivimivi.com/streams/114/master.m3u8
 
 # 🥈 ANA YEDEK – D-SMART GO (CATCHUP AUTO)
