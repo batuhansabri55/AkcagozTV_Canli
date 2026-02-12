@@ -190,17 +190,18 @@ https://atv-switch.huseyinakcagoz.workers.dev/EuroD.tr
 ############################
 # 📺 TGRT EU
 ############################
-#EXTINF:-1 tvg-id="TGRTEU.tr" tvg-name="TGRT EU" group-title="🖥️ CANLI | Ulusal",TGRT EU
-https://atv-switch.huseyinakcagoz.workers.dev/TGRTEU.tr
+#EXTINF:-1 tvg-id="tgrteu.tr" tvg-name="TGRT EU" group-title="🖥️ CANLI | Ulusal",TGRT EU
+https://atv-switch.huseyinakcagoz.workers.dev/tgrteu.tr
+
 
 
 ############################
 # 📺 SHOW TÜRK
 ############################
 #EXTINF:-1 tvg-id="ShowTurk.tr" tvg-name="SHOW TÜRK" group-title="🖥️ CANLI | Ulusal",SHOW TÜRK
+https://atv-switch.huseyinakcagoz.workers.dev/ShowTurk.tr
 
-
-  "TGRTEU.tr":[
+  "ShowTurk.tr":[
 
 "https://mn-nl.mncdn.com/doguyg_eurostar/live_1080p3000000kbps/index.m3u8",
 "https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/estar.m3u8",
