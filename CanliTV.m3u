@@ -101,26 +101,8 @@ https://atv-switch.huseyinakcagoz.workers.dev/Teve2.tr
 
 # 🥇 ANA – RESMÎ CDN (1080p)
 #EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/A2TV.tr
 
-# 🥈 ANA YEDEK – D-SMART GO (CATCHUP AUTO)
-#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",A2 ⏪⏩
-https://dsmartgo-live.ercdn.net/a2/a2.m3u8
-
-# 🥉 YEDEK – PANEL (HD)
-#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2 PANEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/9
-
-#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2 PANEL
-https://goldvod.site/live/hpgdiscoo/123456/492.m3u8
-
-# 🟡 YEDEK – ALTERNATİF CDN
-#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2
-http://89.187.191.41/A2--TR/video.m3u8
-
-# 🚨 ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/9
 
 ############################
 # 📺 360 TV (OPTİMİZE)
