@@ -15,41 +15,8 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 
 # 1. ANA – RESMÎ (Tivibu / Tivimivi)
 
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV Tivibu
-https://cdn-eu.tivimivi.com/streams/121/master.m3u8
-
-
-# 2. ANA YEDEK – RESMÎ (D-Smart Go) CATCHUP AUTO
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="auto" catchup-days="7" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (Auto)
-https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
-
-# 3. ANA YEDEK 2 – RESMÎ (D-Smart Go) LIVE
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="live" catchup-days="7" group-title="🖥️ CANLI | Ulusal",ATV ⏪⏩ (Live)
-https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/playlist.m3u8
-
-# 4. YEDEK – CDN (FHD)
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 1080p FHD
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
-
-# 5. YEDEK – CDN (HD)
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 720p HD
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8
-
-# 6. YEDEK – CDN (SD)
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV SD
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
-
-# 7. YEDEK – CDN (DÜŞÜK)
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 360p
-http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
-
-# 8. ACİL – PANEL (🌟)
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV 🌟 (Premium)
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/46
-
-# 9. ACİL – ALTERNATİF PANEL
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV ALT (IP)
-http://95.174.71.114/TR-ATV/index.m3u8
+#EXTINF:-1 tvg-name="ATV AUTO",ATV AUTO
+https://atv-switch.huseyinakcagoz.workers.dev/
 
 
 ############################
