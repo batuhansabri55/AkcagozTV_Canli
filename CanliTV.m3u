@@ -667,7 +667,7 @@ https://dsmartgo-live.ercdn.net/trtbelgesel/trtbelgesel.m3u8
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID | A
-ttps://atv-switch.huseyinakcagoz.workers.dev/DiscoveryID.tr
+https://atv-switch.huseyinakcagoz.workers.dev/DiscoveryID.tr
 
 # ⏪⏩ YEDEK 3
 #EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID | B
@@ -678,44 +678,23 @@ https://dsmartgo-live.ercdn.net/discoveryscience/discoveryscience.m3u8
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX | A
-ttps://atv-switch.huseyinakcagoz.workers.dev/DMAX.tr
+https://atv-switch.huseyinakcagoz.workers.dev/DMAX.tr
 
 # ⏪⏩ YEDEK 4
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX | B
 https://dsmartgo-live.ercdn.net/dsmartgo/dmax/dmax.isml/dmax.m3u8
-
-
-"/DMAX.tr":[
-
-"https://cdn-eu.tivimivi.com/streams/119/master.m3u8
-"http://87.121.104.29:145/dmax/stream.m3u8
-"https://goldvod.site/live/hpgdiscoo/123456/682.m3u8
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/274#/m3u/
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/274"
-
 
 #######################
 # 📺 TLC
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
-https://cdn-eu.tivimivi.com/streams/115/master.m3u8
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC | A
+https://atv-switch.huseyinakcagoz.workers.dev/TLC.tr
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/14
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
-https://belgeselpatr0n.testworker0y.workers.dev/channel/VExD
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/14
 
 # ⏪⏩ YEDEK 4
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC | B
 https://dsmartgo-live.ercdn.net/dsmartgo/tlc/tlc.isml/tlc.m3u8
 
 #######################
@@ -723,6 +702,14 @@ https://dsmartgo-live.ercdn.net/dsmartgo/tlc/tlc.isml/tlc.m3u8
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="habitat.tr" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="🖥️ TR Belgesel",HABITAT TV
+
+
+"/TLC.tr":[
+"https://cdn-eu.tivimivi.com/streams/115/master.m3u8",
+"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/14",
+"https://belgeselpatr0n.testworker0y.workers.dev/channel/VExD",
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/14"
+
 http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/78416
 
 # 🥈 YEDEK
