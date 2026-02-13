@@ -445,48 +445,18 @@ https://dsmartgo-live.ercdn.net/tgrthaber/tgrthaber.m3u8
 https://atv-switch.huseyinakcagoz.workers.dev/24TV.tr
 
 
-
-
-
-"/24TV.tr":[
-
-
-
-
-"https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8",
-"https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8",
-"https://tv.ensonhaber.com/tv24/tv24.m3u8",
-"https://goldvod.site/live/hpgdiscoo/123456/112.m3u8",
-"https://ensonhaber-live.ercdn.net/tv24/tv24_360p.m3u8",
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/142",
-"https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/chunklist_b596000.m3u8"
-
 #######################
 # 📺 TELE 1
 #######################
 
 # 🥇 ANA (FHD – Resmi)
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" group-title="🖥️ TR Haber",TELE 1
-https://tele1-live.ercdn.net/tele1/tele1_1080p.m3u8
-
-# 🥈 YEDEK (HD)
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" group-title="🖥️ TR Haber",TELE 1 HD
-https://tele1-live.ercdn.net/tele1/tele1.m3u8
+#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" group-title="🖥️ TR Haber",TELE 1 | A
+https://atv-switch.huseyinakcagoz.workers.dev/Tele1.tr
 
 # 🥉 YEDEK 2 (Catchup)
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TELE 1 ⏪⏩
+#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TELE 1 | B
 https://dsmartgo-live.ercdn.net/tele1/tele1.m3u8
 
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" group-title="🖥️ TR Haber",TELE 1 HD
-https://goldvod.site/live/hpgdiscoo/123456/107.m3u8
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" group-title="🖥️ TR Haber",TELE 1 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/121
-
-# 🧯 YEDEK 4 (IPTV)
-#EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" group-title="🖥️ TR Haber",TELE 1 Alternatif
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/121
 
 #######################
 # 📺 TURKHABER
@@ -494,11 +464,7 @@ http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/121
 
 # 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="turkhaber.tr" tvg-name="TURKHABER" tvg-logo="https://yt3.googleusercontent.com/TkjQwYKxYt1dPs3fo0Z2Doai5cXIMZQdrNvyyf96YMfB5CLnaaDtkDxdVYq5-itbEwzxfC2gFw=s900-c-k-c0x00ffffff-no-rj" group-title="🖥️ TR Haber",TURKHABER
-https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="turkhaber.tr" tvg-name="TURKHABER" tvg-logo="https://yt3.googleusercontent.com/TkjQwYKxYt1dPs3fo0Z2Doai5cXIMZQdrNvyyf96YMfB5CLnaaDtkDxdVYq5-itbEwzxfC2gFw=s900-c-k-c0x00ffffff-no-rj" group-title="🖥️ TR Haber",TURKHABER Alternatif
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=912900&extension=ts
+https://atv-switch.huseyinakcagoz.workers.dev/turkhaber.tr
 
 
 #######################
