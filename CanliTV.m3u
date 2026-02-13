@@ -9,12 +9,6 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 # 📺 ATV (OPTİMİZE)
 ###########################
 
-############################
-# 📺 ATV (9 FARKLI KAYNAK)
-############################
-
-# 1. ANA – RESMÎ (Tivibu / Tivimivi)
-
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV | A
 https://atv-switch.huseyinakcagoz.workers.dev/atv
 
@@ -35,19 +29,16 @@ https://dsmartgo-live.ercdn.net/dsmartgo/kanald/kanald.isml/kanald.m3u8
 # 📺 STAR TV (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ (DYG DIGITAL / PUHU TV)
 #EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV" tvg-logo="http://logo.multicms.info/logoslar/star.png" group-title="🖥️ CANLI | Ulusal",STAR TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/star
 
 #EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV" tvg-logo="http://logo.multicms.info/logoslar/star.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",STAR TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/star/star.isml/playlist.m3u8
 
-
 ############################
 # 📺 SHOW TV (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ (CİNER / DAION CDN) FHD
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/show
 
@@ -58,20 +49,16 @@ https://dsmartgo-live.ercdn.net/dsmartgo/showtv/showtv.isml/showtv.m3u8
 # 📺 NOW TV (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ (TIVIMIVI)
-
 #EXTINF:-1 tvg-id="NOWTV.tr" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/now
 
 #EXTINF:-1 tvg-id="NOWTV.tr" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",NOW TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/foxtv/foxtv.isml/playlist.m3u8
 
-
 ############################
 # 📺 TV8 (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ (TV8 / DAION CDN) FHD
 #EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal",TV8 | A
 https://atv-switch.huseyinakcagoz.workers.dev/tv8
 
@@ -82,43 +69,36 @@ https://dsmartgo-live.ercdn.net/dsmartgo/tv8/tv8.isml/playlist.m3u8
 # 📺 SHOW MAX (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ (TIVIMIVI)
 #EXTINF:-1 tvg-id="ShowMax.tr" tvg-name="SHOW MAX" tvg-logo="https://i.imgur.com/456FWA7.png" group-title="🖥️ CANLI | Ulusal",SHOW MAX  | A
 https://atv-switch.huseyinakcagoz.workers.dev/ShowMax.tr
 
 #EXTINF:-1 tvg-id="ShowMax.tr" tvg-name="SHOW MAX" tvg-logo="https://i.imgur.com/456FWA7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",SHOW MAX | B
 https://dsmartgo-live.ercdn.net/showmax/showmax.m3u8
 
-
 ############################
 # 📺 BEYAZ TV (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ CDN (1080p)
 #EXTINF:-1 tvg-id="BeyazTV.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/BeyazTV.tr
 
 #EXTINF:-1 tvg-id="BeyazTV.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",BEYAZ TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/beyaztv/beyaztv.isml/playlist.m3u8
 
-
 ############################
 # 📺 KANAL 7 (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ CDN (1080p)
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 | A
 https://atv-switch.huseyinakcagoz.workers.dev/Kanal7.tr
 
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL 7 | B
 https://dsmartgo-live.ercdn.net/dsmartgo/kanal7/kanal7.isml/playlist.m3u8
 
-
 ############################
 # 📺 TEVE 2 (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ YAYIN (DUHNET)
 #EXTINF:-1 tvg-id="Teve2.tr" tvg-name="TEVE 2" tvg-logo="http://logo.multicms.info/logoslar/teve2.png" group-title="🖥️ CANLI | Ulusal",TEVE 2
 https://atv-switch.huseyinakcagoz.workers.dev/Teve2.tr
 
@@ -126,43 +106,36 @@ https://atv-switch.huseyinakcagoz.workers.dev/Teve2.tr
 # 📺 A2 (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ CDN (1080p)
 #EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2 | A
 https://atv-switch.huseyinakcagoz.workers.dev/A2TV.tr
 
 #EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",A2 | B
 https://dsmartgo-live.ercdn.net/a2/a2.m3u8
 
-
 ############################
 # 📺 360 TV (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ CDN (1080p)
 #EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/360TV.tr
 
 #EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",360 TV | B
 https://dsmartgo-live.ercdn.net/360/360.m3u8
 
-
 ############################
 # 📺 TRT 1 (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ TRT (2K / 1440p)
 #EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 | A
 https://atv-switch.huseyinakcagoz.workers.dev/TRT1.tr
 
 #EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 | B
 https://dsmartgo-live.ercdn.net/dsmartgo/trt1/trt1.isml/trt1.m3u8
 
-
 ############################
 # 📺 TRT 2 (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ TRT CDN
 #EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2 | A
 https://atv-switch.huseyinakcagoz.workers.dev/TRT2.tr
 
@@ -173,32 +146,25 @@ https://dsmartgo-live.ercdn.net/dsmartgo/trt2/trt2.isml/trt2.m3u8
 # 📺 GZT TV (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ CDN (MNCDN)
 #EXTINF:-1 tvg-id="gzt.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" group-title="🖥️ CANLI | Ulusal",GZT TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/gzt
 
 #EXTINF:-1 tvg-id="GZT.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",GZT TV | B
 https://dsmartgo-live.ercdn.net/gzt/gzt.m3u8
 
-
-
 ############################
 # 📺 TRT TÜRK (OPTİMİZE)
 ############################
 
-# 🥇 ANA – RESMÎ TRT CDN
 #EXTINF:-1 tvg-id="TRTTurk.tr" tvg-name="TRT TÜRK" tvg-logo="https://logo.multicms.info/tvlogo/trtturk.png" group-title="🖥️ CANLI | Ulusal",TRT TÜRK
 https://atv-switch.huseyinakcagoz.workers.dev/TRTTurk.tr
-
-
-
 
 ############################
 # 📺 TABII TV
 ############################
+
 #EXTINF:-1 tvg-id="TABII TV" tvg-name="TABII TV" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w300/45155_0-0-1919-1080.jpeg" group-title="🖥️ CANLI | Ulusal",TABII TV 
 https://atv-switch.huseyinakcagoz.workers.dev/tabiitv
-
 
 ############################
 # 📺 TIVI TÜRK
@@ -207,54 +173,50 @@ https://atv-switch.huseyinakcagoz.workers.dev/tabiitv
 #EXTINF:-1 tvg-id="tiviturk.tr" tvg-name="TIVI TÜRK" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhR9TBSKSKuGW1BMl8ESZDU2ejc4IN7JFvhg&s" group-title="🖥️ CANLI | Ulusal",TIVI TÜRK
 https://atv-switch.huseyinakcagoz.workers.dev/tiviturk.tr
 
-
-
-
 ############################
 # 📺 TV 8.5
 ############################
+
 #EXTINF:-1 tvg-id="tv8.5.tr" tvg-name="TV 8.5" group-title="🖥️ CANLI | Ulusal",TV 8.5 | A
 https://atv-switch.huseyinakcagoz.workers.dev/tv8.5.tr
 
 #EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8.5" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV 8.5 | B
 https://dsmartgo-live.ercdn.net/tv8_5/tv8_5.m3u8
 
-
 ############################
 # 📺 EURO D
 ############################
+
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EURO D" group-title="🖥️ CANLI | Ulusal",EURO D
 https://atv-switch.huseyinakcagoz.workers.dev/EuroD.tr
-
 
 ############################
 # 📺 TGRT EU
 ############################
+
 #EXTINF:-1 tvg-id="tgrteu.tr" tvg-name="TGRT EU" group-title="🖥️ CANLI | Ulusal",TGRT EU
 https://atv-switch.huseyinakcagoz.workers.dev/tgrteu.tr
-
-
 
 ############################
 # 📺 SHOW TÜRK
 ############################
+
 #EXTINF:-1 tvg-id="ShowTurk.tr" tvg-name="SHOW TÜRK" tvg-logo="https://w7.pngwing.com/pngs/192/666/png-transparent-turkey-show-tv-television-channel-show-tv-logo-television-text-logo-thumbnail.png" group-title="🖥️ CANLI | Ulusal",SHOW TÜRK
 https://atv-switch.huseyinakcagoz.workers.dev/ShowTurk.tr
 
-  
 ############################
 # 📺 KANAL 7 AVRUPA
 ############################
+
 #EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7 AVRUPA" group-title="🖥️ CANLI | Ulusal",KANAL 7 AVRUPA
 https://atv-switch.huseyinakcagoz.workers.dev/Kanal7.tr
-
 
 ############################
 # 📺 DİĞER KANALLAR
 ############################
+
 #EXTINF:-1 tvg-id="birtv.tr" tvg-name="BIR TV" tvg-logo="https://www.birtv.tv/assets/upload/637f83951df60.png.webp" group-title="🖥️ CANLI | Ulusal",BIR TV
 https://atv-switch.huseyinakcagoz.workers.dev/birtv.tr
-
 
 #EXTINF:-1 tvg-id="onstv.tr" tvg-name="ONS TV" tvg-logo="https://onstv.com.tr/images/gallery/uploaded/2/onstv-logo.png" group-title="🖥️ CANLI | Ulusal",ONS TV
 https://atv-switch.huseyinakcagoz.workers.dev/onstv.tr
@@ -262,6 +224,7 @@ https://atv-switch.huseyinakcagoz.workers.dev/onstv.tr
 #######################
 # 📺 (TR) HABER KANALLARI
 #######################
+
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.ytimg.com/vi/wg3CdiX9Qtc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCctCR6IPxLlvUcdseZsQS19eqD8Q" group-title="🖥️ TR Haber",Haber Çoklu Ekran
 https://dsmartgo-live.ercdn.net/habermozaik/habermozaik.m3u8
 
@@ -269,32 +232,26 @@ https://dsmartgo-live.ercdn.net/habermozaik/habermozaik.m3u8
 # 📺 SÖZCÜ TV
 #######################
 
-# 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" group-title="🖥️ TR Haber",SÖZCÜ TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/SozcuTV.tr
 
-
 #EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",SÖZCÜ TV | B
 https://dsmartgo-live.ercdn.net/sozcutv/sozcutv.m3u8
-
 
 #######################
 # 📺 CNN TÜRK
 #######################
 
-# 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="CNNTurk.tr" tvg-name="CNN TÜRK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TÜRK | A
 https://atv-switch.huseyinakcagoz.workers.dev/cnnturk
 
 #EXTINF:-1 tvg-id="CNNTurk.tr" tvg-name="CNN TÜRK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",CNN TÜRK | B
 https://dsmartgo-live.ercdn.net/dsmartgo/cnnturk/cnnturk.isml/playlist.m3u8
 
-
 #######################
 # 📺 HABERTÜRK
 #######################
 
-# 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="HaberturkTV.tr" tvg-name="HABERTÜRK" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/haberturk.png" group-title="🖥️ TR Haber",Habertürk | A
 https://atv-switch.huseyinakcagoz.workers.dev/haberturk
 
@@ -305,195 +262,154 @@ https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/playlist.m3u8
 # 📺 NTV
 #######################
 
-# 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="NTV.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV | A
 https://atv-switch.huseyinakcagoz.workers.dev/ntv
 
 #EXTINF:-1 tvg-id="NTV.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",NTV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/ntv/ntv.isml/playlist.m3u8
 
-
  #######################
 # 📺 TV 100
 #######################
 
-# 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="TV100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 | A
 https://atv-switch.huseyinakcagoz.workers.dev/tv100
 
 #EXTINF:-1 tvg-id="TV100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TV 100 | B
 https://dsmartgo-live.ercdn.net/tv100/tv100.m3u8
 
-
 #######################
 # 📺 HABER GLOBAL
 #######################
 
-# 🥇 ANA – TiviMivi
 #EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL | A
 https://atv-switch.huseyinakcagoz.workers.dev/HaberGlobal.tr
 
 #EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABER GLOBAL | B
 https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/playlist.m3u8
 
-
 #######################
 # 📺 ÜLKE TV
 #######################
 
-# 🥇 ANA – PANEL FHD
 #EXTINF:-1 tvg-id="UlkeTV.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/UlkeTV.tr
 
 #EXTINF:-1 tvg-id="UlkeTV.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",ÜLKE TV | B
 https://dsmartgo-live.ercdn.net/ulketv/ulketv.m3u8
 
-
 #######################
 # 📺 FLASH HABER
 #######################
 
-# 🥇 ANA – FHD
 #EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER | A
 https://atv-switch.huseyinakcagoz.workers.dev/FlashHaberTV.tr
 
 #EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",FLASH HABER | B
 https://dsmartgo-live.ercdn.net/flashhaber/flashhaber.m3u8
 
-
 #######################
 # 📺 A HABER
 #######################
 
-# 🥇 ANA – FHD (TiviMivi)
 #EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER | A
 https://atv-switch.huseyinakcagoz.workers.dev/AHaber.tr
 
 #EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",A HABER | B
 https://dsmartgo-live.ercdn.net/ahaber/ahaber.m3u8
 
-
-
 #######################
 # 📺 HALK TV
 #######################
 
-# 🥇 ANA – FHD (1080p)
 #EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/HalkTV.tr
 
-
-# 🟡 CATCHUP – D-SMART GO
 #EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HALK TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/halktv/halktv.isml/playlist.m3u8
-
 
 #######################
 # 📺 FinansTurkTV
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="FinansTurkTV" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV
 https://atv-switch.huseyinakcagoz.workers.dev/FinansTurkTV
-
 
 #######################
 # 📺 EKOL TV
 #######################
 
-# 🥇 ANA (FHD)
 #EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/EkolTV.tr
 
-# ⏪⏩ Catchup
 #EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",EKOL TV | B
 https://dsmartgo-live.ercdn.net/ekoltv/ekoltv.m3u8
-
 
 #######################
 # 📺 TVNET
 #######################
 
-# 🥇 ANA (FHD)
 #EXTINF:-1 tvg-id="Tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET | A
 https://atv-switch.huseyinakcagoz.workers.dev/Tvnet.tr
 
-# ⏪⏩ Catchup
 #EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TVNET | B
 https://dsmartgo-live.ercdn.net/tvnet/tvnet.m3u8
-
 
 #######################
 # 📺 TGRT HABER
 #######################
 
-# 🥇 ANA (FHD)
 #EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER | A
 https://atv-switch.huseyinakcagoz.workers.dev/TGRTHaber.tr
 
-# ⏪⏩ Catchup
 #EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TGRT HABER | B
 https://dsmartgo-live.ercdn.net/tgrthaber/tgrthaber.m3u8
-
 
 #######################
 # 📺 24 TV
 #######################
 
-# 🥇 ANA (FHD – Resmi)
 #EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV
 https://atv-switch.huseyinakcagoz.workers.dev/24TV.tr
-
 
 #######################
 # 📺 TELE 1
 #######################
 
-# 🥇 ANA (FHD – Resmi)
 #EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" group-title="🖥️ TR Haber",TELE 1 | A
 https://atv-switch.huseyinakcagoz.workers.dev/Tele1.tr
 
-# 🥉 YEDEK 2 (Catchup)
 #EXTINF:-1 tvg-id="Tele1.tr" tvg-name="TELE 1" tvg-logo="http://logo.multicms.info/tvlogo/tele1.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TELE 1 | B
 https://dsmartgo-live.ercdn.net/tele1/tele1.m3u8
-
 
 #######################
 # 📺 TURKHABER
 #######################
 
-# 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="turkhaber.tr" tvg-name="TURKHABER" tvg-logo="https://yt3.googleusercontent.com/TkjQwYKxYt1dPs3fo0Z2Doai5cXIMZQdrNvyyf96YMfB5CLnaaDtkDxdVYq5-itbEwzxfC2gFw=s900-c-k-c0x00ffffff-no-rj" group-title="🖥️ TR Haber",TURKHABER
 https://atv-switch.huseyinakcagoz.workers.dev/turkhaber.tr
-
 
 #######################
 # 📺 BENGÜTÜRK
 #######################
 
-# 🥇 ANA (HD)
 #EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK
 https://atv-switch.huseyinakcagoz.workers.dev/BenguturkTV.tr
-
 
 #######################
 # 📺 ULUSAL KANAL
 #######################
 
-# 🥈 YEDEK
 #EXTINF:-1 tvg-id="UlusalKanal.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://i1.sndcdn.com/avatars-000674662646-w2x2r0-t1080x1080.jpg" group-title="🖥️ TR Haber",ULUSAL KANAL | A
 https://atv-switch.huseyinakcagoz.workers.dev/UlusalKanal.tr
 
-# 🥇 ANA (Catchup)
 #EXTINF:-1 tvg-id="UlusalKanal.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://i1.sndcdn.com/avatars-000674662646-w2x2r0-t1080x1080.jpg" group-title="🖥️ TR Haber",ULUSAL KANAL | B
 https://dsmartgo-live.ercdn.net/ulusaltv/ulusaltv.m3u8
-
 
 #######################
 # 📺 MELTEM TV
 #######################
 
-# 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="MeltemTV.tr" tvg-name="MELTEM TV" tvg-logo="http://logo.multicms.info/tvlogo/meltem.png" group-title="🖥️ TR Haber",MELTEM TV
 https://atv-switch.huseyinakcagoz.workers.dev/MeltemTV.tr
 
@@ -501,20 +417,16 @@ https://atv-switch.huseyinakcagoz.workers.dev/MeltemTV.tr
 # 📺 TYT TÜRK
 #######################
 
-# 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="TYTTurk.tr" tvg-name="TYT TÜRK" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/b6c2e739-0336-4e34-9f27-38e181522363.png" group-title="🖥️ TR Haber",TYT TÜRK
 https://atv-switch.huseyinakcagoz.workers.dev/TYTTurk.tr
-
 
 #######################
 # 📺 TRT HABER
 #######################
 
-# 🥇 ANA (Resmi – 2K)
 #EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER | A
 https://atv-switch.huseyinakcagoz.workers.dev/TRTHaber.tr
 
-# ⏪⏩ Catch-up
 #EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER | B
 https://dsmartgo-live.ercdn.net/trthaber/trthaber.m3u8
 
@@ -522,11 +434,9 @@ https://dsmartgo-live.ercdn.net/trthaber/trthaber.m3u8
 # 📺 AKİT TV
 #######################
 
-# 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/AkitTV.tr
 
-# ⏪⏩ Catch-up
 #EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV | B
 https://dsmartgo-live.ercdn.net/akit/akit.m3u8
 
@@ -534,68 +444,61 @@ https://dsmartgo-live.ercdn.net/akit/akit.m3u8
 # 📺 KRT TV
 #######################
 
-# 🥇 ANA (IPTV – FHD)
 #EXTINF:-1 tvg-id="KRTTV.tr" tvg-name="KRT TV" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/krt-tv-logo.jpg" group-title="🖥️ TR Haber",KRT TV
 https://atv-switch.huseyinakcagoz.workers.dev/KRTTV.tr
-
 
 #######################
 # 📺 TV 5
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="TV5.tr" tvg-name="TV 5" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/043eff4d-bde2-493c-9c7d-c07a698bb0be.png" group-title="🖥️ TR Haber",TV 5
 https://atv-switch.huseyinakcagoz.workers.dev/TV5.tr
-
 
 #######################
 # 📺 BRT 1
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="BRT1.tr" tvg-name="BRT 1" tvg-logo="http://logo.multicms.info/tvlogo/brt1.png" group-title="🖥️ TR Haber",BRT 1
 https://atv-switch.huseyinakcagoz.workers.dev/BRT1.tr
 
 #######################
 # 📺 TRT WORLD
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="trtworld.tr" tvg-name="TRT WORLD" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w750/q80/23864_1-0-465-262.jpeg" group-title="🖥️ TR Haber",TRT WORLD
 https://atv-switch.huseyinakcagoz.workers.dev/trtworld.tr
 
 #######################
 # 📺 A PARA
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="APara.tr" tvg-name="A PARA" tvg-logo="https://dsmart-static-v2.ercdn.net/content/v/7e/13515/Thumbnail.png" group-title="🖥️ TR Haber",A PARA
 https://atv-switch.huseyinakcagoz.workers.dev/APara.tr
 
 #######################
 # 📺 BLOOMBERG HT
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png" group-title="🖥️ TR Haber",BLOOMBERG HT
 https://atv-switch.huseyinakcagoz.workers.dev/BloombergHT.tr
-
 
 #######################
 # 📺 EKOTÜRK
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="Ekoturk.tr" tvg-name="EKOTÜRK" tvg-logo="http://logo.multicms.info/logoslar/ekoturk.png" group-title="🖥️ TR Haber",EKOTÜRK
 https://atv-switch.huseyinakcagoz.workers.dev/Ekoturk.tr
-
 
 #######################
 # 📺 CNBC-E
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="CNBCE.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E
 https://atv-switch.huseyinakcagoz.workers.dev/CNBCE.tr
 
-
 #  BELGESEL KANALLARI
 #EXTINF:-1 tvg-id="" tvg-name="----- (tr) Belgesel Kanallari----- " tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/TURKIYE_LOGO_.png" group-title="🖥️ TR Belgesel",----- (tr) Belgesel Kanallari----- 
-http://4k.super1.club:8080//live/hakanturgut/gmYVXNgJ/1421.ts
+http://iptv.prosto.tv:7000/ch330/video.m3u8
 
 #######################
 # 📺 UNIVERSAL BELGESEL
@@ -604,7 +507,6 @@ http://4k.super1.club:8080//live/hakanturgut/gmYVXNgJ/1421.ts
 #EXTINF:-1 tvg-id="universalbelgesel.tr" tvg-name="UNIVERSAL BELGESEL" tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="🖥️ TR Belgesel",UNIVERSAL BELGESEL
 https://atv-switch.huseyinakcagoz.workers.dev/universalbelgesel.tr
 
-  
 #######################
 # 📺 UNIVERSAL DISCOVERY
 #######################
@@ -612,13 +514,10 @@ https://atv-switch.huseyinakcagoz.workers.dev/universalbelgesel.tr
 #EXTINF:-1 tvg-id="universaldiscovery.tr" tvg-name="UNIVERSAL DISCOVERY" tvg-logo="https://logo.multicms.info/TVlogolar/UniversalDiscovery.jpg" group-title="🖥️ TR Belgesel",UNIVERSAL DISCOVERY
 https://atv-switch.huseyinakcagoz.workers.dev/universaldiscovery.tr
 
-
-
 #######################
 # 📺 DISCOVERY CHANNEL
-
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="discoverychannel.tr" tvg-name="DISCOVERY CHANNEL" tvg-logo="http://logo.multicms.info/tvlogo/discoveryhd.png" group-title="🖥️ TR Belgesel",DISCOVERY CHANNEL | A
 https://atv-switch.huseyinakcagoz.workers.dev/discoverychannel.tr
 
@@ -629,23 +528,19 @@ https://dsmartgo-live.ercdn.net/discoverychannel/discoverychannel.m3u8
 # 📺 NATIONAL GEOGRAPHIC
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="NationalGeographic.tr" tvg-name="NATIONAL GEOGRAPHIC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeo.png" group-title="🖥️ TR Belgesel",NATIONAL GEOGRAPHIC | A
 https://atv-switch.huseyinakcagoz.workers.dev/NationalGeographic.tr
 
-# ⭐ YEDEK 2
 #EXTINF:-1 tvg-id="NationalGeographic.tr" tvg-name="NATIONAL GEOGRAPHIC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeo.png" group-title="🖥️ TR Belgesel",NATIONAL GEOGRAPHIC | B
 https://dsmartgo-live.ercdn.net/natgeo/natgeo.m3u8
-
 
 #######################
 # 📺 NAT GEO WILD
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="NationalGeographicWild.tr" tvg-name="NAT GEO WILD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeowild.png" group-title="🖥️ TR Belgesel",NAT GEO WILD | A
 https://atv-switch.huseyinakcagoz.workers.dev/NationalGeographicWild.tr
 
-# 🥈 YEDEK
 #EXTINF:-1 tvg-id="NationalGeographicWild.tr@SD" tvg-name="NAT GEO WILD 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeowild.png" group-title="🖥️ TR Belgesel",NAT GEO WILD | B
 https://dsmartgo-live.ercdn.net/natgeowild/natgeowild.m3u8
 
@@ -653,34 +548,29 @@ https://dsmartgo-live.ercdn.net/natgeowild/natgeowild.m3u8
 # 📺 TRT BELGESEL
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-name="TRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL | A
 https://atv-switch.huseyinakcagoz.workers.dev/TRTBelgesel.tr
 
-# ⏪⏩ YEDEK 4
 #EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-name="TRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL | B
 https://dsmartgo-live.ercdn.net/trtbelgesel/trtbelgesel.m3u8
-
 
 #######################
 # 📺 DISCOVERY ID
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID | A
 https://atv-switch.huseyinakcagoz.workers.dev/DiscoveryID.tr
 
-# ⏪⏩ YEDEK 3
 #EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID | B
 https://dsmartgo-live.ercdn.net/discoveryscience/discoveryscience.m3u8
 
 #######################
 # 📺 DMAX
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX | A
 https://atv-switch.huseyinakcagoz.workers.dev/DMAX.tr
 
-# ⏪⏩ YEDEK 4
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="DMAX" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/dmax.png" group-title="🖥️ TR Belgesel",DMAX | B
 https://dsmartgo-live.ercdn.net/dsmartgo/dmax/dmax.isml/dmax.m3u8
 
@@ -688,19 +578,16 @@ https://dsmartgo-live.ercdn.net/dsmartgo/dmax/dmax.isml/dmax.m3u8
 # 📺 TLC
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC | A
 https://atv-switch.huseyinakcagoz.workers.dev/TLC.tr
 
-
-# ⏪⏩ YEDEK 4
 #EXTINF:-1 tvg-id="TLC.tr" tvg-name="TLC" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tlc.png" group-title="🖥️ TR Belgesel",TLC | B
 https://dsmartgo-live.ercdn.net/dsmartgo/tlc/tlc.isml/tlc.m3u8
 
 #######################
 # 📺 HABITAT TV
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="habitat.tr" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="🖥️ TR Belgesel",HABITAT TV
 https://atv-switch.huseyinakcagoz.workers.dev/habitat.tr
 
@@ -708,11 +595,9 @@ https://atv-switch.huseyinakcagoz.workers.dev/habitat.tr
 # 📺 LOVE NATURE
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/lovenature.png" group-title="🖥️ TR Belgesel",LOVE NATURE | A
 https://atv-switch.huseyinakcagoz.workers.dev/LoveNature.tr
 
-# ⏪⏩ YEDEK 3
 #EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/lovenature.png" group-title="🖥️ TR Belgesel",LOVE NATURE | B
 https://dsmartgo-live.ercdn.net/lovenature/lovenature.m3u8
 
@@ -720,25 +605,19 @@ https://dsmartgo-live.ercdn.net/lovenature/lovenature.m3u8
 # 📺 TARİH TV
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARİH TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/TarihTV.tr
 
-# ⏪⏩ YEDEK 3
 #EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARİH TV | B
 https://dsmartgo-live.ercdn.net/tarihtv/tarihtv.m3u8
 
-
 #######################
 # 📺 BBC EARTH
-
 #######################
 
-# 🥈 YEDEK
 #EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH | A
 https://atv-switch.huseyinakcagoz.workers.dev/BBCEarth.tr
 
-# ⏪⏩ YEDEK 4
 #EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH | B
 https://dsmartgo-live.ercdn.net/bbcearth/bbcearth.m3u8
 
@@ -746,11 +625,9 @@ https://dsmartgo-live.ercdn.net/bbcearth/bbcearth.m3u8
 # 📺 VIASAT HISTORY
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY | A
 https://atv-switch.huseyinakcagoz.workers.dev/ViasatHistory.tr
 
-# ⏪⏩ YEDEK 3
 #EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY | B
 https://dsmartgo-live.ercdn.net/viasathistory/viasathistory.m3u8
 
@@ -758,14 +635,13 @@ https://dsmartgo-live.ercdn.net/viasathistory/viasathistory.m3u8
 # 📺 VIASAT EXPLORER
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="ViasatExplorer.tr" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="🖥️ TR Belgesel",VIASAT EXPLORER
 https://atv-switch.huseyinakcagoz.workers.dev/ViasatExplorer.tr
 
 #######################
 # 📺 DA VINCI
 #######################
-# 🥇 ANA
+
 #EXTINF:-1 tvg-id="DaVinci.tr" tvg-name="DA VINCI" tvg-logo="http://logo.multicms.info/tvlogo/davincilearning.png" group-title="🖥️ TR Belgesel",DA VINCI
 https://atv-switch.huseyinakcagoz.workers.dev/DaVinci.tr
 
@@ -773,16 +649,13 @@ https://atv-switch.huseyinakcagoz.workers.dev/DaVinci.tr
 # 📺 BEIN IZ
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="http://logo.multicms.info/tvlogo/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ 
 https://atv-switch.huseyinakcagoz.workers.dev/BeinIz.tr
-
 
 #######################
 # 📺 BEIN GURME
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="BeinGurme.tr" tvg-name="BEIN GURME" tvg-logo="http://logo.multicms.info/tvlogo/beingurme.png" group-title="🖥️ TR Belgesel",BEIN GURME 
 https://atv-switch.huseyinakcagoz.workers.dev/BeinGurme.tr
 
@@ -790,7 +663,6 @@ https://atv-switch.huseyinakcagoz.workers.dev/BeinGurme.tr
 # 📺 YABAN TV
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV HD" tvg-logo="http://logo.multicms.info/tvlogo/yaban.png" group-title="🖥️ TR Belgesel",YABAN TV
 https://atv-switch.huseyinakcagoz.workers.dev/YabanTV.tr
 
@@ -798,7 +670,6 @@ https://atv-switch.huseyinakcagoz.workers.dev/YabanTV.tr
 # 📺 ÇİFTÇİ TV
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="CiftciTV.tr" tvg-name="ÇİFTÇİ TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/ciftcitv.png" group-title="🖥️ TR Belgesel",ÇİFTÇİ TV
 https://atv-switch.huseyinakcagoz.workers.dev/CiftciTV.tr
 
@@ -806,16 +677,13 @@ https://atv-switch.huseyinakcagoz.workers.dev/CiftciTV.tr
 # 📺 TGRT BELGESEL
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT BELGESEL (Resmi)" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tgrtbelgesel.png" group-title="🖥️ TR Belgesel",TGRT BELGESEL
 https://atv-switch.huseyinakcagoz.workers.dev/TGRTBelgesel.tr
-
 
 #######################
 # 📺 LIFE TV
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="LifeTV.tr" tvg-name="LIFE TV" tvg-logo="http://logo.multicms.info/tvlogo/lifetv.jpg" group-title="🖥️ TR Belgesel",LIFE TV
 https://atv-switch.huseyinakcagoz.workers.dev/LifeTV.tr
 
@@ -823,7 +691,6 @@ https://atv-switch.huseyinakcagoz.workers.dev/LifeTV.tr
 # 📺 NATURE TIME
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="NatureTime.tr" tvg-name="NATURE TIME" tvg-logo="https://framerusercontent.com/images/CVIY2hHRmFpulUpKkIuIziHhvPs.png" group-title="🖥️ TR Belgesel",NATURE TIME
 https://amg00090-blueantmedia-naturetime-samsungfr-yakbf.amagi.tv/playlist/amg00090-blueantmedia-naturetime-samsungfr/playlist.m3u8
 
@@ -831,7 +698,6 @@ https://amg00090-blueantmedia-naturetime-samsungfr-yakbf.amagi.tv/playlist/amg00
 # 📺 CGTN BELGESEL
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="CGTNDocumentary.tr@SD" tvg-name="CGTN BELGESEL" tvg-logo="https://i.ibb.co/s9gLmqv/cgtnch.png" group-title="🖥️ TR Belgesel",CGTN BELGESEL
 https://mn-nl.mncdn.com/doguyg_drone/cgtn/playlist.m3u8
 
@@ -839,7 +705,6 @@ https://mn-nl.mncdn.com/doguyg_drone/cgtn/playlist.m3u8
 # 📺 BİZİMEV TV
 #######################
 
-# 🥇 ANA
 #EXTINF:-1 tvg-id="BizimEvTV.tr" tvg-name="BİZİMEV TV" tvg-logo="https://i.imgur.com/eJa6sFY.png" group-title="🖥️ TR Belgesel",BİZİMEV TV
 http://5.178.103.239:82/yt1/s/bizimev.m3u8
 
