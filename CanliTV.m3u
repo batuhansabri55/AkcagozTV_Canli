@@ -531,95 +531,57 @@ https://dsmartgo-live.ercdn.net/trthaber/trthaber.m3u8
 #######################
 
 # 🥇 ANA (Resmi)
-#EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV
+#EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/AkitTV.tr
 
 # ⏪⏩ Catch-up
-#EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV ⏪⏩
+#EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV | B
 https://dsmartgo-live.ercdn.net/akit/akit.m3u8
-
-
-
-    "/AkitTV.tr":[
-
-
-
-
-"https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8",
-"https://akittv-live.ercdn.net/akittv/akittv.m3u8",
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/117"
-
 
 #######################
 # 📺 KRT TV
 #######################
 
 # 🥇 ANA (IPTV – FHD)
-#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e8/20210903112243%21KRT_TV_logosu.png" group-title="🖥️ TR Haber",KRT TV
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/15281
+#EXTINF:-1 tvg-id="KRTTV.tr" tvg-name="KRT TV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e8/20210903112243%21KRT_TV_logosu.png" group-title="🖥️ TR Haber",KRT TV
+https://atv-switch.huseyinakcagoz.workers.dev/KRTTV.tr
 
-# 🥈 YEDEK (IPTV – HD)
-#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/e/e8/20210903112243%21KRT_TV_logosu.png" group-title="🖥️ TR Haber",KRT TV HD
-https://goldvod.site/live/hpgdiscoo/123456/220.m3u8
-
-# 🥉 YEDEK 2 (OTT)
-#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/krt-tv-logo.jpg" group-title="🖥️ TR Haber",KRT TV Alternatif
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=912910&extension=ts&play_token=jwfkr32feu
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="KRT TV" tvg-name="KRT TV" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/krt-tv-logo.jpg" group-title="🖥️ TR Haber",KRT TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/15281
 
 #######################
 # 📺 TV 5
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="TV5.tr" tvg-name="TV 5" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/043eff4d-bde2-493c-9c7d-c07a698bb0be.png" group-title="🖥️ TR Haber",TV 5
-https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="TV5.tr" tvg-name="TV 5" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/043eff4d-bde2-493c-9c7d-c07a698bb0be.png" group-title="🖥️ TR Haber",TV 5 Yedek
-http://line.liveott.ru:80/play/live.php?stream=912894&extension=ts
+https://atv-switch.huseyinakcagoz.workers.dev/TV5.tr
 
-#######################
-# 📺 TRT 3 – TBMM
-#######################
-# 🥇 ANA
-#EXTINF:-1 tvg-id="trt3.tr" tvg-name="TRT 3 TBMM" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aac80fcc-d1e7-41da-85b6-3037cc3f1a4b.png" group-title="🖥️ TR Haber",TRT 3 TBMM
-https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 
 #######################
 # 📺 BRT 1
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="BRT1.tr" tvg-name="BRT 1" tvg-logo="http://logo.multicms.info/tvlogo/brt1.png" group-title="🖥️ TR Haber",BRT 1
-https://edge.kuzeykibrissmart.tv/brt1/bant1/playlist.m3u8
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="BRT1.tr" tvg-name="BRT 1" tvg-logo="http://logo.multicms.info/tvlogo/brt1.png" group-title="🖥️ TR Haber",BRT 1 Yedek
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50949
-
-#EXTINF:-1 tvg-id="BRT1.tr" tvg-name="BRT 1" tvg-logo="http://logo.multicms.info/tvlogo/brt1.png" group-title="🖥️ TR Haber",BRT 1 Yedek
-https://goldvod.site/live/hpgdiscoo/123456/70.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="BRT1.tr" tvg-name="BRT 1" tvg-logo="http://logo.multicms.info/tvlogo/brt1.png" group-title="🖥️ TR Haber",BRT 1 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50949
+https://atv-switch.huseyinakcagoz.workers.dev/BRT1.tr
 
 #######################
 # 📺 BRT 2
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="BRT2.tr" tvg-name="BRT 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2c/BRT_2_%282014-g%C3%BCn%C3%BCm%C3%BCz%29.png" group-title="🖥️ TR Haber",BRT 2
-http://plan9.store:80/play/live.php?stream=314604&extension=ts
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="BRT2.tr" tvg-name="BRT 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2c/BRT_2_%282014-g%C3%BCn%C3%BCm%C3%BCz%29.png" group-title="🖥️ TR Haber",BRT 2 Yedek
-http://line.liveott.ru:80/play/live.php?stream=1123596&extension=ts
+https://atv-switch.huseyinakcagoz.workers.dev/BRT2.tr
 
 #######################
 # 📺 TRT WORLD
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="trtworld.tr" tvg-name="TRT WORLD" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w750/q80/23864_1-0-465-262.jpeg" group-title="🖥️ TR Haber",TRT WORLD
+
+
+
+    "/BRT2.tr":[
+
+"http://plan9.store:80/play/live.php?stream=314604&extension=ts",
+"http://line.liveott.ru:80/play/live.php?stream=1123596&extension=ts"
+
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="trtworld.tr" tvg-name="TRT WORLD" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w750/q80/23864_1-0-465-262.jpeg" group-title="🖥️ TR Haber",TRT WORLD
