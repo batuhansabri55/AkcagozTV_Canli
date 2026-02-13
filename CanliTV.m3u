@@ -709,65 +709,37 @@ https://atv-switch.huseyinakcagoz.workers.dev/habitat.tr
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="http://logo.multicms.info/logoslar/lovenaturehd.png" group-title="🖥️ TR Belgesel",LOVE NATURE
+#EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="http://logo.multicms.info/logoslar/lovenaturehd.png" group-title="🖥️ TR Belgesel",LOVE NATURE | A
 https://atv-switch.huseyinakcagoz.workers.dev/LoveNature.tr
 
 # ⏪⏩ YEDEK 3
-#EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/lovenature.png" group-title="🖥️ TR Belgesel",LOVE NATURE
+#EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/lovenature.png" group-title="🖥️ TR Belgesel",LOVE NATURE | B
 https://dsmartgo-live.ercdn.net/lovenature/lovenature.m3u8
-
-
-
-"/LoveNature.tr":[
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50428",
-"https://goldvod.site/live/hpgdiscoo/123456/9954.m3u8",
-"https://dt-sinema.pantonum1.workers.dev/lovenature.m3u8",
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50428"
-
 
 #######################
 # 📺 TARİH TV
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARIH TV
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/140595
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARİH TV
-https://dt-sinema.pantonum1.workers.dev/tarihtv.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARİH TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/140595
+#EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARİH TV | A
+https://atv-switch.huseyinakcagoz.workers.dev/TarihTV.tr
 
 # ⏪⏩ YEDEK 3
-#EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARİH TV
+#EXTINF:-1 tvg-id="TarihTV.tr" tvg-name="TARİH TV" tvg-logo="https://www.tvlogolar.xyz/logo/Turkiye/Tarih-tv.png" group-title="🖥️ TR Belgesel",TARİH TV | B
 https://dsmartgo-live.ercdn.net/tarihtv/tarihtv.m3u8
+
 
 #######################
 # 📺 BBC EARTH
 
 #######################
 
-# 🥇 ANA
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC Earth HD" tvg-logo="http://logo.multicms.info/tvlogo/bbcearth.png" group-title="🖥️ TR Belgesel",BBC Earth HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/258
-
 # 🥈 YEDEK
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH (Resmi)" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH
-https://dt-sinema.pantonum1.workers.dev/bbc.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH
-http://uro-levene-1012.mywire.org/index.php?id=314485&token=DeaTHLesS
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/258
+#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH | A
+https://atv-switch.huseyinakcagoz.workers.dev/BBCEarth.tr
 
 # ⏪⏩ YEDEK 4
-#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH
+#EXTINF:-1 tvg-id="BBCEarth.tr" tvg-name="BBC EARTH 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/bbcearth.png" group-title="🖥️ TR Belgesel",BBC EARTH | B
 https://dsmartgo-live.ercdn.net/bbcearth/bbcearth.m3u8
 
 #######################
@@ -775,19 +747,12 @@ https://dsmartgo-live.ercdn.net/bbcearth/bbcearth.m3u8
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="http://logo.multicms.info/tvlogo/VIASAT-HISTORY.jpg" group-title="🖥️ TR Belgesel",VIASAT HISTORY
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/47970
+#EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="http://logo.multicms.info/tvlogo/VIASAT-HISTORY.jpg" group-title="🖥️ TR Belgesel",VIASAT HISTORY | A
+https://atv-switch.huseyinakcagoz.workers.dev/ViasatHistory.tr
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913162&extension=ts&play_token=YVbnJLbFIu
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/347158
 
 # ⏪⏩ YEDEK 3
-#EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY
+#EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY | B
 https://dsmartgo-live.ercdn.net/viasathistory/viasathistory.m3u8
 
 #######################
@@ -796,84 +761,39 @@ https://dsmartgo-live.ercdn.net/viasathistory/viasathistory.m3u8
 
 # 🥇 ANA
 #EXTINF:-1 tvg-id="ViasatExplorer.tr" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="🖥️ TR Belgesel",VIASAT EXPLORER
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/234449
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="ViasatExplorer.tr" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="🖥️ TR Belgesel",VIASAT EXPLORER
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913161&extension=ts&play_token=5JBvME3l1t
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="ViasatExplorer.tr" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="🖥️ TR Belgesel",VIASAT EXPLORER 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/234449
+https://atv-switch.huseyinakcagoz.workers.dev/ViasatExplorer.tr
 
 #######################
 # 📺 DA VINCI
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="DaVinci.tr" tvg-name="DA VINCI" tvg-logo="http://logo.multicms.info/tvlogo/davincilearning.png" group-title="🖥️ TR Belgesel",DA VINCI
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/253
-
-# ⭐ YEDEK
-#EXTINF:-1 tvg-id="DaVinci.tr" tvg-name="DA VINCI" tvg-logo="http://logo.multicms.info/tvlogo/davincilearning.png" group-title="🖥️ TR Belgesel",DA VINCI 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/253
+https://atv-switch.huseyinakcagoz.workers.dev/DaVinci.tr
 
 #######################
 # 📺 BEIN IZ
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ HD" tvg-logo="http://logo.multicms.info/tvlogo/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/270
+#EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="http://logo.multicms.info/tvlogo/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ 
+https://atv-switch.huseyinakcagoz.workers.dev/BeinIz.tr
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=1925951&extension=ts&play_token=D6FOSZ2TGR
-
-#EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ
-https://goldvod.site/live/hpgdiscoo/123456/173.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="BeinIz.tr" tvg-name="BEIN IZ" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beiniz.png" group-title="🖥️ TR Belgesel",BEIN IZ 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/270
 
 #######################
 # 📺 BEIN GURME
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="BeinGurme.tr" tvg-name="BEIN GURME HD" tvg-logo="http://logo.multicms.info/tvlogo/beingurme.png" group-title="🖥️ TR Belgesel",BEIN GURME HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/271
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="BeinGurme.tr" tvg-name="BEIN GURME 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beingurme.png" group-title="🖥️ TR Belgesel",BEIN GURME
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913165&extension=ts&play_token=A34yCFy9ct
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="BeinGurme.tr" tvg-name="BEIN GURME" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/beingurme.png" group-title="🖥️ TR Belgesel",BEIN GURME 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/271
+#EXTINF:-1 tvg-id="BeinGurme.tr" tvg-name="BEIN GURME" tvg-logo="http://logo.multicms.info/tvlogo/beingurme.png" group-title="🖥️ TR Belgesel",BEIN GURME 
+https://atv-switch.huseyinakcagoz.workers.dev/BeinGurme.tr
 
 #######################
 # 📺 YABAN TV
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV HD" tvg-logo="http://logo.multicms.info/tvlogo/yaban.png" group-title="🖥️ TR Belgesel",YABAN TV HD
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/15018
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV
-http://uro-levene-1012.mywire.org/index.php?id=10768&token=DeaTHLesS
-
-#EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV
-https://goldvod.site/live/hpgdiscoo/123456/447.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/15018
-
-# ⏪⏩ YEDEK 3
-#EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/yabantv.png" group-title="🖥️ TR Belgesel",YABAN TV
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913177&extension=ts&play_token=bIpar87N8b
+#EXTINF:-1 tvg-id="YabanTV.tr" tvg-name="YABAN TV HD" tvg-logo="http://logo.multicms.info/tvlogo/yaban.png" group-title="🖥️ TR Belgesel",YABAN TV
+https://atv-switch.huseyinakcagoz.workers.dev/YabanTV.tr
 
 #######################
 # 📺 ÇİFTÇİ TV
@@ -881,15 +801,7 @@ http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913177&exte
 
 # 🥇 ANA
 #EXTINF:-1 tvg-id="CiftciTV.tr" tvg-name="ÇİFTÇİ TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/ciftcitv.png" group-title="🖥️ TR Belgesel",ÇİFTÇİ TV
-http://stream.taksimbilisim.com:1935/ciftcitv/smil:ciftcitv.smil/playlist.m3u8
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="CiftciTV.tr" tvg-name="ÇİFTÇİ TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/ciftcitv.png" group-title="🖥️ TR Belgesel",ÇİFTÇİ TV
-https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="CiftciTV.tr" tvg-name="ÇİFTÇİ TV" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/ciftcitv.png" group-title="🖥️ TR Belgesel",ÇİFTÇİ TV
-https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/CiftciTV.tr
 
 #######################
 # 📺 TGRT BELGESEL
@@ -897,14 +809,13 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 
 # 🥇 ANA
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT BELGESEL (Resmi)" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tgrtbelgesel.png" group-title="🖥️ TR Belgesel",TGRT BELGESEL
-https://tgrt-live.ercdn.net/tgrtbelgesel/tgrtbelgesel.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/TGRTBelgesel.tr
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tgrtbelgesel.png" group-title="🖥️ TR Belgesel",TGRT BELGESEL
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913178&extension=ts&play_token=sOrMUhSsqY
 
-#EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tgrtbelgesel.png" group-title="🖥️ TR Belgesel",TGRT BELGESEL
-https://goldvod.site/live/hpgdiscoo/123456/96.m3u8
+  "/TGRTBelgesel.tr":[
+"https://tgrt-live.ercdn.net/tgrtbelgesel/tgrtbelgesel.m3u8",
+"http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913178&extension=ts&play_token=sOrMUhSsqY",
+"https://goldvod.site/live/hpgdiscoo/123456/96.m3u8"
 
 #######################
 # 📺 LIFE TV
