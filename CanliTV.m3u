@@ -283,8 +283,11 @@ https://dsmartgo-live.ercdn.net/sozcutv/sozcutv.m3u8
 #######################
 
 # 🥇 ANA – TiviMivi
-#EXTINF:-1 tvg-id="CNNTurk.tr" tvg-name="CNN TÜRK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TÜRK
+#EXTINF:-1 tvg-id="CNNTurk.tr" tvg-name="CNN TÜRK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" group-title="🖥️ TR Haber",CNN TÜRK | A
 https://atv-switch.huseyinakcagoz.workers.dev/cnnturk
+
+#EXTINF:-1 tvg-id="CNNTurk.tr" tvg-name="CNN TÜRK" tvg-logo="http://logo.multicms.info/tvlogo/cnnturk.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",CNN TÜRK | B
+https://dsmartgo-live.ercdn.net/dsmartgo/cnnturk/cnnturk.isml/playlist.m3u8
 
 
 #######################
@@ -292,18 +295,22 @@ https://atv-switch.huseyinakcagoz.workers.dev/cnnturk
 #######################
 
 # 🥇 ANA – TiviMivi
-#EXTINF:-1 tvg-id="HaberturkTV.tr" tvg-name="HABERTÜRK" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/haberturk.png" group-title="🖥️ TR Haber",Habertürk
+#EXTINF:-1 tvg-id="HaberturkTV.tr" tvg-name="HABERTÜRK" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/haberturk.png" group-title="🖥️ TR Haber",Habertürk | A
 https://atv-switch.huseyinakcagoz.workers.dev/haberturk
 
+#EXTINF:-1 tvg-id="HaberturkTV.tr" tvg-name="HABERTÜRK" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/haberturk.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",Habertürk | B
+https://dsmartgo-live.ercdn.net/dsmartgo/haberturk/haberturk.isml/playlist.m3u8
 
 #######################
 # 📺 NTV
 #######################
 
 # 🥇 ANA – TiviMivi
-#EXTINF:-1 tvg-id="NTV.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV
+#EXTINF:-1 tvg-id="NTV.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" group-title="🖥️ TR Haber",NTV | A
 https://atv-switch.huseyinakcagoz.workers.dev/ntv
 
+#EXTINF:-1 tvg-id="NTV.tr" tvg-name="NTV" tvg-logo="http://logo.multicms.info/tvlogo/ntvhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",NTV | B
+https://dsmartgo-live.ercdn.net/dsmartgo/ntv/ntv.isml/playlist.m3u8
 
 
  #######################
@@ -311,9 +318,11 @@ https://atv-switch.huseyinakcagoz.workers.dev/ntv
 #######################
 
 # 🥇 ANA – TiviMivi
-#EXTINF:-1 tvg-id="TV100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100
+#EXTINF:-1 tvg-id="TV100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" group-title="🖥️ TR Haber",TV 100 | A
 https://atv-switch.huseyinakcagoz.workers.dev/tv100
 
+#EXTINF:-1 tvg-id="TV100.tr" tvg-name="TV 100" tvg-logo="http://logo.multicms.info/tvlogo/tv100.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TV 100 | B
+https://dsmartgo-live.ercdn.net/tv100/tv100.m3u8
 
 
 #######################
@@ -321,17 +330,23 @@ https://atv-switch.huseyinakcagoz.workers.dev/tv100
 #######################
 
 # 🥇 ANA – TiviMivi
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL
+#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="🖥️ TR Haber",HABER GLOBAL | A
 https://atv-switch.huseyinakcagoz.workers.dev/HaberGlobal.tr
+
+#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL" tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HABER GLOBAL | B
+https://dsmartgo-live.ercdn.net/dsmartgo/haberglobal/haberglobal.isml/playlist.m3u8
+
 
 #######################
 # 📺 ÜLKE TV
 #######################
 
 # 🥇 ANA – PANEL FHD
-#EXTINF:-1 tvg-id="UlkeTV.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV
+#EXTINF:-1 tvg-id="UlkeTV.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" group-title="🖥️ TR Haber",ÜLKE TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/UlkeTV.tr
 
+#EXTINF:-1 tvg-id="UlkeTV.tr" tvg-name="ÜLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ulkehd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",ÜLKE TV | B
+https://dsmartgo-live.ercdn.net/ulketv/ulketv.m3u8
 
 
 #######################
@@ -339,9 +354,11 @@ https://atv-switch.huseyinakcagoz.workers.dev/UlkeTV.tr
 #######################
 
 # 🥇 ANA – FHD
-#EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER
+#EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER | A
 https://atv-switch.huseyinakcagoz.workers.dev/FlashHaberTV.tr
 
+#EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",FLASH HABER | B
+https://dsmartgo-live.ercdn.net/flashhaber/flashhaber.m3u8
 
 
 #######################
@@ -349,8 +366,12 @@ https://atv-switch.huseyinakcagoz.workers.dev/FlashHaberTV.tr
 #######################
 
 # 🥇 ANA – FHD (TiviMivi)
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER
+#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER | A
 https://atv-switch.huseyinakcagoz.workers.dev/AHaber.tr
+
+#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",A HABER | B
+https://dsmartgo-live.ercdn.net/ahaber/ahaber.m3u8
+
 
 "/AHaber.tr":[
 
