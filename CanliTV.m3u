@@ -15,7 +15,7 @@ https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 
 # 1. ANA – RESMÎ (Tivibu / Tivimivi)
 
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV |A
+#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" group-title="🖥️ CANLI | Ulusal",ATV | A
 https://atv-switch.huseyinakcagoz.workers.dev/atv
 
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV" tvg-logo="http://logo.multicms.info/logoslar/atv.png" catchup="auto" catchup-days="7" group-title="🖥️ CANLI | Ulusal",ATV | B
@@ -25,10 +25,10 @@ https://dsmartgo-live.ercdn.net/dsmartgo/atv/atv.isml/atv.m3u8
 # 📺 KANAL D (OPTİMİZE)
 ############################
 
-#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D 
+#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D | A
 https://atv-switch.huseyinakcagoz.workers.dev/kanald
 
-#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D ⏪⏩ (AUTO)
+#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D" tvg-logo="http://logo.multicms.info/logoslar/kanaldhd.png" catchup="true" catchup-days="7" catchup-type="live" group-title="🖥️ CANLI | Ulusal",KANAL D | B
 https://dsmartgo-live.ercdn.net/dsmartgo/kanald/kanald.isml/kanald.m3u8
 
 ############################
@@ -36,10 +36,10 @@ https://dsmartgo-live.ercdn.net/dsmartgo/kanald/kanald.isml/kanald.m3u8
 ############################
 
 # 🥇 ANA – RESMÎ (DYG DIGITAL / PUHU TV)
-#EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV" tvg-logo="http://logo.multicms.info/logoslar/star.png" group-title="🖥️ CANLI | Ulusal",STAR TV
+#EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV" tvg-logo="http://logo.multicms.info/logoslar/star.png" group-title="🖥️ CANLI | Ulusal",STAR TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/star
 
-#EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV" tvg-logo="http://logo.multicms.info/logoslar/star.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",STAR TV ⏪⏩
+#EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV" tvg-logo="http://logo.multicms.info/logoslar/star.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",STAR TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/star/star.isml/playlist.m3u8
 
 
@@ -48,10 +48,10 @@ https://dsmartgo-live.ercdn.net/dsmartgo/star/star.isml/playlist.m3u8
 ############################
 
 # 🥇 ANA – RESMÎ (CİNER / DAION CDN) FHD
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" group-title="🖥️ CANLI | Ulusal",SHOW TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/show
 
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",SHOW TV ⏪⏩
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV" tvg-logo="http://logo.multicms.info/logoslar/showhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",SHOW TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/showtv/showtv.isml/showtv.m3u8
 
 ############################
@@ -60,10 +60,10 @@ https://dsmartgo-live.ercdn.net/dsmartgo/showtv/showtv.isml/showtv.m3u8
 
 # 🥇 ANA – RESMÎ (TIVIMIVI)
 
-#EXTINF:-1 tvg-id="NOWTV.tr" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV
+#EXTINF:-1 tvg-id="NOWTV.tr" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" group-title="🖥️ CANLI | Ulusal",NOW TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/now
 
-#EXTINF:-1 tvg-id="NOWTV.tr" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",NOW TV ⏪⏩
+#EXTINF:-1 tvg-id="NOWTV.tr" tvg-name="NOW TV" tvg-logo="https://i.imgur.com/5EYjWK7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",NOW TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/foxtv/foxtv.isml/playlist.m3u8
 
 
@@ -72,10 +72,10 @@ https://dsmartgo-live.ercdn.net/dsmartgo/foxtv/foxtv.isml/playlist.m3u8
 ############################
 
 # 🥇 ANA – RESMÎ (TV8 / DAION CDN) FHD
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal",TV8
+#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="🖥️ CANLI | Ulusal",TV8 | A
 https://atv-switch.huseyinakcagoz.workers.dev/tv8
 
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV8 ⏪⏩
+#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8" tvg-logo="http://logo.multicms.info/logoslar/tv8.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV8 | B
 https://dsmartgo-live.ercdn.net/dsmartgo/tv8/tv8.isml/playlist.m3u8
 
 ############################
