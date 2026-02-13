@@ -83,24 +83,36 @@ https://dsmartgo-live.ercdn.net/dsmartgo/tv8/tv8.isml/playlist.m3u8
 ############################
 
 # 🥇 ANA – RESMÎ (TIVIMIVI)
-#EXTINF:-1 tvg-id="ShowMax.tr" tvg-name="SHOW MAX" tvg-logo="https://i.imgur.com/456FWA7.png" group-title="🖥️ CANLI | Ulusal",SHOW MAX
+#EXTINF:-1 tvg-id="ShowMax.tr" tvg-name="SHOW MAX" tvg-logo="https://i.imgur.com/456FWA7.png" group-title="🖥️ CANLI | Ulusal",SHOW MAX  | A
 https://atv-switch.huseyinakcagoz.workers.dev/ShowMax.tr
+
+#EXTINF:-1 tvg-id="ShowMax.tr" tvg-name="SHOW MAX" tvg-logo="https://i.imgur.com/456FWA7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",SHOW MAX | B
+https://dsmartgo-live.ercdn.net/showmax/showmax.m3u8
+
 
 ############################
 # 📺 BEYAZ TV (OPTİMİZE)
 ############################
 
 # 🥇 ANA – RESMÎ CDN (1080p)
-#EXTINF:-1 tvg-id="BeyazTV.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV
+#EXTINF:-1 tvg-id="BeyazTV.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" group-title="🖥️ CANLI | Ulusal",BEYAZ TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/BeyazTV.tr
+
+#EXTINF:-1 tvg-id="BeyazTV.tr" tvg-name="BEYAZ TV" tvg-logo="http://logo.multicms.info/logoslar/beyazhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",BEYAZ TV | B
+https://dsmartgo-live.ercdn.net/dsmartgo/beyaztv/beyaztv.isml/playlist.m3u8
+
 
 ############################
 # 📺 KANAL 7 (OPTİMİZE)
 ############################
 
 # 🥇 ANA – RESMÎ CDN (1080p)
-#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7
+#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" group-title="🖥️ CANLI | Ulusal",KANAL 7 | A
 https://atv-switch.huseyinakcagoz.workers.dev/Kanal7.tr
+
+#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="KANAL 7" tvg-logo="http://logo.multicms.info/logoslar/kanal7.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",KANAL 7 | B
+https://dsmartgo-live.ercdn.net/dsmartgo/kanal7/kanal7.isml/playlist.m3u8
+
 
 ############################
 # 📺 TEVE 2 (OPTİMİZE)
@@ -115,8 +127,11 @@ https://atv-switch.huseyinakcagoz.workers.dev/Teve2.tr
 ############################
 
 # 🥇 ANA – RESMÎ CDN (1080p)
-#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2
+#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" group-title="🖥️ CANLI | Ulusal",A2 | A
 https://atv-switch.huseyinakcagoz.workers.dev/A2TV.tr
+
+#EXTINF:-1 tvg-id="A2TV.tr" tvg-name="A2" tvg-logo="http://logo.multicms.info/logoslar/a2.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",A2 | B
+https://dsmartgo-live.ercdn.net/a2/a2.m3u8
 
 
 ############################
@@ -124,8 +139,11 @@ https://atv-switch.huseyinakcagoz.workers.dev/A2TV.tr
 ############################
 
 # 🥇 ANA – RESMÎ CDN (1080p)
-#EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV
+#EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" group-title="🖥️ CANLI | Ulusal",360 TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/360TV.tr
+
+#EXTINF:-1 tvg-id="360TV.tr" tvg-name="360 TV" tvg-logo="http://logo.multicms.info/logoslar/360.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",360 TV | B
+https://dsmartgo-live.ercdn.net/360/360.m3u8
 
 
 ############################
@@ -133,24 +151,34 @@ https://atv-switch.huseyinakcagoz.workers.dev/360TV.tr
 ############################
 
 # 🥇 ANA – RESMÎ TRT (2K / 1440p)
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1
+#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 | A
 https://atv-switch.huseyinakcagoz.workers.dev/TRT1.tr
+
+#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="🖥️ CANLI | Ulusal",TRT 1 | B
+https://dsmartgo-live.ercdn.net/dsmartgo/trt1/trt1.isml/trt1.m3u8
+
 
 ############################
 # 📺 TRT 2 (OPTİMİZE)
 ############################
 
 # 🥇 ANA – RESMÎ TRT CDN
-#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2
+#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2 | A
 https://atv-switch.huseyinakcagoz.workers.dev/TRT2.tr
+
+#EXTINF:-1 tvg-id="TRT2.tr" tvg-name="TRT 2" tvg-logo="http://logo.multicms.info/logoslar/trt2.jpg" group-title="🖥️ CANLI | Ulusal",TRT 2 | B
+https://dsmartgo-live.ercdn.net/dsmartgo/trt2/trt2.isml/trt2.m3u8
 
 ############################
 # 📺 GZT TV (OPTİMİZE)
 ############################
 
 # 🥇 ANA – RESMÎ CDN (MNCDN)
-#EXTINF:-1 tvg-id="gzt.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" group-title="🖥️ CANLI | Ulusal",GZT TV
+#EXTINF:-1 tvg-id="gzt.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" group-title="🖥️ CANLI | Ulusal",GZT TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/gzt
+
+#EXTINF:-1 tvg-id="GZT.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",GZT TV | B
+https://dsmartgo-live.ercdn.net/gzt/gzt.m3u8
 
 
 
@@ -185,9 +213,11 @@ https://atv-switch.huseyinakcagoz.workers.dev/tiviturk.tr
 ############################
 # 📺 TV 8.5
 ############################
-#EXTINF:-1 tvg-id="tv8.5.tr" tvg-name="TV 8.5" group-title="🖥️ CANLI | Ulusal",TV 8.5 FHD
+#EXTINF:-1 tvg-id="tv8.5.tr" tvg-name="TV 8.5" group-title="🖥️ CANLI | Ulusal",TV 8.5 FHD 2 | A
 https://atv-switch.huseyinakcagoz.workers.dev/tv8.5.tr
 
+#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8.5" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV 8.5 | B
+https://dsmartgo-live.ercdn.net/tv8_5/tv8_5.m3u8
 
 
 ############################
@@ -226,13 +256,8 @@ https://atv-switch.huseyinakcagoz.workers.dev/Kanal7.tr
 https://atv-switch.huseyinakcagoz.workers.dev/birtv.tr
 
 
-
 #EXTINF:-1 tvg-id="onstv.tr" tvg-name="ONS TV" tvg-logo="https://onstv.com.tr/images/gallery/uploaded/2/onstv-logo.png" group-title="🖥️ CANLI | Ulusal",ONS TV
 https://atv-switch.huseyinakcagoz.workers.dev/onstv.tr
-
-
-
-
 
 #######################
 # 📺 (TR) HABER KANALLARI
@@ -245,8 +270,12 @@ https://dsmartgo-live.ercdn.net/habermozaik/habermozaik.m3u8
 #######################
 
 # 🥇 ANA – TiviMivi
-#EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" group-title="🖥️ TR Haber",SÖZCÜ TV
+#EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" group-title="🖥️ TR Haber",SÖZCÜ TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/SozcuTV.tr
+
+
+#EXTINF:-1 tvg-id="SozcuTV.tr" tvg-name="SÖZCÜ TV" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",SÖZCÜ TV | B
+https://dsmartgo-live.ercdn.net/sozcutv/sozcutv.m3u8
 
 
 #######################
