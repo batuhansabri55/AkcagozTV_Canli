@@ -373,47 +373,20 @@ https://atv-switch.huseyinakcagoz.workers.dev/AHaber.tr
 https://dsmartgo-live.ercdn.net/ahaber/ahaber.m3u8
 
 
-"/AHaber.tr":[
-
-
-"https://dsmartgo-live.ercdn.net/ahaber/ahaber.m3u8",
-"https://cdn-eu.tivimivi.com/streams/123/master.m3u8",
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/140",
-"https://goldvod.site/live/hpgdiscoo/123456/490.m3u8",
-"http://65.108.239.207/ahaber/index.m3u8",
-"http://87.121.104.29:145/ahberyt/stream.m3u8",
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/139"
 
 #######################
 # 📺 HALK TV
 #######################
 
 # 🥇 ANA – FHD (1080p)
-#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV
-https://halktv-live.daioncdn.net/halktv/halktv_1080p.m3u8
+#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV | A
+https://atv-switch.huseyinakcagoz.workers.dev/HalkTV.tr
 
-# 🥈 ANA – FHD (TiviMivi)
-#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV
-https://cdn-eu.tivimivi.com/streams/103/master.m3u8
-
-# 🥉 YEDEK – HD (720p)
-#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV YEDEK
-https://halktv-live.daioncdn.net/halktv/halktv_720p.m3u8
-
-#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV YEDEK
-https://goldvod.site/live/hpgdiscoo/123456/511.m3u8
-
-# 🟢 YEDEK – CDN
-#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV YEDEK
-https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 
 # 🟡 CATCHUP – D-SMART GO
-#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HALK TV ⏪⏩
+#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",HALK TV | B
 https://dsmartgo-live.ercdn.net/dsmartgo/halktv/halktv.isml/playlist.m3u8
 
-# 🚨 ACİL – PANEL
-#EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV" tvg-logo="http://logo.multicms.info/logoslar/halk.png" group-title="🖥️ TR Haber",HALK TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/5
 
 #######################
 # 📺 FinansTurkTV
@@ -421,65 +394,46 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/5
 
 # 🥇 ANA
 #EXTINF:-1 tvg-id="FinansTurkTV" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV
-https://yayin30.haber100.com/live/finansturk/playlist.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/FinansTurkTV
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="FinansTurkTV" tvg-name="FinansTurkTV" tvg-logo="https://finansturktv.com/images/logo.png" group-title="🖥️ TR Haber",FinansTurkTV YEDEK
-https://yayin30.haber100.com/live/finansturk/chunklist_w1525613919.m3u8
 
 #######################
 # 📺 EKOL TV
 #######################
 
 # 🥇 ANA (FHD)
-#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV
-https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
-
-# 🥈 YEDEK (HD)
-#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV YEDEK
-https://ekoltv-live.ercdn.net/ekoltv/ekoltv_720p.m3u8
-
-# 🔁 YEDEK 2 (SD / Adaptif)
-#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV Alternatif
-https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8
-
-#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV Alternatif
-https://goldvod.site/live/hpgdiscoo/123456/219.m3u8
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/255109
+#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" group-title="🖥️ TR Haber",EKOL TV | A
+https://atv-switch.huseyinakcagoz.workers.dev/EkolTV.tr
 
 # ⏪⏩ Catchup
-#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",EKOL TV ⏪⏩
+#EXTINF:-1 tvg-id="EkolTV.tr" tvg-name="EKOL TV" tvg-logo="https://logo.multicms.info/TVlogolar/ekoltv.jpg" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",EKOL TV | B
 https://dsmartgo-live.ercdn.net/ekoltv/ekoltv.m3u8
+
 
 #######################
 # 📺 TVNET
 #######################
 
 # 🥇 ANA (FHD)
-#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET
-https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
-
-# 🥈 YEDEK (HD)
-#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET YEDEK
-https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8
-
-# 🥉 YEDEK 2 (FHD – Alternatif)
-#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET Alternatif
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/54676
-
-#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET Alternatif
-https://goldvod.site/live/hpgdiscoo/123456/118.m3u8
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232353
+#EXTINF:-1 tvg-id="Tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET | A
+https://atv-switch.huseyinakcagoz.workers.dev/Tvnet.tr
 
 # ⏪⏩ Catchup
-#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TVNET ⏪⏩
+#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TVNET | B
 https://dsmartgo-live.ercdn.net/tvnet/tvnet.m3u8
+
+"/Tvnet.tr":[
+
+
+
+
+
+"https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
+"https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8
+"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/54676
+"https://goldvod.site/live/hpgdiscoo/123456/118.m3u8
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232353"
+
 
 #######################
 # 📺 TGRT HABER
