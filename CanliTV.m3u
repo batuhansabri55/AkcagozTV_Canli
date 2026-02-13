@@ -750,7 +750,6 @@ https://dsmartgo-live.ercdn.net/bbcearth/bbcearth.m3u8
 #EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY | A
 https://atv-switch.huseyinakcagoz.workers.dev/ViasatHistory.tr
 
-
 # ⏪⏩ YEDEK 3
 #EXTINF:-1 tvg-id="ViasatHistory.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/viasathistory.png" group-title="🖥️ TR Belgesel",VIASAT HISTORY | B
 https://dsmartgo-live.ercdn.net/viasathistory/viasathistory.m3u8
@@ -817,18 +816,8 @@ https://atv-switch.huseyinakcagoz.workers.dev/TGRTBelgesel.tr
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="LifeTV.tr" tvg-name="LIFE TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Discovery_Life_logo_2016.svg/960px-Discovery_Life_logo_2016.svg.png" group-title="🖥️ TR Belgesel",LIFE TV
-
-
-
-  "/TGRTBelgesel.tr":[
-
-
-https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/playlist.m3u8
-
-# 🥈 YEDEK
 #EXTINF:-1 tvg-id="LifeTV.tr" tvg-name="LIFE TV" tvg-logo="http://logo.multicms.info/tvlogo/lifetv.jpg" group-title="🖥️ TR Belgesel",LIFE TV
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/51093
+https://atv-switch.huseyinakcagoz.workers.dev/LifeTV.tr
 
 #######################
 # 📺 NATURE TIME
