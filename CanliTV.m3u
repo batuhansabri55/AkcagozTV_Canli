@@ -422,45 +422,19 @@ https://atv-switch.huseyinakcagoz.workers.dev/Tvnet.tr
 #EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TVNET | B
 https://dsmartgo-live.ercdn.net/tvnet/tvnet.m3u8
 
-"/Tvnet.tr":[
-
-
-
-
-
-"https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
-"https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/54676
-"https://goldvod.site/live/hpgdiscoo/123456/118.m3u8
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232353"
-
 
 #######################
 # 📺 TGRT HABER
 #######################
 
 # 🥇 ANA (FHD)
-#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER
-https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_720p.m3u8
-
-# 🥈 YEDEK (SD – Resmi)
-#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER YEDEK
-https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber.m3u8
-
-# 🥉 YEDEK 2 (Resmi Alternatif)
-#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER Alternatif
-https://canli.tgrthaber.com/tgrt.m3u8
-
-#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER Alternatif
-https://goldvod.site/live/hpgdiscoo/123456/111.m3u8
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232352
+#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="🖥️ TR Haber",TGRT HABER | A
+https://atv-switch.huseyinakcagoz.workers.dev/TGRTHaber.tr
 
 # ⏪⏩ Catchup
-#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TGRT HABER ⏪⏩
+#EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TGRT HABER | B
 https://dsmartgo-live.ercdn.net/tgrthaber/tgrthaber.m3u8
+
 
 #######################
 # 📺 24 TV
@@ -468,30 +442,24 @@ https://dsmartgo-live.ercdn.net/tgrthaber/tgrthaber.m3u8
 
 # 🥇 ANA (FHD – Resmi)
 #EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV
-https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/24TV.tr
 
-# 🥈 YEDEK (HD – Resmi)
-#EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV YEDEK
-https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
 
-# 🥉 YEDEK 2 (HD – Alternatif)
-#EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV Alternatif
-https://tv.ensonhaber.com/tv24/tv24.m3u8
 
-#EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV Alternatif
-https://goldvod.site/live/hpgdiscoo/123456/112.m3u8
 
-# 🧰 YEDEK 3 (SD)
-#EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV SD
-https://ensonhaber-live.ercdn.net/tv24/tv24_360p.m3u8
 
-# ⭐ YEDEK 4
-#EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/142
+"/24TV.tr":[
 
-# 🧯 YEDEK 5 (MNCDN)
-#EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 TV" tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="🖥️ TR Haber",24 TV MNCDN
-https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/chunklist_b596000.m3u8
+
+
+
+"https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8",
+"https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8",
+"https://tv.ensonhaber.com/tv24/tv24.m3u8",
+"https://goldvod.site/live/hpgdiscoo/123456/112.m3u8",
+"https://ensonhaber-live.ercdn.net/tv24/tv24_360p.m3u8",
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/142",
+"https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/chunklist_b596000.m3u8"
 
 #######################
 # 📺 TELE 1
