@@ -574,76 +574,30 @@ https://atv-switch.huseyinakcagoz.workers.dev/BRT2.tr
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="trtworld.tr" tvg-name="TRT WORLD" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w750/q80/23864_1-0-465-262.jpeg" group-title="🖥️ TR Haber",TRT WORLD
-
-
-
-    "/BRT2.tr":[
-
-"http://plan9.store:80/play/live.php?stream=314604&extension=ts",
-"http://line.liveott.ru:80/play/live.php?stream=1123596&extension=ts"
-
-https://tv-trtworld.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="trtworld.tr" tvg-name="TRT WORLD" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w750/q80/23864_1-0-465-262.jpeg" group-title="🖥️ TR Haber",TRT WORLD
-https://goldvod.site/live/hpgdiscoo/123456/222.m3u8
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="trtworld.tr" tvg-name="TRT WORLD" tvg-logo="https://cms-tabii-public-image.tabii.com/int/w750/q80/23864_1-0-465-262.jpeg" group-title="🖥️ TR Haber",TRT WORLD Yedek
-http://line.liveott.ru:80/play/live.php?stream=1603686&extension=ts
+https://atv-switch.huseyinakcagoz.workers.dev/trtworld.tr
 
 #######################
 # 📺 A PARA
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="APara.tr" tvg-name="A PARA" tvg-logo="https://dsmart-static-v2.ercdn.net/content/v/7e/13515/Thumbnail.png" group-title="🖥️ TR Haber",A PARA
-https://dsmartgo-live.ercdn.net/apara/apara.m3u8
-
-#EXTINF:-1 tvg-id="APara.tr" tvg-name="A PARA" tvg-logo="https://dsmart-static-v2.ercdn.net/content/v/7e/13515/Thumbnail.png" group-title="🖥️ TR Haber",A PARA Yedek
-https://goldvod.site/live/hpgdiscoo/123456/131.m3u8
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="APara.tr" tvg-name="A PARA" tvg-logo="https://dsmart-static-v2.ercdn.net/content/v/7e/13515/Thumbnail.png" group-title="🖥️ TR Haber",A PARA Yedek
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50841
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="APara.tr" tvg-name="A PARA" tvg-logo="https://dsmart-static-v2.ercdn.net/content/v/7e/13515/Thumbnail.png" group-title="🖥️ TR Haber",A PARA 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50841
+https://atv-switch.huseyinakcagoz.workers.dev/APara.tr
 
 #######################
 # 📺 BLOOMBERG HT
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png" group-title="🖥️ TR Haber",BLOOMBERG HT
-https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/BloombergHT.tr
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png" group-title="🖥️ TR Haber",BLOOMBERG HT Yedek
-https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8
-
-#EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png" group-title="🖥️ TR Haber",BLOOMBERG HT Yedek
-https://goldvod.site/live/hpgdiscoo/123456/498.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT" tvg-logo="https://dsmart-static-v2.ercdn.net/content/j/Q7/13734/Thumbnail.png" group-title="🖥️ TR Haber",BLOOMBERG HT 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50842
 
 #######################
 # 📺 EKOTÜRK
 #######################
 # 🥇 ANA
 #EXTINF:-1 tvg-id="Ekoturk.tr" tvg-name="EKOTÜRK" tvg-logo="http://logo.multicms.info/logoslar/ekoturk.png" group-title="🖥️ TR Haber",EKOTÜRK
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/31415
+https://atv-switch.huseyinakcagoz.workers.dev/Ekoturk.tr
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="Ekoturk.tr" tvg-name="EKOTÜRK" tvg-logo="http://logo.multicms.info/logoslar/ekoturk.png" group-title="🖥️ TR Haber",EKOTÜRK Yedek
-https://streams.uzunmuhalefet.com/stream/50237544-8084-4092-b09c-234af5f951af.m3u8
-
-#EXTINF:-1 tvg-id="Ekoturk.tr" tvg-name="EKOTÜRK" tvg-logo="http://logo.multicms.info/logoslar/ekoturk.png" group-title="🖥️ TR Haber",EKOTÜRK Yedek
-https://goldvod.site/live/hpgdiscoo/123456/130.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="Ekoturk.tr" tvg-name="EKOTÜRK" tvg-logo="http://logo.multicms.info/logoslar/ekoturk.png" group-title="🖥️ TR Haber",EKOTÜRK 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31415
 
 #######################
 # 📺 CNBC-E
@@ -651,17 +605,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31415
 
 # 🥇 ANA
 #EXTINF:-1 tvg-id="CNBCE.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E
-https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="CNBCE.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E Yedek
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/254694
+https://atv-switch.huseyinakcagoz.workers.dev/CNBCE.tr
 
-#EXTINF:-1 tvg-id="CNBCE.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E Yedek
-https://goldvod.site/live/hpgdiscoo/123456/153.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="CNBCE.tr" tvg-name="CNBC-E" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/CNBC-e-Logo.png/160px-CNBC-e-Logo.png" group-title="🖥️ TR Haber",CNBC-E 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/254694
 
 #  BELGESEL KANALLARI
 #EXTINF:-1 tvg-id="" tvg-name="----- (tr) Belgesel Kanallari----- " tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/TURKIYE_LOGO_.png" group-title="🖥️ TR Belgesel",----- (tr) Belgesel Kanallari----- 
@@ -672,7 +617,10 @@ http://4k.super1.club:8080//live/hakanturgut/gmYVXNgJ/1421.ts
 #######################
 
 #EXTINF:-1 tvg-id="universalbelgesel.tr" tvg-name="UNIVERSAL BELGESEL" tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="🖥️ TR Belgesel",UNIVERSAL BELGESEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/97172
+https://atv-switch.huseyinakcagoz.workers.dev/universalbelgesel.tr
+
+
+
 
 #EXTINF:-1 tvg-id="universalbelgesel.tr" tvg-name="UNIVERSAL BELGESEL" tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="🖥️ TR Belgesel",UNIVERSAL BELGESEL (YEDEK)
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/97172
