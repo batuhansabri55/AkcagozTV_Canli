@@ -619,19 +619,15 @@ http://4k.super1.club:8080//live/hakanturgut/gmYVXNgJ/1421.ts
 #EXTINF:-1 tvg-id="universalbelgesel.tr" tvg-name="UNIVERSAL BELGESEL" tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="🖥️ TR Belgesel",UNIVERSAL BELGESEL
 https://atv-switch.huseyinakcagoz.workers.dev/universalbelgesel.tr
 
-
-#EXTINF:-1 tvg-id="universalbelgesel.tr" tvg-name="UNIVERSAL BELGESEL" tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="🖥️ TR Belgesel",UNIVERSAL BELGESEL
-https://atv-switch.huseyinakcagoz.workers.dev/universalbelgesel.tr
-
+  
 #######################
 # 📺 UNIVERSAL DISCOVERY
 #######################
 
 #EXTINF:-1 tvg-id="universaldiscovery.tr" tvg-name="UNIVERSAL DISCOVERY" tvg-logo="https://logo.multicms.info/TVlogolar/UniversalDiscovery.jpg" group-title="🖥️ TR Belgesel",UNIVERSAL DISCOVERY
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/253585
+https://atv-switch.huseyinakcagoz.workers.dev/universaldiscovery.tr
 
-#EXTINF:-1 tvg-id="universaldiscovery.tr" tvg-name="UNIVERSAL DISCOVERY" tvg-logo="https://logo.multicms.info/TVlogolar/UniversalDiscovery.jpg" group-title="🖥️ TR Belgesel",UNIVERSAL DISCOVERY (YEDEK)
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/253585
+
 
 #######################
 # 📺 DISCOVERY CHANNEL
@@ -642,10 +638,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/253585
 
 
 
+"/universaldiscovery.tr":[
 
-
-  "/universalbelgesel.tr":[
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/97172
 
 https://dsmartgo-live.ercdn.net/discoverychannel/discoverychannel.m3u8
 
