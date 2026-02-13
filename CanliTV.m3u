@@ -298,13 +298,6 @@ https://atv-switch.huseyinakcagoz.workers.dev/UlkeTV.tr
 https://atv-switch.huseyinakcagoz.workers.dev/FlashHaberTV.tr
 
 
-"/FlashHaberTV.tr":[
-
-
-"https://dsmartgo-live.ercdn.net/flashhaber/flashhaber.m3u8",
-"https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8",
-"https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_0.m3u8",
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/99597"
 
 #######################
 # 📺 A HABER
@@ -312,30 +305,18 @@ https://atv-switch.huseyinakcagoz.workers.dev/FlashHaberTV.tr
 
 # 🥇 ANA – FHD (TiviMivi)
 #EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER
-https://cdn-eu.tivimivi.com/streams/123/master.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/AHaber.tr
 
-# 🥈 YEDEK – HD (Panel)
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER YEDEK
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/140
+"/AHaber.tr":[
 
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER YEDEK
-https://goldvod.site/live/hpgdiscoo/123456/490.m3u8
 
-# 🥉 YEDEK – CDN 1
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER YEDEK
-http://65.108.239.207/ahaber/index.m3u8
-
-# 🟢 YEDEK – CDN 2
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER YEDEK
-http://87.121.104.29:145/ahberyt/stream.m3u8
-
-# 🟡 CATCHUP – D-SMART GO
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",A HABER ⏪⏩
-https://dsmartgo-live.ercdn.net/ahaber/ahaber.m3u8
-
-# 🚨 ACİL – PANEL
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="🖥️ TR Haber",A HABER 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/139
+"https://dsmartgo-live.ercdn.net/ahaber/ahaber.m3u8",
+"https://cdn-eu.tivimivi.com/streams/123/master.m3u8",
+"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/140",
+"https://goldvod.site/live/hpgdiscoo/123456/490.m3u8",
+"http://65.108.239.207/ahaber/index.m3u8",
+"http://87.121.104.29:145/ahberyt/stream.m3u8",
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/139"
 
 #######################
 # 📺 HALK TV
