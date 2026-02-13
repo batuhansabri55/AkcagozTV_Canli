@@ -146,10 +146,10 @@ https://dsmartgo-live.ercdn.net/dsmartgo/trt2/trt2.isml/trt2.m3u8
 # 📺 GZT TV (OPTİMİZE)
 ############################
 
-#EXTINF:-1 tvg-id="gzt.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" group-title="🖥️ CANLI | Ulusal",GZT TV | A
+#EXTINF:-1 tvg-id="gzt.tr" tvg-name="GZT TV" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4145ea10-96ad-400d-8870-f22a075f4add.png" group-title="🖥️ CANLI | Ulusal",GZT TV | A
 https://atv-switch.huseyinakcagoz.workers.dev/gzt
 
-#EXTINF:-1 tvg-id="GZT.tr" tvg-name="GZT TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tWLx849cu79PRifC1SdWTX2uv0Q6WmLeMw&s" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",GZT TV | B
+#EXTINF:-1 tvg-id="GZT.tr" tvg-name="GZT TV" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4145ea10-96ad-400d-8870-f22a075f4add.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",GZT TV | B
 https://dsmartgo-live.ercdn.net/gzt/gzt.m3u8
 
 ############################
@@ -177,10 +177,10 @@ https://atv-switch.huseyinakcagoz.workers.dev/tiviturk.tr
 # 📺 TV 8.5
 ############################
 
-#EXTINF:-1 tvg-id="tv8.5.tr" tvg-name="TV 8.5" group-title="🖥️ CANLI | Ulusal",TV 8.5 | A
+#EXTINF:-1 tvg-id="tv8.5.tr" tvg-name="TV 8.5" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/812f4ba5-846e-4ae9-90fc-8f9f481156b5.png" group-title="🖥️ CANLI | Ulusal",TV 8.5 | A
 https://atv-switch.huseyinakcagoz.workers.dev/tv8.5.tr
 
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8.5" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV 8.5 | B
+#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV 8.5" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/812f4ba5-846e-4ae9-90fc-8f9f481156b5.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ CANLI | Ulusal",TV 8.5 | B
 https://dsmartgo-live.ercdn.net/tv8_5/tv8_5.m3u8
 
 ############################
@@ -750,10 +750,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/59396
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",YEŞİLÇAM KLASİK
 https://goldvod.site/live/hpgdiscoo/123456/182.m3u8
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SİNEMA TV YERLİ
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/ae3d90a0-37ee-4e48-a6bc-1375e5f1329a.png" group-title="🖥️ SINEMA 7/24",SİNEMA TV YERLİ
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/165
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SİNEMA TV YERLİ 2
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/ae3d90a0-37ee-4e48-a6bc-1375e5f1329a.png" group-title="🖥️ SINEMA 7/24",SİNEMA TV YERLİ 2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232360
 
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",MOVIESMART CLASSIC
@@ -780,10 +780,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13739
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES ACTION 1
 https://ds.ayakkabiparti.lol/bsaction1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AKSİYON | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/bd434731-0e47-4a37-997e-49f71340fcc6.png" group-title="🖥️ SINEMA 7/24",SINEMA TV AKSİYON | A
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/167
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AKSİYON | B
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/bd434731-0e47-4a37-997e-49f71340fcc6.png" group-title="🖥️ SINEMA 7/24",SINEMA TV AKSİYON | B
 https://dsmartgo-live.ercdn.net/sinemaaksiyon/sinemaaksiyon.m3u8
 
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AKSİYON 2 | A
@@ -792,16 +792,16 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103142
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AKSİYON 2 | B
 https://dsmartgo-live.ercdn.net/sinemaaksiyon2/sinemaaksiyon2.m3u8
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/c8283b71-81f8-4fc6-8e48-6bb8f7f49ad7.png" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE | A
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/166
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE | B
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/c8283b71-81f8-4fc6-8e48-6bb8f7f49ad7.png" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE | B
 https://dsmartgo-live.ercdn.net/sinemaaile/sinemaaile.m3u8
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE 2 | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/c8283b71-81f8-4fc6-8e48-6bb8f7f49ad7.png" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE 2 | A
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103141
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE 2 | B
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/c8283b71-81f8-4fc6-8e48-6bb8f7f49ad7.png" group-title="🖥️ SINEMA 7/24",SINEMA TV AİLE 2 | B
 https://dsmartgo-live.ercdn.net/sinemaaile2/sinemaaile2.m3u8
 
 
@@ -811,16 +811,16 @@ https://ds.ayakkabiparti.lol/bsfamily/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tm
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",KOMEDİ
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/13735
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4145ea10-96ad-400d-8870-f22a075f4add.png" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ | A
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/168
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4145ea10-96ad-400d-8870-f22a075f4add.png" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ | A
 https://dsmartgo-live.ercdn.net/sinemakomedi/sinemakomedi.m3u8
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ 2 | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4145ea10-96ad-400d-8870-f22a075f4add.png" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ 2 | A
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103143
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ 2 | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4145ea10-96ad-400d-8870-f22a075f4add.png" group-title="🖥️ SINEMA 7/24",SINEMA TV KOMEDİ 2 | A
 https://dsmartgo-live.ercdn.net/sinemakomedi2/sinemakomedi2.m3u8
 
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",WESTERN
@@ -835,10 +835,10 @@ https://ds.ayakkabiparti.lol/bspremier1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",beIN MOVIES BOX OFFICE 1
 https://ds.ayakkabiparti.lol/box1/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",FX | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/01053a55-0936-405c-8017-d33ef351706f.png" group-title="🖥️ SINEMA 7/24",FX | A
 https://saran-live.ercdn.net/fx/index.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",FX | B
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/01053a55-0936-405c-8017-d33ef351706f.png" group-title="🖥️ SINEMA 7/24",FX | B
 https://dsmartgo-live.ercdn.net/fx/fx.m3u8
 
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SONVİZYON
@@ -934,13 +934,13 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115712
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",CINE VISION 6
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115714
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",FILM SCREEN
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/7d58e86c-d38e-4ef5-8ee0-fda0a7e65914.png" group-title="🖥️ SINEMA 7/24",FILM SCREEN
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/275983
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/22c5fe05-d70b-4c68-98fb-03bae4870e81.png" group-title="🖥️ SINEMA 7/24",SINEMA TV | A
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/163
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV | B
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/22c5fe05-d70b-4c68-98fb-03bae4870e81.png" group-title="🖥️ SINEMA 7/24",SINEMA TV | B
 https://dsmartgo-live.ercdn.net/sinematv1/sinematv1.m3u8
 
 
@@ -950,10 +950,10 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103139
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV 2 | B
 https://dsmartgo-live.ercdn.net/sinematv2/sinematv2.m3u8
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV 1001 | A
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/8d9fbebd-cade-492d-9cb4-6522cb558794.png" group-title="🖥️ SINEMA 7/24",SINEMA TV 1001 | A
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/164
 
-#EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ SINEMA 7/24",SINEMA TV 1001 | B
+#EXTINF:-1 tvg-id=""  tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/8d9fbebd-cade-492d-9cb4-6522cb558794.png" group-title="🖥️ SINEMA 7/24",SINEMA TV 1001 | B
 https://dsmartgo-live.ercdn.net/sinema1001/sinema1001.m3u8
 
 
