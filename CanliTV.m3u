@@ -288,15 +288,6 @@ https://atv-switch.huseyinakcagoz.workers.dev/HaberGlobal.tr
 https://atv-switch.huseyinakcagoz.workers.dev/UlkeTV.tr
 
 
-"/UlkeTV.tr":[
-
-
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/132",
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/133",
-"https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8",
-"http://87.121.104.29:145/ultetv/stream.m3u8",
-"https://dsmartgo-live.ercdn.net/ulketv/ulketv.m3u8",
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/132"
 
 #######################
 # 📺 FLASH HABER
@@ -304,19 +295,16 @@ https://atv-switch.huseyinakcagoz.workers.dev/UlkeTV.tr
 
 # 🥇 ANA – FHD
 #EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER
-https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/FlashHaberTV.tr
 
-# 🥈 YEDEK – CDN
-#EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER YEDEK
-https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_0.m3u8
 
-# 🟡 CATCHUP – D-SMART GO
-#EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",FLASH HABER ⏪⏩
-https://dsmartgo-live.ercdn.net/flashhaber/flashhaber.m3u8
+"/FlashHaberTV.tr":[
 
-# 🚨 ACİL – PANEL
-#EXTINF:-1 tvg-id="FlashHaberTV.tr" tvg-name="FLASH HABER" tvg-logo="https://dsmart-static-v2.ercdn.net/content/9/aZ/46627/Thumbnail.png?v=638838583824183907" group-title="🖥️ TR Haber",FLASH HABER 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/99597
+
+"https://dsmartgo-live.ercdn.net/flashhaber/flashhaber.m3u8",
+"https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8",
+"https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_0.m3u8",
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/99597"
 
 #######################
 # 📺 A HABER
