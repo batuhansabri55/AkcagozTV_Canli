@@ -649,74 +649,36 @@ https://atv-switch.huseyinakcagoz.workers.dev/NationalGeographicWild.tr
 #EXTINF:-1 tvg-id="NationalGeographicWild.tr@SD" tvg-name="NAT GEO WILD 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/natgeowild.png" group-title="🖥️ TR Belgesel",NAT GEO WILD | B
 https://dsmartgo-live.ercdn.net/natgeowild/natgeowild.m3u8
 
-
-
-"/NationalGeographicWild.tr":[
-
-
-"https://saran-live.ercdn.net/natgeowild/index.m3u8",
-"https://goldvod.site/live/hpgdiscoo/123456/820.m3u8",
-"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/282",
-"http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=196852&extension=ts",
-"http://uro-levene-1012.mywire.org/index.php?id=196852&token=DeaTHLesS",
-"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/282"
-
 #######################
 # 📺 TRT BELGESEL
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
-https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT BELGESEL 4K" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
-https://tv-trtbelgesel.medya.trt.com.tr/master_1440.m3u8
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT BELGESEL HD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
-http://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
-
-#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT BELGESEL HD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
-https://goldvod.site/live/hpgdiscoo/123456/94.m3u8
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT BELGESEL HD" tvg-logo="http://logo.multicms.info/tvlogo/trtbelgeselhd.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/50847
+EXTINF:-1 tvg-id="TRTBelgesel.tr" tvg-name="TRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL | A
+ttps://atv-switch.huseyinakcagoz.workers.dev/TRTBelgesel.tr
 
 # ⏪⏩ YEDEK 4
-#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL
+#EXTINF:-1 tvg-id="TRTBelgesel.tr@SD" tvg-name="TRT BELGESEL" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trtbelgesel.png" group-title="🖥️ TR Belgesel",TRT BELGESEL | B
 https://dsmartgo-live.ercdn.net/trtbelgesel/trtbelgesel.m3u8
 
-#######################
-# 📺 DISCOVERY SCIENCE
-#######################
-# 🥇 ANA
-#EXTINF:-1 tvg-id="discoveryscience.tr" tvg-name="DISCOVERY SCIENCE" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBp2gMDLs2zlYBUHJ6ER_M3Mpfd7OtThr8g&s" group-title="🖥️ TR Belgesel",DISCOVERY SCIENCE
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913175&extension=ts&play_token=jS9nkoIJMl
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="discoveryscience.tr" tvg-name="DISCOVERY SCIENCE" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBp2gMDLs2zlYBUHJ6ER_M3Mpfd7OtThr8g&s" group-title="🖥️ TR Belgesel",DISCOVERY SCIENCE
-http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913174&extension=ts&play_token=fJobygg4Hz
 
 #######################
 # 📺 DISCOVERY ID
 #######################
 # 🥇 ANA
-#EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID
-https://belgeselpatr0n.testworker0y.workers.dev/channel/RGlzY292ZXJ5IFNjaWVuY2U=
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID
-http://plan9.store:80/play/live.php?stream=10738&extension=ts
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/261
+#EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID | A
+ttps://atv-switch.huseyinakcagoz.workers.dev/DiscoveryID.tr
 
 # ⏪⏩ YEDEK 3
-#EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID
+#EXTINF:-1 tvg-id="DiscoveryID.tr" tvg-name="DISCOVERY ID" tvg-logo="https://www.tvlogolar.xyz/logo/Sirbistan/ID.DISCOVERY.png" group-title="🖥️ TR Belgesel",DISCOVERY ID | B
 https://dsmartgo-live.ercdn.net/discoveryscience/discoveryscience.m3u8
+
+
+"/DiscoveryID.tr":[
+"https://belgeselpatr0n.testworker0y.workers.dev/channel/RGlzY292ZXJ5IFNjaWVuY2U=",
+"http://plan9.store:80/play/live.php?stream=10738&extension=ts",
+"http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/261"
+
 
 #######################
 # 📺 DMAX
