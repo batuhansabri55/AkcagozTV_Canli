@@ -709,7 +709,7 @@ https://atv-switch.huseyinakcagoz.workers.dev/habitat.tr
 #######################
 
 # 🥇 ANA
-#EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="http://logo.multicms.info/logoslar/lovenaturehd.png" group-title="🖥️ TR Belgesel",LOVE NATURE | A
+#EXTINF:-1 tvg-id="LoveNature.tr" tvg-name="LOVE NATURE" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/lovenature.png" group-title="🖥️ TR Belgesel",LOVE NATURE | A
 https://atv-switch.huseyinakcagoz.workers.dev/LoveNature.tr
 
 # ⏪⏩ YEDEK 3
@@ -812,17 +812,18 @@ https://atv-switch.huseyinakcagoz.workers.dev/CiftciTV.tr
 https://atv-switch.huseyinakcagoz.workers.dev/TGRTBelgesel.tr
 
 
-  "/TGRTBelgesel.tr":[
-"https://tgrt-live.ercdn.net/tgrtbelgesel/tgrtbelgesel.m3u8",
-"http://line.liveott.ru:80/play/live.php?mac=00:1A:79:C3:8A:0B&stream=913178&extension=ts&play_token=sOrMUhSsqY",
-"https://goldvod.site/live/hpgdiscoo/123456/96.m3u8"
-
 #######################
 # 📺 LIFE TV
 #######################
 
 # 🥇 ANA
 #EXTINF:-1 tvg-id="LifeTV.tr" tvg-name="LIFE TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Discovery_Life_logo_2016.svg/960px-Discovery_Life_logo_2016.svg.png" group-title="🖥️ TR Belgesel",LIFE TV
+
+
+
+  "/TGRTBelgesel.tr":[
+
+
 https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/playlist.m3u8
 
 # 🥈 YEDEK
