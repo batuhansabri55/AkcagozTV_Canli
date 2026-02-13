@@ -473,38 +473,21 @@ https://atv-switch.huseyinakcagoz.workers.dev/turkhaber.tr
 
 # 🥇 ANA (HD)
 #EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK
-https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/BenguturkTV.tr
 
-# 🥈 YEDEK (HD)
-#EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK HD
-https://ensonhaber-live.ercdn.net/benguturk/benguturk_720p.m3u8
-
-# 🥉 YEDEK (SD)
-#EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK SD
-https://ensonhaber-live.ercdn.net/benguturk/benguturk_480p.m3u8
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber",BENGÜTÜRK 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/61595
-
-# 🧯 YEDEK 4 (IPTV)
-#EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGÜTÜRK" tvg-logo="http://logo.multicms.info/tvlogo/benguturk.png" group-title="🖥️ TR Haber","TÜRK Alternatif
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/61595
 
 #######################
 # 📺 ULUSAL KANAL
 #######################
 
+# 🥈 YEDEK
+#EXTINF:-1 tvg-id="UlusalKanal.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://i1.sndcdn.com/avatars-000674662646-w2x2r0-t1080x1080.jpg" group-title="🖥️ TR Haber",ULUSAL KANAL | A
+https://atv-switch.huseyinakcagoz.workers.dev/UlusalKanal.tr
+
 # 🥇 ANA (Catchup)
-#EXTINF:-1 tvg-id="UlusalKanal.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://i1.sndcdn.com/avatars-000674662646-w2x2r0-t1080x1080.jpg" group-title="🖥️ TR Haber",ULUSAL KANAL ⏪⏩
+#EXTINF:-1 tvg-id="UlusalKanal.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://i1.sndcdn.com/avatars-000674662646-w2x2r0-t1080x1080.jpg" group-title="🖥️ TR Haber",ULUSAL KANAL | B
 https://dsmartgo-live.ercdn.net/ulusaltv/ulusaltv.m3u8
 
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="UlusalKanal.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://i1.sndcdn.com/avatars-000674662646-w2x2r0-t1080x1080.jpg" group-title="🖥️ TR Haber",ULUSAL KANAL 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/6
-
-#EXTINF:-1 tvg-id="UlusalKanal.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://i1.sndcdn.com/avatars-000674662646-w2x2r0-t1080x1080.jpg" group-title="🖥️ TR Haber",ULUSAL KANAL 🌟
-https://goldvod.site/live/hpgdiscoo/123456/114.m3u8
 
 #######################
 # 📺 MELTEM TV
@@ -512,39 +495,15 @@ https://goldvod.site/live/hpgdiscoo/123456/114.m3u8
 
 # 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="MeltemTV.tr" tvg-name="MELTEM TV" tvg-logo="http://logo.multicms.info/tvlogo/meltem.png" group-title="🖥️ TR Haber",MELTEM TV
-https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
-
-# 🥈 YEDEK (Resmi 2)
-#EXTINF:-1 tvg-id="MeltemTV.tr" tvg-name="MELTEM TV" tvg-logo="http://logo.multicms.info/tvlogo/meltem.png" group-title="🖥️ TR Haber",MELTEM TV Alternatif
-https://vhxyrsly.rocketcdn.com/meltemtv/chunklist.m3u8
-
-# 🥉 YEDEK (CDN)
-#EXTINF:-1 tvg-id="MeltemTV.tr" tvg-name="MELTEM TV" tvg-logo="http://logo.multicms.info/tvlogo/meltem.png" group-title="🖥️ TR Haber",MELTEM TV CDN
-https://streams.uzunmuhalefet.com/stream/f49b3cb6-cd33-4064-97a1-8b0c79d3681a.m3u8
-
-#EXTINF:-1 tvg-id="MeltemTV.tr" tvg-name="MELTEM TV" tvg-logo="http://logo.multicms.info/tvlogo/meltem.png" group-title="🖥️ TR Haber",MELTEM TV 🌟
-https://goldvod.site/live/hpgdiscoo/123456/190.m3u8
-
-# ⭐ YEDEK 4
-#EXTINF:-1 tvg-id="MeltemTV.tr" tvg-name="MELTEM TV" tvg-logo="http://logo.multicms.info/tvlogo/meltem.png" group-title="🖥️ TR Haber",MELTEM TV 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/63250
-
-# 🧯 YEDEK 5 (IPTV)
-#EXTINF:-1 tvg-id="MeltemTV.tr" tvg-name="MELTEM TV" tvg-logo="http://logo.multicms.info/tvlogo/meltem.png" group-title="🖥️ TR Haber",MELTEM TV IPTV
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/63250
-
+https://atv-switch.huseyinakcagoz.workers.dev/MeltemTV.tr
 
 #######################
 # 📺 İLKE TV
 #######################
 
 # 🥇 ANA (Resmi)
-#EXTINF:-1 tvg-id="UlkeTV.tr" tvg-name="İLKE TV" tvg-logo="https://pbs.twimg.com/profile_images/1800040068284878848/8Q43GcP4_400x400.jpg" group-title="🖥️ TR Haber",İLKE TV
-https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
-
-# 🥈 YEDEK
-#EXTINF:-1 tvg-id="UlkeTV.tr" tvg-name="İLKE TV" tvg-logo="http://logo.multicms.info/tvlogo/ilketv.jpg" group-title="🖥️ TR Haber",İLKE TV Alternatif
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/51083
+#EXTINF:-1 tvg-id="İlkeTV.tr" tvg-name="İLKE TV" tvg-logo="https://pbs.twimg.com/profile_images/1800040068284878848/8Q43GcP4_400x400.jpg" group-title="🖥️ TR Haber",İLKE TV
+https://atv-switch.huseyinakcagoz.workers.dev/İlkeTV.tr
 
 #######################
 # 📺 TYT TÜRK
@@ -552,51 +511,19 @@ http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/51083
 
 # 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="TYTTurk.tr" tvg-name="TYT TÜRK" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/b6c2e739-0336-4e34-9f27-38e181522363.png" group-title="🖥️ TR Haber",TYT TÜRK
-https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
+https://atv-switch.huseyinakcagoz.workers.dev/TYTTurk.tr
 
-# 🥈 YEDEK (IPTV)
-#EXTINF:-1 tvg-id="TYTTurk.tr" tvg-name="TYT TÜRK" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tyt-turk-tr.png" group-title="🖥️ TR Haber",TYT TÜRK Alternatif
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/316447
-
-# ⭐ YEDEK 2
-#EXTINF:-1 tvg-id="TYTTurk.tr" tvg-name="TYT TÜRK" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tyt-turk-tr.png" group-title="🖥️ TR Haber",TYT TÜRK 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/316447
-
-#######################
-# 📺 MK HABER
-#######################
-
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="MK HABER" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIEnyZjld3E5AoJ6qoGW-6Da_sZ6kKrIIMw&s" group-title="🖥️ TR Haber",𝙼𝙺 𝙷𝙰𝙱𝙴𝚁 
-https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playlist.m3u8
-#######################
-# 📺 KANAL B
-#######################
-
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="KANAL B" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/fc190867-720b-4e57-b561-993d0a02bcae.png" group-title="🖥️ TR Haber",𝙺𝙰𝙽𝙰𝙻 𝙱
-https://baskentaudiovideo.xyz/LiveApp/streams/mUE22idl26lA1683879097431.m3u8
 
 #######################
 # 📺 TRT HABER
 #######################
 
 # 🥇 ANA (Resmi – 2K)
-#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER
-https://tv-trthaber.medya.trt.com.tr/master_1440p.m3u8
-
-# 🥈 YEDEK (Resmi – FHD)
-#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER FHD
-https://tv-trthaber.medya.trt.com.tr/master_1080.m3u8
-
-# 🥉 YEDEK 2 (IPTV)
-#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER Alternatif
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/145
-
-# ⭐ YEDEK 3
-#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER 🌟
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/145
+#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER | A
+https://atv-switch.huseyinakcagoz.workers.dev/TRTHaber.tr
 
 # ⏪⏩ Catch-up
-#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER ⏪⏩
+#EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER" tvg-logo="http://logo.multicms.info/tvlogo/trthaberhd.png" group-title="🖥️ TR Haber",TRT HABER | B
 https://dsmartgo-live.ercdn.net/trthaber/trthaber.m3u8
 
 #######################
@@ -605,19 +532,23 @@ https://dsmartgo-live.ercdn.net/trthaber/trthaber.m3u8
 
 # 🥇 ANA (Resmi)
 #EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV
-https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
-
-# 🥈 YEDEK (Resmi – SD)
-#EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV SD
-https://akittv-live.ercdn.net/akittv/akittv.m3u8
-
-# 🥉 YEDEK 2 (IPTV)
-#EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV Alternatif
-http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/117
+https://atv-switch.huseyinakcagoz.workers.dev/AkitTV.tr
 
 # ⏪⏩ Catch-up
 #EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV" tvg-logo="http://ssiptv.net/logos/akit.png" group-title="🖥️ TR Haber",AKİT TV ⏪⏩
 https://dsmartgo-live.ercdn.net/akit/akit.m3u8
+
+
+
+    "/AkitTV.tr":[
+
+
+
+
+"https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8",
+"https://akittv-live.ercdn.net/akittv/akittv.m3u8",
+"http://190502.tomtv.eu:80/ismailozmen/xnBppreux5/117"
+
 
 #######################
 # 📺 KRT TV
