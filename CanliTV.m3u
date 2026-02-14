@@ -349,7 +349,7 @@ https://dsmartgo-live.ercdn.net/ekoltv/ekoltv.m3u8
 # 📺 TVNET
 #######################
 
-#EXTINF:-1 tvg-id="Tvnet.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET | A
+#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" group-title="🖥️ TR Haber",TVNET | A
 https://atv-switch.huseyinakcagoz.workers.dev/Tvnet.tr
 
 #EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET" tvg-logo="http://logo.multicms.info/tvlogo/tvnethd.png" catchup="true" catchup-days="7" catchup-type="auto" group-title="🖥️ TR Haber",TVNET | B
