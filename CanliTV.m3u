@@ -1501,8 +1501,10 @@ https://dost.stream.emsal.im/tv/live.m3u8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103451
 #EXTINF:-1 tvg-id="kudustv.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1N9Dl7RZ0Tk2M7b8L_yd1n9fmrlPfoKsUkQ&s" tvg-name="KUDUS TV" group-title="🖥️ TR DİN",KUDUS TV
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50942
-#EXTINF:-1 tvg-id="" tvg-name="----- (tr) SPOR Kanallari----- " tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/TURKIYE_LOGO_.png" group-title="🖥️ TR SPOR",----- (tr) SPOR Kanallari----- 
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/64782
+
+
+#EXTINF:-1 tvg-id="" tvg-name="----- (tr) SPOR Kanallari----- " tvg-logo="https://i.ytimg.com/vi/NxvoEvn4cZs/maxresdefault.jpg" group-title="🖥️ TR SPOR",----- (tr) SPOR Kanallari----- 
+https://dsmartgo-live.ercdn.net/spormozaik/spormozaik.m3u8
 #EXTINF:-1 tvg-id="maxsports1.tr" tvg-name="MAXSPORTS 1" tvg-logo="http://logo.multicms.info/tvlogo/maxsports.jpg" group-title="🖥️ TR SPOR",MAXSPORTS 1 (Exxen-BEIN-UEFA)
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/61351
 #EXTINF:-1 tvg-id="maxsports2.tr" tvg-name="MAXSPORTS 2" tvg-logo="http://logo.multicms.info/tvlogo/maxsports.jpg" group-title="🖥️ TR SPOR",MAXSPORTS 2 (Exxen-BEIN-UEFA)
