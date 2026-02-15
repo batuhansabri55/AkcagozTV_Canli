@@ -705,6 +705,9 @@ https://amg00090-blueantmedia-naturetime-samsungfr-yakbf.amagi.tv/playlist/amg00
 #🖥️  Yerli Sinema
 #######################
 
+#EXTINF:-1 tvg-id="" tvg-name="----- (TR) Yerli Sinema -----" tvg-logo="https://i.ytimg.com/vi/NxvoEvn4cZs/maxresdefault.jpg" group-title="🖥️ Yerli Sinema",----- (TR) Yerli Sinema -----
+https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
+
 #EXTINF:-1 tvg-id="ViziTürk Komedi 1" tvg-name="ViziTürk Komedi" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/viziturk_komedi_TmR.png" group-title="🖥️ Yerli Sinema", ViziTürk Komedi 1
 https://tv.cdn-vizi.workers.dev/?ID=10
 
@@ -715,6 +718,10 @@ https://tv.cdn-vizi.workers.dev/?ID=11
 #######################
 #🖥️  Yabancı Sinema
 #######################
+
+#EXTINF:-1 tvg-id="" tvg-name="----- (TR) Yabancı Sinema -----" tvg-logo="https://i.ytimg.com/vi/NxvoEvn4cZs/maxresdefault.jpg" group-title="🖥️ Yabancı Sinema",----- (TR) Yabancı Sinema-----
+https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
+
 
 #EXTINF:-1 tvg-id=""  tvg-logo="https://img.freepik.com/free-vector/flat-design-movie-theater-background_23-2150998489.jpg" group-title="🖥️ Yabancı Sinema",Yakinda Sinemalarda
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/19291
@@ -942,6 +949,8 @@ https://dsmartgo-live.ercdn.net/sinema1002/sinema1002.m3u8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/66460
 
 
+#EXTINF:-1 tvg-id="" tvg-name="----- (TR) Diziler 7/24 -----" tvg-logo="https://i.ytimg.com/vi/NxvoEvn4cZs/maxresdefault.jpg" group-title="🖥️ Diziler 7/24",----- (TR) Diziler 7/24-----
+https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 
 
 #EXTINF:-1 tvg-logo="https://dsmart-static-v2.ercdn.net/content/d/9U/12174/Thumbnail.png?v=636987852865799359" group-title="🖥️ Diziler 7/24",DiziSmart Premium | A
@@ -980,7 +989,9 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/19988
 http://eupars1.xyz:8080/kaptantv6782/kptn@4866782/582498
 #EXTINF:-1 tvg-id=""tvg-name="KONUSANLAR YOU TUBE" tvg-logo="https://i.ibb.co/cCxv7WF/zyro-image.png" group-title="🖥️ Stand-up",KONUSANLAR YOU TUBE
 http://eupars1.xyz:8080/kaptantv6782/kptn@4866782/582495
-#EXTINF:-1 tvg-id="yereltv.tr" tvg-name="----- TR YEREL TV KANALLARI -----" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/TURKIYE_LOGO_.png" group-title="🖥️ TR Yerel TV",----- TR YEREL TV KANALLARI -----
+
+
+#EXTINF:-1 tvg-id="" tvg-name="----- TR YEREL TV KANALLARI -----" tvg-logo="https://i.ytimg.com/vi/NxvoEvn4cZs/maxresdefault.jpg" group-title="🖥️ TR Yerel TV",----- TR YEREL TV KANALLARI -----
 http://iptv.prosto.tv:7000/ch348/video.m3u8
 #EXTINF:-1 tvg-id="grt.tr" tvg-name="GRT" tvg-logo="https://static.daktilo.com/sites/1525/uploads/2023/11/28/large/desktop.png" group-title="🖥️ TR Yerel TV",GRT
 https://live.artidijitalmedya.com/artidijital_grt/grt1/chunks.m3u8
@@ -1154,6 +1165,11 @@ https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8
 #EXTINF:-1 tvg-id=""tvg-name="Baby TV " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/2442b7b7-04da-41c1-a7ca-03466853040e.png" group-title="🖥️ Aybükem Kanalları",Baby TV
 https://morning-boat-919d.pantonum1.workers.dev/babytv.m3u8
+
+
+
+#EXTINF:-1 tvg-id="" tvg-name="----- (TR) Aybükem Kanalları -----" tvg-logo="https://i.ytimg.com/vi/NxvoEvn4cZs/maxresdefault.jpg" group-title="🖥️ Aybükem Kanalları",----- (TR) Aybükem Kanalları-----
+https://playlist.fasttvcdn.com/pl/lr7kbpqgx18b3rh2kpbeog/Fire/playlist.m3u8
 
 #EXTINF:-1 tvg-id=""tvg-name="" tvg-logo="" group-title="🖥️ Aybükem Kanalları",UNIVERSAL COCUK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/222340
