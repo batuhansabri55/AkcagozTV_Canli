@@ -1,3 +1,7 @@
 #EXTM3U
-#EXTINF:-1 group-title="|TR| ULUSAL",TRT 1
-https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+
+#EXTINF:-1 tvg-id="atv.tr" group-title="ULUSAL",ATV
+http://kanal-linki-buraya.m3u8
+
+#EXTINF:-1 tvg-id="trt1.tr" group-title="ULUSAL",TRT 1
+http://kanal-linki-buraya.m3u8
