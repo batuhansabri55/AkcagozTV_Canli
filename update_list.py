@@ -3,64 +3,49 @@ import re
 import time
 
 def get_blogtv_links():
-    print("🚀 BlogTV Canavar Bot Başlatıldı...")
+    print("🚀 BlogTV Taraması Başladı...")
     blog_m3u = ""
     ana_url = "https://www.blogtv.net.tr/p/turkiyenin-en-kapsaml-ulusal-kanallar.html"
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language": "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3",
-        "Referer": "https://www.google.com/"
-    }
-
     try:
-        session = requests.Session()
-        r = session.get(ana_url, headers=headers, timeout=30)
-        # Link yakalama sistemini daha basit ve geniş yaptık
-        raw_links = re.findall(r'href=[\"\'](https://www\.blogtv\.net\.tr/p/.*?\.html\?kanal=.*?)[\"\']', r.text)
+        r = requests.get(ana_url, headers=headers, timeout=20)
+        # Sitedeki kanal sayfalarını bul (Örn: kanal=NOW TV TR)
+        links = re.findall(r'href=[\"\'](https://www\.blogtv\.net\.tr/p/.*?\.html\?kanal=.*?)[\"\']', r.text)
         
-        unique_links = list(set(raw_links))
-        print(f"📡 Toplam {len(unique_links)} kanal adayı bulundu. Taranıyor...")
-
-        for link in unique_links[:40]: # İlk 40 kanalı tara
+        for link in list(set(links))[:20]: # Test için ilk 20 kanal
             try:
                 kanal_adi = link.split("kanal=")[1].replace("%20", " ").replace("+", " ").strip()
-                res = session.get(link, headers=headers, timeout=15)
+                res = requests.get(link, headers=headers, timeout=15)
                 
-                # m3u8 linklerini bulmak için 3 farklı taktik deniyoruz
-                m3u8_match = re.search(r'[\"\'](https?://.*?\.m3u8.*?)[\"\']', res.text)
-                if not m3u8_match:
-                    m3u8_match = re.search(r'source:\s*[\"\'](https?://.*?\.m3u8.*?)[\"\']', res.text)
+                # m3u8 linkini en yalın haliyle ara
+                m3u8_find = re.search(r'(https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*)', res.text)
                 
-                if m3u8_match:
-                    found_url = m3u8_match.group(1).replace("\\/", "/")
-                    blog_m3u += f"#EXTINF:-1,{kanal_adi}\n{found_url}\n"
-                    print(f"✅ Başarılı: {kanal_adi}")
+                if m3u8_find:
+                    final_link = m3u8_find.group(1).replace("\\/", "/")
+                    blog_m3u += f"#EXTINF:-1,{kanal_adi}\n{final_link}\n"
+                    print(f"✅ Bulundu: {kanal_adi}")
                 
-                time.sleep(1.5) # Site kovmasın diye biraz yavaş git
+                time.sleep(1) # Siteyi yormadan ilerle
             except: continue
-            
     except Exception as e:
-        print(f"❌ Ana hata: {e}")
-    
+        print(f"❌ Hata: {e}")
     return blog_m3u
 
 def main():
-    final_m3u = "#EXTM3U\n"
-    # Diğer hazır listeni de buraya ekliyoruz (iptv-org gibi)
+    final_content = "#EXTM3U\n"
+    # Önce genel bir kaynak ekleyelim ki liste asla boş kalmasın
     try:
-        r_other = requests.get("https://iptv-org.github.io/iptv/countries/tr.m3u", timeout=15)
-        if r_other.status_code == 200:
-            final_m3u += "\n".join(r_other.text.split("\n")[1:]) + "\n"
+        r_genel = requests.get("https://iptv-org.github.io/iptv/countries/tr.m3u", timeout=10)
+        final_content += "\n".join(r_genel.text.split("\n")[1:]) + "\n"
     except: pass
 
-    # BlogTV verilerini ekle
-    final_m3u += get_blogtv_links()
+    # BlogTV'den gelenleri üzerine ekle
+    final_content += get_blogtv_links()
 
     with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write(final_m3u)
-    print("🚀 tr.m3u dosyası başarıyla dolduruldu!")
+        f.write(final_content)
+    print("✔️ tr.m3u başarıyla güncellendi!")
 
 if __name__ == "__main__":
     main()
