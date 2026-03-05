@@ -1,0 +1,32 @@
+name: Otomatik Liste Guncelle
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Her gece 00:00'da çalışır
+  workflow_dispatch: # Manuel çalıştırmak istersen buton çıkarır
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu Cek
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Kutuphaneleri Kur
+        run: pip install requests
+
+      - name: Botu Calistir
+        run: python update_list.py
+
+      - name: Degisiklikleri Kaydet ve Yukle
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add tr.m3u
+          git commit -m "BlogTV ve diger kaynaklar guncellendi" || exit 0
+          git push
