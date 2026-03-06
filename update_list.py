@@ -5,7 +5,6 @@ import time
 def get_links():
     print("🚀 Volo Operasyonu: Derin tarama başlatılıyor...")
     m3u_header = "#EXTM3U\n"
-    # Sitenin ana adresi
     base_url = "https://tv.canlitvvolo.com"
     
     headers = {
@@ -24,7 +23,7 @@ def get_links():
         print(f"📡 {len(links)} adet kanal sayfası tespit edildi.")
 
         content_body = ""
-        for url in links[:40]: # İlk 40 kanalı tara (Hız için)
+        for url in links[:40]: # İlk 40 kanalı tara
             try:
                 # Kanal adını URL'den çıkar ve temizle
                 name = url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
@@ -40,7 +39,7 @@ def get_links():
                     content_body += f"#EXTINF:-1, {name}\n{stream_url}\n"
                     print(f"✅ Eklendi: {name}")
                 
-                time.sleep(0.5) # Siteyi bloklamasın diye minik mola
+                time.sleep(0.5) 
             except:
                 continue
         
