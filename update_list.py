@@ -2,49 +2,67 @@ import requests
 import re
 import time
 
-def get_blogtv_links():
-    print("🚀 Kanallar toplanıyor...")
-    blog_m3u = "#EXTM3U\n"
-    ana_url = "https://www.blogtv.net.tr/p/turkiyenin-en-kapsaml-ulusal-kanallar.html"
+def get_links():
+    print("🚀 Tarama başlatılıyor: BlogTV...")
+    m3u_header = "#EXTM3U\n"
+    # Hedef site
+    target_url = "https://www.blogtv.net.tr/p/turkiyenin-en-kapsaml-ulusal-kanallar.html"
     
+    # Gerçek kullanıcı gibi görünmek için detaylı headers
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-        "Referer": "https://www.blogtv.net.tr/"
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'Referer': 'https://www.google.com/',
+        'Accept-Language': 'tr,en-US;q=0.7,en;q=0.3'
     }
 
     try:
-        r = requests.get(ana_url, headers=headers, timeout=30)
-        # Tırnak işaretlerine bakmaksızın tüm kanal linklerini yakalayan esnek regex
-        links = re.findall(r'https://www\.blogtv\.net\.tr/p/[^"\'>\s]+\.html\?kanal=[^"\'>\s]+', r.text)
-        links = list(set(links)) # Tekrarları temizle
+        # 1. Ana sayfayı çek
+        response = requests.get(target_url, headers=headers, timeout=30)
         
-        print(f"✅ {len(links)} adet kanal linki bulundu.")
+        # Regex'i süper esnek yaptık: tırnak olsun olmasın, ne varsa yakalar
+        # Örnek: https://www.blogtv.net.tr/p/atv-izle.html?kanal=ATV
+        pattern = r'https://www\.blogtv\.net\.tr/p/[^"\'>\s]+\.html\?kanal=[^"\'>\s]+'
+        found_links = re.findall(pattern, response.text)
+        found_links = list(dict.fromkeys(found_links)) # Tekrarları sıralı sil
+        
+        print(f"📡 {len(found_links)} adet potansiyel kanal bulundu.")
 
-        for link in links[:40]: 
+        m3u_body = ""
+        count = 0
+
+        for link in found_links[:45]: # İlk 45 kanalı işle
             try:
-                # Kanal adını linkten çek ve temizle
-                kanal_adi = link.split("kanal=")[-1].replace("%20", " ").replace("+", " ").strip().upper()
+                # Kanal adını temizle
+                name = link.split("kanal=")[-1].replace("%20", " ").replace("+", " ").upper()
                 
-                res = requests.get(link, headers=headers, timeout=15)
-                # m3u8 yakalama: Hem tek hem çift tırnağı hem de kaçış karakterlerini destekler
-                m3u8_find = re.search(r'["\']?(https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']?', res.text)
+                # Kanal sayfasına gir
+                ch_res = requests.get(link, headers=headers, timeout=15)
                 
-                if m3u8_find:
-                    final_link = m3u8_find.group(1).replace("\\/", "/")
-                    blog_m3u += f"#EXTINF:-1, {kanal_adi}\n{final_link}\n"
-                    print(f"➕ Eklendi: {kanal_adi}")
+                # Sayfa içindeki .m3u8 linkini her türlü bulur
+                m3u8_match = re.search(r'["\']?(https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']?', ch_res.text)
                 
-                time.sleep(0.5) 
+                if m3u8_match:
+                    final_url = m3u8_match.group(1).replace("\\/", "/")
+                    m3u_body += f"#EXTINF:-1, {name}\n{final_url}\n"
+                    print(f"✅ Eklendi: {name}")
+                    count += 1
+                
+                time.sleep(0.5) # Ban yememek için minik mola
             except:
                 continue
+        
+        return m3u_header + m3u_body, count
 
     except Exception as e:
-        print(f"❌ Hata: {e}")
-    
-    return blog_m3u
+        print(f"❌ Kritik Hata: {e}")
+        return m3u_header, 0
 
 if __name__ == "__main__":
-    liste = get_blogtv_links()
+    content, total = get_links()
     with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write(liste)
-    print("✨ İşlem tamamlandı.")
+        f.write(content)
+    
+    import os
+    size = os.path.getsize("tr.m3u")
+    print(f"🏁 Bitti. Toplam {total} kanal. Dosya boyutu: {size} byte.")
