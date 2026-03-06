@@ -1,0 +1,31 @@
+name: IPTV Otomatik Besleme
+on:
+  schedule:
+    - cron: '0 */3 * * *' # Her 3 saatte bir otomatik calisir
+  workflow_dispatch: # İstersen GitHub üzerinden elinle de baslatabilirsin
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kodlari Cek
+        uses: actions/checkout@v3
+
+      - name: Python Hazirla
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Kütüphaneleri Kur
+        run: pip install requests
+
+      - name: Scripti Calistir (Besleme)
+        run: python update_list.py
+
+      - name: Degisiklikleri Kaydet ve Yukle
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add tr.m3u
+          git commit -m "Liste otomatik guncellendi" || exit 0
+          git push
