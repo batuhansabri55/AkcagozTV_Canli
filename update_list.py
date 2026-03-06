@@ -1,6 +1,7 @@
 import requests
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 
 YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -11,46 +12,47 @@ YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u"
 ]
 
-def link_test_et(url):
-    """Link aktif mi kontrol eder (Timeout 3 saniye)"""
+def link_test_et(item):
+    info, url = item
     try:
-        # Bazı sunucular HEAD isteğine 403/405 verebilir, o yüzden GET ile 1 byte deniyoruz
         r = requests.get(url, timeout=3, stream=True, headers={"User-Agent": "Mozilla/5.0"})
         r.close()
-        return r.status_code < 400
+        if r.status_code < 400:
+            return (info, url)
     except:
-        return False
+        pass
+    return None
 
 def update_m3u():
-    temiz_kanallar = [] # (info, url) şeklinde tutulacak
+    aday_listesi = []
     eklenen_linkler = set()
 
-    # 1. MEVCUT DOSYADAKİ HER ŞEYİ KONTROL ET
+    # 1. DOSYADAKİ VE KAYNAKLARDAKİ TÜM LİNKLERİ TOPLA
     if os.path.exists("tr.m3u"):
         with open("tr.m3u", "r", encoding="utf-8") as f:
-            content = f.read()
-            # EXTINF ve URL çiftlerini regex ile yakala
-            matches = re.findall(r"(#EXTINF:.*)\n(http.*)", content)
-            for info, url in matches:
-                url = url.strip()
-                if link_test_et(url):
-                    temiz_kanallar.append((info, url))
-                    eklenen_linkler.add(url)
+            matches = re.findall(r"(#EXTINF:.*)\n(http.*)", f.read())
+            aday_listesi.extend(matches)
 
-    # 2. DIŞ KAYNAKLARI TARA VE SADECE ÇALIŞANLARI EKLE
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
             if r.status_code == 200:
                 matches = re.findall(r"(#EXTINF:.*)\n(http.*)", r.text)
-                for info, url in matches:
-                    url = url.strip()
-                    if url not in eklenen_linkler and link_test_et(url):
-                        temiz_kanallar.append((info, url))
-                        eklenen_linkler.add(url)
+                aday_listesi.extend(matches)
         except: continue
 
-    # 3. DOSYAYI SIFIRDAN YAZ (SADECE AKTİFLER)
+    # 2. ÇOKLU İŞLEMCİ İLE HIZLI TEST (Aynı anda 20 link)
+    print(f"Toplam {len(aday_listesi)} link test ediliyor...")
+    temiz_kanallar = []
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        results = list(executor.map(link_test_et, aday_listesi))
+        
+    for res in results:
+        if res and res[1] not in eklenen_linkler:
+            temiz_kanallar.append(res)
+            eklenen_linkler.add(res[1])
+
+    # 3. YAZDIR
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for info, url in temiz_kanallar:
