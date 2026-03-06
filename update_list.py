@@ -1,42 +1,53 @@
 import requests
-import re
 import time
 
-def get_blogtv_links():
-    print("🚀 Sadece BlogTV kanalları toplanıyor...")
-    blog_m3u = ""
-    ana_url = "https://www.blogtv.net.tr/p/turkiyenin-en-kapsaml-ulusal-kanallar.html"
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+# Devamlı güncellenen güvenilir kaynaklar
+YEDEK_KAYNAKLAR = [
+    "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
+    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
+    "https://publiciptv.com/countries/tr/m3u",
+    "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    "https://streams.uzunmuhalefet.com/lists/tr.m3u"
+]
+
+def update_m3u():
+    print("🚀 Liste guncelleme baslatildi...")
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"}
     
-    try:
-        r = requests.get(ana_url, headers=headers, timeout=20)
-        # Sadece ana kanalları yakala (Listeyi şişirmemek için)
-        links = re.findall(r'href=[\"\'](https://www\.blogtv\.net\.tr/p/.*?\.html\?kanal=.*?)[\"\']', r.text)
-        
-        for link in list(set(links))[:30]: # En önemli ilk 30 kanalı al
-            try:
-                kanal_adi = link.split("kanal=")[1].replace("%20", " ").replace("+", " ").strip()
-                res = requests.get(link, headers=headers, timeout=15)
-                m3u8_find = re.search(r'(https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*)', res.text)
-                
-                if m3u8_find:
-                    final_link = m3u8_find.group(1).replace("\\/", "/")
-                    blog_m3u += f"#EXTINF:-1,{kanal_adi}\n{final_link}\n"
-                    print(f"✅ Eklendi: {kanal_adi}")
-                time.sleep(1)
-            except: continue
-    except Exception as e:
-        print(f"❌ Hata: {e}")
-    return blog_m3u
-
-def main():
-    # Sadece BlogTV'den gelen taze ve az sayıdaki linki dosyaya yazıyoruz
+    # M3U Baslangici
     final_content = "#EXTM3U\n"
-    final_content += get_blogtv_links()
+    added_links = set()
 
+    for url in YEDEK_KAYNAKLAR:
+        print(f"📡 Kaynak okunuyor: {url}")
+        try:
+            # 403 hatasini asmak icin headers ile istek atiyoruz
+            r = requests.get(url, headers=headers, timeout=15)
+            if r.status_code == 200:
+                lines = r.text.splitlines()
+                current_info = ""
+                
+                for line in lines:
+                    line = line.strip()
+                    if line.startswith("#EXTINF"):
+                        current_info = line
+                    elif line.startswith("http") and current_info:
+                        # Tekrar eden linkleri engelle
+                        if line not in added_links:
+                            final_content += f"{current_info}\n{line}\n"
+                            added_links.add(line)
+                        current_info = ""
+            else:
+                print(f"⚠️ Hata: {url} (Kod: {r.status_code})")
+        except Exception as e:
+            print(f"❌ Baglanti hatasi: {url} -> {e}")
+
+    # tr.m3u dosyasina kaydet
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write(final_content)
-    print("✔️ tr.m3u hafifletildi ve güncellendi!")
+    
+    print(f"✅ Islem tamam! Toplam {len(added_links)} taze link toplandi.")
 
 if __name__ == "__main__":
-    main()
+    update_m3u()
