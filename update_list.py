@@ -1,57 +1,41 @@
 import requests
 import re
-import time
 
-def get_links():
-    print("🚀 Volo Operasyonu: Derin tarama başlatılıyor...")
-    m3u_header = "#EXTM3U\n"
-    base_url = "https://tv.canlitvvolo.com"
+def get_giniko_list():
+    print("🚀 Giniko/Workers üzerinden liste çekiliyor...")
+    # Senin ekranında açık olan kaynak adres
+    target_url = "https://giniko.smartiptvworld.workers.dev/"
     
-    # Gerçek bir tarayıcı gibi davranmak için header bilgileri
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Referer': base_url,
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
     }
 
     try:
-        # 1. Ana sayfadan tüm kanal sayfalarını topla
-        r = requests.get(base_url, headers=headers, timeout=20)
-        # Sitenin link yapısı: /atv-izle-hd/ veya /show-tv-izle-hd/
-        links = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?-izle-hd/)"', r.text)
-        links = list(set(links)) # Tekrarları sil
+        r = requests.get(target_url, headers=headers, timeout=25)
+        # Sayfa içindeki kanal isimlerini ve m3u8 linklerini avla
+        # Genellikle "name":"KANAL", "url":"http..." şeklinde olur
+        matches = re.findall(r'["\']?name["\']?:\s*["\']([^"\']+)["\'].*?["\']?url["\']?:\s*["\']([^"\']+\.m3u8[^"\']*)["\']', r.text, re.IGNORECASE)
         
-        print(f"📡 {len(links)} adet kanal sayfası tespit edildi.")
+        if not matches:
+            # Alternatif: Düz metin içinde m3u8 arama
+            matches = re.findall(r'#EXTINF:-1,\s*(.*?)\n(https?://.*?\.m3u8.*)', r.text)
 
-        content_body = ""
-        for url in links[:40]: # İlk 40 kanal
-            try:
-                # Kanal ismini URL'den güzelleştir
-                name = url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
-                
-                # Kanal sayfasına gir ve asıl yayın linkini (m3u8) ara
-                res = requests.get(url, headers=headers, timeout=15)
-                
-                # Hem tek tırnak hem çift tırnak içindeki m3u8 linklerini yakalar
-                m3u8_match = re.search(r'["\'](https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']', res.text)
-                
-                if m3u8_match:
-                    stream_url = m3u8_match.group(1).replace("\\/", "/")
-                    content_body += f"#EXTINF:-1, {name}\n{stream_url}\n"
-                    print(f"✅ Eklendi: {name}")
-                
-                time.sleep(0.4) # Siteyi yormayalım
-            except:
-                continue
-        
-        return m3u_header + content_body
+        if matches:
+            m3u_content = "#EXTM3U\n"
+            for name, url in matches:
+                m3u_content += f"#EXTINF:-1, {name.strip()}\n{url.strip()}\n"
+            print(f"✅ {len(matches)} kanal başarıyla eklendi!")
+            return m3u_content
+        else:
+            print("⚠️ Link bulunamadı, ham veri çekiliyor...")
+            return r.text if "#EXTM3U" in r.text else "#EXTM3U\n"
 
     except Exception as e:
-        print(f"❌ Kritik Hata: {e}")
-        return m3u_header
+        print(f"❌ Bağlantı hatası: {e}")
+        return "#EXTM3U\n"
 
 if __name__ == "__main__":
-    final_m3u = get_links()
+    result = get_giniko_list()
     with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write(final_m3u)
-    print("🏁 İşlem bitti, dosya kaydedildi.")
+        f.write(result)
+    print("🏁 Bitti. tr.m3u güncellendi.")
