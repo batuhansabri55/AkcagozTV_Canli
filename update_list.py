@@ -3,8 +3,9 @@ import re
 import time
 
 def get_links():
-    print("📡 Volo taranıyor, bu sefer olacak...")
+    print("🚀 Volo taranıyor, bu sefer liste dolacak...")
     m3u_output = "#EXTM3U\n"
+    # Hedef site artık Volo
     target = "https://tv.canlitvvolo.com"
     
     headers = {
@@ -13,20 +14,23 @@ def get_links():
     }
 
     try:
-        # 1. Ana sayfadan kanal sayfalarını (URL'lerini) çek
+        # 1. Ana sayfadan kanal linklerini topla
         r = requests.get(target, headers=headers, timeout=20)
-        # Sitenin link yapısı: /atv-izle-hd/ veya /show-tv-izle-hd/
+        # Sitenin link yapısı: /show-tv-izle-hd/ gibi
         links = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?)"', r.text)
+        # Sadece kanal sayfalarını (hd takılı olanları) filtrele
         links = list(set([l for l in links if "-izle-hd" in l]))
         
-        print(f"🔍 {len(links)} adet kanal sayfası bulundu.")
+        print(f"📡 {len(links)} adet kanal sayfası bulundu.")
 
-        for url in links[:35]: # İlk 35 kanalı dene
+        for url in links[:35]: # Hız için ilk 35 kanalı al
             try:
+                # Kanal adını URL'den al (ör: atv-izle-hd -> ATV)
                 name = url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
-                res = requests.get(url, headers=headers, timeout=15)
                 
-                # En geniş kapsamlı m3u8 yakalayıcı
+                # Kanal sayfasına gir ve asıl yayın (m3u8) linkini yakala
+                res = requests.get(url, headers=headers, timeout=15)
+                # m3u8 linkini her türlü tırnak yapısında bulur
                 find_m3u8 = re.search(r'["\'](https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']', res.text)
                 
                 if find_m3u8:
@@ -34,16 +38,16 @@ def get_links():
                     m3u_output += f"#EXTINF:-1, {name}\n{stream}\n"
                     print(f"✅ {name} eklendi.")
                 
-                time.sleep(0.5)
+                time.sleep(0.5) # Siteyi yormayalım
             except: continue
             
         return m3u_output
     except Exception as e:
-        print(f"❌ Hata: {e}")
+        print(f"❌ Kritik Hata: {e}")
         return "#EXTM3U\n"
 
 if __name__ == "__main__":
     final_data = get_links()
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write(final_data)
-    print("🏁 Tamamlandı.")
+    print("🏁 İşlem tamam, tr.m3u güncellendi.")
