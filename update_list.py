@@ -1,65 +1,66 @@
 import requests
 import re
 import time
-import random
 
 def get_links():
-    print("🚀 Tarama başlatıldı...")
-    m3u_content = "#EXTM3U\n"
-    target_url = "https://www.blogtv.net.tr/p/turkiyenin-en-kapsaml-ulusal-kanallar.html"
+    print("🛰️ Bağlantı kuruluyor...")
+    m3u_header = "#EXTM3U\n"
+    # Hedef URL
+    target = "https://www.blogtv.net.tr/p/turkiyenin-en-kapsaml-ulusal-kanallar.html"
     
-    # Siteyi kandırmak için daha detaylı browser bilgileri
+    # Çok daha güçlü ve gerçekçi tarayıcı başlıkları
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
         'Accept-Language': 'tr,en-US;q=0.7,en;q=0.3',
-        'Referer': 'https://www.google.com/', # Google'dan geliyormuş gibi yapalım
-        'Connection': 'keep-alive',
+        'Referer': 'https://www.google.com/',
+        'Cache-Control': 'no-cache'
     }
 
     try:
-        session = requests.Session() # Session kullanarak çerezleri tutalım
-        response = session.get(target_url, headers=headers, timeout=30)
+        # 1. Ana sayfayı çek
+        r = requests.get(target, headers=headers, timeout=30)
         
-        # Sitedeki TÜM blogtv linklerini yakala (ne olur ne olmaz)
-        links = re.findall(r'https?://www\.blogtv\.net\.tr/p/[^"\'>\s]+', response.text)
-        # Sadece içinde "kanal=" olanları süz
-        channel_links = [l for l in links if "kanal=" in l]
-        channel_links = list(set(channel_links)) # Tekrarları sil
+        # Sitedeki tüm kanal linklerini yakala (regex'i en esnek hale getirdim)
+        # Tırnaklı, tırnaksız veya farklı parametreli her şeyi deneyecek
+        found_links = re.findall(r'https://www\.blogtv\.net\.tr/p/[^"\'>\s]+\.html\?kanal=[^"\'>\s]+', r.text)
+        found_links = list(set(found_links)) # Tekrarları sil
+        
+        print(f"🔍 Sitede {len(found_links)} adet link tespit edildi.")
 
-        print(f"📡 Toplam {len(channel_links)} kanal linki yakalandı.")
+        content = m3u_header
+        count = 0
 
-        if not channel_links:
-            print("❗ Uyarı: Hiç link bulunamadı. Kaynak kodunu bir loglayalım:")
-            print(response.text[:500]) # Hata analizi için ilk 500 karakteri yazdır
-
-        for link in channel_links[:45]:
+        for link in found_links[:50]:
             try:
-                # İsmi linkten çıkar
-                name = link.split("kanal=")[-1].replace("-", " ").replace("_", " ").upper()
+                # Kanal ismini ayıkla
+                name = link.split("kanal=")[-1].replace("%20", " ").replace("+", " ").upper()
                 
-                # Kanal sayfasına git
-                res = session.get(link, headers=headers, timeout=15)
+                # Kanal sayfasını çek
+                res = requests.get(link, headers=headers, timeout=15)
                 
-                # En geniş m3u8 arama deseni
-                m3u8 = re.search(r'(https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*?)', res.text)
+                # m3u8 linkini ara (vjs-source, script veya düz metin içinde)
+                m3u8_match = re.search(r'["\'](https?://[^\s"\'<>]+?\.m3u8[^\s"\'<>]*?)["\']', res.text)
                 
-                if m3u8:
-                    stream_url = m3u8.group(1).replace("\\/", "/")
-                    m3u_content += f"#EXTINF:-1, {name}\n{stream_url}\n"
+                if m3u8_match:
+                    final_url = m3u8_match.group(1).replace("\\/", "/")
+                    content += f"#EXTINF:-1, {name}\n{final_url}\n"
                     print(f"✅ Eklendi: {name}")
+                    count += 1
                 
-                time.sleep(random.uniform(0.5, 1.5)) # Rastgele bekleme (bot koruması için)
+                time.sleep(0.3) # Çok hızlı gidip ban yemeyelim
             except:
                 continue
+        
+        return content, count
 
     except Exception as e:
-        print(f"💥 Ana hata: {e}")
-    
-    return m3u_content
+        print(f"❌ Kritik Hata: {e}")
+        return m3u_header, 0
 
 if __name__ == "__main__":
-    result = get_links()
+    final_m3u, total = get_links()
     with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write(result)
-    print("🏁 Bitti. tr.m3u güncellendi.")
+        f.write(final_m3u)
+    
+    print(f"🏁 İşlem bitti. Toplam {total} kanal dosyaya yazıldı.")
