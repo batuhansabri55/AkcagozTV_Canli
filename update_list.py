@@ -7,31 +7,32 @@ def get_links():
     m3u_header = "#EXTM3U\n"
     base_url = "https://tv.canlitvvolo.com"
     
+    # Gerçek bir tarayıcı gibi davranmak için header bilgileri
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Referer': base_url
+        'Referer': base_url,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
     }
 
     try:
-        # 1. Ana sayfadan tüm kanal linklerini topla
+        # 1. Ana sayfadan tüm kanal sayfalarını topla
         r = requests.get(base_url, headers=headers, timeout=20)
-        # Sitenin link yapısı genellikle /kanal-adi-izle-hd/ şeklindedir
-        links = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?)"', r.text)
-        # Sadece kanal sayfalarını al ve tekrarları sil
-        links = list(set([l for l in links if "-izle-hd" in l]))
+        # Sitenin link yapısı: /atv-izle-hd/ veya /show-tv-izle-hd/
+        links = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?-izle-hd/)"', r.text)
+        links = list(set(links)) # Tekrarları sil
         
         print(f"📡 {len(links)} adet kanal sayfası tespit edildi.")
 
         content_body = ""
-        for url in links[:40]: # İlk 40 kanalı tara
+        for url in links[:40]: # İlk 40 kanal
             try:
-                # Kanal adını URL'den çıkar ve temizle
+                # Kanal ismini URL'den güzelleştir
                 name = url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
                 
-                # Kanal sayfasına git ve m3u8 linkini ara
+                # Kanal sayfasına gir ve asıl yayın linkini (m3u8) ara
                 res = requests.get(url, headers=headers, timeout=15)
                 
-                # Bu regex hem tırnaklı hem tırnaksız linkleri yakalar
+                # Hem tek tırnak hem çift tırnak içindeki m3u8 linklerini yakalar
                 m3u8_match = re.search(r'["\'](https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']', res.text)
                 
                 if m3u8_match:
@@ -39,7 +40,7 @@ def get_links():
                     content_body += f"#EXTINF:-1, {name}\n{stream_url}\n"
                     print(f"✅ Eklendi: {name}")
                 
-                time.sleep(0.5) 
+                time.sleep(0.4) # Siteyi yormayalım
             except:
                 continue
         
@@ -53,7 +54,4 @@ if __name__ == "__main__":
     final_m3u = get_links()
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write(final_m3u)
-    
-    import os
-    size = os.path.getsize("tr.m3u")
-    print(f"🏁 Bitti. Dosya boyutu: {size} byte.")
+    print("🏁 İşlem bitti, dosya kaydedildi.")
