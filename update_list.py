@@ -7,6 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 DOKUNULMAZLAR = ["workers.dev", "cdn-vizi", "viziTV"]
 
 YEDEK_KAYNAKLAR = [
+    "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
