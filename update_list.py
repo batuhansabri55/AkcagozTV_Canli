@@ -11,9 +11,8 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def link_test_et(url):
-    """Linkin gerçekten çalışıp çalışmadığını hızlıca kontrol eder."""
+    """Link aktif mi değil mi kontrol eder."""
     try:
-        # 3 saniye içinde cevap vermezse veya hata verirse 'False' döner
         r = requests.head(url, timeout=3, allow_redirects=True)
         return r.status_code < 400
     except:
@@ -21,19 +20,26 @@ def link_test_et(url):
 
 def update_m3u():
     headers = {"User-Agent": "Mozilla/5.0"}
-    
-    # 1. Mevcut manuel linklerini oku (Bunları test etmiyoruz, senin linklerin kutsaldır)
-    manuel_icerik = ""
+    temiz_liste = []
+    eklenen_linkler = set()
+
+    # 1. MEVCUT DOSYADAKİ HER ŞEYİ TEST ET VE AYIKLA
     if os.path.exists("tr.m3u"):
         with open("tr.m3u", "r", encoding="utf-8") as f:
-            manuel_icerik = f.read()
+            lines = f.readlines()
+            info = ""
+            for line in lines:
+                line = line.strip()
+                if line.startswith("#EXTINF"): info = line
+                elif line.startswith("http"):
+                    # Dosyadaki linki test et, çalışıyorsa listeye geri al
+                    if link_test_et(line):
+                        if info: temiz_liste.append(info)
+                        temiz_liste.append(line)
+                        eklenen_linkler.add(line)
+                    info = ""
 
-    added_links = set()
-    for line in manuel_icerik.splitlines():
-        if line.startswith("http"): added_links.add(line.strip())
-
-    # 2. Online yedekleri tara ve ÇALIŞANLARI ayıkla
-    yeni_linkler = "\n# --- OTOMATİK TEMİZ YEDEKLER --- #\n"
+    # 2. DIŞ KAYNAKLARDAN YENİ ÇALIŞAN LİNKLERİ EKLE
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=headers, timeout=10)
@@ -44,17 +50,16 @@ def update_m3u():
                     if l.startswith("#EXTINF"): info = l
                     elif l.startswith("http") and info:
                         link = l.strip()
-                        # DAHA ÖNCE EKLENMEMİŞSE VE ÇALIŞIYORSA EKLE
-                        if link not in added_links:
-                            if link_test_et(link):
-                                yeni_linkler += f"{info}\n{link}\n"
-                                added_links.add(link)
+                        if link not in eklenen_linkler and link_test_et(link):
+                            temiz_liste.append(info)
+                            temiz_liste.append(link)
+                            eklenen_linkler.add(link)
                         info = ""
         except: continue
 
-    # 3. Tertemiz dosyayı oluştur
+    # 3. SADECE ÇALIŞANLARLA DOSYAYI SIFIRDAN YAZ
     with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write(manuel_icerik.strip() + "\n" + yeni_linkler)
+        f.write("#EXTM3U\n" + "\n".join(temiz_liste))
 
 if __name__ == "__main__":
     update_m3u()
