@@ -3,9 +3,8 @@ import re
 import time
 
 def get_links():
-    print("🚀 Volo üzerinden kanallar toplanıyor...")
-    m3u_header = "#EXTM3U\n"
-    # Yeni Hedef Site (Diğer sekmende açık olan site)
+    print("🚀 Yeni hedef taranıyor: tv.canlitvvolo.com")
+    m3u_content = "#EXTM3U\n"
     base_url = "https://tv.canlitvvolo.com"
     
     headers = {
@@ -14,31 +13,37 @@ def get_links():
     }
 
     try:
+        # 1. Ana sayfayı çek ve kanal sayfalarını bul
         r = requests.get(base_url, headers=headers, timeout=20)
-        # Sitedeki kanal sayfalarını bulur (-izle-hd/ yapısı)
+        # Sitedeki kanal sayfaları /kanal-adi-izle-hd/ şeklinde biter
         channels = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?-izle-hd/)"', r.text)
         channels = list(set(channels)) 
         
-        print(f"📡 {len(channels)} kanal bulundu. Linkler ayıklanıyor...")
+        print(f"📡 {len(channels)} adet kanal sayfası bulundu. M3U8 aranıyor...")
 
-        content = m3u_header
-        for ch_url in channels[:30]: # İlk 30 kanalı tara
+        for ch_url in channels[:35]: # İlk 35 kanalı tara
             try:
+                # Kanal ismini URL'den güzelleştir
                 name = ch_url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
+                
+                # Kanal sayfasına gir ve yayın linkini yakala
                 res = requests.get(ch_url, headers=headers, timeout=15)
-                # Sayfa içindeki gizli m3u8 yayın linkini bulur
                 m3u8 = re.search(r'["\'](https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']', res.text)
                 
                 if m3u8:
-                    stream = m3u8.group(1).replace("\\/", "/")
-                    content += f"#EXTINF:-1, {name}\n{stream}\n"
-                    print(f"✅ {name} eklendi.")
-                time.sleep(0.5)
+                    stream_url = m3u8.group(1).replace("\\/", "/")
+                    m3u_content += f"#EXTINF:-1, {name}\n{stream_url}\n"
+                    print(f"✅ Eklendi: {name}")
+                
+                time.sleep(0.5) 
             except: continue
-        return content
-    except: return m3u_header
+
+    except Exception as e:
+        print(f"❌ Hata: {e}")
+    
+    return m3u_content
 
 if __name__ == "__main__":
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write(get_links())
-    print("🏁 tr.m3u güncellendi.")
+    print("🏁 İşlem bitti.")
