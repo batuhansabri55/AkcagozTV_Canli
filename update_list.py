@@ -3,66 +3,52 @@ import re
 import time
 
 def get_links():
-    print("🚀 Tarama başlatılıyor: BlogTV...")
-    m3u_header = "#EXTM3U\n"
-    # Hedef site
-    target_url = "https://www.blogtv.net.tr/p/turkiyenin-en-kapsaml-ulusal-kanallar.html"
+    print("🚀 Yeni hedef taranıyor: tv.canlitvvolo.com")
+    m3u_content = "#EXTM3U\n"
+    # Yeni ana sayfa
+    base_url = "https://tv.canlitvvolo.com"
     
-    # Gerçek kullanıcı gibi görünmek için detaylı headers
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-        'Referer': 'https://www.google.com/',
-        'Accept-Language': 'tr,en-US;q=0.7,en;q=0.3'
+        'Referer': base_url
     }
 
     try:
-        # 1. Ana sayfayı çek
-        response = requests.get(target_url, headers=headers, timeout=30)
+        # 1. Ana sayfadan kanal linklerini topla
+        r = requests.get(base_url, headers=headers, timeout=20)
+        # Sitedeki kanal sayfaları: /atv-izle-hd/ gibi biter
+        channels = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?-izle-hd/)"', r.text)
+        channels = list(set(channels)) # Tekrarları sil
         
-        # Regex'i süper esnek yaptık: tırnak olsun olmasın, ne varsa yakalar
-        # Örnek: https://www.blogtv.net.tr/p/atv-izle.html?kanal=ATV
-        pattern = r'https://www\.blogtv\.net\.tr/p/[^"\'>\s]+\.html\?kanal=[^"\'>\s]+'
-        found_links = re.findall(pattern, response.text)
-        found_links = list(dict.fromkeys(found_links)) # Tekrarları sıralı sil
-        
-        print(f"📡 {len(found_links)} adet potansiyel kanal bulundu.")
+        print(f"📡 {len(channels)} adet kanal bulundu. Yayınlar ayıklanıyor...")
 
-        m3u_body = ""
-        count = 0
-
-        for link in found_links[:45]: # İlk 45 kanalı işle
+        for ch_url in channels[:40]: # İlk 40 tanesini dene
             try:
-                # Kanal adını temizle
-                name = link.split("kanal=")[-1].replace("%20", " ").replace("+", " ").upper()
+                # Kanal adını URL'den al (atv-izle-hd -> ATV)
+                name = ch_url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
                 
                 # Kanal sayfasına gir
-                ch_res = requests.get(link, headers=headers, timeout=15)
+                res = requests.get(ch_url, headers=headers, timeout=15)
                 
-                # Sayfa içindeki .m3u8 linkini her türlü bulur
-                m3u8_match = re.search(r'["\']?(https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']?', ch_res.text)
+                # Sayfa içindeki .m3u8 linkini yakala
+                m3u8_match = re.search(r'["\'](https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']', res.text)
                 
                 if m3u8_match:
                     final_url = m3u8_match.group(1).replace("\\/", "/")
-                    m3u_body += f"#EXTINF:-1, {name}\n{final_url}\n"
+                    m3u_content += f"#EXTINF:-1, {name}\n{final_url}\n"
                     print(f"✅ Eklendi: {name}")
-                    count += 1
                 
-                time.sleep(0.5) # Ban yememek için minik mola
+                time.sleep(0.5) 
             except:
                 continue
-        
-        return m3u_header + m3u_body, count
 
     except Exception as e:
         print(f"❌ Kritik Hata: {e}")
-        return m3u_header, 0
+    
+    return m3u_content
 
 if __name__ == "__main__":
-    content, total = get_links()
+    final_m3u = get_links()
     with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write(content)
-    
-    import os
-    size = os.path.getsize("tr.m3u")
-    print(f"🏁 Bitti. Toplam {total} kanal. Dosya boyutu: {size} byte.")
+        f.write(final_m3u)
+    print("🏁 İşlem bitti. tr.m3u güncellendi.")
