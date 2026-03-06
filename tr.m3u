@@ -2887,8 +2887,6 @@ https://streams.uzunmuhalefet.com/stream/48abbe5f-8d44-46f2-8f74-99cd22ccbe6a.m3
 https://streams.uzunmuhalefet.com/stream/e3f95c11-bf9e-49aa-b666-a4464e00f5be.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/d0df6ded-7fc0-411f-92be-7b4a6f2a3445.png" tvg-url="https://www.serhattv.com.tr/" tvg-id="",Serhat TV
 https://streams.uzunmuhalefet.com/stream/7eebfc81-7667-49f0-9cc8-94e05ce24be2.m3u8
-#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/95e3cc57-2db2-497c-a5a0-38b1e09f864a.png" tvg-url="https://www.sonmeztv.com/" tvg-id="",Sönmez TV
-https://streams.uzunmuhalefet.com/stream/a351b016-71b2-4646-9727-c9d813e1706f.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/89ac8ece-4e45-4993-9a4c-cc8a40f00ff3.png" tvg-url="https://suduragitv.com/" tvg-id="",Sudurağı TV
 https://streams.uzunmuhalefet.com/stream/2d73fb92-500e-441e-b1ff-c74c9d931715.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/955594d6-47f9-412f-a4e4-10145d21ab9f.png" tvg-url="https://www.sunrtv.com.tr/" tvg-id="",Sun RTV
@@ -3309,6 +3307,32 @@ https://dth.meno24074.workers.dev/t3.m3u8
 https://dth.meno24074.workers.dev/euro1.m3u8
 #EXTINF:-1 tvg-id="euro2.tr" tvg-name="Eurosport 2" group-title="DTH-Panel",TR: Eurosport 2
 https://dth.meno24074.workers.dev/euro2.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="TR:Now HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/25c7c620-dfe4-4c78-9d9b-185d8a91885f.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Now HD
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
+#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f16de70e-9de7-4b41-937f-11a65fb2932d.png" tvg-url="https://www.szctv.com.tr/" tvg-id="SozcuTV.tr",Sözcü TV
+https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8
+#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/b9a8635c-848b-49f7-ad7f-0b7fd2efe2eb.png" tvg-url="https://neohaber.com/" tvg-id="",Neo Haber
+https://streams.uzunmuhalefet.com/stream/b2afa8c0-ab41-4111-a988-38e6db9e0d87.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/93e3b940-950f-4cfe-bae2-3f96d214bddb.png" tvg-url="https://www.linetv.com.tr/" tvg-id="",Line TV
+https://streams.uzunmuhalefet.com/stream/7994cab9-b6f9-4269-b2f7-f7d99693ab8f.m3u8
+#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="Kanal D" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/a/-p/245931/logo.png?v=638804938239723164" group-title="Ulusal",Kanal D
+http://104.238.23.221/dsgo.php?id=245931
+#EXTINF:-1 tvg-id="TV2.tr" tvg-name="TV2" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/B/WE/245991/logo.png?v=639029456898926668" group-title="Ulusal",TV2
+http://104.238.23.221/dsgo.php?id=245991
+#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="STAR" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/Y/Sk/245994/logo.png?v=638671713931288249" group-title="Ulusal",STAR
+http://104.238.23.221/dsgo.php?id=245994
+#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV.tr" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/S/Js/246030/logo.png?v=638671714237086283" group-title="Ulusal",ATV
+http://104.238.23.221/dsgo.php?id=246030
+#EXTINF:-1 tvg-id="Halk TV.tr" tvg-name="Halk TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/F/zn/246096/logo.png?v=638671714813453912" group-title="Haber",Halk TV
+http://104.238.23.221/dsgo.php?id=246096
+#EXTINF:-1 tvg-id="TAY TV.tr" tvg-name="Tay TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/b/0t/246108/logo.png?v=638671714934540111" group-title="Spor",Tay TV
+http://104.238.23.221/dsgo.php?id=246108
+#EXTINF:-1 tvg-id="a Spor.tr" tvg-name="A Spor" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/T/Rx/246135/logo.png?v=638671715192769225" group-title="Spor",A Spor
+http://104.238.23.221/dsgo.php?id=246135
+#EXTINF:-1 tvg-id="TRT Spor.tr" tvg-name="TRT Spor" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/K/_x/245946/logo.png?v=638671713539809839" group-title="Spor",TRT Spor
+http://104.238.23.221/dsgo.php?id=245946
+#EXTINF:-1 tvg-id="TRT Spor Yıldız.tr" tvg-name="TRT Spor Yıldız" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/G/YE/246177/logo.png?v=638671715529106823" group-title="Spor",TRT Spor Yıldız
+http://104.238.23.221/dsgo.php?id=246177
 #EXTINF:-1 tvg-id="1" tvg-name="TRT 1" group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt1_Rwe.png",TRT 1
 https://tv.cdn-vizi.workers.dev/?ID=1
 #EXTINF:-1 tvg-id="2" tvg-name="ATV" group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/atv_5qb.png",ATV
@@ -4521,9 +4545,5 @@ http://uro-levene-1012.mywire.org/index.php?id=54287&token=DeaTHLesS
 http://uro-levene-1012.mywire.org/index.php?id=54288&token=DeaTHLesS
 #EXTINF:-1 tvg-id="AlQanat9.tr@SD" tvg-logo="https://i.imgur.com/HC91Mho.png" group-title="News",Alqanat9 TV (1080p)
 https://cdn.bestream.io:19360/alqanat9/alqanat9.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f16de70e-9de7-4b41-937f-11a65fb2932d.png" tvg-url="https://www.szctv.com.tr/" tvg-id="SozcuTV.tr",Sözcü TV
-https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/b9a8635c-848b-49f7-ad7f-0b7fd2efe2eb.png" tvg-url="https://neohaber.com/" tvg-id="",Neo Haber
-https://streams.uzunmuhalefet.com/stream/b2afa8c0-ab41-4111-a988-38e6db9e0d87.m3u8
-#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/93e3b940-950f-4cfe-bae2-3f96d214bddb.png" tvg-url="https://www.linetv.com.tr/" tvg-id="",Line TV
-https://streams.uzunmuhalefet.com/stream/7994cab9-b6f9-4269-b2f7-f7d99693ab8f.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/95e3cc57-2db2-497c-a5a0-38b1e09f864a.png" tvg-url="https://www.sonmeztv.com/" tvg-id="",Sönmez TV
+https://streams.uzunmuhalefet.com/stream/a351b016-71b2-4646-9727-c9d813e1706f.m3u8
