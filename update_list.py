@@ -2,52 +2,55 @@ import requests
 import re
 import time
 
-def get_links():
-    print("🚀 Volo taranıyor, bu sefer liste dolacak...")
-    m3u_output = "#EXTM3U\n"
-    # Hedef site artık Volo
-    target = "https://tv.canlitvvolo.com"
+def get_volo_live():
+    print("🚀 Volo Operasyonu Başladı: Derin tarama yapılıyor...")
+    m3u_header = "#EXTM3U\n"
+    base_url = "https://tv.canlitvvolo.com"
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Referer': target
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'Referer': base_url,
+        'Accept-Language': 'tr-TR,tr;q=0.9'
     }
 
     try:
-        # 1. Ana sayfadan kanal linklerini topla
-        r = requests.get(target, headers=headers, timeout=20)
-        # Sitenin link yapısı: /show-tv-izle-hd/ gibi
-        links = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?)"', r.text)
-        # Sadece kanal sayfalarını (hd takılı olanları) filtrele
-        links = list(set([l for l in links if "-izle-hd" in l]))
+        # 1. Ana sayfadan kanal kartlarını bul
+        r = requests.get(base_url, headers=headers, timeout=20)
+        # Sitenin link yapısı: /kanal-adi-izle-hd/
+        channels = re.findall(r'href="(https://tv\.canlitvvolo\.com/[^"]+?)"', r.text)
+        channels = list(set([c for c in channels if "-izle-hd" in c]))
         
-        print(f"📡 {len(links)} adet kanal sayfası bulundu.")
+        print(f"📡 {len(channels)} kanal bulundu. İçerikler süzülüyor...")
 
-        for url in links[:35]: # Hız için ilk 35 kanalı al
+        body = ""
+        for ch_url in channels[:40]:
             try:
-                # Kanal adını URL'den al (ör: atv-izle-hd -> ATV)
-                name = url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
+                # İsim temizleme
+                name = ch_url.split('/')[-2].replace('-izle-hd', '').replace('-', ' ').upper()
                 
-                # Kanal sayfasına gir ve asıl yayın (m3u8) linkini yakala
-                res = requests.get(url, headers=headers, timeout=15)
-                # m3u8 linkini her türlü tırnak yapısında bulur
-                find_m3u8 = re.search(r'["\'](https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']', res.text)
+                # Sayfaya gir ve m3u8 ara
+                res = requests.get(ch_url, headers=headers, timeout=15)
                 
-                if find_m3u8:
-                    stream = find_m3u8.group(1).replace("\\/", "/")
-                    m3u_output += f"#EXTINF:-1, {name}\n{stream}\n"
-                    print(f"✅ {name} eklendi.")
+                # Sitenin kullandığı farklı m3u8 formatlarını yakala
+                m3u8_pattern = r'["\'](https?://[^"\'>\s]+?\.m3u8[^"\'>\s]*?)["\']'
+                match = re.search(m3u8_pattern, res.text)
                 
-                time.sleep(0.5) # Siteyi yormayalım
+                if match:
+                    stream = match.group(1).replace("\\/", "/")
+                    body += f"#EXTINF:-1, {name}\n{stream}\n"
+                    print(f"✅ Eklendi: {name}")
+                
+                time.sleep(0.3)
             except: continue
             
-        return m3u_output
+        return m3u_header + body
+
     except Exception as e:
-        print(f"❌ Kritik Hata: {e}")
-        return "#EXTM3U\n"
+        print(f"❌ Hata: {e}")
+        return m3u_header
 
 if __name__ == "__main__":
-    final_data = get_links()
+    content = get_volo_live()
     with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write(final_data)
-    print("🏁 İşlem tamam, tr.m3u güncellendi.")
+        f.write(content)
+    print("🏁 İşlem tamamlandı. GitHub Actions'ın bitmesini bekle.")
