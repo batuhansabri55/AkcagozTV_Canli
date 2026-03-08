@@ -413,8 +413,6 @@ https://cdn-telenews.yayin.com.tr/telenews/index.m3u8
 http://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,TrtWorld
 http://tv-trtworld.medya.trt.com.tr/master.m3u8
-#EXTINF:-1,Tv5
-https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:-1,Tv100
 https://ensonhaber-live.ercdn.net/tv100/tv100.m3u8
 #EXTINF:-1,YeniCag
@@ -2321,8 +2319,6 @@ https://streams.uzunmuhalefet.com/stream/edba8b19-4745-4c5c-a235-b23a06d83eda.m3
 https://streams.uzunmuhalefet.com/stream/5eed93a7-3042-4568-8335-dcaf66552b23.m3u8
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/c75d260b-10d6-42c6-b69e-bf04f773cc9b.png" tvg-url="https://www.ulusal.com.tr/" tvg-id="UlusalKanal.tr",Ulusal Kanal
 https://streams.uzunmuhalefet.com/stream/e8b425ad-571d-475d-a657-37bca8985836.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/058318fb-65bc-4ebd-8d52-add836f53ba9.png" tvg-url="https://www.tv5.com.tr/" tvg-id="TV5.tr",TV 5
-https://streams.uzunmuhalefet.com/stream/e12ae805-19c9-4c7f-ac92-cdd89d953d10.m3u8
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/48705266-7426-492a-a091-f2e599ba7a36.png" tvg-url="https://flashhabertv.com.tr/" tvg-id="FlashHaberTV.tr",Flash Haber TV
 https://streams.uzunmuhalefet.com/stream/6a0ae937-29d4-455b-b498-8fc8e82b95b4.m3u8
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/3ec303e0-dabd-4b43-b396-e816a7ed7e43.png" tvg-url="https://www.liderhaber.com.tr/" tvg-id="LiderHaber.tr",Lider Haber TV
@@ -3401,8 +3397,6 @@ http://104.238.23.221/dsgo.php?id=246240
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8
 #EXTINF:-1 group-title="Ekonomi" tvg-logo="https://assets.uzunmuhalefet.com/logos/1547c841-f6c4-47a3-b5db-79c4fcb5ee7b.png" tvg-url="https://finansturktv.com/" tvg-id="",Finans Türk
 https://streams.uzunmuhalefet.com/stream/93841168-9d59-43d0-9246-e04b64558b05.m3u8
-#EXTINF:-1 group-title="Dini" tvg-logo="https://assets.uzunmuhalefet.com/logos/faa657bc-dd06-465d-947d-df4dc7b8cd99.png" tvg-url="https://imamhatiphaber.com.tr/" tvg-id="",İmam Hatip TV
-https://streams.uzunmuhalefet.com/stream/0b1dac5f-d782-465a-8d1b-30eb206087cf.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/4f97ac3c-e8d6-4a18-8a90-92893e42da5b.png" tvg-url="https://kenttv.net/" tvg-id="",Bodrum Kent TV
 https://streams.uzunmuhalefet.com/stream/2bde8128-f3e9-40c5-8969-2cbed994e432.m3u8
 #EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="STAR" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/Y/Sk/245994/logo.png?v=638671713931288249" group-title="Ulusal",STAR
@@ -3423,18 +3417,14 @@ https://streams.uzunmuhalefet.com/stream/ad4a6fd6-b720-413f-9aa8-b009cb368882.m3
 http://104.238.23.221/dsgo.php?id=246030
 #EXTINF:-1 tvg-id="CNN TÜRK.tr" tvg-name="CNN Türk" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/U/Cg/245940/logo.png?v=638671713494111482" group-title="Haber",CNN Türk
 http://104.238.23.221/dsgo.php?id=245940
-#EXTINF:-1 tvg-id="TRT Spor Yıldız.tr" tvg-name="TRT Spor Yıldız" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/G/YE/246177/logo.png?v=638671715529106823" group-title="Spor",TRT Spor Yıldız
-http://104.238.23.221/dsgo.php?id=246177
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/aae0367d-c9ab-45a2-8518-0968cd5d2f55.png" tvg-url="https://www.trt1.com.tr/" tvg-id="TRT1.tr",TRT 1
 https://streams.uzunmuhalefet.com/stream/535f4f5a-3ffa-4919-bb5d-5d31024c9237.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://assets.uzunmuhalefet.com/logos/13a15812-c9fd-4092-858d-9b4c6ecd12e4.png" tvg-url="" tvg-id="",Torba TV
 https://streams.uzunmuhalefet.com/stream/5ff4a325-ab1b-4393-a802-b2b95e97812d.m3u8
-#EXTINF:-1 tvg-id="Halk TV.tr" tvg-name="Halk TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/F/zn/246096/logo.png?v=638671714813453912" group-title="Haber",Halk TV
-http://104.238.23.221/dsgo.php?id=246096
-#EXTINF:-1 tvg-id="" tvg-name="TR:Now HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/25c7c620-dfe4-4c78-9d9b-185d8a91885f.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Now HD
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://assets.uzunmuhalefet.com/logos/62b08979-f113-4cd8-a086-f26bb441ac14.png" tvg-url="https://www.kibrisgenctv.com/" tvg-id="GencTV.tr",Genç TV
 https://streams.uzunmuhalefet.com/stream/d1e7e32f-d06d-42db-997c-acdb9b0971f5.m3u8
+#EXTINF:-1 tvg-id="Halk TV.tr" tvg-name="Halk TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/F/zn/246096/logo.png?v=638671714813453912" group-title="Haber",Halk TV
+http://104.238.23.221/dsgo.php?id=246096
 #EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="Kanal D" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/a/-p/245931/logo.png?v=638804938239723164" group-title="Ulusal",Kanal D
 http://104.238.23.221/dsgo.php?id=245931
 #EXTINF:-1 tvg-id="TV2.tr" tvg-name="TV2" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/B/WE/245991/logo.png?v=639029456898926668" group-title="Ulusal",TV2
@@ -3445,16 +3435,12 @@ http://104.238.23.221/dsgo.php?id=245994
 http://104.238.23.221/dsgo.php?id=246030
 #EXTINF:-1 tvg-id="TRT 1.tr" tvg-name="TRT 1.tr" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/S/tg/245943/logo.png?v=638671713518783129" group-title="Ulusal",TRT 1
 http://104.238.23.221/dsgo.php?id=245943
-#EXTINF:-1 tvg-id="Szc Tv.tr" tvg-name="SZC TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/L/kO/246240/logo.png?v=638671716034197297" group-title="Haber",SZC TV (Sözcü)
-http://104.238.23.221/dsgo.php?id=246240
-#EXTINF:-1 tvg-id="Halk TV.tr" tvg-name="Halk TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/F/zn/246096/logo.png?v=638671714813453912" group-title="Haber",Halk TV
-http://104.238.23.221/dsgo.php?id=246096
 #EXTINF:-1 tvg-id="TAY TV.tr" tvg-name="Tay TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/b/0t/246108/logo.png?v=638671714934540111" group-title="Spor",Tay TV
 http://104.238.23.221/dsgo.php?id=246108
-#EXTINF:-1 tvg-id="HT Spor.tr" tvg-name="HT Spor" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/X/p9/394506/logo.png?v=638671716286348977" group-title="Spor",HT Spor
-http://104.238.23.221/dsgo.php?id=394506
 #EXTINF:-1 tvg-id="a Spor.tr" tvg-name="A Spor" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/T/Rx/246135/logo.png?v=638671715192769225" group-title="Spor",A Spor
 http://104.238.23.221/dsgo.php?id=246135
+#EXTINF:-1 tvg-id="TRT Spor.tr" tvg-name="TRT Spor" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/K/_x/245946/logo.png?v=638671713539809839" group-title="Spor",TRT Spor
+http://104.238.23.221/dsgo.php?id=245946
 #EXTINF:-1 tvg-id="1" tvg-name="TRT 1" group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt1_Rwe.png",TRT 1
 https://tv.cdn-vizi.workers.dev/?ID=1
 #EXTINF:-1 tvg-id="2" tvg-name="ATV" group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/atv_5qb.png",ATV
@@ -4665,5 +4651,9 @@ http://uro-levene-1012.mywire.org/index.php?id=54289&token=DeaTHLesS
 http://uro-levene-1012.mywire.org/index.php?id=54287&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="|TR| TIVIBU SPOR 3 ᴴᴰ" group-title="|TR| ✪ SPORT",|TR| TIVIBU SPOR 3 ᴴᴰ
 http://uro-levene-1012.mywire.org/index.php?id=54288&token=DeaTHLesS
+#EXTINF:-1 tvg-id=&quot;TRTCocuk.tr&quot; tvg-name=&quot;TRT Cocuk&quot; tvg-logo=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TRT_%C3%87ocuk_logo_%282021%29.svg/512px-TRT_%C3%87ocuk_logo_%282021%29.svg.png&quot; group-title=&quot;kids&quot;,TRT Cocuk
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="AlQanat9.tr@SD" tvg-logo="https://i.imgur.com/HC91Mho.png" group-title="News",Alqanat9 TV (1080p)
 https://cdn.bestream.io:19360/alqanat9/alqanat9.m3u8
+#EXTINF:-1 group-title="Çocuk" tvg-logo="https://assets.uzunmuhalefet.com/logos/ec9eb56f-cabd-4dd5-b0cf-d743e92a288b.png" tvg-url="https://www.trtcocuk.net.tr/" tvg-id="TRTCocuk.tr",TRT Çocuk
+https://streams.uzunmuhalefet.com/stream/6ad16f63-33f5-45bd-9742-1b98a71ce6ed.m3u8
