@@ -3,7 +3,39 @@ import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-# Bu kelimeleri içeren linkler ASLA silinmez ve TEST EDİLMEDEN kabul edilir
+# --- LOGO AYARLARI ---
+# Kendi GitHub kullanıcı adınla burayı güncelle usta
+MY_LOGO_BASE = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/"
+
+LOGO_MAP = {
+    "trt 1": "trt1.png",
+    "atv": "atv.png",
+    "show tv": "show.png",
+    "star tv": "star.png",
+    "kanal d": "kanald.png",
+    "tv8": "tv8.png",
+    "now": "now.png",
+    "fox": "now.png",
+    "kanal 7": "kanal7.png",
+    "haberturk": "haberturk.png"
+}
+
+def fix_logo(info_line):
+    # Kanal ismini bul ve logoyu değiştir
+    name_match = re.search(r",(.+)$", info_line)
+    if name_match:
+        ch_name = name_match.group(1).lower()
+        for key, filename in LOGO_MAP.items():
+            if key in ch_name:
+                # tvg-logo kısmını senin deponla değiştirir
+                new_logo_url = MY_LOGO_BASE + filename
+                if 'tvg-logo="' in info_line:
+                    return re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{new_logo_url}"', info_line)
+                else:
+                    return info_line.replace("#EXTINF:-1", f'#EXTINF:-1 tvg-logo="{new_logo_url}"')
+    return info_line
+
+# --- MEVCUT KODUN DEVAMI ---
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "cdn-vizi", "viziTV"]
 
 YEDEK_KAYNAKLAR = [
@@ -19,37 +51,33 @@ YEDEK_KAYNAKLAR = [
 def link_test_et(item):
     info, url = item
     url_clean = url.lower()
-    
-    # VIP Kontrol: Dokunulmazları direkt geçir
     if any(ozel in url_clean for ozel in DOKUNULMAZLAR):
-        return (info, url)
+        return (fix_logo(info), url) # Dokunulmaz olsa da logosunu düzelt
 
     try:
         r = requests.get(url, timeout=5, stream=True, headers={"User-Agent": "Mozilla/5.0"})
         if r.status_code == 200:
             content = next(r.iter_content(chunk_size=128), None)
             r.close()
-            if content: return (info, url)
+            if content: return (fix_logo(info), url) # Logoyu temizleyip döndür
     except: pass
     return None
 
 def update_m3u():
     aday_listesi = []
-    korunanlar = []  # Manuel girilen özel linkler için
+    korunanlar = []
     eklenen_linkler = set()
 
-    # 1. Mevcut dosyayı oku ve DOKUNULMAZ olanları ayır
     if os.path.exists("tr.m3u"):
         with open("tr.m3u", "r", encoding="utf-8") as f:
             matches = re.findall(r"(#EXTINF:.*)\n(http.*)", f.read())
             for info, url in matches:
                 if any(ozel in url.lower() for ozel in DOKUNULMAZLAR):
-                    korunanlar.append((info, url))
+                    korunanlar.append((fix_logo(info), url))
                     eklenen_linkler.add(url)
                 else:
                     aday_listesi.append((info, url))
 
-    # 2. Dış kaynakları tara
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
@@ -58,18 +86,15 @@ def update_m3u():
                 aday_listesi.extend(matches)
         except: continue
 
-    # 3. Testleri yap (Havuzda olmayanları test et)
     with ThreadPoolExecutor(max_workers=15) as executor:
         results = list(executor.map(link_test_et, aday_listesi))
         
-    # 4. Sonuçları birleştir (Önce korunanlar, sonra sağlamlar)
     temiz_kanallar = korunanlar
     for res in results:
         if res and res[1] not in eklenen_linkler:
             temiz_kanallar.append(res)
             eklenen_linkler.add(res[1])
 
-    # 5. Dosyayı güncelle
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for info, url in temiz_kanallar:
