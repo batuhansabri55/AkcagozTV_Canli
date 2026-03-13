@@ -11,11 +11,14 @@ LOGO_MAP = {
 }
 
 def update_m3u():
-    if not os.path.exists("tr.m3u"):
-        print("HATA: tr.m3u dosyası bulunamadı!")
+    file_name = "tr.m3u"
+    if not os.path.exists(file_name):
+        print(f"HATA: {file_name} dosyası bulunamadı!")
         return
 
-    with open("tr.m3u", "r", encoding="utf-8") as f:
+    print("İşlem başlatıldı, lütfen bekleyin...")
+    
+    with open(file_name, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
     new_lines = []
@@ -23,26 +26,24 @@ def update_m3u():
 
     for line in lines:
         if line.startswith("#EXTINF"):
-            # Kanal adını bul (virgülden sonraki kısım)
             line_lower = line.lower()
-            found = False
             for key, filename in LOGO_MAP.items():
                 if key in line_lower:
                     new_url = MY_LOGO_BASE + filename
-                    # Logo varsa değiştir, yoksa ekle
                     if 'tvg-logo="' in line:
                         line = re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{new_url}"', line)
                     else:
                         line = line.replace("#EXTINF:-1", f'#EXTINF:-1 tvg-logo="{new_url}"')
                     degisim_sayisi += 1
-                    found = True
                     break
         new_lines.append(line)
 
-    with open("tr.m3u", "w", encoding="utf-8") as f:
+    with open(file_name, "w", encoding="utf-8") as f:
         f.writelines(new_lines)
     
-    print(f"BİTTİ! Toplam {degisim_sayisi} kanalın logosu güncellendi.")
+    print("-" * 30)
+    print(f"BAŞARILI! {degisim_sayisi} kanalın logosu değiştirildi.")
+    print("-" * 30)
 
 if __name__ == "__main__":
     update_m3u()
