@@ -3,11 +3,9 @@ import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-# VIP: Bu kelimeleri içeren linkler ASLA silinmez ve TEST EDİLMEDEN kabul edilir
+# Bu kelimeleri içeren linkler ASLA silinmez ve TEST EDİLMEDEN kabul edilir
 DOKUNULMAZLAR = ["hpgdiscoo", "premiumstream.in", "workers.dev", "cdn-vizi", "viziTV"]
 
-# Bilgisayarındaki dev Goldvod dosyasının adı (Aynı klasörde olmalı)
-GOLDVOD_DOSYA_ADI = "playlist_hpgdiscoo(2).m3u"
 
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
@@ -22,12 +20,15 @@ YEDEK_KAYNAKLAR = [
 def link_test_et(item):
     info, url = item
     url_clean = url.lower()
+    
+    # VIP Kontrol: Dokunulmazları direkt geçir
     if any(ozel in url_clean for ozel in DOKUNULMAZLAR):
         return (info, url)
+
     try:
-        r = requests.get(url, timeout=4, stream=True, headers={"User-Agent": "Mozilla/5.0"})
+        r = requests.get(url, timeout=5, stream=True, headers={"User-Agent": "Mozilla/5.0"})
         if r.status_code == 200:
-            content = next(r.iter_content(chunk_size=64), None)
+            content = next(r.iter_content(chunk_size=128), None)
             r.close()
             if content: return (info, url)
     except: pass
@@ -35,62 +36,45 @@ def link_test_et(item):
 
 def update_m3u():
     aday_listesi = []
-    korunanlar = [] 
+    korunanlar = []  # Manuel girilen özel linkler için
     eklenen_linkler = set()
 
-    # 1. YEREL GOLDVOD DOSYASINI OKU (19.500 Satırlık Dosya)
-    if os.path.exists(GOLDVOD_DOSYA_ADI):
-        print(f"[*] Yerel dosya okunuyor: {GOLDVOD_DOSYA_ADI}")
-        with open(GOLDVOD_DOSYA_ADI, "r", encoding="utf-8") as f:
-            content = f.read()
-            matches = re.findall(r"(#EXTINF:.*)\n(http.*)", content)
-            for info, url in matches:
-                # Sadece senin kullanıcı adını içeren linkleri alıyoruz
-                if "hpgdiscoo" in url.lower() and url not in eklenen_linkler:
-                    korunanlar.append((info, url))
-                    eklenen_linkler.add(url)
-    else:
-        print(f"[!] UYARI: {GOLDVOD_DOSYA_ADI} bulunamadı! Sadece dış kaynaklar taranacak.")
-
-    # 2. MEVCUT tr.m3u İÇİNDEKİ DOKUNULMAZLARI KORU
+    # 1. Mevcut dosyayı oku ve DOKUNULMAZ olanları ayır
     if os.path.exists("tr.m3u"):
         with open("tr.m3u", "r", encoding="utf-8") as f:
             matches = re.findall(r"(#EXTINF:.*)\n(http.*)", f.read())
             for info, url in matches:
-                if any(ozel in url.lower() for ozel in DOKUNULMAZLAR) and url not in eklenen_linkler:
+                if any(ozel in url.lower() for ozel in DOKUNULMAZLAR):
                     korunanlar.append((info, url))
                     eklenen_linkler.add(url)
+                else:
+                    aday_listesi.append((info, url))
 
-    # 3. DIŞ KAYNAKLARI TARA
-    print(f"[*] {len(YEDEK_KAYNAKLAR)} dış kaynak taranıyor...")
+    # 2. Dış kaynakları tara
     for s_url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(s_url, timeout=8)
+            r = requests.get(s_url, timeout=10)
             if r.status_code == 200:
                 matches = re.findall(r"(#EXTINF:.*)\n(http.*)", r.text)
-                for info, url in matches:
-                    if url not in eklenen_linkler:
-                        aday_listesi.append((info, url))
+                aday_listesi.extend(matches)
         except: continue
 
-    # 4. TEST İŞLEMİ
-    print(f"[*] {len(aday_listesi)} link test ediliyor...")
-    with ThreadPoolExecutor(max_workers=25) as executor:
+    # 3. Testleri yap (Havuzda olmayanları test et)
+    with ThreadPoolExecutor(max_workers=15) as executor:
         results = list(executor.map(link_test_et, aday_listesi))
         
-    # 5. BİRLEŞTİR VE YAZ
-    final_liste = korunanlar # Önce zırhlı Goldvod ve diğer VIP linkler
+    # 4. Sonuçları birleştir (Önce korunanlar, sonra sağlamlar)
+    temiz_kanallar = korunanlar
     for res in results:
         if res and res[1] not in eklenen_linkler:
-            final_liste.append(res)
+            temiz_kanallar.append(res)
             eklenen_linkler.add(res[1])
 
+    # 5. Dosyayı güncelle
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for info, url in final_liste:
+        for info, url in temiz_kanallar:
             f.write(f"{info}\n{url}\n")
-    
-    print(f"[+] İŞLEM TAMAM! Toplam {len(final_liste)} kanal hazır.")
 
 if __name__ == "__main__":
     update_m3u()
