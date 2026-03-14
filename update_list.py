@@ -4,8 +4,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor
 
 # Bu kelimeleri içeren linkler ASLA silinmez ve TEST EDİLMEDEN kabul edilir
-DOKUNULMAZLAR = ["hpgdiscoo", "premiumstream.in", "workers.dev", "cdn-vizi", "viziTV"]
-
+DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "cdn-vizi", "viziTV"]
 
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
