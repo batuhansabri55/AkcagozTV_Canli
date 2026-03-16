@@ -3,7 +3,7 @@ import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-# SADECE BU İKİSİ TEST EDİLMEZ VE SİLİNMEZ
+# SADECE BU İKİSİ TEST EDİLMEZ VE ASLA SİLİNMEZ
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev"]
 
 YEDEK_KAYNAKLAR = [
@@ -20,11 +20,12 @@ def link_test_et(item):
     info, url = item
     url_clean = url.lower().strip()
     
+    # Dokunulmazları test etmeden direkt döndür
     if any(ozel in url_clean for ozel in DOKUNULMAZLAR):
         return (info, url)
 
     try:
-        # Stream=True ve context manager ile hızlı ve güvenli test
+        # viziTV ve diğerleri burada test edilir (Ölüler elenir)
         with requests.get(url, timeout=5, stream=True, headers={"User-Agent": "Mozilla/5.0"}) as r:
             if r.status_code == 200:
                 return (info, url)
@@ -37,11 +38,7 @@ def update_m3u():
     havuz = []
     tum_metin = ""
 
-    # 1. Eski dosyayı ve uzak kaynakları tek bir metinde topla
-    if os.path.exists("tr.m3u"):
-        with open("tr.m3u", "r", encoding="utf-8") as f:
-            tum_metin += f.read() + "\n"
-
+    # 1. Kaynaklardan verileri topla
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
@@ -49,7 +46,7 @@ def update_m3u():
                 tum_metin += r.text + "\n"
         except: continue
 
-    # 2. Regex ile ayıkla ve mükerrerleri (tekrar edenleri) sil
+    # 2. Regex ile ayıkla ve mükerrer linkleri engelle
     matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", tum_metin.replace('\r', ''))
     
     for info, url in matches:
@@ -58,18 +55,18 @@ def update_m3u():
             havuz.append((info, url_strip))
             eklenen_linkler.add(url_strip)
 
-    # 3. Test aşaması (viziTV dahil her şey burada elenir)
-    print(f"Sistem taranıyor: {len(havuz)} benzersiz kanal bulundu...")
+    # 3. Hızlı test (50 kanal aynı anda)
+    print(f"Güncel liste çekiliyor: {len(havuz)} benzersiz kanal bulundu...")
     with ThreadPoolExecutor(max_workers=50) as executor:
         final_liste = list(filter(None, executor.map(link_test_et, havuz)))
 
-    # 4. Dosyayı 'w' moduyla SIFIRDAN yaz (Eskiler burada temizlenir)
+    # 4. DOSYAYI SİL VE YENİSİNİ YAZ (w modu eskiyi siler)
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for info, url in final_liste:
             f.write(f"{info}\n{url}\n")
     
-    print(f"İşlem bitti! 'tr.m3u' artık tertemiz ve {len(final_liste)} kanal aktif.")
+    print(f"İşlem Tamam: Eski veriler silindi, {len(final_liste)} kanal yüklendi.")
 
 if __name__ == "__main__":
     update_m3u()
