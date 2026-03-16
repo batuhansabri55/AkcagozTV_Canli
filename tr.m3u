@@ -195,9 +195,9 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/45
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/31
 #EXTINF:-1,TV8HD 30
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/30
-#EXTINF:-1,SHOW TV FHD
+#EXTINF:-1,SHOWTVFHD 42
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/42
-#EXTINF:-1,SHOW TV HD
+#EXTINF:-1,SHOWTVHD 43
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/43
 #EXTINF:-1,KANAL D FHD
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40
@@ -815,7 +815,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/244486
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/64332
 #EXTINF:-1 tvg-id="" tvg-name="|TR| TRT 1" group-title="|TR| ✪ ULUSAL",|TR| TRT 1
 http://uro-levene-1012.mywire.org/index.php?id=10790&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="|TR| SHOW TV" group-title="|TR| ✪ ULUSAL",|TR| SHOW TV
+#EXTINF:-1 tvg-id="" tvg-name="|TR| SHOW TV" group-title="|TR| ✪ ULUSAL",SHOWTVFHD 42
 http://uro-levene-1012.mywire.org/index.php?id=10794&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="|TR| KANAL D" group-title="|TR| ✪ ULUSAL",|TR| KANAL D
 http://uro-levene-1012.mywire.org/index.php?id=10762&token=DeaTHLesS
@@ -899,7 +899,7 @@ http://uro-levene-1012.mywire.org/index.php?id=10781&token=DeaTHLesS
 http://uro-levene-1012.mywire.org/index.php?id=185787&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="|TR|  TRT 1 ᴴᴰ" group-title="|TR| ✪ ULUSAL HD",|TR|  TRT 1 ᴴᴰ
 http://uro-levene-1012.mywire.org/index.php?id=196784&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="|TR|  SHOW TV ᴴᴰ" group-title="|TR| ✪ ULUSAL HD",|TR|  SHOW TV ᴴᴰ
+#EXTINF:-1 tvg-id="" tvg-name="|TR|  SHOW TV ᴴᴰ" group-title="|TR| ✪ ULUSAL HD",SHOWTVHD 43
 http://uro-levene-1012.mywire.org/index.php?id=196787&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="|TR|  KANAL D ᴴᴰ" group-title="|TR| ✪ ULUSAL HD",|TR|  KANAL D ᴴᴰ
 http://uro-levene-1012.mywire.org/index.php?id=196789&token=DeaTHLesS
@@ -947,7 +947,7 @@ http://uro-levene-1012.mywire.org/index.php?id=196818&token=DeaTHLesS
 http://uro-levene-1012.mywire.org/index.php?id=170669&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="|TR| TRT 1" group-title="|TR| ✪ ULUSAL FHD",|TR| TRT 1
 http://uro-levene-1012.mywire.org/index.php?id=170655&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="|TR| SHOW TV ᵁᴴᴰ" group-title="|TR| ✪ ULUSAL FHD",|TR| SHOW TV ᵁᴴᴰ
+#EXTINF:-1 tvg-id="" tvg-name="|TR| SHOW TV ᵁᴴᴰ" group-title="|TR| ✪ ULUSAL FHD",SHOWTVx 
 http://uro-levene-1012.mywire.org/index.php?id=170657&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="|TR| KANAL D ᵁᴴᴰ" group-title="|TR| ✪ ULUSAL FHD",|TR| KANAL D ᵁᴴᴰ
 http://uro-levene-1012.mywire.org/index.php?id=170658&token=DeaTHLesS
