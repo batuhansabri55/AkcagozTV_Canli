@@ -3,7 +3,7 @@ import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-# SADECE BU İKİSİ TEST EDİLMEDEN KABUL EDİLİR VE SİLİNMEZ
+# SADECE BU İKİSİ TEST EDİLMEZ VE SİLİNMEZ
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev"]
 
 YEDEK_KAYNAKLAR = [
@@ -20,61 +20,56 @@ def link_test_et(item):
     info, url = item
     url_clean = url.lower().strip()
     
-    # Dokunulmaz olanları test etmeden direkt geçir
     if any(ozel in url_clean for ozel in DOKUNULMAZLAR):
         return (info, url)
 
     try:
-        # viziTV ve diğerleri artık burada test edilecek
+        # Stream=True ve context manager ile hızlı ve güvenli test
         with requests.get(url, timeout=5, stream=True, headers={"User-Agent": "Mozilla/5.0"}) as r:
             if r.status_code == 200:
-                # Bağlantı kurulabiliyorsa kanalı kabul et
                 return (info, url)
     except:
         pass
     return None
 
 def update_m3u():
-    adaylar = []
     eklenen_linkler = set()
-    icerik_havuzu = ""
+    havuz = []
+    tum_metin = ""
 
-    # 1. Mevcut dosyadaki verileri oku
+    # 1. Eski dosyayı ve uzak kaynakları tek bir metinde topla
     if os.path.exists("tr.m3u"):
         with open("tr.m3u", "r", encoding="utf-8") as f:
-            icerik_havuzu += f.read() + "\n"
+            tum_metin += f.read() + "\n"
 
-    # 2. Dış kaynaklardaki verileri topla
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
             if r.status_code == 200:
-                icerik_havuzu += r.text + "\n"
-        except:
-            continue
+                tum_metin += r.text + "\n"
+        except: continue
 
-    # 3. Regex ile ayıkla ve TEKİLLEŞTİR (Aynı linkten 1 tane kalacak şekilde)
-    # Satır sonu karakterlerini temizleyip eşleştirme yapıyoruz
-    matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", icerik_havuzu.replace('\r', ''))
+    # 2. Regex ile ayıkla ve mükerrerleri (tekrar edenleri) sil
+    matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", tum_metin.replace('\r', ''))
     
     for info, url in matches:
         url_strip = url.strip()
         if url_strip not in eklenen_linkler:
-            adaylar.append((info, url_strip))
+            havuz.append((info, url_strip))
             eklenen_linkler.add(url_strip)
 
-    # 4. Kanalları test et (Hızlı sonuç için 25 kanal aynı anda)
-    print(f"Toplam {len(adaylar)} benzersiz kanal işleniyor...")
-    with ThreadPoolExecutor(max_workers=25) as executor:
-        sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
+    # 3. Test aşaması (viziTV dahil her şey burada elenir)
+    print(f"Sistem taranıyor: {len(havuz)} benzersiz kanal bulundu...")
+    with ThreadPoolExecutor(max_workers=50) as executor:
+        final_liste = list(filter(None, executor.map(link_test_et, havuz)))
 
-    # 5. Dosyayı SIFIRDAN yaz (Bu işlem eski ve bozuk verileri temizler)
+    # 4. Dosyayı 'w' moduyla SIFIRDAN yaz (Eskiler burada temizlenir)
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for info, url in sonuclar:
+        for info, url in final_liste:
             f.write(f"{info}\n{url}\n")
     
-    print(f"Bitti! {len(sonuclar)} aktif kanal 'tr.m3u' dosyasına kaydedildi.")
+    print(f"İşlem bitti! 'tr.m3u' artık tertemiz ve {len(final_liste)} kanal aktif.")
 
 if __name__ == "__main__":
     update_m3u()
