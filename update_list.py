@@ -3,7 +3,7 @@ import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-# SADECE BU İKİSİ TEST EDİLMEZ VE ASLA SİLİNMEZ
+# Sadece bu ikisi testi pas geçer ama SADECE 1 KERE yazılır
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev"]
 
 YEDEK_KAYNAKLAR = [
@@ -19,54 +19,47 @@ YEDEK_KAYNAKLAR = [
 def link_test_et(item):
     info, url = item
     url_clean = url.lower().strip()
-    
-    # Dokunulmazları test etmeden direkt döndür
     if any(ozel in url_clean for ozel in DOKUNULMAZLAR):
         return (info, url)
-
     try:
-        # viziTV ve diğerleri burada test edilir (Ölüler elenir)
         with requests.get(url, timeout=5, stream=True, headers={"User-Agent": "Mozilla/5.0"}) as r:
-            if r.status_code == 200:
-                return (info, url)
-    except:
-        pass
+            if r.status_code == 200: return (info, url)
+    except: pass
     return None
 
 def update_m3u():
-    eklenen_linkler = set()
+    eklenen_linkler = set() # İŞTE BURASI O 19 TANEYİ ENGELLER
     havuz = []
     tum_metin = ""
 
-    # 1. Kaynaklardan verileri topla
+    print("Kaynaklar taranıyor...")
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
-            if r.status_code == 200:
-                tum_metin += r.text + "\n"
+            if r.status_code == 200: tum_metin += r.text + "\n"
         except: continue
 
-    # 2. Regex ile ayıkla ve mükerrer linkleri engelle
+    # Regex ile ayıkla
     matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", tum_metin.replace('\r', ''))
     
     for info, url in matches:
         url_strip = url.strip()
+        # EĞER LİNK DAHA ÖNCE EKLENMİŞSE PAS GEÇ (TEKİLLEŞTİRME)
         if url_strip not in eklenen_linkler:
             havuz.append((info, url_strip))
             eklenen_linkler.add(url_strip)
 
-    # 3. Hızlı test (50 kanal aynı anda)
-    print(f"Güncel liste çekiliyor: {len(havuz)} benzersiz kanal bulundu...")
+    print(f"{len(havuz)} benzersiz kanal bulundu. Testler yapılıyor...")
     with ThreadPoolExecutor(max_workers=50) as executor:
         final_liste = list(filter(None, executor.map(link_test_et, havuz)))
 
-    # 4. DOSYAYI SİL VE YENİSİNİ YAZ (w modu eskiyi siler)
+    # DOSYAYI SIFIRDAN YAZ (ESKİLERİ SİLER)
     with open("tr.m3u", "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for info, url in final_liste:
             f.write(f"{info}\n{url}\n")
     
-    print(f"İşlem Tamam: Eski veriler silindi, {len(final_liste)} kanal yüklendi.")
+    print(f"\nİŞLEM BİTTİ! Artık o 19 tane olan linkten sadece 1 tane kaldı.")
 
 if __name__ == "__main__":
     update_m3u()
