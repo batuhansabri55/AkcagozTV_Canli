@@ -1,8 +1,15 @@
 import requests
 import re
+import base64
+from concurrent.futures import ThreadPoolExecutor
 
-# Sadece bu kelimeyi içeren linkler sorgusuz sualsiz kabul edilir
-DOKUNULMAZLAR = ["premiumstream.in"]
+# --- AYARLAR ---
+GITHUB_TOKEN = "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" 
+REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
+FILE_PATH = "tr.m3u"
+
+# Bu kelimeleri içeren linkler ASLA silinmez ve TEST EDİLMEDEN eklenir
+DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org"]
 
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
@@ -14,38 +21,55 @@ YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u"
 ]
 
-def update_m3u():
-    eklenen_linkler = set()
-    final_list = []
-    tum_metin = ""
+def github_yukle(icerik):
+    url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    
+    # SHA al
+    r = requests.get(url, headers=headers)
+    sha = r.json().get('sha') if r.status_code == 200 else None
 
-    print("Kaynaklar internetten çekiliyor...")
+    data = {
+        "message": "Liste guncellendi (VIP URL korumali)",
+        "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")
+    }
+    if sha: data["sha"] = sha
+
+    r = requests.put(url, json=data, headers=headers)
+    if r.status_code in [200, 201]: print("✅ GITHUB TAMAM!")
+    else: print(f"❌ HATA: {r.text}")
+
+def link_test_et(item):
+    info, url = item
+    url_clean = url.lower().strip()
+    if any(ozel in url_clean for ozel in DOKUNULMAZLAR): return (info, url)
+    try:
+        with requests.get(url, timeout=5, stream=True) as r:
+            if r.status_code == 200: return (info, url)
+    except: pass
+    return None
+
+def update_m3u():
+    adaylar = []
+    eklenen_linkler = set()
+    
     for s_url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(s_url, timeout=15)
+            r = requests.get(s_url, timeout=10)
             if r.status_code == 200:
-                tum_metin += r.text + "\n"
+                matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", r.text.replace('\r', ''))
+                for info, url in matches:
+                    u = url.strip()
+                    if u not in eklenen_linkler:
+                        adaylar.append((info, u))
+                        eklenen_linkler.add(u)
         except: continue
 
-    # Regex ile verileri ayıkla
-    matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", tum_metin.replace('\r', ''))
-    
-    for info, url in matches:
-        url_strip = url.strip()
-        
-        # TEKİLLEŞTİRME: Link set içinde yoksa listeye ekle
-        if url_strip not in eklenen_linkler:
-            final_list.append((info, url_strip))
-            eklenen_linkler.add(url_strip)
+    with ThreadPoolExecutor(max_workers=30) as executor:
+        sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
 
-    # DOSYAYI SIFIRDAN YAZ (W modu eski veriyi siler)
-    with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        for info, url in final_list:
-            f.write(f"{info}\n{url}\n")
-    
-    print(f"İşlem bitti! Toplam {len(final_list)} benzersiz kanal kaydedildi.")
-    print("Artık o 19 tane olan linklerden sadece 1 tane kaldı.")
+    output = "#EXTM3U\n" + "\n".join([f"{i}\n{u}" for i, u in sonuclar])
+    github_yukle(output)
 
 if __name__ == "__main__":
     update_m3u()
