@@ -18,8 +18,15 @@ def parse_epg():
 
     epg_data = {}
     now = datetime.now().strftime("%Y%m%d%H%M")
+    
+    # GOLDVOD'DAN GELEN TÜM KANAL ID'LERİNİ GÖRELİM (Hata Ayıklama İçin)
+    all_channel_ids = set()
+    for channel in root.findall('channel'):
+        all_channel_ids.add(channel.get('id').lower())
+    print(f"Sistemde bulunan bazı Kanal ID'leri: {list(all_channel_ids)[:10]}")
 
     # PANELDEKİ (D1) tvg_id DEĞERLERİNE GÖRE EŞLEŞTİRME
+    # Goldvod'un ID'leri tam olarak neyse burayı ona göre düzelteceğiz
     mapping = {
         "trt1.tr": ["TRT 1 FHD", "TRT 1 HD"],
         "atv.tr": ["ATV FHD", "ATV HD"],
@@ -30,6 +37,7 @@ def parse_epg():
         "fox.tr": ["NOW TV FHD", "NOW TV HD"]
     }
 
+    count = 0
     for programme in root.findall('programme'):
         ch_id = programme.get('channel').lower()
         if ch_id in mapping:
@@ -41,11 +49,12 @@ def parse_epg():
                 if title_elem is not None:
                     for panel_name in mapping[ch_id]:
                         epg_data[panel_name] = {"title": title_elem.text}
+                        count += 1
 
-    # epg.json dosyasını yazdırıyoruz
     with open('epg.json', 'w', encoding='utf-8') as f:
         json.dump(epg_data, f, ensure_ascii=False)
-    print("epg.json başarıyla güncellendi!")
+    
+    print(f"BİTTİ! {count} adet yayın akışı epg.json dosyasına yazıldı.")
 
 if __name__ == "__main__":
     parse_epg()
