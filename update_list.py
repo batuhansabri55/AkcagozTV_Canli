@@ -9,7 +9,12 @@ REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
 # Bu kelimeleri içeren linkler ASLA silinmez ve TEST EDİLMEDEN eklenir
-DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org"]
+DOKUNULMAZLAR = [
+    "premiumstream.in", 
+    "workers.dev", 
+    "mywire.org", 
+    "token=DeaTHLesS" # Bu özel token'ı da ekledik
+]
 
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
