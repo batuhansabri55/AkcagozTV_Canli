@@ -3,7 +3,6 @@ import requests
 import json
 from datetime import datetime
 import gzip
-import os
 
 EPG_URL = "https://raw.githubusercontent.com/fokus-itv/epg/main/guide.xml.gz"
 
@@ -20,7 +19,7 @@ def parse_epg():
     epg_data = {}
     now = datetime.now().strftime("%Y%m%d%H%M")
 
-    # PANEL İSİMLERİ (Buradakiler senin paneldeki adlarla AYNI olmalı)
+    # PANEL İSİMLERİ (Senin paneldekilerle birebir aynı olmalı)
     channels_to_track = {
         "TRT1.tr": "TRT 1 FHD",
         "ATV.tr": "ATV",
@@ -44,7 +43,7 @@ def parse_epg():
 
     with open('epg.json', 'w', encoding='utf-8') as f:
         json.dump(epg_data, f, ensure_ascii=False)
-    print("epg.json kaydedildi!")
+    print("epg.json hazır!")
 
 if __name__ == "__main__":
     parse_epg()
