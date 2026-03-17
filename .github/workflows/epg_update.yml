@@ -1,0 +1,26 @@
+name: EPG Otomatik Guncelle
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Her 6 saatte bir calis
+  workflow_dispatch: # Manuel calistirma butonu
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Python Kur
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Kutuphaneleri Yukle
+        run: pip install requests
+      - name: EPG Ayikla
+        run: python epg_parser.py
+      - name: Kaydet ve Yukle
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add epg.json
+          git commit -m "EPG Guncellendi" || exit 0
+          git push
