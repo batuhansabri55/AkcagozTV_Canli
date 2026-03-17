@@ -3,19 +3,14 @@ import requests
 import json
 from datetime import datetime
 import gzip
+import os
 
-# Dünyanın en stabil GitHub EPG kaynağı
 EPG_URL = "https://raw.githubusercontent.com/fokus-itv/epg/main/guide.xml.gz"
 
 def parse_epg():
     print("EPG indiriliyor...")
     r = requests.get(EPG_URL)
     
-    if r.status_code != 200:
-        print("İndirme başarısız!")
-        return
-
-    # Gzip dosyasını aç
     try:
         content = gzip.decompress(r.content)
         root = ET.fromstring(content)
@@ -26,7 +21,7 @@ def parse_epg():
     epg_data = {}
     now = datetime.now().strftime("%Y%m%d%H%M")
 
-    # PANEL İSİMLERİYLE EŞLEŞTİRME (Burayı paneldeki adlarla aynı yap usta)
+    # PANEL İSİMLERİ (Buradakiler senin paneldeki adlarla AYNI olmalı)
     channels_to_track = {
         "TRT1.tr": "TRT 1 FHD",
         "ATV.tr": "ATV",
@@ -34,8 +29,7 @@ def parse_epg():
         "STAR.tr": "STAR TV",
         "SHOW.tr": "SHOW TV",
         "TV8.tr": "TV8",
-        "FOX.tr": "NOW TV",
-        "HABERTURK.tr": "HABERTÜRK"
+        "FOX.tr": "NOW TV"
     }
 
     for programme in root.findall('programme'):
@@ -49,11 +43,12 @@ def parse_epg():
                 if title_elem is not None:
                     ch_name = channels_to_track[channel_id]
                     epg_data[ch_name] = {"title": title_elem.text}
-                    print(f"Eklendi: {ch_name}")
 
-    with open('epg.json', 'w', encoding='utf-8') as f:
+    # Dosyayı ana dizine zorla kaydettiriyoruz
+    file_path = os.path.join(os.getcwd(), 'epg.json')
+    with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(epg_data, f, ensure_ascii=False)
-    print("epg.json hazır!")
+    print(f"epg.json kaydedildi: {file_path}")
 
 if __name__ == "__main__":
     parse_epg()
