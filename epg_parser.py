@@ -2,40 +2,40 @@ import xml.etree.ElementTree as ET
 import requests
 import json
 from datetime import datetime
+import gzip
 
-# Daha stabil ve açık bir XML kaynağı
-EPG_URL = "https://itv.unidgn.com/epg/guide.xml"
+# Dünyanın en stabil GitHub EPG kaynağı
+EPG_URL = "https://raw.githubusercontent.com/fokus-itv/epg/main/guide.xml.gz"
 
 def parse_epg():
     print("EPG indiriliyor...")
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    r = requests.get(EPG_URL, headers=headers)
+    r = requests.get(EPG_URL)
     
     if r.status_code != 200:
-        print(f"Hata: Sunucu cevap vermedi. Kod: {r.status_code}")
+        print("İndirme başarısız!")
         return
 
-    # XML verisini işle
+    # Gzip dosyasını aç
     try:
-        root = ET.fromstring(r.content)
+        content = gzip.decompress(r.content)
+        root = ET.fromstring(content)
     except Exception as e:
-        print(f"XML Okuma Hatası: {e}")
+        print(f"Hata: {e}")
         return
 
     epg_data = {}
-    # Şu anki zamanı EPG formatında al (YılAyGünSaatDakika)
     now = datetime.now().strftime("%Y%m%d%H%M")
 
-    # PANELDEKİ KANAL İSİMLERİNLE EŞLEŞTİRME
-    # Sol taraf XML'deki ID, sağ taraf senin paneldeki adın
+    # PANEL İSİMLERİYLE EŞLEŞTİRME (Burayı paneldeki adlarla aynı yap usta)
     channels_to_track = {
-        "TRT 1": "TRT 1 FHD",
-        "ATV": "ATV",
-        "Kanal D": "KANAL D",
-        "Star TV": "STAR TV",
-        "Show TV": "SHOW TV",
-        "TV8": "TV8",
-        "FOX": "NOW TV"
+        "TRT1.tr": "TRT 1 FHD",
+        "ATV.tr": "ATV",
+        "KANALD.tr": "KANAL D",
+        "STAR.tr": "STAR TV",
+        "SHOW.tr": "SHOW TV",
+        "TV8.tr": "TV8",
+        "FOX.tr": "NOW TV",
+        "HABERTURK.tr": "HABERTÜRK"
     }
 
     for programme in root.findall('programme'):
@@ -44,18 +44,16 @@ def parse_epg():
             start = programme.get('start')[:12]
             stop = programme.get('stop')[:12]
             
-            # Eğer şu an bu program yayınlanıyorsa al
             if start <= now <= stop:
                 title_elem = programme.find('title')
                 if title_elem is not None:
-                    title = title_elem.text
                     ch_name = channels_to_track[channel_id]
-                    epg_data[ch_name] = {"title": title}
-                    print(f"Bulundu: {ch_name} -> {title}")
+                    epg_data[ch_name] = {"title": title_elem.text}
+                    print(f"Eklendi: {ch_name}")
 
     with open('epg.json', 'w', encoding='utf-8') as f:
         json.dump(epg_data, f, ensure_ascii=False)
-    print("epg.json başarıyla güncellendi!")
+    print("epg.json hazır!")
 
 if __name__ == "__main__":
     parse_epg()
