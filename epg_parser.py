@@ -3,6 +3,7 @@ import requests
 import json
 from datetime import datetime
 import gzip
+import os
 
 EPG_URL = "https://raw.githubusercontent.com/fokus-itv/epg/main/guide.xml.gz"
 
@@ -19,7 +20,7 @@ def parse_epg():
     epg_data = {}
     now = datetime.now().strftime("%Y%m%d%H%M")
 
-    # PANEL İSİMLERİ (Senin paneldekilerle birebir aynı olmalı)
+    # PANEL İSİMLERİ (Senin paneldeki adlarla birebir aynı olmalı)
     channels_to_track = {
         "TRT1.tr": "TRT 1 FHD",
         "ATV.tr": "ATV",
@@ -30,6 +31,7 @@ def parse_epg():
         "FOX.tr": "NOW TV"
     }
 
+    found_any = False
     for programme in root.findall('programme'):
         channel_id = programme.get('channel')
         if channel_id in channels_to_track:
@@ -40,10 +42,19 @@ def parse_epg():
                 if title_elem is not None:
                     ch_name = channels_to_track[channel_id]
                     epg_data[ch_name] = {"title": title_elem.text}
+                    found_any = True
 
+    if not found_any:
+        print("Uyarı: Eşleşen kanal veya program bulunamadı!")
+
+    # Dosyayı ana dizine zorla yazdır
     with open('epg.json', 'w', encoding='utf-8') as f:
         json.dump(epg_data, f, ensure_ascii=False)
-    print("epg.json hazır!")
+    
+    if os.path.exists('epg.json'):
+        print("epg.json başarıyla oluşturuldu!")
+    else:
+        print("Hata: Dosya oluşturulamadı!")
 
 if __name__ == "__main__":
     parse_epg()
