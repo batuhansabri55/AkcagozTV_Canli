@@ -1,26 +1,28 @@
 import xml.etree.ElementTree as ET
 import requests
 import json
-import gzip
 from datetime import datetime
+import io
+import gzip
 
-# Yayın akışı kaynağı
-EPG_URL = "https://raw.githubusercontent.com/fokus-itv/epg/main/guide.xml.gz"
+# Sağlam bir XMLTV kaynağı
+EPG_URL = "https://raw.githubusercontent.com/fokus-itv/epg/main/guide.xml"
 
 def parse_epg():
+    print("EPG indiriliyor...")
     r = requests.get(EPG_URL)
-    with open("guide.xml.gz", "wb") as f:
-        f.write(r.content)
     
-    with gzip.open("guide.xml.gz", 'rb') as f:
-        tree = ET.parse(f)
-        root = tree.getroot()
-
+    # Dosya içeriğini belirle (Gzip mi yoksa düz metin mi?)
+    content = r.content
+    if content.startswith(b'\x1f\x8b'):
+        print("Sıkıştırılmış dosya açılıyor...")
+        content = gzip.decompress(content)
+    
+    root = ET.fromstring(content)
     epg_data = {}
     now = datetime.now().strftime("%Y%m%d%H%M%S")
 
-    # Burası önemli: Sol taraf EPG'deki ID, Sağ taraf senin paneldeki kanal adın.
-    # Eğer isimler tutmazsa EPG görünmez.
+    # Senin paneldeki kanal isimlerinle tam eşleşmeli usta!
     channels_to_track = {
         "TRT1.tr": "TRT 1 FHD",
         "ATV.tr": "ATV",
@@ -37,12 +39,15 @@ def parse_epg():
             stop = programme.get('stop')[:14]
             
             if start <= now <= stop:
-                title = programme.find('title').text
-                ch_name = channels_to_track[channel_id]
-                epg_data[ch_name] = {"title": title}
+                title_elem = programme.find('title')
+                if title_elem is not None:
+                    title = title_elem.text
+                    ch_name = channels_to_track[channel_id]
+                    epg_data[ch_name] = {"title": title}
 
     with open('epg.json', 'w', encoding='utf-8') as f:
         json.dump(epg_data, f, ensure_ascii=False)
+    print("epg.json başarıyla oluşturuldu!")
 
 if __name__ == "__main__":
     parse_epg()
