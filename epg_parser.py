@@ -4,6 +4,9 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+permissions: # Yazma yetkisi eklendi
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,7 +24,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          # Dosya olustu mu kontrol et ve zorla ekle
-          git add epg.json || echo "Dosya yok!"
+          git add epg.json
           git commit -m "EPG Guncellendi" || exit 0
           git push
