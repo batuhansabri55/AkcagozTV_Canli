@@ -2,7 +2,7 @@ name: IPTV Otomatik Besleme
 on:
   schedule:
     - cron: '0 */3 * * *' # Her 3 saatte bir otomatik calisir
-  workflow_dispatch: # İstersen GitHub üzerinden elinle de baslatabilirsin
+  workflow_dispatch: # Manuel baslatma imkani saglar
 
 jobs:
   build:
@@ -20,6 +20,9 @@ jobs:
         run: pip install requests
 
       - name: Scripti Calistir (Besleme)
+        env:
+          # Settings -> Secrets kısmındaki anahtarı Python'un göreceği yere bağlar
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} 
         run: python update_list.py
 
       - name: Degisiklikleri Kaydet ve Yukle
