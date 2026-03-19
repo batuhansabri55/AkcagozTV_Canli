@@ -1,10 +1,12 @@
 import requests
 import re
 import base64
+import os  # Sisteme şifreyi çekmesi için bu kütüphaneyi ekledik
 from concurrent.futures import ThreadPoolExecutor
 
 # --- AYARLAR ---
-GITHUB_TOKEN = "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" 
+# Şifreyi doğrudan yazmak yerine güvenli yerden (Settings) almasını sağladık
+GITHUB_TOKEN = os.environ.get('GH_TOKEN') 
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
@@ -27,10 +29,17 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def github_yukle(icerik):
+    if not GITHUB_TOKEN:
+        print("❌ HATA: GH_TOKEN bulunamadı! Settings kısmını kontrol et.")
+        return
+
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
-    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}", 
+        "Accept": "application/vnd.github.v3+json"
+    }
     
-    # SHA al
+    # SHA al (Mevcut dosyanın kimliğini doğrula)
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
 
@@ -41,23 +50,30 @@ def github_yukle(icerik):
     if sha: data["sha"] = sha
 
     r = requests.put(url, json=data, headers=headers)
-    if r.status_code in [200, 201]: print("✅ GITHUB TAMAM!")
-    else: print(f"❌ HATA: {r.text}")
+    if r.status_code in [200, 201]: 
+        print("✅ GITHUB TAMAM! Liste başarıyla güncellendi.")
+    else: 
+        print(f"❌ HATA: {r.text}")
 
 def link_test_et(item):
     info, url = item
     url_clean = url.lower().strip()
-    if any(ozel in url_clean for ozel in DOKUNULMAZLAR): return (info, url)
+    if any(ozel in url_clean for ozel in DOKUNULMAZLAR): 
+        return (info, url)
     try:
+        # Hızlı kontrol için sadece başlık (head) verisini çekiyoruz
         with requests.get(url, timeout=5, stream=True) as r:
-            if r.status_code == 200: return (info, url)
-    except: pass
+            if r.status_code == 200: 
+                return (info, url)
+    except: 
+        pass
     return None
 
 def update_m3u():
     adaylar = []
     eklenen_linkler = set()
     
+    print("🔄 Kaynaklardan kanallar toplanıyor...")
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
@@ -68,11 +84,16 @@ def update_m3u():
                     if u not in eklenen_linkler:
                         adaylar.append((info, u))
                         eklenen_linkler.add(u)
-        except: continue
+        except: 
+            continue
 
+    print(f"📡 Toplam {len(adaylar)} kanal bulundu. Test ediliyor...")
+    
+    # Kanalları 30 koldan hızlıca test et
     with ThreadPoolExecutor(max_workers=30) as executor:
         sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
 
+    print(f"✅ {len(sonuclar)} aktif kanal kaldı. GitHub'a yükleniyor...")
     output = "#EXTM3U\n" + "\n".join([f"{i}\n{u}" for i, u in sonuclar])
     github_yukle(output)
 
