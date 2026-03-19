@@ -2,8 +2,8 @@ name: IPTV Otomatik Besleme
 
 on:
   schedule:
-    - cron: '0 */3 * * *' # Her 3 saatte bir otomatik çalışır
-  workflow_dispatch: # Manuel başlatma butonu
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -24,7 +24,6 @@ jobs:
 
       - name: Scripti Calistir (Besleme)
         env:
-          # GitHub Secrets'taki anahtarları Python'a bağlayan kritik bölüm
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
@@ -37,4 +36,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add tr.m3u
           git commit -m "Liste ve D1 otomatik guncellendi" || exit 0
-          git push
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
