@@ -1,8 +1,8 @@
 name: IPTV Otomatik Besleme
 on:
   schedule:
-    - cron: '0 */3 * * *' # Her 3 saatte bir otomatik calisir
-  workflow_dispatch: # Manuel baslatma imkani saglar
+    - cron: '0 */3 * * *' # Her 3 saatte bir çalışır
+  workflow_dispatch: # Elinle başlatma butonu ekler
 
 jobs:
   build:
@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Kodlari Cek
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }} # Git işlemleri için yetki
 
       - name: Python Hazirla
         uses: actions/setup-python@v4
@@ -21,7 +23,7 @@ jobs:
 
       - name: Scripti Calistir (Besleme)
         env:
-          # Settings -> Secrets kısmındaki anahtarı Python'un göreceği yere bağlar
+          # Secrets kısmındaki GH_TOKEN'ı Python'un göreceği yere bağlar
           GH_TOKEN: ${{ secrets.GH_TOKEN }} 
         run: python update_list.py
 
