@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Kodlari Cek
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Python Hazirla
         uses: actions/setup-python@v4
@@ -34,4 +36,4 @@ jobs:
           git config --global user.email "action@github.com"
           git add tr.m3u
           git commit -m "Otomatik guncelleme yapildi" || exit 0
-          git push
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
