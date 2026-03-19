@@ -1,16 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="TV2.tr" tvg-name="TV2" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/B/WE/245991/logo.png?v=639029456898926668" group-title="Ulusal",TV2
-http://104.238.23.221/dsgo.php?id=245991
-#EXTINF:-1 tvg-id="NOW.tr" tvg-name="NOW" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/U/w2/245997/logo.png?v=638671713963955947" group-title="Ulusal",NOW
-http://104.238.23.221/dsgo.php?id=245997
-#EXTINF:-1 tvg-id="CNN TÜRK.tr" tvg-name="CNN Türk" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/U/Cg/245940/logo.png?v=638671713494111482" group-title="Haber",CNN Türk
-http://104.238.23.221/dsgo.php?id=245940
+#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="STAR" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/Y/Sk/245994/logo.png?v=638671713931288249" group-title="Ulusal",STAR
+http://104.238.23.221/dsgo.php?id=245994
+#EXTINF:-1 tvg-id="NTV.tr" tvg-name="NTV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/A/Bt/246120/logo.png?v=638671715037303020" group-title="Haber",NTV
+http://104.238.23.221/dsgo.php?id=246120
+#EXTINF:-1 tvg-id="Haber Turk.tr" tvg-name="Haber Türk" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/7/RQ/246027/logo.png?v=638671714214114905" group-title="Haber",Haber Türk
+http://104.238.23.221/dsgo.php?id=246027
+#EXTINF:-1 tvg-id="Szc Tv.tr" tvg-name="SZC TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/L/kO/246240/logo.png?v=638671716034197297" group-title="Haber",SZC TV (Sözcü)
+http://104.238.23.221/dsgo.php?id=246240
 #EXTINF:-1 tvg-id="Halk TV.tr" tvg-name="Halk TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/F/zn/246096/logo.png?v=638671714813453912" group-title="Haber",Halk TV
 http://104.238.23.221/dsgo.php?id=246096
-#EXTINF:-1 tvg-id="a Spor.tr" tvg-name="A Spor" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/T/Rx/246135/logo.png?v=638671715192769225" group-title="Spor",A Spor
-http://104.238.23.221/dsgo.php?id=246135
-#EXTINF:-1 tvg-id="TRT Spor.tr" tvg-name="TRT Spor" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/K/_x/245946/logo.png?v=638671713539809839" group-title="Spor",TRT Spor
-http://104.238.23.221/dsgo.php?id=245946
+#EXTINF:-1 tvg-id="TRT Spor Yıldız.tr" tvg-name="TRT Spor Yıldız" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/G/YE/246177/logo.png?v=638671715529106823" group-title="Spor",TRT Spor Yıldız
+http://104.238.23.221/dsgo.php?id=246177
 #EXTINF:-1 tvg-id="4UTV.tr@SD",4U TV (720p)
 https://hls.4utv.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="360.tr@SD",360 TV (720p) [Not 24/7]
@@ -311,14 +311,10 @@ https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web
 #EXTINF:-1 tvg-id="" tvg-name="TR:Star  HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4a7901e4-dbc5-491d-b014-6da6fa236e99.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Star  HD
 http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
-#EXTINF:-1 tvg-id="" tvg-name="TR:Now HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/25c7c620-dfe4-4c78-9d9b-185d8a91885f.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Now HD
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tv 8 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/ab41b407-70c4-4634-8ed4-bf9be8cf81e2.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Tv 8 HD
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
 #EXTINF:-1 tvg-id="" tvg-name="TR:TV 8 Buçuk HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/812f4ba5-846e-4ae9-90fc-8f9f481156b5.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:TV 8 Buçuk HD
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web
-#EXTINF:-1 tvg-id="" tvg-name="TR:a2 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/fee44d61-2476-40ae-89eb-f51a7428789d.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:a2 HD
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Teve 2 HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/8373a6d8-d5c5-4990-8fe6-14bcde706ecd.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Teve 2 HD
 https://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tlc HD" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/0de9fa25-120c-4b52-b460-e078531f6988.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Tlc HD
@@ -1521,8 +1517,6 @@ https://streams.uzunmuhalefet.com/stream/d1208b47-c4c7-48d2-8c1a-d36cdadf5467.m3
 https://streams.uzunmuhalefet.com/stream/e47153e0-42fe-4980-8570-e840d1cc1cf4.m3u8
 #EXTINF:-1 group-title="Spor" tvg-logo="https://assets.uzunmuhalefet.com/logos/467af750-433b-4a59-86da-cf3d16014667.png" tvg-url="https://www.tjk.org/" tvg-id="TJKTV.tr",TJK TV
 https://streams.uzunmuhalefet.com/stream/87525bc2-91d5-46e9-8aa0-45bc8ed34823.m3u8
-#EXTINF:-1 group-title="Spor" tvg-logo="https://assets.uzunmuhalefet.com/logos/3446fb88-4fb6-4e6f-aa5d-9eed92efbb97.png" tvg-url="https://taytv.com/" tvg-id="TAYTV.tr",Tay TV
-https://streams.uzunmuhalefet.com/stream/fbee70a1-4177-4906-86cc-525432cef179.m3u8
 #EXTINF:-1 group-title="Spor" tvg-logo="https://assets.uzunmuhalefet.com/logos/209495ee-35fc-47b8-b442-f9a410110970.png" tvg-url="http://www.itp.tv.tr/" tvg-id="",Briç ve Satranç TV
 https://streams.uzunmuhalefet.com/stream/dd128396-37c6-4ec8-88d0-995c9f1a2e67.m3u8
 #EXTINF:-1 group-title="Spor" tvg-logo="https://assets.uzunmuhalefet.com/logos/7e78574b-3f13-443d-859a-9948e7bc4381.png" tvg-url="https://www.turkuvapp.com/" tvg-id="ZTKTV.tr",ZTK TV
