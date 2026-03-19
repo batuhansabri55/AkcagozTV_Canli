@@ -5,7 +5,7 @@ import os
 import json
 from concurrent.futures import ThreadPoolExecutor
 
-# --- AYARLAR ---
+# --- AYARLAR (GitHub Secrets'a bunları girdiğinden emin ol) ---
 GITHUB_TOKEN = os.environ.get('GH_TOKEN') 
 CF_ACCOUNT_ID = os.environ.get('CF_ACCOUNT_ID')
 CF_API_TOKEN = os.environ.get('CF_API_TOKEN')
@@ -14,8 +14,10 @@ CF_D1_ID = os.environ.get('CF_D1_ID')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
+# Senin özel linklerin
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
+# Kaynaklar
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -27,8 +29,9 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def d1_veritabanina_yaz(kanal_adi, url):
-    """Bulunan yedekleri Cloudflare D1'e otomatik INSERT eder."""
+    """Bulunan yedekleri Cloudflare D1'e basar."""
     if not all([CF_ACCOUNT_ID, CF_API_TOKEN, CF_D1_ID]):
+        print("⚠️ Cloudflare bilgileri eksik!")
         return
     
     endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
@@ -37,18 +40,19 @@ def d1_veritabanina_yaz(kanal_adi, url):
         "Content-Type": "application/json"
     }
     
-    # SQL: Eğer bu URL zaten varsa ekleme, yoksa ONLINE olarak ekle
+    # SENİN TABLO SÜTUNLARINA GÖRE GÜNCELLEDİM
     sql = "INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)"
     
-    payload = {
-        "params": [kanal_adi, url],
-        "sql": sql
-    }
+    payload = {"params": [kanal_adi, url], "sql": sql}
     
     try:
-        requests.post(endpoint, json=payload, headers=headers, timeout=10)
+        response = requests.post(endpoint, json=payload, headers=headers, timeout=10)
+        if response.status_code == 200:
+            print(f"✅ D1 Başarılı: {kanal_adi}")
+        else:
+            print(f"❌ D1 Hatası ({response.status_code}): {response.text}")
     except Exception as e:
-        print(f"❌ D1 Hatası: {e}")
+        print(f"❌ Bağlantı Hatası: {e}")
 
 def github_yukle(icerik):
     if not GITHUB_TOKEN: return
@@ -56,7 +60,7 @@ def github_yukle(icerik):
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
-    data = {"message": "D1 Senkronize Edildi + Yedekler Eklendi", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
+    data = {"message": "D1 Senkronize Edildi", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
     if sha: data["sha"] = sha
     requests.put(url, json=data, headers=headers)
 
@@ -73,7 +77,7 @@ def update_m3u():
     mevcut_kanallar = []
     eklenen_linkler = set()
     
-    # 1. ADIM: GITHUB'DAN MEVCUTLARI ÇEK
+    # 1. GITHUB'DAN MEVCUTLARI OKU
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     r = requests.get(f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}", headers=headers)
     
@@ -85,29 +89,32 @@ def update_m3u():
             mevcut_kanallar.append((info, u))
             eklenen_linkler.add(u)
 
-    # 2. ADIM: KAYNAKLARDAN YENİLERİ BUL VE D1'E GÖNDER
+    # 2. YENİ YEDEKLERİ BUL VE HEMEN D1'E GÖNDER
     adaylar = []
     for s_url in YEDEK_KAYNAKLAR:
         try:
             res = requests.get(s_url, timeout=10)
             if res.status_code == 200:
-                matches = re.findall(r"(#EXTINF:[^\n]*,([^\n]*))\n(http[^\n]*)", res.text.replace('\r', ''))
-                for full_info, kanal_adi, url in matches:
+                # Kanal adını daha sağlam çekmek için regex güncellendi
+                matches = re.findall(r"#EXTINF:.*?,(.*?)\n(http.*)", res.text)
+                for kanal_adi, url in matches:
                     u = url.strip()
+                    k_adi = kanal_adi.strip()
+                    # Sadece TRT 1, Kanal D gibi senin istediğin ana kanalları filtrele (Opsiyonel)
                     if u not in eklenen_linkler:
-                        # D1'e gönder
-                        d1_veritabanina_yaz(kanal_adi.strip(), u)
-                        adaylar.append((full_info, u))
+                        d1_veritabanina_yaz(k_adi, u) # ANINDA D1'E BASAR
+                        adaylar.append((f"#EXTINF:-1,{k_adi}", u))
+                        eklenen_linkler.add(u)
         except: continue
 
-    # 3. ADIM: TEST VE GITHUB GÜNCELLEME
+    # 3. TEST VE BİTİRİŞ
     with ThreadPoolExecutor(max_workers=30) as executor:
         yeni_sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
 
     hepsi = mevcut_kanallar + yeni_sonuclar
     output = "#EXTM3U\n" + "\n".join([f"{i}\n{u}" for i, u in hepsi])
     github_yukle(output)
-    print(f"✅ Bitti! {len(yeni_sonuclar)} yeni yedek D1'e ve GitHub'a eklendi.")
+    print("🚀 İşlem başarıyla tamamlandı!")
 
 if __name__ == "__main__":
     update_m3u()
