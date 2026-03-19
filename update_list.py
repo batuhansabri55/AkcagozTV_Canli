@@ -5,16 +5,15 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 
 # --- AYARLAR ---
-# GitHub Settings -> Secrets -> Actions kısmındaki GH_TOKEN'ı çeker
-# ÖNEMLİ: workflow dosyasında (main.yml) bu değişkenin env olarak tanımlanması gerekir.
+# GitHub Settings -> Secrets -> Actions kısmındaki GH_TOKEN'ı güvenli şekilde çeker
 GITHUB_TOKEN = os.environ.get('GH_TOKEN') 
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# Bu linkler test edilmeden direkt listeye eklenir.
+# Bu linkler test edilmeden direkt listeye eklenir
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS"]
 
-# Kaynak listesi.
+# Kaynak listesi
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -26,9 +25,9 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def github_yukle(icerik):
-    """Bulunan kanalları GitHub deposuna yükler."""
+    """Bulunan kanalları GitHub API üzerinden güvenli bir şekilde yükler."""
     if not GITHUB_TOKEN:
-        print("❌ HATA: GH_TOKEN bulunamadı! Settings -> Secrets kısmını kontrol et.")
+        print("❌ HATA: GH_TOKEN bulunamadı! Settings -> Secrets kısmına bak.")
         return
 
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
@@ -37,7 +36,7 @@ def github_yukle(icerik):
         "Accept": "application/vnd.github.v3+json"
     }
     
-    # Mevcut dosyanın SHA bilgisini al (Güncelleme yapabilmek için şart)
+    # Mevcut dosyanın SHA bilgisini al (Güncelleme için zorunludur)
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
 
@@ -55,12 +54,12 @@ def github_yukle(icerik):
         print(f"❌ YUKLEME HATASI: {r.status_code} - {r.text}")
 
 def link_test_et(item):
-    """Linklerin aktif olup olmadığını hızlıca kontrol eder."""
+    """Linklerin aktifliğini hızlıca kontrol eder."""
     info, url = item
     if any(ozel in url.lower() for ozel in DOKUNULMAZLAR): 
         return (info, url)
     try:
-        # Hızlı test için 5 saniye zaman aşımı
+        # 5 saniye zaman aşımı ile hızlı test
         with requests.get(url, timeout=5, stream=True) as r:
             if r.status_code == 200: 
                 return (info, url)
@@ -69,7 +68,7 @@ def link_test_et(item):
     return None
 
 def update_m3u():
-    """Ana işleyiş: Kaynakları tara, test et ve yükle."""
+    """Tüm kaynakları tarar, test eder ve GitHub'a yükler."""
     adaylar = []
     eklenen_linkler = set()
     
@@ -78,7 +77,7 @@ def update_m3u():
         try:
             r = requests.get(s_url, timeout=10)
             if r.status_code == 200:
-                # M3U formatındaki info ve url kısımlarını ayıkla
+                # M3U formatındaki satırları ayıkla
                 matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", r.text.replace('\r', ''))
                 for info, url in matches:
                     u = url.strip()
@@ -88,9 +87,9 @@ def update_m3u():
         except: 
             continue
 
-    print(f"📡 Toplam {len(adaylar)} kanal bulundu. Test ediliyor...")
+    print(f"📡 Toplam {len(adaylar)} kanal bulundu. Testler başlıyor...")
     
-    # 30 koldan hızlıca test et (Multi-threading)
+    # 30 koldan paralel test (ThreadPoolExecutor)
     with ThreadPoolExecutor(max_workers=30) as executor:
         sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
 
