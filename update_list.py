@@ -23,37 +23,16 @@ YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u"
 ]
 
-def isim_temizle(isim):
-    """Kanal isimlerini Worker'ın anlayacağı hale getirir."""
+def isim_normalize(isim):
+    """Eşleşme için ismi en saf haline getirir."""
     if not isim: return ""
     isim = isim.lower()
-    # Türkçe karakterleri çevir
     tr_map = str.maketrans("çığöşü", "cigosu")
     isim = isim.translate(tr_map)
-    # Gereksiz ekleri temizle (Worker eşleşmesi için kritik)
-    isim = re.sub(r'\b(fhd|hd|sd|4k|hevc|turkiye|tr|canli)\b', '', isim)
-    # Sadece harf ve rakam bırak
+    # Gereksiz tüm takıları ve karakterleri temizle
+    isim = re.sub(r'\|tr\||hd|fhd|sd|4k|canli|tr:', '', isim)
     isim = re.sub(r'[^a-z0-9]', '', isim)
     return isim.strip()
-
-def github_dosya_oku():
-    url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
-    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
-    r = requests.get(url, headers=headers)
-    if r.status_code == 200:
-        content = base64.b64decode(r.json()['content']).decode('utf-8')
-        return content, r.json()['sha']
-    return "", None
-
-def github_dosya_yaz(icerik, sha):
-    url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
-    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
-    data = {
-        "message": "🔄 İsim Standardizasyonu & Yedekler Güncellendi",
-        "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8"),
-        "sha": sha
-    }
-    requests.put(url, json=data, headers=headers)
 
 def update_m3u():
     mevcut_icerik, sha = github_dosya_oku()
@@ -61,35 +40,37 @@ def update_m3u():
 
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
-    # Daha esnek regex: #EXTINF ve URL arasındaki her şeyi yakalar
+    ana_kanallar = {} # Eşleşme için ana kanal isimlerini tutacağız
+
     pattern = r"(#EXTINF:[^\n]*),([^\n]*)\n(https?://[^\n]*)"
 
-    # 1. Dokunulmazları Koru
+    # 1. ÖNCE ANA KANALLARI (DOKUNULMAZLARI) BELİRLE
     matches = re.findall(pattern, mevcut_icerik)
     for ext_info, ch_name, url in matches:
         link = url.strip()
         if any(d in link.lower() for d in DOKUNULMAZLAR):
             yeni_liste.append(f"{ext_info},{ch_name}\n{link}")
             eklenen_linkler.add(link)
+            # Bu kanalın temizlenmiş ismini "aranacaklar" listesine ekle
+            ana_kanallar[isim_normalize(ch_name)] = ch_name.strip()
 
-    # 2. Yedekleri Temizleyerek Ekle
+    # 2. SADECE ANA KANALLARLA EŞLEŞEN YEDEKLERİ AL
     for s_url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(s_url, timeout=15)
-            r.encoding = 'utf-8' # Karakter bozulmasını önle
-            matches = re.findall(pattern, r.text)
-            for ext_info, ch_name, url in matches:
-                link = url.strip()
-                if link not in eklenen_linkler:
-                    # İsimdeki karmaşayı temizle ki Worker tanısın
-                    temiz_isim = ch_name.strip().upper() 
-                    yeni_liste.append(f"{ext_info},{temiz_isim}\n{link}")
-                    eklenen_linkler.add(link)
+            r = requests.get(s_url, timeout=10)
+            r.encoding = 'utf-8'
+            y_matches = re.findall(pattern, r.text)
+            for y_ext, y_name, y_url in y_matches:
+                y_link = y_url.strip()
+                y_temiz = isim_normalize(y_name)
+                
+                # EĞER bu yedek kanal bizim ana kanal listemizde Varsa ekle
+                if y_temiz in ana_kanallar and y_link not in eklenen_linkler:
+                    original_name = ana_kanallar[y_temiz]
+                    yeni_liste.append(f"{y_ext},{original_name} (YEDEK)\n{y_link}")
+                    eklenen_linkler.add(y_link)
         except: continue
 
     final_m3u = "\n".join(yeni_liste)
     github_dosya_yaz(final_m3u, sha)
-    print(f"🚀 {len(eklenen_linkler)} benzersiz yedek işlendi.")
-
-if __name__ == "__main__":
-    update_m3u()
+    print(f"✅ Filtreleme Tamamlandı: {len(eklenen_linkler)} kanal/yedek dosyaya yazıldı.")
