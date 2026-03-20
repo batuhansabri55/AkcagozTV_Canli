@@ -1,23 +1,26 @@
-name: D1 Otomatik Guncelleme
+name: IPTV Guncelleme
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Gece 03:00 TSİ
-  workflow_dispatch:
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
+  workflow_dispatch: # El ile başlatma butonu
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Python Kur
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - run: pip install requests
-      - name: D1'i Guncelle
+          
+      - name: Gerekli Paketleri Kur
+        run: pip install requests
+        
+      - name: Botu Calistir
         env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-          CF_D1_ID: ${{ secrets.CF_D1_ID }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }} # <--- EKSİK OLAN VE SİSTEMİ ÇALIŞTIRACAK SATIR BU!
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: python update_list.py
