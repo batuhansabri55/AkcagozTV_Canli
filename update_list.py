@@ -8,11 +8,9 @@ GITHUB_TOKEN = os.environ.get('GH_TOKEN')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# --- DOKUNULMAZLAR (Bu kelimeleri içeren linkler asla silinmez) ---
-# Buraya TRT ve Kanal D linklerinde geçen "turknet" ve "trt" kelimelerini de ekledim.
 DOKUNULMAZLAR = [
-    "premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site",
-    "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"
+    "premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", 
+    "goldvod.site", "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -24,6 +22,19 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://streams.uzunmuhalefet.com/lists/tr.m3u"
 ]
+
+def isim_temizle(isim):
+    """Kanal isimlerini Worker'ın anlayacağı hale getirir."""
+    if not isim: return ""
+    isim = isim.lower()
+    # Türkçe karakterleri çevir
+    tr_map = str.maketrans("çığöşü", "cigosu")
+    isim = isim.translate(tr_map)
+    # Gereksiz ekleri temizle (Worker eşleşmesi için kritik)
+    isim = re.sub(r'\b(fhd|hd|sd|4k|hevc|turkiye|tr|canli)\b', '', isim)
+    # Sadece harf ve rakam bırak
+    isim = re.sub(r'[^a-z0-9]', '', isim)
+    return isim.strip()
 
 def github_dosya_oku():
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
@@ -38,7 +49,7 @@ def github_dosya_yaz(icerik, sha):
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     data = {
-        "message": "🔄 Dokunulmazlar Sabitlendi & Yedekler Güncellendi",
+        "message": "🔄 İsim Standardizasyonu & Yedekler Güncellendi",
         "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8"),
         "sha": sha
     }
@@ -46,41 +57,39 @@ def github_dosya_yaz(icerik, sha):
 
 def update_m3u():
     mevcut_icerik, sha = github_dosya_oku()
-    if not sha:
-        print("❌ Dosya okunamadı!")
-        return
+    if not sha: return
 
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
+    # Daha esnek regex: #EXTINF ve URL arasındaki her şeyi yakalar
+    pattern = r"(#EXTINF:[^\n]*),([^\n]*)\n(https?://[^\n]*)"
 
-    # --- ÖNEMLİ DÜZELTME: Hem http hem https linkleri yakalar ---
-    # Regex pattern: (http ve https destekli)
-    pattern = r"(#EXTINF:[^\n]*)\n(https?://[^\n]*)"
-
-    # 1. Önce Dokunulmazları Koru
-    blocks = re.findall(pattern, mevcut_icerik)
-    for info, url in blocks:
+    # 1. Dokunulmazları Koru
+    matches = re.findall(pattern, mevcut_icerik)
+    for ext_info, ch_name, url in matches:
         link = url.strip()
         if any(d in link.lower() for d in DOKUNULMAZLAR):
-            yeni_liste.append(f"{info}\n{link}")
+            yeni_liste.append(f"{ext_info},{ch_name}\n{link}")
             eklenen_linkler.add(link)
 
-    # 2. Sonra Yedekleri Ekle
+    # 2. Yedekleri Temizleyerek Ekle
     for s_url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(s_url, timeout=10)
-            matches = re.findall(pattern, r.text.replace('\r', ''))
-            for info, url in matches:
+            r = requests.get(s_url, timeout=15)
+            r.encoding = 'utf-8' # Karakter bozulmasını önle
+            matches = re.findall(pattern, r.text)
+            for ext_info, ch_name, url in matches:
                 link = url.strip()
                 if link not in eklenen_linkler:
-                    yeni_liste.append(f"{info}\n{link}")
+                    # İsimdeki karmaşayı temizle ki Worker tanısın
+                    temiz_isim = ch_name.strip().upper() 
+                    yeni_liste.append(f"{ext_info},{temiz_isim}\n{link}")
                     eklenen_linkler.add(link)
         except: continue
 
-    # 3. GitHub'a Yaz
     final_m3u = "\n".join(yeni_liste)
     github_dosya_yaz(final_m3u, sha)
-    print(f"🚀 İşlem tamam! {len(yeni_liste)-1} kanal dosyaya yazıldı.")
+    print(f"🚀 {len(eklenen_linkler)} benzersiz yedek işlendi.")
 
 if __name__ == "__main__":
     update_m3u()
