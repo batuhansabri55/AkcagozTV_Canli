@@ -7,6 +7,9 @@ CF_API_TOKEN = os.environ.get('CF_API_TOKEN')
 CF_D1_ID = os.environ.get('CF_D1_ID')
 FILE_PATH = "tr.m3u"
 
+# BU LİSTEDEKİLER SENİN GÖZBEBEĞİN, ASLA SİLİNMEZ, EN ÜSTE ÇIKAR
+DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
+
 def d1_sorgu(sql):
     endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
     headers = {"Authorization": f"Bearer {CF_API_TOKEN}", "Content-Type": "application/json"}
@@ -17,11 +20,10 @@ def d1_sorgu(sql):
     except: return None
 
 def update_m3u():
-    print("🔄 Veritabanından orijinal format geri yükleniyor...")
+    print("🚀 Dokunulmazları koruma ve temizleme operasyonu başladı...")
     
-    # Sadece senin veritabanındaki ONLINE yedekleri çekiyoruz.
-    # İnternetten yeni link arama kısmını SİLDİM ki dokunulmazlar karışmasın.
-    sql = "SELECT channel_name, backup_url, status FROM channel_backups WHERE status = 'ONLINE' ORDER BY channel_name ASC"
+    # Sadece ONLINE olanları çekiyoruz
+    sql = "SELECT channel_name, backup_url FROM channel_backups WHERE status = 'ONLINE'"
     data = d1_sorgu(sql)
     
     if not data or not data.get("success"):
@@ -30,30 +32,38 @@ def update_m3u():
 
     res_list = data["result"][0]["results"]
     
-    m3u_icerik = "#EXTM3U\n"
-    count = 0
-    
+    # AYNI LİNKİ TEKRAR YAZMAMAK İÇİN SET KULLANIYORUZ
+    islenen_linkler = set()
+    dokunulmaz_listesi = []
+    normal_liste = []
+
     for row in res_list:
         name = row['channel_name']
         url = row['backup_url']
-
-        # EĞER: Senin D1'deki channel_name kısmında o uzun logo/grup bilgileri 
-        # zaten yazıyorsa bu kod onu bozmaz. 
-        # Ama sadece isim yazıyorsa, İçel TV örneğindeki gibi tam formatı kurar:
         
-        if "group-title" in name:
-            # Eğer zaten tam formatsa direkt yaz
-            m3u_icerik += f"{name}\n{url}\n"
+        # Eğer bu linki zaten eklediysek atla (5 tane 360 TV olmasın diye)
+        if url in islenen_linkler:
+            continue
+        
+        line = f"{name}\n{url}\n"
+        
+        # Dokunulmazlık kontrolü
+        is_dokunulmaz = any(d in url for d in DOKUNULMAZLAR)
+        
+        if is_dokunulmaz:
+            dokunulmaz_listesi.append(line)
         else:
-            # Eğer sadece isimse, en azından ismi bozmadan yaz (Logolar için JOIN gerekebilir ama şimdilik güvenli liman)
-            m3u_icerik += f"#EXTINF:-1,{name}\n{url}\n"
-        
-        count += 1
+            normal_liste.append(line)
+            
+        islenen_linkler.add(url)
+
+    # ÖNCE DOKUNULMAZLAR, SONRA DİĞERLERİ
+    final_liste = "#EXTM3U\n" + "".join(dokunulmaz_listesi) + "".join(normal_liste)
 
     with open(FILE_PATH, "w", encoding="utf-8") as f:
-        f.write(m3u_icerik)
+        f.write(final_liste)
     
-    print(f"✅ Bitti! {count} kanal dokunulmazlar korunarak dosyaya yazıldı.")
+    print(f"✅ Temizlendi! Toplam {len(islenen_linkler)} benzersiz link yazıldı.")
 
 if __name__ == "__main__":
     update_m3u()
