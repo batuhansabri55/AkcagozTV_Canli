@@ -11,7 +11,7 @@ CF_D1_ID = os.environ.get('CF_D1_ID')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# BU LİSTEDEKİLERİ SAKIN ELLEME VE EKLEME YAPARKEN KONTROL ET
+# BU LİSTEDEKİLERİ SAKIN ELLEME (KORUMA KALKANI)
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
 def d1_sorgu(sql, params=None):
@@ -24,44 +24,37 @@ def d1_sorgu(sql, params=None):
     except: return None
 
 def update_m3u():
-    # 1. VERİTABANINDAN TÜM DETAYLARI ÇEK (Logo, Grup, EPG dahil)
-    print("🔄 Liste tüm detaylarıyla (Logo, Grup, EPG) hazırlanıyor...")
-    # Not: Eğer sütun isimlerin farklıysa (örneğin category_name gibi), burayı ona göre düzenleriz.
-    # Şimdilik standart M3U sütunlarını çektiğimizi varsayıyorum.
-    sql = "SELECT channel_name, backup_url, category, logo, tvg_id, tvg_url FROM channel_backups WHERE status = 'ONLINE' ORDER BY channel_name"
+    # 1. VERİTABANINDAN TÜM YEDEKLERİ ÇEK (Sadece sende olan sütunlarla)
+    print("🔄 Veritabanındaki yedekler çekiliyor...")
+    # Sadece senin D1 tablonda olan sütunları seçiyoruz:
+    sql = "SELECT channel_name, backup_url FROM channel_backups WHERE status = 'ONLINE' ORDER BY channel_name"
     data = d1_sorgu(sql)
     
     if not data or not data.get("success"):
-        print("❌ D1 Bağlantı Hatası!")
+        print("❌ D1 Bağlantı Hatası! Lütfen Secrets bilgilerini kontrol et.")
         return
 
-    raw_results = data["result"][0]["results"]
-    if not raw_results:
-        print("⚠️ Yazılacak veri yok.")
+    res_list = data["result"][0]["results"]
+    if not res_list:
+        print("⚠️ Yazılacak veri bulunamadı.")
         return
 
     m3u_icerik = "#EXTM3U\n"
     count = 0
 
-    for row in raw_results:
-        name = row.get('channel_name', 'Bilinmiyor')
-        url = row.get('backup_url', '')
-        group = row.get('category', 'Genel')
-        logo = row.get('logo', '')
-        tid = row.get('tvg_id', '')
-        turl = row.get('tvg_url', '')
-
-        # DOKUNULMAZ KONTROLÜ (Eğer internetten gelen yeni çöpler varsa süzmek için)
-        # Ama veritabanında halihazırda varsa dokunmuyoruz.
-
-        # İŞTE O SİLİNEN KISIMLARI TEKRAR KURUYORUZ:
-        m3u_icerik += f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}" tvg-url="{turl}" tvg-id="{tid}",{name}\n{url}\n'
+    for row in res_list:
+        name = row['channel_name']
+        url = row['backup_url']
+        
+        # M3U formatına ekle
+        m3u_icerik += f"#EXTINF:-1,{name}\n{url}\n"
         count += 1
-
+    
+    # 2. GITHUB DOSYASINI GÜNCELLE
     with open(FILE_PATH, "w", encoding="utf-8") as f:
         f.write(m3u_icerik)
     
-    print(f"✅ Bitti. {count} kanal tüm detaylarıyla (Logo/Grup) tr.m3u dosyasına yazıldı.")
+    print(f"✅ İşlem Başarılı: {count} kanal tr.m3u dosyasına yazıldı.")
 
 if __name__ == "__main__":
     update_m3u()
