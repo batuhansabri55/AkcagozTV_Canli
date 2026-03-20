@@ -1,9 +1,6 @@
 import requests
 import re
-import base64
 import os
-import json
-from concurrent.futures import ThreadPoolExecutor
 
 # --- AYARLAR ---
 GITHUB_TOKEN = os.environ.get('GH_TOKEN') 
@@ -14,6 +11,7 @@ CF_D1_ID = os.environ.get('CF_D1_ID')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
+# BU LİSTEDEKİLERİ SAKIN ELLEME VE EKLEME YAPARKEN KONTROL ET
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
 YEDEK_KAYNAKLAR = [
@@ -27,7 +25,6 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def d1_sorgu(sql, params=None):
-    """Cloudflare D1'e sorgu atar."""
     endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
     headers = {"Authorization": f"Bearer {CF_API_TOKEN}", "Content-Type": "application/json"}
     payload = {"sql": sql, "params": params or []}
@@ -37,7 +34,7 @@ def d1_sorgu(sql, params=None):
     except: return None
 
 def update_m3u():
-    # 1. ÖNCE İNTERNETTEN YENİ LİNKLERİ BUL VE D1'E EKLE (Besleme)
+    # 1. YENİ LİNKLERİ BUL VE EKLE (Dokunulmaz Kontrolü ile)
     for s_url in YEDEK_KAYNAKLAR:
         try:
             res = requests.get(s_url, timeout=10)
@@ -46,29 +43,30 @@ def update_m3u():
                 for kanal_adi, url in matches:
                     u = url.strip()
                     k_adi = kanal_adi.strip()
-                    # Veritabanına yeni olanı ekle
+                    
+                    # KRİTİK KONTROL: Eğer link dokunulmaz listesindeyse, dokunma!
+                    if any(d in u for d in DOKUNULMAZLAR):
+                        continue # Bu linki atla, veritabanını kirletme veya bozma
+                        
                     d1_sorgu("INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)", [k_adi, u])
         except: continue
 
-    # 2. ŞİMDİ D1'DEKİ TÜM YEDEKLERİ ÇEK (Panelde gördüğün o 1855 yedek)
-    print("🔄 Veritabanındaki tüm yedekler çekiliyor...")
-    data = d1_sorgu("SELECT channel_name, backup_url FROM channel_backups WHERE status = 'ONLINE'")
+    # 2. TÜM LİSTEYİ OLUŞTUR
+    print("🔄 Veritabanından liste hazırlanıyor...")
+    data = d1_sorgu("SELECT channel_name, backup_url FROM channel_backups WHERE status = 'ONLINE' ORDER BY channel_name")
     
     m3u_icerik = "#EXTM3U\n"
     count = 0
     
     if data and data.get("success") and data["result"][0]["results"]:
         for row in data["result"][0]["results"]:
-            k_adi = row["channel_name"]
-            u = row["backup_url"]
-            m3u_icerik += f"#EXTINF:-1,{k_adi}\n{u}\n"
+            m3u_icerik += f"#EXTINF:-1,{row['channel_name']}\n{row['backup_url']}\n"
             count += 1
     
-    # 3. GITHUB'A YÜKLE
     with open(FILE_PATH, "w", encoding="utf-8") as f:
         f.write(m3u_icerik)
     
-    print(f"✅ Toplam {count} kanal dosyaya yazıldı.")
+    print(f"✅ Bitti. {count} kanal koruma altında yazıldı.")
 
 if __name__ == "__main__":
     update_m3u()
