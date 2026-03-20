@@ -1,17 +1,21 @@
 import requests
 import re
+import base64
 import os
+import json
+from concurrent.futures import ThreadPoolExecutor
 
 # --- AYARLAR ---
+GITHUB_TOKEN = os.environ.get('GH_TOKEN') 
 CF_ACCOUNT_ID = os.environ.get('CF_ACCOUNT_ID')
 CF_API_TOKEN = os.environ.get('CF_API_TOKEN')
 CF_D1_ID = os.environ.get('CF_D1_ID')
+
+REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# BU LİSTEDEKİLER SENİN GÖZBEBEĞİN, ASLA SİLİNMEZ VE EN ÜSTE ÇIKAR
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
-# YEDEK KAYNAKLAR (Yeni linkleri beslemek için)
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -22,72 +26,88 @@ YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u"
 ]
 
-def d1_sorgu(sql, params=None):
+def d1_veritabanina_yaz(kanal_adi, url):
+    """Bulunan yedekleri Cloudflare D1'e otomatik INSERT eder."""
+    if not all([CF_ACCOUNT_ID, CF_API_TOKEN, CF_D1_ID]):
+        return
+    
     endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
-    headers = {"Authorization": f"Bearer {CF_API_TOKEN}", "Content-Type": "application/json"}
-    payload = {"sql": sql, "params": params or []}
+    headers = {
+        "Authorization": f"Bearer {CF_API_TOKEN}",
+        "Content-Type": "application/json"
+    }
+    
+    # SQL: Eğer bu URL zaten varsa ekleme, yoksa ONLINE olarak ekle
+    sql = "INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)"
+    
+    payload = {
+        "params": [kanal_adi, url],
+        "sql": sql
+    }
+    
     try:
-        r = requests.post(endpoint, json=payload, headers=headers, timeout=15)
-        return r.json()
-    except: return None
+        requests.post(endpoint, json=payload, headers=headers, timeout=10)
+    except Exception as e:
+        print(f"❌ D1 Hatası: {e}")
+
+def github_yukle(icerik):
+    if not GITHUB_TOKEN: return
+    url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    r = requests.get(url, headers=headers)
+    sha = r.json().get('sha') if r.status_code == 200 else None
+    data = {"message": "D1 Senkronize Edildi + Yedekler Eklendi", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
+    if sha: data["sha"] = sha
+    requests.put(url, json=data, headers=headers)
+
+def link_test_et(item):
+    info, url = item
+    if any(ozel in url.lower() for ozel in DOKUNULMAZLAR): return (info, url)
+    try:
+        with requests.get(url, timeout=5, stream=True) as r:
+            if r.status_code == 200: return (info, url)
+    except: pass
+    return None
 
 def update_m3u():
-    # 1. YENİ LİNKLERİ BUL VE D1'E EKLE
+    mevcut_kanallar = []
+    eklenen_linkler = set()
+    
+    # 1. ADIM: GITHUB'DAN MEVCUTLARI ÇEK
+    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    r = requests.get(f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}", headers=headers)
+    
+    if r.status_code == 200:
+        content = base64.b64decode(r.json()['content']).decode('utf-8')
+        matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", content.replace('\r', ''))
+        for info, url in matches:
+            u = url.strip()
+            mevcut_kanallar.append((info, u))
+            eklenen_linkler.add(u)
+
+    # 2. ADIM: KAYNAKLARDAN YENİLERİ BUL VE D1'E GÖNDER
+    adaylar = []
     for s_url in YEDEK_KAYNAKLAR:
         try:
             res = requests.get(s_url, timeout=10)
             if res.status_code == 200:
-                matches = re.findall(r"#EXTINF:.*?,(.*?)\n(http.*)", res.text)
-                for kanal_adi, url in matches:
+                matches = re.findall(r"(#EXTINF:[^\n]*,([^\n]*))\n(http[^\n]*)", res.text.replace('\r', ''))
+                for full_info, kanal_adi, url in matches:
                     u = url.strip()
-                    k_adi = kanal_adi.strip()
-                    # Dokunulmaz linkleri internetten gelenlerle ezme (Sadece yeni olanları ekle)
-                    if any(d in u for d in DOKUNULMAZLAR):
-                        continue
-                    d1_sorgu("INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)", [k_adi, u])
+                    if u not in eklenen_linkler:
+                        # D1'e gönder
+                        d1_veritabanina_yaz(kanal_adi.strip(), u)
+                        adaylar.append((full_info, u))
         except: continue
 
-    # 2. TÜM LİSTEYİ HAZIRLA (SADECE ONLINE OLANLAR)
-    print("🔄 Veritabanından ONLINE olanlar çekiliyor...")
-    data = d1_sorgu("SELECT channel_name, backup_url FROM channel_backups WHERE status = 'ONLINE'")
-    
-    if not data or not data.get("success"):
-        print("❌ D1 Bağlantı Hatası!")
-        return
+    # 3. ADIM: TEST VE GITHUB GÜNCELLEME
+    with ThreadPoolExecutor(max_workers=30) as executor:
+        yeni_sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
 
-    res_list = data["result"][0]["results"]
-    
-    dokunulmaz_parçalar = []
-    normal_parçalar = []
-    islenen_normal_urls = set()
-
-    for row in res_list:
-        name = row['channel_name']
-        url = row['backup_url']
-        
-        # Format ayarı (Logo ve Grup bilgilerini korur)
-        if name.startswith("#EXTINF"):
-            line = f"{name}\n{url}\n"
-        else:
-            line = f"#EXTINF:-1,{name}\n{url}\n"
-            
-        # Dokunulmazlık kontrolü
-        if any(d in url for d in DOKUNULMAZLAR):
-            # Dokunulmaz ise süzgeçsiz ekle
-            dokunulmaz_parçalar.append(line)
-        else:
-            # Normal link ise mükerrer engelle (Aynı kanaldan 5 tane olmasın)
-            if url not in islenen_normal_urls:
-                normal_parçalar.append(line)
-                islenen_normal_urls.add(url)
-
-    # 3. YAZMA İŞLEMİ (Önce Dokunulmazlar)
-    final_m3u = "#EXTM3U\n" + "".join(dokunulmaz_parçalar) + "".join(normal_parçalar)
-    
-    with open(FILE_PATH, "w", encoding="utf-8") as f:
-        f.write(final_m3u)
-    
-    print(f"✅ Bitti. {len(dokunulmaz_parçalar)} Dokunulmaz ve {len(normal_parçalar)} Normal kanal yazıldı.")
+    hepsi = mevcut_kanallar + yeni_sonuclar
+    output = "#EXTM3U\n" + "\n".join([f"{i}\n{u}" for i, u in hepsi])
+    github_yukle(output)
+    print(f"✅ Bitti! {len(yeni_sonuclar)} yeni yedek D1'e ve GitHub'a eklendi.")
 
 if __name__ == "__main__":
     update_m3u()
