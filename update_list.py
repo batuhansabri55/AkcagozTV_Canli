@@ -4,17 +4,15 @@ import os
 import base64
 from concurrent.futures import ThreadPoolExecutor
 
-# --- AYARLAR (GitHub Secrets'dan çekilir) ---
+# --- AYARLAR ---
 CF_ACCOUNT_ID = os.environ.get('CF_ACCOUNT_ID')
 CF_API_TOKEN = os.environ.get('CF_API_TOKEN')
 CF_D1_ID = os.environ.get('CF_D1_ID')
 GITHUB_TOKEN = os.environ.get('GH_TOKEN')
 
-# SENİN BİLGİLERİN
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# 🛡️ DOKUNULMAZLAR: Bu kelimeleri içeren linkler asla silinmez, test edilmez.
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
 YEDEK_KAYNAKLAR = [
@@ -28,54 +26,51 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def d1_yaz(kanal_adi, url):
-    """Bulunan linki D1 'channel_backups' tablosuna ekler."""
     if not all([CF_ACCOUNT_ID, CF_API_TOKEN, CF_D1_ID]): return
     endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
     headers = {"Authorization": f"Bearer {CF_API_TOKEN}", "Content-Type": "application/json"}
     sql = "INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)"
     payload = {"params": [kanal_adi, url], "sql": sql}
-    try:
-        requests.post(endpoint, json=payload, headers=headers, timeout=10)
+    try: requests.post(endpoint, json=payload, headers=headers, timeout=10)
     except: pass
 
 def github_dosya_guncelle(icerik):
-    """GitHub'daki tr.m3u dosyasını fiziksel olarak günceller."""
     if not GITHUB_TOKEN:
-        print("❌ Hata: GITHUB_TOKEN (GH_TOKEN) bulunamadı!")
+        print("❌ Hata: GH_TOKEN bulunamadı!")
         return
-
+    
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
     headers = {
-        "Authorization": f"token {GITHUB_TOKEN}",
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Accept": "application/vnd.github.v3+json"
     }
-
-    # 1. Mevcut dosyanın SHA değerini al (Güncelleme için zorunlu)
+    
+    # Mevcut dosyanın SHA bilgisini al (Güncelleme için bu şart)
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
-
-    # 2. Dosyayı güncelle
-    data = {
-        "message": "🔄 D1 + tr.m3u Otomatik Senkronizasyon",
-        "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8"),
+    
+    # İçeriği Base64 formatına çevir
+    encoded_content = base64.b64encode(icerik.encode("utf-8")).decode("utf-8")
+    
+    payload = {
+        "message": "🔄 Otomatik Liste Güncelleme",
+        "content": encoded_content,
         "branch": "main"
     }
-    if sha: data["sha"] = sha
-
-    res = requests.put(url, json=data, headers=headers)
+    if sha:
+        payload["sha"] = sha
+        
+    res = requests.put(url, json=payload, headers=headers)
     if res.status_code in [200, 201]:
-        print(f"✅ GitHub: {FILE_PATH} başarıyla güncellendi!")
+        print(f"✅ GitHub Başarılı: {FILE_PATH} güncellendi!")
     else:
-        print(f"❌ GitHub Yazma Hatası ({res.status_code}): {res.text}")
+        print(f"❌ GitHub Hatası ({res.status_code}): {res.text}")
 
 def link_test_et(item):
     kanal_adi, url = item
-    # 🛡️ Eğer link dokunulmaz ise direkt ONAYLA ve D1'e yaz
     if any(ozel in url.lower() for ozel in DOKUNULMAZLAR):
         d1_yaz(kanal_adi, url)
         return f"#EXTINF:-1,{kanal_adi}\n{url}"
-    
-    # Değilse test et
     try:
         with requests.get(url, timeout=5, stream=True) as r:
             if r.status_code == 200:
@@ -85,7 +80,7 @@ def link_test_et(item):
     return None
 
 def baslat():
-    print("🔄 Sistem taranıyor (Dokunulmazlar Aktif)...")
+    print("🔄 Tarama başlıyor...")
     eklenenler = set()
     adaylar = []
 
@@ -101,17 +96,15 @@ def baslat():
                         eklenenler.add(l)
         except: continue
 
-    print(f"🔍 {len(adaylar)} link bulundu, testler başlıyor...")
     with ThreadPoolExecutor(max_workers=25) as executor:
-        # Sonuçları topla (Sadece başarılı olanlar)
         m3u_satirlari = list(filter(None, executor.map(link_test_et, adaylar)))
 
     if m3u_satirlari:
         yeni_m3u_icerik = "#EXTM3U\n" + "\n".join(m3u_satirlari)
         github_dosya_guncelle(yeni_m3u_icerik)
-        print(f"✅ İşlem Tamam! {len(m3u_satirlari)} kanal yazıldı.")
+        print(f"✅ Toplam {len(m3u_satirlari)} kanal işlendi.")
     else:
-        print("⚠️ Hata: Yazılacak aktif kanal bulunamadı!")
+        print("⚠️ Hiç çalışan link bulunamadı.")
 
 if __name__ == "__main__":
     baslat()
