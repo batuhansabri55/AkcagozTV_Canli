@@ -13,6 +13,7 @@ GITHUB_TOKEN = os.environ.get('GH_TOKEN')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
+# 🛡️ DOKUNULMAZ KRİTERLERİ (Bu kelimeleri içeren hiçbir satır silinmez)
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
 YEDEK_KAYNAKLAR = [
@@ -35,42 +36,27 @@ def d1_yaz(kanal_adi, url):
     except: pass
 
 def github_dosya_guncelle(icerik):
-    if not GITHUB_TOKEN:
-        print("❌ Hata: GH_TOKEN bulunamadı!")
-        return
-    
+    if not GITHUB_TOKEN: return
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github.v3+json"
-    }
+    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     
-    # Mevcut dosyanın SHA bilgisini al (Güncelleme için bu şart)
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
     
-    # İçeriği Base64 formatına çevir
-    encoded_content = base64.b64encode(icerik.encode("utf-8")).decode("utf-8")
-    
-    payload = {
-        "message": "🔄 Otomatik Liste Güncelleme",
-        "content": encoded_content,
+    data = {
+        "message": "🔄 Dokunulmazlar Korundu + Liste Güncellendi",
+        "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8"),
         "branch": "main"
     }
-    if sha:
-        payload["sha"] = sha
-        
-    res = requests.put(url, json=payload, headers=headers)
+    if sha: data["sha"] = sha
+    res = requests.put(url, json=data, headers=headers)
     if res.status_code in [200, 201]:
-        print(f"✅ GitHub Başarılı: {FILE_PATH} güncellendi!")
+        print("✅ GitHub başarıyla güncellendi.")
     else:
-        print(f"❌ GitHub Hatası ({res.status_code}): {res.text}")
+        print(f"❌ GitHub hatası: {res.status_code}")
 
 def link_test_et(item):
     kanal_adi, url = item
-    if any(ozel in url.lower() for ozel in DOKUNULMAZLAR):
-        d1_yaz(kanal_adi, url)
-        return f"#EXTINF:-1,{kanal_adi}\n{url}"
     try:
         with requests.get(url, timeout=5, stream=True) as r:
             if r.status_code == 200:
@@ -80,10 +66,28 @@ def link_test_et(item):
     return None
 
 def baslat():
-    print("🔄 Tarama başlıyor...")
+    print("🔄 İşlem başlıyor...")
+    
+    # 1. Mevcut dosyayı GitHub'dan oku ve DOKUNULMAZLARI ayır
+    dokunulmaz_listesi = []
+    url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+    
+    try:
+        r = requests.get(url, headers=headers)
+        if r.status_code == 200:
+            mevcut_icerik = base64.b64decode(r.json()['content']).decode('utf-8')
+            parcalar = re.findall(r"(#EXTINF:.*?\nhttp.*)", mevcut_icerik)
+            for p in parcalar:
+                if any(d in p for d in DOKUNULMAZLAR):
+                    dokunulmaz_listesi.append(p)
+        print(f"🛡️ {len(dokunulmaz_listesi)} dokunulmaz kanal korumaya alındı.")
+    except:
+        print("⚠️ Mevcut dosya okunamadı, sıfırdan oluşturuluyor.")
+
+    # 2. Yeni kaynaklardan link topla
     eklenenler = set()
     adaylar = []
-
     for s_url in YEDEK_KAYNAKLAR:
         try:
             res = requests.get(s_url, timeout=10)
@@ -96,15 +100,14 @@ def baslat():
                         eklenenler.add(l)
         except: continue
 
+    # 3. Yeni linkleri test et
     with ThreadPoolExecutor(max_workers=25) as executor:
-        m3u_satirlari = list(filter(None, executor.map(link_test_et, adaylar)))
+        yeni_kanallar = list(filter(None, executor.map(link_test_et, adaylar)))
 
-    if m3u_satirlari:
-        yeni_m3u_icerik = "#EXTM3U\n" + "\n".join(m3u_satirlari)
-        github_dosya_guncelle(yeni_m3u_icerik)
-        print(f"✅ Toplam {len(m3u_satirlari)} kanal işlendi.")
-    else:
-        print("⚠️ Hiç çalışan link bulunamadı.")
+    # 4. Birleştir (Önce Dokunulmazlar, Sonra Yeniler)
+    tam_liste = ["#EXTM3U"] + dokunulmaz_listesi + yeni_kanallar
+    github_dosya_guncelle("\n".join(tam_liste))
+    print(f"✅ Bitti! {len(dokunulmaz_listesi)} sabit, {len(yeni_kanallar)} taze kanal.")
 
 if __name__ == "__main__":
     baslat()
