@@ -15,6 +15,7 @@ CF_D1_ID = os.environ.get('CF_D1_ID')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
+# BU LİSTEDEKİLER SENİN GÖZBEBEĞİN, ASLA SİLİNMEZ VE HER ZAMAN EN ÜSTTEDİR
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
 YEDEK_KAYNAKLAR = [
@@ -42,7 +43,7 @@ def github_yukle(icerik):
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
-    data = {"message": "D1 Senkronize + 6 Yedek Sınırı", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
+    data = {"message": "D1 Senkronize + 6 Yedek Limiti", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
     if sha: data["sha"] = sha
     requests.put(url, json=data, headers=headers)
 
@@ -71,7 +72,7 @@ def update_m3u():
             mevcut_kanallar.append((info, u))
             eklenen_linkler.add(u)
 
-    # 2. KAYNAKLARDAN YENİLERİ BUL VE D1'E YAZ
+    # 2. KAYNAKLARDAN YENİLERİ BUL
     adaylar = []
     for s_url in YEDEK_KAYNAKLAR:
         try:
@@ -89,28 +90,28 @@ def update_m3u():
     with ThreadPoolExecutor(max_workers=30) as executor:
         yeni_sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
 
-    # --- 4. ADIM: 6 YEDEK SINIRI VE DOKUNULMAZ KORUMASI ---
+    # --- 4. ADIM: 6 YEDEK SINIRI VE SIRALAMA ---
     hepsi = mevcut_kanallar + yeni_sonuclar
     kanal_gruplari = defaultdict(list)
     
     for info, url in hepsi:
-        # Kanal adını info içinden temizle (virgülden sonrası)
-        k_adi = info.split(",")[-1].strip() if "," in info else info
-        
-        # Puanlama: Dokunulmazlar 0 puan (en üst), diğerleri 1 puan
-        oncelik = 0 if any(d in url for d in DOKUNULMAZLAR) else 1
-        kanal_gruplari[k_adi].append((oncelik, info, url))
+        # Kanal adını temizle
+        temiz_ad = info.split(",")[-1].strip() if "," in info else info
+        # Dokunulmaz linklere öncelik ver (0=en üst, 1=diğerleri)
+        puan = 0 if any(d in url for d in DOKUNULMAZLAR) else 1
+        kanal_gruplari[temiz_ad].append((puan, info, url))
 
     final_list = []
-    for k_adi in kanal_gruplari:
-        # Önce dokunulmazlara göre, sonra geliş sırasına göre diz ve İLK 6 TANEYİ AL
-        sirali = sorted(kanal_gruplari[k_adi], key=lambda x: x[0])[:6]
-        for _, info, url in sirali:
+    for kanal in kanal_gruplari:
+        # Önce puana (dokunulmazlar başa), sonra geliş sırasına göre sırala
+        sirali = sorted(kanal_gruplari[kanal], key=lambda x: x[0])
+        # Her kanaldan sadece İLK 6 TANEYİ al (Hani dediğin kısım burası)
+        for _, info, url in sirali[:6]:
             final_list.append(f"{info}\n{url}")
 
     output = "#EXTM3U\n" + "\n".join(final_list)
     github_yukle(output)
-    print(f"✅ İşlem Tamam! Her kanal için en iyi 6 yedek seçildi.")
+    print(f"✅ Bitti! Kanallar en iyi 6 yedekle (Dokunulmazlar dahil) güncellendi.")
 
 if __name__ == "__main__":
     update_m3u()
