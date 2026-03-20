@@ -1,71 +1,76 @@
 import requests
 import re
-import base64
 import os
+import base64
 from concurrent.futures import ThreadPoolExecutor
-from collections import defaultdict
 
-# --- AYARLAR ---
+# --- AYARLAR (GitHub Secrets'dan çekilir) ---
 CF_ACCOUNT_ID = os.environ.get('CF_ACCOUNT_ID')
 CF_API_TOKEN = os.environ.get('CF_API_TOKEN')
 CF_D1_ID = os.environ.get('CF_D1_ID')
-GITHUB_TOKEN = os.environ.get('GH_TOKEN')
-REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
-FILE_PATH = "tr.m3u"
 
-DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
+# Senin resimdeki kaynakların
+YEDEK_KAYNAKLAR = [
+    "https://mth.tc/DsGo",
+    "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
+    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
+    "https://publiciptv.com/countries/tr/m3u",
+    "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    "https://streams.uzunmuhalefet.com/lists/tr.m3u"
+]
 
-def d1_sorgu(sql, params=None, mode="query"):
-    endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/{mode}"
-    headers = {"Authorization": f"Bearer {CF_API_TOKEN}", "Content-Type": "application/json"}
-    payload = {"sql": sql, "params": params or []}
-    if mode == "execute": payload = {"batches": [{"sql": sql, "params": params or []}]}
+def d1_yaz(kanal_adi, url):
+    """Bulunan linki D1 'channel_backups' tablosuna ekler."""
+    if not all([CF_ACCOUNT_ID, CF_API_TOKEN, CF_D1_ID]): return
+    
+    endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
+    headers = {
+        "Authorization": f"Bearer {CF_API_TOKEN}",
+        "Content-Type": "application/json"
+    }
+    
+    # SQL: Eğer URL zaten varsa ekleme, yoksa 'ONLINE' olarak ekle
+    sql = "INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)"
+    
+    payload = {"params": [kanal_adi, url], "sql": sql}
     try:
-        r = requests.post(endpoint, json=payload, headers=headers, timeout=15)
-        return r.json()
-    except: return None
+        requests.post(endpoint, json=payload, headers=headers, timeout=10)
+    except: pass
 
-def update_m3u():
-    print("🧹 Veritabanı temizliği ve 6 yedek sınırı başlıyor...")
-    
-    # 1. ADIM: VERİTABANINDA KANAL BAŞINA EN İYİ 6 YEDEK DIŞINDAKİ HER ŞEYİ SİL
-    # Bu işlem panelini (dashboard) anında temizler.
-    temizlik_sql = """
-    DELETE FROM channel_backups 
-    WHERE id IN (
-        SELECT id FROM (
-            SELECT id, ROW_NUMBER() OVER (
-                PARTITION BY channel_name 
-                ORDER BY 
-                    CASE 
-                        WHEN backup_url LIKE '%workers.dev%' THEN 1
-                        WHEN backup_url LIKE '%premiumstream.in%' THEN 1
-                        WHEN backup_url LIKE '%mywire.org%' THEN 1
-                        WHEN backup_url LIKE '%goldvod.site%' THEN 1
-                        ELSE 2 
-                    END, 
-                    id DESC
-            ) as sira
-            FROM channel_backups
-        ) WHERE sira > 6
-    )
-    """
-    d1_sorgu(temizlik_sql, mode="execute")
+def link_test_et(item):
+    kanal_adi, url = item
+    try:
+        # Hızlı kontrol: 5 saniyede cevap veriyorsa sağlamdır
+        with requests.get(url, timeout=5, stream=True) as r:
+            if r.status_code == 200:
+                d1_yaz(kanal_adi, url)
+                return True
+    except: pass
+    return False
 
-    # 2. ADIM: TEMİZLENMİŞ VERİLERİ ÇEK VE GITHUB'A YAZ
-    data = d1_sorgu("SELECT channel_name, backup_url FROM channel_backups WHERE status = 'ONLINE'")
+def baslat():
+    print("🔄 Sistem taranıyor...")
+    eklenenler = set()
+    adaylar = []
+
+    for s_url in YEDEK_KAYNAKLAR:
+        try:
+            res = requests.get(s_url, timeout=10)
+            if res.status_code == 200:
+                matches = re.findall(r"#EXTINF:[^,]*,(.*?)\n(http.*)", res.text)
+                for kanal, link in matches:
+                    l = link.strip()
+                    if l not in eklenenler:
+                        adaylar.append((kanal.strip(), l))
+                        eklenenler.add(l)
+        except: continue
+
+    print(f"🔍 {len(adaylar)} link bulundu, test ediliyor...")
+    with ThreadPoolExecutor(max_workers=25) as executor:
+        executor.map(link_test_et, adaylar)
     
-    if data and data.get("success"):
-        res_list = data["result"][0]["results"]
-        m3u_icerik = "#EXTM3U\n"
-        for row in res_list:
-            name = row['channel_name']
-            url = row['backup_url']
-            line = f"{name}\n{url}\n" if name.startswith("#EXTINF") else f"#EXTINF:-1,{name}\n{url}\n"
-            m3u_icerik += line
-        
-        # GitHub'a yükleme fonksiyonunu buraya ekle (yukarıdaki github_yukle gibi)
-        print(f"✅ Panel ve M3U temizlendi. Toplam {len(res_list)} link kaldı.")
+    print("✅ D1 Veritabanı güncellendi!")
 
 if __name__ == "__main__":
-    update_m3u()
+    baslat()
