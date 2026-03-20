@@ -2,6 +2,7 @@ import requests
 import re
 import base64
 import os
+import json
 from concurrent.futures import ThreadPoolExecutor
 
 # --- AYARLAR (GitHub Secrets'tan gelir) ---
@@ -13,8 +14,7 @@ CF_D1_ID = os.environ.get('CF_D1_ID')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# --- DOKUNULMAZLAR LİSTESİ ---
-# Bu kelimeleri içeren linkler sorgusuz sualsiz "sağlam" kabul edilir.
+# --- DOKUNULMAZ KELİME LİSTESİ ---
 DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
 
 YEDEK_KAYNAKLAR = [
@@ -46,53 +46,68 @@ def github_yukle(icerik):
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
-    data = {"message": "🔄 Dokunulmazlar Korundu + Yedekler Güncellendi", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
+    data = {"message": "🔄 Ana Linkler + Yedekler Güncellendi", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
     if sha: data["sha"] = sha
     requests.put(url, json=data, headers=headers)
 
 def update_m3u():
-    # 1. D1'DEN SENİN 365 KANALINI ÇEK
-    data = d1_sorgu("SELECT name FROM channels")
-    if not data or 'result' not in data:
-        print("❌ D1 bağlantısı başarısız!")
+    # 1. D1'DEN SENİN ANA KANALLARINI VE LİNKLERİNİ ÇEK (Uçmaması için şart!)
+    # Burada 'url' senin D1'deki ana dokunulmaz linkindir.
+    res = d1_sorgu("SELECT name, url FROM channels")
+    if not res or 'result' not in res or not res['result'][0].get('results'):
+        print("❌ D1'den ana kanallar çekilemedi!")
         return
     
-    ana_kanallar = {temizle(r['name']): r['name'] for r in data['result'][0]['results']}
-    print(f"✅ {len(ana_kanallar)} ana kanal filtre için yüklendi.")
+    # Ana listeyi hazırla (Hem isim hem ana link)
+    ana_liste_bilgi = {}
+    m3u_cikti = []
+    eklenen_linkler = set()
+
+    for r in res['result'][0]['results']:
+        temiz_ad = temizle(r['name'])
+        ana_link = r.get('url', '').strip()
+        ana_liste_bilgi[temiz_ad] = r['name']
+        
+        # ANA LİNKİ EN BAŞA EKLE (Burası uçmayı engeller)
+        if ana_link:
+            m3u_cikti.append(f"#EXTINF:-1,{r['name']}\n{ana_link}")
+            eklenen_linkler.add(ana_link)
+
+    print(f"✅ {len(ana_liste_bilgi)} ana kanal ve dokunulmaz linkler yüklendi.")
 
     # 2. ESKİ YEDEKLERİ SİL
     d1_sorgu("DELETE FROM channel_backups")
 
-    yeni_yedekler = []
-    eklenen_linkler = set()
-
-    # 3. KAYNAKLARI TARA VE FİLTRELE
+    # 3. KAYNAKLARI TARA VE SADECE EŞLEŞENLERİ YEDEK OLARAK EKLE
+    bulunan_yedek_sayisi = 0
     for s_url in YEDEK_KAYNAKLAR:
         try:
-            res = requests.get(s_url, timeout=10)
-            matches = re.findall(r"(#EXTINF:[^\n]*,([^\n]*))\n(http[^\n]*)", res.text.replace('\r', ''))
+            res_tarama = requests.get(s_url, timeout=10)
+            if res_tarama.status_code != 200: continue
+            
+            matches = re.findall(r"(#EXTINF:[^\n]*,([^\n]*))\n(http[^\n]*)", res_tarama.text.replace('\r', ''))
             for full_info, kanal_adi, url in matches:
                 temiz_ad = temizle(kanal_adi)
                 link = url.strip()
                 
-                # FİLTRE 1: Eğer kanal senin listenizdeyse
-                if temiz_ad in ana_kanallar and link not in eklenen_linkler:
-                    gercek_ad = ana_kanallar[temiz_ad]
+                # Sadece senin listende varsa ve henüz eklenmemişse
+                if temiz_ad in ana_liste_bilgi and link not in eklenen_linkler:
+                    gercek_ad = ana_liste_bilgi[temiz_ad]
                     
-                    # FİLTRE 2: Dokunulmaz mı? (İçinde özel kelime geçiyor mu?)
-                    is_dokunulmaz = any(d in link.lower() for d in DOKUNULMAZLAR)
-                    
-                    # D1'e yaz (Dokunulmazsa direk ekle, değilse de ekle ama istersen burada test kodu açabiliriz)
+                    # D1'e yedek tablosuna yaz
                     d1_sorgu("INSERT INTO channel_backups (channel_name, backup_url, status) VALUES (?, ?, 'ONLINE')", [gercek_ad, link])
-                    yeni_yedekler.append(f"#EXTINF:-1,{gercek_ad}\n{link}")
+                    
+                    # M3U dosyasına yedek olarak ekle
+                    m3u_cikti.append(f"#EXTINF:-1,{gercek_ad} (YEDEK)\n{link}")
                     eklenen_linkler.add(link)
+                    bulunan_yedek_sayisi += 1
         except: continue
 
     # 4. GITHUB'I GÜNCELLE
-    if yeni_yedekler:
-        output = "#EXTM3U\n" + "\n".join(yeni_yedekler)
-        github_yukle(output)
-        print(f"✅ Bitti! {len(yeni_yedekler)} yedek (dokunulmazlar dahil) işlendi.")
+    if m3u_cikti:
+        tam_icerik = "#EXTM3U\n" + "\n".join(m3u_cikti)
+        github_yukle(tam_icerik)
+        print(f"✅ İşlem bitti! {bulunan_yedek_sayisi} yeni yedek eklendi. Ana linkler korundu.")
 
 if __name__ == "__main__":
     update_m3u()
