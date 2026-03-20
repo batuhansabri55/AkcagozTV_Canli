@@ -4,12 +4,17 @@ import os
 import base64
 from concurrent.futures import ThreadPoolExecutor
 
-# --- AYARLAR (GitHub Secrets'dan çekilir) ---
+# --- AYARLAR ---
 CF_ACCOUNT_ID = os.environ.get('CF_ACCOUNT_ID')
 CF_API_TOKEN = os.environ.get('CF_API_TOKEN')
 CF_D1_ID = os.environ.get('CF_D1_ID')
+GITHUB_TOKEN = os.environ.get('GH_TOKEN')
+REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
+FILE_PATH = "tr.m3u"
 
-# Senin resimdeki kaynakların
+# 🛡️ DOKUNULMAZLAR: Bu kelimeleri içeren linkler asla silinmez, test edilmez.
+DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
+
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -21,36 +26,45 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def d1_yaz(kanal_adi, url):
-    """Bulunan linki D1 'channel_backups' tablosuna ekler."""
     if not all([CF_ACCOUNT_ID, CF_API_TOKEN, CF_D1_ID]): return
-    
     endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
-    headers = {
-        "Authorization": f"Bearer {CF_API_TOKEN}",
-        "Content-Type": "application/json"
-    }
-    
-    # SQL: Eğer URL zaten varsa ekleme, yoksa 'ONLINE' olarak ekle
+    headers = {"Authorization": f"Bearer {CF_API_TOKEN}", "Content-Type": "application/json"}
     sql = "INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)"
-    
     payload = {"params": [kanal_adi, url], "sql": sql}
-    try:
-        requests.post(endpoint, json=payload, headers=headers, timeout=10)
+    try: requests.post(endpoint, json=payload, headers=headers, timeout=10)
     except: pass
+
+def github_dosya_guncelle(icerik):
+    if not GITHUB_TOKEN: return
+    url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    r = requests.get(url, headers=headers)
+    sha = r.json().get('sha') if r.status_code == 200 else None
+    data = {
+        "message": "Dokunulmazlar + D1 + Dosya Guncelleme",
+        "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")
+    }
+    if sha: data["sha"] = sha
+    requests.put(url, json=data, headers=headers)
 
 def link_test_et(item):
     kanal_adi, url = item
+    # 🛡️ Eğer link dokunulmaz ise direkt ONAYLA
+    if any(ozel in url.lower() for ozel in DOKUNULMAZLAR):
+        d1_yaz(kanal_adi, url)
+        return f"#EXTINF:-1,{kanal_adi}\n{url}"
+    
+    # Değilse test et
     try:
-        # Hızlı kontrol: 5 saniyede cevap veriyorsa sağlamdır
         with requests.get(url, timeout=5, stream=True) as r:
             if r.status_code == 200:
                 d1_yaz(kanal_adi, url)
-                return True
+                return f"#EXTINF:-1,{kanal_adi}\n{url}"
     except: pass
-    return False
+    return None
 
 def baslat():
-    print("🔄 Sistem taranıyor...")
+    print("🔄 Sistem taranıyor (Dokunulmazlar Aktif)...")
     eklenenler = set()
     adaylar = []
 
@@ -66,11 +80,14 @@ def baslat():
                         eklenenler.add(l)
         except: continue
 
-    print(f"🔍 {len(adaylar)} link bulundu, test ediliyor...")
+    print(f"🔍 {len(adaylar)} link bulundu, testler baslıyor...")
     with ThreadPoolExecutor(max_workers=25) as executor:
-        executor.map(link_test_et, adaylar)
-    
-    print("✅ D1 Veritabanı güncellendi!")
+        m3u_satirlari = list(filter(None, executor.map(link_test_et, adaylar)))
+
+    if m3u_satirlari:
+        yeni_m3u_icerik = "#EXTM3U\n" + "\n".join(m3u_satirlari)
+        github_dosya_guncelle(yeni_m3u_icerik)
+        print(f"✅ İşlem Tamam! {len(m3u_satirlari)} kanal (Dokunulmazlar dahil) yazıldı.")
 
 if __name__ == "__main__":
     baslat()
