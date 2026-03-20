@@ -8,8 +8,12 @@ GITHUB_TOKEN = os.environ.get('GH_TOKEN')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# --- DOKUNULMAZ KELİMELER (Bu linkler asla silinmez/değişmez) ---
-DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site"]
+# --- DOKUNULMAZLAR (Bu kelimeleri içeren linkler asla silinmez) ---
+# Buraya TRT ve Kanal D linklerinde geçen "turknet" ve "trt" kelimelerini de ekledim.
+DOKUNULMAZLAR = [
+    "premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site",
+    "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"
+]
 
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
@@ -34,14 +38,13 @@ def github_dosya_yaz(icerik, sha):
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     data = {
-        "message": "🔄 Yedekler Güncellendi (Dokunulmazlar Korundu)",
+        "message": "🔄 Dokunulmazlar Sabitlendi & Yedekler Güncellendi",
         "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8"),
         "sha": sha
     }
     requests.put(url, json=data, headers=headers)
 
 def update_m3u():
-    # 1. Mevcut tr.m3u dosyasını GitHub'dan oku
     mevcut_icerik, sha = github_dosya_oku()
     if not sha:
         print("❌ Dosya okunamadı!")
@@ -50,32 +53,34 @@ def update_m3u():
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
 
-    # 2. ÖNCE DOKUNULMAZLARI AYIKLA VE KORU
-    # Mevcut dosyadaki her bloğu tara, eğer dokunulmaz kelime geçiyorsa listeye ekle
-    blocks = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", mevcut_icerik)
+    # --- ÖNEMLİ DÜZELTME: Hem http hem https linkleri yakalar ---
+    # Regex pattern: (http ve https destekli)
+    pattern = r"(#EXTINF:[^\n]*)\n(https?://[^\n]*)"
+
+    # 1. Önce Dokunulmazları Koru
+    blocks = re.findall(pattern, mevcut_icerik)
     for info, url in blocks:
         link = url.strip()
         if any(d in link.lower() for d in DOKUNULMAZLAR):
             yeni_liste.append(f"{info}\n{link}")
             eklenen_linkler.add(link)
 
-    # 3. YEDEK KAYNAKLARDAN YENİ LİNKLERİ TOPLA
+    # 2. Sonra Yedekleri Ekle
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
-            matches = re.findall(r"(#EXTINF:[^\n]*)\n(http[^\n]*)", r.text.replace('\r', ''))
+            matches = re.findall(pattern, r.text.replace('\r', ''))
             for info, url in matches:
                 link = url.strip()
-                # Eğer link yeni ise ve dokunulmazlar arasında değilse ekle
                 if link not in eklenen_linkler:
                     yeni_liste.append(f"{info}\n{link}")
                     eklenen_linkler.add(link)
         except: continue
 
-    # 4. GÜNCEL LİSTEYİ GİTHUB'A GERİ YÜKLE
+    # 3. GitHub'a Yaz
     final_m3u = "\n".join(yeni_liste)
     github_dosya_yaz(final_m3u, sha)
-    print("🚀 İşlem tamam! D1 kullanılmadı, yedekler güncellendi.")
+    print(f"🚀 İşlem tamam! {len(yeni_liste)-1} kanal dosyaya yazıldı.")
 
 if __name__ == "__main__":
     update_m3u()
