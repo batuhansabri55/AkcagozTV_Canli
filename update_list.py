@@ -4,6 +4,7 @@ import base64
 import os
 import json
 from concurrent.futures import ThreadPoolExecutor
+from collections import defaultdict
 
 # --- AYARLAR ---
 GITHUB_TOKEN = os.environ.get('GH_TOKEN') 
@@ -27,28 +28,13 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def d1_veritabanina_yaz(kanal_adi, url):
-    """Bulunan yedekleri Cloudflare D1'e otomatik INSERT eder."""
-    if not all([CF_ACCOUNT_ID, CF_API_TOKEN, CF_D1_ID]):
-        return
-    
+    if not all([CF_ACCOUNT_ID, CF_API_TOKEN, CF_D1_ID]): return
     endpoint = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/database/{CF_D1_ID}/query"
-    headers = {
-        "Authorization": f"Bearer {CF_API_TOKEN}",
-        "Content-Type": "application/json"
-    }
-    
-    # SQL: Eğer bu URL zaten varsa ekleme, yoksa ONLINE olarak ekle
+    headers = {"Authorization": f"Bearer {CF_API_TOKEN}", "Content-Type": "application/json"}
     sql = "INSERT OR IGNORE INTO channel_backups (channel_name, backup_url, status, is_manual) VALUES (?, ?, 'ONLINE', 0)"
-    
-    payload = {
-        "params": [kanal_adi, url],
-        "sql": sql
-    }
-    
-    try:
-        requests.post(endpoint, json=payload, headers=headers, timeout=10)
-    except Exception as e:
-        print(f"❌ D1 Hatası: {e}")
+    payload = {"params": [kanal_adi, url], "sql": sql}
+    try: requests.post(endpoint, json=payload, headers=headers, timeout=10)
+    except: pass
 
 def github_yukle(icerik):
     if not GITHUB_TOKEN: return
@@ -56,7 +42,7 @@ def github_yukle(icerik):
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     r = requests.get(url, headers=headers)
     sha = r.json().get('sha') if r.status_code == 200 else None
-    data = {"message": "D1 Senkronize Edildi + Yedekler Eklendi", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
+    data = {"message": "D1 Senkronize + 6 Yedek Sınırı", "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8")}
     if sha: data["sha"] = sha
     requests.put(url, json=data, headers=headers)
 
@@ -73,7 +59,7 @@ def update_m3u():
     mevcut_kanallar = []
     eklenen_linkler = set()
     
-    # 1. ADIM: GITHUB'DAN MEVCUTLARI ÇEK
+    # 1. GITHUB'DAN MEVCUTLARI ÇEK
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     r = requests.get(f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}", headers=headers)
     
@@ -85,7 +71,7 @@ def update_m3u():
             mevcut_kanallar.append((info, u))
             eklenen_linkler.add(u)
 
-    # 2. ADIM: KAYNAKLARDAN YENİLERİ BUL VE D1'E GÖNDER
+    # 2. KAYNAKLARDAN YENİLERİ BUL VE D1'E YAZ
     adaylar = []
     for s_url in YEDEK_KAYNAKLAR:
         try:
@@ -95,19 +81,36 @@ def update_m3u():
                 for full_info, kanal_adi, url in matches:
                     u = url.strip()
                     if u not in eklenen_linkler:
-                        # D1'e gönder
                         d1_veritabanina_yaz(kanal_adi.strip(), u)
                         adaylar.append((full_info, u))
         except: continue
 
-    # 3. ADIM: TEST VE GITHUB GÜNCELLEME
+    # 3. TEST ET
     with ThreadPoolExecutor(max_workers=30) as executor:
         yeni_sonuclar = list(filter(None, executor.map(link_test_et, adaylar)))
 
+    # --- 4. ADIM: 6 YEDEK SINIRI VE DOKUNULMAZ KORUMASI ---
     hepsi = mevcut_kanallar + yeni_sonuclar
-    output = "#EXTM3U\n" + "\n".join([f"{i}\n{u}" for i, u in hepsi])
+    kanal_gruplari = defaultdict(list)
+    
+    for info, url in hepsi:
+        # Kanal adını info içinden temizle (virgülden sonrası)
+        k_adi = info.split(",")[-1].strip() if "," in info else info
+        
+        # Puanlama: Dokunulmazlar 0 puan (en üst), diğerleri 1 puan
+        oncelik = 0 if any(d in url for d in DOKUNULMAZLAR) else 1
+        kanal_gruplari[k_adi].append((oncelik, info, url))
+
+    final_list = []
+    for k_adi in kanal_gruplari:
+        # Önce dokunulmazlara göre, sonra geliş sırasına göre diz ve İLK 6 TANEYİ AL
+        sirali = sorted(kanal_gruplari[k_adi], key=lambda x: x[0])[:6]
+        for _, info, url in sirali:
+            final_list.append(f"{info}\n{url}")
+
+    output = "#EXTM3U\n" + "\n".join(final_list)
     github_yukle(output)
-    print(f"✅ Bitti! {len(yeni_sonuclar)} yeni yedek D1'e ve GitHub'a eklendi.")
+    print(f"✅ İşlem Tamam! Her kanal için en iyi 6 yedek seçildi.")
 
 if __name__ == "__main__":
     update_m3u()
