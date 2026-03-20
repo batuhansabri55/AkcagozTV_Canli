@@ -2,12 +2,14 @@ name: IPTV Guncelleme
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
-  workflow_dispatch: # El ile başlatma butonu
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: # BU KISIM ÇOK ÖNEMLİ: Yazma izni verir
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -24,3 +26,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: python update_list.py
+
+      # SCRIPT BİTTİKTEN SONRA DEĞİŞİKLİKLERİ GARANTİYE AL
+      - name: Degisiklikleri Kaydet
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add tr.m3u
+          git commit -m "♻️ M3U Yedekleri Temizlendi ve Guncellendi" || exit 0
+          git push
