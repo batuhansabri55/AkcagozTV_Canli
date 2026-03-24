@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Dosyayı değiştirmek için bu şart!
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -22,13 +22,13 @@ jobs:
       - name: Gerekli Paketleri Kur
         run: pip install requests
         
-      - name: Botu Calistir (Dosyayi Hazirla)
-        run: python update_list.py
+      - name: Botu Calistir (Dosyayı Hazırla)
+        run: python update_list.py # Python sadece dosyayı oluşturacak
 
       - name: Degisiklikleri Kaydet (Push)
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add tr.m3u
           git commit -m "♻️ Liste Guncellendi" || exit 0
           git push
