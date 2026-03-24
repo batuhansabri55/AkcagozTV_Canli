@@ -1,15 +1,17 @@
 import requests
 import re
+import base64
 import os
 
 # --- AYARLAR ---
+GITHUB_TOKEN = os.getenv('GH_TOKEN') or os.getenv('GITHUB_TOKEN')
+REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-DOKUNULMAZLAR = [
-    "premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", 
-    "goldvod.site", "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"
-]
+# Senin asıl kanallarını tanıyan anahtar kelimeler (Zırhlı Liste)
+DOKUNULMAZLAR = ["premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", "goldvod.site", "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"]
 
+# 5300 LİNKİN GELDİĞİ 7 KAYNAK BURASI (YEDEKLER)
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -30,52 +32,59 @@ def isim_normalize(isim):
     return isim.strip()
 
 def main():
-    # 1. Mevcut dosyayı oku
-    if not os.path.exists(FILE_PATH):
-        print("❌ tr.m3u bulunamadı!")
+    # 1. GitHub'daki Mevcut Dosyayı Al (Rehber olarak kullanacağız)
+    url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    
+    r = requests.get(url, headers=headers)
+    if r.status_code != 200:
+        print("❌ Dosya okunamadı!")
         return
 
-    with open(FILE_PATH, 'r', encoding='utf-8') as f:
-        mevcut_icerik = f.read()
+    mevcut_icerik = base64.b64decode(r.json()['content']).decode('utf-8')
+    sha = r.json()['sha']
 
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
-    aranacak_kanallar = {}
+    aranacak_kanallar = set()
 
-    # Regex: Hem virgüllü hem virgülsüz satırları yakalar
     pattern = r"(#EXTINF:[^\n]+)\n+(https?://[^\s\n]+)"
-
-    # 2. Dokunulmazları (1800+ link) ayır
+    
+    # 2. ÖNCE: Senin mevcut listendeki dokunulmazları ayıkla ve isimlerini hafızaya al
     matches = re.findall(pattern, mevcut_icerik)
-    for info, url in matches:
-        link = url.strip()
+    for info, link in matches:
         if any(d in link.lower() for d in DOKUNULMAZLAR):
             yeni_liste.append(f"{info}\n{link}")
-            eklenen_linkler.add(link)
-            # İsim hafızası (Yedekler için)
-            ch_name = info.split(',')[-1] if ',' in info else info
-            temiz = isim_normalize(ch_name)
-            if temiz:
-                aranacak_kanallar[temiz] = ch_name.strip()
+            eklenen_linkler.add(link.strip())
+            # İsim normalize edip "aranacaklar" listesine ekle
+            name = info.split(',')[-1] if ',' in info else info
+            aranacak_kanallar.add(isim_normalize(name))
 
-    # 3. Yedeklerden sadece listedeki kanalları çek
+    print(f"📌 {len(aranacak_kanallar)} asıl kanal için yedekler taranıyor...")
+
+    # 3. SONRA: 7 Yedek Kaynağı Tara (Sadece senin listendekileri al)
     for s_url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(s_url, timeout=10)
-            for y_info, y_url in re.findall(pattern, r.text):
-                yl = y_url.strip()
-                yn = y_info.split(',')[-1] if ',' in y_info else y_info
-                y_temiz = isim_normalize(yn)
-                if y_temiz in aranacak_kanallar and yl not in eklenen_linkler:
+            res = requests.get(s_url, timeout=10)
+            y_matches = re.findall(pattern, res.text)
+            for y_info, y_link in y_matches:
+                yl = y_link.strip()
+                y_name = y_info.split(',')[-1] if ',' in y_info else y_info
+                # Eğer bu kanal senin asıl listende varsa ve link yeniyse ekle
+                if isim_normalize(y_name) in aranacak_kanallar and yl not in eklenen_linkler:
                     yeni_liste.append(f"{y_info}\n{yl}")
                     eklenen_linkler.add(yl)
         except: continue
 
-    # 4. Dosyayı yerel olarak kaydet (Git Push bunu GitHub'a yükleyecek)
-    with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.write("\n".join(yeni_liste))
+    # 4. GitHub'a Geri Bas
+    final_m3u = "\n".join(yeni_liste)
+    data = {"message": "♻️ Liste Güncellendi (5300 -> 2500 Filtreli)", "content": base64.b64encode(final_m3u.encode("utf-8")).decode("utf-8"), "sha": sha}
     
-    print(f"✅ Bitti! {len(eklenen_linkler)} link hazırlandı.")
+    update_r = requests.put(url, json=data, headers=headers)
+    if update_r.status_code in [200, 201]:
+        print(f"✅ Başarılı! Toplam {len(eklenen_linkler)} kanal/yedek yazıldı.")
+    else:
+        print(f"❌ Yazma hatası: {update_r.text}")
 
 if __name__ == "__main__":
     main()
