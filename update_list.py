@@ -9,7 +9,6 @@ REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
 # --- DOKUNULMAZ ADRESLER (Burası Asla Değişmez) ---
-# Bot her çalıştığında bu iki adresi en başa isimleriyle beraber ekler.
 DOKUNULMAZ_BLOK = """#EXTINF:-1,--- PREMIUM STREAM ---
 http://96587.premiumstream.in:80
 #EXTINF:-1,--- MYWIRE STREAM ---
@@ -46,20 +45,10 @@ def github_dosya_yaz(icerik, sha):
 
 def update_m3u():
     sha = github_dosya_oku()
-    
-    # Listeyi en baştan tertemiz oluşturuyoruz
-    # Önce M3U başlığı, sonra senin dokunulmazların
     final_liste = ["#EXTM3U", DOKUNULMAZ_BLOK]
-    
-    # Aynı linklerin tekrar etmemesi için kontrol kümesi
-    eklenen_linkler = {
-        "http://96587.premiumstream.in:80", 
-        "http://uro-levene-1012.mywire.org"
-    }
-
+    eklenen_linkler = {"http://96587.premiumstream.in:80", "http://uro-levene-1012.mywire.org"}
     pattern = r"(#EXTINF:[^\n]*),([^\n]*)\n(https?://[^\n]*)"
 
-    # Şimdi 7 kaynaktan gelen taze linkleri altına ekleyelim
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
@@ -70,12 +59,9 @@ def update_m3u():
                 if link not in eklenen_linkler:
                     final_liste.append(f"{ext_info},{ch_name.strip()}\n{link}")
                     eklenen_linkler.add(link)
-        except:
-            continue
+        except: continue
 
-    # Hazırlanan dev listeyi GitHub'a gönder
     github_dosya_yaz("\n".join(final_liste), sha)
-    print("🚀 İşlem Tamam! Dokunulmazlar en üstte, yedekler süzüldü.")
 
 if __name__ == "__main__":
     update_m3u()
