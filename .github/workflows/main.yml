@@ -1,14 +1,14 @@
-name: IPTV Guncelleme
+name: IPTV Dokunulmazlık Guncelleme
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
+  workflow_dispatch: # Manuel çalıştırma butonu
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: # BU KISIM ÇOK ÖNEMLİ: Yazma izni verir
+    permissions:
       contents: write
     steps:
       - name: Checkout
@@ -22,16 +22,13 @@ jobs:
       - name: Gerekli Paketleri Kur
         run: pip install requests
         
-      - name: Botu Calistir
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: python update_list.py
+      - name: Dokunulmazlik Süzgecini Çalıştır
+        run: python temizle.py # Burası bizim yeni süzgeci tetikler
 
-      # SCRIPT BİTTİKTEN SONRA DEĞİŞİKLİKLERİ GARANTİYE AL
       - name: Degisiklikleri Kaydet
         run: |
-          git config --global user.name "GitHub Action"
+          git config --global user.name "Hüseyin Akçagöz"
           git config --global user.email "action@github.com"
           git add tr.m3u
-          git commit -m "♻️ M3U Yedekleri Temizlendi ve Guncellendi" || exit 0
+          git commit -m "♻️ Liste Süzüldü: 2995 Dokunulmaz Kanal Yayında" || exit 0
           git push
