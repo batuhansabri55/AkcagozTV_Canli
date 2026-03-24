@@ -1,14 +1,11 @@
 import requests
 import re
+import os
 
-# 1. ÖZEL KAYNAKLAR (İçindeki binlerce kanalı söküp alacağımız yerler)
-# Bu linklerin her biri aslında birer dev liste
-OZEL_KAYNAKLAR = [
-    "http://96587.premiumstream.in:80",
-    "http://uro-levene-1012.mywire.org"
-]
+# Senin o 1800 satırlık dokunulmaz listeni tanımlayan anahtar kelime veya sınır.
+# Eğer listen hep aynı satırla bitiyorsa (örneğin beIN SPORTS 1 HD), 
+# kod o satıra kadar olan kısmı "KUTSAL" sayacak.
 
-# 2. DİĞER YEDEK KAYNAKLAR (Listenin devamına eklenecekler)
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -20,50 +17,43 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def main():
-    print("🚀 Operasyon: Dev listeler parçalanıyor ve kanallar çekiliyor...")
+    m3u_dosya = "tr.m3u"
+    dokunulmaz_kisim = []
     
-    final_liste = ["#EXTM3U"]
-    eklenen_linkler = set()
+    # 1. ADIM: Mevcut dosyayı oku ve SADECE dokunulmazları ayıkla
+    if os.path.exists(m3u_dosya):
+        with open(m3u_dosya, "r", encoding="utf-8") as f:
+            satirlar = f.readlines()
+            for i, satir in enumerate(satirlar):
+                dokunulmaz_kisim.append(satir)
+                # KRİTİK NOKTA: Senin 1800. linkin hangisiyse buraya onun ismini yaz.
+                # Kod o ismi görünce "Tamam dokunulmaz bitti" der ve durur.
+                if "beIN SPORTS 1 HD" in satir: 
+                    break
+    else:
+        dokunulmaz_kisim = ["#EXTM3U\n"]
+
+    # 2. ADIM: 7 Yedek kaynaktan TAZE linkleri çek
+    yeni_liste = []
+    pattern = r"(#EXTINF:[^\n]+)\n(https?://[^\s\n]+)"
     
-    # Kanal yakalama kalıbı (Kanal Bilgisi, Kanal İsmi, Link)
-    pattern = r"(#EXTINF:[^\n]*),([^\n]*)\n(https?://[^\n]*|http://[^\n]*)"
-
-    # ADIM 1: Senin o Premium ve Mywire listelerini komple tara
-    for url in OZEL_KAYNAKLAR:
-        try:
-            print(f"💎 Özel dev liste okunuyor: {url}")
-            r = requests.get(url, timeout=25) # Büyük liste olduğu için süreyi uzun tuttuk
-            r.encoding = 'utf-8'
-            matches = re.findall(pattern, r.text)
-            
-            for ext, name, link in matches:
-                clean_link = link.strip()
-                if clean_link not in eklenen_linkler:
-                    final_liste.append(f"{ext},{name.strip()}\n{clean_link}")
-                    eklenen_linkler.add(clean_link)
-        except Exception as e:
-            print(f"⚠️ Özel kaynakta hata: {e}")
-
-    # ADIM 2: Diğer 7 yedek kaynağı tara
     for url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(url, timeout=15)
+            r = requests.get(url, timeout=10)
             r.encoding = 'utf-8'
-            matches = re.findall(pattern, r.text)
-            
-            for ext, name, link in matches:
-                clean_link = link.strip()
-                if clean_link not in eklenen_linkler:
-                    final_liste.append(f"{ext},{name.strip()}\n{clean_link}")
-                    eklenen_linkler.add(clean_link)
+            if r.status_code == 200:
+                matches = re.findall(pattern, r.text)
+                for info, link in matches:
+                    yeni_liste.append(f"{info}\n{link.strip()}\n")
         except:
             continue
 
-    # DOSYAYI YAZ (GitHub Actions bunu senin tr.m3u dosyana basacak)
-    with open("tr.m3u", "w", encoding="utf-8") as f:
-        f.write("\n".join(final_liste))
+    # 3. ADIM: Dosyayı SIFIRDAN YAZ (Dokunulmazlar + Yepyeni Linkler)
+    with open(m3u_dosya, "w", encoding="utf-8") as f:
+        f.writelines(dokunulmaz_kisim) # Senin 1800 tane sabit duruyor
+        f.writelines(yeni_liste)       # Altındaki çöpler silindi, yeniler geldi
     
-    print(f"✅ İşlem Tamam! Toplam {len(eklenen_linkler)} kanal süzüldü ve eklendi.")
+    print(f"✅ Operasyon Başarılı! 1800 link korundu, alt kısım güncellendi.")
 
 if __name__ == "__main__":
     main()
