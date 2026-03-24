@@ -8,16 +8,14 @@ GITHUB_TOKEN = os.environ.get('GH_TOKEN')
 REPO_NAME = "batuhansabri55/AkcagozTV_Canli"
 FILE_PATH = "tr.m3u"
 
-# --- BURASI DOKUNULMAZ ALAN ---
-# Bu linkler her zaman listenin en başında duracak
-DOKUNULMAZ_LISTE = """
-#EXTINF:-1,--- ÖZEL YAYIN 1 ---
+# --- DOKUNULMAZ ADRESLER (Burası Asla Değişmez) ---
+# Bot her çalıştığında bu iki adresi en başa isimleriyle beraber ekler.
+DOKUNULMAZ_BLOK = """#EXTINF:-1,--- PREMIUM STREAM ---
 http://96587.premiumstream.in:80
-#EXTINF:-1,--- ÖZEL YAYIN 2 ---
-http://uro-levene-1012.mywire.org
-"""
+#EXTINF:-1,--- MYWIRE STREAM ---
+http://uro-levene-1012.mywire.org"""
 
-# Yedeklerin çekileceği 7 kaynak
+# Yedeklerin çekileceği 7 güncel kaynak
 YEDEK_KAYNAKLAR = [
     "https://mth.tc/DsGo",
     "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
@@ -33,30 +31,35 @@ def github_dosya_oku():
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     r = requests.get(url, headers=headers)
     if r.status_code == 200:
-        content = base64.b64decode(r.json()['content']).decode('utf-8')
-        return content, r.json()['sha']
-    return "", None
+        return r.json()['sha']
+    return None
 
 def github_dosya_yaz(icerik, sha):
     url = f"https://api.github.com/repos/{REPO_NAME}/contents/{FILE_PATH}"
     headers = {"Authorization": f"token {GITHUB_TOKEN}", "Accept": "application/vnd.github.v3+json"}
     data = {
-        "message": "🛡️ Dokunulmazlar El ile Eklendi + Yedekler Güncellendi",
+        "message": "🛡️ Dokunulmazlar Başa Çakıldı + Yedekler Güncellendi",
         "content": base64.b64encode(icerik.encode("utf-8")).decode("utf-8"),
         "sha": sha
     }
     requests.put(url, json=data, headers=headers)
 
 def update_m3u():
-    _, sha = github_dosya_oku()
+    sha = github_dosya_oku()
     
-    # Listeyi Dokunulmazlarla başlatıyoruz
-    final_liste = ["#EXTM3U", DOKUNULMAZ_LISTE.strip()]
-    eklenen_linkler = set(["http://96587.premiumstream.in:80", "http://uro-levene-1012.mywire.org"])
+    # Listeyi en baştan tertemiz oluşturuyoruz
+    # Önce M3U başlığı, sonra senin dokunulmazların
+    final_liste = ["#EXTM3U", DOKUNULMAZ_BLOK]
+    
+    # Aynı linklerin tekrar etmemesi için kontrol kümesi
+    eklenen_linkler = {
+        "http://96587.premiumstream.in:80", 
+        "http://uro-levene-1012.mywire.org"
+    }
 
     pattern = r"(#EXTINF:[^\n]*),([^\n]*)\n(https?://[^\n]*)"
 
-    # 7 Kaynaktan yeni linkleri topla
+    # Şimdi 7 kaynaktan gelen taze linkleri altına ekleyelim
     for s_url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(s_url, timeout=10)
@@ -70,9 +73,9 @@ def update_m3u():
         except:
             continue
 
-    # Dosyayı yaz
+    # Hazırlanan dev listeyi GitHub'a gönder
     github_dosya_yaz("\n".join(final_liste), sha)
-    print("🚀 Dokunulmazlar çivi gibi çakıldı, yedekler altına eklendi!")
+    print("🚀 İşlem Tamam! Dokunulmazlar en üstte, yedekler süzüldü.")
 
 if __name__ == "__main__":
     update_m3u()
