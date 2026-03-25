@@ -10,7 +10,7 @@ HEADERS = {
     'Referer': 'https://giniko.smartiptvworld.workers.dev/',
 }
 
-# Bu linkler asla silinmez, listenin başında kalır
+# Bu linkler asla silinmez, her zaman listenin en başında durur
 DOKUNULMAZLAR = [
     "premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", 
     "goldvod.site", "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"
@@ -23,7 +23,7 @@ YEDEK_KAYNAKLAR = [
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    "https://giniko.smartiptvworld.workers.dev" # Ana hedef burası
+    "https://giniko.smartiptvworld.workers.dev"
 ]
 
 def main():
@@ -37,10 +37,9 @@ def main():
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
 
-    # 1. Önce mevcut dosyandaki DOKUNULMAZ linkleri korumaya al
+    # 1. Mevcut dokunulmazları koru
     pattern = r"(#EXTINF:[^\n]+)\n+(https?://[^\s\n]+)"
     matches = re.findall(pattern, mevcut_icerik)
-    
     for info, url in matches:
         link = url.strip()
         if any(d in link.lower() for d in DOKUNULMAZLAR):
@@ -48,31 +47,29 @@ def main():
                 yeni_liste.append(f"{info}\n{link}")
                 eklenen_linkler.add(link)
 
-    # 2. Tüm kaynakları "filtresiz" tara
+    # 2. Kaynakları süpür (Filtresiz)
     for s_url in YEDEK_KAYNAKLAR:
         try:
             print(f"🌐 Kaynak taranıyor: {s_url}")
-            r = requests.get(s_url, headers=HEADERS, timeout=25)
+            r = requests.get(s_url, headers=HEADERS, timeout=30)
             if r.status_code != 200: continue
 
             count = 0
             if "giniko" in s_url:
-                # Giniko'daki tüm m3u8 linklerini ve yanındaki isimleri filtrelemeden al
-                # Regex: Hem linki hem de tırnak içindeki ismi yakalar
-                g_matches = re.findall(r'["\'](https?://[^"\']+m3u8[^"\']*)["\'].*?["\']([^"\']+)["\']', r.text)
+                # GINIKO ÖZEL: Sayfadaki her türlü m3u8 linkini ve çevresindeki metni yakala
+                # playStream('link', 'isim') veya "link", "isim" fark etmez
+                all_links = re.findall(r'(https?://[^\s\'"<>]+m3u8[^\s\'"<>]*).*?([A-Za-z0-9\s\-]{3,20})', r.text)
                 
-                # Eğer standart yapı yoksa onclick/playStream yapısını dene
-                if not g_matches:
-                    g_matches = re.findall(r"playStream\('([^']+)','([^']+)'\)", r.text)
-
-                for yl, yn in g_matches:
+                for yl, yn in all_links:
                     yl = yl.strip()
                     if yl not in eklenen_linkler:
-                        yeni_liste.append(f'#EXTINF:-1 group-title="GINIKO_FULL",{yn.strip()}\n{yl}')
+                        # Gereksiz karakterleri temizle
+                        clean_name = re.sub(r'[^A-Za-z0-9\s\-]', '', yn).strip()
+                        yeni_liste.append(f'#EXTINF:-1 group-title="GINIKO_ALL",{clean_name if clean_name else "KANAL"}\n{yl}')
                         eklenen_linkler.add(yl)
                         count += 1
             else:
-                # Diğer yedek m3u dosyalarındaki her şeyi al
+                # Standart m3u tarama
                 y_matches = re.findall(pattern, r.text)
                 for y_info, y_url in y_matches:
                     yl = y_url.strip()
@@ -84,11 +81,10 @@ def main():
         except Exception as e:
             print(f"⚠️ Hata: {str(e)}")
 
-    # 3. Dosyayı tamamen güncelle
+    # 3. Kaydet
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(yeni_liste))
-    
-    print(f"🚀 İŞLEM TAMAM! Toplam {len(yeni_liste)-1} kanal filtresiz kaydedildi.")
+    print(f"🚀 İŞLEM TAMAM! Toplam {len(yeni_liste)-1} kanal filtresiz olarak kaydedildi.")
 
 if __name__ == "__main__":
     main()
