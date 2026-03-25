@@ -6,11 +6,12 @@ import os
 FILE_PATH = "tr.m3u"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept': '*/*',
     'Referer': 'https://giniko.smartiptvworld.workers.dev/',
+    'Origin': 'https://giniko.smartiptvworld.workers.dev'
 }
 
-# Veri tabanındaki yapına göre dokunulmazlar (image_a854e7)
+# Veritabanındaki yapına sadık kalarak dokunulmazlar
 DOKUNULMAZLAR = [
     "premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", 
     "goldvod.site", "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"
@@ -23,7 +24,7 @@ YEDEK_KAYNAKLAR = [
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    "https://giniko.smartiptvworld.workers.dev" # Dinamik Kazıma Yapılacak
+    "https://giniko.smartiptvworld.workers.dev" # Giniko Akıllı Tarama
 ]
 
 def isim_normalize(isim):
@@ -31,7 +32,7 @@ def isim_normalize(isim):
     isim = isim.lower()
     tr_map = str.maketrans("çığöşü", "cigosu")
     isim = isim.translate(tr_map)
-    # Temizlik: Gereksiz her şeyi at (image_a85508'deki isim yapısına göre)
+    # Temizlik: Gereksiz ekleri ve sembolleri at
     isim = re.sub(r'\(.*?\)|\[.*?\]', '', isim)
     isim = re.sub(r'\|tr\||hd|fhd|sd|4k|canli|tr:|haber|ulusal|belgesel|fhd\+|fhd\+\+|tv|\-|\.|\:|\s+', '', isim)
     return isim
@@ -48,7 +49,7 @@ def main():
     eklenen_linkler = set()
     aranacak_kanallar = {}
 
-    # 1. Mevcut kanalları oku (D1 veritabanındaki alias yapısını simüle eder)
+    # 1. Mevcut kanalları işle ve dokunulmazları ayır
     pattern = r"(#EXTINF:[^\n]+)\n+(https?://[^\s\n]+)"
     matches = re.findall(pattern, mevcut_icerik)
     print(f"📊 Mevcut dosya: {len(matches)} kanal inceleniyor.")
@@ -58,7 +59,6 @@ def main():
         ch_name = info.split(',')[-1] if ',' in info else info
         temiz_isim = isim_normalize(ch_name)
         
-        # Dokunulmazları koru
         if any(d in link.lower() for d in DOKUNULMAZLAR):
             if link not in eklenen_linkler:
                 yeni_liste.append(f"{info}\n{link}")
@@ -71,26 +71,34 @@ def main():
     for s_url in YEDEK_KAYNAKLAR:
         try:
             print(f"🌐 Kaynak taranıyor: {s_url}")
-            r = requests.get(s_url, headers=HEADERS, timeout=20)
+            r = requests.get(s_url, headers=HEADERS, timeout=25)
             if r.status_code != 200: continue
 
             count = 0
             if "giniko" in s_url:
-                # Dinamik olarak oluşturulan playStream linklerini kaba kuvvetle yakala
-                # image_b32769'daki kanal isimleri ve link yapısını hedefler
-                g_matches = re.findall(r"['\"](https?://[^'\"]+m3u8[^'\"]*)['\"].*?['\"]([^'\"]+)['\"]", r.text)
-                if not g_matches:
-                    # Alternatif: onclick yapısından yakalama
-                    g_matches = re.findall(r"playStream\('([^']+)','([^']+)'\)", r.text)
+                # GINIKO ÖZEL: image_b3a327'den yakalanan mncdn yapısını arıyoruz
+                # Hem st= hem de e= parametrelerini içeren kompleks linkleri yakalar
+                g_matches = re.findall(r'["\'](https?://[^"\']+mncdn\.com/[^"\']+index\.m3u8\?st=[^"\']+)["\']', r.text)
                 
-                for yl, yn in g_matches:
+                # Eğer linkler doğrudan sayfada yoksa, JS değişkenlerini tara
+                if not g_matches:
+                    g_matches = re.findall(r'playStream\(\s*["\']([^"\']+)["\']\s*,\s*["\']([^"\']+)["\']', r.text)
+
+                for match in g_matches:
+                    if isinstance(match, tuple):
+                        yl, yn = match
+                    else:
+                        yl = match
+                        # Link içinden kanal adını tahmin etmeye çalış (dogusdyg_star -> star)
+                        yn = yl.split('/')[-3].replace('dogusdyg_', '').replace('_', ' ').upper()
+
                     y_temiz = isim_normalize(yn)
                     if y_temiz in aranacak_kanallar and yl not in eklenen_linkler:
-                        yeni_liste.append(f'#EXTINF:-1 group-title="YEDEK_GINIKO",{yn.strip()}\n{yl}')
+                        yeni_liste.append(f'#EXTINF:-1 group-title="YEDEK_GINIKO",{yn}\n{yl}')
                         eklenen_linkler.add(yl)
                         count += 1
             else:
-                # Standart M3U kaynakları
+                # Standart tarama
                 y_matches = re.findall(pattern, r.text)
                 for y_info, y_url in y_matches:
                     yl = y_url.strip()
@@ -101,8 +109,7 @@ def main():
                         eklenen_linkler.add(yl)
                         count += 1
             print(f"✅ {count} yeni link alındı.")
-        except Exception as e:
-            print(f"⚠️ Hata: {str(e)}")
+        except: pass
 
     # 3. Kaydet
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
