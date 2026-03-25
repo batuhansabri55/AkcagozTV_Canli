@@ -8,65 +8,66 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
-# SENİN BELİRLEDİĞİN 6 URL (SIRALAMA VE TAM İÇERİK GARANTİLİ)
+# SENİN GÜNCEL 7'Lİ SIRALAMAN (HİÇBİRİNDE KOTA YOK)
 YEDEK_KAYNAKLAR = [
-    "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
-    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
-    "https://mth.tc/DsGo",
-    "https://publiciptv.com/countries/tr/m3u",
-    "https://iptv-org.github.io/iptv/countries/tr.m3u"
+    "https://streams.uzunmuhalefet.com/lists/tr.m3u",             # 1. Sırada
+    "https://onureroz.com/indirmeler/turk/all.m3u",              # 2. Sırada (YENİ)
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u", # 3. Sırada
+    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8", # 4. Sırada
+    "https://mth.tc/DsGo",                                       # 5. Sırada
+    "https://publiciptv.com/countries/tr/m3u",                   # 6. Sırada
+    "https://iptv-org.github.io/iptv/countries/tr.m3u"           # 7. Sırada
 ]
 
 def main():
     if not os.path.exists(FILE_PATH):
-        print(f"❌ Hata: {FILE_PATH} dosyası dizinde bulunamadı!")
+        print(f"❌ Hata: {FILE_PATH} bulunamadı!")
         return
 
-    # 1. ADIM: İLK 3963 SATIRI KORUMAYA AL (KUTSAL BÖLGE)
+    # 1. ADIM: İLK 3963 SATIRI AYIR VE KORU
     with open(FILE_PATH, 'r', encoding='utf-8') as f:
         tum_eski_satirlar = f.readlines()
 
+    # 3963 satır senin özel "Kutsal Bölgen"
     dokunulmaz_bolge = tum_eski_satirlar[:3963]
-    print(f"🛡️  İLK 3963 SATIR MÜHÜRLENDİ. DEĞİŞİKLİK YAPILMAYACAK.")
+    print(f"🛡️  İLK 3963 SATIR MÜHÜRLENDİ. BU KISIM ASLA DEĞİŞMEZ.")
 
-    # 2. ADIM: 6 KAYNAKTAN TÜM KANALLARI SIRASIYLA TOPLA
+    # 2. ADIM: 7 KAYNAKTAN TÜM KANALLARI SIRASIYLA ÇEK
     taze_kanal_listesi = []
     
     for url in YEDEK_KAYNAKLAR:
         try:
-            print(f"🌐 Kaynak taranıyor: {url}")
+            print(f"🌐 Kaynak taranıyor ({YEDEK_KAYNAKLAR.index(url)+1}/7): {url}")
             r = requests.get(url, headers=HEADERS, timeout=35)
             if r.status_code == 200:
-                # M3U kanal bloklarını (Bilgi satırı + URL satırı) eksiksiz yakala
-                # Not: Tırpanlama veya mükerrer kontrolü yapmadan NE VARSA ALIR.
+                # Kanalları (INFO + URL) tırpanlamadan çek
                 kanallar = re.findall(r"(#EXTINF:[^\n]+\n+https?://[^\s\n]+)", r.text)
                 
                 if kanallar:
                     taze_kanal_listesi.extend(kanallar)
-                    print(f"✅ {len(kanallar)} kanalın tamamı sıraya eklendi.")
+                    print(f"✅ {len(kanallar)} kanalın tamamı alındı.")
                 else:
-                    print(f"⚠️  Uyarı: {url} adresinde uygun formatta kanal bulunamadı.")
+                    print(f"⚠️  Uyarı: {url} adresinde kanal bulunamadı.")
         except Exception as e:
             print(f"❌ Bağlantı hatası ({url}): {str(e)}")
 
-    # 3. ADIM: GITHUB ÜZERİNDEKİ DOSYAYI GÜNCELLE (YAZMA)
+    # 3. ADIM: 3963'TEN SONRASINI SİL VE YENİLERİ YAZ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce mühürlü 3963 satırı olduğu gibi yaz (Eskisi neyse o)
+        # Önce dokunulmaz kısmı yaz
         f.writelines(dokunulmaz_bolge)
         
-        # Eğer dosyanın son satırı alt satıra geçmiyorsa geçiş ekle
+        # Satır sonu kontrolü
         if dokunulmaz_bolge and not dokunulmaz_bolge[-1].endswith('\n'):
             f.write('\n')
             
-        # 3963'ten sonrasını silmiştik, şimdi taze kanalları sırasıyla ekle
+        # Sonra 7 URL'den gelen tüm kanalları altına ekle
         for kanal_blogu in taze_kanal_listesi:
             f.write(kanal_blogu + "\n")
 
-    print(f"🚀 İŞLEM BAŞARIYLA BİTTİ!")
+    print(f"🚀 GÜNCELLEME TAMAMLANDI!")
     print(f"📦 Korunan Sabit Satır: 3963")
-    print(f"➕ Eklenen Güncel Kanal: {len(taze_kanal_listesi)}")
-    print(f"📝 Sonuç: 3963 satırdan sonrası tamamen yenilendi ve GitHub'a hazır.")
+    print(f"➕ Toplam Yeni Kanal: {len(taze_kanal_listesi)}")
+    print(f"✅ Not: 2. sıraya onureroz.com eklendi.")
 
 if __name__ == "__main__":
     main()
