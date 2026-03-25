@@ -23,7 +23,7 @@ YEDEK_KAYNAKLAR = [
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    "https://giniko.smartiptvworld.workers.dev"
+    "https://giniko.smartiptvworld.workers.dev" # Hedef kaynak
 ]
 
 def main():
@@ -37,7 +37,7 @@ def main():
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
 
-    # 1. Mevcut dokunulmazları koru
+    # 1. Dokunulmazları koru
     pattern = r"(#EXTINF:[^\n]+)\n+(https?://[^\s\n]+)"
     matches = re.findall(pattern, mevcut_icerik)
     for info, url in matches:
@@ -47,7 +47,7 @@ def main():
                 yeni_liste.append(f"{info}\n{link}")
                 eklenen_linkler.add(link)
 
-    # 2. Kaynakları süpür (Filtresiz)
+    # 2. Kaynakları süpür
     for s_url in YEDEK_KAYNAKLAR:
         try:
             print(f"🌐 Kaynak taranıyor: {s_url}")
@@ -56,16 +56,23 @@ def main():
 
             count = 0
             if "giniko" in s_url:
-                # GINIKO ÖZEL: Sayfadaki her türlü m3u8 linkini ve çevresindeki metni yakala
-                # playStream('link', 'isim') veya "link", "isim" fark etmez
-                all_links = re.findall(r'(https?://[^\s\'"<>]+m3u8[^\s\'"<>]*).*?([A-Za-z0-9\s\-]{3,20})', r.text)
-                
-                for yl, yn in all_links:
+                # GINIKO ÖZEL: Sayfa içindeki TÜM gizli verileri tara
+                # Hem URL'leri hem de yanlarındaki kanal isimlerini yakalar
+                # 1. Klasik tırnak içindeki linkler
+                raw_matches = re.findall(r'["\'](https?://[^"\']+m3u8[^"\']*)["\']', r.text)
+                # 2. Kanal isimlerini bulmak için linklerin hemen öncesindeki metinleri tara
+                for yl in raw_matches:
                     yl = yl.strip()
                     if yl not in eklenen_linkler:
-                        # Gereksiz karakterleri temizle
-                        clean_name = re.sub(r'[^A-Za-z0-9\s\-]', '', yn).strip()
-                        yeni_liste.append(f'#EXTINF:-1 group-title="GINIKO_ALL",{clean_name if clean_name else "KANAL"}\n{yl}')
+                        # Linkin geçtiği yerin etrafındaki 50 karakterde isim ara
+                        context = re.search(f'(.{{1,50}}){re.escape(yl)}', r.text)
+                        yn = "GINIKO KANAL"
+                        if context:
+                            # Tırnaklar arasındaki metni temizleyip isim olarak al
+                            potential_name = re.findall(r'["\']([^"\']{3,20})["\']', context.group(1))
+                            if potential_name: yn = potential_name[-1]
+                        
+                        yeni_liste.append(f'#EXTINF:-1 group-title="GINIKO_FULL",{yn.strip()}\n{yl}')
                         eklenen_linkler.add(yl)
                         count += 1
             else:
@@ -84,7 +91,7 @@ def main():
     # 3. Kaydet
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(yeni_liste))
-    print(f"🚀 İŞLEM TAMAM! Toplam {len(yeni_liste)-1} kanal filtresiz olarak kaydedildi.")
+    print(f"🚀 İŞLEM TAMAM! Toplam {len(yeni_liste)-1} kanal filtresiz kaydedildi.")
 
 if __name__ == "__main__":
     main()
