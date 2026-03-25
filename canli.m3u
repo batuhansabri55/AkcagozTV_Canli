@@ -1,15 +1,15 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="showtv" group-title="Ulusal", Show TV
-https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=89xk7bondtdm&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
-#EXTINF:-1 tvg-id="tv8" group-title="Ulusal", TV8
-https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=89xk7fiixmyv&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
-#EXTINF:-1 tvg-id="atv" group-title="Ulusal", ATV
-https://trkvz-live.ercdn.net/atvhd/atvhd_1080p.m3u8?st=1hoWUYQ9wzWzcBp0fJrLxA&e=1774516389
-#EXTINF:-1 tvg-id="kanald" group-title="Ulusal", Kanal D
-https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=89xk7nvj5zfa&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
-#EXTINF:-1 tvg-id="now-tv" group-title="Ulusal", NOW TV
-https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1774528551&st=nyJ6ggXqIKj0-dC1fg05Vw
-#EXTINF:-1 tvg-id="a-haber" group-title="Ulusal", A Haber
-https://trkvz-live.ercdn.net/ahaberhd/ahaberhd_720p.m3u8?st=JXBpEp7A4ip-j1p0sJYLoQ&e=1774516397
-#EXTINF:-1 tvg-id="teve2" group-title="Ulusal", Teve2
+#EXTINF:-1 tvg-id="showtv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/showtv.png" group-title="ULUSAL KANALLAR",Show TV
+https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=89xklupkb9pf&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
+#EXTINF:-1 tvg-id="tv8" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/tv8.png" group-title="ULUSAL KANALLAR",TV8
+https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=89xklyhwkg4k&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-id="atv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/atv.png" group-title="ULUSAL KANALLAR",ATV
+https://trkvz-live.ercdn.net/atvhd/atvhd_1080p.m3u8?st=7ScVqt8VbkqutwntW3MsmA&e=1774516661
+#EXTINF:-1 tvg-id="a-haber" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/a-haber.png" group-title="ULUSAL KANALLAR",A Haber
+https://trkvz-live.ercdn.net/ahaberhd/ahaberhd_720p.m3u8?st=qx8B4bIYAOEgrvjkdNNZXQ&e=1774516663
+#EXTINF:-1 tvg-id="kanald" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/kanald.png" group-title="ULUSAL KANALLAR",Kanal D
+https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=89xkm8oedw4k&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
+#EXTINF:-1 tvg-id="now-tv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/now-tv.png" group-title="ULUSAL KANALLAR",NOW TV
+https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1774528851&st=drEHQI3DnJv10cFdjSpkZw
+#EXTINF:-1 tvg-id="teve2" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/teve2.png" group-title="ULUSAL KANALLAR",Teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/track_4_1000/playlist.m3u8
