@@ -1,34 +1,32 @@
-name: IPTV Guncelleme
-
+name: IPTV_Guncelleme
 on:
-  schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Manuel calistirma butonu
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  run_bot:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Dosyayı değiştirmek için bu şart!
     steps:
-      - name: Checkout
+      - name: Kodlari Cek
         uses: actions/checkout@v3
-        
-      - name: Python Kur
+
+      - name: Python Hazirla
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-          
-      - name: Gerekli Paketleri Kur
-        run: pip install requests
-        
-      - name: Botu Calistir (Dosyayı Hazırla)
-        run: python update_list.py # Python sadece dosyayı oluşturacak
 
-      - name: Degisiklikleri Kaydet (Push)
+      - name: Streamlink Yukle
+        run: pip install streamlink
+
+      - name: Botu Calistir
+        run: python update_list.py
+
+      - name: Kaydet ve Yukle
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add tr.m3u
-          git commit -m "♻️ Liste Guncellendi" || exit 0
+          git config --local user.name "github-actions"
+          git config --local user.email "action@github.com"
+          git add .
+          git commit -m "Kanallar Guncellendi" || exit 0
           git push
