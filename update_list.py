@@ -25,12 +25,12 @@ def isim_normalize(isim):
     isim = isim.lower()
     tr_map = str.maketrans("çığöşü", "cigosu")
     isim = isim.translate(tr_map)
-    isim = re.sub(r'\|tr\||hd|fhd|sd|4k|canli|tr:|haber|ulusal|belgesel', '', isim)
+    # Gereksiz ekleri temizle
+    isim = re.sub(r'\|tr\||hd|fhd|sd|4k|canli|tr:|haber|ulusal|belgesel|fhd\+|fhd\+\+', '', isim)
     isim = re.sub(r'[^a-z0-9]', '', isim)
     return isim.strip()
 
 def main():
-    # 1. Mevcut dosyayı oku
     if not os.path.exists(FILE_PATH):
         print("❌ tr.m3u bulunamadı!")
         return
@@ -40,42 +40,55 @@ def main():
 
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
-    aranacak_kanallar = {}
+    korunacak_kanal_isimleri = {}
 
-    # Regex: Hem virgüllü hem virgülsüz satırları yakalar
+    # Regex: M3U formatını yakalamak için
     pattern = r"(#EXTINF:[^\n]+)\n+(https?://[^\s\n]+)"
 
-    # 2. Dokunulmazları (1800+ link) ayır
+    # 1. ADIM: Dokunulmazları ayır ve koru
     matches = re.findall(pattern, mevcut_icerik)
     for info, url in matches:
         link = url.strip()
+        # Kanal ismini çek (virgülden sonrası)
+        ch_name = info.split(',')[-1] if ',' in info else info
+        temiz_isim = isim_normalize(ch_name)
+        
         if any(d in link.lower() for d in DOKUNULMAZLAR):
             yeni_liste.append(f"{info}\n{link}")
             eklenen_linkler.add(link)
-            # İsim hafızası (Yedekler için)
-            ch_name = info.split(',')[-1] if ',' in info else info
-            temiz = isim_normalize(ch_name)
-            if temiz:
-                aranacak_kanallar[temiz] = ch_name.strip()
+        
+        # Dokunulmaz olsun olmasın, elimizdeki tüm kanal isimlerini yedeklerde aramak için listeye alıyoruz
+        if temiz_isim:
+            korunacak_kanal_isimleri[temiz_isim] = ch_name.strip()
 
-    # 3. Yedeklerden sadece listedeki kanalları çek
+    print(f"✅ {len(yeni_liste)-1} adet dokunulmaz link korundu.")
+
+    # 2. ADIM: Yedeklerden güncel linkleri çek
     for s_url in YEDEK_KAYNAKLAR:
         try:
+            print(f"🌐 Kaynak taranıyor: {s_url}")
             r = requests.get(s_url, timeout=10)
+            if r.status_code != 200: continue
+            
             for y_info, y_url in re.findall(pattern, r.text):
                 yl = y_url.strip()
                 yn = y_info.split(',')[-1] if ',' in y_info else y_info
                 y_temiz = isim_normalize(yn)
-                if y_temiz in aranacak_kanallar and yl not in eklenen_linkler:
+                
+                # Eğer bu kanal bizim listemizde varsa ve link daha önce eklenmemişse ekle
+                if y_temiz in korunacak_kanal_isimleri and yl not in eklenen_linkler:
+                    # Orijinal isim bilgisini veya yedektekini kullanabilirsin
                     yeni_liste.append(f"{y_info}\n{yl}")
                     eklenen_linkler.add(yl)
-        except: continue
+        except Exception as e:
+            print(f"⚠️ Hata: {s_url} çekilemedi.")
+            continue
 
-    # 4. Dosyayı yerel olarak kaydet (Git Push bunu GitHub'a yükleyecek)
+    # 3. ADIM: Dosyayı tamamen temizleyip yeni haliyle yaz
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(yeni_liste))
     
-    print(f"✅ Bitti! {len(eklenen_linkler)} link hazırlandı.")
+    print(f"🚀 İşlem Tamam! Toplam {len(eklenen_linkler)} link ile dosya güncellendi.")
 
 if __name__ == "__main__":
     main()
