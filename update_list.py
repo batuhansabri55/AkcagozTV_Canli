@@ -8,7 +8,7 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
-# SENİN ATTIĞIN TAM SIRALAMA
+# SENİN BELİRLEDİĞİN 6'LI SIRALAMA
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",             # 1. Sırada
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u", # 2. Sırada
@@ -23,55 +23,58 @@ def main():
         print(f"❌ {FILE_PATH} bulunamadı!")
         return
 
-    # 1. DOSYAYI OKU VE İLK 2229 SATIRI KESİP AYIR
+    # 1. DOSYAYI OKU VE İLK 3963 SATIRI KİLİTLE
     with open(FILE_PATH, 'r', encoding='utf-8') as f:
         satirlar = f.readlines()
 
-    # İlk 2229 satır dokunulmaz "Kutsal Bölge"
-    dokunulmaz_bolge = satirlar[:2229]
-    print(f"🛡️  İlk 2229 satır ayrıldı ve koruma altına alındı.")
+    # Artık dokunulmaz sınırımız: 3963
+    dokunulmaz_bolge = satirlar[:3963]
+    print(f"🛡️  İLK 3963 SATIR MÜHÜRLENDİ. GOLD VOD VE ÖZEL LİSTEN GÜVENDE.")
 
-    # Mükerrer (çift) kanal olmaması için mevcut tüm linkleri bir hafızaya alalım
+    # Mükerrer kontrolü için mevcut tüm linkleri tara (3963 satır dahil)
     mevcut_metin = "".join(satirlar)
     eklenen_linkler = set(re.findall(r'https?://[^\s\n]+', mevcut_metin))
     
     yeni_eklenecekler = []
 
-    # 2. KAYNAKLARI SIRASIYLA TARA
+    # 2. KAYNAKLARI SIRASIYLA TARA (1'DEN 6'YA)
     for url in YEDEK_KAYNAKLAR:
         try:
-            print(f"🌐 Kaynak taranıyor: {url}")
-            r = requests.get(url, headers=HEADERS, timeout=20)
+            print(f"🌐 Kaynak taranıyor ({YEDEK_KAYNAKLAR.index(url)+1}/6): {url}")
+            r = requests.get(url, headers=HEADERS, timeout=25)
             if r.status_code == 200:
-                # Kanal bloğunu (EXTINF ve URL) beraber yakala
+                # Kanal bloklarını (EXTINF + URL) yakala
                 matches = re.findall(r"(#EXTINF:[^\n]+\n+https?://[^\s\n]+)", r.text)
                 sayac = 0
                 for blok in matches:
-                    # Blok içindeki linki bul
-                    link = re.search(r'https?://[^\s\n]+', blok).group(0).strip()
-                    # Eğer bu link listede (özellikle ilk 2229'da) yoksa listeye ekle
-                    if link not in eklenen_linkler:
-                        yeni_eklenecekler.append(blok)
-                        eklenen_linkler.add(link)
-                        sayac += 1
-                print(f"✅ {sayac} yeni kanal alındı.")
-        except:
-            print(f"⚠️  Bağlantı hatası: {url}")
+                    link_match = re.search(r'https?://[^\s\n]+', blok)
+                    if link_match:
+                        link = link_match.group(0).strip()
+                        # Link senin 3963 satırlık kilitli bölgende yoksa ekle
+                        if link not in eklenen_linkler:
+                            yeni_eklenecekler.append(blok)
+                            eklenen_linkler.add(link)
+                            sayac += 1
+                print(f"✅ {sayac} yeni kanal sıraya alındı.")
+        except Exception as e:
+            print(f"⚠️  Bağlantı hatası: {url} -> {str(e)}")
 
-    # 3. YAZMA AŞAMASI (KARIŞIKLIK OLMADAN)
+    # 3. YAZMA AŞAMASI (DÜZENLİ VE SIRALI)
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # ÖNCE DOKUNULMAZ 2229 SATIR
+        # ÖNCE KİLİTLİ 3963 SATIRI YAZ
         f.writelines(dokunulmaz_bolge)
         
-        # Eğer dosya sonu alt satıra geçmemişse geç
+        # Satır sonu kontrolü
         if dokunulmaz_bolge and not dokunulmaz_bolge[-1].endswith('\n'):
             f.write('\n')
             
-        # SONRA YENİ KANALLAR
+        # SONRA YENİ KANALLARI EKLE
         for kanal in yeni_eklenecekler:
             f.write(kanal + "\n")
 
-    print(f"🚀 BİTTİ! 2229 satır korundu, üzerine {len(yeni_eklenecekler)} yeni kanal eklendi.")
+    print(f"🚀 İŞLEM BAŞARIYLA TAMAMLANDI!")
+    print(f"📦 Korunan Satır Sayısı: 3963")
+    print(f"➕ Eklenen Yeni Kanal: {len(yeni_eklenecekler)}")
 
 if __name__ == "__main__":
     main()
