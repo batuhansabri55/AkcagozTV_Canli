@@ -17,13 +17,14 @@ DOKUNULMAZLAR = [
 ]
 
 YEDEK_KAYNAKLAR = [
-    "https://mth.tc/DsGo",
-    "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u",
+    "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
+    "https://mth.tc/DsGo",
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "https://streams.uzunmuhalefet.com/lists/tr.m3u"
+    "https://raw.githubusercontent.com/sultansmgr/smart/refs/heads/main/viziTV.m3u"
+    
 ]
 
 def isim_normalize(isim):
