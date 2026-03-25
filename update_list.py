@@ -22,7 +22,7 @@ YEDEK_KAYNAKLAR = [
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    "https://giniko.smartiptvworld.workers.dev"  # ÖZEL KAYNAK
+    "https://giniko.smartiptvworld.workers.dev"
 ]
 
 def isim_normalize(isim):
@@ -30,10 +30,9 @@ def isim_normalize(isim):
     isim = isim.lower()
     tr_map = str.maketrans("çığöşü", "cigosu")
     isim = isim.translate(tr_map)
-    # Gereksiz ekleri ve parantez içlerini temizle
+    # Temizlik: parantezler, hd/sd ekleri ve "tv" kelimesini temizle
     isim = re.sub(r'\(.*?\)|\[.*?\]', '', isim)
-    isim = re.sub(r'\|tr\||hd|fhd|sd|4k|canli|tr:|haber|ulusal|belgesel|fhd\+|fhd\+\+|tv', '', isim)
-    # Sadece harf ve rakam bırak
+    isim = re.sub(r'\|tr\||hd|fhd|sd|4k|canli|tr:|haber|ulusal|belgesel|fhd\+|fhd\+\+|tv|\-', '', isim)
     isim = re.sub(r'[^a-z0-9]', '', isim)
     return isim.strip()
 
@@ -49,10 +48,9 @@ def main():
     eklenen_linkler = set()
     aranacak_kanallar = {}
 
-    # Mevcut kanalları oku
+    # 1. Mevcut listeyi oku ve dokunulmazları ayır
     pattern = r"(#EXTINF:[^\n]+)\n+(https?://[^\s\n]+)"
     matches = re.findall(pattern, mevcut_icerik)
-    
     print(f"📊 Mevcut dosya: {len(matches)} kanal inceleniyor.")
 
     for info, url in matches:
@@ -60,7 +58,6 @@ def main():
         ch_name = info.split(',')[-1] if ',' in info else info
         temiz_isim = isim_normalize(ch_name)
         
-        # Dokunulmaz linkleri koru
         if any(d in link.lower() for d in DOKUNULMAZLAR):
             if link not in eklenen_linkler:
                 yeni_liste.append(f"{info}\n{link}")
@@ -69,49 +66,45 @@ def main():
         if temiz_isim:
             aranacak_kanallar[temiz_isim] = ch_name.strip()
 
-    # Yedek kaynakları tara
+    # 2. Yedek kaynakları tara
     for s_url in YEDEK_KAYNAKLAR:
         try:
             print(f"🌐 Kaynak taranıyor: {s_url}")
-            r = requests.get(s_url, headers=HEADERS, timeout=25, allow_redirects=True)
+            r = requests.get(s_url, headers=HEADERS, timeout=25)
             
             if r.status_code == 200:
                 count = 0
-                
-                # GINIKO ÖZEL TARAMA (HTML Kazıma)
+                # GINIKO İÇİN ÖZEL GENİŞ TARAMA
                 if "giniko" in s_url:
-                    # playStream('URL', 'NAME') yapısını yakala
-                    y_matches = re.findall(r"playStream\('([^']+)','([^']+)'\)", r.text)
-                    for yl, yn in y_matches:
+                    # Sitedeki tüm playStream('URL', 'İSİM') veya benzeri yapıları yakala
+                    # Bu regex hem tırnaklı hem tırnaksız yapıları deneyecek kadar esnektir
+                    g_matches = re.findall(r"playStream\s*\(\s*['\"]([^'\"]+)['\"]\s*,\s*['\"]([^'\"]+)['\"]\s*\)", r.text)
+                    for yl, yn in g_matches:
                         y_temiz = isim_normalize(yn)
                         if y_temiz in aranacak_kanallar and yl not in eklenen_linkler:
                             yeni_liste.append(f'#EXTINF:-1 group-title="YEDEK_GINIKO",{yn}\n{yl}')
                             eklenen_linkler.add(yl)
                             count += 1
-                
-                # STANDART M3U TARAMA
                 else:
+                    # Standart M3U taraması
                     y_matches = re.findall(pattern, r.text)
                     for y_info, y_url in y_matches:
                         yl = y_url.strip()
                         yn = y_info.split(',')[-1] if ',' in y_info else y_info
                         y_temiz = isim_normalize(yn)
-                        
                         if y_temiz in aranacak_kanallar and yl not in eklenen_linkler:
                             yeni_liste.append(f"{y_info}\n{yl}")
                             eklenen_linkler.add(yl)
                             count += 1
-                
                 print(f"✅ {count} yeni link alındı.")
             else:
-                print(f"⚠️ Bağlanılamadı (Kod: {r.status_code})")
+                print(f"⚠️ Hata: {r.status_code}")
         except Exception as e:
-            print(f"⚠️ Hata oluştu: {str(e)}")
+            print(f"⚠️ Bağlantı hatası: {str(e)}")
 
-    # Dosyayı kaydet
+    # 3. Dosyayı kaydet
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(yeni_liste))
-    
     print(f"🚀 İŞLEM TAMAM! Toplam {len(yeni_liste)-1} kanal güncellendi.")
 
 if __name__ == "__main__":
