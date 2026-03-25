@@ -6,11 +6,11 @@ import os
 FILE_PATH = "tr.m3u"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    'Accept': '*/*',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
     'Referer': 'https://giniko.smartiptvworld.workers.dev/',
 }
 
-# Bu linkler asla silinmez, her zaman listenin en başında durur
+# Dokunulmaz linkler - D1 veritabanı yapına göre
 DOKUNULMAZLAR = [
     "premiumstream.in", "workers.dev", "mywire.org", "token=DeaTHLesS", 
     "goldvod.site", "trt.com.tr", "turknet.ercdn.net", "daioncdn.net"
@@ -23,7 +23,7 @@ YEDEK_KAYNAKLAR = [
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    "https://giniko.smartiptvworld.workers.dev" # Hedef kaynak
+    "https://giniko.smartiptvworld.workers.dev" # Ana Hedef
 ]
 
 def main():
@@ -37,7 +37,7 @@ def main():
     yeni_liste = ["#EXTM3U"]
     eklenen_linkler = set()
 
-    # 1. Dokunulmazları koru
+    # 1. Dokunulmazları en başa ekle
     pattern = r"(#EXTINF:[^\n]+)\n+(https?://[^\s\n]+)"
     matches = re.findall(pattern, mevcut_icerik)
     for info, url in matches:
@@ -47,7 +47,7 @@ def main():
                 yeni_liste.append(f"{info}\n{link}")
                 eklenen_linkler.add(link)
 
-    # 2. Kaynakları süpür
+    # 2. Kaynakları tara
     for s_url in YEDEK_KAYNAKLAR:
         try:
             print(f"🌐 Kaynak taranıyor: {s_url}")
@@ -56,23 +56,23 @@ def main():
 
             count = 0
             if "giniko" in s_url:
-                # GINIKO ÖZEL: Sayfa içindeki TÜM gizli verileri tara
-                # Hem URL'leri hem de yanlarındaki kanal isimlerini yakalar
-                # 1. Klasik tırnak içindeki linkler
-                raw_matches = re.findall(r'["\'](https?://[^"\']+m3u8[^"\']*)["\']', r.text)
-                # 2. Kanal isimlerini bulmak için linklerin hemen öncesindeki metinleri tara
-                for yl in raw_matches:
+                # GINIKO ÖZEL: Sayfadaki TÜM .m3u8 içeren linkleri yakala
+                # image_b3a327'deki mncdn yapısını ve token parametrelerini hedefler
+                # Regex'i hem tırnaklı hem tırnaksız linkleri alacak şekilde genişlettim
+                raw_links = re.findall(r'https?://[^\s\'"<>]+m3u8[^\s\'"<>]*', r.text)
+                
+                for yl in raw_links:
                     yl = yl.strip()
                     if yl not in eklenen_linkler:
-                        # Linkin geçtiği yerin etrafındaki 50 karakterde isim ara
-                        context = re.search(f'(.{{1,50}}){re.escape(yl)}', r.text)
-                        yn = "GINIKO KANAL"
-                        if context:
-                            # Tırnaklar arasındaki metni temizleyip isim olarak al
-                            potential_name = re.findall(r'["\']([^"\']{3,20})["\']', context.group(1))
-                            if potential_name: yn = potential_name[-1]
+                        # Linkin hemen öncesindeki 100 karakterde isim ara
+                        pos = r.text.find(yl)
+                        context = r.text[max(0, pos-100):pos]
                         
-                        yeni_liste.append(f'#EXTINF:-1 group-title="GINIKO_FULL",{yn.strip()}\n{yl}')
+                        # İsimleri bulmak için yaygın HTML ve JS kalıplarını tara
+                        name_match = re.findall(r'["\']([^"\']{3,30})["\']', context)
+                        yn = name_match[-1] if name_match else "GINIKO KANAL"
+                        
+                        yeni_liste.append(f'#EXTINF:-1 group-title="GINIKO_ALL",{yn.strip()}\n{yl}')
                         eklenen_linkler.add(yl)
                         count += 1
             else:
