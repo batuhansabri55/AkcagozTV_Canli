@@ -1,18 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="showtv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/showtv.png" group-title="ULUSAL KANALLAR",Show TV
-https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=89xlrkoltcuy&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
-#EXTINF:-1 tvg-id="tv8" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/tv8.png" group-title="ULUSAL KANALLAR",TV8
-https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=89xlrnjisqh7&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
-#EXTINF:-1 tvg-id="kanald" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/kanald.png" group-title="ULUSAL KANALLAR",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=89xlrpi2l1qj&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
-#EXTINF:-1 tvg-id="now-tv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/now-tv.png" group-title="ULUSAL KANALLAR",NOW TV
-https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1774529751&st=ah7payAJUfSkQ0Lv2MQrmw
-#EXTINF:-1 tvg-id="atv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/atv.png" group-title="ULUSAL KANALLAR",ATV
-https://atv-live.daioncdn.net/atv/atv.m3u8
-#EXTINF:-1 tvg-id="star" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/star.png" group-title="ULUSAL KANALLAR",Star TV
-https://dogus-live.daioncdn.net/startv/startv.m3u8
-#EXTINF:-1 tvg-id="a-haber" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/a-haber.png" group-title="ULUSAL KANALLAR",A Haber
-https://ahaber-live.daioncdn.net/ahaber/ahaber.m3u8
+#EXTINF:-1 tvg-id="showtv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/showtv.png" group-title="ULUSAL", Show TV
+https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=89xm51jbu70m&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-id="tv8" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/tv8.png" group-title="ULUSAL", TV8
+https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=89xm545opj4w&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-id="kanald" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/kanald.png" group-title="ULUSAL", Kanal D
+https://dogus-live.daioncdn.net/kanald/kanald.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36&Referer=https://www.kanald.com.tr/
+#EXTINF:-1 tvg-id="now-tv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/now-tv.png" group-title="ULUSAL", NOW TV
+https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1774530052&st=414k0-tIKmn6OIBWyViA9g|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-id="atv" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/atv.png" group-title="ULUSAL", ATV
+https://atv-live.daioncdn.net/atv/atv.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-id="star" tvg-logo="https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/main/logos/logos/star.png" group-title="ULUSAL", Star TV
+https://dogus-live.daioncdn.net/startv/startv.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-id="4UTV.tr@SD",4U TV (720p)
 https://hls.4utv.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="24TV.tr@SD",24 TV (1080p)
