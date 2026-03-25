@@ -1,6 +1,7 @@
 import requests
 import re
 import os
+import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
@@ -24,12 +25,12 @@ def main():
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_eski_satirlar = f.readlines()
-            # Dosya 3963 satırdan kısaysa hepsini al, uzunsa sadece o sınırı al
+            # 3963 satır senin kutsal bölgendir
             limit = min(3963, len(tum_eski_satirlar))
             dokunulmaz_bolge = tum_eski_satirlar[:limit]
             print(f"🛡️  {len(dokunulmaz_bolge)} SATIR KORUMAYA ALINDI.")
     
-    # Dosya yoksa veya boşsa başlığı ekle
+    # Dosya yoksa veya bozuksa başlığı ekle
     if not dokunulmaz_bolge or not dokunulmaz_bolge[0].startswith("#EXTM3U"):
         dokunulmaz_bolge = ["#EXTM3U\n"]
         print("⚠️ tr.m3u baştan oluşturuldu.")
@@ -41,6 +42,7 @@ def main():
             print(f"🌐 Kaynak taranıyor ({index}/6): {url}")
             r = requests.get(url, headers=HEADERS, timeout=35)
             if r.status_code == 200:
+                # INFO ve URL bloklarını yakala
                 kanallar = re.findall(r"(#EXTINF:[^\n]+\n+https?://[^\s\n]+)", r.text)
                 if kanallar:
                     taze_kanal_listesi.extend(kanallar)
@@ -50,13 +52,22 @@ def main():
 
     # 3. ADIM: DOSYAYI YAZ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
+        # Önce sabit satırları yaz
         f.writelines(dokunulmaz_bolge)
+        
+        # Satır sonu kontrolü
         if dokunulmaz_bolge and not dokunulmaz_bolge[-1].endswith('\n'):
             f.write('\n')
+            
+        # Taze kanalları altına ekle
         for kanal_blogu in taze_kanal_listesi:
             f.write(kanal_blogu + "\n")
+            
+        # GÜNCELLEME İMZASI (GitHub'ın uyumamasını sağlar)
+        zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        f.write(f"\n# Son Guncelleme: {zaman}\n")
 
-    # Temizlik: canli.m3u varsa sil ki kirlilik yapmasın
+    # Temizlik
     if os.path.exists("canli.m3u"):
         os.remove("canli.m3u")
 
