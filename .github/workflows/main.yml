@@ -2,11 +2,11 @@ name: IPTV Otomatik Guncelleme
 
 on:
   schedule:
-    - cron: '0 */3 * * *' # Her 3 saatte bir otomatik calisir
-  workflow_dispatch:      # Manuel calistirma butonu ekler
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write         # Yazma yetkisi
+  contents: write
 
 jobs:
   build:
