@@ -11,12 +11,11 @@ HEADERS = {
 # SENİN GÜNCEL 7'Lİ SIRALAMAN (HİÇBİRİNDE KOTA YOK)
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",             # 1. Sırada
-    "https://onureroz.com/indirmeler/turk/all.m3u",              # 2. Sırada (YENİ)
-    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u", # 3. Sırada
-    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8", # 4. Sırada
-    "https://mth.tc/DsGo",                                       # 5. Sırada
-    "https://publiciptv.com/countries/tr/m3u",                   # 6. Sırada
-    "https://iptv-org.github.io/iptv/countries/tr.m3u"           # 7. Sırada
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u", # 2. Sırada
+    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8", # 3. Sırada
+    "https://mth.tc/DsGo",                                       # 4. Sırada
+    "https://publiciptv.com/countries/tr/m3u",                   # 5. Sırada
+    "https://iptv-org.github.io/iptv/countries/tr.m3u"           # 6. Sırada
 ]
 
 def main():
