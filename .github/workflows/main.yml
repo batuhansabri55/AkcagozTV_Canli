@@ -1,34 +1,38 @@
-name: IPTV Guncelleme
+name: IPTV Otomatik Guncelleme
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    - cron: '0 */3 * * *' # Her 3 saatte bir otomatik calisir
+  workflow_dispatch:      # Manuel calistirma butonu ekler
+
+permissions:
+  contents: write         # Yazma yetkisi (Dosyalarin güncellenmesi icin sart)
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Dosyayı değiştirmek için bu şart!
+
     steps:
-      - name: Checkout
+      - name: Depoyu Kopyala
         uses: actions/checkout@v3
-        
+
       - name: Python Kur
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-          
-      - name: Gerekli Paketleri Kur
-        run: pip install requests
-        
-      - name: Botu Calistir (Dosyayı Hazırla)
-        run: python update_list.py # Python sadece dosyayı oluşturacak
 
-      - name: Degisiklikleri Kaydet (Push)
+      - name: Bagimliliklari Yukle
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add tr.m3u
-          git commit -m "♻️ Liste Guncellendi" || exit 0
+          python -m pip install --upgrade pip
+          pip install streamlink
+
+      - name: Kanallari Guncelle
+        run: python update_list.py
+
+      - name: Degisiklikleri Kaydet ve Yukle
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Liste Guncellendi: $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
           git push
