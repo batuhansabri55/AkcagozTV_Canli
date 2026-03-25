@@ -8,73 +8,65 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
-# SENİN BELİRLEDİĞİN 6'LI SIRALAMA
+# SENİN BELİRLEDİĞİN 6 URL (SIRALAMA VE TAM İÇERİK GARANTİLİ)
 YEDEK_KAYNAKLAR = [
-    "https://streams.uzunmuhalefet.com/lists/tr.m3u",             # 1. Sırada
-    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u", # 2. Sırada
-    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8", # 3. Sırada
-    "https://mth.tc/DsGo",                                       # 4. Sırada
-    "https://publiciptv.com/countries/tr/m3u",                   # 5. Sırada
-    "https://iptv-org.github.io/iptv/countries/tr.m3u"           # 6. Sırada
+    "https://streams.uzunmuhalefet.com/lists/tr.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
+    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
+    "https://mth.tc/DsGo",
+    "https://publiciptv.com/countries/tr/m3u",
+    "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
 def main():
     if not os.path.exists(FILE_PATH):
-        print(f"❌ {FILE_PATH} bulunamadı!")
+        print(f"❌ Hata: {FILE_PATH} dosyası dizinde bulunamadı!")
         return
 
-    # 1. DOSYAYI OKU VE İLK 3963 SATIRI KİLİTLE
+    # 1. ADIM: İLK 3963 SATIRI KORUMAYA AL (KUTSAL BÖLGE)
     with open(FILE_PATH, 'r', encoding='utf-8') as f:
-        satirlar = f.readlines()
+        tum_eski_satirlar = f.readlines()
 
-    # Artık dokunulmaz sınırımız: 3963
-    dokunulmaz_bolge = satirlar[:3963]
-    print(f"🛡️  İLK 3963 SATIR MÜHÜRLENDİ. GOLD VOD VE ÖZEL LİSTEN GÜVENDE.")
+    dokunulmaz_bolge = tum_eski_satirlar[:3963]
+    print(f"🛡️  İLK 3963 SATIR MÜHÜRLENDİ. DEĞİŞİKLİK YAPILMAYACAK.")
 
-    # Mükerrer kontrolü için mevcut tüm linkleri tara (3963 satır dahil)
-    mevcut_metin = "".join(satirlar)
-    eklenen_linkler = set(re.findall(r'https?://[^\s\n]+', mevcut_metin))
+    # 2. ADIM: 6 KAYNAKTAN TÜM KANALLARI SIRASIYLA TOPLA
+    taze_kanal_listesi = []
     
-    yeni_eklenecekler = []
-
-    # 2. KAYNAKLARI SIRASIYLA TARA (1'DEN 6'YA)
     for url in YEDEK_KAYNAKLAR:
         try:
-            print(f"🌐 Kaynak taranıyor ({YEDEK_KAYNAKLAR.index(url)+1}/6): {url}")
-            r = requests.get(url, headers=HEADERS, timeout=25)
+            print(f"🌐 Kaynak taranıyor: {url}")
+            r = requests.get(url, headers=HEADERS, timeout=35)
             if r.status_code == 200:
-                # Kanal bloklarını (EXTINF + URL) yakala
-                matches = re.findall(r"(#EXTINF:[^\n]+\n+https?://[^\s\n]+)", r.text)
-                sayac = 0
-                for blok in matches:
-                    link_match = re.search(r'https?://[^\s\n]+', blok)
-                    if link_match:
-                        link = link_match.group(0).strip()
-                        # Link senin 3963 satırlık kilitli bölgende yoksa ekle
-                        if link not in eklenen_linkler:
-                            yeni_eklenecekler.append(blok)
-                            eklenen_linkler.add(link)
-                            sayac += 1
-                print(f"✅ {sayac} yeni kanal sıraya alındı.")
+                # M3U kanal bloklarını (Bilgi satırı + URL satırı) eksiksiz yakala
+                # Not: Tırpanlama veya mükerrer kontrolü yapmadan NE VARSA ALIR.
+                kanallar = re.findall(r"(#EXTINF:[^\n]+\n+https?://[^\s\n]+)", r.text)
+                
+                if kanallar:
+                    taze_kanal_listesi.extend(kanallar)
+                    print(f"✅ {len(kanallar)} kanalın tamamı sıraya eklendi.")
+                else:
+                    print(f"⚠️  Uyarı: {url} adresinde uygun formatta kanal bulunamadı.")
         except Exception as e:
-            print(f"⚠️  Bağlantı hatası: {url} -> {str(e)}")
+            print(f"❌ Bağlantı hatası ({url}): {str(e)}")
 
-    # 3. YAZMA AŞAMASI (DÜZENLİ VE SIRALI)
+    # 3. ADIM: GITHUB ÜZERİNDEKİ DOSYAYI GÜNCELLE (YAZMA)
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # ÖNCE KİLİTLİ 3963 SATIRI YAZ
+        # Önce mühürlü 3963 satırı olduğu gibi yaz (Eskisi neyse o)
         f.writelines(dokunulmaz_bolge)
         
-        # Satır sonu kontrolü
+        # Eğer dosyanın son satırı alt satıra geçmiyorsa geçiş ekle
         if dokunulmaz_bolge and not dokunulmaz_bolge[-1].endswith('\n'):
             f.write('\n')
             
-        # SONRA YENİ KANALLARI EKLE
-        for kanal in yeni_eklenecekler:
-            f.write(kanal + "\n")
+        # 3963'ten sonrasını silmiştik, şimdi taze kanalları sırasıyla ekle
+        for kanal_blogu in taze_kanal_listesi:
+            f.write(kanal_blogu + "\n")
 
-    print(f"🚀 İŞLEM BAŞARIYLA TAMAMLANDI!")
-    print(f"📦 Korunan Satır Sayısı: 3963")
-    print(f"➕ Eklenen Yeni Kanal: {len(yeni_eklenecekler)}")
+    print(f"🚀 İŞLEM BAŞARIYLA BİTTİ!")
+    print(f"📦 Korunan Sabit Satır: 3963")
+    print(f"➕ Eklenen Güncel Kanal: {len(taze_kanal_listesi)}")
+    print(f"📝 Sonuç: 3963 satırdan sonrası tamamen yenilendi ve GitHub'a hazır.")
 
 if __name__ == "__main__":
     main()
