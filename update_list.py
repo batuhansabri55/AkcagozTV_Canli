@@ -8,7 +8,7 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
-# SENİN BELİRLEDİĞİN SIRALAMA [Hiyerarşik Tarama]
+# SENİN ATTIĞIN TAM SIRALAMA
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",             # 1. Sırada
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u", # 2. Sırada
@@ -23,61 +23,55 @@ def main():
         print(f"❌ {FILE_PATH} bulunamadı!")
         return
 
-    # 1. DOSYAYI OKU VE İLK 2229 SATIRI AYIR (KUTSAL BÖLGE)
+    # 1. DOSYAYI OKU VE İLK 2229 SATIRI KESİP AYIR
     with open(FILE_PATH, 'r', encoding='utf-8') as f:
-        tum_satirlar = f.readlines()
+        satirlar = f.readlines()
 
-    # İlk 2229 satır dokunulmazdır
-    dokunulmaz_bolge = tum_satirlar[:2229]
-    print(f"🛡️  İLK 2229 SATIR KORUMA ALTINA ALINDI. BU BÖLGEYE DOKUNULMAYACAK.")
+    # İlk 2229 satır dokunulmaz "Kutsal Bölge"
+    dokunulmaz_bolge = satirlar[:2229]
+    print(f"🛡️  İlk 2229 satır ayrıldı ve koruma altına alındı.")
 
-    # Mükerrer kontrolü için mevcut tüm linkleri tara (ilk 2229 dahil)
-    mevcut_icerik_full = "".join(tum_satirlar)
-    eklenen_linkler = set(re.findall(r'https?://[^\s\n]+', mevcut_icerik_full))
+    # Mükerrer (çift) kanal olmaması için mevcut tüm linkleri bir hafızaya alalım
+    mevcut_metin = "".join(satirlar)
+    eklenen_linkler = set(re.findall(r'https?://[^\s\n]+', mevcut_metin))
     
-    yeni_kanallar = []
+    yeni_eklenecekler = []
 
-    # 2. KAYNAKLARI SENİN SIRALAMANA GÖRE TARA
-    for s_url in YEDEK_KAYNAKLAR:
+    # 2. KAYNAKLARI SIRASIYLA TARA
+    for url in YEDEK_KAYNAKLAR:
         try:
-            print(f"🌐 Kaynak taranıyor ({YEDEK_KAYNAKLAR.index(s_url)+1}/6): {s_url}")
-            r = requests.get(s_url, headers=HEADERS, timeout=25)
+            print(f"🌐 Kaynak taranıyor: {url}")
+            r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                # M3U formatındaki kanal bloklarını (Info + Link) yakala
+                # Kanal bloğunu (EXTINF ve URL) beraber yakala
                 matches = re.findall(r"(#EXTINF:[^\n]+\n+https?://[^\s\n]+)", r.text)
-                count = 0
+                sayac = 0
                 for blok in matches:
-                    # Linki ayıkla
-                    link_match = re.search(r'https?://[^\s\n]+', blok)
-                    if link_match:
-                        link = link_match.group(0).strip()
-                        # Eğer link ne dokunulmaz bölgede ne de yeni eklenenlerde yoksa ekle
-                        if link not in eklenen_linkler:
-                            yeni_kanallar.append(blok)
-                            eklenen_linkler.add(link)
-                            count += 1
-                print(f"✅ {count} yeni benzersiz kanal sıraya eklendi.")
-        except Exception as e:
-            print(f"⚠️  Kaynak hatası: {s_url} -> {str(e)}")
+                    # Blok içindeki linki bul
+                    link = re.search(r'https?://[^\s\n]+', blok).group(0).strip()
+                    # Eğer bu link listede (özellikle ilk 2229'da) yoksa listeye ekle
+                    if link not in eklenen_linkler:
+                        yeni_eklenecekler.append(blok)
+                        eklenen_linkler.add(link)
+                        sayac += 1
+                print(f"✅ {sayac} yeni kanal alındı.")
+        except:
+            print(f"⚠️  Bağlantı hatası: {url}")
 
-    # 3. DOSYAYI BİRLEŞTİR VE YAZ
-    # Önce dokunulmaz 2229 satır, sonra senin sıranla gelen yeni kanallar
+    # 3. YAZMA AŞAMASI (KARIŞIKLIK OLMADAN)
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Dokunulmaz bölgeyi olduğu gibi yaz
+        # ÖNCE DOKUNULMAZ 2229 SATIR
         f.writelines(dokunulmaz_bolge)
         
-        # Eğer dosya sonu boşlukla bitmiyorsa bir alt satıra geç
+        # Eğer dosya sonu alt satıra geçmemişse geç
         if dokunulmaz_bolge and not dokunulmaz_bolge[-1].endswith('\n'):
             f.write('\n')
             
-        # Yeni kanalları ekle
-        for kanal in yeni_kanallar:
+        # SONRA YENİ KANALLAR
+        for kanal in yeni_eklenecekler:
             f.write(kanal + "\n")
 
-    print(f"🚀 İŞLEM TAMAM!")
-    print(f"📦 Korunan Satır: 2229")
-    print(f"➕ Yeni Eklenen: {len(yeni_kanallar)} kanal.")
-    print(f"📂 Toplam satır sayısı güncellendi.")
+    print(f"🚀 BİTTİ! 2229 satır korundu, üzerine {len(yeni_eklenecekler)} yeni kanal eklendi.")
 
 if __name__ == "__main__":
     main()
