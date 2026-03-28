@@ -23,39 +23,47 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def kanal_temizle(metin):
-    """Kanal ismindeki sayıları, çözünürlükleri ve gereksiz etiketleri siler."""
+    """Kanal ismindeki sayıları, parantezli çözünürlükleri ve gereksiz etiketleri siler."""
     if "#EXTINF" in metin:
         parcalar = metin.rsplit(',', 1)
         if len(parcalar) > 1:
             bilgi = parcalar[0]
             isim = parcalar[1]
             
-            # 1. Başındaki "14. ", "1. " gibi sayıları siler
-            isim = re.sub(r'^[0-9]+\.?[ ]*', '', isim)
+            # 1. BAŞTAKİ SAYILARI SİL (14. , 1. , 01. vb.)
+            isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
             
-            # 2. Sonundaki (1080p), -YT, [FHD], HD, SD gibi takıları siler
-            # Büyük/küçük harf duyarsız (flags=re.I)
-            temizlik_reg = r'\s*(\([0-9]+[pP]?\)|-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b|\bUHD\b|\b4K\b)\s*$'
+            # 2. HER TÜRLÜ PARANTEZLİ ÇÖZÜNÜRLÜĞÜ SİL (576p, 720p, 1080p vb.)
+            # Sayı olsun olmasın parantez içindeki p'li yapıları ve düz sayıları süpürür
+            isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
+            
+            # 3. DİĞER ETİKETLERİ SİL (-YT, [FHD], HD, FHD, SD, 4K)
+            temizlik_reg = r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b|\bUHD\b|\b4K\b)\s*'
             isim = re.sub(temizlik_reg, '', isim, flags=re.I)
             
-            # 3. Çift boşlukları tek yapar ve kenarları kırpar
+            # 4. SON TEMİZLİK: Boşlukları onar
             isim = ' '.join(isim.split()).strip()
             
             return f"{bilgi},{isim}"
     return metin
 
 def main():
-    # 1. ADIM: KUTSAL 3963 SATIRI KORU
-    dokunulmaz_bolge = []
+    # 1. ADIM: KUTSAL SATIRLARI OKU VE ONLARI DA ÜTÜLE
+    temiz_dokunulmaz_bolge = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_satirlar = f.readlines()
             limit = min(3963, len(tum_satirlar))
-            dokunulmaz_bolge = tum_satirlar[:limit]
-            print(f"🛡️  {len(dokunulmaz_bolge)} SATIR KİLİTLENDİ.")
+            ham_bolge = tum_satirlar[:limit]
+            
+            # Burası çok önemli: Eski dosyadaki parantezleri de burada temizliyoruz
+            for satir in ham_bolge:
+                temiz_dokunulmaz_bolge.append(kanal_temizle(satir))
+            
+            print(f"🛡️  {len(temiz_dokunulmaz_bolge)} SATIR HEM KORUNDU HEM TEMİZLENDİ.")
 
-    if not dokunulmaz_bolge:
-        dokunulmaz_bolge = ["#EXTM3U\n"]
+    if not temiz_dokunulmaz_bolge:
+        temiz_dokunulmaz_bolge = ["#EXTM3U\n"]
 
     # 2. ADIM: ONLİNE KAYNAKLARI SÜZEREK ÇEK VE TEMİZLE
     taze_kanal_listesi = []
@@ -67,11 +75,9 @@ def main():
                 for kanal in bulunanlar:
                     kanal_satirlari = kanal.strip().split('\n')
                     if len(kanal_satirlari) >= 2:
-                        # İlk satırı (EXTINF) temizliyoruz
                         temiz_extinf = kanal_temizle(kanal_satirlari[0])
                         link = kanal_satirlari[1]
                         
-                        # TiviMate Grubu ekle (YEDEKLER)
                         if 'group-title="' not in temiz_extinf:
                             temiz_extinf = temiz_extinf.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
                         
@@ -81,20 +87,22 @@ def main():
 
     # 3. ADIM: YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(dokunulmaz_bolge)
+        # Önce temizlenen dokunulmaz bölgeyi yaz
+        f.writelines(temiz_dokunulmaz_bolge)
         
-        if not dokunulmaz_bolge[-1].endswith('\n'):
+        if temiz_dokunulmaz_bolge and not temiz_dokunulmaz_bolge[-1].endswith('\n'):
             f.write('\n')
         
         f.write("\n# --- ONLİNE OTOMATİK YEDEKLER BAŞLADI (TEMİZLENDİ) ---\n")
         
+        # Sonra yeni gelen yedekleri yaz
         for kanal in taze_kanal_listesi:
             f.write(kanal + "\n")
             
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 TOPLAM {len(taze_kanal_listesi)} YEDEK KANAL JİLET GİBİ EKLENDİ USTA!")
+    print(f"🚀 TOPLAM {len(taze_kanal_listesi)} YEDEK KANAL EKLENDİ USTA!")
 
 if __name__ == "__main__":
     main()
