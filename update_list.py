@@ -2,12 +2,14 @@ import requests
 import re
 import os
 import datetime
-from concurrent.futures import ThreadPoolExecutor
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+}
 
+# ONLINE KAYNAKLAR
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://tinyurl.com/ytpatron",
@@ -21,95 +23,82 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/main/lists/turkey.m3u8"
 ]
 
-# ALIAS SİSTEMİ (Tam Kelime Eşleşmesi İçin Hazır)
-ALIAS_MAP = {
-    "ATV": ["ATVHD 45", "ATVFHD 46"],
-    "TV8": ["TV8HD 30", "TV8FHD 31"],
-    "SHOW": ["SHOWTVHD 43", "SHOWTVFHD 42"],
-    "KANAL D": ["KANALDHD 39", "KANALDFHD 40"],
-    "STAR": ["STARTVHD 36", "STARTVFHD 37"],
-    "NOW": ["NowTVHD 34", "NowTVFHD 33"],
-    "TRT 1": ["TRT148", "TRT1337667"],
-    "TV8.5": ["TV85HD 27", "TV85FHD 28"],
-    "SZC": ["SZCTVHD 232355", "SZCTVFHD 144"]
-}
-
-global_counters = {k: 0 for k in ALIAS_MAP.keys()}
-
-def alias_belirle(ham_isim):
-    name = ham_isim.upper().strip()
-    
-    # TV8.5'u TV8'den önce kontrol etmeliyiz
-    if "TV8.5" in name or "TV 8.5" in name:
-        anahtar = "TV8.5"
-        idx = global_counters[anahtar] % len(ALIAS_MAP[anahtar])
-        yeni = ALIAS_MAP[anahtar][idx]
-        global_counters[anahtar] += 1
-        return yeni
-
-    for anahtar, varyasyonlar in ALIAS_MAP.items():
-        if anahtar == "TV8.5": continue # Yukarıda hallettik
-        
-        # Sadece TAM KELİME kontrolü (Sinema TV'yi korur)
-        if re.search(rf'\b{re.escape(anahtar)}\b', name):
-            idx = global_counters[anahtar] % len(varyasyonlar)
-            yeni = varyasyonlar[idx]
-            global_counters[anahtar] += 1
-            return yeni
-            
-    return ham_isim # Hiçbiri tutmazsa ismi olduğu gibi bırak (Sinema TV vb.)
-
-def link_kontrol_et(item):
-    ext, link = item
+def link_canli_mi(url):
+    """Linke hızlı bir HEAD isteği atarak çalışıp çalışmadığını kontrol eder."""
     try:
-        r = requests.head(link, headers=HEADERS, timeout=7, allow_redirects=True)
-        if r.status_code == 200:
-            return f"{ext}\n{link}"
-    except: pass
-    return None
+        # 5 saniye içinde cevap gelmezse ölü sayar. allow_redirects=True yönlendirmeleri takip eder.
+        r = requests.head(url, headers=HEADERS, timeout=5, allow_redirects=True)
+        return r.status_code == 200
+    except:
+        return False
+
+def kanal_temizle(metin):
+    """Sadece virgülden sonraki ismi temizler, logo ve link yapılarını bozmaz."""
+    if "#EXTINF" in metin and "," in metin:
+        parcalar = metin.rsplit(',', 1)
+        ayarlar = parcalar[0]
+        isim = parcalar[1]
+        
+        # Temizlik Regexleri
+        isim = re.sub(r'^[0-9\.\-\s]+', '', isim) # Baştaki sayılar
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim) # (1080p) vb.
+        isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', '', isim, flags=re.I) # Etiketler
+        
+        isim = ' '.join(isim.split()).strip()
+        return f"{ayarlar},{isim}"
+    return metin
 
 def main():
+    # 1. ADIM: DOKUNULMAZ BÖLGEYİ OKU
     temiz_dokunulmaz = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-            temiz_dokunulmaz = lines[:3963]
+            tum_satirlar = f.readlines()
+            limit = min(3963, len(tum_satirlar))
+            for satir in tum_satirlar[:limit]:
+                if satir.startswith("#EXTINF"):
+                    temiz_dokunulmaz.append(kanal_temizle(satir) + "\n")
+                else:
+                    temiz_dokunulmaz.append(satir)
 
-    kontrol_listesi = []
-    print("🔄 Yedekler toplanıyor ve Akıllı Alias atanıyor...")
+    # 2. ADIM: YEDEKLERİ ÇEK VE CANLI MI KONTROL ET
+    taze_kanal_listesi = []
+    print("🔄 Yedek kaynaklar taranıyor ve linkler kontrol ediliyor...")
+    
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                blocks = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
-                for b in blocks:
-                    parts = b.strip().split('\n')
-                    if len(parts) >= 2:
-                        ext_line = parts[0]
-                        link_url = parts[1].strip()
+                bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
+                for kanal in bulunanlar:
+                    satirlar = kanal.strip().split('\n')
+                    if len(satirlar) >= 2:
+                        ext_satiri = kanal_temizle(satirlar[0])
+                        link_satiri = satirlar[1].strip()
                         
-                        if "," in ext_line:
-                            meta, old_name = ext_line.rsplit(',', 1)
-                            new_name = alias_belirle(old_name.strip())
-                            final_ext = f"{meta},{new_name}"
-                            
-                            if 'group-title' not in final_ext:
-                                final_ext = final_ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
-                            
-                            kontrol_listesi.append((final_ext, link_url))
-        except: continue
+                        # KRİTİK KONTROL: Link çalışıyorsa ekle
+                        if link_canli_mi(link_satiri):
+                            if 'group-title="' not in ext_satiri:
+                                ext_satiri = ext_satiri.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
+                            taze_kanal_listesi.append(f"{ext_satiri}\n{link_satiri}")
+        except:
+            continue
 
-    print(f"⚡ {len(kontrol_listesi)} link kontrol ediliyor (Aynı anda 50 kanal)...")
-    with ThreadPoolExecutor(max_workers=50) as executor:
-        results = list(executor.map(link_kontrol_et, kontrol_listesi))
-    
+    # 3. ADIM: YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(temiz_dokunulmaz)
-        f.write("\n# --- AKILLI ALIAS YEDEKLERİ ---\n")
-        for res in results:
-            if res: f.write(res + "\n")
+        
+        if temiz_dokunulmaz and not temiz_dokunulmaz[-1].endswith('\n'):
+            f.write('\n')
+            
+        f.write("\n# --- ONAYLANMIŞ CANLI YEDEKLER BAŞLADI ---\n")
+        for k in taze_kanal_listesi:
+            f.write(k + "\n")
+        
+        zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        f.write(f"\n# SON OTOMATİK GÜNCELLEME: {zaman}\n")
 
-    print("🚀 Operasyon başarıyla bitti usta. Sinemalar kurtarıldı!")
+    print(f"🚀 İşlem bitti usta. {len(taze_kanal_listesi)} tane SAĞLAM yedek eklendi.")
 
 if __name__ == "__main__":
     main()
