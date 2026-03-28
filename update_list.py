@@ -12,6 +12,7 @@ HEADERS = {
 # SENİN 6'LI ANA LİSTEN + TAZE REPOLAR
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
+    "https://tinyurl.com/ytpatron",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://mth.tc/DsGo",
