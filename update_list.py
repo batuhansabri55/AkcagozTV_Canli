@@ -21,7 +21,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def kanal_temizle(metin):
-    """Kanal D'yi korur, sadece sonuna eklenmiş -A, -B, -C, -D gibi takıları siler."""
+    """Kanal D, TV 8, Kanal 7 gibi isimleri ASLA bozmaz. Sadece -A, -B gibi takıları siler."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
@@ -30,71 +30,69 @@ def kanal_temizle(metin):
         # 1. Baştaki gereksiz sayı/nokta temizliği
         isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
         
-        # 2. KRİTİK AYAR: Sadece önünde TİRE olan tek harfli takıları sil (-A, -B, -C, -D)
-        # Eğer "Kanal D" yazıyorsa (önünde tire yok), D harfi kalır.
-        # Eğer "TRT 1 -A" yazıyorsa (önünde tire var), -A kısmı silinir.
-        isim = re.sub(r'\s*\-\s*[A-Z0-9]\b', '', isim, flags=re.I)
+        # 2. HEDEF: Sadece önünde TİRE olan tek harfli takılar (-A, -B, -C, -D)
+        # "\s+\-[A-Z]\b" -> Boşluk + Tire + Tek Harf demektir. 
+        # Bu kural "Kanal D" içindeki D'yi silmez çünkü D'nin önünde tire yok.
+        isim = re.sub(r'\s+\-+[A-Z0-9]\b', '', isim, flags=re.I)
         
-        # 3. İsteğe bağlı: İki tire arasındakileri de sil (-A-)
-        isim = re.sub(r'\s*\-\s*[A-Z0-9]\s*\-\s*', ' ', isim, flags=re.I)
+        # 3. İki tire arasındaki harfleri de siler (-A-, -B-)
+        isim = re.sub(r'\s*\-+[A-Z0-9]\-+\s*', ' ', isim, flags=re.I)
         
-        # 4. HD, FHD ve Çözünürlük parantezlerini temizle
+        # 4. Standart etiket temizliği (HD, FHD, SD ve parantezli çözünürlükler)
         isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
         isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', ' ', isim, flags=re.I)
         
-        # 5. Boşlukları toparla
+        # 5. Son toparlama
         isim = ' '.join(isim.split()).strip()
         
-        # Eğer temizlik sonrası isim boş kalırsa veya çok kısalırsa "Kanal" yazmasın diye 
-        # orijinal isme (Kanal D gibi) geri dönme emniyeti:
-        if len(isim) < 2 and "D" in parcalar[1].upper():
-            return f"{ayarlar},{parcalar[1].strip()}"
+        # EMNİYET SİBİBİ: Eğer isim temizlik sonrası sadece "Kanal" kalmışsa orijinaline dön
+        if isim.lower() == "kanal" and "D" in parcalar[1].upper():
+            return f"{ayarlar},Kanal D"
             
         return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    # 1. DOKUNULMAZ BÖLGE (3963 SATIR)
+    # 1. DOKUNULMAZ BÖLGEYİ KORU
     temiz_dokunulmaz = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
-            tum_satirlar = f.readlines()
-            limit = min(3963, len(tum_satirlar))
-            for satir in tum_satirlar[:limit]:
-                if satir.startswith("#EXTINF"):
-                    temiz_dokunulmaz.append(kanal_temizle(satir) + "\n")
+            lines = f.readlines()
+            limit = min(3963, len(lines))
+            for s in lines[:limit]:
+                if s.startswith("#EXTINF"):
+                    temiz_dokunulmaz.append(kanal_temizle(s) + "\n")
                 else:
-                    temiz_dokunulmaz.append(satir)
+                    temiz_dokunulmaz.append(s)
 
-    # 2. YEDEKLERİ HIZLICA TOPLA
-    taze_kanal_listesi = []
-    print("🔄 Kanallar temizleniyor... Kanal D korunuyor.")
+    # 2. YEDEKLERİ TOPLA (HIZLI MOD)
+    taze_list = []
+    print("🔄 Kanal D koruma modu aktif. Yedekler çekiliyor...")
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
-                for kanal in bulunanlar:
-                    satir = kanal.strip().split('\n')
-                    if len(satir) >= 2:
-                        ext = kanal_temizle(satir[0])
-                        link = satir[1].strip()
+                blocks = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
+                for b in blocks:
+                    s = b.strip().split('\n')
+                    if len(s) >= 2:
+                        ext = kanal_temizle(s[0])
                         if 'group-title="' not in ext:
                             ext = ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
-                        taze_kanal_listesi.append(f"{ext}\n{link}")
+                        taze_list.append(f"{ext}\n{s[1].strip()}")
         except: continue
 
     # 3. YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(temiz_dokunulmaz)
-        f.write("\n# --- KANAL D KORUMALI YEDEKLER ---\n")
-        for k in taze_kanal_listesi:
+        f.write("\n# --- KANAL D GARANTILI YEDEKLER ---\n")
+        for k in taze_list:
             f.write(k + "\n")
         
-        zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        f.write(f"\n# SON GUNCELLEME: {zaman}\n")
+        z = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        f.write(f"\n# SON GUNCELLEME: {z}\n")
 
-    print(f"🚀 İşlem bitti usta. Kanal D artık güvende!")
+    print(f"🚀 Tamamdır usta. Kanal D artık 'Kanal' değil, 'Kanal D'!")
 
 if __name__ == "__main__":
     main()
