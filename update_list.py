@@ -5,9 +5,7 @@ import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
-}
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
@@ -23,7 +21,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def kanal_temizle(metin):
-    """İsimdeki -A-, [B], (C), D gibi tüm tek harfli takıları ve etiketleri temizler."""
+    """Sadece -A-, -B-, -C-, -D- gibi iki tire arasındaki tek harfleri siler."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
@@ -32,21 +30,21 @@ def kanal_temizle(metin):
         # 1. Baştaki sayıları ve gereksiz noktaları temizle
         isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
         
-        # 2. KRİTİK: Tek harfli (A-Z) tüm takıları temizle
-        # -D-, [D], (D), " D ", "- D" gibi her varyasyonu yakalar
-        isim = re.sub(r'\s*[\-\(\[]?\s*\b[A-Z]\b\s*[\-\)\]]?\s*', ' ', isim, flags=re.I)
+        # 2. HEDEF: Sadece -A- veya -D- gibi yapıları sil (Önünde ve arkasında tire olan tek harf)
+        # Bu kural "Kanal D"ye dokunmaz çünkü "D"nin önünde/arkasında tire yok.
+        isim = re.sub(r'\s*\-\s*[A-Z0-9]\s*\-\s*', ' ', isim, flags=re.I)
         
-        # 3. Bilinen diğer kalabalıkları temizle
+        # 3. Klasik temizlik (HD, FHD ve parantezli çözünürlükler)
         isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
         isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', ' ', isim, flags=re.I)
         
-        # 4. Temizliği bitir
+        # 4. Boşlukları toparla
         isim = ' '.join(isim.split()).strip()
         return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    # 1. ADIM: DOKUNULMAZ BÖLGEYİ KORU (3963 SATIR)
+    # 1. DOKUNULMAZ BÖLGEYİ KORU (3963 SATIR)
     temiz_dokunulmaz = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
@@ -58,8 +56,8 @@ def main():
                 else:
                     temiz_dokunulmaz.append(satir)
 
-    # 2. ADIM: YEDEKLERİ HIZLICA ÇEK VE TEMİZLE
-    print("🔄 Yedekler toplanıyor, -D- gibi takılar ayıklanıyor...")
+    # 2. YEDEKLERİ HIZLICA BİRLEŞTİR
+    print("🔄 Sadece -A-, -B-, -C-, -D- takıları temizleniyor...")
     taze_kanal_listesi = []
     for url in YEDEK_KAYNAKLAR:
         try:
@@ -78,17 +76,17 @@ def main():
                         taze_kanal_listesi.append(f"{ext_satiri}\n{link_satiri}")
         except: continue
 
-    # 3. ADIM: YAZMA İŞLEMİ
+    # 3. YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(temiz_dokunulmaz)
-        f.write("\n# --- HARF TAKILARINDAN ARINDIRILMIS YEDEKLER ---\n")
+        f.write("\n# --- TIRELI HARFLERDEN ARINDIRILMIS YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
         
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 Tamamdır usta. -D- dahil tüm harfler temizlendi, toplam {len(taze_kanal_listesi)} yedek hazır.")
+    print(f"🚀 İşlem bitti usta! -A- ve -D- gibi çöpler gitti, Kanal D ve TV 8 gibi asıl isimler kaldı.")
 
 if __name__ == "__main__":
     main()
