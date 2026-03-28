@@ -23,86 +23,73 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def kanal_temizle(metin):
-    """Kanal ismindeki sayıları, parantezli çözünürlükleri ve gereksiz etiketleri siler."""
-    if "#EXTINF" in metin:
+    """Sadece virgülden sonraki kanal ismini temizler, linke veya logoya dokunmaz."""
+    if "#EXTINF" in metin and "," in metin:
+        # Satırı virgülden ikiye böl: [Ayarlar/Logo kısmı, Kanal İsmi kısmı]
         parcalar = metin.rsplit(',', 1)
-        if len(parcalar) > 1:
-            bilgi = parcalar[0]
-            isim = parcalar[1]
-            
-            # 1. BAŞTAKİ SAYILARI SİL (14. , 1. , 01. vb.)
-            isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
-            
-            # 2. HER TÜRLÜ PARANTEZLİ ÇÖZÜNÜRLÜĞÜ SİL (576p, 720p, 1080p vb.)
-            # Sayı olsun olmasın parantez içindeki p'li yapıları ve düz sayıları süpürür
-            isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
-            
-            # 3. DİĞER ETİKETLERİ SİL (-YT, [FHD], HD, FHD, SD, 4K)
-            temizlik_reg = r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b|\bUHD\b|\b4K\b)\s*'
-            isim = re.sub(temizlik_reg, '', isim, flags=re.I)
-            
-            # 4. SON TEMİZLİK: Boşlukları onar
-            isim = ' '.join(isim.split()).strip()
-            
-            return f"{bilgi},{isim}"
+        ayarlar = parcalar[0]
+        isim = parcalar[1]
+        
+        # 1. İsmin başındaki sayıları sil (14. , 1. vb.)
+        isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
+        
+        # 2. Parantezli çözünürlükleri sil (576p, 720p, 1080p vb.)
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
+        
+        # 3. Etiketleri sil (-YT, HD, FHD vb.) - Tam kelime eşleşmesiyle
+        isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', '', isim, flags=re.I)
+        
+        # Boşlukları onar
+        isim = ' '.join(isim.split()).strip()
+        
+        return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    # 1. ADIM: KUTSAL SATIRLARI OKU VE ONLARI DA ÜTÜLE
-    temiz_dokunulmaz_bolge = []
+    # 1. ADIM: DOKUNULMAZ BÖLGEYİ OKU VE SADECE İSİMLERİ DÜZELT
+    temiz_dokunulmaz = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_satirlar = f.readlines()
             limit = min(3963, len(tum_satirlar))
-            ham_bolge = tum_satirlar[:limit]
-            
-            # Burası çok önemli: Eski dosyadaki parantezleri de burada temizliyoruz
-            for satir in ham_bolge:
-                temiz_dokunulmaz_bolge.append(kanal_temizle(satir))
-            
-            print(f"🛡️  {len(temiz_dokunulmaz_bolge)} SATIR HEM KORUNDU HEM TEMİZLENDİ.")
+            for satir in tum_satirlar[:limit]:
+                # Sadece EXTINF satırıysa temizle, link satırıysa olduğu gibi bırak
+                if satir.startswith("#EXTINF"):
+                    temiz_dokunulmaz.append(kanal_temizle(satir) + "\n")
+                else:
+                    temiz_dokunulmaz.append(satir)
 
-    if not temiz_dokunulmaz_bolge:
-        temiz_dokunulmaz_bolge = ["#EXTM3U\n"]
-
-    # 2. ADIM: ONLİNE KAYNAKLARI SÜZEREK ÇEK VE TEMİZLE
+    # 2. ADIM: YEDEKLERİ ÇEK
     taze_kanal_listesi = []
     for url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(url, headers=HEADERS, timeout=30)
+            r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
+                # Blokları (EXTINF + Link) çek
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
                 for kanal in bulunanlar:
-                    kanal_satirlari = kanal.strip().split('\n')
-                    if len(kanal_satirlari) >= 2:
-                        temiz_extinf = kanal_temizle(kanal_satirlari[0])
-                        link = kanal_satirlari[1]
+                    satirlar = kanal.strip().split('\n')
+                    if len(satirlar) >= 2:
+                        ext_satiri = kanal_temizle(satirlar[0])
+                        link_satiri = satirlar[1]
                         
-                        if 'group-title="' not in temiz_extinf:
-                            temiz_extinf = temiz_extinf.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
+                        if 'group-title="' not in ext_satiri:
+                            ext_satiri = ext_satiri.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
                         
-                        taze_kanal_listesi.append(f"{temiz_extinf}\n{link}")
-        except:
-            print(f"❌ {url} kaynağına ulaşılamadı.")
+                        taze_kanal_listesi.append(f"{ext_satiri}\n{link_satiri}")
+        except: pass
 
     # 3. ADIM: YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce temizlenen dokunulmaz bölgeyi yaz
-        f.writelines(temiz_dokunulmaz_bolge)
+        f.writelines(temiz_dokunulmaz)
+        f.write("\n# --- YEDEKLER BAŞLADI ---\n")
+        for k in taze_kanal_listesi:
+            f.write(k + "\n")
         
-        if temiz_dokunulmaz_bolge and not temiz_dokunulmaz_bolge[-1].endswith('\n'):
-            f.write('\n')
-        
-        f.write("\n# --- ONLİNE OTOMATİK YEDEKLER BAŞLADI (TEMİZLENDİ) ---\n")
-        
-        # Sonra yeni gelen yedekleri yaz
-        for kanal in taze_kanal_listesi:
-            f.write(kanal + "\n")
-            
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        f.write(f"\n# SON GUNCELLEME: {zaman}\n")
+        f.write(f"\n# GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 TOPLAM {len(taze_kanal_listesi)} YEDEK KANAL EKLENDİ USTA!")
+    print(f"🚀 İşlem bitti usta. {len(taze_kanal_listesi)} yedek eklendi.")
 
 if __name__ == "__main__":
     main()
