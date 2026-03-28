@@ -2,14 +2,12 @@ import requests
 import re
 import os
 import datetime
+from concurrent.futures import ThreadPoolExecutor # Hızlandırıcı motor bu
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
-}
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
-# ONLINE KAYNAKLAR
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://tinyurl.com/ytpatron",
@@ -23,33 +21,42 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/main/lists/turkey.m3u8"
 ]
 
-def link_canli_mi(url):
-    """Linke hızlı bir HEAD isteği atarak çalışıp çalışmadığını kontrol eder."""
+def link_kontrol_et(kanal_blogu):
+    """Tek bir kanal bloğunu (EXTINF + Link) kontrol eder."""
+    satirlar = kanal_blogu.strip().split('\n')
+    if len(satirlar) < 2: return None
+    
+    ext_satiri = satirlar[0]
+    link_satiri = satirlar[1].strip()
+    
     try:
-        # 5 saniye içinde cevap gelmezse ölü sayar. allow_redirects=True yönlendirmeleri takip eder.
-        r = requests.head(url, headers=HEADERS, timeout=5, allow_redirects=True)
-        return r.status_code == 200
+        # Timeout 5 saniye, paralel çalıştığı için bekleme yapmaz
+        r = requests.head(link_satiri, headers=HEADERS, timeout=5, allow_redirects=True)
+        if r.status_code == 200:
+            # İsim temizleme senin kodundaki mantıkla aynen devam
+            temiz_ext = kanal_temizle(ext_satiri)
+            if 'group-title="' not in temiz_ext:
+                temiz_ext = temiz_ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
+            return f"{temiz_ext}\n{link_satiri}"
     except:
-        return False
+        pass
+    return None
 
 def kanal_temizle(metin):
-    """Sadece virgülden sonraki ismi temizler, logo ve link yapılarını bozmaz."""
+    """Senin kodundaki temizlik mantığının birebir aynısı."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
         isim = parcalar[1]
-        
-        # Temizlik Regexleri
-        isim = re.sub(r'^[0-9\.\-\s]+', '', isim) # Baştaki sayılar
-        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim) # (1080p) vb.
-        isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', '', isim, flags=re.I) # Etiketler
-        
+        isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
+        isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', '', isim, flags=re.I)
         isim = ' '.join(isim.split()).strip()
         return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    # 1. ADIM: DOKUNULMAZ BÖLGEYİ OKU
+    # 1. DOKUNULMAZ BÖLGE
     temiz_dokunulmaz = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
@@ -61,44 +68,32 @@ def main():
                 else:
                     temiz_dokunulmaz.append(satir)
 
-    # 2. ADIM: YEDEKLERİ ÇEK VE CANLI MI KONTROL ET
-    taze_kanal_listesi = []
-    print("🔄 Yedek kaynaklar taranıyor ve linkler kontrol ediliyor...")
-    
+    # 2. YEDEKLERİ TOPLA
+    ham_kanallar = []
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
-                for kanal in bulunanlar:
-                    satirlar = kanal.strip().split('\n')
-                    if len(satirlar) >= 2:
-                        ext_satiri = kanal_temizle(satirlar[0])
-                        link_satiri = satirlar[1].strip()
-                        
-                        # KRİTİK KONTROL: Link çalışıyorsa ekle
-                        if link_canli_mi(link_satiri):
-                            if 'group-title="' not in ext_satiri:
-                                ext_satiri = ext_satiri.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
-                            taze_kanal_listesi.append(f"{ext_satiri}\n{link_satiri}")
-        except:
-            continue
+                ham_kanallar.extend(bulunanlar)
+        except: continue
 
-    # 3. ADIM: YAZMA
+    # 3. HIZLI (PARALEL) KONTROL - BÜYÜ BURADA
+    print(f"⚡ {len(ham_kanallar)} yedek 50 koldan taranıyor...")
+    with ThreadPoolExecutor(max_workers=50) as executor:
+        results = list(executor.map(link_kontrol_et, ham_kanallar))
+
+    # 4. YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(temiz_dokunulmaz)
-        
-        if temiz_dokunulmaz and not temiz_dokunulmaz[-1].endswith('\n'):
-            f.write('\n')
-            
-        f.write("\n# --- ONAYLANMIŞ CANLI YEDEKLER BAŞLADI ---\n")
-        for k in taze_kanal_listesi:
-            f.write(k + "\n")
+        f.write("\n# --- HIZLI KONTROL EDİLMİŞ YEDEKLER ---\n")
+        for res in results:
+            if res: f.write(res + "\n")
         
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        f.write(f"\n# SON OTOMATİK GÜNCELLEME: {zaman}\n")
+        f.write(f"\n# SON GÜNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem bitti usta. {len(taze_kanal_listesi)} tane SAĞLAM yedek eklendi.")
+    print(f"🚀 İşlem bitti! Toplam sağlam yedek eklendi.")
 
 if __name__ == "__main__":
     main()
