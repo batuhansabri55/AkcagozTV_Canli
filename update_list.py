@@ -7,12 +7,13 @@ import datetime
 FILE_PATH = "tr.m3u"
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
-# BU KELİMELERİN GEÇTİĞİ GRUPLAR VEYA KANALLAR ASLA EKLENMEYECEK (KARA LİSTE)
+# KARA LİSTE: Bu kelimelerin geçtiği gruplar/kanallar 3964'ten sonra asla eklenmeyecek
 YASAKLI_GRUPLAR = [
     "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", "Taşacak Bu Deniz", 
     "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", "MediabayTV", 
     "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
-    "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan"
+    "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
+    "Superxfilm", "CINEMAMOD"  # Yeni eklenenler
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -30,7 +31,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def yedek_kanali_temizle(metin):
-    """3964'TEN SONRASI İÇİN: Sayıları bozmadan kalite eklerini temizler."""
+    """3964'ten sonrası için isim temizliği yapar (Sayıları bozmaz)."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
@@ -53,7 +54,7 @@ def main():
             for satir in tum_satirlar[:limit]:
                 dokunulmaz_icerik.append(satir)
 
-    print(f"🔄 3963 satır zırhlandı. 3964'ten sonrası yasaklı gruplar elenerek ekleniyor...")
+    print(f"🔄 3963 satır zırhlandı. Kalanlar filtrelenerek ekleniyor...")
     
     # 2. ADIM: YEDEKLERİ FİLTRELEYEREK ÇEK
     taze_kanal_listesi = []
@@ -63,7 +64,9 @@ def main():
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
+                # Gereksiz VLC ayarlarını temizle
                 temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
+                # Kanal bloklarını bul
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
                 
                 for kanal in bulunanlar:
@@ -72,7 +75,7 @@ def main():
                         ext_satiri = satir_grubu[0]
                         link_satiri = satir_grubu[-1].strip()
 
-                        # YASAKLI GRUP KONTROLÜ (Webteizle, Ezel vb. varsa ekleme)
+                        # YASAKLI GRUP/KELİME KONTROLÜ
                         if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
                             continue
 
@@ -83,12 +86,11 @@ def main():
                             
                             taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
                             eklenen_urller.add(link_satiri)
-            print(f"Kaynak tarandı: {url}")
         except: continue
 
     # 3. ADIM: DOSYAYI YAZ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(dokunulmaz_icerik)
+        f.writelines(dokunulmaz_icerik) # 3963 satıra dokunmaz
         
         f.write("\n# --- 3964+ FILTRELENMIS YEDEKLER ---\n")
         for k in taze_kanal_listesi:
@@ -97,7 +99,7 @@ def main():
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem Bitti! 3963 satıra dokunulmadı. Yasaklı gruplar kapıdan döndü.")
+    print(f"🚀 İşlem Bitti! 3963 satır korundu, yasaklı gruplar elendi.")
 
 if __name__ == "__main__":
     main()
