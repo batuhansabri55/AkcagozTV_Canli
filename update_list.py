@@ -5,10 +5,16 @@ import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 3963  # BU SATIRA KADAR NOKTASINA DOKUNULMAZ
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
-YASAKLI_GRUPLAR = ["Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", "EZEL", "FilmMedya", "CINEMAMOD"]
+# KARA LİSTE: Bu gruplar 3964'ten sonra asla eklenmeyecek
+YASAKLI_GRUPLAR = [
+    "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", "Taşacak Bu Deniz", 
+    "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", "MediabayTV", 
+    "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
+    "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
+    "Superxfilm", "CINEMAMOD"
+]
 
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
@@ -25,40 +31,55 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def yedek_kanali_temizle(metin):
-    """Sadece 3964+ sonrası gelen yedeklerin isimlerini temizler."""
+    """Kanal isimlerinin yanındaki |D, |E, |H gibi harf takılarını temizler."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
-        ayarlar, isim = parcalar[0], parcalar[1]
+        ayarlar = parcalar[0]
+        isim = parcalar[1]
+
         isim = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', isim)
         isim = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim, flags=re.I)
         isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
         isim = re.sub(r'\s+', ' ', isim).strip()
+        isim = re.sub(r'^[\.\-\s|]+', '', isim)
+        
         return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    eklenen_urller = set()
+    eklenen_urller = set() # Tüm dosyadaki mükerrerleri engelleyecek hafıza
     dokunulmaz_icerik = []
     taze_kanal_listesi = []
 
-    # 1. ADIM: 3963 SATIRI OLDUĞU GİBİ OKU VE LİNKLERİ HAFIZAYA AL
+    # 1. ADIM: 3963. SATIRA KADAR OKU VE İÇİNDEKİ MÜKERRER URL'LERİ SİL
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_satirlar = f.readlines()
-            limit = min(ZIRH_LIMIT, len(tum_satirlar))
+            limit = min(3963, len(tum_satirlar))
             
-            for i in range(limit):
+            i = 0
+            while i < limit:
                 satir = tum_satirlar[i]
-                dokunulmaz_icerik.append(satir)
-                
-                # Zırhlı bölgedeki linkleri hafızaya ekle ki aşağıda tekrar etmesin
-                link_adresi = satir.strip()
-                if link_adresi.startswith("http"):
-                    eklenen_urller.add(link_adresi)
+                if satir.startswith("#EXTINF"):
+                    # Kanal bilgisi ve altındaki link satırını al
+                    link_satiri = tum_satirlar[i+1] if i+1 < limit else ""
+                    url = link_satiri.strip()
+                    
+                    # Eğer bu link daha önce eklenmediyse zırhlı bölgeye ekle
+                    if url not in eklenen_urller:
+                        dokunulmaz_icerik.append(satir)
+                        dokunulmaz_icerik.append(link_satiri)
+                        eklenen_urller.add(url)
+                    i += 2
+                else:
+                    # Diğer satırları (başlık vb.) aynen koru
+                    if i == 0 and satir.startswith("#EXTM3U"):
+                        dokunulmaz_icerik.append(satir)
+                    i += 1
 
-    print(f"🛡️ {ZIRH_LIMIT} satır zırhlandı. Hafızaya alınan orijinal link sayısı: {len(eklenen_urller)}")
+    print(f"🛡️ 3963 zırhlı bölge tarandı, mükerrer linkler ayıklandı.")
 
-    # 2. ADIM: YEDEKLERİ ÇEK (ZIRHTA VARSA EKLEME)
+    # 2. ADIM: YEDEKLERİ ÇEK (ZIRHLI BÖLGEDEKİLERİ TEKRAR EKLEME)
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
@@ -72,11 +93,10 @@ def main():
                         ext_satiri = satir_grubu[0]
                         link_satiri = satir_grubu[-1].strip()
 
-                        # Yasaklı kontrolü
                         if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
                             continue
 
-                        # EĞER BU LİNK ZIRHLI BÖLGEDE VEYA ÖNCEKİ YEDEKLERDE VARSA EKLEME
+                        # Mükerrer link kontrolü (Tüm dosya için geçerli)
                         if link_satiri not in eklenen_urller:
                             temiz_ext = yedek_kanali_temizle(ext_satiri)
                             if 'group-title="' not in temiz_ext:
@@ -84,23 +104,20 @@ def main():
                             
                             taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
                             eklenen_urller.add(link_satiri)
-            print(f"Kaynak tarandı: {url}")
+            print(f"Bitti: {url}")
         except: continue
 
     # 3. ADIM: YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Zırhlı bölge (Aynen kopyalandı, noktasına dokunulmadı)
         f.writelines(dokunulmaz_icerik)
-        
-        # Sadece zırhta olmayan benzersiz yedekler
-        f.write("\n# --- 3964+ TEMIZ VE BENZERSIZ YEDEKLER ---\n")
+        f.write("\n# --- 3964+ TEMIZLENMIS VE BENZERSIZ YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
         
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem Tamam! Zırh korundu ve mükerrer yedekler engellendi.")
+    print(f"🚀 İşlem Tamam! Zırh içindeki ve dışındaki tüm mükerrer linkler temizlendi.")
 
 if __name__ == "__main__":
     main()
