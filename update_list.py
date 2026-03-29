@@ -21,39 +21,42 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def karakter_duzelt(metin):
-    """Türkçe karakterleri standartlaştırır (CNN TÜRK -> CNN TURK)."""
+    """Türkçe karakterleri standartlaştırır."""
     tr_harfler = str.maketrans("İÜŞÇÖĞıüşçöğ", "IUSCOGiuscog")
     return metin.translate(tr_harfler)
 
-def kanal_temizle(metin):
-    """Kanal isimlerini temizler; TRT 1, Kanal 7 gibi isimleri korur, yedek sayılarını siler."""
+def kanal_temizle(metin, yedek_mi=False):
+    """Kanal isimlerini temizler; TRT 1, Kanal 7 gibi isimleri korur."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
         isim = parcalar[1].strip()
 
-        # 1. Regex Temizlikleri
+        # 1. Kalite eklerini temizle (HD, FHD vb.)
+        isim = re.sub(r'\s*\b(FHD|HD|SD|UHD|4K|HEVC|1080p|720p)\b\s*', ' ', isim, flags=re.I)
+        
+        # 2. Gereksiz sembolleri temizle
         isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
         isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
         isim = re.sub(r'\s*(-YT|\[.*?\])\s*', '', isim, flags=re.I)
 
-        # 2. Kalite eklerini temizle (HD, FHD vb.)
-        isim = re.sub(r'\s*\b(FHD|HD|SD|UHD|4K|HEVC|1080p|720p)\b\s*', ' ', isim, flags=re.I)
+        # 3. AKILLI SAYI KORUMA (TRT 1, Kanal 7, A2, 24, 360 için)
+        # Sadece 3 haneden büyük sayıları veya ismin en sonundaki 40+ sayıları siler
+        def sayi_ayikla(match):
+            s = match.group(0).strip()
+            if s.isdigit() and int(s) > 40: return "" # 45, 46 gibi yedek nolarını sil
+            return match.group(0) # 1, 7, 24 gibi isimleri koru
 
-        # 3. AKILLI SAYI SÜZGECİ: Sadece 40'tan büyük yedek numaralarını siler
-        def sayi_kontrol(match):
-            gelen_sayi = match.group(0).strip()
-            if gelen_sayi.isdigit():
-                if int(gelen_sayi) > 40:
-                    return ""
-            return match.group(0)
+        isim = re.sub(r'\s*\d+\s*$', sayi_ayikla, isim)
 
-        isim = re.sub(r'\s*\d+\s*$', sayi_kontrol, isim)
-
-        # 4. Karakter ve Boşluk Düzenleme
+        # 4. Standartlaştır
         isim = isim.upper()
         isim = karakter_duzelt(isim)
         isim = ' '.join(isim.split()).strip()
+
+        # 5. YEDEK İBARESİ EKLE (İstenirse)
+        if yedek_mi and "YEDEK" not in isim:
+            isim = f"{isim} YEDEK"
         
         return f"{ayarlar},{isim}"
     return metin
@@ -66,15 +69,15 @@ def main():
             tum_satirlar = f.readlines()
             limit = min(3963, len(tum_satirlar))
             for satir in tum_satirlar[:limit]:
-                if "#EXTVLCOPT" in satir:
-                    continue
+                if "#EXTVLCOPT" in satir: continue
                 if satir.startswith("#EXTINF"):
-                    temiz_dokunulmaz.append(kanal_temizle(satir) + "\n")
+                    # Ana listedekilere "YEDEK" yazmıyoruz
+                    temiz_dokunulmaz.append(kanal_temizle(satir, yedek_mi=False) + "\n")
                 else:
                     temiz_dokunulmaz.append(satir)
 
     # 2. ADIM: YEDEKLERİ TOPLA
-    print("🔄 Kanallar standart hale getiriliyor (TRT 1, Kanal 7 vb. korunuyor)...")
+    print("🔄 Yedekler toplanıyor ve isimlendiriliyor...")
     taze_kanal_listesi = []
     for url in YEDEK_KAYNAKLAR:
         try:
@@ -85,7 +88,8 @@ def main():
                 for kanal in bulunanlar:
                     satirlar = kanal.strip().split('\n')
                     if len(satirlar) >= 2:
-                        ext_satiri = kanal_temizle(satirlar[0])
+                        # İnternetten gelenlere "YEDEK" ekliyoruz
+                        ext_satiri = kanal_temizle(satirlar[0], yedek_mi=True)
                         link_satiri = satirlar[-1].strip()
                         
                         if 'group-title="' not in ext_satiri:
@@ -96,14 +100,14 @@ def main():
     # 3. ADIM: DOSYAYI YAZ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(temiz_dokunulmaz)
-        f.write("\n# --- TUM YEDEKLER (AKILLI LISTE) ---\n")
+        f.write("\n# --- TUM YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
         
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem bitti! Kanal isimleri korundu, yedek numaraları ve OPT satırları temizlendi.")
+    print(f"🚀 İşlem bitti! TRT 1 vb. korundu, dış kaynaklara 'YEDEK' yazıldı.")
 
 if __name__ == "__main__":
     main()
