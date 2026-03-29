@@ -225,7 +225,7 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/19
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/18
 #EXTINF:-1,A2
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/9
-#EXTINF:-1,TV
+#EXTINF:-1,360 TV HD
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/16
 #EXTINF:-1,TV85FHD 28
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/28
@@ -303,9 +303,9 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232356
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/144
 #EXTINF:-1,SZCTVHD 232355
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232355
-#EXTINF:-1,TV
+#EXTINF:-1,24 TV FHD
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/142
-#EXTINF:-1,TV
+#EXTINF:-1,24 TV HD
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232354
 #EXTINF:-1,TVNET
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/54676
@@ -789,19 +789,19 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/65374
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/244486
 #EXTINF:-1,RELAX: Austria
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/64332
-#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="Kanal D" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/a/-p/245931/logo.png?v=638804938239723164" group-title="Ulusal",Kanal D
+#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="Kanal D" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/a/-p/245931/logo.png?v=638804938239723164" group-title="Ulusal",KANALDFHD 40
 http://104.238.23.221/dsgo.php?id=245931
 #EXTINF:-1 tvg-id="TV2.tr" tvg-name="TV2" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/B/WE/245991/logo.png?v=639029456898926668" group-title="Ulusal",TV2
 http://104.238.23.221/dsgo.php?id=245991
-#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="Show TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/X/rT/245949/logo.png?v=638671713564122216" group-title="Ulusal",Show TV
+#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="Show TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/X/rT/245949/logo.png?v=638671713564122216" group-title="Ulusal",SHOWTVFHD 42
 http://104.238.23.221/dsgo.php?id=245949
-#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="STAR" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/Y/Sk/245994/logo.png?v=638671713931288249" group-title="Ulusal",STAR
+#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="STAR" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/Y/Sk/245994/logo.png?v=638671713931288249" group-title="Ulusal",STARTVFHD 37
 http://104.238.23.221/dsgo.php?id=245994
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV.tr" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/S/Js/246030/logo.png?v=638671714237086283" group-title="Ulusal",ATVFHD 46
 http://104.238.23.221/dsgo.php?id=246030
 #EXTINF:-1 tvg-id="TRT 1.tr" tvg-name="TRT 1.tr" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/S/tg/245943/logo.png?v=638671713518783129" group-title="Ulusal",TRT 1
 http://104.238.23.221/dsgo.php?id=246132
-#EXTINF:-1 tvg-id="NOW.tr" tvg-name="NOW" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/U/w2/245997/logo.png?v=638671713963955947" group-title="Ulusal",NOW
+#EXTINF:-1 tvg-id="NOW.tr" tvg-name="NOW" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/U/w2/245997/logo.png?v=638671713963955947" group-title="Ulusal",NowTVFHD 33
 http://104.238.23.221/dsgo.php?id=245997
 #EXTINF:-1 tvg-id="CNN TÜRK.tr" tvg-name="CNN Türk" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/U/Cg/245940/logo.png?v=638671713494111482" group-title="Haber",CNN Türk
 http://104.238.23.221/dsgo.php?id=245940
@@ -813,7 +813,7 @@ http://104.238.23.221/dsgo.php?id=246024
 http://104.238.23.221/dsgo.php?id=246027
 #EXTINF:-1 tvg-id="TGRT Haber.tr" tvg-name="TGRT Haber" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/X/r2/246066/logo.png?v=638671714551736085" group-title="Haber",TGRT Haber
 http://104.238.23.221/dsgo.php?id=246066
-#EXTINF:-1 tvg-id="Szc Tv.tr" tvg-name="SZC TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/L/kO/246240/logo.png?v=638671716034197297" group-title="Haber",SZC TV (Sözcü)
+#EXTINF:-1 tvg-id="Szc Tv.tr" tvg-name="SZC TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/L/kO/246240/logo.png?v=638671716034197297" group-title="Haber",SZCTVFHD 144
 http://104.238.23.221/dsgo.php?id=246240
 #EXTINF:-1 tvg-id="Halk TV.tr" tvg-name="Halk TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/F/zn/246096/logo.png?v=638671714813453912" group-title="Haber",Halk TV
 http://104.238.23.221/dsgo.php?id=246096
