@@ -21,52 +21,50 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def yedek_kanali_temizle(metin):
-    """SADECE YEDEKLER İÇİN: Sayıları (TRT 1, TV 8) bozmadan kalite eklerini temizler."""
+    """3964'TEN SONRASI İÇİN: Sayıları (TRT 1, TV 8) bozmadan kalite eklerini temizler."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
         isim = parcalar[1]
 
-        # Sadece yedeklerdeki gereksizleri temizle (Sayılar kalır)
-        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim) # (1080p) gibi
+        # Eski usul temizlik (Sayılar kalır)
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim) 
         isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', ' ', isim, flags=re.I)
-        isim = re.sub(r'^[\.\-\s]+', '', isim) # Başındaki nokta/tire
+        isim = re.sub(r'^[\.\-\s]+', '', isim)
         
         isim = ' '.join(isim.split()).strip()
         return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    # 1. ADIM: İLK 5000 SATIRI DOKUNULMAZ OLARAK OKU
+    # 1. ADIM: 3963. SATIRA KADAR SIFIR MÜDAHALE
     dokunulmaz_icerik = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_satirlar = f.readlines()
-            # Senin dokunulmaz sınırın (5000 satıra kadar)
-            limit = min(5000, len(tum_satirlar))
+            # Senin kesin sınırın: 3963
+            limit = min(3963, len(tum_satirlar))
+            
+            # BU DÖNGÜDE HİÇBİR İŞLEM YOK - OLDUĞU GİBİ ALIR
             for satir in tum_satirlar[:limit]:
-                # SIFIR MÜDAHALE: Virgülüne dokunmadan olduğu gibi al
                 dokunulmaz_icerik.append(satir)
 
-    # 2. ADIM: İNTERNETTEN GELEN YEDEKLERİ TOPLA VE TEMİZLE
-    print("🔄 5000 satır korundu. Yedekler taranıyor ve temizleniyor...")
+    # 2. ADIM: 3964'TEN SONRASI İÇİN YEDEKLERİ TEMİZLEYEREK EKLE
+    print(f"🔄 3963 satıra zırh giydirildi. 3964'ten sonrası temizlenerek ekleniyor...")
     taze_kanal_listesi = []
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                # Verideki VLC satırlarını sil
                 temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
-                
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
                 for kanal in bulunanlar:
                     satir_grubu = kanal.strip().split('\n')
                     if len(satir_grubu) >= 2:
-                        # BURADA TEMİZLİK DEVAM EDİYOR (Sayılar korunarak)
+                        # Burada temizlik işlemi (Eski usul) devam ediyor
                         ext_satiri = yedek_kanali_temizle(satir_grubu[0])
                         link_satiri = satir_grubu[-1].strip()
                         
-                        # TiviMate'de karışmasınlar diye grup etiketi ekle
                         if 'group-title="' not in ext_satiri:
                             ext_satiri = ext_satiri.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
                         
@@ -75,18 +73,18 @@ def main():
 
     # 3. ADIM: DOSYAYI YAZ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce senin dokunulmaz 5000 satırın
+        # Senin emeğin olan ilk 3963 satır
         f.writelines(dokunulmaz_icerik)
         
-        # Sonra altına temizlenmiş yedekler
-        f.write("\n# --- TEMIZLENMIS YEDEKLER ---\n")
+        # 3964'ten itibaren başlayan temiz yedekler
+        f.write("\n# --- 3964+ TEMIZ YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
         
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        f.write(f"\n# GUNCELLEME: {zaman}\n")
+        f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem bitti! İlk 5000 satırın zırh gibi korundu, sonrasına temizlik yapıldı.")
+    print(f"🚀 İşlem Tamam! İlk 3963 satıra dokunulmadı, kalanlar temizlendi.")
 
 if __name__ == "__main__":
     main()
