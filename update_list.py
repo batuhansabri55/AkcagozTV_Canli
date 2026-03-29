@@ -20,71 +20,59 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/main/lists/turkey.m3u8"
 ]
 
-def kanal_temizle(metin):
-    """Sadece virgülden sonraki ismi temizler (Senin orijinal mantığın)."""
-    if "#EXTINF" in metin and "," in metin:
-        parcalar = metin.rsplit(',', 1)
-        ayarlar = parcalar[0]
-        isim = parcalar[1]
-        # Temizlik Regexleri
-        isim = re.sub(r'^[0-9\.\-\s]+', '', isim)
-        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
-        isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', '', isim, flags=re.I)
-        isim = ' '.join(isim.split()).strip()
-        return f"{ayarlar},{isim}"
-    return metin
-
 def main():
-    # 1. ADIM: DOKUNULMAZ BÖLGEYİ OKU
-    temiz_dokunulmaz = []
+    # 1. ADIM: SENİN DOSYANI OKU VE OLDUĞU GİBİ KORU
+    orijinal_icerik = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
+            # Dosyanın tamamını satır satır oku
             tum_satirlar = f.readlines()
+            # Senin dokunulmaz sınırın (3963 satır)
             limit = min(3963, len(tum_satirlar))
             for satir in tum_satirlar[:limit]:
-                # EXTVLCOPT içeren satırları dokunulmaz bölgede de olsa atla
-                if "#EXTVLCOPT" in satir:
-                    continue
-                if satir.startswith("#EXTINF"):
-                    temiz_dokunulmaz.append(kanal_temizle(satir) + "\n")
-                else:
-                    temiz_dokunulmaz.append(satir)
+                # BURADA HİÇBİR TEMİZLEME FONKSİYONU YOK! 
+                # Ne yazıyorsa o; boşluksa boşluk, noktaysa nokta.
+                orijinal_icerik.append(satir)
 
-    # 2. ADIM: YEDEKLERİ OLDUĞU GİBİ TOPLA (TARAMA YOK)
-    print("🔄 Yedek kaynaklar birleştiriliyor (OPT satırları temizleniyor)...")
+    # 2. ADIM: YEDEKLERİ TOPLA
+    print("🔄 Yedekler toplanıyor (Senin listene dokunulmuyor)...")
     taze_kanal_listesi = []
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                # Veri içindeki tüm #EXTVLCOPT satırlarını regex ile temizle
+                # Sadece gelen verideki VLC satırlarını siliyoruz (Liste kirlenmesin diye)
                 temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
                 
+                # Kanal bloklarını (EXTINF + Link) ayır
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
                 for kanal in bulunanlar:
                     satirlar = kanal.strip().split('\n')
                     if len(satirlar) >= 2:
-                        ext_satiri = kanal_temizle(satirlar[0])
-                        # Link her zaman kanal bloğunun en son satırıdır
+                        ext_satiri = satirlar[0]
                         link_satiri = satirlar[-1].strip()
                         
-                        # Group-title ekle ve listeye at
+                        # İnternetten gelenlere karışmasınlar diye grup etiketi ekle
                         if 'group-title="' not in ext_satiri:
                             ext_satiri = ext_satiri.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
+                        
                         taze_kanal_listesi.append(f"{ext_satiri}\n{link_satiri}")
         except: continue
 
     # 3. ADIM: DOSYAYI YAZ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(temiz_dokunulmaz)
-        f.write("\n# --- TUM YEDEKLER (HAM LISTE) ---\n")
+        # Önce senin 3963 satırlık orijinal içeriğini yaz
+        f.writelines(orijinal_icerik)
+        
+        # Sonra altına internetten gelenleri ekle
+        f.write("\n# --- INTERNETTEN GELEN YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
         
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem bitti usta! OPT satırları silindi, {len(taze_kanal_listesi)} yedek link eklendi.")
+    print(f"🚀 İşlem bitti usta! Senin 5000 satırın (ilk 3963'ü) tek bir virgülü değişmeden korundu.")
 
 if __name__ == "__main__":
     main()
