@@ -42,32 +42,30 @@ def main():
             tum_satirlar = f.readlines()
             limit = min(3963, len(tum_satirlar))
             for satir in tum_satirlar[:limit]:
-                # SİLİNMESİNİ İSTEDİĞİN ÖZEL SATIRLAR (DOKUNULMAZ BÖLGE İÇİN)
-                if "#EXTVLCOPT:http-user-agent" in satir or "#EXTVLCOPT:http-referrer" in satir:
+                # EXTVLCOPT içeren satırları dokunulmaz bölgede de olsa atla
+                if "#EXTVLCOPT" in satir:
                     continue
-                
                 if satir.startswith("#EXTINF"):
                     temiz_dokunulmaz.append(kanal_temizle(satir) + "\n")
                 else:
                     temiz_dokunulmaz.append(satir)
 
     # 2. ADIM: YEDEKLERİ OLDUĞU GİBİ TOPLA (TARAMA YOK)
-    print("🔄 Yedek kaynaklar birleştiriliyor (Temizlik Modu Aktif)...")
+    print("🔄 Yedek kaynaklar birleştiriliyor (OPT satırları temizleniyor)...")
     taze_kanal_listesi = []
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                # VERİYİ ÇEKERKEN İSTENMEYEN SATIRLARI SİL
-                temiz_veri = re.sub(r'#EXTVLCOPT:http-user-agent=.*\n?', '', r.text)
-                temiz_veri = re.sub(r'#EXTVLCOPT:http-referrer=.*\n?', '', temiz_veri)
+                # Veri içindeki tüm #EXTVLCOPT satırlarını regex ile temizle
+                temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
                 
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
                 for kanal in bulunanlar:
                     satirlar = kanal.strip().split('\n')
                     if len(satirlar) >= 2:
                         ext_satiri = kanal_temizle(satirlar[0])
-                        # Link her zaman en son satırdadır
+                        # Link her zaman kanal bloğunun en son satırıdır
                         link_satiri = satirlar[-1].strip()
                         
                         # Group-title ekle ve listeye at
@@ -86,7 +84,7 @@ def main():
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem bitti usta! {len(taze_kanal_listesi)} yedek link eklendi. User-Agent ve Referrer temizlendi.")
+    print(f"🚀 İşlem bitti usta! OPT satırları silindi, {len(taze_kanal_listesi)} yedek link eklendi.")
 
 if __name__ == "__main__":
     main()
