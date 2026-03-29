@@ -13,7 +13,7 @@ YEDEK_KAYNAKLAR = [
     "https://urlz.fr/v1Xo",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
-    "https://mth.tc/DsGo",
+    "https://tinyurl.com/bdd2tz6h",
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/best/all.m3u8",
