@@ -7,13 +7,13 @@ import datetime
 FILE_PATH = "tr.m3u"
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
-# KARA LİSTE: Bu kelimelerin geçtiği gruplar/kanallar 3964'ten sonra asla eklenmeyecek
+# KARA LİSTE: Bu gruplar 3964'ten sonra asla eklenmeyecek (VAVO TV ÇIKARILDI)
 YASAKLI_GRUPLAR = [
     "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", "Taşacak Bu Deniz", 
     "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", "MediabayTV", 
     "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
     "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
-    "Superxfilm", "CINEMAMOD"  # Yeni eklenenler
+    "Superxfilm", "CINEMAMOD"
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -31,21 +31,31 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def yedek_kanali_temizle(metin):
-    """3964'ten sonrası için isim temizliği yapar (Sayıları bozmaz)."""
+    """Kanal isimlerinin yanındaki |D, |E, |H gibi harf takılarını temizler."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
         isim = parcalar[1]
 
-        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim) 
-        isim = re.sub(r'\s*(-YT|\[.*?\]|\bHD\b|\bFHD\b|\bSD\b)\s*', ' ', isim, flags=re.I)
-        isim = re.sub(r'^[\.\-\s]+', '', isim)
-        isim = ' '.join(isim.split()).strip()
+        # 1. Resimdeki o |D, |E, |H, |RAW, |PLUS gibi takıları temizle
+        # Bu regex sadece kanal isminin sonundaki veya yanındaki tek harf/kod takılarını siler
+        isim = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', isim)
+        
+        # 2. HEVC, RAW, UHD gibi teknik terimleri temizle
+        isim = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim, flags=re.I)
+        
+        # 3. Çözünürlük parantezlerini sil
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
+        
+        # 4. Temizlik ve boşluk düzeltme
+        isim = re.sub(r'\s+', ' ', isim).strip()
+        isim = re.sub(r'^[\.\-\s|]+', '', isim)
+        
         return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    # 1. ADIM: 3963. SATIRA KADAR SIFIR MÜDAHALE (SENİN EMEĞİN)
+    # 1. ADIM: 3963. SATIRA KADAR SIFIR MÜDAHALE
     dokunulmaz_icerik = []
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
@@ -54,9 +64,9 @@ def main():
             for satir in tum_satirlar[:limit]:
                 dokunulmaz_icerik.append(satir)
 
-    print(f"🔄 3963 satır zırhlandı. Kalanlar filtrelenerek ekleniyor...")
+    print(f"🔄 3963 satır zırhlı. 3964+ sonrası sadece harf takıları temizleniyor (VAVO TV Duruyor)...")
     
-    # 2. ADIM: YEDEKLERİ FİLTRELEYEREK ÇEK
+    # 2. ADIM: YEDEKLERİ ÇEK VE TEMİZLE
     taze_kanal_listesi = []
     eklenen_urller = set()
 
@@ -64,9 +74,7 @@ def main():
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                # Gereksiz VLC ayarlarını temizle
                 temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
-                # Kanal bloklarını bul
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
                 
                 for kanal in bulunanlar:
@@ -75,31 +83,31 @@ def main():
                         ext_satiri = satir_grubu[0]
                         link_satiri = satir_grubu[-1].strip()
 
-                        # YASAKLI GRUP/KELİME KONTROLÜ
+                        # Yasaklı grup kontrolü
                         if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
                             continue
 
-                        if link_satiri.startswith("http") and link_satiri not in eklenen_urller:
+                        if link_satiri not in eklenen_urller:
                             temiz_ext = yedek_kanali_temizle(ext_satiri)
                             if 'group-title="' not in temiz_ext:
                                 temiz_ext = temiz_ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
                             
                             taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
                             eklenen_urller.add(link_satiri)
+            print(f"Bitti: {url}")
         except: continue
 
-    # 3. ADIM: DOSYAYI YAZ
+    # 3. ADIM: YAZMA
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(dokunulmaz_icerik) # 3963 satıra dokunmaz
-        
-        f.write("\n# --- 3964+ FILTRELENMIS YEDEKLER ---\n")
+        f.writelines(dokunulmaz_icerik)
+        f.write("\n# --- 3964+ TEMIZLENMIS YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
         
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem Bitti! 3963 satır korundu, yasaklı gruplar elendi.")
+    print(f"🚀 İşlem Tamam! VAVO TV kaldı, takılar temizlendi.")
 
 if __name__ == "__main__":
     main()
