@@ -21,7 +21,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def kanal_temizle(metin):
-    """Sadece virgülden sonraki ismi temizler (Senin orijinal mantığın)."""
+    """Sadece virgülden sonraki ismi temizler."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
@@ -42,26 +42,31 @@ def main():
             tum_satirlar = f.readlines()
             limit = min(3963, len(tum_satirlar))
             for satir in tum_satirlar[:limit]:
+                # BURADA DA USER-AGENT TEMİZLİĞİ YAPIYORUZ (DOKUNULMAZ BÖLGEDE VARSA)
+                if "#EXTVLCOPT:http-user-agent" in satir:
+                    continue
                 if satir.startswith("#EXTINF"):
                     temiz_dokunulmaz.append(kanal_temizle(satir) + "\n")
                 else:
                     temiz_dokunulmaz.append(satir)
 
-    # 2. ADIM: YEDEKLERİ OLDUĞU GİBİ TOPLA (TARAMA YOK)
-    print("🔄 Yedek kaynaklar birleştiriliyor (Kontrolsüz - Hızlı Mod)...")
+    # 2. ADIM: YEDEKLERİ OLDUĞU GİBİ TOPLA
+    print("🔄 Yedek kaynaklar birleştiriliyor ve User-Agent satırları siliniyor...")
     taze_kanal_listesi = []
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=20)
             if r.status_code == 200:
-                bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
+                # Önce tüm metinden o istenmeyen satırları komple siliyoruz
+                temiz_r_text = re.sub(r'#EXTVLCOPT:http-user-agent=.*\n?', '', r.text)
+                
+                bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_r_text, re.DOTALL)
                 for kanal in bulunanlar:
                     satirlar = kanal.strip().split('\n')
                     if len(satirlar) >= 2:
                         ext_satiri = kanal_temizle(satirlar[0])
                         link_satiri = satirlar[1].strip()
                         
-                        # Group-title ekle ve listeye at (Canlılık kontrolü kaldırıldı)
                         if 'group-title="' not in ext_satiri:
                             ext_satiri = ext_satiri.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
                         taze_kanal_listesi.append(f"{ext_satiri}\n{link_satiri}")
@@ -77,7 +82,7 @@ def main():
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
-    print(f"🚀 İşlem bitti usta! {len(taze_kanal_listesi)} yedek link eklendi. Toplam liste hazır.")
+    print(f"🚀 İşlem bitti usta! User-Agent'lar temizlendi. {len(taze_kanal_listesi)} yedek link eklendi.")
 
 if __name__ == "__main__":
     main()
