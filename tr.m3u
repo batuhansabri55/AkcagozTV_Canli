@@ -3951,8 +3951,6 @@ https://goldvod.site/live/hpgdiscoo/123456/288.m3u8
 https://goldvod.site/live/hpgdiscoo/123456/113.m3u8
 #EXTINF:-1 tvg-name="A Para" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/a_para_7gG.png" group-title="HABER",APARAYEDEK
 https://goldvod.site/live/hpgdiscoo/123456/131.m3u8
-
-# --- 3964+ TEMIZ VE BENZERSIZ YEDEKLER ---
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/aae0367d-c9ab-45a2-8518-0968cd5d2f55.png" tvg-url="https://www.trt1.com.tr/" tvg-id="TRT1.tr",TRT 1
 https://streams.uzunmuhalefet.com/stream/535f4f5a-3ffa-4919-bb5d-5d31024c9237.m3u8
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/ff506778-7000-4a3b-8376-994a8f32058b.png" tvg-url="https://www.atv.com.tr/" tvg-id="ATV.tr",ATV
@@ -3961,6 +3959,8 @@ https://streams.uzunmuhalefet.com/stream/c8758555-8581-4dec-9a46-ebcfaf9ace0a.m3
 https://streams.uzunmuhalefet.com/stream/6bdc8fb5-3e82-4b44-a0b1-6ab9fdc35d3f.m3u8
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/e540b948-8fba-4163-ac65-1d4e8f8bf1bc.png" tvg-url="https://www.nowtv.com.tr/" tvg-id="NOWTV.tr",NOW TV
 https://streams.uzunmuhalefet.com/stream/f9368c57-16e5-44a2-a559-46377a476b04.m3u8
+
+# --- 3964+ TEMIZ VE BENZERSIZ YEDEKLER ---
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/49ce7689-87c7-4a06-80a7-f5cdf9a19481.png" tvg-url="https://www.showtv.com.tr/" tvg-id="ShowTV.tr",Show TV
 https://streams.uzunmuhalefet.com/stream/0ed1c367-312d-4a42-9772-ef257a36b775.m3u8
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/faa06039-87f8-45f1-91b2-ace6449a742e.png" tvg-url="https://www.beyaztv.com.tr/" tvg-id="BeyazTV.tr",Beyaz TV
@@ -4237,6 +4237,8 @@ https://streams.uzunmuhalefet.com/stream/38644c60-c305-4066-8ae5-df47d643a574.m3
 https://streams.uzunmuhalefet.com/stream/8b150353-f3d6-4446-a65d-5f2275fc4132.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/b45d3fb8-b3ee-484f-9c1a-a5304e0fa13f.png" tvg-url="https://www.61saat.com/video/61saat-tv-canli-yayin" tvg-id="",61 Saat TV
 https://streams.uzunmuhalefet.com/stream/8aec6af7-c43b-4ce3-92e4-6ddb65e411d5.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/e6ed029b-4bdb-4e95-acde-24e0b88c83b8.png" tvg-url="https://www.ahitv.com.tr/" tvg-id="",Ahi TV
+https://streams.uzunmuhalefet.com/stream/274588b2-6226-4a6e-8beb-37b3c323ad05.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/f87fd098-7e38-4fe5-82db-0bd892ace7ba.png" tvg-url="https://www.almanyatv.net/" tvg-id="",Almanya TV
 https://streams.uzunmuhalefet.com/stream/78e97469-fd3b-4519-a911-fbcfb0daef4c.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/bccb82d4-2df3-41b7-84dc-ef08faf7f83e.png" tvg-url="http://www.anadoludost.com/" tvg-id="",Anadolu Dost TV
@@ -7996,4 +7998,4 @@ https://saran-live.ercdn.net/babytv/index.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-01 03:17:22
+# SON GUNCELLEME: 2026-04-01 07:41:57
