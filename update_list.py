@@ -25,10 +25,8 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://tinyurl.com/bdd2tz6h",
     "https://publiciptv.com/countries/tr/m3u",
-    "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/main/streams/best/all.m3u8",
-    "https://raw.githubusercontent.com/UzunMuhalefet/Legal-IPTV/main/lists/turkey.m3u8"
-]
+    "https://iptv-org.github.io/iptv/countries/tr.m3u"
+    ]
 
 def yedek_kanali_temizle(metin):
     if "#EXTINF" in metin and "," in metin:
