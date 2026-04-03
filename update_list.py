@@ -5,7 +5,7 @@ import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-# USTA, BURAYI 4566 YAPTIK. ILK 4566 SATIR ARTIK DOKUNULMAZ!
+# USTA, BU SAYI ARTIK KESIN SINIRIN. ILK 4566 SATIRA KIMSE DOKUNAMAZ.
 ZIRH_LIMIT = 4566 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
@@ -44,35 +44,25 @@ def yedek_kanali_temizle(metin):
 
 def main():
     eklenen_urller = set()
-    dokunulmaz_icerik = []
+    ana_liste_zirh = [] # Senin ana kanalların burada saklanacak
     taze_kanal_listesi = []
 
+    # 1. ADIM: ANA KANALLARI (ZIRHLI BÖLGE) OKU VE KORU
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
-            tum_satirlar = f.readlines()
-            # Script dosyanın kaç satır olduğuna bakıp 4566'ya kadar zırhı çeker
-            limit = min(ZIRH_LIMIT, len(tum_satirlar))
+            tum_icerik = f.readlines()
+            # Dosya 4566 satırdan kısaysa hepsini al, uzunsa sadece ilk 4566'yı al.
+            ana_liste_zirh = tum_icerik[:ZIRH_LIMIT]
             
-            i = 0
-            while i < limit:
-                satir = tum_satirlar[i]
-                if satir.startswith("#EXTINF"):
-                    link_satiri = tum_satirlar[i+1] if i+1 < limit else ""
-                    url = link_satiri.strip()
-                    
-                    if url not in eklenen_urller:
-                        dokunulmaz_icerik.append(satir)
-                        dokunulmaz_icerik.append(link_satiri)
-                        eklenen_urller.add(url)
-                    i += 2
-                else:
-                    if i == 0 and satir.startswith("#EXTM3U"):
-                        dokunulmaz_icerik.append(satir)
-                    i += 1
+            # Ana listedeki linkleri 'eklenenler'e ekle ki yedeklerde aynısı gelirse silsin
+            for satir in ana_liste_zirh:
+                if satir.strip().startswith("http"):
+                    eklenen_urller.add(satir.strip())
 
+    # 2. ADIM: İNTERNETTEN YEDEKLERİ TOPLA
     for url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(url, headers=HEADERS, timeout=20)
+            r = requests.get(url, headers=HEADERS, timeout=15)
             if r.status_code == 200:
                 temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
                 bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
@@ -81,21 +71,31 @@ def main():
                     if len(satir_grubu) >= 2:
                         ext_satiri = satir_grubu[0]
                         link_satiri = satir_grubu[-1].strip()
+                        
                         if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
                             continue
+                            
                         if link_satiri not in eklenen_urller:
                             temiz_ext = yedek_kanali_temizle(ext_satiri)
                             if 'group-title="' not in temiz_ext:
                                 temiz_ext = temiz_ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
                             taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
                             eklenen_urller.add(link_satiri)
-        except: continue
+        except:
+            continue
 
+    # 3. ADIM: DOSYAYI YENİDEN OLUŞTUR (BETON DÖKME KISMI)
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(dokunulmaz_icerik)
-        f.write(f"\n# --- {ZIRH_LIMIT}+ TEMIZ VE BENZERSIZ YEDEKLER ---\n")
+        # Önce senin 4566 satırlık zırhlı ana listeni olduğu gibi yazıyoruz
+        f.writelines(ana_liste_zirh)
+        
+        # Araya bir işaret koyalım ki nerede yedek başladığını göresin
+        f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK ZIRH SONRASI YEDEKLER BAŞLADI ---\n")
+        
+        # Sonra yeni bulunan yedekleri ekliyoruz
         for k in taze_kanal_listesi:
             f.write(k + "\n")
+            
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
