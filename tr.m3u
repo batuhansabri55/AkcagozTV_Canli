@@ -67,11 +67,11 @@ https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8
 https://ekoltv-live.ercdn.net/ekolsport/ekolsport.m3u8
 #EXTINF:-1 tvg-id="halktvyedek" tvg-logo="c9acd31e-5cc0-4b5d-bdef-7c9f8b577c42.png" group-title="TURKIYE DEATHLESS",HALKTVYEDEK
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
-#EXTINF:-1 tvg-id="szctvyedek" tvg-logo="2fdd6eb0-bd9e-44ef-ad0e-7f2c4cf3a8a7.png" group-title="TURKIYE DEATHLESS",SZCTVYEDEK
+#EXTINF:-1 tvg-id="szctvyedek" tvg-logo="2fdd6eb0-bd9e-44ef-ad0e-7f2c4cf3a8a7.png" group-title="TURKIYE DEATHLESS",TV5TVYEDEK
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:-1 tvg-id="liderhaberyedek" tvg-logo="ccf5746a-1eda-45ed-9afc-5e281fa7a704.png" group-title="TURKIYE DEATHLESS",LIDERHABERYEDEK
 https://tele1-live.ercdn.net/tele1/tele1.m3u8
-#EXTINF:-1 tvg-id="astvyedek" tvg-logo="bb23721e-664b-48c6-a9f4-5e55f890f026.png" group-title="TURKIYE DEATHLESS",ASTVYEDEK
+#EXTINF:-1 tvg-id="astvyedek" tvg-logo="bb23721e-664b-48c6-a9f4-5e55f890f026.png" group-title="TURKIYE DEATHLESS",BURSAASTVYEDEK
 https://live.artidijitalmedya.com/artidijital_astv/astv/playlist.m3u8
 #EXTINF:-1 tvg-id="tivi6yedek" tvg-logo="999a12b9-6679-4621-8096-c88a76b33e92.png" group-title="TURKIYE DEATHLESS",TIVI6YEDEK
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8
@@ -169,7 +169,7 @@ https://ensonhaber-live.ercdn.net/bloomberght/bloomberght.m3u8
 https://live.artidijitalmedya.com/artidijital_brtv/brtv/playlist.m3u8
 #EXTINF:-1 tvg-id="brükseltürkyedek" tvg-logo="http://iptvci.free.nf/bruksel.png" group-title="TURKIYE DEATHLESS",BRÜKSELTÜRKYEDEK
 https://live.euromediacenter.com/brukselturk/index.m3u8
-#EXTINF:-1 tvg-id="bursaastv(900p)yedek" tvg-logo="http://iptvci.free.nf/bursaas.png" group-title="TURKIYE DEATHLESS",BURSAASTV(900P)YEDEK
+#EXTINF:-1 tvg-id="bursaastv(900p)yedek" tvg-logo="http://iptvci.free.nf/bursaas.png" group-title="TURKIYE DEATHLESS",BURSAASTVYEDEK
 https://live.artidijitalmedya.com/artidijital_astv/astv/playlist.m3u8
 #EXTINF:-1 tvg-id="bursalinetvyedek" tvg-logo="http://iptvci.free.nf/line.png" group-title="TURKIYE DEATHLESS",BURSALINETVYEDEK
 https://edge1.socialsmart.tv/linetv/bant1/playlist.m3u8
