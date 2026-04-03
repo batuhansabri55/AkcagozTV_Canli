@@ -5,8 +5,8 @@ import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-# USTA, BU SAYI ARTIK KESIN SINIRIN. ILK 4566 SATIRA KIMSE DOKUNAMAZ.
-ZIRH_LIMIT = 4566 
+# USTA, TEMIZLEDIGIN 4892 CALISAN URL ICIN ZIRHI BURAYA SABITLEDIM.
+ZIRH_LIMIT = 4892 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
 YASAKLI_GRUPLAR = [
@@ -44,22 +44,22 @@ def yedek_kanali_temizle(metin):
 
 def main():
     eklenen_urller = set()
-    ana_liste_zirh = [] # Senin ana kanalların burada saklanacak
+    ana_liste_zirh = [] 
     taze_kanal_listesi = []
 
-    # 1. ADIM: ANA KANALLARI (ZIRHLI BÖLGE) OKU VE KORU
+    # 1. ADIM: 4892 SATIRLIK ZIRHLI BÖLGEYI MUHAFAZA ET
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_icerik = f.readlines()
-            # Dosya 4566 satırdan kısaysa hepsini al, uzunsa sadece ilk 4566'yı al.
+            # Senin temizlediğin asıl liste buraya kilitlenir
             ana_liste_zirh = tum_icerik[:ZIRH_LIMIT]
             
-            # Ana listedeki linkleri 'eklenenler'e ekle ki yedeklerde aynısı gelirse silsin
+            # Zırhlı bölgedeki linkleri kaydet ki yedeklerde aynısı gelirse eklemesin
             for satir in ana_liste_zirh:
                 if satir.strip().startswith("http"):
                     eklenen_urller.add(satir.strip())
 
-    # 2. ADIM: İNTERNETTEN YEDEKLERİ TOPLA
+    # 2. ADIM: DIŞ KAYNAKLARDAN TAZE YEDEKLERİ ÇEK
     for url in YEDEK_KAYNAKLAR:
         try:
             r = requests.get(url, headers=HEADERS, timeout=15)
@@ -84,15 +84,15 @@ def main():
         except:
             continue
 
-    # 3. ADIM: DOSYAYI YENİDEN OLUŞTUR (BETON DÖKME KISMI)
+    # 3. ADIM: BETON DÖKME VE KAYDETME
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce senin 4566 satırlık zırhlı ana listeni olduğu gibi yazıyoruz
+        # Önce senin 4892 satırlık zırhlı ana listeni BAŞA yazıyoruz
         f.writelines(ana_liste_zirh)
         
-        # Araya bir işaret koyalım ki nerede yedek başladığını göresin
-        f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK ZIRH SONRASI YEDEKLER BAŞLADI ---\n")
+        # Sınır çizgisi
+        f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---\n")
         
-        # Sonra yeni bulunan yedekleri ekliyoruz
+        # İnternetten gelen taze linkleri altına ekliyoruz
         for k in taze_kanal_listesi:
             f.write(k + "\n")
             
