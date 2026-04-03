@@ -5,7 +5,8 @@ import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 3963 
+# USTA, BURAYI 4566 YAPTIK. ILK 4566 SATIR ARTIK DOKUNULMAZ!
+ZIRH_LIMIT = 4566 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
 YASAKLI_GRUPLAR = [
@@ -26,7 +27,7 @@ YEDEK_KAYNAKLAR = [
     "https://tinyurl.com/bdd2tz6h",
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
-    ]
+]
 
 def yedek_kanali_temizle(metin):
     if "#EXTINF" in metin and "," in metin:
@@ -49,6 +50,7 @@ def main():
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_satirlar = f.readlines()
+            # Script dosyanın kaç satır olduğuna bakıp 4566'ya kadar zırhı çeker
             limit = min(ZIRH_LIMIT, len(tum_satirlar))
             
             i = 0
@@ -91,7 +93,7 @@ def main():
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(dokunulmaz_icerik)
-        f.write("\n# --- 3964+ TEMIZ VE BENZERSIZ YEDEKLER ---\n")
+        f.write(f"\n# --- {ZIRH_LIMIT}+ TEMIZ VE BENZERSIZ YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
