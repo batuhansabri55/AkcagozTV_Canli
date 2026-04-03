@@ -6,7 +6,7 @@ import datetime
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
 # USTA, TEMIZLEDIGIN 4892 CALISAN URL ICIN ZIRHI BURAYA SABITLEDIM.
-ZIRH_LIMIT = 4892 
+ZIRH_LIMIT = 4941 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
 YASAKLI_GRUPLAR = [
@@ -47,7 +47,7 @@ def main():
     ana_liste_zirh = [] 
     taze_kanal_listesi = []
 
-    # 1. ADIM: 4892 SATIRLIK ZIRHLI BÖLGEYI MUHAFAZA ET
+    # 1. ADIM: 4941 SATIRLIK ZIRHLI BÖLGEYI MUHAFAZA ET
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_icerik = f.readlines()
@@ -86,7 +86,7 @@ def main():
 
     # 3. ADIM: BETON DÖKME VE KAYDETME
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce senin 4892 satırlık zırhlı ana listeni BAŞA yazıyoruz
+        # Önce senin 4941 satırlık zırhlı ana listeni BAŞA yazıyoruz
         f.writelines(ana_liste_zirh)
         
         # Sınır çizgisi
