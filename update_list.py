@@ -2,15 +2,20 @@ import requests
 import re
 import os
 import datetime
-import time
-from concurrent.futures import ThreadPoolExecutor
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 5047  # BU SATIR SAYISI ASLA DEĞİŞMEZ
-HEADERS = {'User-Agent': 'VLC/3.0.18 LibVLC/3.0.18'}
+# USTA, TEMIZLEDIGIN 4892 CALISAN URL ICIN ZIRHI BURAYA SABITLEDIM.
+ZIRH_LIMIT = 5047
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
-YEDEK_KAYNAKLAR = [
+YASAKLI_GRUPLAR = [
+    "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", "Taşacak Bu Deniz", 
+    "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", "MediabayTV", 
+    "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
+    "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
+    "Superxfilm", "CINEMAMOD"
+]
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://tinyurl.com/ytpatron",
     "https://urlz.fr/v1Xo",
@@ -22,85 +27,75 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-def hiz_testi(url):
-    """Linkin hızını ölçer (ms)."""
-    try:
-        start = time.time()
-        response = requests.head(url, headers=HEADERS, timeout=1.2, allow_redirects=True)
-        if response.status_code == 200:
-            return int((time.time() - start) * 1000)
-    except:
-        pass
-    return 9999
+def yedek_kanali_temizle(metin):
+    if "#EXTINF" in metin and "," in metin:
+        parcalar = metin.rsplit(',', 1)
+        ayarlar = parcalar[0]
+        isim = parcalar[1]
+        isim = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', isim)
+        isim = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim, flags=re.I)
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
+        isim = re.sub(r'\s+', ' ', isim).strip()
+        isim = re.sub(r'^[\.\-\s|]+', '', isim)
+        return f"{ayarlar},{isim}"
+    return metin
 
 def main():
-    if not os.path.exists(FILE_PATH): return
-    
-    with open(FILE_PATH, 'r', encoding='utf-8') as f:
-        tum_satirlar = f.readlines()
-    
-    zırh_bolumu = tum_satirlar[:ZIRH_LIMIT]
-    mevcut_urller = set()
-    link_havuzu = {} # Kanal ismi -> [Link listesi]
+    eklenen_urller = set()
+    ana_liste_zirh = [] 
+    taze_kanal_listesi = []
 
-    # 1. ZIRHTAKİ LİNKLERİ ANALİZ ET
-    for i in range(len(zırh_bolumu)):
-        line = zırh_bolumu[i].strip()
-        if line.startswith("http"):
-            # Bir önceki satır EXTINF satırıdır
-            kanal_adi = zırh_bolumu[i-1].split(',')[-1].strip()
-            if kanal_adi not in link_havuzu: link_havuzu[kanal_adi] = []
-            link_havuzu[kanal_adi].append(line)
-            mevcut_urller.add(line)
+    # 1. ADIM: 4941 SATIRLIK ZIRHLI BÖLGEYI MUHAFAZA ET
+    if os.path.exists(FILE_PATH):
+        with open(FILE_PATH, 'r', encoding='utf-8') as f:
+            tum_icerik = f.readlines()
+            # Senin temizlediğin asıl liste buraya kilitlenir
+            ana_liste_zirh = tum_icerik[:ZIRH_LIMIT]
+            
+            # Zırhlı bölgedeki linkleri kaydet ki yedeklerde aynısı gelirse eklemesin
+            for satir in ana_liste_zirh:
+                if satir.strip().startswith("http"):
+                    eklenen_urller.add(satir.strip())
 
-    # 2. DIŞ KAYNAKLARDAN TAZE LİNKLERİ ÇEK (MÜKERRER OLMADAN)
-    for y_url in YEDEK_KAYNAKLAR:
+    # 2. ADIM: DIŞ KAYNAKLARDAN TAZE YEDEKLERİ ÇEK
+    for url in YEDEK_KAYNAKLAR:
         try:
-            r = requests.get(y_url, headers=HEADERS, timeout=10)
-            bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
-            for kanal in bulunanlar:
-                parca = kanal.strip().split('\n')
-                k_adi = parca[0].split(',')[-1].strip()
-                k_link = parca[-1].strip()
-                if k_link not in mevcut_urller:
-                    if k_adi not in link_havuzu: link_havuzu[k_adi] = []
-                    link_havuzu[k_adi].append(k_link)
-                    mevcut_urller.add(k_link)
-        except: continue
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            if r.status_code == 200:
+                temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
+                bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
+                for kanal in bulunanlar:
+                    satir_grubu = kanal.strip().split('\n')
+                    if len(satir_grubu) >= 2:
+                        ext_satiri = satir_grubu[0]
+                        link_satiri = satir_grubu[-1].strip()
+                        
+                        if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
+                            continue
+                            
+                        if link_satiri not in eklenen_urller:
+                            temiz_ext = yedek_kanali_temizle(ext_satiri)
+                            if 'group-title="' not in temiz_ext:
+                                temiz_ext = temiz_ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
+                            taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
+                            eklenen_urller.add(link_satiri)
+        except:
+            continue
 
-    # 3. 9000 LİNKİ TOPLU TEST ET VE SIRALA
-    print("Usta, bütün havuz (9000 link) tartılıyor...")
-    for k_adi, linkler in link_havuzu.items():
-        if len(linkler) > 1:
-            with ThreadPoolExecutor(max_workers=10) as ex:
-                sonuclar = list(ex.map(lambda u: (hiz_testi(u), u), linkler))
-            # En hızlı (en düşük ms) olanı başa al
-            link_havuzu[k_adi] = [item[1] for item in sorted(sonuclar)]
-
-    # 4. YAZDIRMA (ZIRHIN SIRASINI BOZMADAN İÇİNİ GÜNCELLE)
-    yeni_m3u = []
-    zırh_index = 0
-    while zırh_index < len(zırh_bolumu):
-        satir = zırh_bolumu[zırh_index]
-        if satir.startswith("http"):
-            # Bu linkin ait olduğu kanalın EN HIZLISINI buraya yaz
-            k_adi = zırh_bolumu[zırh_index-1].split(',')[-1].strip()
-            en_hizli = link_havuzu[k_adi][0] 
-            yeni_m3u.append(en_hizli + "\n")
-            # En hızlıyı kullandık, havuzdan çıkar ki yedeklere de yazmasın
-            link_havuzu[k_adi].pop(0)
-        else:
-            yeni_m3u.append(satir)
-        zırh_index += 1
-
-    # 5. GERİYE KALAN YEDEKLERİ ALTA EKLE
-    yeni_m3u.append("\n# --- HIZ TESTİNDEN GEÇMİŞ SIRALI YEDEKLER ---\n")
-    for k_adi, linkler in link_havuzu.items():
-        for l in linkler:
-            yeni_m3u.append(f'#EXTINF:-1 group-title="YEDEKLER",{k_adi}\n{l}\n')
-
+    # 3. ADIM: BETON DÖKME VE KAYDETME
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(yeni_m3u)
+        # Önce senin 4941 satırlık zırhlı ana listeni BAŞA yazıyoruz
+        f.writelines(ana_liste_zirh)
+        
+        # Sınır çizgisi
+        f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---\n")
+        
+        # İnternetten gelen taze linkleri altına ekliyoruz
+        for k in taze_kanal_listesi:
+            f.write(k + "\n")
+            
+        zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
 if __name__ == "__main__":
     main()
