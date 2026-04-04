@@ -5059,6 +5059,36 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
 #EXTINF:-1 tvg-ID="tlc.tr" tvg-name="TR ▎TLC HD" tvg-logo="https://img.logo-cdn.cc/tlc.png" group-title="Türkiye",TLCYEDEK
 https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV HD" tvg-logo="https://img.logo-cdn.cc/sinematv.png" group-title="Türkiye",SINEMATVYEDEK
+http://65.108.239.207:80/sinema/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV 2 HD" tvg-logo="https://img.logo-cdn.cc/sinematv.png" group-title="Türkiye",SINEMATV2YEDEK
+http://65.108.239.207:80/sinema2/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV 1001 HD" tvg-logo="https://img.logo-cdn.cc/sinematv1001hd.png" group-title="Türkiye",SINEMATV1001YEDEK
+http://65.108.239.207:80/sinema1001/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV 1002 HD" tvg-logo="https://img.logo-cdn.cc/sinematv1002hd.png" group-title="Türkiye",SINEMATV1002YEDEK
+http://65.108.239.207:80/sinema1002/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV AKSIYON HD" tvg-logo="https://img.logo-cdn.cc/sinematvaksiyonhd.png" group-title="Türkiye",SINEMATVAKSIYONYEDEK
+http://65.108.239.207:80/sinemaaksiyon/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV AKSIYON 2 HD" tvg-logo="https://img.logo-cdn.cc/sinematvaksiyon2hd.png" group-title="Türkiye",SINEMATVAKSIYON2YEDEK
+http://65.108.239.207:80/sinemaaksiyon2/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV AILE HD" tvg-logo="https://img.logo-cdn.cc/sinematvailehd.png" group-title="Türkiye",TSINEMATVAILEYEDEK
+http://65.108.239.207:80/sinemaaile/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV KOMEDI HD" tvg-logo="https://img.logo-cdn.cc/sinematvkomedi.png" group-title="Türkiye",SINEMATVKOMEDIYEDEK
+http://65.108.239.207:80/sinemakomedi/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV YERLI HD" tvg-logo="https://img.logo-cdn.cc/sinematvyerlihd.png" group-title="Türkiye",SINEMATVYERLIYEDEK
+http://65.108.239.207:80/sinemayerli/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV YERLI 2 HD" tvg-logo="https://img.logo-cdn.cc/sinematvyerlihd.png" group-title="Türkiye",SINEMATVYERLI2YEDEK
+http://65.108.239.207:80/sinemayerli2/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎BBC EARTH HD" tvg-logo="https://img.logo-cdn.cc//bbcearth.png" group-title="Türkiye",BBC EARTH HD
+http://65.108.239.207:80/bbc/index.m3u8
+#EXTINF:-1 tvg-ID="discoverychannel.tr" tvg-name="TR ▎DISCOVERY CHANNEL HD" tvg-logo="https://img.logo-cdn.cc/discoverychannel.png" group-title="Türkiye",DISCOVERYCHANNELYEDEK
+http://65.108.239.207:80/discovery/index.m3u8
+#EXTINF:-1 tvg-ID="discoveryscience.tr" tvg-name="TR ▎DISCOVERY SCIENCE HD" tvg-logo="https://img.logo-cdn.cc//discoverysciencehd-clivebesle.png" group-title="Türkiye",DISCOVERYIDXYEDEK
+http://65.108.239.207:80/discs/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎LOVE NATURE HD" tvg-logo="https://img.logo-cdn.cc//lovenature.png" group-title="Türkiye",LOVENATUREYEDEK
+http://65.108.239.207:80/lovenature/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎VIASAT HISTORY HD" tvg-logo="https://img.logo-cdn.cc/viasathistory.png" group-title="Türkiye",VIASATHISTORYYEDEK
+http://65.108.239.207:80/viasathistory/index.m3u8
 
 
 
