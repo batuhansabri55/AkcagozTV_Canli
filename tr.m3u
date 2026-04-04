@@ -5047,6 +5047,15 @@ http://live.yt-hls.workers.dev/UC6T0L26KS1NHMPbTwI1L4Eg.m3u8
 http://live.cdn-vizi.workers.dev/?ID=59
 #EXTINF:-1 tvg-ID="startv.tr" tvg-name="TR ▎STAR HD" tvg-logo="https://img.logo-cdn.cc/startv.png" group-title="Türkiye",STARTVYEDEK
 https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎BENGU TURK HD" tvg-logo="https://img.logo-cdn.cc/benguturk.png" group-title="Türkiye",BENGUTURKYEDEK
+https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎FLASH TV HD" tvg-logo="https://img.logo-cdn.cc//flashhd.png" group-title="Türkiye",FLASHTVYEDEK
+https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎TV 5 HD" tvg-logo="https://img.logo-cdn.cc/tv5.png" group-title="Türkiye",TV5YEDEK
+https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎CIFTCI TV HD" tvg-logo="https://img.logo-cdn.cc//ciftcitv.png" group-title="Türkiye",CIFTCOTVYEDEK
+https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
+
 
 
 
