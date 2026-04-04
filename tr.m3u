@@ -4919,3 +4919,45 @@ https://ip100.radyotelekomtv.com:3303/stream/play.m3u8
 https://cdn-ctvazerbaycan.yayin.com.tr/ctvazerbaycan/ctvazerbaycan/playlist.m3u8
 #EXTINF:-1, SIFIR TV
 https://ahr7chck.rocketcdn.com/sifirtv.stream/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt1_Rwe.png" group-title="VIZITV",TRT1YEDEK
+https://tv-trt1.medya.trt.com.tr/master_1080.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/show_tv_lNk.png" group-title="VIZITV",SHOWTVYEDEK
+https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=7te02zjyafvh&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/kanal7_avrupa_PSS.png" group-title="VIZITV",KANAL7YEDEK
+https://kanal7.daioncdn.net/kanal7/kanal7_1080p.m3u8?&sid=7te0ujo5wsx0&app=f99587ad-1637-494d-8255-da35b09d17a1&ce=3
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv8_334.png" group-title="VIZITV",TV8YEDEK
+https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7te0ls3r2ayz&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/haber_turk_nEH.png" group-title="VIZITV",HABERTURKYEDEK
+https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=7te101th52u7&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_haber_AIf.png" group-title="VIZITV",TRTHABERYEDEK
+https://tv-trthaber.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/halk_tv_L5s.png" group-title="VIZITV",HALKTVYEDEK
+https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?sid=7te19znnzjxx&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ntv_60R.png" group-title="VIZITV",NTVYEDEK
+https://dogus.daioncdn.net/ntv/ntv_1080p.m3u8?token=e8c0dec16bf84c8cc187224d13811c0e705fd2c58b25d7ee&sid=7te15ul6hi4e&app=c68bddbe-3dbf-49f7-892a-93de5ae37f1f&ce=3
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_cocuk_H2e.png" group-title="VIZITV",TRTCOCUKYEDEK
+https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_belgesel_6fG.png" group-title="VIZITV",TRTBELGESELYEDEK
+https://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt2_7PU.png" group-title="VIZITV",TRT2YEDEK
+https://tv-trt2.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv100_27m.png" group-title="VIZITV",TV100YEDEK
+https://tv100.daioncdn.net/tv100/tv100_1080p.m3u8?&sid=7te1of6jsdh3&app=356e7599-d81d-4357-935a-355a1ad9846e&ce=2
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tgrt_haber_SLy.png" group-title="VIZITV",TGRTHABERYEDEK
+https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber_720p.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ulke_tv_e4E.png" group-title="VIZITV",ULKETVYEDEK
+https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/akit_BKG.png" group-title="VIZITV",AKITTVYEDEK
+https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/lalegul_1v7.png" group-title="VIZITV",LALEGULTVYEDEK
+https://lbl.netmedya.net/hls/lalegultv.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_avaz_YkY.png" group-title="VIZITV",TRTAVAZYEDEK
+https://tv-trtavaz.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_kurdi_CCE.png" group-title="VIZITV",TRTKURDIYEDEK
+https://tv-trtkurdi.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_arapca_HQs.png" group-title="VIZITV",TRTARAPCAYEDEK
+https://tv-trtarabi.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ekol_tv_aHD.png" group-title="VIZITV",EKOLTVYEDEK
+https://ekoltv-live.ercdn.net/ekoltv/ekoltv_720p.m3u8
+
