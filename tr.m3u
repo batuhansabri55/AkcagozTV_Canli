@@ -5055,6 +5055,10 @@ https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:-1 tvg-ID="" tvg-name="TR ▎CIFTCI TV HD" tvg-logo="https://img.logo-cdn.cc//ciftcitv.png" group-title="Türkiye",CIFTCOTVYEDEK
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
+#EXTINF:-1 tvg-ID="dmax.tr" tvg-name="TR ▎DMAX HD" tvg-logo="https://img.logo-cdn.cc/dmax.png" group-title="Türkiye",DMAXYEDEK
+https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
+#EXTINF:-1 tvg-ID="tlc.tr" tvg-name="TR ▎TLC HD" tvg-logo="https://img.logo-cdn.cc/tlc.png" group-title="Türkiye",TLCYEDEK
+https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
 
 
 
