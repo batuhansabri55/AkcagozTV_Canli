@@ -5089,6 +5089,22 @@ http://65.108.239.207:80/discs/index.m3u8
 http://65.108.239.207:80/lovenature/index.m3u8
 #EXTINF:-1 tvg-ID="" tvg-name="TR ▎VIASAT HISTORY HD" tvg-logo="https://img.logo-cdn.cc/viasathistory.png" group-title="Türkiye",VIASATHISTORYYEDEK
 http://65.108.239.207:80/viasathistory/index.m3u8
+#EXTINF:-1 tvg-ID="beinboxoffice1.tr" tvg-name="TR ▎BEIN BOX OFFICE 1 HD" tvg-logo="https://img.logo-cdn.cc/beinboxoffice1.png" group-title="Türkiye",BEIN BOX OFFICE 1 HD
+http://65.108.239.207:80/box1/index.m3u8
+#EXTINF:-1 tvg-ID="beinboxoffice2.tr" tvg-name="TR ▎BEIN BOX OFFICE 2 HD" tvg-logo="https://img.logo-cdn.cc/beinboxoffice2.png" group-title="Türkiye",BEIN BOX OFFICE 2 HD
+http://65.108.239.207:80/box2/index.m3u8
+#EXTINF:-1 tvg-ID="beinboxoffice3.tr" tvg-name="TR ▎BEIN BOX OFFICE 3 HD" tvg-logo="https://img.logo-cdn.cc/beinboxoffice3.png" group-title="Türkiye",BEIN BOX OFFICE 3 HD
+http://65.108.239.207:80/box3/index.m3u8
+#EXTINF:-1 tvg-ID="beinmoviesaction.tr" tvg-name="TR ▎BEIN MOVIES ACTION HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesactionhd.png" group-title="Türkiye",BEIN MOVIES ACTION HD
+http://65.108.239.207:80/bsaction1/index.m3u8
+#EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="TR ▎BEIN MOVIES FAMILY HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesfamilyhd.png" group-title="Türkiye",EIN MOVIES FAMILY HD
+http://65.108.239.207:80/bsfamily/index.m3u8
+#EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="TR ▎BEIN MOVIES PREMIER HD" tvg-logo="https://img.logo-cdn.cc//beinmoviespremierehd.png" group-title="Türkiye",BEIN MOVIES PREMIER HD
+http://65.108.239.207:80/bspremier1/index.m3u8
+#EXTINF:-1 tvg-ID="beinmoviesstars.tr" tvg-name="TR ▎BEIN MOVIES STARS HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesstarshd.png" group-title="Türkiye",BEINMOVIESSTARSYEDEK
+http://65.108.239.207:80/bsstars/index.m3u8
+#EXTINF:-1 tvg-ID="beinmoviesturk.tr" tvg-name="TR ▎BEIN MOVIES TURK HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesturkhd.png" group-title="Türkiye",BEIN MOVIES TURK HD
+http://65.108.239.207:80/bsturk/index.m3u8
 
 
 
