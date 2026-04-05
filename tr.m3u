@@ -5095,13 +5095,13 @@ http://65.108.239.207:80/viasathistory/index.m3u8
 http://65.108.239.207:80/box1/index.m3u8
 #EXTINF:-1 tvg-ID="beinboxoffice2.tr" tvg-name="TR ▎BEIN BOX OFFICE 2 HD" tvg-logo="https://img.logo-cdn.cc/beinboxoffice2.png" group-title="Türkiye",BEIN BOX OFFICE 2 HD
 http://65.108.239.207:80/box2/index.m3u8
-#EXTINF:-1 tvg-ID="beinboxoffice3.tr" tvg-name="TR ▎BEIN BOX OFFICE 3 HD" tvg-logo="https://img.logo-cdn.cc/beinboxoffice3.png" group-title="Türkiye",BEINBOXOFFICE3YEDEK
+#EXTINF:-1 tvg-ID="beinboxoffice3.tr" tvg-name="TR ▎BEIN BOX OFFICE 3 HD" tvg-logo="https://img.logo-cdn.cc/beinboxoffice3.png" group-title="Türkiye",,BEIN BOX OFFICE 3 HD
 http://65.108.239.207:80/box3/index.m3u8
 #EXTINF:-1 tvg-ID="beinmoviesaction.tr" tvg-name="TR ▎BEIN MOVIES ACTION HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesactionhd.png" group-title="Türkiye",BEIN MOVIES ACTION HD
 http://65.108.239.207:80/bsaction1/index.m3u8
 #EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="TR ▎BEIN MOVIES FAMILY HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesfamilyhd.png" group-title="Türkiye",EIN MOVIES FAMILY HD
 http://65.108.239.207:80/bsfamily/index.m3u8
-#EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="BEIN MOVIES PREMIER HD" tvg-logo="https://img.logo-cdn.cc//beinmoviespremierehd.png" group-title="Türkiye",BEIN BOX OFFICE 3 HD
+#EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="BEIN MOVIES PREMIER HD" tvg-logo="https://img.logo-cdn.cc//beinmoviespremierehd.png" group-title="Türkiye"BEINMOVIESPREMIEREYEDEK
 http://65.108.239.207:80/bspremier1/index.m3u8
 #EXTINF:-1 tvg-ID="beinmoviesstars.tr" tvg-name="TR ▎BEIN MOVIES STARS HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesstarshd.png" group-title="Türkiye",BEINMOVIESSTARSYEDEK
 http://65.108.239.207:80/bsstars/index.m3u8
