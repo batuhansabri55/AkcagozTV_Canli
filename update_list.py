@@ -16,6 +16,8 @@ YASAKLI_GRUPLAR = [
     "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
     "Superxfilm", "CINEMAMOD"
 ]
+
+YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://tinyurl.com/ytpatron",
     "https://urlz.fr/v1Xo",
@@ -45,14 +47,12 @@ def main():
     ana_liste_zirh = [] 
     taze_kanal_listesi = []
 
-    # 1. ADIM: 4941 SATIRLIK ZIRHLI BÖLGEYI MUHAFAZA ET
+    # 1. ADIM: ZIRHLI BÖLGEYI MUHAFAZA ET
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_icerik = f.readlines()
-            # Senin temizlediğin asıl liste buraya kilitlenir
             ana_liste_zirh = tum_icerik[:ZIRH_LIMIT]
             
-            # Zırhlı bölgedeki linkleri kaydet ki yedeklerde aynısı gelirse eklemesin
             for satir in ana_liste_zirh:
                 if satir.strip().startswith("http"):
                     eklenen_urller.add(satir.strip())
@@ -82,15 +82,10 @@ def main():
         except:
             continue
 
-    # 3. ADIM: BETON DÖKME VE KAYDETME
+    # 3. ADIM: KAYDETME
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce senin 4941 satırlık zırhlı ana listeni BAŞA yazıyoruz
         f.writelines(ana_liste_zirh)
-        
-        # Sınır çizgisi
         f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---\n")
-        
-        # İnternetten gelen taze linkleri altına ekliyoruz
         for k in taze_kanal_listesi:
             f.write(k + "\n")
             
