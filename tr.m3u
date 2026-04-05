@@ -5113,6 +5113,8 @@ https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8 
 #EXTINF:-1 tvg-id="bır.tr" tvg-name="BIR TV" tvg-logo="https://www.birtv.tv/assets/upload/637f83951df60.png.webp" group-title="ULUSAL",BİRTVYEDEK 
 https://edge.socialsmart.tv/birtv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-id="startv.tr" tvg-name="STAR TV" group-title="🖥️ CANLI | Ulusal",STARTVYEDEK
+http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
 
 
 
