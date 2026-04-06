@@ -1,4 +1,6 @@
 #EXTM3U
+
+
 #EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="BEIN MOVIES PREMIER HD" tvg-logo="https://img.logo-cdn.cc//beinmoviespremierehd.png" group-title="Türkiye"BEINMOVIESPREMIEREYEDEK
 http://65.108.239.207:80/bspremier1/index.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",A2YEDEK
@@ -1407,9 +1409,9 @@ https://streams.uzunmuhalefet.com/stream/80f423e1-a4be-41cc-8569-5d76524b95ac.m3
 https://yayin.santraltr.com/hls/zeynotv.m3u8
 #EXTINF:-1, GURBET 24 TV
 https://streams.uzunmuhalefet.com/stream/2b43d22d-32bf-4aa2-bfa6-35ad48d4dd5d.m3u8
-#EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/tlxIQlRonMkaeTav.png" group-title="TURKIYE DEATHLESS",GURBETTV24YEDEK
+#EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/tlxIQlRonMkaeTav.png" group-title="TURKIYE DEATHLESS",GURBET24TVYEDEK
 https://cdn1-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/6f55aa40-5d5f-4d3a-b2e7-a3a92c4101b0.png" group-title="TURKIYE DEATHLESS",GURBETTV24YEDEK
+#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/6f55aa40-5d5f-4d3a-b2e7-a3a92c4101b0.png" group-title="TURKIYE DEATHLESS",GURBET24TVYEDEK
 https://streams.uzunmuhalefet.com/stream/2b43d22d-32bf-4aa2-bfa6-35ad48d4dd5d.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/alRMPmISGIMK39eH2pNqsb1rZ0OB2Ip-qEQNsg=s160-c-k-c0x00ffffff-no-rj" group-title="TURKIYE DEATHLESS",GZTTVYEDEK
 https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8
@@ -4347,31 +4349,31 @@ https://streams.uzunmuhalefet.com/stream/a6134173-2b9d-442b-af96-fd4385f278ae.m3
 https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/94106af4-b8c4-4b07-9c29-dc9933755457.png" group-title="TURKIYE DEATHLESS",TV2020YEDEK
 https://streams.uzunmuhalefet.com/stream/b0f9e41b-ed43-4373-8844-566529163b01.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",24TVYEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TV24YEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="24TV.TR@SD",TV24YEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",24TVYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="24TV.TR@SD",24TVYEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
-#EXTINF:-1, TV24YEDEK
+#EXTINF:-1, 24TVYEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
-#EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ldEwCKkHHsLBuoWx.png" group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ldEwCKkHHsLBuoWx.png" group-title="TURKIYE DEATHLESS",24TVYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/142
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",24TVYEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",24TVYEDEK
 http://live.cdn-vizi.workers.dev/?ID=37
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",24TVYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232354
-#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/24_tv_fxJ.png" group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/24_tv_fxJ.png" group-title="TURKIYE DEATHLESS",24TVYEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
-#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/d8e81779-a0c6-4202-8f47-5315d34e395c.png" group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/d8e81779-a0c6-4202-8f47-5315d34e395c.png" group-title="TURKIYE DEATHLESS",24TVYEDEK
 https://goldvod.site/live/hpgdiscoo/123456/112.m3u8
-#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/24_tv_wsF.png" group-title="VIZITV",TV24YEDEK
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/24_tv_wsF.png" group-title="VIZITV",24TVYEDEK
 https://streams.uzunmuhalefet.com/stream/35b6fa6f-7915-4303-8198-30c2d7b82929.m3u8
-#EXTINF:-1 tvg-logo="http://iptvci.free.nf/24.png" group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 tvg-logo="http://iptvci.free.nf/24.png" group-title="TURKIYE DEATHLESS",24TVYEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
-#EXTINF:-1 tvg-logo="http://iptvci.free.nf/24.png" group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 tvg-logo="http://iptvci.free.nf/24.png" group-title="TURKIYE DEATHLESS",24TVYEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TV24YEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",24TVYEDEK
 https://ensonhaber-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tv264.png" group-title="TURKIYE DEATHLESS",TV264YEDEK
 http://mc1.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8
