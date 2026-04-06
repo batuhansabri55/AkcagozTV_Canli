@@ -155,6 +155,8 @@ https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7c32lioncwib&app=7ddc255a-ef47-
 https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/24.png" group-title="TURKIYE DEATHLESS",24YEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
+#EXTINF:-1 tvg-logo="http://iptvci.free.nf/24.png" group-title="TURKIYE DEATHLESS",24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/akit.png" group-title="TURKIYE DEATHLESS",AKITTVYEDEK
 http://akittv-live.ercdn.net/akittv/akittv.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/aksutv.png" group-title="TURKIYE DEATHLESS",AKSUTVYEDEK
