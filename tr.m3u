@@ -3519,31 +3519,29 @@ http://sup-4k.org:80/play/live.php?mac=00:1A:79:56:7A:24&stream=10740&extension=
 http://sup-4k.org:80/play/live.php?mac=00:1A:79:56:7A:24&stream=170684&extension=ts
 #EXTINF:-1 tvg-logo="https://anadoluefes.com.tr/Admin/images/ContentImage/eco-cevre-belgesel-y.jpg" group-title="TURKIYE DEATHLESS",BELGESELTVYEDEK
 https://streams.uzunmuhalefet.com/stream/c452f35c-c2c5-497f-af4d-df2276bb182a.m3u8
-#EXTINF:-1 tvg-logo="https://naturetimetv.com/wp-content/uploads/2023/09/NatureTime_Primary-Logo.png" group-title="TURKIYE DEATHLESS",NATURETIMEYEDEK
-https://amg00090-blueantmedia-naturetime-samsungfr-yakbf.amagi.tv/ts-eu-w1-n2/playlist/amg00090-blueantmedia-naturetime-samsungfr/cb573f1f6573629098cf3d78d1f44882847b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a9734cc59e0a957f39e8fc8b307b24455a9c5a43e6a64cb7f9b355148e6ef7e5014a957910fa83439fd501b2d6d75a834b8423f94795c3a48bd21586e4235293738a80cd8a430df8fa1bb7ec1fd1fd9f7b349d7f31346f3f8486a68e82b81b25393addead9b075fa69bee1b752ae56c969b74380358469bf1ba0a339c803051123335b8aed210d0baff2a598bb0632a569f5bba3ba1919cba0452a149b2eb0705a150313f80070e935efb19602be220b78e0db28be88a08cffb5c2689937c6cefaa2f023246c290d9c54ae966c947c9328e886242852494bba8915eab2990f602c1fddc069dd1d4ded80cb9b895a728a410b4ae465ee5e0747c5202329b67ab7c96a2cc10d22b11811b718398949f9f80bf0a4d0ea4f7b96d6d54df26aa0e45e87b852e73d72094280f32a5e57453285bd3143632fb1308eb9fde8790d0ffbe48daf90215f290d57035cc5b29d33f1e8e7261211cd565c105718059909d32992407e0920cd11c4bf4b13a1033226f2a82f57393dc59a51e0430a74e9d3c6ef05534757cf5125a423c49cd5f086/132/1920x1080_4716800/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/trt-muzik-tr.png" group-title="TURKIYE DEATHLESS",114.TRTMUZIKYEDEK
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/trt-muzik-tr.png" group-title="TURKIYE DEATHLESS",TRTMUZIKYEDEK
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/kral-pop-tr.png" group-title="TURKIYE DEATHLESS",KRALPOPRADYOYEDEK
 https://ssldyg.radyotvonline.com/smil/smil:kralpop.smil/chunklist_w1813872028_b",m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/dream-turk-tr.png" group-title="TURKIYE DEATHLESS",115.DREAMTURKYEDEK
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/dream-turk-tr.png" group-title="TURKIYE DEATHLESS",DREAMTURKYEDEK
 https://tatatam.trt1sultanfatihss.workers.dev/https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/track_4_1250/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/power-tv-tr.png" group-title="TURKIYE DEATHLESS",117.POWERYEDEK
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/power-tv-tr.png" group-title="TURKIYE DEATHLESS",POWERYEDEK
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playist.m3u8
-#EXTINF:-1 tvg-logo="https://www.phonostar.de/images/auto_created/Power_Tuerk2184x184.png" group-title="TURKIYE DEATHLESS",118.POWERTURKYEDEK
+#EXTINF:-1 tvg-logo="https://www.phonostar.de/images/auto_created/Power_Tuerk2184x184.png" group-title="TURKIYE DEATHLESS",POWERTURKYEDEK
 https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlists.m3u8
-#EXTINF:-1 tvg-logo="https://www.radio.de/300/powerturkakustik.png?versionde248764e27414b5dd02a0ae8bfd4622" group-title="TURKIYE DEATHLESS",119.POWERTURKAKUSTIKYEDEK
+#EXTINF:-1 tvg-logo="https://www.radio.de/300/powerturkakustik.png?versionde248764e27414b5dd02a0ae8bfd4622" group-title="TURKIYE DEATHLESS",POWERTURKAKUSTIKYEDEK
 https://listen.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_2450.png?v4" group-title="TURKIYE DEATHLESS",120.POWERTURKSLOWYEDEK
+#EXTINF:-1 tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_2450.png?v4" group-title="TURKIYE DEATHLESS",POWERTURKSLOWYEDEK
 https://listen.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_43.png?v4" group-title="TURKIYE DEATHLESS",121.POWERTURKTAPTAZEYEDEK
+#EXTINF:-1 tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_43.png?v4" group-title="TURKIYE DEATHLESS",POWERTURKTAPTAZEYEDEK
 https://listen.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_40.png?v=4" group-title="TURKIYE DEATHLESS",122.POWERDANCEYEDEK
+#EXTINF:-1 tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_40.png?v=4" group-title="TURKIYE DEATHLESS",POWERDANCEYEDEK
 https://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2015/12/turk-tv-logo.jpg" group-title="TURKIYE DEATHLESS",123.NUMBERONETURKFMRADYOYEDEK
+#EXTINF:-1 tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2015/12/turk-tv-logo.jpg" group-title="TURKIYE DEATHLESS",NUMBERONETURKFMRADYOYEDEK
 https://eustr75.mediatriple.net/Number1Media/00_Number1_Turk_FM.stream/chunklist_w181741155.m3u8
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/5M8Pz7xdTslLSDVLN7IXsTfg52ICXhEBT8C3PQkuA43Hxf7ARadz25cHat3oNbCuR5zo" group-title="TURKIYE DEATHLESS",124.NUMBERONEYEDEK
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/5M8Pz7xdTslLSDVLN7IXsTfg52ICXhEBT8C3PQkuA43Hxf7ARadz25cHat3oNbCuR5zo" group-title="TURKIYE DEATHLESS",NUMBERONEYEDEK
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://cdn.vectorstock.com/i/1000v/31/50/rap-music-logo-or-emblem-with-microphone-in-hand-vector-46163150.jpg" group-title="TURKIYE DEATHLESS",126.NUMBERONERAPYEDEK
+#EXTINF:-1 tvg-logo="https://cdn.vectorstock.com/i/1000v/31/50/rap-music-logo-or-emblem-with-microphone-in-hand-vector-46163150.jpg" group-title="TURKIYE DEATHLESS",NUMBERONERAPYEDEK
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e19877b340.smil/chunklist_b400000.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/tempo-tv-tr.png" group-title="TURKIYE DEATHLESS",TEMPOTVYEDEK
 https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/playlist.m3u8
@@ -3551,198 +3549,6 @@ https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/playlist.m3u8
 https://streammix.alsolnet.com/hyperadio/live/chunklist_w2051280106.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",SLOWKARADENIZYEDEK
 https://yayin.slowkaradeniztv.com:3390/hybrid/play.m3u8
-#EXTINF:-1 tvg-logo="https://www.itizaps.net/zapper/logo/b/ocko-expres.png" group-title="TURKIYE DEATHLESS",OCKOEXPRESSYEDEK
-https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko_expres.stream.",smil/chunklist_b",m3u8
-#EXTINF:-1 tvg-logo="https://superhelden.org/wp-content/uploads/2024/10/Iron-Man-Filme.jpg" group-title="TURKIYE DEATHLESS",130.IRONMANYEDEK
-https://vidrame.pro/vr/get/ef7709d0/1080.txt
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/722b707472b3d365e66876554b2042875340230dffae36b7aaef021150501fb3.jpg" group-title="TURKIYE DEATHLESS",131.INANILMAZHULKYEDEK
-https://s5.imagescdns.pics/m4/ITuyYxyhL3WyMTyvoTHhFUIfnl4lZQN4YxWfqKWurF4kZQtjpP5RIHSZd0zxnJ1uM2ImL2Ehpl5jnJAms0xi5vr1
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/32f814509611966ca9bab737cea7655793429c9641bb1da1cad3ca7aeab0af40.jpg" group-title="TURKIYE DEATHLESS",132.IRONMAN2YEDEK
-https://vidmody.com/mm/tt1228705/main/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://eloutput.com/wp-content/uploads/2022/01/todo-sobre-thor.jpg" group-title="TURKIYE DEATHLESS",133.THORYEDEK
-https://s24.pixypost.art/mx/ITuipv4lZQRkYwRjBQOjYxWZIIWuJF5RIHSZd0zxpTy4rKOip3DhLKW0s0xi24vr1
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/1LPaK63iGlo/maxresdefault.jpg" group-title="TURKIYE DEATHLESS",134.ILKYENILMEZYEDEK
-https://vidmody.com/mm/tt0458339/main/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://i.ebayimg.com/images/g/ONEAAOSw1dZk-UVe/s-l1200.jpg" group-title="TURKIYE DEATHLESS",135.AVENGERSYEDEK
-https://vidrame.pro/vr/get/9de3d24b/1080.txt
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",136.IRONMAN3YEDEK
-https://s3.pixypost.art/mh/ETIgnKVhDJEuoF4mYwRjBQOjYxEIDHjd0zxpTy4rKOip3DhLKW0s0xi3vr1
-#EXTINF:-1 tvg-logo="https://de.web.img2.acsta.net/c_310_420/pictures/210/384/21038405_20130910100531603.jpg" group-title="TURKIYE DEATHLESS",137.THOR2YEDEK
-https://vidrame.pro/vr/get/5cac84cf/1080.txt
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",138.KAPTANAMERIKA2YEDEK
-https://vidrame.pro/vr/get/08b02408/1080.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/6f/Galaksinin_Koruyucular%C4%B1_2.jpg" group-title="TURKIYE DEATHLESS",139.GALAKSININKORUYUCULARIYEDEK
-https://s5.imagebin.pics/mw/E3IupzEcLJ5mYz9zYaEbMF5ULJkurUxhZwNkAP5PoUIlLKxhZGN4ZUNhESIOGNd0zxnJ1uM2IvnJ4hpTywpjs0xi5vr1
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",140.AVENGERS2YEDEK
-https://s9.photogrids.site/m3/JJIhnJkgMKcfMKVhZv4lZQR1YwRjBQOjYxWfqIWurF5RIHSZZwVmd0zxpTuiqT9apzyxpl5mnKEys0xi9vr1
-#EXTINF:-1 tvg-logo="https://de.web.img2.acsta.net/pictures/15/07/20/18/06/476503.jpg" group-title="TURKIYE DEATHLESS",141.KARINCAADAMYEDEK
-https://s2.imageshub.pro/m0/DJ50YH1uov4lZQR1YxWfqKWurF4kZQtjpP5RIHSZd0zxnJ1uM2ImnUIvYaOlojs0xi2vr1
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",142.CIVILWARYEDEK
-https://s10.imagehub.pics/mb/D2SjqTScov5OoJIlnJAuYwZhZwNkAv4kZQtjpP5PGSIFDIxhESIOGNd0zxnJ1uM2IbqJVhpTywpjs0xi10vr1
-#EXTINF:-1 tvg-logo="https://de.web.img2.acsta.net/pictures/16/10/18/11/39/193242.jpg" group-title="TURKIYE DEATHLESS",143.DOCTORSTRANGEYEDEK
-https://s26.imglink.pro/ml/ET9eqT9lYyA0pzShM2HhZGN4ZUNhESIOGNd0zxnJ1aoTyhnl5jpz8s0xi26vr1
-#EXTINF:-1 tvg-logo="https://image.kanald.com.tr/i/kanald/100/0x0/5fa041374453952bc0161d9b.jpg" group-title="TURKIYE DEATHLESS",144.GALAKSININKORUYUCULARI2YEDEK
-https://vidmody.com/mm/tt3896198/xmain_1080/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://www.paribucineverse.com/Files/POSTER/OrumcakAdam_EvdenUzakta_AF_S_y.jpg" group-title="TURKIYE DEATHLESS",145.SPIDERMANHOMECOMINGYEDEK
-https://s24.imagehub.pics/mn/H3OcMTIlYH1uov5Vo21yL29gnJ5aYwVjZGphDzk1pzS5YwRjBQOjYxEIDHjd0zxnJ1uM2IbqJVhpTywpjs0xi24vr1
-#EXTINF:-1 tvg-logo="https://images.justwatch.com/poster/109512582/s718/thor-ragnarok.jpg" group-title="TURKIYE DEATHLESS",146.THOR3YEDEK
-https://s24.photogrids.site/mt/ITuipv5FLJqhLKWinl4lZQR3YwRjBQOjYxWZIIWOJF5RIJSZd0zxpTuiqT9apzyxpl5mnKEys0xi24vr1
-#EXTINF:-1 tvg-logo="https://lumiere-a.akamaihd.net/v1/images/p_blackpanther_19754_4ac13f07.jpeg?region0%2C0%2C540%2C810" group-title="TURKIYE DEATHLESS",147.BLACKPANTERYEDEK
-https://s4.imglink.info/ml/DzkuL2fhHTShqTuypv4lZQR4YxWfqKWurF4kZQtjpP5RIHSZd0zxnJ1aoTyhnl5cozMis0xi4vr1
-#EXTINF:-1 tvg-logo="https://filmkovasi.pw/wp-content/uploads/2023/09/yenilmezler-3-sonsuzluk-savasi-180x270.jpg" group-title="TURKIYE DEATHLESS",148.AVENGERS3YEDEK
-https://s9.photogrids.site/my/DKMyozqypaZhFJ5znJ5cqUxhI2SlYwVjZGthZGN4ZUNhEUIuoNd0zxpTuiqT9apzyxpl5mnKEys0xi9vr1
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",149.KARINCAADAM2YEDEK
-https://vidrame.pro/vr/get/82b0cbc7/1080.txt
-#EXTINF:-1 tvg-logo="https://images.justwatch.com/poster/96283315/s718/kaptan-marvel.jpg" group-title="TURKIYE DEATHLESS",150.CAPTAINMARVELYEDEK
-https://s9.pixypost.art/mc/F2SjqTShYx1OHyMSGP4kZQtjpP5RIHSZd0zxpTy4rKOip3DhLKW0s0xi9vr1
-#EXTINF:-1 tvg-logo="https://panel.1kfilm.com/assets/img/filmsimg/avengers-endgame-yenilmezler-son-oyun.png" group-title="TURKIYE DEATHLESS",151.AVENGERS4YEDEK
-https://s9.imagehub.pics/mf/DKMyozqypaZhEJ5xM2SgMF4lZQR5YwRjBQOjd0zxnJ1uM2IbqJVhpTywpjs0xi9vr1
-#EXTINF:-1 tvg-logo="https://www.paribucineverse.com/Files/POSTER/OrumcakAdam_EvdenUzakta_AF_S_y.jpg" group-title="TURKIYE DEATHLESS",152.SPIDERMANFARFROMHOMEYEDEK
-https://s4.imagescdns.pics/m6/H3OcMTIlYx1uov5TLKVhMaWioF5Vo21yYwVjZGxhDzk1pzS5YwRjBQOjYxEIDHjd0zxnJ1uM2ImL2Ehpl5jnJAms0xi4vr1
-#EXTINF:-1 tvg-logo="https://images.justwatch.com/poster/265588420/s718/kara-dul.jpg" group-title="TURKIYE DEATHLESS",153.BLACKWIDOWYEDEK
-https://vidrame.pro/vr/get/226fe687/1080.txt
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/81zFav+f6mL._UF1000,1000_QL80_.jpg" group-title="MCU",154.SHANG-CHIYEDEK"TVG-LOGO="HTTPS://M.MEDIA-AMAZON.COM/IMAGES/I/81ZFAV+F6ML._UF1000,1000_QL80_.JPG"GROUP-TITLE="TURKIYEDEATHLESS",1000_QL80_.JPG"GROUP-TITLE="MCU",154.SHANG-CHIYEDEK
-https://s3.imagesbox.cloud/ms/H2uuozpgD2ucYzShMP50nTHhGTIaMJ5xYz9zYaEbMF5HMJ4hHzyhM3ZhZwNlZF5IDzk1pzS5YwRjBQOjYxEIDHjd0zxnJ1uM2ImLz94YzAfo3Ixs0xi3vr1
-#EXTINF:-1 tvg-logo="https://testkammer.com/wp-content/uploads/2022/08/8e5e4-1333883-1.jpg-r_1920_1080-f_jpg-q_x-xxyxx-1.jpg" group-title="TURKIYE DEATHLESS",156.SPIDERMANNOWAYHOMEYEDEK
-https://sfa86774.5454542.xyz/file/snwaxdop/Spider-Man.No.Way.Home.Extended.Version.2022.DUAL.mkv
-#EXTINF:-1 tvg-logo="https://www.paribucineverse.com/Files/POSTER/DR-STRANGE.jpg" group-title="TURKIYE DEATHLESS",157.DOCTORSTRANGE2YEDEK
-https://s26.pixtures.art/m5/ET9wqT9lYyA0pzShM2HhnJ4hqTuyYx11oUEcqzIlp2Hho2LhGJSxozImpl4lZQVlYxyKEHVgERjhZGN4ZUNhESIOGNd0zxpTy4qUIlMKZhLKW0s0xi26vr1
-#EXTINF:-1 tvg-logo="https://tr.web.img3.acsta.net/pictures/22/07/06/14/47/0142016.jpg" group-title="TURKIYE DEATHLESS",158.THOR4YEDEK
-https://s2.pixtures.art/m8/ITuipv5Zo3MyYzShMP5HnUIhMTIlYwVjZwVhFIqSDv1RGP4kZQtjpP5RIHRd0zxpTy4qUIlMKZhLKW0s0xi2vr1
-#EXTINF:-1 tvg-logo="https://tr.web.img4.acsta.net/pictures/22/11/07/07/30/1572006.jpg" group-title="TURKIYE DEATHLESS",159.BLACKPANTER2YEDEK
-https://s5.imgmania.org/m1/DzkuL2fhHTShqTuypv5KLJguozEuYxMipzI2MKVhZwNlZv5WI0IPYHEZYwRjBQOjYxEIDHjd0zxnJ1aoJShnJRho3Was0xi5vr1
-#EXTINF:-1 tvg-logo="https://images.justwatch.com/poster/301774755/s718/the-guardians-of-the-galaxy-holiday-special.jpg" group-title="TURKIYE DEATHLESS",160.GALAKSININKORUYUCULARISPECIALYEDEK
-https://s2.photogrids.site/m5/ITuyYxq1LKWxnJShpl5iMv50nTHhE2SfLKu5YxuioTyxLKxhH3OyL2yuoP4lZQVlYyqSDv1RGP4kZQtjpP5RIHSZd0zxpTuiqT9apzyxpl5mnKEys0xi2vr1
-#EXTINF:-1 tvg-logo="https://tr.web.img3.acsta.net/pictures/23/01/25/11/45/2784455.jpg" group-title="TURKIYE DEATHLESS",162.KARINCAADAM3YEDEK
-https://s18.photogrids.site/md/DJ50Yx1uov5uozDhqTuyYyqup3NhHKIuoaE1oJShnJRhZwNlZl5WI0IPYHEZYwRjBQOjYxEIDHjd0zxpTuiqT9apzyxpl5mnKEys0xi18vr1
-#EXTINF:-1 tvg-logo="https://tr.web.img4.acsta.net/pictures/23/05/04/08/22/5434226.jpg" group-title="TURKIYE DEATHLESS",163.GALAKSININKORUYUCULARI3YEDEK
-https://vidrame.pro/vr/get/5991533d/master.txt
-#EXTINF:-1 tvg-logo="https://lumiere-a.akamaihd.net/v1/images/image_167d5a00.jpeg?region0,0,540,810"" group-title="MCU",540,810"GROUP-TITLE="MCU",THEMARVELSYEDEK"TVG-LOGO="HTTPS://LUMIERE-A.AKAMAIHD.NET/V1/IMAGES/IMAGE_167D5A00.JPEG?REGION0,0,540,810"GROUP-TITLE="TURKIYEDEATHLESS",0,540,810"GROUP-TITLE="MCU",THEMARVELSYEDEK
-https://s25.photogrids.site/mo/ITuyYx1upaMyoUZhZwNlZl5WI0IPYHEZYwRjBQOjYxEIDHjd0zxpTuiqT9apzyxpl5mnKEys0xi25vr1
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/deadpool-3.webp" group-title="TURKIYE DEATHLESS",165.DEADPOOL3YEDEK
-https://s1.imagesbox.cloud/m9/ETIuMUOio2jhLJ5xYyqioUMypzyhMF4lZQV0YyqSDv1RGP4kZQtjpP5RIHSZd0zxnJ1uM2ImLz94YzAfo3Ixs0xi1vr1
-#EXTINF:-1 tvg-logo="https://de.web.img3.acsta.net/img/ab/4b/ab4ba9a86d920a1d85f37c12f7e0cfd6.jpg" group-title="TURKIYE DEATHLESS",166.KAPTANAMERIKA:CESURYENIDÜNYAYEDEK
-https://vidmody.com/mm/tt14513804/mainx/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Thunderbolts%2A_poster.jpg/250px-Thunderbolts%2A_poster.jpg" group-title="TURKIYE DEATHLESS",167.THUNDERBOLTS*YEDEK
-https://vidmody.com/mm/tt20969586/mainxx/index-v1-a1.gif
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",FANTASTIKDÖRTLÜ:İLKADIMLARYEDEK
-https://r5sa.5455456.xyz/file/snwaxdop/The.Fantastic.Four.First.Steps.2025.DUAL.mkv
-#EXTINF:-1 tvg-logo="https://tr.web.img2.acsta.net/pictures/19/08/01/10/41/2036099.jpg" group-title="TURKIYE DEATHLESS",168.HIZLIVEOFKELIYEDEK
-https://vidrame.pro/vr/get/2ab5b9a3/1080.txt
-#EXTINF:-1 tvg-logo="https://tr.web.img2.acsta.net/pictures/bzp/01/45319.jpg" group-title="TURKIYE DEATHLESS",169.HIZLIVEOFKELI2YEDEK
-https://s1.seeshare.pics/ms/EzSmqP4lYxM1pzyiqKZhZwNjZl5PoUIlLKxhZGN4ZUNhESIOGNd0zxp2Iyp2uupzHhpTywpjs0xi1vr1
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/4ecaaafa82bee078fc4ea78f401fb2dec2f0094f01d3ce3a442ba65f77fcef4f.jpg" group-title="TURKIYE DEATHLESS",170.HIZLIVEOFKELI3YEDEK
-https://s7.imagebin.pics/mz/EzSmqP5uozDhqTuyYxM1pzyiqKZhIT9erJ8hEUWcMaDhZwNjAv5PoUIlLKxhZGN4ZUNhESIOGNd0zxnJ1uM2IvnJ4hpTywpjs0xi7vr1
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",171.HIZLIVEOFKELI4YEDEK
-https://vidrame.pro/vr/get/63bc9250/1080.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/7/7d/H%C4%B1zl%C4%B1_ve_%C3%96fkeli_5_%28afi%C5%9F%29.jpg" group-title="TURKIYE DEATHLESS",172.HIZLIVEOFKELI5YEDEK
-https://vidrame.pro/vr/get/03790982/1080.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/4/43/5444349.jpg" group-title="TURKIYE DEATHLESS",173.HIZLIVEOFKELI6YEDEK
-https://vidrame.pro/vr/get/25624c87/1080.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/b/b8/Furious_7_poster.jpg" group-title="TURKIYE DEATHLESS",174.HIZLIVEOFKELI7YEDEK
-https://vidrame.pro/vr/get/66988bb7/1080.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/a/a2/H%C4%B1zl%C4%B1_ve_%C3%96fkeli_8_Afi%C5%9F.jpg" group-title="TURKIYE DEATHLESS",175.HIZLIVEOFKELI8YEDEK
-https://s26.imageshub.pro/mc/ITuyYxMuqTHho2LhqTuyYxM1pzyiqKZhZwNkAl5PoUIlLKxhZGN4ZUNhESIOGNd0zxnJ1uM2ImnUIvYaOlojs0xi26vr1
-#EXTINF:-1 tvg-logo="https://images.justwatch.com/poster/264337564/s718/hizli-ve-ofkeli-9.jpg" group-title="TURKIYE DEATHLESS",176.HIZLIVEOFKELI9YEDEK
-https://s9.imagehub.pics/mg/EwxhZwNlZF5PoUIlLKxhZGN4ZUNhESIOGNd0zxnJ1uM2IbqJVhpTywpjs0xi9vr1
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",177.HIZLIVEOFKELI10YEDEK
-https://s24.seeshare.pics/mv/EzSmqP5LYwVjZwZhDzk1pzS5YwRjBQOjYxEIDHjd0zxp2Iyp2uupzHhpTywpjs0xi24vr1
-#EXTINF:-1 tvg-logo="https://static.posters.cz/image/1300/poster/harry-potter-der-stein-der-weisen-i104639.jpg" group-title="TURKIYE DEATHLESS",178.HARRYPOTTERYEDEK
-https://s25.imglink.info/mj/FTSlpaxhHT90qTIlYwRhZwNjZF5PGSIFDIxhZGN4ZUNhESIOGNd0zxnJ1aoTyhnl5cozMis0xi25vr1
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/fff72385d087e1d4bbcbc45052fbafcd69fa2b4cc92dad9eb4d5297d06e0c0af._SX780_.jpg" group-title="TURKIYE DEATHLESS",179.HARRYPOTTER2YEDEK
-https://s7.imglink.pro/md/FTSlpaxhHT90qTIlYwVhZwNjZv5PGSIFDIxhZGN4ZUNhESIOGNd0zxnJ1aoTyhnl5jpz8s0xi7vr1
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/lBQTnSIfJAsUilF4SJM-YFsfe-xEsXUcnhpQxurGkj4pWZT9jIsHLqa7XPN3tRjLoGOQCF3nx1FD8dGPtl8" group-title="TURKIYE DEATHLESS",180.HARRYPOTTER3YEDEK
-https://s2.imglink.info/mo/FTSlpaxhHT90qTIlYwZhZwNjAP5PGSIFDIxhZGN4ZUNhESIOGNd0zxnJ1aoTyhnl5cozMis0xi2vr1
-#EXTINF:-1 tvg-logo="https://trailer.kinopolis.de/grafiken/plakate_608x860/52013.jpg" group-title="TURKIYE DEATHLESS",181.HARRYPOTTER4YEDEK
-https://vidmody.com/mm/tt0330373/main/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://images.justwatch.com/poster/264875049/s718/harry-potter-ve-zumruduanka-yoldasligi.jpg" group-title="TURKIYE DEATHLESS",182.HARRYPOTTER5YEDEK
-https://s24.imageshub.pro/m0/FTSlpaxhHT90qTIlYwHhZwNjAl5PGSIFDIxhZGN4ZUNhESIOGNd0zxnJ1uM2ImnUIvYaOlojs0xi24vr1
-#EXTINF:-1 tvg-logo="https://www.justwatch.com/images/poster/264900088/s718/harry-potter-ve-melez-prens.jpg" group-title="TURKIYE DEATHLESS",183.HARRYPOTTER6YEDEK
-https://s24.imglink.info/m0/FTSlpaxhHT90qTIlYwLhZwNjBF5PGSIFDIxhZGN4ZUNhESIOGNd0zxnJ1aoTyhnl5cozMis0xi24vr1
-#EXTINF:-1 tvg-logo="https://www.justwatch.com/images/poster/264900069/s718/harry-potter-ve-olum-yadigarlari-bolum-1.jpg" group-title="TURKIYE DEATHLESS",184.HARRYPOTTER7YEDEK
-https://s26.imgmania.org/mc/FTSlpaxhHT90qTIlYwphZwNkZP5PGSIFDIxhZGN4ZUNhESIOGNd0zxnJ1aoJShnJRho3Was0xi26vr1
-#EXTINF:-1 tvg-logo="https://static.kino.de/90/47/27/5a852e50a188712e0e047e3c83_ZmMgODAwMDgwMDBmZmZmIDE2ODAgOTQ0Azk3NTU1MTdlMGU4.jpeg" group-title="TURKIYE DEATHLESS",185.HARRYPOTTER8YEDEK
-https://vidmody.com/mm/tt1201607/main_1080/index-v1-a2.gif
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BNGNiNzVlYjAtN2YzMi00NmU3LWE1N2EtZTM4MDI2OTYxNTJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" group-title="TURKIYE DEATHLESS",RAFADANTAYFADEHLIZMACERASIYEDEK
-https://vidmody.com/mm/tt8790624/main/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://cdnuploads.aa.com.tr/uploads/Contents/2020/01/04/thumbs_b_c_0b3c9bbdbdb1d0332bc652c82a18298a.jpg" group-title="TURKIYE DEATHLESS",RAFADANTAYFAGOBEKLITEPEYEDEK
-https://vidmody.com/mm/tt10183846/main/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1976000/rafadan-tayfa-galaktik-tayfa-1976277.jpg" group-title="TURKIYE DEATHLESS",RAFADANTAYFAGALAKTTIKTAYFAYEDEK
-https://vidmody.com/mm/tt14451444/main/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Am31Zrf86qY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC6buU8xnxXhNCx1E-kenJb8SQRQg" group-title="TURKIYE DEATHLESS",RAFADANTAYFAHAYRIMATORYEDEK
-https://vidmody.com/mm/tt25786022/main/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://filmekseni.net/uploads/poster/rafadan-tayfa-kapadokya_list.webp" group-title="TURKIYE DEATHLESS",RAFADANTAYFAKAPADOKYAYEDEK
-https://vidmody.com/mm/tt35156304/main_1080/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://www.zihni.com/idea/ce/36/myassets/products/396/20171007-160637.jpg?revision=1697143329" group-title="TURKIYE DEATHLESS",SIHIRBAZLARCETESIYEDEK
-https://vidmody.com/mm/tt1670345/video/index-v1-a1.gif
-#EXTINF:-1 tvg-logo="https://img.fullhdfilmizlesene.tv/poster/izle/fullhd-sihirbazlar-cetesi-2-now-you-see-me-2.webp" group-title="TURKIYE DEATHLESS",SIHIRBAZLARCETESI2YEDEK
-https://s13.imagesbox.cloud/mi/H2ybnKWvLKcfLKVhD2I0MKAcYwVhGz93YyyiqF5GMJHhGJHhZv4lZQR2YwRjBQOjYxE1LJjd0zxnJ1uM2ImLz94YzAfo3Ixs0xi13vr1
-#EXTINF:-1 tvg-logo="https://de.web.img3.acsta.net/medias/nmedia/18/78/71/33/19475409.jpg" group-title="TURKIYE DEATHLESS",192.JUMANJI1YEDEK
-https://vidmody.com/vs/tt0113497
-#EXTINF:-1 tvg-logo="https://de.web.img3.acsta.net/r_654_368/img/eb/5d/eb5d4ed327176ff7524b2d31790e91fd.jpg" group-title="TURKIYE DEATHLESS",193.JUMANJI2YEDEK
-https://s17.picturebox.cloud/mh/FyIADH5XFF4lYwRjBQOjYxE1LHjd0zxpTywqUIlMJWirP5woT91MNs0xi17vr1
-#EXTINF:-1 tvg-logo="https://i.ebayimg.com/images/g/Lg0AAOSw-uVfJHru/s-l1200.jpg" group-title="TURKIYE DEATHLESS",194.JUMANJI3YEDEK
-https://vidmody.com/vs/tt7975244
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/1-deadpool-1-hd-film-izle.webp" group-title="TURKIYE DEATHLESS",200.DEADPOOLYEDEK
-https://vidrame.pro/vr/get/2b622c50/master.txt
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/2-hd-film-deadpool-2-super-duper-cut-izle.webp" group-title="TURKIYE DEATHLESS",201.DEADPOOL2YEDEK
-https://vidrame.pro/vr/get/b06bb918/1080.txt
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/deadpool-3.webp" group-title="TURKIYE DEATHLESS",202.DEADPOOL3YEDEK
-https://vidmody.com/vs/tt6263850
-#EXTINF:-1 tvg-logo="https://www.filmwelt-gruenstadt.de/images/Breite_400px_RGB/p_106696.jpg" group-title="TURKIYE DEATHLESS",199.GLADYATOR2YEDEK
-https://s24.pixypost.art/mf/E2kuMTyuqT9lYwVhZwNlAP5KEHVgERjhZGN4ZUNhESIOGP5VYwV2Ztd0zxpTy4rKOip3DhLKW0s0xi24vr1
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/b494efd635fd42fb8a9738758ff706b756f0faf6fcb630670c05f45b6c8b6b89.jpg" group-title="TURKIYE DEATHLESS",REALSTEELYEDEK
-https://s4.photogrids.site/m5/D2IfnJfhJKIgpaIeoTSlYyWyLJjhH3EyMJjhZwNkZF4kZQtjpP5RqJSfd0zxpTuiqT9apzyxpl5mnKEys0xi4vr1
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/4-venom-hd-film-izle.webp" group-title="TURKIYE DEATHLESS",195.VENOMYEDEK
-https://vidrame.pro/vr/get/2e79093d/1080.txt
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/venom-let-there-be-carnage.webp" group-title="TURKIYE DEATHLESS",196.VENOM2YEDEK
-https://vidmody.com/vs/tt7097896/
-#EXTINF:-1 tvg-logo="https://de.web.img3.acsta.net/img/ef/ab/efabbb1592f012019283fb3db2b855bb.jpg" group-title="TURKIYE DEATHLESS",197.VENOM3YEDEK
-https://s12.seeshare.pics/mo/IzIho20hITuyYxkup3DhETShL2HhZwNlAP5KEHVgERjhZGN4ZUNhESIOGNd0zxp2Iyp2uupzHhpTywpjs0xi12vr1
-#EXTINF:-1 tvg-logo="https://de.web.img2.acsta.net/pictures/22/06/13/14/26/2450551.jpg" group-title="TURKIYE DEATHLESS",206.PREYYEDEK
-https://vidmody.com/vs/tt11866324
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BOTUwOGE0ZmUtZWUzYi00ZjdkLWE1YTEtMDFjZjNjZWY1ZjM4XkEyXkFqcGc@._V1_.jpg" group-title="TURKIYE DEATHLESS",207.PLATFORMYEDEK
-https://vidmody.com/vs/tt8228288
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BNzI4YjkyODctMGJmNC00YjBjLTllNjAtNDkxNTJmZjg4MGZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" group-title="TURKIYE DEATHLESS",208.PLATFORM2YEDEK
-https://s13.photogrids.site/m1/EJjhnT95ol4lYwVjZwDhI0IPYHEZYwRjBQOjYxEIDHjd0zxpTuiqT9apzyxpl5mnKEys0xi13vr1
-#EXTINF:-1 tvg-logo="https://www.sinemafilmizle.com.tr/wp-content/uploads/2022/05/dora-ve-kayip-altin-sehri-180x270.jpg" group-title="TURKIYE DEATHLESS",DORAVEKAYIPALTINŞEHRIYEDEK
-https://s6.imagebin.pics/mp/ET9lLF5uozDhqTuyYxkip3DhD2y0rF5iMv5Uo2kxYwVjZGxhZGN4ZUNhDzk1HzS5YxEIDHjd0zxnJ1uM2IvnJ4hpTywpjs0xi6vr1
-#EXTINF:-1 tvg-logo="https://www.sinemafilmizle.com.tr/wp-content/uploads/2025/07/dora-and-the-search-for-sol-dorado-180x270.jpg" group-title="TURKIYE DEATHLESS",DORASOLDORADO"NUNPEŞINDEYEDEK
-https://s5.photogrids.site/ms/ET9lLF5uozDhqTuyYyAyLKWwnP5zo3VhH29fYxEipzSxol4lZQV1YyqSDv1RGP4kZQtjpP5RIHSZYatlAwDgFREAd0zxpTuiqT9apzyxpl5mnKEys0xi5vr1
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/c/ca/Across_the_Spider-Verse_afi%C5%9F.jpg" group-title="TURKIYE DEATHLESS",ÖRÜMCEKADAM:ÖRÜMCEKEVRENINEGEÇIŞYEDEK
-https://s16.seeshare.pics/m1/H3OcMTIlYH1uov5OL3Wip3ZhqTuyYyAjnJEypv1JMKWmMF4lZQVmYxWfqKWurF4kZQtjpP5RIHSZd0zxp2Iyp2uupzHhpTywpjs0xi16vr1
-#EXTINF:-1 tvg-logo="https://www.tekfullfilmizle5.com/wp-content/uploads/ejderhani-nasil-egitirsin-1-125x160.jpg.webp" group-title="TURKIYE DEATHLESS",EJDERHANINASILEGITIRSIN1YEDEK
-https://s14.photogrids.site/m5/FT93YaEiYyElLJyhYyyiqKVhEUWuM29hYwVjZGNhZGN4ZP5xqJSfd0zxpTuiqT9apzyxpl5mnKEys0xi14vr1
-#EXTINF:-1 tvg-logo="https://www.hdfilmizle.to/v/11811/poster/watch/ejderhani-nasil-egitirsin-2.webp" group-title="TURKIYE DEATHLESS",EJDERHANINASILEGITIRSIN2YEDEK
-https://vidrame.pro/vr/get/4713d96a/1080.txt
-#EXTINF:-1 tvg-logo="https://www.hdfilmizle.to/v/11809/poster/watch/ejderhani-nasil-egitirsin-3-gizli-dunya.webp" group-title="TURKIYE DEATHLESS",EJDERHANINASILEGITIRSIN3YEDEK
-https://s3.imagebin.pics/mm/FT93YaEiYyElLJyhYyyiqKVhEUWuM29hYwZhZwNkBF4kZQtjYzE1LJjd0zxnJ1uM2IvnJ4hpTywpjs0xi3vr1
-#EXTINF:-1 tvg-logo="https://c8.alamy.com/compde/2jhn8et/film-poster-shrek-2001-2jhn8et.jpg" group-title="TURKIYE DEATHLESS",218.SREK1YEDEK
-https://vidrame.pro/vr/get/45ba91a9/1080.txt
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BMzNmNjQ1NmUtNzhiZS00YWE2LTg4N2ItZTA2ODdmOTMwOTQ1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" group-title="TURKIYE DEATHLESS",219.SREK2YEDEK
-https://vidmody.com/vs/tt0298148
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BOTgyMjc3ODk2MV5BMl5BanBnXkFtZTcwMjY0MjEzMw@@._V1_FMjpg_UX1000_.jpg" group-title="TURKIYE DEATHLESS",220.SREK3YEDEK
-https://s23.photogrids.site/m8/H2ulMJfhZl5GnUWynl52MF5HnTylMP5GnUWynl5HnTHhITucpzDhZwNjAl4kZQtjpP5RqJSfd0zxpTuiqT9apzyxpl5mnKEys0xi23vr1
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BMTY0OTU1NzkxMl5BMl5BanBnXkFtZTcwMzI2NDUzMw@@._V1_FMjpg_UX1000_.jpg" group-title="TURKIYE DEATHLESS",221.SREK4YEDEK
-https://vidrame.pro/vr/get/cc6feded/1080.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/4/4d/%C3%87%C4%B1lg%C4%B1n_H%C4%B1rs%C4%B1z_4_afi%C5%9F.jpg" group-title="TURKIYE DEATHLESS",ÇILGINHIRSIZ4YEDEK
-https://saf45sfa.959565.xyz/file/snwaxdop/Despicable.Me.4.DUAL.mkv
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c0/Toy_Story_2.jpg" group-title="TURKIYE DEATHLESS",TOYSTORY2YEDEK
-https://s8.imagescdns.pics/mh/IT95YyA0o3W5YwVhZGx5BF5FMJ1up3EypzIxYwRjBQOjYzE1LJjd0zxnJ1uM2ImL2Ehpl5jnJAms0xi8vr1
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_FMjpg_UX1000_.jpg" group-title="TURKIYE DEATHLESS",TOYSTORY4YEDEK
-https://4astras.45464654.xyz/file/snwixdepo2/Toy.Story.4.2019.DUAL%40Sinewix.mkv
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/c6e94cf99873500525cbeb74c594e67e133212d2ef3eba90f08eb1aa8659d3a5.jpg" group-title="TURKIYE DEATHLESS",ZOOTOPIAYEDEK
-https://4astras.45464654.xyz/file/snwixdepo2/Zootopia.2016.DUAL%40Sinewix.mkv
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BYjg1Mjc3MjQtMTZjNy00YWVlLWFhMWEtMWI3ZTgxYjJmNmRlXkEyXkFqcGc@._V1_.jpg" group-title="TURKIYE DEATHLESS",ZOOTOPIA2YEDEK
-https://r5sa.5455456.xyz/file/snwaxdop/Zootopia.2.2025.DUAL.mkv
-#EXTINF:-1 tvg-logo="https://www.filmdoktoru.com/wp-content/uploads/2016/04/the-croods-filmdoktoru1.jpg" group-title="TURKIYE DEATHLESS",CROODLARYEDEK
-https://s11.imagehub.pics/mv/ITuyYxAlo29xpl4lZQRmYxWfqKWurF4kZQtjpP5RIHSZd0zxnJ1uM2IbqJVhpTywpjs0xi11vr1
-#EXTINF:-1 tvg-logo="https://www.tekfullfilmizle5.com/wp-content/uploads/croodlar-2-yeni-bir-cag-125x160.jpg.webp" group-title="TURKIYE DEATHLESS",CROODLAR2YEDEK
-https://s10.imglink.pro/mg/ITuyYxAlo29xpl5OYx5yql5OM2HhZwNlZP5PoUIlLKxhZGN4ZUNhESIOGNd0zxnJ1aoTyhnl5jpz8s0xi10vr1
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/ters-yuz-film-izle-hd.webp" group-title="TURKIYE DEATHLESS",216.TERSYUZYEDEK
-https://s25.imglink.info/mk/ITIlpl5MqKbhFJ5mnJEyYx91qP4lZQR1YwRjBQOjYxE1LJjd0zxnJ1aoTyhnl5cozMis0xi25vr1
-#EXTINF:-1 tvg-logo="https://www.hdfilmcehennemi.nl/images/list/poster/inside-out-2.webp" group-title="TURKIYE DEATHLESS",217.TERSYUZ2YEDEK
-https://vidrame.pro/vr/get/968e8cf1/1080.txt
 #EXTINF:-1 tvg-logo="https://cms-rotf-api.tabii.com/r/int/webp/w273/h154/q90/45155.jpeg" group-title="TURKIYE DEATHLESS",TABIITVYEDEK
 http://tabii.mobi-tv.workers.dev/tabiiTV.m3u8
 #EXTINF:-1 tvg-logo="https://cms-rotf-api.tabii.com/r/int/webp/w273/h154/q90/43023.jpeg" group-title="TURKIYE DEATHLESS",TABIISPORYEDEK
@@ -4003,8 +3809,6 @@ https://tjktv-live.tjk.org/tjktv2/tjktv2.m3u8
 https://raw.githubusercontent.com/UzunMuhalefet/streams/refs/heads/main/myvideo-az/tmb-azerbaycan.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TONTVYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TONTV.TR@SD",TONTVYEDEK
 https://streams.uzunmuhalefet.com/stream/edd365b2-72a9-4140-85fc-3389abc3bd71.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TRABZONBUYUKSEHIRBELEDIYESITVYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TRABZONBUYUKSEHIRBELEDIYESITV.TR@FHD",TRABZONBUYUKSEHIRBELEDIYESITVYEDEK
-https://tv191.radyotelekom.com.tr:3612/stream/play.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TRT1YEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TRT1.TR@SD",TRT1YEDEK
 https://goldvod.site/live/hpgdiscoo/123456/1.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TRT3YEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TRT3.TR@SD",TRT3YEDEK
@@ -4051,8 +3855,6 @@ https://streams.uzunmuhalefet.com/stream/23a0e9de-9696-47a8-97ec-3d65abd058be.m3
 https://streams.uzunmuhalefet.com/stream/17f2ba49-e38a-4a10-9136-4b61d4c0e924.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TVNETYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TVNET.TR@SD",TVNETYEDEK
 https://goldvod.site/live/hpgdiscoo/123456/118.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",ÜÜTVÜSKÜDARÜNIVERSITESITVYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="UUTV2.TR@SD",ÜÜTVÜSKÜDARÜNIVERSITESITVYEDEK
-https://uskudarunv.mediatriple.net/uskudarunv/uskudar2/playlist.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",VAVTVYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="VAVTV.TR@SD",VAVTVYEDEK
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/kltr-sanat-tv/playlist.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",ZAROKTVYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="ZAROKTV.TR@SD",ZAROKTVYEDEK
@@ -4203,17 +4005,11 @@ https://tv-trtspor1.medya.trt.com.tr/master.m3u8
 https://tv-trtspor2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TV8YEDEK
 http://87.121.104.29:5009/channel?id=246132
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TRTTURKYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID=&QUOT;TRTTURK.TR&QUOT;TVG-NAME=&QUOT;TRTTURK&QUOT;TVG-LOGO=&QUOT;HTTPS://UPLOAD.WIKIMEDIA.ORG/WIKIPEDIA/COMMONS/THUMB/D/D2/TRT_T%C3%BCRK_LOGO.SVG/960PX-TRT_T%C3%BCRK_LOGO.SVG.PNG&QUOT;GROUP-TITLE=&QUOT;&QUOT;,TRTTURKYEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",TRTTURKYEDEK
 https://goldvod.site/live/hpgdiscoo/123456/43.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",EURODYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID=&QUOT;EUROD.TR&QUOT;TVG-NAME=&QUOT;EUROD&QUOT;TVG-LOGO=&QUOT;HTTPS://I.IMGUR.COM/X9KHSXO.PNG&QUOT;GROUP-TITLE=&QUOT;GENERAL&QUOT;,EURODYEDEK
-https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",KANALDDRAMAYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID=&QUOT;KANALDDRAMA.TR&QUOT;TVG-NAME=&QUOT;KANALDDRAMA&QUOT;TVG-LOGO=&QUOT;HTTPS://I.IMGUR.COM/WIEZMKT.PNG&QUOT;GROUP-TITLE=&QUOT;ENTERTAINMENT&QUOT;,KANALDDRAMAYEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",KANALDDRAMAYEDEK
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TMBYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID=&QUOT;TMB.TR&QUOT;TVG-NAME=&QUOT;TMB&QUOT;TVG-LOGO=&QUOT;HTTPS://I.IMGUR.COM/28AYWHE.PNG&QUOT;GROUP-TITLE=&QUOT;&QUOT;,TMBYEDEK
-https://raw.githubusercontent.com/UzunMuhalefet/streams/main/myvideo-az/tmb-tv.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TRTWORLDYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID=&QUOT;TRTWORLD.TR&QUOT;TVG-NAME=&QUOT;TRTWORLD&QUOT;TVG-LOGO=&QUOT;HTTPS://UPLOAD.WIKIMEDIA.ORG/WIKIPEDIA/COMMONS/THUMB/2/27/TRT_WORLD.SVG/960PX-TRT_WORLD.SVG.PNG&QUOT;GROUP-TITLE=&QUOT;NEWS&QUOT;,TRTWORLDYEDEK
-https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",KANALDYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID=&QUOT;KANALD.TR&QUOT;TVG-NAME=&QUOT;KANALD&QUOT;TVG-LOGO=&QUOT;HTTPS://I.IMGUR.COM/9O1ATM6.PNG&QUOT;GROUP-TITLE=&QUOT;GENERAL&QUOT;,KANALDYEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",KANALDYEDEK
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/33774b65-981e-43fb-a49d-689329bba59d.png" group-title="TURKIYE DEATHLESS",TÜRKIYEKLINIKLERIYEDEK
 https://streams.uzunmuhalefet.com/stream/41d98228-25d5-436f-8b1b-cef39732a3a5.m3u8
