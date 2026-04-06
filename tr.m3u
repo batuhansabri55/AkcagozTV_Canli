@@ -69,10 +69,6 @@ http://live.cdn-vizi.workers.dev/?ID=56
 https://tv-trtturk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TRTAVAZYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/234448
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TRT3-TBMMYEDEK
-https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",TRTKURDIYEDEK
-https://tv-trtkurdi.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",HTSPORYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/246337
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",EKOLTVYEDEK
@@ -85,8 +81,10 @@ http://live.cdn-vizi.workers.dev/?ID=16
 https://halktv-live.daioncdn.net/halktv/halktv_1080p.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TV5TVYEDEK
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
-#EXTINF:-1 group-title="TURKIYE DEATHLESS",LIDERHABERYEDEK
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",TELE1YEDEK
 https://tele1-live.ercdn.net/tele1/tele1.m3u8
+#EXTINF:-1 group-title="TURKIYE DEATHLESS",TELE1YEDEK
+https://tele1-live.ercdn.net/tele1/tele1_1080p.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",BURSAASTVYEDEK
 https://live.artidijitalmedya.com/artidijital_astv/astv/playlist.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TIVI6YEDEK
