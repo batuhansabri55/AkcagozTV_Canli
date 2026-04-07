@@ -3785,6 +3785,211 @@ http://tabii.mobi-tv.workers.dev/tabiiSpor6.m3u8
 http://tabii.mobi-tv.workers.dev/tabiiSpor7.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR8YEDEK
 http://tabii.mobi-tv.workers.dev/tabiiSpor8.m3u8
+#EXTM3U
+#EXTINF:-1 group-title="GENEL",TRT1YEDEK
+https://tv-trt1.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="GENEL",KANALDYEDEK
+https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/track_4_1250/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANALDYEDEK
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+#EXTINF:-1 group-title="GENEL",STARTVYEDEK
+https://dogus-live.daioncdn.net/startv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL7YEDEK
+https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
+#EXTINF:-1 group-title="GENEL",360TVYEDEK
+https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
+#EXTINF:-1 group-title="GENEL",TV4YEDEK
+https://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
+#EXTINF:-1 group-title="GENEL",BEYAZTVYEDEK
+https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
+#EXTINF:-1 group-title="GENEL",TV8.5YEDEK
+https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web&ce=3
+#EXTINF:-1 group-title="GENEL",NTVYEDEK
+https://dogus-live.daioncdn.net/ntv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TGRTHABERYEDEK
+https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TRTHABERYEDEK
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="GENEL",TV24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
+#EXTINF:-1 group-title="GENEL",AKITTVYEDEK
+https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
+#EXTINF:-1 group-title="GENEL",BENGUTURKYEDEK
+https://ensonhaber-live.ercdn.net/benguturk/benguturk.m3u8
+#EXTINF:-1 group-title="GENEL",TURKHABERTVYEDEK
+https://edge1.socialsmart.tv/turkhaber/bant1/chunks.m3u8
+#EXTINF:-1 group-title="GENEL",HABER61YEDEK
+http://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",EURODYEDEK
+https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TGRTBELGESELYEDEK
+https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8?md5=yJ4adbAK5bE0F93vqFevgw&expires=1687122603
+#EXTINF:-1 group-title="GENEL",TRTTURKYEDEK
+https://tv-trtturk.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="GENEL",TRT2HDYEDEK
+https://tv-trt2.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="GENEL",TRTAVAZYEDEK
+https://tv-trtavaz.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="GENEL",TIVI6YEDEK
+https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",ADATVYEDEK
+https://edge1.socialsmart.tv/adatv/bant1/chunks.m3u8
+#EXTINF:-1 group-title="GENEL",DENIZPOSTASITVYEDEK
+https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KRALPOPTVYEDEK
+http://dygvideo.dygdigital.com/live/hls/kralpop
+#EXTINF:-1 group-title="GENEL",TRTMUZIKYEDEK
+https://tv-trtmuzik.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="GENEL",DREAMTURKYEDEK
+https://live.duhnet.tv//S2/HLS_LIVE/dreamturknp/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",NR1TURKYEDEK
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e187770143.smil/chunklist_b400000.m3u8
+#EXTINF:-1 group-title="GENEL",NR1DAMARYEDEK
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e19877b340.smil/chunklist_b400000.m3u8?md5=api5VtN5dEXl5cvRHMQBNQ&expires=1696713505
+#EXTINF:-1 group-title="GENEL",NR1TVYEDEK
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/chunklist_b400000.m3u8
+#EXTINF:-1 group-title="GENEL",POWERTURKSLOWYEDEK
+https://listen.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",POWERTVAKUSTIKYEDEK
+https://listen.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",POWERTURKTAPTAZEYEDEK
+https://listen.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",POWERDANCEYEDEK
+https://listen.powerapp.com.tr/dance/dance.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",POWERLOVEYEDEK
+https://listen.powerapp.com.tr/plove/love.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",SLOWKARADENIZTVYEDEK
+https://yayin.slowkaradeniztv.com:3390/multi_web/play.m3u8
+#EXTINF:-1 group-title="GENEL",MELTEMTVFYEDEK
+https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",DIYANETTVFYEDEK
+http://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",DOSTTVYEDEK
+https://dost.stream.emsal.im/tv/live.m3u8
+#EXTINF:-1 group-title="GENEL",SEMERKANDTVYEDEK
+http://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TRTSPORYEDEK
+https://tv-trtspor1.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="GENEL",TRTSPORYILDIZYEDEK
+https://tv-trtspor2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="GENEL",KANALAVRUPAYEDEK
+https://api-tv27.yayin.com.tr/kanalavrupa/index.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL3YEDEK
+https://live.artidijitalmedya.com/artidijital_kanal3/kanal3/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL5YEDEK
+http://new.cache-stream.workers.dev/stream/UCVebw64Db0yhrPkVk-D8F6w/live.m3u8?app=supersatforum
+#EXTINF:-1 group-title="GENEL",KANAL15YEDEK
+https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL23YEDEK
+https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL23FHDYEDEK
+https://cdn13-kanal23.yayin.com.tr/kanal23/ngrp:kanal23/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL26YEDEK
+https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL33YEDEK
+https://edge1.socialsmart.tv/kanal33/bant1/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANAL58YEDEK
+https://live.artidijitalmedya.com/artidijital_kanal58/kanal58/chunks.m3u8
+#EXTINF:-1 group-title="GENEL",KANALZYEDEK
+https://live.artidijitalmedya.com/artidijital_kanalz/kanalz/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANALFIRATYEDEK
+https://live.artidijitalmedya.com/artidijital_kanalfirat/kanalfirat/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANALADAYEDEK
+http://145.239.58.133:28008/kanalada/kanalada/sec-f5-v1-a1.m3u8?app=supersatforum
+#EXTINF:-1 group-title="GENEL",MUGLATRKTVYEDEK
+https://edge1.socialsmart.tv/muglaturk/bant1/chunks.m3u8
+#EXTINF:-1 group-title="GENEL",VIYANATVYEDEK
+http://nrttn172.kesintisizyayin.com:29010/nrttn/nrttn/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KARDELENTVYEDEK
+https://edge1.socialsmart.tv/kardelentv/bant1/playlist.m3u8?WithCaption
+#EXTINF:-1 group-title="GENEL",TV264YEDEK
+https://b01c02nl.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8?md5=qb_9l3erQIDqZMjbKfALzA&expires=1651666386
+#EXTINF:-1 group-title="GENEL",TV41YEDEK
+https://live.artidijitalmedya.com/artidijital_tv41/tv41/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TV48YEDEK
+https://ajansplay.com:5443/LiveApp/streams/tv48.m3u8
+#EXTINF:-1 group-title="GENEL",ANADOLUNETTVYEDEK
+https://live.artidijitalmedya.com/artidijital_anadolunet/anadolunet/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",BRTVYEDEK
+https://live.artidijitalmedya.com/artidijital_brtv/brtv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",BURSALINETVYEDEK
+https://edge1.socialsmart.tv/linetv/bant1/chunks.m3u8
+#EXTINF:-1 group-title="GENEL",CAYTVYEDEK
+https://edge1.socialsmart.tv/caytv/bant1/chunks.m3u8
+#EXTINF:-1 group-title="GENEL",HUNATTVKAYSERIYEDEK
+https://live.artidijitalmedya.com/artidijital_hunattv/hunattv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",ETVKAYSERIYEDEK
+https://live.artidijitalmedya.com/artidijital_etv/etv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",ETVMANISAYEDEK
+https://edge1.socialsmart.tv/manisaetv/bant1/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",OLAYTVYEDEK
+http://nrttn172.kesintisizyayin.com:29010/olay/olay/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TONTVYEDEK
+https://live.artidijitalmedya.com/artidijital_tontv/tontv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",ICELTVYEDEK
+https://edge1.socialsmart.tv/iceltv/bant1/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",VANGOLUTVYEDEK
+https://cdn1-vangolutv.yayin.com.tr/vangolutv/amlst:vangolutv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",KANALON4TVYEDEK
+https://edge1.socialsmart.tv/on4/bant1/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",VUSLATTVYEDEK
+https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",EDIRNETVYEDEK
+https://yayin.edirnetv.com:8088/hls/etvcanliyayin.m3u8
+#EXTINF:-1 group-title="GENEL",ESTVYEDEK
+https://live.artidijitalmedya.com/artidijital_estv/estv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",OLAYTURKYEDEK
+https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",MAVIKARADENIZTVYEDEK
+https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TEMPOTVYEDEK
+https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",SUNTVYEDEK
+https://live.artidijitalmedya.com/artidijital_sunrtv/sunrtv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",DERINTVYEDEK
+https://cdn1-derintv.yayin.com.tr/derintv/derintv/chunklist_w1486394141_b1796000.m3u8
+#EXTINF:-1 group-title="GENEL",METROPOLTVYEDEK
+https://edge1.socialsmart.tv/metropoltv/smil/metropoltv/bant1/chunks.m3u8?app=supersatforum
+#EXTINF:-1 group-title="GENEL",TRTCOCUKYEDEK
+https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="GENEL",EBAILKOKULYEDEK
+https://tv-e-okul00.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="GENEL",EBAORTAOKULYEDEK
+https://tv-e-okul01.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="GENEL",EBALISEYEDEK
+https://tv-e-okul02.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="GENEL",DZGNTVYEDEK
+http://duzguntv1616.ozelip.net:25192/duzguntv/duzguntv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",ESENLERSEHIREKRANIYEDEK
+https://yayin30.haber100.com/live/sehirekrani/chunklist_w1128481069.m3u8
+#EXTINF:-1 group-title="GENEL",ERZURUMTVYEDEK
+https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",ORDUBELTVYEDEK
+https://cdn1-ordubeltv.yayin.com.tr/ordubeltv/ordubeltv/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",BRIC-SATRANCTVYEDEK
+http://139.162.182.79/live/test/index.m3u8
+#EXTINF:-1 group-title="GENEL",FINESTTVYEDEK
+http://media.finest.tv/hls/live.m3u8
+#EXTINF:-1 group-title="GENEL",DAMARTVYEDEK
+https://tvsms.club/tv.php?kanal=damar&file=.m3u8
+#EXTINF:-1 group-title="GENEL",ARABESKTVYEDEK
+https://tvsms.club/tv.php?kanal=arabeskyeni&file=.m3u8
+#EXTINF:-1 group-title="GENEL",SILATVYEDEK
+https://tvsms.club/tv.php?kanal=silatv&file=.m3u8
+#EXTINF:-1 group-title="GENEL",ZEYNOTVYEDEK
+https://tvsms.club/tv.php?kanal=zeynotv&file=.m3u8
+#EXTINF:-1 group-title="GENEL",DOSTTVYEDEK
+https://tvsms.club/tvz.php?kanal=dost&file=.m3u8
+#EXTINF:-1 group-title="GENEL",EZOTVYEDEK
+https://tvsms.club/tvz.php?kanal=ezo&file=.m3u8
+#EXTINF:-1 group-title="GENEL",TOPPOPTVYEDEK
+https://tvsms.club/tvz.php?kanal=toppop&file=.m3u8
+#EXTINF:-1 group-title="GENEL",GENCSMSTVYEDEK
+https://tvsms.club/tv.php?kanal=genctv&file=.m3u8
+#EXTINF:-1 group-title="GENEL",NATURALTVTURKYEDEK
+https://edge1.socialsmart.tv/naturaltv/bant1/playlist.m3u8
+#EXTINF:-1 group-title="GENEL",TRTWORLDYEDEK
+https://tv-trtworld.medya.trt.com.tr/master_720.m3u8
 
 
 
