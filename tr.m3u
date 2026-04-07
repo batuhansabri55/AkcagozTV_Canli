@@ -3556,13 +3556,13 @@ http://87.121.104.29:1798/somine/stream.m3u8
 http://129.151.204.207/Tivizon.php?ID=kanald
 #EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/rGaatci_rjFWnwKiycOnIolZYkXz8SeTNVMz4G_45i_flLh_toDIBKT6ctxlDH8b7vqW4Cc_-XY",ATVYEDEK
 http://129.151.204.207/Tivizon.php?ID=atv
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/uLs2ZkqijBRkGlO0nSIJJpF_BJZhxdtaVq5lQXDnnwPTS41FekCPAqVz0ZU2RZjfhlvClkw-BQ",NOWYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/uLs2ZkqijBRkGlO0nSIJJpF_BJZhxdtaVq5lQXDnnwPTS41FekCPAqVz0ZU2RZjfhlvClkw-BQ",NOWTVYEDEK
 http://129.151.204.207/Tivizon.php?ID=nowtv
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/uLs2ZkqijBRkGlO0nSIJJpF_BJZhxdtaVq5lQXDnnwPTS41FekCPAqVz0ZU2RZjfhlvClkw-BQ",FOXYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/uLs2ZkqijBRkGlO0nSIJJpF_BJZhxdtaVq5lQXDnnwPTS41FekCPAqVz0ZU2RZjfhlvClkw-BQ",NOWTVYEDEK
 http://129.151.204.207/Tivizon.php?ID=foxtv
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/RZMwSCEwuSYV3R0X10cizuB4Pf_FOPPJrI-JnKytQoAe6gdScle1iWxj-5ApcILVT2hFZmCa0w",STARYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/RZMwSCEwuSYV3R0X10cizuB4Pf_FOPPJrI-JnKytQoAe6gdScle1iWxj-5ApcILVT2hFZmCa0w",STARTVYEDEK
 http://129.151.204.207/Tivizon.php?ID=startv
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/cLKgkpYAa2ebb0i0r0tRIrEwsytAyj9NEq6al0OQuhVh4QoVuClFzF1ODvSigcOpiXCyuo15Ew",SHOWYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="http://yt3.ggpht.com/cLKgkpYAa2ebb0i0r0tRIrEwsytAyj9NEq6al0OQuhVh4QoVuClFzF1ODvSigcOpiXCyuo15Ew",SHOWTVYEDEK
 http://129.151.204.207/Tivizon.php?ID=showtv
 #EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_nTG4AY_rb5ieHlK_3D6rs0ZI2neVws-b735Vk_4UtwHLk",SHOWMAXYEDEK
 http://129.151.204.207/Tivizon.php?ID=showmax
