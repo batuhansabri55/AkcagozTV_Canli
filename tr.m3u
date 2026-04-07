@@ -995,6 +995,10 @@ https://streams.uzunmuhalefet.com/stream/266539b6-2d34-4487-8569-8795b9d7a37e.m3
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/fit-yasa-tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/0d799f92-d997-4a04-8a3b-3fbea0a6b3aa.png" group-title="TURKIYE DEATHLESS",FITYAŞATVYEDEK
 https://streams.uzunmuhalefet.com/stream/707a8dee-c8ff-4935-b86f-291ced31d37f.m3u8
+#EXTINF:-1, FLASHHABERYEDEK
+https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/9Hqnz42k04uQF15nx0Dk9sh6JtLWtVtzMIxp_W4TuxtUB2cq2Q515dnD095_muJUBjUhtRz70sA",FLASHHABERYEDEK
+http://129.151.204.207/Tivizon.php?ID=flashhaber
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/48705266-7426-492a-a091-f2e599ba7a36.png" group-title="TURKIYE DEATHLESS",FLASHHABERYEDEK
 https://streams.uzunmuhalefet.com/stream/6a0ae937-29d4-455b-b498-8fc8e82b95b4.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/flashhaber.png" group-title="TURKIYE DEATHLESS",FLASHHABERYEDEK
@@ -1101,6 +1105,8 @@ https://cdn-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
 https://streams.uzunmuhalefet.com/stream/53587f7c-6de2-4c6e-bf37-f10c0b1b0b2b.m3u8
 #EXTINF:-1, HABER61TVYEDEK
 https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/chunklist_w894465842_b1796000.m3u8
+#EXTINF:-1, HABERGLOBALYEDEK
+https://github.com/tecotv2025/tecotv/raw/main/playlist/Haber_Global_TV.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/hbglobalf.png" group-title="TURKIYE DEATHLESS",HABERGLOBALYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232359
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",HABERGLOBALYEDEK
@@ -1896,6 +1902,8 @@ https://a8.radyotelekom.com.tr:3881/hybrid/play.m3u8
 http://cdn18.yayin.com.tr/nowplay/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/9_Eu0vg2etMgqBbXQKjOVfFxDnNEPB8nODaCszsmK6pTZHfyUrtuR_3UKI5Td2I8OrAFMTDJ3g=s160k-c0x00ffffff-no-rj" group-title="TURKIYE DEATHLESS",NOWSPORYEDEK
 http://87.121.104.29:1798/nowsporyt/stream.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304632.png",NOWTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Now_HD
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/now_tv_dGf.png" group-title="TURKIYE DEATHLESS",NOWTVYEDEK
 http://live.cdn-vizi.workers.dev/?ID=4
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/now.png" group-title="TURKIYE DEATHLESS",NOWTVYEDEK
@@ -1926,6 +1934,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/314
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",NRYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/234452
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_303916.png",NTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=NTVTurkiye_HD
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",NTVYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/151
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",NTVYEDEK
@@ -2250,6 +2260,8 @@ https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8?checkedby:MyWay
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/show_max_Ke7.png" group-title="TURKIYE DEATHLESS",SHOWMAXYEDEK
 https://streams.uzunmuhalefet.com/stream/2ffa76f2-5c2b-4f98-b29b-9bbda2f75ad6.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="https://play-lh.googleusercontent.com/0sOPBAP2kN1gvVFLtCVsLhOrcZApUxZG8njmWOj26lRbiVJ723731GtyKJl-LFjd2Q",SHOWTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=ShowTV_HD
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",SHOWTVYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/43
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",SHOWTVYEDEK
@@ -2284,7 +2296,9 @@ https://ibneliksizdemoda.testworker0y.workers.dev/channel/U2hvdyBUViB8IEE=
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/show_tv_lNk.png" group-title="TURKIYE DEATHLESS",SHOWTVYEDEK
 http://live.cdn-vizi.workers.dev/?ID=3
-#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/7b1e3f67-3dd8-427f-8d3c-f0d1b80e7961.png" group-title="TURKIYE DEATHLESS",SHOWTÜRKYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304556.png",SHOWTURKYEDEK
+http://tv.smartglwiz.workers.dev/?ID=ShowTurk_HD
+#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/7b1e3f67-3dd8-427f-8d3c-f0d1b80e7961.png" group-title="TURKIYE DEATHLESS",SHOWTURKYEDEK
 https://streams.uzunmuhalefet.com/stream/16e43b9b-e175-482c-a105-2253c06515c9.m3u8
 #EXTINF:-1, SIFIRTVYEDEK
 https://ahr7chck.rocketcdn.com/sifirtv.stream/chunklist.m3u8
@@ -2444,6 +2458,8 @@ https://purple-fog-7608.han686314.workers.dev/androstreamlivess1.m3u8
 https://purple-fog-7608.han686314.workers.dev/androstreamlivess2.m3u8
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="TURKIYE DEATHLESS",SSPORTYEDEK
 https://atom.han686314.workers.dev/s-sport.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304551.png",STARTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=StarTV_HD
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/star-tv-tr.png" group-title="ULUSAL",STARTVYEDEK
 https://mn-nl.mncdn.com/dogusdyg_star/live_1080p3000000kbps/index.m3u8?st=NVasGxWbIXQEO3gipwz__Q&e=1775603174
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",STARTVYEDEK
@@ -2754,8 +2770,10 @@ https://streams.uzunmuhalefet.com/stream/87525bc2-91d5-46e9-8aa0-45bc8ed34823.m3
 http://live.yt-hls.workers.dev/UCNLO4lpteIloZ4IKb9L2DoA.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/_4BCgYVYzh2eD6doip7g2IopQ6uNdc4EbPJHtYwHBKTopTSPjcio-X0JEBlYi9vdaxP5bEBdgQ=s160k-c0x00ffffff-no-rj" group-title="TURKIYE DEATHLESS",TLCSUÇVEARAŞTIRMAYEDEK
 http://87.121.104.29:1798/tlcsucvearastirma/stream.m3u8
-#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tlc_y3J.png" group-title="TURKIYE DEATHLESS",TLCTURKIYEYEDEK
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tlc_y3J.png" group-title="TURKIYE DEATHLESS",TLCYEDEK
 http://live.cdn-vizi.workers.dev/?ID=32
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_300948.png",TLCYEDEK
+http://tv.smartglwiz.workers.dev/?ID=TLC_HD
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TLCYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/14
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/xoQvKwHmpVazrssM.png" group-title="TURKIYE DEATHLESS",TLCYEDEK
@@ -3128,6 +3146,12 @@ https://girnata.testworker0y.workers.dev/channel/VFYxMDAgfCBB
 https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tv1.png" group-title="TURKIYE DEATHLESS",TV1KAYSERIYEDEK
 https://edge1.socialsmart.tv/tv1/bant1/chunks.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304357.png",TV24YEDEK
+http://tv.smartglwiz.workers.dev/?ID=24_HD
+#EXTINF:-1, TV24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/gWxG3v8R74BMB5GWgX0v9HoFKmKLtTl533CgLfoHcRfRXQPTTcAYgvrnplkwqOmq4GZnmOLkbw",TV24YEDEK
+http://129.151.204.207/Tivizon.php?ID=tv24
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TV24YEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
 #EXTINF:-1, TV24YEDEK
@@ -3204,12 +3228,16 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/27
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_480p.m3u8?&sid=7tra76g4cefx&app=bf58ab52-4865-4c81-b223-26b41009801e&ce=3?checkedby:MyWay
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TV85YEDEK
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web&ce=3
-#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv8_5_4or.png" group-title="ULUSAL",TV85YEDEK"TVG-LOGO="HTTPS://D3CKC0U56NIQ67.CLOUDFRONT.NET/CONF/IMAGES/TV8_5_4OR.PNG"GROUP-TITLE="TURKIYEDEATHLESS",5HD"TVG-LOGO="HTTPS://D3CKC0U56NIQ67.CLOUDFRONT.NET/CONF/IMAGES/TV8_5_4OR.PNG"GROUP-TITLE="ULUSAL",TV85YEDEK
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv8_5_4or.png" group-title="ULUSAL",TV85YEDEK"TVG-LOGO="HTTPS://.NET/CONF/IMAGES/TV8_5_4OR.PNG"GROUP-TITLE="ULUSAL",TV85YEDEK
 https://goldvod.site/live/hpgdiscoo/123456/20.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/j/3s/13867/Thumbnail.png" group-title="ULUSAL",5"TVG-LOGO="HTTPS://IMG.DSMARTGO.COM.TR/CONTENT/J/3S/13867/THUMBNAIL.PNG"GROUP-TITLE="ULUSAL",TV85YEDEK
 https://ibneliksizdemoda.testworker0y.workers.dev/channel/VHY4LjUgfCBB
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tv8int.png" group-title="TURKIYE DEATHLESS",.TV8INTYEDEK
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7c32lioncwib&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3&format=.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304475.png",TV8YEDEK
+http://tv.smartglwiz.workers.dev/?ID=TV8_HD
+#EXTINF:-1, TV8YEDEK
+http://149.13.0.66:4002/tv8hd
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TV8YEDEK
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TV8YEDEK
@@ -3264,6 +3292,8 @@ https://streams.uzunmuhalefet.com/stream/73f87a00-3e4e-4b58-82ac-ea28220cce56.m3
 https://live.euromediacenter.com/tvmor/index.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/3fbf44de-31bb-4aad-aa86-1e48f3d80855.png" group-title="TURKIYE DEATHLESS",TVMORYEDEK
 https://streams.uzunmuhalefet.com/stream/51f8ac24-3924-4cdd-b9d0-3148098ab543.m3u8
+#EXTINF:-1, TVNETYEDEK
+https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TVNETYEDEK
 https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1 group-title="TURKIYE DEATHLESS",TVNETYEDEK
@@ -3554,16 +3584,12 @@ http://129.151.204.207/Tivizon.php?ID=haberturktv
 http://129.151.204.207/Tivizon.php?ID=halktv
 #EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/W3z9GW0MJQfPN-a-usbsNpF9aFiEP8VU4Qx808NCB0ARD4U0G96MtFFH7peDDgRLfpjKherWPek",TELE1YEDEK
 http://129.151.204.207/Tivizon.php?ID=tele1
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/9Hqnz42k04uQF15nx0Dk9sh6JtLWtVtzMIxp_W4TuxtUB2cq2Q515dnD095_muJUBjUhtRz70sA",FLASHHABERYEDEK
-http://129.151.204.207/Tivizon.php?ID=flashhaber
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mLAxlfYMg4fHPVZA80ly_sjryTgQGUDe-TeH4-j3zrkw",TGRT HABERYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mLAxlfYMg4fHPVZA80ly_sjryTgQGUDe-TeH4-j3zrkw",TGRTHABERYEDEK
 http://129.151.204.207/Tivizon.php?ID=tgrthaber
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kYr_pJ26fMpoQPKgJEACBiddx9WO4CV4akUE8yBzhrHMg",BLOOMBERG HTYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kYr_pJ26fMpoQPKgJEACBiddx9WO4CV4akUE8yBzhrHMg",BLOOMBERGHTYEDEK
 http://129.151.204.207/Tivizon.php?ID=bloomberght
 #EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/Rh1aC6tWB_CLSqR2gRW8UPXfCsqZE-7m83CPpBNLk8CI6ybTGDNWy7jF7jFGkHIffyUEyF8BW38",CNBC-EYEDEK
 http://129.151.204.207/Tivizon.php?ID=cnbc-e
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/gWxG3v8R74BMB5GWgX0v9HoFKmKLtTl533CgLfoHcRfRXQPTTcAYgvrnplkwqOmq4GZnmOLkbw",TV24YEDEK
-http://129.151.204.207/Tivizon.php?ID=tv24
 #EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kZVDU4urtdSMj-Ubv76W22JRs-GiLQN1UA29bzu4aa6uk",360TVYEDEK
 http://129.151.204.207/Tivizon.php?ID=tv360
 #EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/mEP9UzwxoTmVpxHQI4yYvXbpjWtZdfg8aA8XZVriwzoQVXze7nFe3TyfsEvglZIOCQh3LfPRH_8",TV100YEDEK
@@ -3584,24 +3610,12 @@ http://129.151.204.207/Tivizon.php?ID=kralpoptv
 http://129.151.204.207/Tivizon.php?ID=aspor
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://yt3.googleusercontent.com/Ar9s9sZNclvmZN1l7GfIdnAQjh_ZkVhGMx6Dy5PHbq2keR9ijkPMFkk9VxZnIEnTf0MrXfSU4g",TRT1YEDEK
 http://tv.smartglwiz.workers.dev/?ID=TRT1_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304551.png",STARTVYEDEK
-http://tv.smartglwiz.workers.dev/?ID=StarTV_HD
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304557.png",Euro StarYEDEK
 http://tv.smartglwiz.workers.dev/?ID=EuroStar_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="https://play-lh.googleusercontent.com/0sOPBAP2kN1gvVFLtCVsLhOrcZApUxZG8njmWOj26lRbiVJ723731GtyKJl-LFjd2Q",SHOWTVYEDEK
-http://tv.smartglwiz.workers.dev/?ID=ShowTV_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304556.png",SHOWTURKYEDEK
-http://tv.smartglwiz.workers.dev/?ID=ShowTurk_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304632.png",NOWYEDEK
-http://tv.smartglwiz.workers.dev/?ID=Now_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304475.png",TV8YEDEK
-http://tv.smartglwiz.workers.dev/?ID=TV8_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_300948.png",TLCYEDEK
-http://tv.smartglwiz.workers.dev/?ID=TLC_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304357.png",TV24YEDEK
-http://tv.smartglwiz.workers.dev/?ID=24_HD
-#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_303916.png",NTVYEDEK
-http://tv.smartglwiz.workers.dev/?ID=NTVTurkiye_HD
+
+
+
+
 
 
 
