@@ -3785,7 +3785,6 @@ http://tabii.mobi-tv.workers.dev/tabiiSpor6.m3u8
 http://tabii.mobi-tv.workers.dev/tabiiSpor7.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR8YEDEK
 http://tabii.mobi-tv.workers.dev/tabiiSpor8.m3u8
-#EXTM3U
 #EXTINF:-1 group-title="GENEL",TRT1YEDEK
 https://tv-trt1.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="GENEL",KANALDYEDEK
@@ -3882,7 +3881,7 @@ http://new.cache-stream.workers.dev/stream/UCVebw64Db0yhrPkVk-D8F6w/live.m3u8?ap
 https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
 #EXTINF:-1 group-title="GENEL",KANAL23YEDEK
 https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
-#EXTINF:-1 group-title="GENEL",KANAL23FHDYEDEK
+#EXTINF:-1 group-title="GENEL",KANAL23YEDEK
 https://cdn13-kanal23.yayin.com.tr/kanal23/ngrp:kanal23/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="GENEL",KANAL26YEDEK
 https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8
