@@ -1902,6 +1902,7 @@ https://a8.radyotelekom.com.tr:3881/hybrid/play.m3u8
 http://cdn18.yayin.com.tr/nowplay/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/9_Eu0vg2etMgqBbXQKjOVfFxDnNEPB8nODaCszsmK6pTZHfyUrtuR_3UKI5Td2I8OrAFMTDJ3g=s160k-c0x00ffffff-no-rj" group-title="TURKIYE DEATHLESS",NOWSPORYEDEK
 http://87.121.104.29:1798/nowsporyt/stream.m3u8
+
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304632.png",NOWTVYEDEK
 http://tv.smartglwiz.workers.dev/?ID=Now_HD
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/now_tv_dGf.png" group-title="TURKIYE DEATHLESS",NOWTVYEDEK
@@ -3612,6 +3613,192 @@ http://129.151.204.207/Tivizon.php?ID=aspor
 http://tv.smartglwiz.workers.dev/?ID=TRT1_HD
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304557.png",Euro StarYEDEK
 http://tv.smartglwiz.workers.dev/?ID=EuroStar_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",KANALDYEDEK
+http://129.151.204.207/Tivizon.php?ID=kanald
+#EXTINF:-1 group-title="YEDEK LİSTE",ATVYEDEK
+http://129.151.204.207/Tivizon.php?ID=atv
+#EXTINF:-1 group-title="YEDEK LİSTE",NOWYEDEK
+http://129.151.204.207/Tivizon.php?ID=nowtv
+#EXTINF:-1 group-title="YEDEK LİSTE",FOXYEDEK
+http://129.151.204.207/Tivizon.php?ID=foxtv
+#EXTINF:-1 group-title="YEDEK LİSTE",STARYEDEK
+http://129.151.204.207/Tivizon.php?ID=startv
+#EXTINF:-1 group-title="YEDEK LİSTE",SHOWYEDEK
+http://129.151.204.207/Tivizon.php?ID=showtv
+#EXTINF:-1 group-title="YEDEK LİSTE",SHOWMAXYEDEK
+http://129.151.204.207/Tivizon.php?ID=showmax
+#EXTINF:-1 group-title="YEDEK LİSTE",TV8YEDEK
+http://129.151.204.207/Tivizon.php?ID=tv8
+#EXTINF:-1 group-title="YEDEK LİSTE",TV8.5YEDEK
+http://129.151.204.207/Tivizon.php?ID=tv8bucuk
+#EXTINF:-1 group-title="YEDEK LİSTE",KANAL7YEDEK
+http://129.151.204.207/Tivizon.php?ID=kanal7
+#EXTINF:-1 group-title="YEDEK LİSTE",BEYAZTVYEDEK
+http://129.151.204.207/Tivizon.php?ID=beyaztv
+#EXTINF:-1 group-title="YEDEK LİSTE",SZCYEDEK
+http://129.151.204.207/Tivizon.php?ID=sozcutv
+#EXTINF:-1 group-title="YEDEK LİSTE",CNNTURKYEDEK
+http://129.151.204.207/CnnTurk.php
+#EXTINF:-1 group-title="YEDEK LİSTE",HABERTURKYEDEK
+http://129.151.204.207/Tivizon.php?ID=haberturktv
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+http://129.151.204.207/Tivizon.php?ID=halktv
+#EXTINF:-1 group-title="YEDEK LİSTE",TELE1YEDEK
+http://129.151.204.207/Tivizon.php?ID=tele1
+#EXTINF:-1 group-title="YEDEK LİSTE",FLASHHABERYEDEK
+http://129.151.204.207/Tivizon.php?ID=flashhaber
+#EXTINF:-1 group-title="YEDEK LİSTE",TGRTHABERYEDEK
+http://129.151.204.207/Tivizon.php?ID=tgrthaber
+#EXTINF:-1 group-title="YEDEK LİSTE",BLOOMBERGHTYEDEK
+http://129.151.204.207/Tivizon.php?ID=bloomberght
+#EXTINF:-1 group-title="YEDEK LİSTE",CNBC-EYEDEK
+http://129.151.204.207/Tivizon.php?ID=cnbc-e
+#EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK
+http://129.151.204.207/Tivizon.php?ID=tv24
+#EXTINF:-1 group-title="YEDEK LİSTE",360TVYEDEK
+http://129.151.204.207/Tivizon.php?ID=tv360
+#EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
+http://129.151.204.207/Tivizon.php?ID=tv100
+#EXTINF:-1 group-title="YEDEK LİSTE",NTVYEDEK
+http://129.151.204.207/Tivizon.php?ID=ntv
+#EXTINF:-1 group-title="YEDEK LİSTE",TLCYEDEK
+http://129.151.204.207/Tivizon.php?ID=tlc
+#EXTINF:-1 group-title="YEDEK LİSTE",TV2YEDEK
+http://129.151.204.207/Tivizon.php?ID=teve2
+#EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
+http://129.151.204.207/Tivizon.php?ID=dmax
+#EXTINF:-1 group-title="YEDEK LİSTE",TV4YEDEK
+http://129.151.204.207/Tivizon.php?ID=tv4
+#EXTINF:-1 group-title="YEDEK LİSTE",KRALPOPYEDEK
+http://129.151.204.207/Tivizon.php?ID=kralpoptv
+#EXTINF:-1 group-title="YEDEK LİSTE",ASPORYEDEK
+http://129.151.204.207/Tivizon.php?ID=aspor
+#EXTINF:-1 tvg-logo="http://yt3.googleusercontent.com/Ar9s9sZNclvmZBQ2KER9IJKPMFKK9VXZNIENTF0MRXFSU4G",TRT1YEDEK
+http://tv.smartglwiz.workers.dev/?ID=TRT1_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304551.PNG",STARTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=StarTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304557.PNG",EUROSTARYEDEK
+http://tv.smartglwiz.workers.dev/?ID=EuroStar_HD
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/0sOPBAP2kN1gvVFLtCVsLhOrcZApUxZG8njmWOj26lRTYKJL-LFJD2Q",SHOWTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=ShowTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304556.PNG",SHOWTURKYEDEK
+http://tv.smartglwiz.workers.dev/?ID=ShowTurk_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304632.PNG",NOWYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Now_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304475.PNG",TV8YEDEK
+http://tv.smartglwiz.workers.dev/?ID=TV8_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_300948.PNG",TLCYEDEK
+http://tv.smartglwiz.workers.dev/?ID=TLC_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304357.PNG",TV24YEDEK
+http://tv.smartglwiz.workers.dev/?ID=24_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_303916.PNG",NTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=NTVTurkiye_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_300784.PNG",TRTTURKYEDEK
+http://tv.smartglwiz.workers.dev/?ID=TRTTurk_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304314.PNG",HALKTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Halk_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304353.PNG",KANALAVRUPAYEDEK
+http://tv.smartglwiz.workers.dev/?ID=KanalAvrupa_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_306928.PNG",KANAL33YEDEK
+http://tv.smartglwiz.workers.dev/?ID=Kanal33_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304417.PNG",TURKMENELIYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Turkmeneli_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_306914.PNG",AKITYEDEK
+http://tv.smartglwiz.workers.dev/?ID=AKiT_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304471.PNG",KANAL7AVRUPAYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Kanal7Avrupa_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304539.PNG",SPORTSTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=SportsTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304495.PNG",TRTSPORYEDEK
+http://tv.smartglwiz.workers.dev/?ID=TRTSport_HD
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/bnRoOZwIeGRlErapRNtLRer9uE0Vh_5rINIGWrAAES0MZes9qDMZES9QDA3E_2TSRLEHWQOOQ",FBTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=FBTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_306933.PNG",LALEGÜLTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=LALEGUL_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_303889.PNG",TRTMUZIKYEDEK
+http://tv.smartglwiz.workers.dev/?ID=TRTMuzik_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_306809.PNG",TELE1YEDEK
+http://tv.smartglwiz.workers.dev/?ID=Tele1_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304564.PNG",TV4YEDEK
+http://tv.smartglwiz.workers.dev/?ID=TV4_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304380.PNG",DOSTTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=DostTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304288.PNG",REHBERYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Rehber_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304624.PNG",DMAXYEDEK
+http://tv.smartglwiz.workers.dev/?ID=DMax_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_303883.PNG",NUMBERONETURKYEDEK
+http://tv.smartglwiz.workers.dev/?ID=NumberOneTurk_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304302.PNG",BAYRAK2YEDEK
+http://tv.smartglwiz.workers.dev/?ID=BRT2_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304300.PNG",BAYRAK1YEDEK
+http://tv.smartglwiz.workers.dev/?ID=BRT1_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_305297.PNG",KARDELENTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=KardelenTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304411.PNG",TV1YEDEK
+http://tv.smartglwiz.workers.dev/?ID=TV1_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304451.PNG",TV5YEDEK
+http://tv.smartglwiz.workers.dev/?ID=TV5_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304479.PNG",KANALFIRATYEDEK
+http://tv.smartglwiz.workers.dev/?ID=KanalFirat_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304433.PNG",KANAL26YEDEK
+http://tv.smartglwiz.workers.dev/?ID=Kanal26_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_305444.PNG",TV100YEDEK
+http://tv.smartglwiz.workers.dev/?ID=TV100_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304340.PNG",ADATVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Adatv_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304365.PNG",AKSUTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=AksuTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304368.PNG",ALTASTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=AltasTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304521.PNG",BENGUTURKYEDEK
+http://tv.smartglwiz.workers.dev/?ID=BenguTurk_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304399.PNG",CAYTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=CayTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304347.PNG",TVKAYSERIYEDEK
+http://tv.smartglwiz.workers.dev/?ID=TVKayseri_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304349.PNG",KONTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=KonTV_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304386.PNG",KOYTVYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Koy_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_303727.PNG",MAVIKARADENIZYEDEK
+http://tv.smartglwiz.workers.dev/?ID=MaviKaradeniz_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_303745.PNG",TMBYEDEK
+http://tv.smartglwiz.workers.dev/?ID=TMB_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304425.PNG",VUSLATYEDEK
+http://tv.smartglwiz.workers.dev/?ID=Vuslat_HD
+#EXTINF:-1 group-title="YEDEK LİSTE",ASPORYEDEK
+http://live.yt-hls.workers.dev/UCJElRTCNEmLemgirqvsW63Q.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",24TVYEDEK
+http://live.yt-hls.workers.dev/UCN7VYCsI4Lx1-J4_BtjoWUA.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",BLOOMBERGHTYEDEK
+http://live.yt-hls.workers.dev/UCApLxl6oYQafxvykuoC2uxQ.m3u8
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/Ug6KZIO3xYTZoZmFMHzwvNP44B="YEDEK LİSTE",ALLAHYOLUNDAHUZURVERENDINISOHBETLER-AŞK-INEVAYEDEK
+http://live.yt-hls.workers.dev/UCJ5bBXls09z7Cjwg-qBzAZQ.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",VAVTVYEDEK
+http://live.yt-hls.workers.dev/UCmMPdW0rtbEI_XyIsMlMnqg.m3u8
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_nO7M2e_I7Q4rk-xv0J6UGIiw9Ju7sYa_rKsFVpDTbxoA" group-title="YEDEK LİSTE",ZEKI&METINFILMLERIYEDEK
+http://live.yt-hls.workers.dev/UCmw7e_6j2TSWCKeaZALjyuA.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIITVYEDEK
+http://tabii.mobi-tv.workers.dev/tabiiTV.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPORYEDEK
+http://tabii.mobi-tv.workers.dev/tabiispor.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR1YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor1.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR2YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor2.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR3YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor3.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR4YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor4.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR5YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor5.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR6YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor6.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR7YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor7.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TABIISPOR8YEDEK
+http://tabii.mobi-tv.workers.dev/tabiiSpor8.m3u8
 
 
 
