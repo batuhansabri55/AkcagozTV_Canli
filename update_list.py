@@ -9,27 +9,20 @@ def get_cnn_turk():
     }
     try:
         response = requests.get(url, headers=headers, timeout=10)
-        # Sayfa içindeki m3u8 linkini yakala
+        # m3u8 linkini bul
         match = re.search(r'(https?://[^\s"\']+\.m3u8[^\s"\']*)', response.text)
         if match:
-            return match.group(1).replace('\\/', '/')
+            raw_url = match.group(1).replace('\\/', '/')
+            # Çift slash hatasını temizle (https://live.duhnet.tv//S2 -> /S2)
+            raw_url = raw_url.replace('.tv//', '.tv/')
+            
+            # TiviMate ve VLC için header bilgilerini linke yapıştırıyoruz
+            # Bu format oynatıcıya "bu linki açarken şu User-Agent'ı kullan" der.
+            final_url = f"{raw_url}|User-Agent={headers['User-Agent']}&Referer={headers['Referer']}"
+            return final_url
         return None
     except:
         return None
 
-def tek_kanal_m3u_olustur():
-    cnn_url = get_cnn_turk()
-    
-    if cnn_url:
-        m3u_icerik = "#EXTM3U\n"
-        m3u_icerik += '#EXTINF:-1 tvg-id="cnn-turk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/CNN_Turk_logo.png" group-title="HABER",CNN TURK\n'
-        m3u_icerik += cnn_url + "\n"
-        
-        with open("tr.m3u", "w", encoding="utf-8") as f:
-            f.write(m3u_icerik)
-        print("CNN Türk başarıyla güncellendi ve tr.m3u dosyasına yazıldı.")
-    else:
-        print("CNN Türk linki çekilemedi!")
-
-if __name__ == "__main__":
-    tek_kanal_m3u_olustur()
+# Test çıktısını alalım
+print(get_cnn_turk())
