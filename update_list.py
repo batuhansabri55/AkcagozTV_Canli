@@ -2,35 +2,34 @@ import requests
 import re
 
 def get_cnn_turk():
-    # CNN Türk'ün canlı yayın sayfası
     url = "https://www.cnnturk.com/canli-yayin"
-    
-    # Siteye tarayıcı gibi görünmek için gerekli headerlar
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         'Referer': 'https://www.cnnturk.com/'
     }
-
     try:
-        # Sayfayı indir
         response = requests.get(url, headers=headers, timeout=10)
-        
-        # Sayfa içindeki m3u8 linkini regex ile cımbızla çek
-        # CNN genellikle 'https://...playlist.m3u8' yapısını kullanır
+        # Sayfa içindeki m3u8 linkini yakala
         match = re.search(r'(https?://[^\s"\']+\.m3u8[^\s"\']*)', response.text)
-        
         if match:
-            # Linki bulduk, içindeki ters slashları (varsa) temizle
-            stream_url = match.group(1).replace('\\/', '/')
-            return stream_url
-        else:
-            return "Link bulunamadı."
+            return match.group(1).replace('\\/', '/')
+        return None
+    except:
+        return None
 
-    except Exception as e:
-        return f"Hata oluştu: {str(e)}"
+def tek_kanal_m3u_olustur():
+    cnn_url = get_cnn_turk()
+    
+    if cnn_url:
+        m3u_icerik = "#EXTM3U\n"
+        m3u_icerik += '#EXTINF:-1 tvg-id="cnn-turk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/CNN_Turk_logo.png" group-title="HABER",CNN TURK\n'
+        m3u_icerik += cnn_url + "\n"
+        
+        with open("tr.m3u", "w", encoding="utf-8") as f:
+            f.write(m3u_icerik)
+        print("CNN Türk başarıyla güncellendi ve tr.m3u dosyasına yazıldı.")
+    else:
+        print("CNN Türk linki çekilemedi!")
 
-# --- Sadece CNN'i test et ---
 if __name__ == "__main__":
-    print("CNN Türk Linki Çekiliyor...")
-    sonuc = get_cnn_turk()
-    print(f"\nSONUÇ:\n{sonuc}")
+    tek_kanal_m3u_olustur()
