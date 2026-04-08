@@ -6,7 +6,7 @@ import datetime
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
 # USTA, TEMIZLEDIGIN 4892 CALISAN URL ICIN ZIRHI BURAYA SABITLEDIM.
-ZIRH_LIMIT = 3800
+ZIRH_LIMIT = 3900
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
 YASAKLI_GRUPLAR = [
