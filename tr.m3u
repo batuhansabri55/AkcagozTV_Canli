@@ -1,3 +1,3 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="cnn-turk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/CNN_Turk_logo.png" group-title="HABER",CNN TURK
-https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/CNN_Turk_logo.png",CNN TURK
+https://live.duhnet.tv/S2/HLS_LIVE/cnnturknp/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Referer=https://www.cnnturk.com/
