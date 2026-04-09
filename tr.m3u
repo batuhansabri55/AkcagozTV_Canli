@@ -837,6 +837,15 @@ https://demiroren.daioncdn.net/wdaa1icvrx6m7uadvqs0dw/Siyah_beyaz_ask_dizi/playl
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/60119
 #EXTINF:-1 group-title="YEDEK LİSTE",DIZISMARTPREMIUMYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/218
+#EXTINF:-1 tvg-id="DMAX(src05).tr" tvg-logo="" group-title="Ulusal", DMAXYEDEK
+#EXTVLCOPT:http-referer="https://www.dmax.com.tr/"
+https://dogus.daioncdn.net/dmax/dmax_720p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0UnlDWWNRVnQ1b0VMbWpHYndYRjRrM2l0Yz0=&sid=859nsaxc33ff&app=5a02c599-d17e-4982-9b04-090934d51af7&ce=3
+#EXTINF:-1 tvg-id="DMAX(src05).tr" tvg-logo="" group-title="Ulusal", DMAXYEDEK
+#EXTVLCOPT:http-referer="https://www.dmax.com.tr/"
+https://dogus.daioncdn.net/dmax/dmax_480p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0UnlDWWNRVnQ1b0VMbWpHYndYRjRrM2l0Yz0=&sid=859nsaxc33ff&app=5a02c599-d17e-4982-9b04-090934d51af7&ce=3
+#EXTINF:-1 tvg-id="DMAX(src05).tr" tvg-logo="" group-title="Ulusal", DMAXYEDEK
+#EXTVLCOPT:http-referer="https://www.dmax.com.tr/"
+https://dogus.daioncdn.net/dmax/dmax_360p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0UnlDWWNRVnQ1b0VMbWpHYndYRjRrM2l0Yz0=&sid=859nsaxc33ff&app=5a02c599-d17e-4982-9b04-090934d51af7&ce=3
 #EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/274
 #EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
@@ -1501,6 +1510,18 @@ https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8
 https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304471.PNG",KANAL7AVRUPAYEDEK
 http://tv.smartglwiz.workers.dev/?ID=Kanal7Avrupa_HD
+#EXTINF:-1 tvg-id="KANAL7(src05).tr" tvg-logo="" group-title="Ulusal", KANAL7YEDEK
+#EXTVLCOPT:http-referer="https://www.kanal7.com/"
+https://kanal7.daioncdn.net/kanal7/kanal7_1080p.m3u8?&sid=859k2nbi4wx3&app=f99587ad-1637-494d-8255-da35b09d17a1&ce=3
+#EXTINF:-1 tvg-id="KANAL7(src05).tr" tvg-logo="" group-title="Ulusal", KANAL7YEDEK
+#EXTVLCOPT:http-referer="https://www.kanal7.com/"
+https://kanal7.daioncdn.net/kanal7/kanal7_720p.m3u8?&sid=859k2nbi4wx3&app=f99587ad-1637-494d-8255-da35b09d17a1&ce=3
+#EXTINF:-1 tvg-id="KANAL7(src05).tr" tvg-logo="Kanal7.tr" group-title="Ulusal", KANAL7YEDEK
+#EXTVLCOPT:http-referer="https://www.kanal7.com/"
+https://kanal7.daioncdn.net/kanal7/kanal7_480p.m3u8?&sid=859k2nbi4wx3&app=f99587ad-1637-494d-8255-da35b09d17a1&ce=3
+#EXTINF:-1 tvg-id="KANAL7(src05).tr" tvg-logo="" group-title="Ulusal", KANAL7YEDEK
+#EXTVLCOPT:http-referer="https://www.kanal7.com/"
+https://kanal7.daioncdn.net/kanal7/kanal7_360p.m3u8?&sid=859k2nbi4wx3&app=f99587ad-1637-494d-8255-da35b09d17a1&ce=3
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/kanal7.png" group-title="YEDEK LİSTE",KANAL7YEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/22
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/kanal7.png" group-title="YEDEK LİSTE",.KANAL7YEDEK
@@ -1549,6 +1570,18 @@ http://live.cdn-vizi.workers.dev/?ID=59
 https://thema-vivekanald-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",KANALDDRAMAYEDEK
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
+#EXTINF:-1 tvg-id="KANALD(src09).tr" tvg-logo="" group-title="Ulusal",KANALDYEDEK
+#EXTVLCOPT:http-referer="https://www.kanald.com.tr/"
+https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=859jhvmn96hf&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
+#EXTINF:-1 tvg-id="KANALD(src09).tr" tvg-logo="" group-title="Ulusal",KANALDYEDEK
+#EXTVLCOPT:http-referer="https://www.kanald.com.tr/"
+https://demiroren.daioncdn.net/kanald/kanald_720p.m3u8?&sid=859jhvmn96hf&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
+#EXTINF:-1 tvg-id="KANALD(src09).tr" tvg-logo="" group-title="Ulusal",KANALDYEDEK
+#EXTVLCOPT:http-referer="https://www.kanald.com.tr/"
+https://demiroren.daioncdn.net/kanald/kanald_480p.m3u8?&sid=859jhvmn96hf&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
+#EXTINF:-1 tvg-id="KANALD(src09).tr" tvg-logo="" group-title="Ulusal",KANALDYEDEK
+#EXTVLCOPT:http-referer="https://www.kanald.com.tr/"
+https://demiroren.daioncdn.net/kanald/kanald_360p.m3u8?&sid=859jhvmn96hf&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
 #EXTINF:-1 group-title="YEDEK LİSTE",KANALDYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/39
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/kanaldf.png" group-title="YEDEK LİSTE",KANALDYEDEK
@@ -2722,6 +2755,15 @@ https://purple-fog-7608.han686314.workers.dev/androstreamlivess1.m3u8
 https://purple-fog-7608.han686314.workers.dev/androstreamlivess2.m3u8
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="YEDEK LİSTE",SSPORTYEDEK
 https://atom.han686314.workers.dev/s-sport.m3u8
+#EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal", STARTVYEDEK
+#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
+https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
+#EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal", STARTVYEDEK
+#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
+https://dogus.daioncdn.net/startv/startv_480p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
+#EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal", STARTVYEDEK
+#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
+https://dogus.daioncdn.net/startv/startv_360p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304551.png",STARTVYEDEK
 https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304551.png",STARTVYEDEK
@@ -2964,6 +3006,26 @@ https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/chunks.m3u8
 https://live.duhnet.tv/S2/HLS_LIVE/sisalsansdnp/playlist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TERSKOSEYEDEK
 https://streams.uzunmuhalefet.com/stream/be1ae12e-191c-4a02-be85-c33ba85d2525.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TEVE2YEDEK
+http://live.cdn-vizi.workers.dev/?ID=27
+#EXTINF:-1 tvg-logo="https://i.ibb.co/JRpJc2P/teve2.png" group-title="ULUSAL",TEVE2YEDEK
+https://live.duhnet.tv/S2/HLS_LIVE/teve2np/track_4_1000/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/teve2_cNO.png" group-title="YEDEK LİSTE",TEVE2YEDEK
+http://104.238.23.221/dsgo.php?id=245991
+#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/u-WSal09LZRqKxq2NsdhepDoQN97nHePc8QIWhvjwz_rw70hrJZyL8JDZF6YVF6jCtLOlBrXqaQ",TEVE2YEDEK
+http://129.151.204.207/Tivizon.php?ID=teve2
+#EXTINF:-1 tvg-id="TEVE2(src05).tr" tvg-logo="" group-title="Ulusal", TEVE2YEDEK
+#EXTVLCOPT:http-referer="https://www.tv2.com.tr/"
+https://demiroren.daioncdn.net/teve2/teve2_1080p.m3u8?&sid=859li294cccl&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd&ce=3
+#EXTINF:-1 tvg-id="TEVE2(src05).tr" tvg-logo="" group-title="Ulusal", TEVE2YEDEK
+#EXTVLCOPT:http-referer="https://www.tv2.com.tr/"
+https://demiroren.daioncdn.net/teve2/teve2_720p.m3u8?&sid=859li294cccl&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd&ce=3
+#EXTINF:-1 tvg-id="TEVE2(src05).tr" tvg-logo="" group-title="Ulusal", TEVE2YEDEK
+#EXTVLCOPT:http-referer="https://www.tv2.com.tr/"
+https://demiroren.daioncdn.net/teve2/teve2_480p.m3u8?&sid=859li294cccl&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd&ce=3
+#EXTINF:-1 tvg-id="TEVE2(src05).tr"  tvg-logo="" group-title="Ulusal", TEVE2YEDEK
+#EXTVLCOPT:http-referer="https://www.tv2.com.tr/"
+https://demiroren.daioncdn.net/teve2/teve2_360p.m3u8?&sid=859li294cccl&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd&ce=3
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/bmzapDlJghExUTZP.png" group-title="YEDEK LİSTE",TEVE2YEDEK
 https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd&
 #EXTINF:-1 group-title="YEDEK LİSTE",TEVE2YEDEK
@@ -3096,6 +3158,15 @@ https://streams.uzunmuhalefet.com/stream/87525bc2-91d5-46e9-8aa0-45bc8ed34823.m3
 http://live.yt-hls.workers.dev/UCNLO4lpteIloZ4IKb9L2DoA.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/_4BCgYVYzh2eD6doip7g2IopQ6uNdc4EbPJHtYwHBKTopTSPjcio-X0JEBlYi9vdaxP5bEBdgQ=s160k-c0x00ffffff-no-rj" group-title="YEDEK LİSTE",TLCSUÇVEARAŞTIRMAYEDEK
 http://87.121.104.29:1798/tlcsucvearastirma/stream.m3u8
+#EXTINF:-1 tvg-id="TLC(src05).tr" tvg-logo="" group-title="Ulusal", TLCYEDEK
+#EXTVLCOPT:http-referer="https://www.tlctv.com.tr/"
+https://dogus.daioncdn.net/tlc/tlc_720p.m3u8?token=SHFJQzQrRkJQSjMySjNOWlBHSnlJOHFtYWRwbGdzOExsMDJ0dExHWDB2RT0=&sid=859ndzyvhii8&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469&ce=3
+#EXTINF:-1 tvg-id="TLC(src05).tr" tvg-logo="" group-title="Ulusal", TLCYEDEK
+#EXTVLCOPT:http-referer="https://www.tlctv.com.tr/"
+https://dogus.daioncdn.net/tlc/tlc_480p.m3u8?token=SHFJQzQrRkJQSjMySjNOWlBHSnlJOHFtYWRwbGdzOExsMDJ0dExHWDB2RT0=&sid=859ndzyvhii8&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469&ce=3
+#EXTINF:-1 tvg-id="TLC(src05).tr" tvg-logo="" group-title="Ulusal", TLCYEDEK
+#EXTVLCOPT:http-referer="https://www.tlctv.com.tr/"
+https://dogus.daioncdn.net/tlc/tlc_360p.m3u8?token=SHFJQzQrRkJQSjMySjNOWlBHSnlJOHFtYWRwbGdzOExsMDJ0dExHWDB2RT0=&sid=859ndzyvhii8&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469&ce=3
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tlc_y3J.png" group-title="YEDEK LİSTE",TLCYEDEK
 http://live.cdn-vizi.workers.dev/?ID=32
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_300948.png",TLCYEDEK
@@ -3522,14 +3593,6 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee2
 https://streams.uzunmuhalefet.com/stream/23a0e9de-9696-47a8-97ec-3d65abd058be.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TV264YEDEK
 https://b01c02nl.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8?md5=qb_9l3erQIDqZMjbKfALzA&expires=1651666386
-#EXTINF:-1 group-title="YEDEK LİSTE",TV2YEDEK
-http://live.cdn-vizi.workers.dev/?ID=27
-#EXTINF:-1 tvg-logo="https://i.ibb.co/JRpJc2P/teve2.png" group-title="ULUSAL",TV2YEDEK
-https://live.duhnet.tv/S2/HLS_LIVE/teve2np/track_4_1000/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/teve2_cNO.png" group-title="YEDEK LİSTE",TV2YEDEK
-http://104.238.23.221/dsgo.php?id=245991
-#EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/u-WSal09LZRqKxq2NsdhepDoQN97nHePc8QIWhvjwz_rw70hrJZyL8JDZF6YVF6jCtLOlBrXqaQ",TV2YEDEK
-http://129.151.204.207/Tivizon.php?ID=teve2
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/41.png" group-title="YEDEK LİSTE",TV41KOCAELIYEDEK
 https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TV41YEDEK
@@ -3602,6 +3665,17 @@ https://goldvod.site/live/hpgdiscoo/123456/20.m3u8
 https://ibneliksizdemoda.testworker0y.workers.dev/channel/VHY4LjUgfCBB
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tv8int.png" group-title="YEDEK LİSTE",.TV8INTYEDEK
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=7c32lioncwib&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3&format=.m3u8
+#EXTINF:-1 tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal", TV8YEDEK
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
+https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal", TV8YEDEK
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
+https://tv8.daioncdn.net/tv8/tv8_720p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal", TV8YEDEK
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
+https://tv8.daioncdn.net/tv8/tv8_480p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1  tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal", TV8YEDEK
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304475.png",TV8YEDEK
 http://tv.smartglwiz.workers.dev/?ID=TV8_HD
 #EXTINF:-1,TV8YEDEK
@@ -3688,6 +3762,12 @@ https://goldvod.site/live/hpgdiscoo/123456/118.m3u8
 http://87.121.104.29:1798/tvnetyt/stream.m3u8
 #EXTINF:-1 tvg-name="TVDEN" group-title="ULUSAL",TVDENYEDEK
 https://canli.tvden.com.tr/hls/live.m3u8
+#EXTINF:-1 tvg-id="360(src05).tr" tvg-logo="" group-title="Ulusal",360TVYEDEK
+#EXTVLCOPT:http-referer="https://www.tv360.com.tr/"
+https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
+#EXTINF:-1 tvg-id="360(src05).tr" tvg-logo="" group-title="Ulusal",360TVYEDEK
+#EXTVLCOPT:http-referer="https://www.tv360.com.tr/"
+https://turkmedya-live.ercdn.net/tv360/tv360_360p.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",360TVYEDEK
 https://turkmedya-live.ercdn.net/tv360/tv360_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/9c668bd2-85f6-464d-b366-611e84c6f372.png" group-title="YEDEK LİSTE",360TVYEDEK
