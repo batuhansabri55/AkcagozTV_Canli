@@ -5,7 +5,7 @@ import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-# USTA, İLK 3950 SATIR ASLA DEĞİŞMEZ, YENİLER SONRASINA GELİR
+# USTA, İLK 3950 SATIR DOKUNULMAZDIR. YENİLER BUNUN SONUNA EKLENİR.
 ZIRH_LIMIT = 3950
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
@@ -31,40 +31,35 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def yedek_kanali_temizle(metin):
-    """Gelen isimleri senin ALIASES formatına (YEDEK/YEDK) çevirir usta."""
     if "#EXTINF" in metin and "," in metin:
         parcalar = metin.rsplit(',', 1)
         ayarlar = parcalar[0]
-        isim = parcalar[1].upper().replace(" ", "") # Boşlukları siler
-        
-        # Gereksiz takıları temizle
+        isim = parcalar[1]
+        isim = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', isim)
         isim = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim, flags=re.I)
-        isim = re.sub(r'[^A-Z0-9]', '', isim) # Sadece harf ve rakam
-        
-        # --- SENİN ÖZEL ALIASES FORMATIN ---
-        if "HABERTURK" in isim: isim = "HABERTURKYEDK"
-        elif "CNNTURK" in isim: isim = "CNNTURKYEDEK"
-        elif "TV24" in isim: isim = "TV24YEDEK"
-        elif "24TV" in isim: isim = "TV24YEDEK"
-        else: isim = f"{isim}YEDEK" # Örn: ATV -> ATVYEDEK
-            
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
+        isim = re.sub(r'\s+', ' ', isim).strip()
+        isim = re.sub(r'^[\.\-\s|]+', '', isim)
         return f"{ayarlar},{isim}"
     return metin
 
 def main():
-    eklenen_urller = set()
+    eklenen_urller = set() # Mükerrer kontrolü için hafıza
     ana_liste_zirh = [] 
     taze_kanal_listesi = []
 
-    # 1. ADIM: ZIRHLI BÖLGEYİ MUHAFAZA ET
+    # 1. ADIM: ZIRHLI BÖLGEYİ OKU VE URL'LERİ HAFIZAYA AL
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_icerik = f.readlines()
+            # 3950 satırı ayır
             ana_liste_zirh = tum_icerik[:ZIRH_LIMIT]
             
+            # Zırhlı bölgedeki URL'leri hafızaya ekle ki yenilerle çakışmasın
             for satir in ana_liste_zirh:
-                if satir.strip().startswith("http"):
-                    eklenen_urller.add(satir.strip())
+                satir_temiz = satir.strip()
+                if satir_temiz.startswith("http"):
+                    eklenen_urller.add(satir_temiz)
 
     # 2. ADIM: DIŞ KAYNAKLARDAN TAZE YEDEKLERİ ÇEK
     for url in YEDEK_KAYNAKLAR:
@@ -79,38 +74,31 @@ def main():
                         ext_satiri = satir_grubu[0]
                         link_satiri = satir_grubu[-1].strip()
                         
+                        # Yasaklı grup kontrolü
                         if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
                             continue
                             
+                        # KRİTİK KONTROL: Eğer URL zırhlı listede varsa es geç (Mükerrer önleme)
                         if link_satiri not in eklenen_urller:
                             temiz_ext = yedek_kanali_temizle(ext_satiri)
                             if 'group-title="' not in temiz_ext:
                                 temiz_ext = temiz_ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
                             
-                            # Listeye ekle (Sıralama için kanal ismini de saklıyoruz)
                             taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
+                            # Bu linki listeye ekledik, bir daha eklememek için hafızaya al
                             eklenen_urller.add(link_satiri)
         except:
             continue
 
-    # --- 3. ADIM: PEŞ PEŞE DİZİLİM (SIRALAMA) ---
-    # Yeni gelen yedekleri isme göre alfabetik sıralarız (ATV'ler alt alta gelir)
-    taze_kanal_listesi.sort()
-
-    # 4. ADIM: KAYDETME (3950'DEN SONRASINA)
+    # 3. ADIM: KAYDETME (Mevcut zırh + yeni benzersiz yedekler)
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce dokunulmaz zırhlı listeyi yaz
         f.writelines(ana_liste_zirh)
-        
-        # Zırhın hemen sonuna (3951. satır civarı) açıklamayı ve sıralı yedekleri yaz
-        f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK ZIRH SONRASI SIRALI YEDEKLER ---\n")
+        f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---\n")
         for k in taze_kanal_listesi:
             f.write(k + "\n")
             
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
-    
-    print(f"Usta işlem tamam! {len(taze_kanal_listesi)} yeni yedek kanal bloklar halinde eklendi.")
 
 if __name__ == "__main__":
     main()
