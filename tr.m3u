@@ -194,6 +194,8 @@ http://116.202.238.88/ATV_TR/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ATVYEDEK
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ATVYEDEK
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_480p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",ATVYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/45
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/atvf.png" group-title="YEDEK LİSTE",ATVYEDEK
 http://89.187.191.41/ATV-HD-TR/video.m3u8
@@ -2710,6 +2712,8 @@ https://purple-fog-7608.han686314.workers.dev/androstreamlivess1.m3u8
 https://purple-fog-7608.han686314.workers.dev/androstreamlivess2.m3u8
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="YEDEK LİSTE",SSPORTYEDEK
 https://atom.han686314.workers.dev/s-sport.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304551.png",STARTVYEDEK
+https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304551.png",STARTVYEDEK
 http://tv.smartglwiz.workers.dev/?ID=StarTV_HD
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_304551.png",STARTVYEDEK
