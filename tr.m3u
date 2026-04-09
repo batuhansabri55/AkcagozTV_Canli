@@ -447,6 +447,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/256065
 https://edge1.socialsmart.tv/belemturktv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-name="Bİ KANAL" group-title="ULUSAL",Bİ KANAL
 https://bikanal-live.ercdn.net/bikanal/bikanal.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/bi_vizi.png" group-title="VIZITV",Bİ KANAL
+http://live.cdn-vizi.workers.dev/?ID=103
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/jfCxJgFAmDkiJsuc.png" group-title="YEDEK LİSTE",BELGESELTVYEDEK
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/belgesel-tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/d2b898dd-94f6-4693-8817-355e87d26d5b.png" group-title="YEDEK LİSTE",BELGESELTVYEDEK
@@ -1867,6 +1869,8 @@ https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/63250
 #EXTINF:-1 group-title="YEDEK LİSTE",MELTEMTVYEDEK
 https://vhxyrsly.rocketcdn.com/meltemtv/chunklist.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/meltem_tv_J7w.png" group-title="VIZITV",MELTEMTVYEDEK
+http://live.cdn-vizi.workers.dev/?ID=98
 #EXTINF:-1,MELTEMTVYEDEK
 https://streams.uzunmuhalefet.com/stream/f49b3cb6-cd33-4064-97a1-8b0c79d3681a.m3u8
 #EXTINF:-1,MERCANTVADIYAMANYEDEK
@@ -3224,6 +3228,8 @@ https://goldvod.site/live/hpgdiscoo/123456/42.m3u8
 https://ibneliksizdemoda.testworker0y.workers.dev/channel/VFJUIEF2YXo=
 #EXTINF:-1 group-title="YEDEK LİSTE",TRTBELGESELYEDEK
 http://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TRTBELGESELYEDEK
+https://tv-trtbelgesel-dai.medya.trt.com.tr/master_3.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/trtbel.png" group-title="YEDEK LİSTE",TRTBELGESELYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50847
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/trtbel.png" group-title="YEDEK LİSTE",TRTBELGESELYEDEK
@@ -3518,6 +3524,8 @@ https://streams.uzunmuhalefet.com/stream/23a0e9de-9696-47a8-97ec-3d65abd058be.m3
 https://b01c02nl.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8?md5=qb_9l3erQIDqZMjbKfALzA&expires=1651666386
 #EXTINF:-1 group-title="YEDEK LİSTE",TV2YEDEK
 http://live.cdn-vizi.workers.dev/?ID=27
+#EXTINF:-1 tvg-logo="https://i.ibb.co/JRpJc2P/teve2.png" group-title="ULUSAL",TV2YEDEK
+https://live.duhnet.tv/S2/HLS_LIVE/teve2np/track_4_1000/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/teve2_cNO.png" group-title="YEDEK LİSTE",TV2YEDEK
 http://104.238.23.221/dsgo.php?id=245991
 #EXTINF:-1 group-title="YEDEK LİSTE" tvg-logo="https://yt3.ggpht.com/u-WSal09LZRqKxq2NsdhepDoQN97nHePc8QIWhvjwz_rw70hrJZyL8JDZF6YVF6jCtLOlBrXqaQ",TV2YEDEK
