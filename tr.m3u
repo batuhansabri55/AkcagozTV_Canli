@@ -864,6 +864,8 @@ https://dogus.daioncdn.net/dmax/dmax_360p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0Unl
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/274
 #EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
 http://live.cdn-vizi.workers.dev/?ID=33
+#EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
+http://dygvideo.dygdigital.com/live/hls/dmaxdai?m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/UNblrWdzdjCFleJK.png" group-title="YEDEK LİSTE",DMAXYEDEK
 https://dogus-blackout.daioncdn.net/tlctv_geoblock.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/8dbef7ca-af5a-446c-83dc-cf7b32bbe5a8.png" group-title="YEDEK LİSTE",DMAXYEDEK
@@ -1606,6 +1608,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/40
 https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",KANALDYEDEK
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
+#EXTINF:-1 group-title="YEDEK LİSTE",KANALDYEDEK
+https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=7txx2mymx1nq&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
 #EXTINF:-1 group-title="YEDEK LİSTE",KANALDYEDEK
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 #EXTINF:-1 group-title="YEDEK LİSTE",KANALDYEDEK
@@ -3200,6 +3204,8 @@ https://dogus.daioncdn.net/tlc/tlc_360p.m3u8?token=SHFJQzQrRkJQSjMySjNOWlBHSnlJO
 http://live.cdn-vizi.workers.dev/?ID=32
 #EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_300948.png",TLCYEDEK
 http://tv.smartglwiz.workers.dev/?ID=TLC_HD
+#EXTINF:-1 group-title="YEDEK LİSTE", tvg-logo="http://hd200.gliptv.com/menu/epg/imagesNew/cim_300948.png",TLCYEDEK
+http://dygvideo.dygdigital.com/live/hls/tlctvdai?m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TLCYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/14
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/xoQvKwHmpVazrssM.png" group-title="YEDEK LİSTE",TLCYEDEK
