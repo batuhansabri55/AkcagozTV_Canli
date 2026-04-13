@@ -4141,11 +4141,11 @@ https://ensonhaber-live.ercdn.net/tv24/tv24.m3u8
 https://goldvod.site/live/hpgdiscoo/123456/480.m3u8
 #EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/24tv.png" group-title="YEDEK LİSTE",TV24YEDEK1
 http://plan9.store:80/play/live.php?mac=10%3A27%3ABE%3A0D%3A9D%3AB9&stream=10760&extension=ts
-#EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/24tv.png" group-title="YEDEK LİSTE",TV 24 YEDEK
+#EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/24tv.png" group-title="YEDEK LİSTE",TV24YEDEK1
 http://plan9.store:80/play/live.php?mac=10%3A27%3ABE%3A0D%3A9D%3AB9&stream=196804&extension=ts
-#EXTINF:-1 tvg-logo="https://www.yirmidort.tv/assets/header/logoWhite.png" group-title="YEDEK LİSTE",TV 24 YEDEK
+#EXTINF:-1 tvg-logo="https://www.yirmidort.tv/assets/header/logoWhite.png" group-title="YEDEK LİSTE",TV24YEDEK1
 https://goldvod.site/live/hpgdiscoo/123456/481.m3u8
-#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="YEDEK LİSTE",TV 24 YEDEK
+#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/kanal24.png" group-title="YEDEK LİSTE",TV24YEDEK1
 https://atv-switch.huseyinakcagoz.workers.dev/24TV.tr
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tv264.png" group-title="YEDEK LİSTE",TV264YEDEK
 http://mc1.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8
@@ -4355,8 +4355,6 @@ http://87.121.104.29:1798/tvnetyt/stream.m3u8
 https://atv-switch.huseyinakcagoz.workers.dev/Tvnet.tr
 #EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/360tv.png" group-title="YEDEK LİSTE",360TVYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10761&extension=ts
-#EXTINF:-1 group-title="YEDEK LİSTE",1TVYEDEK
-https://streams.uzunmuhalefet.com/stream/8067831b-abf7-4cf9-adcb-abea2d1409a1.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",360TVYEDEK
 https://turkmedya-live.ercdn.net/tv360/tv360_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/9c668bd2-85f6-464d-b366-611e84c6f372.png" group-title="YEDEK LİSTE",360TVYEDEK
