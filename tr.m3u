@@ -345,6 +345,8 @@ https://ip44.radyotelekomtv.com:3958/hybrid/play.m3u8
 https://mss.ayakkabiparti.lol/box1/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/bein-box-office-1-tr.png" group-title="YEDEK LİSTE",BEINBOXOFFICE1YEDEK
 https://goldvod.site/live/hpgdiscoo/123456/161.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/bein-box-office-1-tr.png" group-title="YEDEK LİSTE",BEINBOXOFFICE1YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/161.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Gitfice-2-tr.png" group-title="YEDEK LİSTE",BEINBOXOFFICE2YEDEK
 https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/box2/index.m3u8
 #EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinboxoffice3.png" group-title="YEDEK LİSTE",BEINBOXOFFICE3YEDEK
@@ -2917,8 +2919,32 @@ https://adanakebap.denek1544.workers.dev/channel/U2luZW1hIFRWIDEwMDE=.m3u8
 https://mss.ayakkabiparti.lol/sinema1001/index.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/g/6y/22901/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATV1001YEDEK
 https://hebeledeehubele.denek1544.workers.dev/izle/sinematv1001.m3u8
-#EXTINF:-1 tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/8/0952164683935eb9542c_op_0_XL.webp" group-title="YEDEK LİSTE",SINEMATV1001YEDEK
+#EXTINF:-1 tvg-id="sinematv.tr" tvg-name="SINEMA TV" tvg-logo="https://www.sinematv.com.tr/content/logo/SINEMATV.png" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATV2YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/313.m3u8
+#EXTINF:-1 tvg-id="sinematv1001.tr" tvg-name="SINEMA TV 1001 FHD" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/8/0952164683935eb9542c_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATV1001YEDEK
 https://goldvod.site/live/hpgdiscoo/123456/310.m3u8
+#EXTINF:-1 tvg-id="sinematv1002.tr" tvg-name="SINEMA TV 1002" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/76/0952594953945eb9542c_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATV1001YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/175.m3u8
+#EXTINF:-1 tvg-id="sinematv1002.tr" tvg-name="SİNEMA TV 1002 FHD" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/76/0952594953945eb9542c_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATV1002YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/306.m3u8
+#EXTINF:-1 tvg-id="SINEMAAILE.tr" tvg-name="SİNEMA TV AİLE 1 FHD" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/84/0954337290115eb8f42a_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVAILE1YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/308.m3u8
+#EXTINF:-1 tvg-id="SINEMAAILE.tr" tvg-name="SINEMA TV AILE 1" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/84/0954337290115eb8f42a_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVAILE2YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/176.m3u8
+#EXTINF:-1 tvg-id="sinematvaile2.tr" tvg-name="SİNEMA TV AİLE 2 FHD" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/11/0955122162395eb7f426_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVAILEYEDEK
+https://goldvod.site/live/hpgdiscoo/123456/307.m3u8
+#EXTINF:-1 tvg-id="SINEMAAILE2.tr" tvg-name="SİNEMA TV AİLE 2" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/11/0955122162395eb7f426_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVAILE2YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/177.m3u8
+#EXTINF:-1 tvg-id="sinematvaksiyon2.tr" tvg-name="SİNEMA TV AKSİYON 2" tvg-logo="https://aksiyon2.sinematv.com.tr/content/logo/SINEMATV-AKSIYON-2-GRI.png" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVAKSIYON2YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/309.m3u8
+#EXTINF:-1 tvg-id="SINEMATV1001.tr" tvg-name="SINEMA TV 1001" tvg-logo="https://gbzottvsc25.tvplus.com.tr:33207/CPS/images/universal/film/logo/202506/20250623/8/0952164683935eb9542c_op_0_XL.webp" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATV1001YEDEK
+https://goldvod.site/live/hpgdiscoo/123456/174.m3u8
+#EXTINF:-1 tvg-id="sinemakomedi.tr" tvg-name="SINEMA TV KOMEDI" tvg-logo="https://komedi.sinematv.com.tr/content/logo/SINEMATV-KOMEDI.png" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVKOMEDIYEDEK
+https://goldvod.site/live/hpgdiscoo/123456/311.m3u8
+#EXTINF:-1 tvg-id="sinemayerli.tr" tvg-name="SINEMA TV YERLI 1" tvg-logo="https://yerli.sinematv.com.tr/content/logo/SINEMATV-YERLI.png" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVYERLIYEDEK
+https://goldvod.site/live/hpgdiscoo/123456/315.m3u8
+#EXTINF:-1 tvg-id="sinemayerli2.tr" tvg-name="SINEMA TV YERLI 2" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/sinema-yerli-2-300x27.png" group-title="|TR| SİNEMA &amp; DİZİ",SINEMATVYERLIYEDEK
+https://goldvod.site/live/hpgdiscoo/123456/314.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/g/6y/22901/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATV1001YEDEK
 https://mantivbir.denek1544.workers.dev/channel/U2luZW1hIFRWIDEwMDE=.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/g/6y/22901/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATV1001YEDEK
@@ -2929,8 +2955,6 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103140
 https://mss.ayakkabiparti.lol/sinema1002/index.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/C/XZ/22902/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATV1002YEDEK
 https://adanakebap.denek1544.workers.dev/channel/U2luZW1hIFRWIDEwMDI=.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",SINEMATV1002YEDEK
-https://goldvod.site/live/hpgdiscoo/123456/306.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/C/XZ/22902/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATV1002YEDEK
 https://hebeledeehubele.denek1544.workers.dev/izle/sinematv1002.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/C/XZ/22902/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATV1002YEDEK
@@ -2965,8 +2989,6 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/166
 https://adanakebap.denek1544.workers.dev/channel/U2luZW1hIFRWIEFpbGU=.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/-/EU/22897/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATVAILEYEDEK
 https://mss.ayakkabiparti.lol/sinemaaile/index.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",SINEMATVAILEYEDEK
-https://goldvod.site/live/hpgdiscoo/123456/308.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/-/EU/22897/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATVAILEYEDEK
 https://hebeledeehubele.denek1544.workers.dev/izle/sinematvaile.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/-/EU/22897/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATVAILEYEDEK
@@ -3019,10 +3041,6 @@ https://trn03.tulix.tv/gt-tivi6/tracks-v1a1/rewind-588800.m3u8
 https://mediaserver1.castpin.com/hls/filbox/1_2/index.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATVYEDEK
 https://hebeledeehubele.denek1544.workers.dev/izle/sinematv-61.m3u8
-#EXTINF:-1 tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/sinema-yerli-2-300x27.png" group-title="YEDEK LİSTE",SINEMATVYERLIYEDEK
-https://goldvod.site/live/hpgdiscoo/123456/314.m3u8
-#EXTINF:-1 tvg-logo="https://yerli.sinematv.com.tr/content/logo/SINEMATV-YERLI.png" group-title="YEDEK LİSTE",SINEMATVYERLIYEDEK
-https://goldvod.site/live/hpgdiscoo/123456/315.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATVYEDEK
 https://mantivbir.denek1544.workers.dev/channel/U2luZW1hIFRW.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="YEDEK LİSTE",SINEMATVYEDEK
@@ -3031,8 +3049,6 @@ https://hubeledehebele.denek1544.workers.dev/izle/sinematv-61.m3u8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232360
 #EXTINF:-1 group-title="YEDEK LİSTE",SINEMATVYERLIYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/165
-#EXTINF:-1 group-title="YEDEK LİSTE",SINEMAXTURKYEDEK
-https://goldvod.site/live/hpgdiscoo/123456/329.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",SITELERTVYEDEK
 https://streams.uzunmuhalefet.com/stream/e7acc97f-1616-4a16-94a9-6a3af440bc12.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/83825540-7881-4d5e-b5bb-de2634f4e385.png" group-title="YEDEK LİSTE",SIYAHBEYAZAŞKYEDEK
