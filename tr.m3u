@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/a2.png" group-title="YEDEK LİSTE",A2YEDEK
+#EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/a2.png" group-title="YEDEK LİSTE",A2HDYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10758&extension=ts
 #EXTINF:-1 tvg-logo="https://i.ibb.co/2qrg9QF/a2022.png" group-title="YEDEK LİSTE",A2YEDEK
 https://new.cache-stream.workers.dev/stream/UCHqu50_C2U2h_rpzhygs4aA/live.m3u8
@@ -4117,7 +4117,7 @@ https://streams.uzunmuhalefet.com/stream/b0f9e41b-ed43-4373-8844-566529163b01.m3
 https://edge.kuzeykibrissmart.tv/tv2020/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.yirmidort.tv/assets/header/logoWhite.png" group-title="YEDEK LİSTE",TV24YEDEK1
 https://goldvod.site/live/hpgdiscoo/123456/488.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304357.PNG",TV24YEDEK1
+#EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK1
 http://tv.smartglwiz.workers.dev/?ID=24_HD
 #EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK1
 http://129.151.204.207/Tivizon.php?ID=tv24
@@ -4355,6 +4355,8 @@ http://87.121.104.29:1798/tvnetyt/stream.m3u8
 https://atv-switch.huseyinakcagoz.workers.dev/Tvnet.tr
 #EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/360tv.png" group-title="YEDEK LİSTE",360TVYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10761&extension=ts
+#EXTINF:-1 group-title="YEDEK LİSTE",1TVYEDEK
+https://streams.uzunmuhalefet.com/stream/8067831b-abf7-4cf9-adcb-abea2d1409a1.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",360TVYEDEK
 https://turkmedya-live.ercdn.net/tv360/tv360_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/9c668bd2-85f6-464d-b366-611e84c6f372.png" group-title="YEDEK LİSTE",360TVYEDEK
