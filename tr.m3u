@@ -365,12 +365,18 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=31448
 https://mss.ayakkabiparti.lol/bsaction1/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.comrkiye/bein-movies-action-hd-tr.png" group-title="YEDEK LİSTE",BEINMOVIESACTIONYEDEK
 https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/bsaction1/index.m3u8
+#EXTINF:-1 tvg-ID="beinmoviesaction.tr" tvg-name="TR ▎BEIN MOVIES ACTION HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesactionhd.png" group-title="Türkiye",BEINMOVIESACTIONYEDEK
+http://65.108.239.207:80/bsaction1/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com-gorselleri/turkiye/bein-movies-family-hd-tr.png" group-title="YEDEK LİSTE",BEINMOVIESFAMILYYEDEK
 https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/bsfamily/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com-gorselleri/turkiye/bein-movies-family-hd-tr.png" group-title="YEDEK LİSTE",BEINMOVIESFAMILYYEDEK
 https://mss.ayakkabiparti.lol/bsfamily/index.m3u8
+#EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="TR ▎BEIN MOVIES FAMILY HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesfamilyhd.png" group-title="Türkiye",BEINMOVIESFAMILYYEDEK
+http://65.108.239.207:80/bsfamily/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BEINMOVIESPREMIEREYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/225
+#EXTINF:-1 tvg-ID="beinmoviespremier.tr" tvg-name="TR ▎BEIN MOVIES PREMIER HD" tvg-logo="https://img.logo-cdn.cc//beinmoviespremierehd.png" group-title="Türkiye",BEINMOVIESPREMIEREYEDEK
+http://65.108.239.207:80/bspremier1/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditores-premiere-hd-tr.png" group-title="YEDEK LİSTE",BEINMOVIESPREMIEREYEDEK
 https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/bspremier1/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BEINMOVIESPREMIEREYEDEK
@@ -381,8 +387,12 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/224
 https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/bsstars/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/bein-movies-stars-logo.png" group-title="YEDEK LİSTE",BEINMOVIESSTARSYEDEK
 https://goldvod.site/live/hpgdiscoo/123456/346.m3u8
+#EXTINF:-1 tvg-ID="beinmoviesstars.tr" tvg-name="TR ▎BEIN MOVIES STARS HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesstarshd.png" group-title="Türkiye",BEINMOVIESSTARSYEDEK
+http://65.108.239.207:80/bsstars/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BEINMOVIESTURKYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/223
+#EXTINF:-1 tvg-ID="beinmoviesturk.tr" tvg-name="TR ▎BEIN MOVIES TURK HD" tvg-logo="https://img.logo-cdn.cc//beinmoviesturkhd.png" group-title="Türkiye",BEINMOVIESTURKYEDEK
+http://65.108.239.207:80/bsturk/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BEINSERIES1YEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/222
 #EXTINF:-1 group-title="YEDEK LİSTE",BEINSERIES2YEDEK
@@ -923,6 +933,8 @@ https://live.artidijitalmedya.com/artidijital_dimtv/dimtv/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_dimtv/dimtv/chunks.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",DISCOVERYCHANNELYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/264
+#EXTINF:-1 tvg-ID="discoverychannel.tr" tvg-name="TR ▎DISCOVERY CHANNEL HD" tvg-logo="https://img.logo-cdn.cc/discoverychannel.png" group-title="Türkiye",DISCOVERYCHANNELYEDEK
+http://65.108.239.207:80/discovery/index.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/r/9C/11894/Thumbnail.png" group-title="YEDEK LİSTE",DISCOVERYCHANNELYEDEK
 https://buyombiron.testworker0y.workers.dev/channel/RGlzY292ZXJ5IENoYW5uZWw=
 #EXTINF:-1 group-title="YEDEK LİSTE",DISCOVERYCHANNELYEDEK
@@ -935,6 +947,8 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=18578
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10738&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",DISCOVERYIDYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/261
+#EXTINF:-1 tvg-ID="discoveryscience.tr" tvg-name="TR ▎DISCOVERY SCIENCE HD" tvg-logo="https://img.logo-cdn.cc//discoverysciencehd-clivebesle.png" group-title="Türkiye",DISCOVERYIDYEDEK
+http://65.108.239.207:80/discs/index.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/b/vE/11891/Thumbnail.png" group-title="YEDEK LİSTE",DISCOVERYIDYEDEK
 https://buyombiron.testworker0y.workers.dev/channel/RGlzY292ZXJ5IFNjaWVuY2U=
 #EXTINF:-1 group-title="YEDEK LİSTE",DISNEYJRYEDEK
@@ -2067,6 +2081,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/115707
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=196848&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",LOVENATUREYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/50428
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎LOVE NATURE HD" tvg-logo="https://img.logo-cdn.cc//lovenature.png" group-title="Türkiye",LOVENATUREYEDEK 
+http://65.108.239.207:80/lovenature/index.m3u8
 #EXTINF:-1 tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/c34095b97dc3f94306666eec346defb8.png" group-title="YEDEK LİSTE",LOVENATUREYEDEK
 https://mss.ayakkabiparti.lol/lovenature/index.m3u8
 #EXTINF:-1 tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/c34095b97dc3f94306666eec346defb8.png" group-title="YEDEK LİSTE",LOVENATUREYEDEK
@@ -3051,6 +3067,26 @@ https://hubeledehebele.denek1544.workers.dev/izle/sinematv-61.m3u8
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232360
 #EXTINF:-1 group-title="YEDEK LİSTE",SINEMATVYERLIYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/165
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV HD" tvg-logo="https://img.logo-cdn.cc/sinematv.png" group-title="Türkiye",SINEMATVYEDEK
+http://65.108.239.207:80/sinema/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV 2 HD" tvg-logo="https://img.logo-cdn.cc/sinematv.png" group-title="Türkiye",SINEMATV2YEDEK
+http://65.108.239.207:80/sinema2/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV 1001 HD" tvg-logo="https://img.logo-cdn.cc/sinematv1001hd.png" group-title="Türkiye",SINEMATV1001YEDEK
+http://65.108.239.207:80/sinema1001/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV 1002 HD" tvg-logo="https://img.logo-cdn.cc/sinematv1002hd.png" group-title="Türkiye",SINEMATV1002YEDEK
+http://65.108.239.207:80/sinema1002/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV AKSIYON HD" tvg-logo="https://img.logo-cdn.cc/sinematvaksiyonhd.png" group-title="Türkiye",SINEMATVAKSIYONYEDEK
+http://65.108.239.207:80/sinemaaksiyon/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV AKSIYON 2 HD" tvg-logo="https://img.logo-cdn.cc/sinematvaksiyon2hd.png" group-title="Türkiye",SINEMATVAKSIYON2YEDEK
+http://65.108.239.207:80/sinemaaksiyon2/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV AILE HD" tvg-logo="https://img.logo-cdn.cc/sinematvailehd.png" group-title="Türkiye",SINEMATVAILEYEDEK
+http://65.108.239.207:80/sinemaaile/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV KOMEDI HD" tvg-logo="https://img.logo-cdn.cc/sinematvkomedi.png" group-title="Türkiye",SINEMATVKOMEDIYEDEKE
+http://65.108.239.207:80/sinemakomedi/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV YERLI HD" tvg-logo="https://img.logo-cdn.cc/sinematvyerlihd.png" group-title="Türkiye",SINEMATVYERLIYEDEK
+http://65.108.239.207:80/sinemayerli/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎SINEMA TV YERLI 2 HD" tvg-logo="https://img.logo-cdn.cc/sinematvyerlihd.png" group-title="Türkiye",SINEMATVYERLI2YEDEK
+http://65.108.239.207:80/sinemayerli2/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",SITELERTVYEDEK
 https://streams.uzunmuhalefet.com/stream/e7acc97f-1616-4a16-94a9-6a3af440bc12.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/83825540-7881-4d5e-b5bb-de2634f4e385.png" group-title="YEDEK LİSTE",SIYAHBEYAZAŞKYEDEK
@@ -4043,7 +4079,6 @@ http://tv.smartglwiz.workers.dev/?ID=TV1_HD
 https://streams.uzunmuhalefet.com/stream/b0f9e41b-ed43-4373-8844-566529163b01.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/CFVLRrXfgTexQQOz.png" group-title="YEDEK LİSTE",TV2020YEDEK
 https://edge.kuzeykibrissmart.tv/tv2020/bant1/playlist.m3u8
-
 #EXTINF:-1 group-title="YEDEK LİSTE",TV35YEDEK
 https://streams.uzunmuhalefet.com/stream/76b4334a-6b96-4e25-a555-27039429ac76.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="YEDEK LİSTE",TV3AFYONKARAHİSARYEDEK
@@ -4450,6 +4485,8 @@ https://vidrame.pro/vr/get/2e79093d/1080.txt
 https://buyombiron.testworker0y.workers.dev/channel/Vmlhc2F0IEV4cGxvcmU=
 #EXTINF:-1 group-title="YEDEK LİSTE",VIASATHISTORYYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/47970
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎VIASAT HISTORY HD" tvg-logo="https://img.logo-cdn.cc/viasathistory.png" group-title="Türkiye",VIASATHISTORYYEDEK
+http://65.108.239.207:80/viasathistory/index.m3u8
 #EXTINF:-1 tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/8ea2619561935fed906ee2278d5fa961.png" group-title="YEDEK LİSTE",VIASATHISTORYYEDEK
 https://hebeledeehubele.denek1544.workers.dev/izle/viasathistory.m3u8
 #EXTINF:-1 tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/8ea2619561935fed906ee2278d5fa961.png" group-title="YEDEK LİSTE",VIASATHISTORYYEDEK
@@ -4562,5 +4599,4 @@ https://goldvod.site/live/hpgdiscoo/123456/471.m3u8
 http://87.121.104.29:1798/somine/stream.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ŞÖMİNEYEDEK
 http://iptv.prosto.tv:7000/ch331/tracks-v1a1/mono.m3u8
-
 # SON GUNCELLEME: 2026-04-13 13:50:42
