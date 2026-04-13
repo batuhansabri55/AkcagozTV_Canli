@@ -3998,6 +3998,11 @@ https://streams.uzunmuhalefet.com/stream/610b517c-1882-4c9e-a1e5-4272601eefd2.m3
 #EXTINF:-1 group-title="Belgesel" tvg-logo="https://assets.uzunmuhalefet.com/logos/592f509e-2e57-445f-833c-e3388ae88120.png" tvg-url="https://koytv.tv/" tvg-id="",Köy TV
 https://streams.uzunmuhalefet.com/stream/7a1294e7-9fa8-4c3d-89b8-eb67e33bc2e6.m3u8
 #EXTINF:-1 group-title="Belgesel" tvg-logo="https://assets.uzunmuhalefet.com/logos/dd4da8fc-609f-4d05-8adb-9bba0f584738.png" tvg-url="https://topraktv.com.tr/" tvg-id="",Toprak TV
+
+# --- 4000 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/058318fb-65bc-4ebd-8d52-add836f53ba9.png" tvg-url="https://www.tv5.com.tr/" tvg-id="TV5.tr",TV 5
+https://streams.uzunmuhalefet.com/stream/e12ae805-19c9-4c7f-ac92-cdd89d953d10.m3u8
+#EXTINF:-1 group-title="Belgesel" tvg-logo="https://assets.uzunmuhalefet.com/logos/dd4da8fc-609f-4d05-8adb-9bba0f584738.png" tvg-url="https://topraktv.com.tr/" tvg-id="",Toprak TV
 https://streams.uzunmuhalefet.com/stream/54fd8806-0142-4839-930e-aa1d662ad866.m3u8
 #EXTINF:-1 group-title="Çocuk" tvg-logo="https://assets.uzunmuhalefet.com/logos/ec9eb56f-cabd-4dd5-b0cf-d743e92a288b.png" tvg-url="https://www.trtcocuk.net.tr/" tvg-id="TRTCocuk.tr",TRT Çocuk
 https://streams.uzunmuhalefet.com/stream/6ad16f63-33f5-45bd-9742-1b98a71ce6ed.m3u8
@@ -4081,6 +4086,8 @@ https://streams.uzunmuhalefet.com/stream/393fe7d6-59ee-4f78-8038-89b0445220b5.m3
 https://streams.uzunmuhalefet.com/stream/e68b0945-483e-4580-9fe8-4b52c2afd778.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/f70eb711-e5a1-4d20-b65c-ed75996975e0.png" tvg-url="https://yagmurlutv.com/" tvg-id="",Yağmurlu TV
 https://streams.uzunmuhalefet.com/stream/d2f4c30d-a004-4ddc-82e2-8113804ceb26.m3u8
+#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/bef49534-0add-4df1-b09c-a6f4ed5d497b.png" tvg-url="https://esenler.bel.tr/sehir-ekrani/" tvg-id="EsenlerSehirEkrani.tr",Esenler Şehir Ekranı
+https://streams.uzunmuhalefet.com/stream/ebe54358-b60f-4cc5-95f2-28afebea38a1.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://assets.uzunmuhalefet.com/logos/13a15812-c9fd-4092-858d-9b4c6ecd12e4.png" tvg-url="" tvg-id="",Torba TV
 https://streams.uzunmuhalefet.com/stream/5ff4a325-ab1b-4393-a802-b2b95e97812d.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://assets.uzunmuhalefet.com/logos/f217ac06-984f-416c-95a3-15991f1f0c3c.png" tvg-url="https://onbeskku.edu.tr/" tvg-id="",Okku TV
@@ -8117,53 +8124,19 @@ http://104.238.23.221/dsgo.php?id=246030
 # Spor Kanalları
 #EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;TRTWorld.tr&quot; tvg-name=&quot;TRT World&quot; tvg-logo=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/960px-TRT_World.svg.png&quot; group-title=&quot;news&quot;,TRT World
 https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMDrama.tr&quot; tvg-name=&quot;GEM Drama&quot; tvg-logo=&quot;https://i.imgur.com/k2pGyRH.png&quot; group-title=&quot;movies&quot;,GEM Drama
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemdrama/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMDramaPlus.tr&quot; tvg-name=&quot;GEM Drama +&quot; tvg-logo=&quot;https://gemgroup.tv/assets/images/channels/icon_7.png&quot; group-title=&quot;movies&quot;,GEM Drama +
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemdramaplus/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMFilm.tr&quot; tvg-name=&quot;GEM Film&quot; tvg-logo=&quot;https://i.imgur.com/nrFz3LU.png&quot; group-title=&quot;movies&quot;,GEM Film
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemfilm/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMFit.tr&quot; tvg-name=&quot;GEM Fit&quot; tvg-logo=&quot;https://i.imgur.com/7FQxaII.png&quot; group-title=&quot;sports&quot;,GEM Fit
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemfit/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMFood.tr&quot; tvg-name=&quot;GEM Food&quot; tvg-logo=&quot;https://i.imgur.com/SMtSinK.png&quot; group-title=&quot;cooking&quot;,GEM Food
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemfood/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMLife.tr&quot; tvg-name=&quot;GEM Life&quot; tvg-logo=&quot;https://i.imgur.com/gI8qePa.png&quot; group-title=&quot;lifestyle&quot;,GEM Life
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemlife/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMMifa.tr&quot; tvg-name=&quot;GEM Mifa&quot; tvg-logo=&quot;https://i.imgur.com/qlI7o7V.png&quot; group-title=&quot;music&quot;,GEM Mifa
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemmifa/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMMifaPlus.tr&quot; tvg-name=&quot;GEM Mifa +&quot; tvg-logo=&quot;https://i.imgur.com/8FIAqR5.png&quot; group-title=&quot;music&quot;,GEM Mifa +
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemmifaplus/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMNature.tr&quot; tvg-name=&quot;GEM Nature&quot; tvg-logo=&quot;https://i.imgur.com/ENvOMDQ.png&quot; group-title=&quot;documentary&quot;,GEM Nature
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemnature/index-0.m3u8
 #EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;ElsharqTV.tr&quot; tvg-name=&quot;Elsharq TV&quot; tvg-logo=&quot;https://i.imgur.com/8vmfZb5.png&quot; group-title=&quot;general&quot;,Elsharq TV
 https://mn-nl.mncdn.com/elsharq_live/live/playlist.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMRubix.tr&quot; tvg-name=&quot;GEM Rubix&quot; tvg-logo=&quot;https://i.imgur.com/cDjOj58.png&quot; group-title=&quot;movies&quot;,GEM Rubix
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemrubix/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMRubixPlus.tr&quot; tvg-name=&quot;GEM Rubix +&quot; tvg-logo=&quot;https://gemgroup.tv/assets/images/channels/icon_31.png&quot; group-title=&quot;movies&quot;,GEM Rubix +
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemrubixplus/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMSeries.tr&quot; tvg-name=&quot;GEM Series&quot; tvg-logo=&quot;https://i.imgur.com/M0WMDXm.png&quot; group-title=&quot;series&quot;,GEM Series
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemseries/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMSeriesPlus.tr&quot; tvg-name=&quot;GEM Series +&quot; tvg-logo=&quot;https://gemgroup.tv/assets/images/channels/icon_33.png&quot; group-title=&quot;series&quot;,GEM Series +
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemseriesplus/index-0.m3u8
 #EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;AlQanat9.tr&quot; tvg-name=&quot;Al Qanat 9&quot; tvg-logo=&quot;https://i.imgur.com/HC91Mho.png&quot; group-title=&quot;news&quot;,Al Qanat 9
 https://cdn.bestream.io:19360/alqanat9/alqanat9.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMClassic.tr&quot; tvg-name=&quot;GEM Classic&quot; tvg-logo=&quot;https://i.imgur.com/25BhuOf.png&quot; group-title=&quot;classic&quot;,GEM Classic
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemclassic/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMComedy.tr&quot; tvg-name=&quot;GEM Comedy&quot; tvg-logo=&quot;https://i.imgur.com/FuscfJW.png&quot; group-title=&quot;comedy&quot;,GEM Comedy
-https://still-mud-3642.nqanzvyuupxwcahtfq.workers.dev/?url=https://ca-rt.onetv.app/gemcomedy/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMJunior.tr&quot; tvg-name=&quot;GEM Junior&quot; tvg-logo=&quot;https://i.imgur.com/jK8yzj2.png&quot; group-title=&quot;kids&quot;,GEM Junior
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemjunior/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMKids.tr&quot; tvg-name=&quot;GEM Kids&quot; tvg-logo=&quot;https://i.imgur.com/ArkjaFk.png&quot; group-title=&quot;kids&quot;,GEM Kids
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemkids/index-0.m3u8
 #EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMPixel.tr&quot; tvg-name=&quot;GEM Pixel&quot; tvg-logo=&quot;https://i.ibb.co/Q3tkbPrn/icon-27.png&quot; group-title=&quot;movies&quot;,GEM Pixel
-https://glserver1.tamashaland.com/live/aBCH96886YznRbGOiqTnnQ__/stream_0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMRiver.tr&quot; tvg-name=&quot;GEM River&quot; tvg-logo=&quot;https://i.imgur.com/yJ6f1B6.png&quot; group-title=&quot;entertainment&quot;,GEM River
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gemriver/index-0.m3u8
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMBollywood.tr&quot; tvg-name=&quot;GEM Bollywood&quot; tvg-logo=&quot;https://i.imgur.com/2XASeBk.png&quot; group-title=&quot;movies&quot;,GEM Bollywood
-https://wild-dawn-81ef.srmhoburfqyupzwxbu.workers.dev/?url=https://ca-rt.onetv.app/gembollywood/index-0.m3u8
+https://ca-rt.onetv.app/gempixel/index-0.m3u8?token=onetv202
+#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMSeries.tr&quot; tvg-name=&quot;GEM Series&quot; tvg-logo=&quot;https://i.imgur.com/M0WMDXm.png&quot; group-title=&quot;series&quot;,GEM Series
+https://ca-rt.onetv.app/gemseries/index-0.m3u8?token=onetv202
+#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id=&quot;GEMSeriesPlus.tr&quot; tvg-name=&quot;GEM Series +&quot; tvg-logo=&quot;https://gemgroup.tv/assets/images/channels/icon_33.png&quot; group-title=&quot;series&quot;,GEM Series +
+https://ca-rt.onetv.app/gemseriesplus/index-0.m3u8?token=onetv202
 #EXTINF:-1 tvg-id="AlRafidainTV.tr@SD" tvg-logo="https://i.imgur.com/rjXDCN5.png" group-title="Religious",Al Rafidain [Not 24/7]
 https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-13 03:25:47
+# SON GUNCELLEME: 2026-04-13 08:11:46
