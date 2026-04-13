@@ -9,6 +9,8 @@ http://129.151.204.207/Tivizon.php?ID=tv24
 https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ldEwCKkHHsLBuoWx.png" group-title="YEDEK LİSTE",TV24YEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/142
 #EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK
@@ -559,6 +561,8 @@ https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/belgesel-tv/playlist/0.
 https://streams.uzunmuhalefet.com/stream/c452f35c-c2c5-497f-af4d-df2276bb182a.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BENGUTURKYEDEK
 http://live.cdn-vizi.workers.dev/?ID=60
+#EXTINF:-1 tvg-ID="" tvg-name="TR ▎BENGU TURK HD" tvg-logo="https://img.logo-cdn.cc/benguturk.png" group-title="Türkiye",BENGUTURKYEDEK
+https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BENGUTURKYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/61595
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/bengu_turk_zYp.png" group-title="YEDEK LİSTE",BENGUTURKYEDEK
@@ -1005,6 +1009,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/218
 https://yakala.atakann.workers.dev/?url=https://www.dmax.com.tr/canli-izle&ext=m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/274
+#EXTINF:-1 tvg-ID="dmax.tr" tvg-name="TR ▎DMAX HD" tvg-logo="https://img.logo-cdn.cc/dmax.png" group-title="Türkiye",DMAXYEDEK
+https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
 #EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
 http://live.cdn-vizi.workers.dev/?ID=33
 #EXTINF:-1 group-title="YEDEK LİSTE",DMAXYEDEK
@@ -3617,6 +3623,8 @@ https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df4
 https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
 #EXTINF:-1 group-title="YEDEK LİSTE",TLCYEDEK
 https://dygvideo.dygdigital.com/live/hls/tlctvdai?m3u8
+#EXTINF:-1 tvg-ID="tlc.tr" tvg-name="TR ▎TLC HD" tvg-logo="https://img.logo-cdn.cc/tlc.png" group-title="Türkiye",TLCYEDEK
+https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
 #EXTINF:-1 group-title="YEDEK LİSTE",TLCYEDEK
 https://streams.uzunmuhalefet.com/stream/7c98bf26-69a3-4f45-a330-d7c27459b375.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TLCYEDEK
