@@ -4748,6 +4748,10 @@ http://87.121.104.29:1798/askimemnu/stream.m3u8
 http://87.121.104.29:1798/gullergunahlar/stream.m3u8
 #EXTINF:-1 tvg-id="avrupayakasi" tvg-name="Avrupa Yakası 7/24" tvg-logo="https://yt3.googleusercontent.com/5bkS9MmbYWqBp6L5YLW2GKbUHg3ccliSqtZPTEDIKyATdaixag3ZWtvzloxX3elaJ1fmta-Gsg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Avrupa Yakası 7/24
 http://87.121.104.29:1798/avrupayakasi/stream.m3u8
+
+# --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 tvg-id="tv8c" tvg-name="Tv 8 -C-" tvg-logo="https://img.dsmartgo.com.tr/content/a/WI/13727/Thumbnail.png" group-title="Ulusal",Tv 8 -C-
+https://ravantajdoner.testworker0y.workers.dev/channel/VHY4IHwgQw==
 #EXTINF:-1 tvg-id="zenginkfakiro" tvg-name="Zengin Kız Fakir Oğlan 7/24" tvg-logo="https://yt3.ggpht.com/1YUINSwuuns9oNLOmYEQLkS9aNI_bE-hdOFTDF3S56Oq6rRBUWO_kd1ew2NkWmbj_4LznHe3V5M=s176-c-k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Zengin Kız Fakir Oğlan 7/24
 http://87.121.104.29:1798/zenginkfakiro/stream.m3u8
 #EXTINF:-1 tvg-id="sihirliannem" tvg-name="Sihirli Annem 7/24" tvg-logo="https://yt3.googleusercontent.com/P54859eAfyuolskOUg4icbpgTTJV3meue0MwVlMSiPOUpUAzF_Hff3G-7O0bFoAfF1N2e1Pb=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Sihirli Annem 7/24
@@ -4812,12 +4816,18 @@ http://87.121.104.29:1798/cartoonnetworkyt/stream3.m3u8
 https://andro.okan9gote10sokan.cfd/checklist/androstreamlivetrt1.m3u8
 #EXTINF:-1 tvg-name="6. ATV" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/atv-tr.png" group-title="Ulusal",6. ATV
 https://andro.okan9gote10sokan.cfd/checklist/androstreamliveatv.m3u8
+#EXTINF:-1 tvg-name="Star" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/star-tv-tr.png" group-title="Ulusal",Star
+https://tatatam.trt1sultanfatihss.workers.dev/https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=startv_web&ce=3
 #EXTINF:-1 tvg-name="16. 360 TV" tvg-id="" tvg-logo="https://gitlatte.github.io/m3ueditor/images/kanal-gorselleri/turkiye/360-tr.png" group-title="Ulusal",16. 360 TV
 https://tv.ensonhaber.com/tv360/tv360.m3u8
 #EXTINF:-1 tvg-name="18. CNN Türk" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/cnn-turk-tr.png" group-title="Haber",18. CNN Türk
-https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/track_4_1000/playlist.m3u8?&live=true&app=com.cnnturk&st=-ahmDxa-PbJw9E5ofyu-tA&e=1775951721
+https://proxy.ultrasoner55.workers.dev/?url=http%3A%2F%2Flive.cdn-vizi.workers.dev%2F%3FID%3D12
+#EXTINF:-1 tvg-name="Flash Haber" tvg-id="Flash Haber.tr" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/flash-tv-tr.png" group-title="Haber",Flash Haber
+https://yayin2.canlitv.fun/live/flashtv.stream/chunklist_w2134562213.m3u8?hash=01cb014cfe369be19dff51f1c0e7ce34
 #EXTINF:-1 tvg-name="Spacetoon" tvg-id="" tvg-logo="https://imgs.search.brave.com/K0i-F_RY-uEHVjKEyOU9VITL0v9lXHYJl5o7G3Sq0do/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4zOTgw/MjU1NDY1LjEwNDQv/c3Qsc21hbGwsNTA3/eDUwNy1wYWQsNjAw/eDYwMCxmOGY4Zjgu/anBn" group-title="Çocuklara Özel",Spacetoon
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-spacetoon/d8382fb9ab4b2307058f12c7ea90db54/index.m3u8
+#EXTINF:-1 tvg-name="36. Cartoon Network" tvg-id="" tvg-logo="https://i.ibb.co/X5yPXkD/cartoon-network.png" group-title="Çocuklara Özel",36. Cartoon Network
+https://bstelevision.com/proxy_stream.php?u=https://trn03.tulix.tv/gt-cartoontr/tracks-v1a1/rewind-128880.m3u8
 #EXTINF:-1 tvg-name="Spiderman TV" tvg-id="" tvg-logo="https://imgs.search.brave.com/HLj0nnSgza-sM6kcgTa9W1HvJOs-Q5MrnzbftFiWoc8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/d2h5LWlzLXRoZS1t/YXJ2ZWxzLXNwaWRl/ci1tYW4tMjAxNy10/di1zaG93LXN0aWxs/LXRoZS1iYXNpcy12/MC0xMnhldHBuamVk/amYxLmpwZz93aWR0/aD02NDAmY3JvcD1z/bWFydCZhdXRvPXdl/YnAmcz01OTM4ZmJh/MmMwYmQ3ZjI1OTI5/YmZhMzkwN2ViMDc4/ZjY5NzlmMjEy" group-title="Çocuklara Özel",Spiderman TV
 http://fiko4k.xyz:8080/hasanessenessen1234cg/Hasangztt54t34cgt/260553
 #EXTINF:-1 tvg-name="36. A Spor" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/a-spor-tr.png" group-title="Spor",36. A Spor
@@ -4826,6 +4836,8 @@ https://andro.okan9gote10sokan.cfd/checklist/androstreamliveas.m3u8
 https://andro.okan9gote10sokan.cfd/checklist/androstreamlivetrts.m3u8
 #EXTINF:-1 tvg-name="41. HT Spor" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFubzZVJvdxE_-EsON2kuk43rrFhsksu2kakH0FGWdpWUAR8CWep_gmGHZ&s=10" group-title="Spor",41. HT Spor
 https://andro.okan9gote10sokan.cfd/checklist/androstreamliveht.m3u8
+#EXTINF:-1 tvg-name="44. Euro Sport" tvg-id="" tvg-logo="https://i.eurosport.com/2015/11/12/1731141-36621046-2560-1440.jpg" group-title="Spor",44. Euro Sport
+https://andro.okan9gote10sokan.cfd/checklist/androstreamlivees1.m3u8
 #EXTINF:-1 tvg-name="45. Euro Sport 2" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDiQVfLONMYUZidKLsNgDmHnLPSXWHV3iactdKIzUcb8ITqXUfjEAnhRCG&s=10" group-title="Spor",45. Euro Sport 2
 https://andro.okan9gote10sokan.cfd/checklist/androstreamlivees2.m3u8
 #EXTINF:-1 tvg-name="46. Tivibu Spor 1" tvg-id="" tvg-logo="https://i1.sndcdn.com/avatars-000335394613-kvru7x-t1080x1080.jpg" group-title="Spor",46. Tivibu Spor 1
@@ -4838,24 +4850,36 @@ https://andro.okan9gote10sokan.cfd/checklist/androstreamlivets3.m3u8
 https://andro.okan9gote10sokan.cfd/checklist/androstreamlivets4.m3u8
 #EXTINF:-1 tvg-name="58. beIN SPORTS" tvg-id="" tvg-logo="https://gitlatte.github.io/m3ueditor/images/kanal-gorselleri/turkiye/bein-sport-1-hd.png" group-title="Spor",58. beIN SPORTS
 https://corestream.ronaldovurdu.help//hls/bein-sports-1.m3u8
+#EXTINF:-1 tvg-name="59. beIN SPORTS" tvg-id="beIN SPORTS.tr" tvg-logo="https://gitlatte.github.io/m3ueditor/images/kanal-gorselleri/turkiye/bein-sport-1-hd.png" group-title="Spor",59. beIN SPORTS
+https://andro.226503.xyz/checklist/receptestt.m3u8
 #EXTINF:-1 tvg-name="60. beIN SPORTS" tvg-id="beIN SPORTS.tr" tvg-logo="https://gitlatte.github.io/m3ueditor/images/kanal-gorselleri/turkiye/bein-sport-1-hd.png" group-title="Spor",60. beIN SPORTS
 https://corestream.ronaldovurdu.help//hls/bein-sports-11.m3u8
+#EXTINF:-1 tvg-name="61. beIN SPORTS" tvg-id="" tvg-logo="https://gitlatte.github.io/m3ueditor/images/kanal-gorselleri/turkiye/bein-sport-1-hd.png" group-title="Spor",61. beIN SPORTS
+https://one.caec6083d6b01cf5.click/live/sbeinsports-1/playlist.m3u8
 #EXTINF:-1 tvg-name="62. beIN SPORTS" tvg-id="" tvg-logo="https://gitlatte.github.io/m3ueditor/images/kanal-gorselleri/turkiye/bein-sport-1-hd.png" group-title="Spor",62. beIN SPORTS
 https://andro.okan9gote10sokan.cfd/checklist/androstreamlivebiraz1.m3u8
 #EXTINF:-1 tvg-name="75. beIN SPORTS Max" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/BeIN_Sports_MAX.png" group-title="Spor",75. beIN SPORTS Max
 https://andro.okan9gote10sokan.cfd/checklist/androstreamlivebsm1.m3u8
 #EXTINF:-1 tvg-name="76. beIN SPORTS Max 2" tvg-id="" tvg-logo="https://i.imgur.com/t7U20yR.png" group-title="Spor",76. beIN SPORTS Max 2
 https://andro.okan9gote10sokan.cfd/checklist/androstreamlivebsm2.m3u8
+#EXTINF:-1 tvg-name="86. Bein Box Office" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/bein-box-office-1-tr.png" group-title="Sinema",86. Bein Box Office
+https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/box1/index.m3u8
+#EXTINF:-1 tvg-name="88. Bein Box Office 3" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/bein-box-office-3-tr.png" group-title="Sinema",88. Bein Box Office 3
+https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/box3/index.m3u8
 #EXTINF:-1 tvg-name="96. TLC" tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/1200px-TLC_Logo.svg.png" group-title="Belgesel",96. TLC
 https://yayin2.canlitv.fun/live/tlc.stream/chunklist_w2118266100.m3u8?hash=01cb014cfe369be19dff51f1c0e7ce34
 #EXTINF:-1 tvg-name="97. DMAX" tvg-id="" tvg-logo="https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWRlIiwia2V5IjoiZG1heC1pbWFnZS1lODg0NmVhNy02YWNkLTRiMjYtOTMxMi1kYmQ1Y2EyMjk0OGEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjE5MjAsImhlaWdodCI6MTA4MH0sImpwZWciOnsicXVhbGl0eSI6NTUsInByb2dyZXNzaXZlIjp0cnVlfX19" group-title="Belgesel",97. DMAX
 https://trn03.tulix.tv/gt-dmax-tv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="Discovery" tvg-id="" tvg-logo="https://bilder.wunschliste.de/gfx/pics/1408/Discovery-Channel-3.jpg.jpg" group-title="Belgesel",Discovery
-http://sup-4k.org:80/play/live.php?mac=00:1A:79:56:7A:24&stream=10740&extension=ts
+http://fiko4k.xyz:8080/hasanessenessen1234cg/Hasangztt54t34cgt/488
 #EXTINF:-1 tvg-name="96. Yaban TV" tvg-id="" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_ml4Ec8YVG61pHTn1Q1zwpbDv_6RmPPPtFe2e4ysRhBAoo=s900-c-k-c0x00ffffff-no-rj" group-title="Belgesel",96. Yaban TV
 https://yayin1.canlitv.fun/canlitv/yabantv.stream/chunklist_w859237404.m3u8?hash=01cb014cfe369be19dff51f1c0e7ce34
+#EXTINF:-1 tvg-name="Tarih TV" tvg-id="" tvg-logo="https://imgs.search.brave.com/NlIeYcxgOm9cYqJ5Uz63qMIk-P0vQGQKx09nxww4-hU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pdHYy/MjQxODYudG1wLnRp/dmlidS5jb20udHI6/NjQzMC9pbWFnZXMv/cG9zdGVyLzIwMjUw/ODAxODM5MTcxLnBu/Zw" group-title="Belgesel",Tarih TV
+https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207:80/tarihtv/index.m3u8
+#EXTINF:-1 tvg-name="Love Nature" tvg-id="" tvg-logo="https://imgs.search.brave.com/ZySlRQ1Qe-akzY3F8XnduCqrO3twE1jp90iHc9z1j-o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vYXJpbWFuZ2dh/bGEvYXJpbWFuZ2dh/bGEyMDA1L2FyaW1h/bmdnYWxhMjAwNTAw/MDE3LzE0NjcyMzkw/My1uYXR1cmUtbG92/ZS1sb2dvLWdyZWVu/LWxlYWYtZGVzaWdu/LmpwZz92ZXI9Ng" group-title="Belgesel",Love Nature
+https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207/lovenature/index.m3u8
 #EXTINF:-1 tvg-name="History" tvg-id="" tvg-logo="https://imgs.search.brave.com/eTi_gp_gl5gXCR5DYf2si0u0Pf1PeJSY97aGX-X46b0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sb2dv/cy13b3JsZC5uZXQv/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDcvSGlzdG9yeS1M/b2dvLTUwMHgyODEu/anBn" group-title="Belgesel",History
-https://mss.ayakkabiparti.lol/history/index.m3u8
+https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207:80/history/index.m3u8
 #EXTINF:-1 tvg-name="Genc SMS" tvg-id="" tvg-logo="https://imgs.search.brave.com/AiehbgTDi42y95DVvuRcszo09zFzzvQqs-73pi-JD8g/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly92aXBv/dHYuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE5LzA1L2dl/bmMtc21zLXR2LWNh/bmxpLWl6bGUtdmlw/b3R2LnBuZw" group-title="Muzik",Genc SMS
 https://bstelevision.com/proxy_stream.php?u=https://tvsms.club/tv.php?kanal=genctv&file=.m3u8
 #EXTINF:-1 tvg-name="Karadeniz FM" tvg-id="" tvg-logo="https://imgs.search.brave.com/P19_A9_9hFz62fEXlOYyfPYxlgfUfGobyqYDJcyWYLs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cmFkaW8uZGUvMzAw/L2thcmFkZW5pemZt/LmpwZWc_dmVyc2lv/bj0xZGFmYzY3NTMx/ZDcxYWJlMDRkNzg1/ZThmOTg0OWZhZWVl/MWVjZjNm" group-title="Muzik",Karadeniz FM
@@ -8641,4 +8665,4 @@ https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-14 19:23:45
+# SON GUNCELLEME: 2026-04-15 02:54:58
