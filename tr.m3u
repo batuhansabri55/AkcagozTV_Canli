@@ -4529,6 +4529,10 @@ http://87.121.104.29:1798/kanal5yt/stream.m3u8
 # SON GUNCELLEME: 2026-04-16 07:55:43
 
 # --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+
+
+#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",KANALDYEDEK39
+https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.ahaber.com.tr/" tvg-id="AHaber.tr",A Haber
 https://streams.uzunmuhalefet.com/stream/b4f7a5e9-fcae-4258-83eb-cc37b6a68696.m3u8
 #EXTINF:-1 group-title="Ulusal - Yurt Dışı" tvg-logo="https://assets.uzunmuhalefet.com/logos/b02a677d-b1a4-47a5-a895-e7df724499f9.png" tvg-url="https://www.atvavrupa.tv/" tvg-id="ATVAvrupa.tr",ATV Avrupa
@@ -8830,7 +8834,5 @@ https://ca-rt.onetv.app/gemseries/index-0.m3u8?token=onetv202
 https://ca-rt.onetv.app/gemseriesplus/index-0.m3u8?token=onetv202
 #EXTINF:-1 tvg-id="AlRafidainTV.tr@SD" tvg-logo="https://i.imgur.com/rjXDCN5.png" group-title="Religious",Al Rafidain [Not 24/7]
 https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
-#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",KANALDYEDEK39
-https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
 # SON GUNCELLEME: 2026-04-16 19:23:11
