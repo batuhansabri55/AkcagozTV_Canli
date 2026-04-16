@@ -4748,6 +4748,15 @@ http://87.121.104.29:1453/zenginkfakiro/stream.m3u8
 #EXTINF:-1 tvg-id="cocuklarduymasin" tvg-name="Çocuklar Duymasın 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_k2yAMqqZek-afJ0iWS-gMNfDR-1T_wWcjajhmZWMF3Kw=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Çocuklar Duymasın 7/24
 http://87.121.104.29:1453/cocuklarduymasin/stream.m3u8
 #EXTINF:-1 tvg-id="leylamecnun" tvg-name="Leyla ile Mecnun 7/24" tvg-logo="https://yt3.googleusercontent.com/VvAVptRyVwMZ45DzlzEz2HJ738mBWncwZgb-xzuQQjqy9L7O649tKHOT-ujUBCixGQFMnBhUwQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Leyla ile Mecnun 7/24
+
+# --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 group-title="Spor" tvg-logo="https://assets.uzunmuhalefet.com/logos/3d0c0f6a-3deb-4bfa-a0f7-243827fed0ff.png" tvg-url="https://www.tivibu.com.tr/" tvg-id="TivibuSpor.tr",Tivibu Spor
+https://streams.uzunmuhalefet.com/stream/e47153e0-42fe-4980-8570-e840d1cc1cf4.m3u8
+#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/eea1f139-61af-4404-a8f4-214d4affe960.png" tvg-url="https://tv.uskudar.edu.tr/" tvg-id="",ÜÜ TV
+https://streams.uzunmuhalefet.com/stream/737736e3-5180-4275-b887-37812e55e900.m3u8
+#EXTINF:-1 tvg-id="kanald" tvg-name="Kanal D -A-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",Kanal D -A-
+https://caykasigi.denek1544.workers.dev/izle/kanald-112.m3u8
+#EXTINF:-1 tvg-id="leylamecnun" tvg-name="Leyla ile Mecnun 7/24" tvg-logo="https://yt3.googleusercontent.com/VvAVptRyVwMZ45DzlzEz2HJ738mBWncwZgb-xzuQQjqy9L7O649tKHOT-ujUBCixGQFMnBhUwQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Leyla ile Mecnun 7/24
 http://87.121.104.29:1453/leylamecnun/stream.m3u8
 #EXTINF:-1 tvg-id="sihirliannem" tvg-name="Sihirli Annem 7/24" tvg-logo="https://yt3.googleusercontent.com/P54859eAfyuolskOUg4icbpgTTJV3meue0MwVlMSiPOUpUAzF_Hff3G-7O0bFoAfF1N2e1Pb=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Sihirli Annem 7/24
 http://87.121.104.29:1453/sihirliannem/stream.m3u8
@@ -4781,7 +4790,7 @@ http://87.121.104.29:1453/tlcsucvearastirma/stream.m3u8
 http://87.121.104.29:1453/naturetimetr/stream.m3u8
 #EXTINF:-1 tvg-id="bizimevyt" tvg-name="Bizim Ev - YT" tvg-logo="https://yt3.googleusercontent.com/5KLD4QmX3I_Hwc4wrTpdqkcoVdTJfj86ABhRIkEV1ZtJ2jXNGWnqL-CLOjuC3MHM6hQLCgL4=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",Bizim Ev - YT
 http://87.121.104.29:1453/bizimevyt/stream.m3u8
-#EXTINF:-1 tvg-id="rectarihtv" tvg-name="Tarih TV" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/b61d518744b390174e6f672d7171107d.png" group-title="Belgesel",TARIHTVYEDEK
+#EXTINF:-1 tvg-id="rectarihtv" tvg-name="Tarih TV" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/b61d518744b390174e6f672d7171107d.png" group-title="Belgesel",Tarih TV
 https://caykasigi.denek1544.workers.dev/izle/tarihtv.m3u8
 #EXTINF:-1 tvg-id="natgeo" tvg-name="National Geographic" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/666cbc1feac437aea3fc2c8218b9539e.jpg" group-title="Belgesel",National Geographic
 https://buyombiryuz.testworker0y.workers.dev/channel/TmF0aW9uYWwgR2VvZ3JhcGhpYw==
@@ -4989,6 +4998,8 @@ http://sup-4k.org:80/play/live.php?mac=00:1A:79:56:7A:24&stream=196847&extension
 https://yayin2.canlitv.fun/live/tlc.stream/chunklist_w2118266100.m3u8?hash=01cb014cfe369be19dff51f1c0e7ce34
 #EXTINF:-1 tvg-name="97. DMAX" tvg-id="" tvg-logo="https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWRlIiwia2V5IjoiZG1heC1pbWFnZS1lODg0NmVhNy02YWNkLTRiMjYtOTMxMi1kYmQ1Y2EyMjk0OGEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjE5MjAsImhlaWdodCI6MTA4MH0sImpwZWciOnsicXVhbGl0eSI6NTUsInByb2dyZXNzaXZlIjp0cnVlfX19" group-title="Belgesel",97. DMAX
 https://trn03.tulix.tv/gt-dmax-tv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="BBC Earth" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvi0cZPUQ7bJI4oSnORLnPzTa_9LUUGG1s4fdbMRVwYMRIqKOBSBKoLcgx6sE&s" group-title="Belgesel",BBC Earth
+http://sup-4k.org:80/play/live.php?mac=00:1A:79:56:7A:24&stream=314485&extension=ts
 #EXTINF:-1 tvg-name="Discovery" tvg-id="" tvg-logo="https://bilder.wunschliste.de/gfx/pics/1408/Discovery-Channel-3.jpg.jpg" group-title="Belgesel",Discovery
 http://fiko4k.xyz:8080/hasanessenessen1234cg/Hasangztt54t34cgt/488
 #EXTINF:-1 tvg-name="96. Yaban TV" tvg-id="" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_ml4Ec8YVG61pHTn1Q1zwpbDv_6RmPPPtFe2e4ysRhBAoo=s900-c-k-c0x00ffffff-no-rj" group-title="Belgesel",96. Yaban TV
@@ -8822,4 +8833,4 @@ https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-16 11:48:18
+# SON GUNCELLEME: 2026-04-16 13:58:31
