@@ -1783,9 +1783,7 @@ http://87.121.104.29:1798/liderhaberyt/stream.m3u8
 https://streams.uzunmuhalefet.com/stream/5b8db41e-b662-4652-bd8a-fc198ceb33f4.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/wEMxkhIvtEcalAvH.png" group-title="YEDEK LİSTE",LIDERHABERTVYEDEK
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",0/0/VOD/HLS/CCF5746A-1EDA-45ED-9AFC-5E281FA7A704.PNG"GROUP-TITLE="DEATHLESS",LIDERHABERTVYEDEK
-https://tele1-live.ercdn.net/tele1/tele1.m3u8
-#EXTINF:-1 tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/ccf5746a-1eda-45ed-9afc-5e281fa7a704.png" group-title="YEDEK LİSTE",LIDERHABERYEDEK
+#EXTINF:-1 tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/ccf5746a-1eda-45ed-9afc-5e281fa7a704.png" group-title="YEDEK LİSTE",LIDERHABERTVYEDEK
 https://liderhaber.han686314.workers.dev/?url=https://lidertv.radyotelekom.com.tr/player/m3u8/9217b6e91d17c38f7d171eb2b3670349/chunklist_w1214941309.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",LIFETVYEDEK
 https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/chunks.m3u8
@@ -2825,10 +2823,10 @@ https://streams.uzunmuhalefet.com/stream/8d3274d0-9eae-46a6-94ff-6f15f3e12856.m3
 https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TBMMTVYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TBMMTV.TR@SD",TBBWEBTVYEDEK
 https://streams.uzunmuhalefet.com/stream/5fa3931d-88db-42b1-aac9-1006708bd3e8.m3u8
-#EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tele1.png" group-title="YEDEK LİSTE",TELE1YEDEK
-http://plan9.store:80/play/live.php?mac=10%3A27%3ABE%3A0D%3A9D%3AB9&stream=314421&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",TELE1YEDEK
 https://tele1-live.ercdn.net/tele1/tele1_1080p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",0/0/VOD/HLS/CCF5746A-1EDA-45ED-9AFC-5E281FA7A704.PNG"GROUP-TITLE="DEATHLESS",TELE1YEDEK
+https://tele1-live.ercdn.net/tele1/tele1.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tele1.png" group-title="YEDEK LİSTE",TELE1YEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/121
 #EXTINF:-1 group-title="YEDEK LİSTE",TELE1YEDEK
@@ -2841,6 +2839,8 @@ https://streams.uzunmuhalefet.com/stream/edba8b19-4745-4c5c-a235-b23a06d83eda.m3
 http://129.151.204.207/Tivizon.php?ID=tele1
 #EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_306809.PNG",TELE1YEDEK
 http://tv.smartglwiz.workers.dev/?ID=Tele1_HD
+#EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tele1.png" group-title="YEDEK LİSTE",TELE1YEDEK
+http://plan9.store:80/play/live.php?mac=10%3A27%3ABE%3A0D%3A9D%3AB9&stream=314421&extension=ts
 #EXTINF:-1 tvg-logo="https://i.ibb.co/CKSd9c5h/tele2.png" group-title="YEDEK LİSTE",TELE2HABERYEDEK
 https://video.twimg.com/amplify_video/1988933245791096832/pl/-LYtCesCNPKsSJDS.m3u8?variant_version=1&tag=14
 #EXTINF:-1 group-title="YEDEK LİSTE",TELENEWSYEDEK
@@ -3435,6 +3435,10 @@ https://streams.uzunmuhalefet.com/stream/3f802f18-482d-4b05-ace4-5fef782133be.m3
 https://live01.vucos.io/tursab_abr/tursab/chunks.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TUTKUFMSAMSUNYEDEK
 https://sslyayin.radyoyayini.com:7015/
+#EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
+https://tv100-live.daioncdn.net/tv100/tv100.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
+https://tv100-live.daioncdn.net/tv100/tv100_720p.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/bLpTdYZ/tv100.png" group-title="YEDEK LİSTE",TV100YEDEK
 https://tlkaycmdoq.turknet.ercdn.net/ckvbdssyig/tv100/tv100.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/bLpTdYZ/tv100.png" group-title="YEDEK LİSTE",TV100YEDEK
@@ -3455,10 +3459,6 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/232356
 http://live.cdn-vizi.workers.dev/?ID=36
 #EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
 https://ensonhaber-live.ercdn.net/tv100/tv100.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
-https://tv100-live.daioncdn.net/tv100/tv100.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
-https://tv100-live.daioncdn.net/tv100/tv100_720p.m3u8
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv100_FRE.png" group-title="YEDEK LİSTE",TV100YEDEK
 https://tv100.daioncdn.net/tv100/tv100_1080p.m3u8?&sid=7te1of6jsdh3&app=356e7599-d81d-4357-935a-355a1ad9846e&ce=2
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv100_FRE.png" group-title="YEDEK LİSTE",TV100YEDEK
