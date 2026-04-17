@@ -1,94 +1,105 @@
+import requests
+import re
 import os
 import datetime
-import subprocess
-import sys
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
+# USTA, İLK 4750 SATIR DOKUNULMAZDIR. YENİLER BUNUN SONUNA EKLENİR.
+ZIRH_LIMIT = 4750
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
 
-# ÖNEMLİ: Eğer m3u dosyan 4750 satırdan azsa, bu rakamı dosyanın mevcut satır sayısına 
-# (mesela 4500) çekmelisin ki kod "zırhın bittiği yeri" anlasın.
-ZIRH_LIMIT = 4500 
+YASAKLI_GRUPLAR = [
+    "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", "Taşacak Bu Deniz", 
+    "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", "MediabayTV", 
+    "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
+    "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
+    "Superxfilm", "CINEMAMOD"
+]
 
-# YOUTUBE CANLI YAYIN LİSTESİ
-YOUTUBE_KANALLARI = {
-    "CNN TURK (YOUTUBE)": "https://www.youtube.com/watch?v=y3_beK6V_84",
-    "HABER GLOBAL (YOUTUBE)": "https://www.youtube.com/watch?v=X_EWyemclKA",
-    "24 TV (YOUTUBE)": "https://www.youtube.com/watch?v=fXHeid6Z_9I"
-}
+YEDEK_KAYNAKLAR = [
+    "https://streams.uzunmuhalefet.com/lists/tr.m3u",
+    "https://tinyurl.com/ytpatron",
+    "https://github.com/Yusufdkci/iptv/blob/main/liste.m3u",
+    "https://urlz.fr/v1Xo",
+    "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
+    "https://raw.githubusercontent.com/smartgmr/cdn/refs/heads/main/Perfect.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
+    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
+    "https://tinyurl.com/bdd2tz6h",
+    "https://publiciptv.com/countries/tr/m3u",
+    "https://iptv-org.github.io/iptv/countries/tr.m3u"
+]
 
-def get_youtube_m3u8(url):
-    """YouTube engellerini aşmak için geliştirilmiş link çekici."""
-    try:
-        # --no-check-certificate ve --geo-bypass engelleri aşmak için eklendi
-        cmd = [
-            sys.executable, "-m", "yt_dlp", 
-            "--quiet", "--no-warnings", 
-            "--no-check-certificate",
-            "--geo-bypass",
-            "-g", "-f", "best[ext=mp4]/best", 
-            url
-        ]
-        result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8')
-        
-        if result.returncode == 0 and result.stdout.strip().startswith("http"):
-            return result.stdout.strip()
-        else:
-            print(f"!!! YouTube Veri Alınamadı ({url})")
-    except Exception as e:
-        print(f"!!! Sistem Hatası: {e}")
-    return None
+def yedek_kanali_temizle(metin):
+    if "#EXTINF" in metin and "," in metin:
+        parcalar = metin.rsplit(',', 1)
+        ayarlar = parcalar[0]
+        isim = parcalar[1]
+        isim = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', isim)
+        isim = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim, flags=re.I)
+        isim = re.sub(r'\s*\([0-9]{3,4}[pP]?\)', '', isim)
+        isim = re.sub(r'\s+', ' ', isim).strip()
+        isim = re.sub(r'^[\.\-\s|]+', '', isim)
+        return f"{ayarlar},{isim}"
+    return metin
 
 def main():
-    print("\n--- YOUTUBE GUNCELLEME ISLEMI BASLADI ---")
-    
-    if not os.path.exists(FILE_PATH):
-        print(f"HATA: {FILE_PATH} bulunamadı!")
-        return
+    eklenen_urller = set() # Mükerrer kontrolü için hafıza
+    ana_liste_zirh = [] 
+    taze_kanal_listesi = []
 
-    # 1. DOSYAYI OKU VE ZIRHLI BÖLGEYİ AYIR
-    with open(FILE_PATH, 'r', encoding='utf-8') as f:
-        satirlar = f.readlines()
-    
-    mevcut_satir_sayisi = len(satirlar)
-    print(f"Dosya okundu. Toplam satır: {mevcut_satir_sayisi}")
+    # 1. ADIM: ZIRHLI BÖLGEYİ OKU VE URL'LERİ HAFIZAYA AL
+    if os.path.exists(FILE_PATH):
+        with open(FILE_PATH, 'r', encoding='utf-8') as f:
+            tum_icerik = f.readlines()
+            # 3950 satırı ayır
+            ana_liste_zirh = tum_icerik[:ZIRH_LIMIT]
+            
+            # Zırhlı bölgedeki URL'leri hafızaya ekle ki yenilerle çakışmasın
+            for satir in ana_liste_zirh:
+                satir_temiz = satir.strip()
+                if satir_temiz.startswith("http"):
+                    eklenen_urller.add(satir_temiz)
 
-    # Eğer zırh limiti dosya boyutundan büyükse, limiti otomatik ayarla
-    limit = min(ZIRH_LIMIT, mevcut_satir_sayisi)
-    zirhli_bolge = satirlar[:limit]
-    print(f"Zırhlı bölge (ilk {limit} satır) korumaya alındı.")
+    # 2. ADIM: DIŞ KAYNAKLARDAN TAZE YEDEKLERİ ÇEK
+    for url in YEDEK_KAYNAKLAR:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=15)
+            if r.status_code == 200:
+                temiz_veri = re.sub(r'#EXTVLCOPT:.*?\n', '', r.text)
+                bulunanlar = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", temiz_veri, re.DOTALL)
+                for kanal in bulunanlar:
+                    satir_grubu = kanal.strip().split('\n')
+                    if len(satir_grubu) >= 2:
+                        ext_satiri = satir_grubu[0]
+                        link_satiri = satir_grubu[-1].strip()
+                        
+                        # Yasaklı grup kontrolü
+                        if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
+                            continue
+                            
+                        # KRİTİK KONTROL: Eğer URL zırhlı listede varsa es geç (Mükerrer önleme)
+                        if link_satiri not in eklenen_urller:
+                            temiz_ext = yedek_kanali_temizle(ext_satiri)
+                            if 'group-title="' not in temiz_ext:
+                                temiz_ext = temiz_ext.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
+                            
+                            taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
+                            # Bu linki listeye ekledik, bir daha eklememek için hafızaya al
+                            eklenen_urller.add(link_satiri)
+        except:
+            continue
 
-    # 2. YOUTUBE LİNKLERİNİ ÇEK
-    yt_eklentileri = []
-    for isim, url in YOUTUBE_KANALLARI.items():
-        print(f"-> {isim} için taze link aranıyor...")
-        link = get_youtube_m3u8(url)
-        if link:
-            yt_eklentileri.append(f'#EXTINF:-1 group-title="YEDEKLER",{isim}\n{link}\n')
-            print(f"   [TAMAM] Link başarıyla alındı.")
-        else:
-            print(f"   [HATA] YouTube'dan link sökülemedi!")
-
-    # 3. DOSYAYI YENİDEN OLUŞTUR (ZIRH + YOUTUBE LİNKLERİ)
-    if yt_eklentileri:
-        try:
-            with open(FILE_PATH, 'w', encoding='utf-8') as f:
-                # Önce dokunulmaz zırhlı bölge
-                f.writelines(zirhli_bolge)
-                
-                # YouTube Başlığı ve Linkler
-                f.write("\n# --- YOUTUBE CANLI YAYIN YEDEKLERİ ---\n")
-                f.writelines(yt_eklentileri)
-                
-                simdi = datetime.datetime.now().strftime('%d.%m.%Y %H:%M:%S')
-                f.write(f"\n# SON GUNCELLEME: {simdi}\n")
-            
-            print(f"\n--- ISLEM BASARIYLA TAMAMLANDI ({simdi}) ---")
-            print(f"{FILE_PATH} dosyasının en sonuna {len(yt_eklentileri)} kanal eklendi.")
-        except Exception as e:
-            print(f"Dosyaya yazarken hata oluştu: {e}")
-    else:
-        print("\n!!! KRİTİK: Hiç link alınamadı, dosya değiştirilmedi.")
+    # 3. ADIM: KAYDETME (Mevcut zırh + yeni benzersiz yedekler)
+    with open(FILE_PATH, 'w', encoding='utf-8') as f:
+        f.writelines(ana_liste_zirh)
+        f.write(f"\n# --- {ZIRH_LIMIT} SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---\n")
+        for k in taze_kanal_listesi:
+            f.write(k + "\n")
+            
+        zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
 if __name__ == "__main__":
-    main()
+    main()  USTA SADECE YOUTUBEDEN CNN TURK YAPALIMMI AMA 4750 SATIRIN ALTINA EKLESİN
