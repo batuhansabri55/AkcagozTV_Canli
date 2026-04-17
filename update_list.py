@@ -102,4 +102,4 @@ def main():
         f.write(f"\n# SON GUNCELLEME: {zaman}\n")
 
 if __name__ == "__main__":
-    main()  USTA SADECE YOUTUBEDEN CNN TURK YAPALIMMI AMA 4750 SATIRIN ALTINA EKLESİN
+    main()
