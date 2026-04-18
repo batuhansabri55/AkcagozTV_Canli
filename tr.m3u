@@ -1900,6 +1900,8 @@ http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/167
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/103143
 #EXTINF:-1 group-title="YEDEK LİSTE",SINEMATVKOMEDIYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/168
+#EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="SINEMA KANALLARI",SINEMATVYEDEK
+http://65.108.239.207/sinema/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",SINEMATVYEDEK
 http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/163
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="YEDEK LİSTE",SINEMATVYEDEK
@@ -3692,10 +3694,6 @@ https://buyombiryuz.testworker0y.workers.dev/channel/RG9jdUJveA==
 http://87.121.104.29:1453/tgrtbelgeselyt/stream.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/w/Uq/16203/Thumbnail.png" group-title="SINEMA KANALLARI",FX
 https://mantivtwo.denek1544.workers.dev/channel/Rlg=.m3u8
-#EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="SINEMA KANALLARI",SINEMATV
-https://mantivtwo.denek1544.workers.dev/channel/U2luZW1hIFRW.m3u8
-#EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="SINEMA KANALLARI",SINEMATVYEDEK
-https://caykasigi.denek1544.workers.dev/izle/sinematv-61.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/Y/3N/22904/Thumbnail.png" group-title="SINEMA KANALLARI",SINEMATV2
 https://mantivtwo.denek1544.workers.dev/channel/U2luZW1hIFRWIDI=.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/Y/3N/22904/Thumbnail.png" group-title="SINEMA KANALLARI",SINEMATV2YEDEK
