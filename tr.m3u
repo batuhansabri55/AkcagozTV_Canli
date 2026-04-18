@@ -4748,6 +4748,12 @@ http://87.121.104.29:1453/askimemnu/stream.m3u8
 http://87.121.104.29:1453/gullergunahlar/stream.m3u8
 #EXTINF:-1 tvg-id="avrupayakasi" tvg-name="Avrupa Yakası 7/24" tvg-logo="https://yt3.googleusercontent.com/5bkS9MmbYWqBp6L5YLW2GKbUHg3ccliSqtZPTEDIKyATdaixag3ZWtvzloxX3elaJ1fmta-Gsg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Avrupa Yakası 7/24
 http://87.121.104.29:1453/avrupayakasi/stream.m3u8
+
+# --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 group-title="Çocuk" tvg-logo="https://assets.uzunmuhalefet.com/logos/5e11008b-c2d2-4f23-b6a1-d6f9af0e52ef.png" tvg-url="https://cartoonnetwork.com.tr/" tvg-id="CartoonNetwork.tr",Cartoon Network
+https://streams.uzunmuhalefet.com/stream/9d940976-31c8-4570-92e6-a684e49bea46.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/e6ed029b-4bdb-4e95-acde-24e0b88c83b8.png" tvg-url="https://www.ahitv.com.tr/" tvg-id="",Ahi TV
+https://streams.uzunmuhalefet.com/stream/274588b2-6226-4a6e-8beb-37b3c323ad05.m3u8
 #EXTINF:-1 tvg-id="trtnostalji" tvg-name="TRT Nostalji 7/24" tvg-logo="https://yt3.googleusercontent.com/aTkDrJ4-tvQBycXJkhMgBBfX-o4iw0AMykmjfRCSiixpXIxmPj3spULmpXtKvSxn0aQeNfWNOQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",TRT Nostalji 7/24
 http://87.121.104.29:1453/trtnostalji/stream.m3u8
 #EXTINF:-1 tvg-id="zenginkfakiro" tvg-name="Zengin Kız Fakir Oğlan 7/24" tvg-logo="https://yt3.ggpht.com/1YUINSwuuns9oNLOmYEQLkS9aNI_bE-hdOFTDF3S56Oq6rRBUWO_kd1ew2NkWmbj_4LznHe3V5M=s176-c-k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Zengin Kız Fakir Oğlan 7/24
@@ -4949,7 +4955,7 @@ https://proxy.ultrasoner55.workers.dev/?url=http%3A%2F%2Flive.cdn-vizi.workers.d
 #EXTINF:-1 tvg-name="Flash Haber" tvg-id="Flash Haber.tr" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/flash-tv-tr.png" group-title="Haber",Flash Haber
 https://yayin2.canlitv.fun/live/flashtv.stream/chunklist_w2134562213.m3u8?hash=01cb014cfe369be19dff51f1c0e7ce34
 #EXTINF:-1 tvg-name="Koza TV" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/koza-tv-tr.png" group-title="Haber",Koza TV
-http://4kblue8k.xyz:2095/argu.1958/e19059078b0e25a7/22596
+http://4kblue8k.xyz:2095/live/argu.1958/e19059078b0e25a7/22596.m3u8
 #EXTINF:-1 tvg-name="Lider Haber" tvg-id="" tvg-logo="https://imgs.search.brave.com/hqP437dNufq7WGArOVOzjQjgpbHyFtIL8Wg6yW5qTdA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9ibG9n/Z2VyLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS9pbWcvYi9SMjl2/WjJ4bC9BVnZYc0Vq/TUg3b25uS1MtQzVO/ZE1GdHpaWlN5aGVk/TEs0ZThOQ2VENWF3/eUdBZV96YVZBeVVL/ei1FTS1WNmtuaFFC/SmNyNlVFaG5fNmx6/YUJuOUxOYnFQZUNH/bnVoejhYdTNLZW5s/bmVIQUQ1TzFGQkh0/WjQ3eWtoajVfSFlM/YnVxdk04MGdyNVVu/UDZ6MFhwQVU5ZFkx/SkpiZi1NaGZnaHlw/aGVuaHlwaGVuS1Rx/aTZnOEtzWjJIY0w4/UkZhdDJ4NVphSWtN/MDN1MFlZL3MxMjgw/L0xpZGVySGFiZXJU/VjIwMjVGb3J0dW5h/VFYucG5n" group-title="Haber",Lider Haber
 http://4kblue8k.xyz:2095/argu.1958/e19059078b0e25a7/34185
 #EXTINF:-1 tvg-name="KRT" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/krt-tr.png" group-title="Haber",KRT
@@ -8849,4 +8855,4 @@ https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-17 22:42:20
+# SON GUNCELLEME: 2026-04-18 02:49:04
