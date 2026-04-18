@@ -270,8 +270,6 @@ https://edge.kuzeykibrissmart.tv/brt1hd/bant1/chunks.m3u8
 https://streams.uzunmuhalefet.com/stream/d673c331-6d74-44b8-b3cf-f954847e7b6a.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/VDvWNpOWGNZzdLpV.png" group-title="YEDEK LİSTE",BIRTVYEDEK
 https://edge1.socialsmart.tv/birtv/bant1/playlist.m3u8
-
-
 #EXTINF:-1 tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/2fdd6eb0-bd9e-44ef-ad0e-7f2c4cf3a8a7.png" group-title="YEDEK LİSTE",SZCTVYEDEK1
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/szc_tv/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",SZCTVYEDEK2
@@ -346,10 +344,6 @@ http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv.m3u8
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/hbturk.png" group-title="YEDEK LİSTE",HABERTURKYEDEK
 https://ensonhaber-live.ercdn.net/haberturk/haberturk.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",HABERTURKYEDEK
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/148
-#EXTINF:-1 group-title="YEDEK LİSTE",HABERTURKYEDEK
-http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/147
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/V/gp/13350/Thumbnail.png" group-title="YEDEK LİSTE",HABERTURKYEDEK
 https://streams.uzunmuhalefet.com/stream/0c0bc91d-ce3a-49cc-9054-1cff110967c4.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",HABERTURKYEDEK
@@ -358,6 +352,10 @@ http://live.cdn-vizi.workers.dev/?ID=13
 http://104.238.23.221/dsgo.php?id=246027
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/0/03/Haberturk.com_logo.jpg" group-title="YEDEK LİSTE",HABERTURKYEDEK
 https://stream-extractor.koprulu2.workers.dev/?url=https://m.haberturk.com/canliyayin&ext=m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HABERTURKTEST
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/148
+#EXTINF:-1 group-title="YEDEK LİSTE",HABERTURKTEST
+http://96587.premiumstream.in:80/GokselSonmez/MxxnCxr25v9w/147
 #EXTINF:-1 group-title="YEDEK LİSTE",NTVYEDEK
 https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
 #EXTINF:-1 group-title="YEDEK LİSTE",NTVYEDEK
