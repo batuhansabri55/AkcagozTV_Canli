@@ -114,6 +114,8 @@ http://104.238.23.221/dsgo.php?id=245994
 http://87.121.104.29:5009/channel?id=245994
 #EXTINF:-1 tvg-logo="https://i.ibb.co/DYyDzGV/star22tv.png" group-title="YEDEK LİSTE",STARTVYEDEK37
 http://dygvideo.dygdigital.com/live/hls/stardai?m3u8
+#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/8bd73113-9389-419a-9341-55c3e82469b5.png" group-title="ULUSAL",STARTVYEDEK
+https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
 #EXTINF:-1 group-title="YEDEK LİSTE",TVG-LOGO="HTTP://HD200.GLIPTV.COM/MENU/EPG/IMAGESNEW/CIM_304551.PNG",STARTVYEDEK36
 http://tv.smartglwiz.workers.dev/?ID=StarTV_HD
 #EXTINF:-1 group-title="YEDEK LİSTE",STARTVYEDEK36
