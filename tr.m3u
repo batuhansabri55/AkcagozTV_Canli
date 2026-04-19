@@ -115,6 +115,8 @@ https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 https://ciner.daioncdn.net/showtv/showtv.m3u8?app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
 #EXTINF:-1 tvg-logo="https://m.showtv.com.tr/assets/images/other/showtv_social_media.jpg" group-title="YEDEK LİSTE",SHOWTVYEDEK43
 https://tatatam.trt1sultanfatihss.workers.dev/https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=10800&st=0iY4u_Hl02bVpWC40fhnkg&sid=8004kitozcix&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
+#EXTINF:-1 tvg-name="Star" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/star-tv-tr.png" group-title="Ulusal",STARTVYEDEK
+https://tatatam.trt1sultanfatihss.workers.dev/https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=startv_web&ce=3
 #EXTINF:-1 tvg-id="STAR TV" tvg-name="STAR TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTODT1C4SB518JljOlb7etd8VRmpGQJSyiFVw&s" group-title="GENEL",STARTVYEDEK
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?sig=cc68fc2b65324f67e9c8ee2e9d56d1db&sid=7ukqybd3tddq&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
 #EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal", STARTVYEDEK
@@ -2399,10 +2401,14 @@ https://streams.uzunmuhalefet.com/stream/3e33b77e-4d15-4651-838b-1148fb8db706.m3
 https://playlist.fasttvcdn.com/pl/rfrk9821y9dayo8wfyha/muziktv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/c7b43467-b3b4-4f56-b0c8-e8442de03807.png" group-title="YEDEK LİSTE",MUZIKTVYEDEK
 https://streams.uzunmuhalefet.com/stream/ba3f9a6d-85a8-4100-b716-95b98a2a3ab3.m3u8
+#EXTINF:-1 tvg-name="103. National Geo" tvg-id="" tvg-logo="https:/N03A/rs:fit:500:0:1:0/g:cexzL2U2Lzhm/L2I1L2U2OGZiNTk0/NmJhNDlhNGVmYjNj/ZGI0NzBlNTM4MjY3/LmpwZw" group-title="Belgesel",NATIONALGEOGRAPHICYEDEK
+http://4kblue8k.xyz:2095/argu.1958/e19059078b0e25a7/57679
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/natgeowild.png" group-title="YEDEK LİSTE",NATIONALGEOGRAPHICWILDYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/282
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/natgeo.png" group-title="YEDEK LİSTE",NATIONALGEOGRAPHICYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/286
+#EXTINF:-1 tvg-name="Nat Geo Wild" tvg-id="" tvg-logo="https://m.media-amazon.com/images/M/MV5BZjI5YWE4MWQtNzhjZi00OWY5LWFhNmItZmRmZmZkZDlkMDc3XkEyXkFqcGc@._V1_.jpg" group-title="Belgesel",NATIONALGEOGRAPHICWILDYEDEK
+http://4kblue8k.xyz:2095/argu.1958/e19059078b0e25a7/124643
 #EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BZjI5YWE4MWQtNzhjZi00OWY5LWFhNmItZmRmZmZkZDlkMDc3XkEyXkFqcGc@._V1_.jpg" group-title="YEDEK LİSTE",NATIONALGEOGRAPHICWILDYEDEK
 https://saran-live.ercdn.net/natgeowild/natgeowild1080p_1.m3u8
 #EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/M/MV5BZjI5YWE4MWQtNzhjZi00OWY5LWFhNmItZmRmZmZkZDlkMDc3XkEyXkFqcGc@._V1_.jpg" group-title="YEDEK LİSTE",NATIONALGEOGRAPHICWILDYEDEK
