@@ -329,6 +329,8 @@ https://www.canlitv.tech/hls/sozcu.m3u8
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/232355
 #EXTINF:-1 tvg-logo="https://www.indyturk.com/sites/default/files/article/main_image/2021/07/07/705061-474968398.jpg" group-title="YEDEK LİSTE",SZCTVYEDEK
 http://87.121.104.29:1453/sozcu/stream.m3u8
+#EXTINF:-1 tvg-name="18. CNN Türk" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/cnn-turk-tr.png" group-title="Haber",CNNTURKYEDEK
+https://proxy.ultrasoner55.workers.dev/?url=http%3A%2F%2Flive.cdn-vizi.workers.dev%2F%3FID%3D12
 #EXTINF:-1 tvg-logo="https://cdn.technettv.com/channel/22961/logo_256_1707397512.png" group-title="YEDEK LİSTE",CNNTURKYEDEK
 https://cdn.tecostream.xyz/Cnn_Turk.m3u8
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/cnn_turk_qZd.png" group-title="YEDEK LİSTE",CNNTURKYEDEK
