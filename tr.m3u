@@ -4748,6 +4748,12 @@ https://siraucbeyaz.denek1544.workers.dev/izle/trt1-114.m3u8
 https://turnakusu.testworker0y.workers.dev/channel/VFJUIFTDvHJr
 #EXTINF:-1 tvg-id="kanald" tvg-name="Kanal D -A-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",Kanal D -A-
 https://siraucbeyaz.denek1544.workers.dev/izle/kanald-112.m3u8
+
+# --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/b8d839ed-227d-4ceb-81e8-ad5ae5db91aa.png" tvg-url="http://www.tokattv.com/" tvg-id="",Tokat Radyo TV
+https://streams.uzunmuhalefet.com/stream/f9150da3-c392-409c-9c03-587a024879dc.m3u8
+#EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://assets.uzunmuhalefet.com/logos/24f4c73c-7234-4dba-bab9-e55736be3208.png" tvg-url="https://kuzeykibris.tv/" tvg-id="",Kuzey Kıbrıs TV
+https://streams.uzunmuhalefet.com/stream/3ffde98c-2303-4b73-8ff7-610d7b55a2c7.m3u8
 #EXTINF:-1 tvg-id="kanaldb" tvg-name="Kanal D -B-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",Kanal D -B-
 https://turnakusu.testworker0y.workers.dev/channel/S2FuYWwgRCB8IEE=
 #EXTINF:-1 tvg-id="showtv" tvg-name="Show Tv -A-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/93eebff893a76defd8ab61fdb69943c3.jpg" group-title="Ulusal",Show Tv -A-
@@ -4788,6 +4794,8 @@ https://turnakusu.testworker0y.workers.dev/channel/VFJUIEt1cmRp
 https://turnakusu.testworker0y.workers.dev/channel/VFJUIFdvcmxk
 #EXTINF:-1 tvg-id="cnnyedek" tvg-name="CNN Türk -B-" tvg-logo="https://img.dsmartgo.com.tr/content/a/u2/11786/Thumbnail.png" group-title="Haber",CNN Türk -B-
 https://dmxtl.testworkery0.workers.dev/izle/cnnturkhd.m3u8
+#EXTINF:-1 tvg-id="tlcsucvearastirma" tvg-name="TLC Suç ve Araştırma" tvg-logo="https://yt3.googleusercontent.com/_4BCgYVYzh2eD6doip7g2IopQ6uNdc4EbPJHtYwHBKTopTSPjcio-X0JEBlYi9vdaxP5bEBdgQ=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",TLC Suç ve Araştırma
+http://87.121.104.29:1453/tlcsucvearastirma/stream.m3u8
 #EXTINF:-1 tvg-id="rectarihtv" tvg-name="Tarih TV" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/b61d518744b390174e6f672d7171107d.png" group-title="Belgesel",Tarih TV
 https://siraucbeyaz.denek1544.workers.dev/izle/tarihtv.m3u8
 #EXTINF:-1 tvg-id="historyrec" tvg-name="Viasat Nature" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/77f52eb67864c8f809626fa5c7d1bae6.png" group-title="Belgesel",Viasat Nature
@@ -4798,6 +4806,12 @@ https://siraucbeyaz.denek1544.workers.dev/izle/viasathistory.m3u8
 https://siraucbeyaz.denek1544.workers.dev/izle/lovenature.m3u8
 #EXTINF:-1 tvg-id="bbcearth" tvg-name="BBC Earth" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/9ed6faa15f968198d17c0362658f6b50.jpg" group-title="Belgesel",BBC Earth
 https://siraucbeyaz.denek1544.workers.dev/izle/bbcearthhd.m3u8
+#EXTINF:-1 tvg-id="discoveryid" tvg-name="Discovery ID" tvg-logo="https://dsmart-static-v2.ercdn.net/content/b/vE/11891/Thumbnail.png" group-title="Belgesel",Discovery ID
+https://new.testworkery0.workers.dev/stream/aHR0cHM6Ly9kc21hcnRnby1saXZlLmVyY2RuLm5ldC9kaXNjb3ZlcnlzY2llbmNlL2Rpc2NvdmVyeXNjaWVuY2UubTN1OA==.m3u8
+#EXTINF:-1 tvg-id="yabantvtest" tvg-name="Yaban Tv" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_ml4Ec8YVG61pHTn1Q1zwpbDv_6RmPPPtFe2e4ysRhBAoo=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",Yaban Tv
+http://188.245.211.255:1935/canlitv/yabantv.stream/playlist.m3u8?hash=d21d7459ead75e834b74495ed6103f1a
+#EXTINF:-1 tvg-id="tgrtbelgeselyt" tvg-name="TGRT Belgesel" tvg-logo="https://yt3.googleusercontent.com/TWSgLJEkOPBFXWbyqzBuG0-EeXmhVXUKHEoRn3GnJ_WkJeknuh2Q9MJrLAC6k_-YKb4HeslA=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",TGRT Belgesel
+http://87.121.104.29:1453/tgrtbelgeselyt/stream.m3u8
 #EXTINF:-1 tvg-id="fx" tvg-name="Fx" tvg-logo="https://img.dsmartgo.com.tr/content/w/Uq/16203/Thumbnail.png" group-title="Sinema Kanalları",Fx
 https://dxdiagz.denek1544.workers.dev/channel/Rlg=.m3u8
 #EXTINF:-1 tvg-id="sinematv" tvg-name="Sinema Tv" tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="Sinema Kanalları",Sinema Tv
@@ -8326,6 +8340,7 @@ https://viamotionhsi.netplus.ch/live/eds/eurod/browser-HLS8/eurod.m3u8
 https://viamotionhsi.netplus.ch/live/eds/trtturk/browser-dash/trtturk.mpd
 #EXTINF:-1 tvg-id="AlRafidainTV.tr@SD" tvg-logo="https://i.imgur.com/rjXDCN5.png" group-title="Religious",Al Rafidain [Not 24/7]
 https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
-#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",TEST
+#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
-# SON GUNCELLEME: 2026-04-21 08:00:54
+
+# SON GUNCELLEME: 2026-04-21 13:54:07
