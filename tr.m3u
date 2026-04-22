@@ -4748,10 +4748,10 @@ https://sosyoapp-live.cdnnew.com/sosyo/buraya-bir-isim-verin.m3u8
 https://live.artidijitalmedya.com/artidijital_tatlisestv/tatlisestv/chunks.m3u8
 #EXTINF:-1 tvg-name="NPO 2" group-title="YABANCITV",NPO 2
 http://62.131.195.211:8087/20.ts
-#EXTINF:-1 tvg-name="EURONEWS" group-title="YABANCITV",EURONEWS
-http://46.47.113.35:4000/euronews.ts
 
 # --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/99427daa-074a-4389-85fa-8aab992dbfb3.png" tvg-url="https://www.kanalurfa.com/" tvg-id="",Kanal Urfa
+https://streams.uzunmuhalefet.com/stream/cfc91d04-4b42-4f53-bf0a-cb4aaf8b8af2.m3u8
 #EXTINF:-1 tvg-name="Vav TV" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2Fjw0gB8L.png&w=120" group-title="Haber",Vav TV
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/kltr-sanat-tv/playlist/0.m3u8
 #EXTINF:-1 tvg-name="Hunat TV" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2FNrxHGnb.png&w=120" group-title="Belgesel",Hunat TV
@@ -4778,6 +4778,8 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa
 https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/chunks.m3u8?nimblesessionid=2798820250
 #EXTINF:-1 tvg-name="TRT SPOR" tvg-id="TRTSpor.tr" tvg-logo="https://i.ibb.co/WxD4PLG/trt-spor.png" group-title="SPOR",TRT SPOR
 #
+#EXTINF:-1 tvg-name="EURONEWS" group-title="YABANCITV",EURONEWS
+http://46.47.113.35:4000/euronews.ts
 #EXTINF:-1 tvg-name="CNBC" group-title="YABANCITV",CNBC
 http://46.47.113.35:4000/cnbc.ts
 #EXTINF:-1 tvg-name="BBCNEWS" group-title="YABANCITV",BBCNEWS
@@ -8197,4 +8199,4 @@ https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-22 07:57:13
+# SON GUNCELLEME: 2026-04-22 13:53:56
