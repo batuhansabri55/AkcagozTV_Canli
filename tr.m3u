@@ -4748,6 +4748,34 @@ https://live.artidijitalmedya.com/artidijital_tatlisestv/tatlisestv/chunks.m3u8
 http://62.131.195.211:8087/20.ts
 #EXTINF:-1 tvg-name="EURONEWS" group-title="YABANCITV",EURONEWS
 http://46.47.113.35:4000/euronews.ts
+
+# --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 tvg-name="Vav TV" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2Fjw0gB8L.png&w=120" group-title="Haber",Vav TV
+https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/kltr-sanat-tv/playlist/0.m3u8
+#EXTINF:-1 tvg-name="Hunat TV" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2FNrxHGnb.png&w=120" group-title="Belgesel",Hunat TV
+https://live.artidijitalmedya.com/artidijital_hunattv/hunattv/chunks.m3u8?nimblesessionid=2798760928
+#EXTINF:-1 tvg-name="Bric ve Satranc" tvg-id="" tvg-logo="https://i.imgur.com/TXDV1ty.png" group-title="Belgesel",Bric ve Satranc
+https://cors.globetv.app/http://139.162.182.79/live/test/index.m3u8
+#EXTINF:-1 tvg-name="AfroTurk TV" tvg-id="" tvg-logo="https://imgs.search.brave.com/uqjQOGCXaisG_yEZeyaACnVJesdWgWUcphpPzq9mcuk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/YWZyb3R1cmt0di5j/b20vdS9pL2Fmcm90/dXJrLXBuZy5wbmc" group-title="Sinema",AfroTurk TV
+https://tvizle.tr/api/proxy?url=https%3A%2F%2Fedge1.taksimbilisim.com%3A443%2Fnaturaltv%2Fbant1%2Fchunks.m3u8%3Fnimblesessionid%3D1407750696
+#EXTINF:-1 tvg-name="MTurk TV" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2Fxj1gvrq.png&w=120" group-title="Sinema",MTurk TV
+https://tvizle.tr/api/proxy?url=https%3A%2F%2Fedge1.taksimbilisim.com%3A443%2Fmuglaturk%2Fbant1%2Fchunks.m3u8%3Fnimblesessionid%3D1407759191
+#EXTINF:-1 tvg-name="Power Turk" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2F9OPoXQG.png&w=120" group-title="Muzik",Power Turk
+https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/chunklist_b7596000_sltur.m3u8?nimblesessionid=497934162
+#EXTINF:-1 tvg-name="Power Turk Slow" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2FtQSoQXW.png&w=120" group-title="Muzik",Power Turk Slow
+https://livetv.powerapp.com.tr/pturkslow/slow.smil/chunks.m3u8?nimblesessionid=497933315
+#EXTINF:-1 tvg-name="Power Love" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2F0RzUswR.png&w=120" group-title="Muzik",Power Love
+https://livetv.powerapp.com.tr/plove/love.smil/chunks.m3u8?nimblesessionid=497929015
+#EXTINF:-1 tvg-name="Power Dance" tvg-id="" tvg-logo="https://assets.teleon.tv/180_webp/power-dance-tr.webp" group-title="Muzik",Power Dance
+https://livetv.powerapp.com.tr/dance/dance.smil/chunks.m3u8?nimblesessionid=497908072
+#EXTINF:-1 tvg-name="Number One Rap" tvg-id="" tvg-logo="https://www.canliradyodinle.fm/wp-content/uploads/turkrap.jpg" group-title="Muzik",Number One Rap
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/chunklist.m3u8
+#EXTINF:-1 tvg-name="Number One Dance" tvg-id="" tvg-logo="https://tvizle.tr/api/img?url=https%3A%2F%2Fi.imgur.com%2FZM4PSyq.png&w=120" group-title="Muzik",Number One Dance
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/chunklist.m3u8
+#EXTINF:-1 tvg-name="Tempo TV" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/tempo-tv-tr.png" group-title="Muzik",Tempo TV
+https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/chunks.m3u8?nimblesessionid=2798820250
+#EXTINF:-1 tvg-name="TRT SPOR" tvg-id="TRTSpor.tr" tvg-logo="https://i.ibb.co/WxD4PLG/trt-spor.png" group-title="SPOR",TRT SPOR
+#
 #EXTINF:-1 tvg-name="CNBC" group-title="YABANCITV",CNBC
 http://46.47.113.35:4000/cnbc.ts
 #EXTINF:-1 tvg-name="BBCNEWS" group-title="YABANCITV",BBCNEWS
@@ -8164,7 +8192,7 @@ https://viamotionhsi.netplus.ch/live/eds/eurod/browser-HLS8/eurod.m3u8
 https://viamotionhsi.netplus.ch/live/eds/trtturk/browser-dash/trtturk.mpd
 #EXTINF:-1 tvg-id="AlRafidainTV.tr@SD" tvg-logo="https://i.imgur.com/rjXDCN5.png" group-title="Religious",Al Rafidain [Not 24/7]
 https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
-#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",TEST
+#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-21 19:19:47
+# SON GUNCELLEME: 2026-04-22 02:57:22
