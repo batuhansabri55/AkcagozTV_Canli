@@ -179,6 +179,8 @@ https://streams.uzunmuhalefet.com/stream/efcc025e-623c-40b6-b6d9-8141eec8d946.m3
 https://vidrame.pro/vr/get/68349cf6/1080.txt
 #EXTINF:-1 tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/50f26ac81150eb251be02f16e329d5ff.jpg" group-title="YEDEK LİSTE",ATVYEDEK46
 https://turnakusu.testworker0y.workers.dev/channel/QXR2IHwgQg==
+#EXTINF:-1 tvg-name="ATV YEDEK 2" group-title="ULUSAL",ATVYEDEK46
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ATVYEDEK45
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_480p.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/ff506778-7000-4a3b-8376-994a8f32058b.png" group-title="YEDEK LİSTE",ATVYEDEK45
@@ -419,6 +421,8 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Ben
 https://ensonhaber-live.ercdn.net/benguturk/benguturk_720p.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/benguturk.png" group-title="YEDEK LİSTE",BENGUTURKYEDEK
 https://ensonhaber-live.ercdn.net/benguturk/benguturk.m3u8
+#EXTINF:-1 tvg-name="BENGÜ TÜRK" group-title="ULUSAL",BENGUTURKYEDEK
+https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BENGUTURKYEDEK
 http://live.cdn-vizi.workers.dev/?ID=60
 #EXTINF:-1 group-title="YEDEK LİSTE",BENGUTURKYEDEK
@@ -1213,6 +1217,8 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/222394
 https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/chunklist_w92952657_b2128000.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",HABERCADDESITVYEDEK
 https://streams.uzunmuhalefet.com/stream/6c4058b6-e848-47b9-9fea-a973d7126f01.m3u8
+#EXTINF:-1 tvg-name="HABER GLOBAL" group-title="ULUSAL",HABERGLOBALYEDEK
+https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="YEDEK LİSTE",HABERGLOBALYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/40495
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/haberglobal.png" group-title="YEDEK LİSTE",HABERGLOBALYEDEK
