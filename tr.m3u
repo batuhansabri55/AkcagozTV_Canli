@@ -935,7 +935,9 @@ http://87.121.104.29:1453/turkfilmleryt/stream.m3u8
 https://streams.uzunmuhalefet.com/stream/c9d2a10f-769b-4df2-bd07-0481c66ae945.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ESPNYEDEK
 http://62.131.195.211:8086/4.ts
-#EXTINF:-1 tvg-logo="http://iptvci.free.nf/estv.png" group-title="YEDEK LİSTE",ESTVESKİŞEHİRYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE",ESTVYEDEK
+https://live.artidijitalmedya.com/artidijital_estv/estv/chunks.m3u8?nimblesessionid=2813215423
+#EXTINF:-1 tvg-logo="http://iptvci.free.nf/estv.png" group-title="YEDEK LİSTE",ESTVYEDEK
 https://live.artidijitalmedya.com/artidijital_estv/estv/chunks.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ESTVYEDEK
 https://streams.uzunmuhalefet.com/stream/7c50e51e-509e-438f-b1e0-444995e3bed8.m3u8
