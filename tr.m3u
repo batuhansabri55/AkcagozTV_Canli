@@ -4750,6 +4750,8 @@ https://goldvod.org/live/hpgdiscoo/123456/185.m3u8
 #EXTINF:-1 tvg-id="lalegütvl.tr" tvg-name="LALEGUL TV HD" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/lalegul_gcW.png" group-title="|TR| DİNİ KANALLAR",LALEGUL TV
 
 # --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
+#EXTINF:-1 group-title="Spor" tvg-logo="https://assets.uzunmuhalefet.com/logos/c7b84597-be23-4b13-b16d-4d680aa7159b.png" tvg-url="https://www.mackolik.com/" tvg-id="",Mackolik
+https://streams.uzunmuhalefet.com/stream/d41137ed-c97f-430c-8490-6cc6da010562.m3u8
 #EXTINF:-1 tvg-id="trt1b" tvg-name="TRT 1 -B-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/14f516e981f4bc0961c5a162665814bf.jpg" group-title="Ulusal",TRT 1 -B-
 https://ekmekyemeyin.denek1544.workers.dev/izle/trt1-114.m3u8
 #EXTINF:-1 tvg-id="trtturkb" tvg-name="TRT Türk -B-" tvg-logo="https://img.dsmartgo.com.tr/content/7/LM/13383/Thumbnail.png" group-title="Ulusal",TRT Türk -B-
@@ -8286,7 +8288,7 @@ https://viamotionhsi.netplus.ch/live/eds/eurod/browser-HLS8/eurod.m3u8
 https://viamotionhsi.netplus.ch/live/eds/trtturk/browser-dash/trtturk.mpd
 #EXTINF:-1 tvg-id="AlRafidainTV.tr@SD" tvg-logo="https://i.imgur.com/rjXDCN5.png" group-title="Religious",Al Rafidain [Not 24/7]
 https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
-#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",TEST
+#EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-23 08:03:04
+# SON GUNCELLEME: 2026-04-23 13:56:27
