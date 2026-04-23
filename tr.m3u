@@ -4748,30 +4748,16 @@ https://goldvod.org/live/hpgdiscoo/123456/115.m3u8
 #EXTINF:-1 tvg-id="beinsport.tr" tvg-name="beIN Sport SD" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN Sport
 https://goldvod.org/live/hpgdiscoo/123456/178.m3u8
 #EXTINF:-1 tvg-id="beinsport.tr" tvg-name="beIN SPORT 1 480P" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORT 1 480P
-https://goldvod.org/live/hpgdiscoo/123456/345.m3u8
-#EXTINF:-1 tvg-id="beinsport1.tr" tvg-name="beIN Sport 1 720P (O)" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN Sport 1 720P (O)
-https://goldvod.org/live/hpgdiscoo/123456/180.m3u8
-#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 720P (V)" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 720P (V)
-https://goldvod.org/live/hpgdiscoo/123456/141.m3u8
-#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 FEED (V)" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 FEED (V)
-https://goldvod.org/live/hpgdiscoo/123456/142.m3u8
-#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 8K FEED" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 8K FEED
-https://goldvod.org/live/hpgdiscoo/123456/150.m3u8
-#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 720P FEED" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 720P FEED
-https://goldvod.org/live/hpgdiscoo/123456/149.m3u8
-#EXTINF:-1 tvg-id="diyanettv.tr" tvg-name="DİYANET TV HD" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_diyanet_enZ.png" group-title="|TR| DİNİ KANALLAR",DİYANET TV
-https://goldvod.org/live/hpgdiscoo/123456/298.m3u8
-#EXTINF:-1 tvg-id="diyanettv.tr" tvg-name="DİYANET TV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_diyanet_enZ.png" group-title="|TR| DİNİ KANALLAR",DİYANET TV
-https://goldvod.org/live/hpgdiscoo/123456/184.m3u8
-#EXTINF:-1 tvg-id="semerkandtv.tr" tvg-name="SEMERKAND TV HD" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/semerkand_tv_Kjy.png" group-title="|TR| DİNİ KANALLAR",SEMERKAND TV
-https://goldvod.org/live/hpgdiscoo/123456/299.m3u8
-#EXTINF:-1 tvg-id="semerkandtv.tr" tvg-name="SEMERKAND TV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/semerkand_tv_Kjy.png" group-title="|TR| DİNİ KANALLAR",SEMERKAND TV
-https://goldvod.org/live/hpgdiscoo/123456/185.m3u8
-#EXTINF:-1 tvg-id="lalegütvl.tr" tvg-name="LALEGUL TV HD" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/lalegul_gcW.png" group-title="|TR| DİNİ KANALLAR",LALEGUL TV
 
 # --- 4750 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
 #EXTINF:-1 group-title="Spor" tvg-logo="https://assets.uzunmuhalefet.com/logos/c7b84597-be23-4b13-b16d-4d680aa7159b.png" tvg-url="https://www.mackolik.com/" tvg-id="",Mackolik
 https://streams.uzunmuhalefet.com/stream/d41137ed-c97f-430c-8490-6cc6da010562.m3u8
+#EXTINF:-1 group-title="Diğer" tvg-logo="https://assets.uzunmuhalefet.com/logos/57456c5a-8598-48bc-b003-97a98cfb62d9.png" tvg-url="https://www.duzguntv.net/" tvg-id="",Düzgün TV
+https://streams.uzunmuhalefet.com/stream/6c11c0ea-6b9e-4b7d-bfe5-fe570bdc12d6.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/f5fa3c04-5a07-44b7-a447-7b171065c9ac.png" tvg-url="https://karasu.tv/" tvg-id="",Karasu TV
+https://streams.uzunmuhalefet.com/stream/eb8b9300-8df9-423b-ac01-abb231d905d6.m3u8
+#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/7c837a96-f999-43a0-8e78-f1e48d34517a.png" tvg-url="https://www.erzurum.bel.tr/web-tv" tvg-id="",Erzurum Web TV
+https://streams.uzunmuhalefet.com/stream/bdcb40cb-0d48-4ac5-adc2-d8c04518ee66.m3u8
 #EXTINF:-1 tvg-id="trt1b" tvg-name="TRT 1 -B-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/14f516e981f4bc0961c5a162665814bf.jpg" group-title="Ulusal",TRT 1 -B-
 https://ekmekyemeyin.denek1544.workers.dev/izle/trt1-114.m3u8
 #EXTINF:-1 tvg-id="trtturkb" tvg-name="TRT Türk -B-" tvg-logo="https://img.dsmartgo.com.tr/content/7/LM/13383/Thumbnail.png" group-title="Ulusal",TRT Türk -B-
@@ -5088,6 +5074,26 @@ http://87.121.104.29:1071/cnbceyt/stream.m3u8
 http://87.121.104.29:1071/businessyt/stream.m3u8
 #EXTINF:-1 tvg-name="TRT SPOR" tvg-id="TRTSpor.tr" tvg-logo="https://i.ibb.co/WxD4PLG/trt-spor.png" group-title="SPOR",TRT SPOR
 #
+#EXTINF:-1 tvg-id="beinsport.tr" tvg-name="beIN SPORT 1 480P" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORT 1 480P
+https://goldvod.org/live/hpgdiscoo/123456/345.m3u8
+#EXTINF:-1 tvg-id="beinsport1.tr" tvg-name="beIN Sport 1 720P (O)" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN Sport 1 720P (O)
+https://goldvod.org/live/hpgdiscoo/123456/180.m3u8
+#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 720P (V)" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 720P (V)
+https://goldvod.org/live/hpgdiscoo/123456/141.m3u8
+#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 FEED (V)" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 FEED (V)
+https://goldvod.org/live/hpgdiscoo/123456/142.m3u8
+#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 8K FEED" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 8K FEED
+https://goldvod.org/live/hpgdiscoo/123456/150.m3u8
+#EXTINF:-1 tvg-id="beINSports1.tr" tvg-name="beIN SPORTS 1 720P FEED" tvg-logo="http://mediacms01.digiturkplay.com/channel_logo/w2_Bein_Sport1_250x150_2022.png" group-title="|TR| SPOR",beIN SPORTS 1 720P FEED
+https://goldvod.org/live/hpgdiscoo/123456/149.m3u8
+#EXTINF:-1 tvg-id="diyanettv.tr" tvg-name="DİYANET TV HD" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_diyanet_enZ.png" group-title="|TR| DİNİ KANALLAR",DİYANET TV
+https://goldvod.org/live/hpgdiscoo/123456/298.m3u8
+#EXTINF:-1 tvg-id="diyanettv.tr" tvg-name="DİYANET TV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_diyanet_enZ.png" group-title="|TR| DİNİ KANALLAR",DİYANET TV
+https://goldvod.org/live/hpgdiscoo/123456/184.m3u8
+#EXTINF:-1 tvg-id="semerkandtv.tr" tvg-name="SEMERKAND TV HD" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/semerkand_tv_Kjy.png" group-title="|TR| DİNİ KANALLAR",SEMERKAND TV
+https://goldvod.org/live/hpgdiscoo/123456/299.m3u8
+#EXTINF:-1 tvg-id="semerkandtv.tr" tvg-name="SEMERKAND TV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/semerkand_tv_Kjy.png" group-title="|TR| DİNİ KANALLAR",SEMERKAND TV
+https://goldvod.org/live/hpgdiscoo/123456/185.m3u8
 #EXTINF:-1 tvg-id="lalegütvl.tr" tvg-name="LALEGUL TV HD" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/lalegul_gcW.png" group-title="|TR| DİNİ KANALLAR",LALEGUL TV
 https://goldvod.org/live/hpgdiscoo/123456/300.m3u8
 #EXTINF:-1 tvg-id="lalegül.tr" tvg-name="LALEGUL TV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/lalegul_gcW.png" group-title="|TR| DİNİ KANALLAR",LALEGUL TV
@@ -6988,8 +6994,6 @@ http://stream2.taksimbilisim.com:1935/alanyatv/alanyatv.smil/playlist.m3u8
 https://streamer2.nexgen.bz/ATV/index.m3u8
 #EXTINF:-1 group-title="YEDEKLER",-1 tvg-id="BenguturkTV.tr@SD",Benguturk TV
 http://185.234.111.229:8000/play/a05u
-#EXTINF:-1 group-title="YEDEKLER",-1 tvg-id="BenguturkTV.tr@SD",BENGÜTÜRK TV [Not 24/7]
-https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 #EXTINF:-1 group-title="YEDEKLER",-1 tvg-id="BeratTV.tr@SD",Berat TV [Not 24/7]
 https://cdn-berattv.yayin.com.tr/berattv/berattv/playlist.m3u8
 #EXTINF:-1 group-title="YEDEKLER",-1 tvg-id="BeyazTV.tr@SD",Beyaz TV
@@ -8311,4 +8315,4 @@ https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr@SD" tvg-logo="https://i.imgur.com/x9kHsXo.png" group-title="General",Euro D [Geo-Blocked]
 https://viamotionhsi.netplus.ch/live/eds/eurod/browser-dash/eurod.mpd
 
-# SON GUNCELLEME: 2026-04-23 13:56:27
+# SON GUNCELLEME: 2026-04-23 19:18:27
