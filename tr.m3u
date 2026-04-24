@@ -3615,6 +3615,10 @@ https://live.artidijitalmedya.com/artidijital_tv3/tv3/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TV41YEDEK
 https://live.artidijitalmedya.com/artidijital_tv41/tv41/playlist.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TV41YEDEK
+https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8?nimblesessionid=2821120875
+#EXTINF:-1 group-title="YEDEK LİSTE",TV41YEDEK
+https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8?nimblesessionid=2821120881
 #EXTINF:-1 group-title="YEDEK LİSTE",TV41YEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TV41.TR@SD",TV41YEDEK
 https://streams.uzunmuhalefet.com/stream/9be90c1e-3678-4299-b4de-7739505049ad.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/CJEVfMitGEXZCmFP.png" group-title="YEDEK LİSTE",TV48YEDEK
