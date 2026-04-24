@@ -2313,6 +2313,8 @@ http://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 https://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",POWERTURKSLOWYEDEK
 https://listen.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",POWERTURKSLOWYEDEK
+https://livetv.powerapp.com.tr/pturkslow/slow.smil/chunks.m3u8?nimblesessionid=505954036
 #EXTINF:-1 group-title="YEDEK LİSTE",POWERTURKTAPTAZEYEDEK
 https://listen.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/BJxqSDyRCRxpXtzx.png" group-title="YEDEK LİSTE",POWERTURKTAPTAZEYEDEK
