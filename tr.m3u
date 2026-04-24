@@ -1513,7 +1513,7 @@ https://streams.uzunmuhalefet.com/stream/ca7b041b-e824-43e5-8b11-acfe78a0cda5.m3
 https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/8214ebad-32ad-4001-b317-ef7b6ea3edb3.png" group-title="YEDEK LİSTE",KANAL33YEDEK
 https://streams.uzunmuhalefet.com/stream/955e1693-e65a-4138-926f-c75ea3f4f550.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",-1,KANAL33YEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE",KANAL33YEDEK
 https://edge1.socialsmart.tv/kanal33/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/UJzLCPpsvWQQlBtb.png" group-title="YEDEK LİSTE",KANAL34YEDEK
 https://live.euromediacenter.com/kanal34/index.m3u8
@@ -1669,7 +1669,7 @@ https://edge.kuzeykibrissmart.tv/kanalt/bant1/playlist.m3u8
 https://edge1.socialsmart.tv/kanalurfa/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/v.png" group-title="YEDEK LİSTE",KANALVANTALYAYEDEK
 https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",KANALVYEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE",KANALVANTALYAYEDEK
 https://streams.uzunmuhalefet.com/stream/e73ec6ce-9225-49a0-8d68-1ee1df124f8c.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",138.KAPTANAMERIKA2YEDEK
 https://vidrame.pro/vr/get/08b02408/1080.txt
