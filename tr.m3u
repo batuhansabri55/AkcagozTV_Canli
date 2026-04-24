@@ -81,6 +81,8 @@ https://helga.iptv2022.com/sh/AlanyaTV/tracks-v1a1/mono.m3u8
 https://streams.uzunmuhalefet.com/stream/035e2ee2-fa74-406d-8c5b-073d3fd020a5.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",-1TVG-ID="ALANYAPOSTATV.TR@SD",ALANYAPOSTATVYEDEK
 https://api-tv3.yayin.com.tr/postatv/postatv/playlist.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",-1TVG-ID="ALANYAPOSTATV.TR@SD",ALANYAPOSTATVYEDEK
+http://cdn-postatv.yayin.com.tr/postatv/postatv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/HXSuS7IOMucLzbl-UC6OeH_PV8ID9FoMdg54gufdfTaf-gLZf8X9XGLFa8hPwEsacfpmABy4gg=s160k-c0x00ffffff-no-rj" group-title="YEDEK LİSTE",ALEMINKIRALI7/24YEDEK
 http://87.121.104.29:1453/aleminkiraliyt/stream.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",-1TVG-ID="ALMAHRIAHTV.TR@SD",ALMAHRIAHTVYEDEK
