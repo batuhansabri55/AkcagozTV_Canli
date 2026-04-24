@@ -1245,6 +1245,12 @@ https://ensonhaber-live.ercdn.net/haberglobal/haberglobal.m3u8
 https://cdn.tecostream.xyz/Haber_Global_TV.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",HABERGLOBALYEDEK
 https://github.com/tecotv2025/tecotv/raw/main/playlist/Haber_Global_TV.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HABERGLOBALYEDEK
+https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HABERGLOBALYEDEK
+https://tv.ensonhaber.com/haberglobal/haberglobal_480p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HABERGLOBALYEDEK
+https://tv.ensonhaber.com/haberglobal/haberglobal_360p.m3u8
 #EXTINF:-1 tvg-logo="https://img.dsmartgo.com.tr/content/d/R2/13858/Thumbnail.png" group-title="YEDEK LİSTE",HABERGLOBALYEDEK
 https://rotbalans.testworker0y.workers.dev/channel/SGFiZXIgR2xvYmFs
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/haber_global_SLu.png" group-title="YEDEK LİSTE",HABERGLOBALYEDEK
