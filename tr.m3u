@@ -2301,6 +2301,8 @@ https://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
 https://listen.powerapp.com.tr/plove/love.smil/playlist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",POWERTURKAKUSTIKYEDEK
 http://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",POWERTURKAKUSTIKYEDEK
+https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/IzxFlzYGlzdSMNaQ.png" group-title="YEDEK LİSTE",POWERTURKAKUSTIKYEDEK
 https://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://www.radio.de/300/powerturkakustik.png?versionde248764e27414b5dd02a0ae8bfd4622" group-title="YEDEK LİSTE",POWERTURKAKUSTIKYEDEK
