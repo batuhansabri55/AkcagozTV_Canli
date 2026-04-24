@@ -4601,6 +4601,18 @@ http://ventione.duckdns.org/index.php?id=369&token=DeaTHLesS
 http://ventione.duckdns.org/index.php?id=349&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TR: MOVİESMART CLASSİC HD+" group-title="D-SMART & TIVIBU SINEMA",TR: MOVİESMART CLASSİC HD+
 http://ventione.duckdns.org/index.php?id=350&token=DeaTHLesS
+#EXTINF:-1 tvg-id="beinboxoffice1.tr" tvg-name="TR: Royals B0X 0FFİCE 1 HD+" tvg-logo="https://uscloudpanel.com/logo/galeri_MTY3N_93.png" group-title="TR | Royals MEDIA SINEMA",TR: Royals B0X 0FFİCE 1 HD+
+http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/362968
+#EXTINF:-1 tvg-id="beinboxoffice2.tr" tvg-name="TR: Royals B0X 0FFİCE 2 HD+" tvg-logo="https://uscloudpanel.com/logo/galeri_MTY3N_92.png" group-title="TR | Royals MEDIA SINEMA",TR: Royals B0X 0FFİCE 2 HD+
+http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/362969
+#EXTINF:-1 tvg-id="beinboxoffice3.tr" tvg-name="TR: Royals B0X 0FFİCE 3 HD+" tvg-logo="https://uscloudpanel.com/logo/galeri_MTY3N_91.png" group-title="TR | Royals MEDIA SINEMA",TR: Royals B0X 0FFİCE 3 HD+
+http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/362970
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN B0X 0FFİCE 1 HD+" group-title="beIN MEDIA SINEMA",TR: beIN B0X 0FFİCE 1 HD+
+http://ventione.duckdns.org/index.php?id=362968&token=DeaTHLesS
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN B0X 0FFİCE 2 HD+" group-title="beIN MEDIA SINEMA",TR: beIN B0X 0FFİCE 2 HD+
+http://ventione.duckdns.org/index.php?id=362969&token=DeaTHLesS
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN B0X 0FFİCE 3 HD+" group-title="beIN MEDIA SINEMA",TR: beIN B0X 0FFİCE 3 HD+
+http://ventione.duckdns.org/index.php?id=362970&token=DeaTHLesS
 
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.ahaber.com.tr/" tvg-id="AHaber.tr",test
 https://streams.uzunmuhalefet.com/stream/b4f7a5e9-fcae-4258-83eb-cc37b6a68696.m3u8
