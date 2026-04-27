@@ -369,7 +369,7 @@ https://atom.han686314.workers.dev/bein-sports-2.m3u8
 http://cdn.tv-rds.workers.dev/beINSPORTS2TR.m3u8
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/beinsports3.png" group-title="YEDEK LİSTE",BEINSPORTS3YEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/223133
-#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/beinsports3.png" group-title="YEDEK LİSTE",BEINSPORTS3SDYEDEK
+#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/beinsports3.png" group-title="YEDEK LİSTE",BEINSPORTS3YEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/116676
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/beinsports3.png" group-title="YEDEK LİSTE",BEINSPORTS3YEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/31407
@@ -2399,10 +2399,6 @@ https://listen.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 https://livetv.powerapp.com.tr/pturkslow/slow.smil/chunks.m3u8?nimblesessionid=505954036
 #EXTINF:-1 group-title="YEDEK LİSTE",POWERTURKTAPTAZEYEDEK
 https://listen.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/BJxqSDyRCRxpXtzx.png" group-title="YEDEK LİSTE",POWERTURKTAPTAZEYEDEK
-http://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",POWERTURKTAPTAZEYEDEK
-https://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/powerturk.png" group-title="YEDEK LİSTE",POWERTÜRKTVYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/317
 #EXTINF:-1 group-title="YEDEK LİSTE",POWERTÜRKTVYEDEK
