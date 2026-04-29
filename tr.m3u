@@ -2635,8 +2635,6 @@ https://streams.uzunmuhalefet.com/stream/29c96be4-c6e1-466c-af9a-8fce3ae48303.m3
 https://cdn-onstv.yayin.com.tr/onstv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",OUTDOORYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=196855&extension=ts
-#EXTINF:-1 group-title="YEDEK LİSTE",OYUNHAVALARIYEDEK
-https://yayin.radyoseymen.com.tr:1070/stream
 #EXTINF:-1 group-title="YEDEK LİSTE",PALFMYEDEK
 https://moondigitaledge.radyotvonline.net/palfm/playlist.m3u8?listeningSessionID=69974b6bd33f937d_4421286_yoOXoWDR__00000020uC0&downloadSessionID=0
 #EXTINF:-1 group-title="YEDEK LİSTE",PALFMYEDEK
@@ -2753,7 +2751,7 @@ https://s4.photogrids.site/m5/D2IfnJfhJKIgpaIeoTSlYyWyLJjhH3EyMJjhZwNkZF4kZQtjpP
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314433&extension=ts
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/e0e94025-cf7c-4aea-95b4-99c550341b24.png" group-title="YEDEK LİSTE",REHBERTVYEDEK
 https://streams.uzunmuhalefet.com/stream/a3f446e5-a870-47f2-b351-dee7c6f163a4.m3u8
-#EXTINF:-1 tvg-logo="https://w1.pngwing.com/pngs/289/53/png-transparent-tv-rehber-tv-television-television-channel-a9-tv-trt-diyanet-advertising-live-television-thumbnail.png" group-title="YEDEK LİSTE",REHBERYEDEK
+#EXTINF:-1 tvg-logo="https://w1.pngwing.com/pngs/289/53/png-transparent-tv-rehber-tv-television-television-channel-a9-tv-trt-diyanet-advertising-live-television-thumbnail.png" group-title="YEDEK LİSTE",REHBERTVYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/103451
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/relax.jpg" group-title="YEDEK LİSTE",RELAX:AKVARYUMYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/64331
@@ -3623,10 +3621,8 @@ https://purple-fog-7608.han686314.workers.dev/selcukbeinsports2.m3u8
 https://purple-fog-7608.han686314.workers.dev/selcukbeinsports3.m3u8
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/1opo3ah.jpg" group-title="YEDEK LİSTE",TR:BEINSPORTS4YEDEK
 https://purple-fog-7608.han686314.workers.dev/selcukbeinsports4.m3u8
-#EXTINF:-1 tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/1f260af7-37dd-4368-8c9a-2d4c28fa5fd1.png" group-title="YEDEK LİSTE",TR:BRT1YEDEK
+#EXTINF:-1 tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/1f260af7-37dd-4368-8c9a-2d4c28fa5fd1.png" group-title="YEDEK LİSTE",BRT1YEDEK
 https://edge.kuzeykibrissmart.tv/brt1hd/bant1/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/b2d761b5-1822-4531-8f00-51bb232f8afa.png" group-title="YEDEK LİSTE",TR:DWTV(ENGLISH)YEDEK
-https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",-1TVG-ID="TRABZONBUYUKSEHIRBELEDIYESITV.TR@F",TRABZONBUYUKSEHIRBELEDIYESITVYEDEK
 https://tv191.radyotelekom.com.tr:3612/stream/play.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/TraceSSLogo.png/1200px-TraceSSLogo.png" group-title="YEDEK LİSTE",TRACESPORTSYEDEK
@@ -3691,8 +3687,6 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=31488
 https://streams.uzunmuhalefet.com/stream/82cce5b2-d998-4108-85d8-db0728722c4a
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/VjfFzSZpEPOhJCus.png" group-title="YEDEK LİSTE",TRT3SPORYEDEK
 https://streams.uzunmuhalefet.com/stream/82cce5b2-d998-4108-85d8-db0728722c4a.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",TRT3YEDEK
-https://tv-trt3.live.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",0/0/VOD/HLS/1857F0C2-3A80-4B95-BB35-FFCEFDCF4729.PNG"GROUP-TITLE="DEATHLESS",TRTARABIAYEDEK
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TRTARABIYEDEK
@@ -3853,8 +3847,6 @@ https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 https://streams.uzunmuhalefet.com/stream/6583f90f-0bff-4523-9547-1c9a96280b2e.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/trt-muzik-tr.png" group-title="YEDEK LİSTE",TRTMUZIKYEDEK
 https://tv-trtmuzik.medya.trt.com.tr/master_1440.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",TRTRADYONAĞMEYEDEK
-https://rd-trtnagme.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TRTSPORYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10783&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",TRTSPORYEDEK
@@ -3909,8 +3901,6 @@ https://tv-trtspor2.medya.trt.com.tr/master_1080p.m3u8
 https://tv-trtspor2.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/TRT_Spor_Yildiz_Logo.png" group-title="YEDEK LİSTE",TRTSPORYILDIZYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/97008
-#EXTINF:-1 group-title="YEDEK LİSTE",TRTTURKIYE'NINSESIRADYOSUYEDEK
-https://radio-trttsr.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TRTTURKYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=170669&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",TRTTURKYEDEK
@@ -3945,7 +3935,7 @@ https://tv-trtworld.medya.trt.com.tr:443/master_1080.m3u8
 https://tv-trtworld.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/trt4k.png" group-title="YEDEK LİSTE",TRTYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51
-#EXTINF:-1 group-title="YEDEK LİSTE",TRTÇOCUKHD YEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE",TRTCOCUKYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10749&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",TSMNOSTALJIYEDEK
 https://yayin.jumboserver.net:9100/stream
@@ -3977,8 +3967,6 @@ https://trkvz-radyolar.ercdn.net/turkuvazmusiki/playlist.m3u8
 https://streams.uzunmuhalefet.com/stream/3f802f18-482d-4b05-ace4-5fef782133be.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/obeQINcoJwjsXFyQ.png" group-title="YEDEK LİSTE",TURSABTVYEDEK
 https://live01.vucos.io/tursab_abr/tursab/chunks.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",TUTKUFMSAMSUNYEDEK
-https://sslyayin.radyoyayini.com:7015/
 #EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=170667&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
@@ -4023,7 +4011,7 @@ https://streams.uzunmuhalefet.com/stream/d95e9a1b-3955-4643-8327-413da9a1ce60.m3
 https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tv1.png" group-title="YEDEK LİSTE",TV1KAYSERIYEDEK
 https://edge1.socialsmart.tv/tv1/bant1/chunks.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",TV1YEDEK
+#EXTINF:-1 group-title="YEDEK LİSTE",TV1KAYSERIYEDEK
 https://streams.uzunmuhalefet.com/stream/a6134173-2b9d-442b-af96-fd4385f278ae.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TV2020YEDEK
 https://streams.uzunmuhalefet.com/stream/b0f9e41b-ed43-4373-8844-566529163b01.m3u8
@@ -4111,9 +4099,9 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=17066
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10773&extension=ts
 #EXTINF:-1 group-title="YEDEK LİSTE",TV85YEDEK
 https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk_1080p.m3u8
-#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/tv85.png" group-title="YEDEK LİSTE",5"TVG-NAME="TR:TV8.5"TVG-LOGO="HTTP://LOGO.MULTICMS.INFO/LOGOSLAR/TV85.PNG"GROUP-TITLE="TR-SPOR",TV85YEDEK
+#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/tv85.png" group-title="YEDEK LİSTE",TV85YEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/28
-#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/tv85.png" group-title="YEDEK LİSTE",5"TVG-NAME="TR:TV8.5"TVG-LOGO="HTTP://LOGO.MULTICMS.INFO/LOGOSLAR/TV85.PNG"GROUP-TITLE="TR-SPOR",TV85YEDEK
+#EXTINF:-1 tvg-logo="http://logo.multicms.info/logoslar/tv85.png" group-title="YEDEK LİSTE",TV85YEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/27
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/tv8.5f.png" group-title="YEDEK LİSTE",TV85YEDEK
 http://live.cdn-vizi.workers.dev/?ID=28
@@ -4279,8 +4267,6 @@ https://streams.uzunmuhalefet.com/stream/e8b425ad-571d-475d-a657-37bca8985836.m3
 https://teknobaba.han686314.workers.dev/Ulusal_Kanal.m3u8
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/ulusal.png" group-title="YEDEK LİSTE",ULUSALKANALYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/6
-#EXTINF:-1 tvg-logo="https://www.radyodinle.one/img/55x40/turku-radyo.jpg" group-title="YEDEK LİSTE",ULUSTANTÜRKÜLERYEDEK
-https://yayin.turkhosted.com/4591/stream
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="YEDEK LİSTE",UNIVERSALAKSIYONYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/13739
 #EXTINF:-1 tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="YEDEK LİSTE",UNIVERSALBELGESELYEDEK
@@ -4337,8 +4323,6 @@ https://streams.uzunmuhalefet.com/stream/f4bbf371-4d46-40b8-81b4-bc7abcb77170.m3
 https://live.artidijitalmedya.com/artidijital_urfanatiktv/urfanatiktv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="YEDEK LİSTE",URFANATIKTVYEDEK
 https://edge1.socialsmart.tv/urfanatiktv/bant1/chunks.m3u8
-#EXTINF:-1 group-title="YEDEK LİSTE",-1TVG-ID="4UTV.TR@SD",4UTVYEDEK
-https://hls.4utv.live/hls/stream.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",UZAYHABERYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314424&extension=ts
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/be0a02ec-3296-4e7b-8387-0d588693116f.png" group-title="YEDEK LİSTE",VAAZTVYEDEK
