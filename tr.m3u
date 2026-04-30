@@ -552,6 +552,8 @@ https://streams.uzunmuhalefet.com/stream/d673c331-6d74-44b8-b3cf-f954847e7b6a.m3
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/VDvWNpOWGNZzdLpV.png" group-title="YEDEK LİSTE",BIRTVYEDEK
 https://edge1.socialsmart.tv/birtv/bant1/playlist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",BITVYEDEK
+http://live.cdn-vizi.workers.dev/?ID=103
+#EXTINF:-1 group-title="YEDEK LİSTE",BITVYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/314376
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/f5dad25f-2aa5-4db5-be96-b345afe8d4c8.png" group-title="YEDEK LİSTE",BIZIMBERGAMATVYEDEK
 https://streams.uzunmuhalefet.com/stream/a6f27691-f39d-4a58-b56d-17076d4879ee.m3u8
@@ -695,6 +697,8 @@ https://cdn4.yayin.com.tr/channel6tv/index.m3u8
 https://cdn4.yayin.com.tr/channel6tv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/05f87412-5cd3-41ee-9874-66e41121c6eb.png" group-title="YEDEK LİSTE",CHILLTVYEDEK
 https://streams.uzunmuhalefet.com/stream/7cded060-e914-4c19-9adc-ba95c80e3697.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",CIFTCITVYEDEK
+http://live.cdn-vizi.workers.dev/?ID=114
 #EXTINF:-1 group-title="YEDEK LİSTE",CIFTCITVYEDEK
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 #EXTINF:-1 tvg-logo="http://iptvci.free.nf/ciftcitv.png" group-title="YEDEK LİSTE",CIFTCITVYEDEK
@@ -1372,6 +1376,8 @@ https://streams.uzunmuhalefet.com/stream/f48e56ef-c448-44c5-a742-e40199164b13.m3
 #EXTINF:-1 group-title="YEDEK LİSTE",-1,GENCSMSTVYEDEK
 https://tvsms.club/tv.php?kanal=genctv&file=.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",GENCTVYEDEK
+http://live.cdn-vizi.workers.dev/?ID=115
+#EXTINF:-1 group-title="YEDEK LİSTE",GENCTVYEDEK
 https://streams.uzunmuhalefet.com/stream/d1e7e32f-d06d-42db-997c-acdb9b0971f5.m3u8
 #EXTINF:-1 tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/aapIlnsRAlddDE.png" group-title="YEDEK LİSTE",GENCTVYEDEK
 https://edge.kuzeykibrissmart.tv/kibrisgenctv/bant1/playlist.m3u8
@@ -1479,6 +1485,8 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/147
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/148
 #EXTINF:-1 group-title="YEDEK LİSTE",HABERTURKYEDEK
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HABITATTVYEDEK
+http://live.cdn-vizi.workers.dev/?ID=129
 #EXTINF:-1 group-title="YEDEK LİSTE",HABITATTVYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/78416
 #EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
@@ -5511,6 +5519,8 @@ http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/209141
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/239
 #EXTINF:-1 tvg-id="startv.tr" tvg-name="TR: EURO STAR" tvg-logo="https://uscloudpanel.com/logo/galeri_MTY2N_148.png" group-title="TR | ULUSAL",TR: EURO STAR
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/241
+#EXTINF:-1 tvg-id="kanald.tr" tvg-name="TR: EURO D" tvg-logo="https://uscloudpanel.com/logo/galeri_MTY2N_162.png" group-title="TR | ULUSAL",TR: EURO D
+http://live.cdn-vizi.workers.dev/?ID=6
 #EXTINF:-1 tvg-id="kanald.tr" tvg-name="TR: EURO D" tvg-logo="https://uscloudpanel.com/logo/galeri_MTY2N_162.png" group-title="TR | ULUSAL",TR: EURO D
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/213
 #EXTINF:-1 tvg-id="trt2.tr" tvg-name="TR: TRT 2 HD+" tvg-logo="https://uscloudpanel.com/logo/galeri_MTY2N_134.png" group-title="TR | ULUSAL",TR: TRT 2 HD+
