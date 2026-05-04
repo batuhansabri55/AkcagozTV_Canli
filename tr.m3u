@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/rideordie16/epg/main/bin/guide.xml" url-tvg="https://raw.githubusercontent.com/rideordie16/epg/main/bin/guide.xml" tvg-url="https://raw.githubusercontent.com/rideordie16/epg/main/bin/guide.xml"
+#EXTM3U
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/aae0367d-c9ab-45a2-8518-0968cd5d2f55.png" tvg-url="https://www.trt1.com.tr/" tvg-id="TRT1.tr",TRT 1
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Ulusal" tvg-logo="https://assets.uzunmuhalefet.com/logos/ff506778-7000-4a3b-8376-994a8f32058b.png" tvg-url="https://www.atv.com.tr/" tvg-id="ATV.tr",ATV
@@ -3478,4 +3478,3 @@ https://anadolu.liderhost.com.tr:10877/;stream.mp3
 https://anadolu.liderhost.com.tr:10880/;stream.mp3
 #EXTINF:-1,ZENLAND
 https://moondigitaledge.radyotvonline.net/zenland/playlist.m3u8
-
