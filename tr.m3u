@@ -620,3 +620,15 @@ https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber.m3u8
 https://www.canlitv.tech/hls/tgrthaber.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TGRTHABERYEDEK
 https://streams.uzunmuhalefet.com/stream/bd9ebc63-8243-43d6-83a2-eeef100f7e20.m3u8
+
+#EXTINF:-1 group-title="YEDEK LİSTE",TELE1YEDEK
+https://tele1-live.ercdn.net/tele1/tele1_1080p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TELE1YEDEK
+https://tele1-live.ercdn.net/tele1/tele1_720p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TELE1YEDEK
+https://tele1-live.ercdn.net/tele1/tele1_360p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",0/0/VOD/HLS/CCF5746A-1EDA-45ED-9AFC-5E281FA7A704.PNG"GROUP-TITLE="DEATHLESS",TELE1YEDEK
+https://tele1-live.ercdn.net/tele1/tele1.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tele1_0KK.png" group-title="YEDEK LİSTE",TELE1YEDEK
+https://streams.uzunmuhalefet.com/stream/edba8b19-4745-4c5c-a235-b23a06d83eda.m3u8
+
