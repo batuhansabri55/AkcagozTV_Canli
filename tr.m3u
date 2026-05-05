@@ -638,3 +638,15 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Ulu
 https://internettv.guventechnology.com/hls/ulusaltv/index.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ULUSALKANALYEDEK
 https://streams.uzunmuhalefet.com/stream/e8b425ad-571d-475d-a657-37bca8985836.m3u8
+
+#EXTINF:-1 group-title="YEDEK LİSTE",FLASHHABERYEDEK
+https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",FLASHHABERYEDEK
+https://flashhaber-live.ercdn.net/flashhaber/flashhaber_720p.m3u8
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/9Hqnz42k04uQF15nx0Dk9sh6JtLWtVtzMIxp_W4TuxtUB2cq2Qx00ffffff-no-rj" group-title="YEDEK LİSTE",FLASHHABERYEDEK
+https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
+#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/48705266-7426-492a-a091-f2e599ba7a36.png" group-title="YEDEK LİSTE",FLASHHABERYEDEK
+https://streams.uzunmuhalefet.com/stream/6a0ae937-29d4-455b-b498-8fc8e82b95b4.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/F5FcvbZ/flash4ok.png" group-title="YEDEK LİSTE",FLASHHABERYEDEK
+https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8
+
