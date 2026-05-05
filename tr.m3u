@@ -580,4 +580,29 @@ https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",ULKETVYEDEK
 https://streams.uzunmuhalefet.com/stream/b94c88b7-3a36-48ce-9e04-19bc2b3921f9.m3u8
 
+#EXTINF:-1 tvg-logo="https://i.ibb.co/jZShqBM/Krt24v2.png" group-title="YEDEK LİSTE",KRTTVYEDEK
 https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Krt_Tv.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/halk-tv-tr.png" group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?sid=7te19znnzjxx&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/DYhmg6k/halk-tv.png" group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=2?=.m3u&format=.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv-live.daioncdn.net/halktv/halktv_1080p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv-live.daioncdn.net/halktv/halktv_720p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv-live.daioncdn.net/halktv/halktv_480p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv-live.daioncdn.net/halktv/halktv_360p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv-live.daioncdn.net/halktv/halktv.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gitlatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/halk-tv-tr.png" group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv-live.daioncdn.net/halktv/halktv.m3u8?checkedby:MyWay
+#EXTINF:-1 tvg-logo="https://i.ibb.co/BtYMK4q/halk21a.png" group-title="YEDEK LİSTE",HALKTVYEDEK
+https://halktv.daioncdn.net/halktv/halktv.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609
+#EXTINF:-1 group-title="YEDEK LİSTE",HALKTVYEDEK
+https://streams.uzunmuhalefet.com/stream/ea5e2000-56b6-4fb9-8dcf-b8bbe90b9f7b.m3u8
+
