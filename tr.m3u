@@ -410,3 +410,13 @@ https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TIVI6YEDEK
 https://streams.uzunmuhalefet.com/stream/dfe0f95a-70ae-418b-b4e1-c9d63515edab.m3u8
 
+#EXTINF:-1 group-title="YEDEK LİSTE",SZCTVYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Sozcu_Tv.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/sozcu_tv_KPX.png" group-title="YEDEK LİSTE",SZCTVYEDEK
+https://www.canlitv.tech/hls/sozcu.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/B40rjP3/szc1.png" group-title="YEDEK LİSTE",SZCTVYEDEK
+https://cdn.tecostream.xyz/Sozcu_Tv.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",SZCTVYEDEK
+http://104.238.23.221/dsgo.php?id=246240
+#EXTINF:-1 tvg-logo="https://assets.uzunmuhalefet.com/logos/f16de70e-9de7-4b41-937f-11a65fb2932d.png" group-title="YEDEK LİSTE",SZCTVYEDEK
+https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8
