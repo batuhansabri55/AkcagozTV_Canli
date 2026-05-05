@@ -519,3 +519,14 @@ https://tv100.daioncdn.net/tv100/tv100_1080p.m3u8?&sid=7te1of6jsdh3&app=356e7599
 https://tv100-live.daioncdn.net/tv100/tv100.m3u8?app=web?checkedby:MyWay
 #EXTINF:-1 group-title="YEDEK LİSTE",TV100YEDEK
 https://streams.uzunmuhalefet.com/stream/d95e9a1b-3955-4643-8327-413da9a1ce60.m3u8
+
+#EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
+#EXTINF:-1 tvg-logo="https://www.tvlogolar.xyz/europa/turkey/a2.png" group-title="YEDEK LİSTE",TV24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24_720p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24_360p.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TV24YEDEK
+https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/24_tv_wsF.png" group-title="YEDEK LİSTE",TV24YEDEK
+https://streams.uzunmuhalefet.com/stream/35b6fa6f-7915-4303-8198-30c2d7b82929.m3u8
