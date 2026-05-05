@@ -553,3 +553,19 @@ https://turkuaz.tecostream.xyz/ahaber
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/ultrasoner55/tv/main/logolar/A_HABER.png" group-title="YEDEK LİSTE",AHABERYEDEK
 https://www.canlitv.tech/hls/ahaber.m3u8
 
+#EXTINF:-1 tvg-logo="https://m.prectv60.lol/uploads/cache/channel_thumb/uploads/png/d066e7368bc1ea6388e912650ec7354c.png" group-title="YEDEK LİSTE",TRTHABERYEDEK
+https://tv-trthaber.medya.trt.com.tr/master_1440.m3u8?checkedby:MyWay
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/trt-haber-tr.png" group-title="YEDEK LİSTE",TRTHABERYEDEK
+https://tv-trthaber.medya.trt.com.tr/master_1440.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TRTHABERYEDEK
+https://tv-trthaber.medya.trt.com.tr/master_1080.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TRTHABERYEDEK
+https://tv-trthaber.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TRTHABERYEDEK
+https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_haber_BOU.png" group-title="YEDEK LİSTE",TRTHABERYEDEK
+http://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TRTHABERYEDEK"TVG-LOGO=""GROUP-TITLE="TURKIYEDEATHLESS",-1TVG-ID="TRTHABER.TR@SD",TRTHABERYEDEK
+https://ensonhaber-live.ercdn.net/trthaber/trthaber.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TRTHABERYEDEK
+https://streams.uzunmuhalefet.com/stream/aa1ae31d-1d61-44b2-b675-b74e3ff5c7fc.m3u8
