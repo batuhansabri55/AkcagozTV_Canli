@@ -530,3 +530,10 @@ https://turkmedya-live.ercdn.net/tv24/tv24_360p.m3u8
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1 tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/24_tv_wsF.png" group-title="YEDEK LİSTE",TV24YEDEK
 https://streams.uzunmuhalefet.com/stream/35b6fa6f-7915-4303-8198-30c2d7b82929.m3u8
+
+#EXTINF:-1 group-title="YEDEK LİSTE",TVNETYEDEK
+https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",TVNETYEDEK
+https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/WJm8IMexX9Atd0eOkmHFXagUieCC43mZO1B-TQAhBYm8iR4H5do0Go_kYWz_g-bSYxx6yXZPycI=s160k-c0x00ffffff-no-rj" group-title="YEDEK LİSTE",TVNETYEDEK
+https://streams.uzunmuhalefet.com/stream/9006885e-a09b-41e5-a19d-3273c30a74e9.m3u8
