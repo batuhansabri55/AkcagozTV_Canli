@@ -572,3 +572,10 @@ http://tv-trthaber.medya.trt.com.tr/master.m3u8
 https://ensonhaber-live.ercdn.net/trthaber/trthaber.m3u8
 #EXTINF:-1 group-title="YEDEK LİSTE",TRTHABERYEDEK
 https://streams.uzunmuhalefet.com/stream/aa1ae31d-1d61-44b2-b675-b74e3ff5c7fc.m3u8
+
+#EXTINF:-1 group-title="YEDEK LİSTE",ULKETVYEDEK
+https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",ULKETVYEDEK
+https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
+#EXTINF:-1 group-title="YEDEK LİSTE",ULKETVYEDEK
+https://streams.uzunmuhalefet.com/stream/b94c88b7-3a36-48ce-9e04-19bc2b3921f9.m3u8
