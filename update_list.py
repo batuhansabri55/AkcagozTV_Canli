@@ -13,14 +13,13 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 3350  
-THREADS = 4        # Derin tarama hızı (Çok artırırsan sunucular seni engeller, ölü sanırsın)
+THREADS = 4        
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    'Accept': '*/*',
-    'Connection': 'keep-alive'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
+# --- SENİN TAM YASAKLI LİSTEN (Eksiksiz) ---
 YASAKLI_GRUPLAR = [
     "FreeShot", "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", 
     "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
@@ -42,34 +41,39 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-def link_saglam_mi(url):
-    """VLC HATALARINI BİTİREN DERİN KONTROL: VERİ AKIŞI TESTİ"""
+def github_taze_link_avla():
+    """GITHUB'DA SON 48 SAATTE PAYLAŞILAN TAZE LİNKLERİ BULUR"""
+    yeni_kaynaklar = []
+    # Son 2 günün tarihini alarak daha geniş ama taze bir tarama yapar
+    tarih = (datetime.datetime.now() - datetime.timedelta(days=2)).strftime('%Y-%m-%d')
+    search_url = f"https://api.github.com/search/code?q=extension:m3u+trt1+pushed:>{tarih}&sort=indexed"
+    
     try:
-        # stream=True: Bağlantıyı kur ve açık tut
+        print(f"🕵️  GitHub'da derin arama yapılıyor (Filtre: >{tarih})...")
+        r = requests.get(search_url, headers=HEADERS, timeout=15)
+        if r.status_code == 200:
+            items = r.json().get('items', [])
+            for item in items:
+                # GitHub linkini RAW (ham) linke çevirme işlemi
+                raw = item['html_url'].replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+                yeni_kaynaklar.append(raw)
+                if len(yeni_kaynaklar) >= 10: break # En taze 10 kaynağı yakala
+    except:
+        print("⚠️  GitHub API limiti veya bağlantı sorunu. Mevcut listeden devam ediliyor.")
+    
+    return yeni_kaynaklar
+
+def link_saglam_mi(url):
+    """DERİN KONTROL: VERİ AKIŞI TESTİ"""
+    try:
         with requests.get(url, headers=HEADERS, timeout=10, stream=True, verify=False) as r:
-            if r.status_code != 200:
-                return False
-            
-            # Playlist içeriğini oku
-            content_start = next(r.iter_content(chunk_size=2048)).decode('utf-8', errors='ignore')
-            
-            if "#EXTM3U" in content_start:
-                # Eğer link bir M3U8 ise, içindeki gerçek video parçalarını bul
-                lines = content_start.split('\n')
-                video_segments = [l.strip() for l in lines if l.strip() and not l.startswith('#')]
-                
-                if not video_segments and "#EXT-X-STREAM-INF" not in content_start:
-                    return False # İçi boş m3u8
-                
-                # KRİTİK NOKTA: İlk video parçasını (TS) çekmeyi dene
-                # Eğer alt playlist varsa (Adaptive Stream), bu kontrolü esnek tut
-                return True 
-            
-            # Eğer doğrudan video dosyasıysa (MP4/TS), veri akıyor mu bak
-            return True
-            
-    except Exception:
-        return False
+            if r.status_code != 200: return False
+            # İlk 1KB veriyi oku, m3u8 veya stream yapısı var mı bak
+            content_start = next(r.iter_content(chunk_size=1024)).decode('utf-8', errors='ignore')
+            if "#EXTM3U" in content_start or "#EXT-X-STREAM-INF" in content_start or r.headers.get('Content-Type', '').startswith('video/'):
+                return True
+            return False
+    except: return False
 
 def kanal_isleme(kanal_metni, eklenen_urller):
     satir_grubu = kanal_metni.strip().split('\n')
@@ -79,33 +83,33 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     link_satiri = satir_grubu[-1].strip()
     
     # 1. Mükerrer Kontrolü
-    if link_satiri in eklenen_urller:
-        return None
+    if link_satiri in eklenen_urller: return None
 
-    # 2. Yasaklı Filtresi
+    # 2. Yasaklı Filtresi (TAM LİSTE)
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR):
         return None
 
-    # 3. DERİN ANALİZ (Gerçek Veri Okuma)
+    # 3. Canlılık Testi
     if link_saglam_mi(link_satiri):
-        # İsim Temizleme
+        # İsim Temizleme (HEVC, 4K vb. temizle)
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         
-        if 'group-title="' not in isim_temiz:
-            isim_temiz = isim_temiz.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
-            
         print(f" ✅ CANLI: {link_satiri[:45]}...")
         return f"{isim_temiz}\n{link_satiri}"
     
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM: Derin temizlik başlıyor. Ölü linklere geçit yok!")
+    print(f"🛡️  USTA SİSTEM: Derin temizlik ve taze av başlıyor!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
 
+    # 1. Taze kaynakları avla ve birleştir
+    avlananlar = github_taze_link_avla()
+    guncel_kaynak_listesi = list(set(YEDEK_KAYNAKLAR + avlananlar))
+    
     eklenen_urller = set()
     ana_liste_zirh = []
     ham_bulunanlar = []
@@ -119,17 +123,17 @@ def main():
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
 
-    # Kaynakları Tara
-    for kaynak in YEDEK_KAYNAKLAR:
+    # 2. Kaynakları Tara
+    for kaynak in guncel_kaynak_listesi:
         try:
-            print(f"📡 Taranıyor: {kaynak[:40]}")
+            print(f"📡 Kaynak Okunuyor: {kaynak[:50]}...")
             r = requests.get(kaynak, headers=HEADERS, timeout=12, verify=False)
             if r.status_code == 200:
                 bulunan = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
                 ham_bulunanlar.extend(bulunan)
         except: continue
 
-    # Mükerrerleri Ele
+    # 3. Mükerrerleri Ele ve Test Et
     unique_adaylar = []
     gorulen_linkler = set()
     for k in ham_bulunanlar:
@@ -138,22 +142,21 @@ def main():
             unique_adaylar.append(k)
             gorulen_linkler.add(link)
 
-    print(f"🔍 {len(unique_adaylar)} yeni aday bulundu. Derin test yapılıyor (Sabırlı ol usta)...")
+    print(f"🔍 {len(unique_adaylar)} yeni aday bulundu. Derin test yapılıyor...")
 
-    # ÇOKLU TEST (Hız: 4)
-    final_listesi = []
+    # 4. Çoklu Test (Threads: 4)
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # DOSYAYA YAZ
+    # 5. Dosyaya Yaz
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(ana_liste_zirh)
-        f.write(f"\n# --- DERİN TEMİZLİK SONRASI SAĞLAM YEDEKLER ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
+        f.write(f"\n# --- DERİN TEMİZLİK VE TAZE AV ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 BİTTİ USTA! Toplam {len(final_listesi)} adet gerçek çalışan kanal eklendi.")
+    print(f"\n🏁 BİTTİ USTA! {len(final_listesi)} yeni sağlam kanal eklendi.")
 
 if __name__ == "__main__":
     main()
