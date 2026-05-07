@@ -5,7 +5,7 @@ import datetime
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 6210  # Bu satıra kadar olan kısım dokunulmazdır
+ZIRH_LIMIT = 6210  # İlk 6210 satıra asla dokunulmaz
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
@@ -32,11 +32,20 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def link_saglam_mi(url):
-    """Linkin gerçekten çalışıp çalışmadığını kontrol eder"""
+    """Sadece bağlantıya değil, m3u8 içeriğine de bakar (VLC hatalarını eler)"""
     try:
-        # HEAD isteği ile sadece başlığı kontrol eder, hızlıdır
-        response = requests.head(url, headers=HEADERS, timeout=7, allow_redirects=True)
-        return response.status_code == 200
+        # stream=True ile sadece dosyanın başını indiriyoruz, kota yemez hızlıdır
+        response = requests.get(url, headers=HEADERS, timeout=10, stream=True)
+        
+        if response.status_code == 200:
+            # Dosyanın ilk 512 byte'ını çekip #EXTM3U kontrolü yapıyoruz
+            # Bu sayede içi boş PHP dosyalarını ve hata sayfalarını eliyoruz
+            iterable = response.iter_content(512)
+            icerik_basi = next(iterable).decode('utf-8', errors='ignore')
+            
+            if "#EXTM3U" in icerik_basi:
+                return True
+        return False
     except:
         return False
 
@@ -92,8 +101,9 @@ def main():
                         if any(yasak.upper() in ext_satiri.upper() for yasak in YASAKLI_GRUPLAR):
                             continue
                             
-                        # Mükerrer ve Canlılık kontrolü
+                        # Mükerrer ve Derin Canlılık kontrolü
                         if link_satiri not in eklenen_urller:
+                            print(f"🔍 Kontrol ediliyor: {link_satiri[:50]}...")
                             if link_saglam_mi(link_satiri):
                                 temiz_ext = yedek_kanali_temizle(ext_satiri)
                                 if 'group-title="' not in temiz_ext:
@@ -101,10 +111,9 @@ def main():
                                 
                                 taze_kanal_listesi.append(f"{temiz_ext}\n{link_satiri}")
                                 eklenen_urller.add(link_satiri)
-                                print(f"  + Eklendi: {link_satiri[:40]}...")
+                                print("  ✅ CANLI: Depoya eklendi.")
                             else:
-                                # Ölü linkleri depoya sokmuyoruz
-                                pass 
+                                print("  ❌ BOZUK: Atlandı.")
         except Exception as e:
             print(f"  ⚠️ Kaynak hatası: {e}")
             continue
@@ -119,7 +128,7 @@ def main():
         zaman = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         f.write(f"\n# SON OTOMATIK GUNCELLEME: {zaman}\n")
     
-    print(f"\n🏁 İşlem Bitti Usta! {len(taze_kanal_listesi)} adet taze ve çalışan yedek depoya eklendi.")
+    print(f"\n🏁 İşlem Bitti Usta! {len(taze_kanal_listesi)} adet gerçek çalışan yedek depoya eklendi.")
 
 if __name__ == "__main__":
     main()
