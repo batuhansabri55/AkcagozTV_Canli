@@ -3,30 +3,61 @@ import re
 import os
 import datetime
 import shutil
-import time
-from concurrent.futures import ThreadPoolExecutor
 import urllib3
+from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urljoin
 
-# SSL hatalarını sustur
+# SSL UYARILARINI KAPAT
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# --- AYARLAR ---
+# =========================
+# AYARLAR
+# =========================
+
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 3350  
-THREADS = 4        # Derin tarama hızı (Çok artırırsan sunucular seni engeller, ölü sanırsın)
+
+# İlk kaç satır korunacak
+ZIRH_LIMIT = 3350
+
+# Thread sayısı
+THREADS = 4
+
+# Timeout
+CONNECT_TIMEOUT = 8
+READ_TIMEOUT = 15
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    'Accept': '*/*',
-    'Connection': 'keep-alive'
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "*/*",
+    "Connection": "keep-alive"
 }
 
 YASAKLI_GRUPLAR = [
-    "FreeShot", "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", 
-    "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
-    "MediabayTV", "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
-    "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
-    "Superxfilm", "CINEMAMOD", "Adult", "XXX"
+    "FreeShot",
+    "Webteizle",
+    "TR FILM",
+    "ARZU FILM",
+    "ERLER FILM",
+    "Taşacak Bu Deniz",
+    "EZEL",
+    "FilmMedya",
+    "Keloğlan",
+    "PolskieTV",
+    "MediabayTV",
+    "SarkorTV",
+    "GLWIZ",
+    "PERSIAN",
+    "GledaiTV",
+    "RDS TV",
+    "TouchTV",
+    "Slovakia",
+    "Bulgaria",
+    "Romania",
+    "Azerbeycan",
+    "Superxfilm",
+    "CINEMAMOD",
+    "Adult",
+    "XXX"
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -42,118 +73,358 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
+# =========================
+# SESSION
+# =========================
+
+session = requests.Session()
+session.headers.update(HEADERS)
+
+# =========================
+# LINK TEST
+# =========================
+
 def link_saglam_mi(url):
-    """VLC HATALARINI BİTİREN DERİN KONTROL: VERİ AKIŞI TESTİ"""
+    """
+    GERÇEK IPTV TESTİ:
+    - URL açılıyor mu
+    - M3U8 geçerli mi
+    - TS segment geliyor mu
+    - Veri akışı var mı
+    """
+
     try:
-        # stream=True: Bağlantıyı kur ve açık tut
-        with requests.get(url, headers=HEADERS, timeout=10, stream=True, verify=False) as r:
+        with session.get(
+            url,
+            timeout=(CONNECT_TIMEOUT, READ_TIMEOUT),
+            stream=True,
+            verify=False,
+            allow_redirects=True
+        ) as r:
+
             if r.status_code != 200:
                 return False
-            
-            # Playlist içeriğini oku
-            content_start = next(r.iter_content(chunk_size=2048)).decode('utf-8', errors='ignore')
-            
-            if "#EXTM3U" in content_start:
-                # Eğer link bir M3U8 ise, içindeki gerçek video parçalarını bul
-                lines = content_start.split('\n')
-                video_segments = [l.strip() for l in lines if l.strip() and not l.startswith('#')]
-                
-                if not video_segments and "#EXT-X-STREAM-INF" not in content_start:
-                    return False # İçi boş m3u8
-                
-                # KRİTİK NOKTA: İlk video parçasını (TS) çekmeyi dene
-                # Eğer alt playlist varsa (Adaptive Stream), bu kontrolü esnek tut
-                return True 
-            
-            # Eğer doğrudan video dosyasıysa (MP4/TS), veri akıyor mu bak
+
+            content_type = r.headers.get("Content-Type", "").lower()
+
+            # =========================
+            # M3U8 TESTİ
+            # =========================
+
+            if (
+                "mpegurl" in content_type
+                or "m3u8" in url.lower()
+            ):
+
+                text = ""
+
+                for chunk in r.iter_content(chunk_size=2048):
+
+                    if chunk:
+                        try:
+                            text += chunk.decode("utf-8", errors="ignore")
+                        except:
+                            pass
+
+                    if len(text) > 12000:
+                        break
+
+                if "#EXTM3U" not in text:
+                    return False
+
+                lines = []
+
+                for line in text.splitlines():
+
+                    line = line.strip()
+
+                    if not line:
+                        continue
+
+                    if line.startswith("#"):
+                        continue
+
+                    lines.append(line)
+
+                if not lines:
+                    return False
+
+                ilk_segment = lines[0]
+
+                # Relative URL düzelt
+                if not ilk_segment.startswith("http"):
+                    ilk_segment = urljoin(url, ilk_segment)
+
+                # =========================
+                # TS SEGMENT TESTİ
+                # =========================
+
+                with session.get(
+                    ilk_segment,
+                    timeout=(CONNECT_TIMEOUT, READ_TIMEOUT),
+                    stream=True,
+                    verify=False,
+                    allow_redirects=True
+                ) as ts:
+
+                    if ts.status_code != 200:
+                        return False
+
+                    veri = next(ts.iter_content(4096), None)
+
+                    if not veri:
+                        return False
+
+                    # Çok küçük veri sahte olabilir
+                    if len(veri) < 1000:
+                        return False
+
+                return True
+
+            # =========================
+            # DIRECT VIDEO TESTİ
+            # =========================
+
+            veri = next(r.iter_content(4096), None)
+
+            if not veri:
+                return False
+
+            if len(veri) < 1000:
+                return False
+
             return True
-            
-    except Exception:
+
+    except:
         return False
 
-def kanal_isleme(kanal_metni, eklenen_urller):
-    satir_grubu = kanal_metni.strip().split('\n')
-    if len(satir_grubu) < 2: return None
-    
-    ext_satiri = satir_grubu[0]
-    link_satiri = satir_grubu[-1].strip()
-    
-    # 1. Mükerrer Kontrolü
-    if link_satiri in eklenen_urller:
+# =========================
+# KANAL İŞLEME
+# =========================
+
+def kanal_isleme(kanal_metni, mevcut_linkler):
+
+    try:
+
+        satirlar = kanal_metni.strip().splitlines()
+
+        if len(satirlar) < 2:
+            return None
+
+        extinf = satirlar[0].strip()
+        url = satirlar[-1].strip()
+
+        # URL geçersiz
+        if not url.startswith("http"):
+            return None
+
+        # Mükerrer
+        if url in mevcut_linkler:
+            return None
+
+        # Yasaklı grup
+        if any(y.lower() in extinf.lower() for y in YASAKLI_GRUPLAR):
+            return None
+
+        # Test
+        if not link_saglam_mi(url):
+            print(f" ❌ ÖLÜ: {url[:60]}")
+            return None
+
+        # İsim temizleme
+        temiz = re.sub(
+            r'\s*\|\s*[A-Z0-9+]+\b',
+            '',
+            extinf
+        )
+
+        temiz = re.sub(
+            r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b',
+            '',
+            temiz,
+            flags=re.I
+        )
+
+        if 'group-title="' not in temiz:
+            temiz = temiz.replace(
+                '#EXTINF:',
+                '#EXTINF:-1 group-title="YEDEKLER",'
+            )
+
+        print(f" ✅ CANLI: {url[:60]}")
+
+        return f"{temiz}\n{url}"
+
+    except:
         return None
 
-    # 2. Yasaklı Filtresi
-    if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR):
-        return None
+# =========================
+# M3U PARSER
+# =========================
 
-    # 3. DERİN ANALİZ (Gerçek Veri Okuma)
-    if link_saglam_mi(link_satiri):
-        # İsim Temizleme
-        isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
-        isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
-        
-        if 'group-title="' not in isim_temiz:
-            isim_temiz = isim_temiz.replace('#EXTINF:', '#EXTINF:-1 group-title="YEDEKLER",')
-            
-        print(f" ✅ CANLI: {link_satiri[:45]}...")
-        return f"{isim_temiz}\n{link_satiri}"
-    
-    return None
+def m3u_parse(text):
+
+    pattern = r'(#EXTINF:.*?\n.*?http[^\n\r]+)'
+
+    return re.findall(
+        pattern,
+        text,
+        re.DOTALL | re.IGNORECASE
+    )
+
+# =========================
+# ANA SİSTEM
+# =========================
 
 def main():
-    print(f"🛡️  USTA SİSTEM: Derin temizlik başlıyor. Ölü linklere geçit yok!")
-    
+
+    print("\n🛡️ IPTV DERİN TEMİZLİK BAŞLADI\n")
+
+    # YEDEK OLUŞTUR
     if os.path.exists(FILE_PATH):
-        shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
 
-    eklenen_urller = set()
-    ana_liste_zirh = []
-    ham_bulunanlar = []
+        backup_name = (
+            FILE_PATH +
+            "." +
+            datetime.datetime.now().strftime("%Y%m%d_%H%M%S") +
+            ".bak"
+        )
 
-    # Zırhı ve Mevcut Linkleri Oku
+        shutil.copyfile(FILE_PATH, backup_name)
+
+        print(f"📦 YEDEK ALINDI: {backup_name}")
+
+    mevcut_linkler = set()
+    ana_zirh = []
+
+    # =========================
+    # MEVCUT DOSYA OKU
+    # =========================
+
     if os.path.exists(FILE_PATH):
-        with open(FILE_PATH, 'r', encoding='utf-8') as f:
-            tum_lines = f.readlines()
-            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]
-            for s in ana_liste_zirh:
-                if s.strip().startswith("http"):
-                    eklenen_urller.add(s.strip())
 
-    # Kaynakları Tara
+        with open(FILE_PATH, "r", encoding="utf-8", errors="ignore") as f:
+
+            lines = f.readlines()
+
+            ana_zirh = lines[:ZIRH_LIMIT]
+
+            for line in lines:
+
+                line = line.strip()
+
+                if line.startswith("http"):
+                    mevcut_linkler.add(line)
+
+    print(f"🧱 ZIRH LINK SAYISI: {len(mevcut_linkler)}")
+
+    # =========================
+    # KAYNAKLARI TARA
+    # =========================
+
+    bulunanlar = []
+
     for kaynak in YEDEK_KAYNAKLAR:
+
         try:
-            print(f"📡 Taranıyor: {kaynak[:40]}")
-            r = requests.get(kaynak, headers=HEADERS, timeout=12, verify=False)
-            if r.status_code == 200:
-                bulunan = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
-                ham_bulunanlar.extend(bulunan)
-        except: continue
 
-    # Mükerrerleri Ele
-    unique_adaylar = []
-    gorulen_linkler = set()
-    for k in ham_bulunanlar:
-        link = k.strip().split('\n')[-1].strip()
-        if link not in eklenen_urller and link not in gorulen_linkler:
-            unique_adaylar.append(k)
-            gorulen_linkler.add(link)
+            print(f"\n📡 Taranıyor: {kaynak}")
 
-    print(f"🔍 {len(unique_adaylar)} yeni aday bulundu. Derin test yapılıyor (Sabırlı ol usta)...")
+            r = session.get(
+                kaynak,
+                timeout=(CONNECT_TIMEOUT, READ_TIMEOUT),
+                verify=False,
+                allow_redirects=True
+            )
 
-    # ÇOKLU TEST (Hız: 4)
-    final_listesi = []
+            if r.status_code != 200:
+                print(" ❌ Kaynak erişilemedi")
+                continue
+
+            data = r.text
+
+            bulunan = m3u_parse(data)
+
+            print(f" 🔍 Bulunan: {len(bulunan)}")
+
+            bulunanlar.extend(bulunan)
+
+        except Exception as e:
+
+            print(f" ❌ HATA: {e}")
+
+    # =========================
+    # MÜKERRER TEMİZLE
+    # =========================
+
+    unique_kanallar = []
+    gorulenler = set()
+
+    for kanal in bulunanlar:
+
+        try:
+
+            link = kanal.strip().splitlines()[-1].strip()
+
+            if link in mevcut_linkler:
+                continue
+
+            if link in gorulenler:
+                continue
+
+            gorulenler.add(link)
+
+            unique_kanallar.append(kanal)
+
+        except:
+            pass
+
+    print(f"\n🧪 TEST EDİLECEK YENİ KANAL: {len(unique_kanallar)}")
+
+    # =========================
+    # THREAD TEST
+    # =========================
+
+    final_liste = []
+
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
-        results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
-        final_listesi = [r for r in results if r is not None]
 
+        results = list(
+            executor.map(
+                lambda x: kanal_isleme(x, mevcut_linkler),
+                unique_kanallar
+            )
+        )
+
+        final_liste = [
+            r for r in results
+            if r is not None
+        ]
+
+    # =========================
     # DOSYAYA YAZ
-    with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(ana_liste_zirh)
-        f.write(f"\n# --- DERİN TEMİZLİK SONRASI SAĞLAM YEDEKLER ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
-        for k in final_listesi:
-            f.write(k + "\n")
+    # =========================
 
-    print(f"\n🏁 BİTTİ USTA! Toplam {len(final_listesi)} adet gerçek çalışan kanal eklendi.")
+    with open(FILE_PATH, "w", encoding="utf-8") as f:
+
+        f.writelines(ana_zirh)
+
+        f.write(
+            f"\n# ===== CANLI YEDEKLER ===== {datetime.datetime.now().strftime('%d-%m-%Y %H:%M')} ===== #\n\n"
+        )
+
+        for kanal in final_liste:
+
+            f.write(kanal + "\n\n")
+
+    print("\n===================================")
+    print(f"✅ EKLENEN GERÇEK CANLI KANAL: {len(final_liste)}")
+    print("🏁 TEMİZLİK TAMAMLANDI")
+    print("===================================\n")
+
+# =========================
+# START
+# =========================
 
 if __name__ == "__main__":
     main()
