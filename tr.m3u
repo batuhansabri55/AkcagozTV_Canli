@@ -3287,10 +3287,6 @@ https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb8.m3u8
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn.m3u8
 #EXTINF:-1 tvg-id="exxen-1" tvg-name="TR:Exxen 1 HD" tvg-logo="https://i.hizliresim.com/1y7novn.jpg" group-title="DeaTHLesS-TV",TR:Exxen 1 HD
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn1.m3u8
-
-
-
-
 #EXTINF:0 user-agent="Firefox" tvg-id="TRT 4K" tvg-name="TRT 4K" tvg-logo="http://logo.multicms.info/logoslar/trt4k.png" group-title="TR-ULUSAL",TRTYEDEK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51
 #EXTINF:0 user-agent="Firefox" tvg-id="TRT 1" tvg-name="TRT 1 " tvg-logo="http://logo.multicms.info/logoslar/trt1.png" group-title="TR-ULUSAL",TRT1YEDEK
@@ -3306,7 +3302,7 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/31
 #EXTINF:0 user-agent="Firefox" tvg-id="TV8" tvg-name="TV 8 " tvg-logo="http://logo.multicms.info/logoslar/tv8.png" group-title="TR-ULUSAL",TV8YEDEK 
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/30
 #EXTINF:0 user-agent="Firefox" tvg-id="Show TV" tvg-name="SHOW TV " tvg-logo="http://logo.multicms.info/logoslar/show.png" group-title="TR-ULUSAL",SHOW TV 
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/,(.*)$
+http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/42
 #EXTINF:0 user-agent="Firefox" tvg-id="Show TV" tvg-name="SHOW TV " tvg-logo="http://logo.multicms.info/logoslar/show.png" group-title="TR-ULUSAL",SHOWTV 
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/43
 #EXTINF:0 user-agent="Firefox" tvg-id="Kanal D" tvg-name="KANAL D " tvg-logo="http://logo.multicms.info/logoslar/kanald.png" group-title="TR-ULUSAL",KANAL D 
@@ -3887,20 +3883,6 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51102
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51103
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",YOL TV
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/124
-
-# --- 6210 SATIRLIK DOKUNULMAZ BOLGE SONRASI YEDEKLER ---
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.ahaber.com.tr/" tvg-id="AHaber.tr",A HABER
-https://streams.uzunmuhalefet.com/stream/b4f7a5e9-fcae-4258-83eb-cc37b6a68696.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/3ec303e0-dabd-4b43-b396-e816a7ed7e43.png" tvg-url="https://www.liderhaber.com.tr/" tvg-id="LiderHaber.tr",Lider Haber TV
-https://streams.uzunmuhalefet.com/stream/5b8db41e-b662-4652-bd8a-fc198ceb33f4.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/b9a8635c-848b-49f7-ad7f-0b7fd2efe2eb.png" tvg-url="https://neohaber.com/" tvg-id="",Neo Haber
-https://streams.uzunmuhalefet.com/stream/b2afa8c0-ab41-4111-a988-38e6db9e0d87.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/c5caacf3-827c-4d45-9138-91ffd615afb3.png" tvg-url="https://tv.tbmm.gov.tr/" tvg-id="",TBMM TV
-https://streams.uzunmuhalefet.com/stream/5fa3931d-88db-42b1-aac9-1006708bd3e8.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/a1069752-bcab-437a-9283-ea7058e2acaa.png" tvg-url="https://www.dha.com.tr/" tvg-id="",DHA 1
-https://streams.uzunmuhalefet.com/stream/46e674ea-131a-4c9c-ba58-b04e64fdecbc.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/a1069752-bcab-437a-9283-ea7058e2acaa.png" tvg-url="https://www.dha.com.tr/" tvg-id="",DHA 2
-https://streams.uzunmuhalefet.com/stream/908e148d-71ea-4aaf-a984-845515890395.m3u8
 
 # --- DERİN TEMİZLİK VE TAZE AV (07-05-2026 21:43) --- #
 #EXTINF:-1 tvg-id="4UTV.tr@",4U TV (720p)
