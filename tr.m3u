@@ -765,7 +765,7 @@ https://dogus.daioncdn.net/dmax/dmax_480p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0Unl
 https://dogus.daioncdn.net/dmax/dmax_360p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0UnlDWWNRVnQ1b0VMbWpHYndYRjRrM2l0Yz0=&sid=859nsaxc33ff&app=5a02c599-d17e-4982-9b04-090934d51af7&ce=3
 #EXTINF:-1,DMAXYEDEK
 https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,
 https://dogus-blackout.daioncdn.net/tlctv_geoblock.smil/playlist.m3u8
 #EXTINF:-1,DMAXYEDEK
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dUtLcFk4TkM1YjBOWlFIa1huL0UrMUYvcjhEcStnVU1TZUpsOVo5QXV4ST0=
@@ -3122,7 +3122,11 @@ https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 #EXTINF:-1,Trt Çocuk  HD
 https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1,Minika Çocuk HD
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
+#EXTINF:-1,Minika Çocuk HD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk_720p.m3u8
+#EXTINF:-1,Minika Go HD
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
 #EXTINF:-1,Minika Go HD
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago_720p.m3u8
 #EXTINF:-1,Trt Diyanet Çocuk HD
