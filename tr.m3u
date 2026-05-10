@@ -16,6 +16,20 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8?checkedby:MyWay
 http://89.187.191.41/ATV-HD-TR/video.m3u8
 #EXTINF:-1,ATVYEDEK46
 https://streams.uzunmuhalefet.com/stream/c8758555-8581-4dec-9a46-ebcfaf9ace0a.m3u8
+#EXTINF:-1 tvg-id="ATV(src05).tr" tvg-logo="" group-title="Ulusal",ATVYEDEK45
+https://trkvz.daioncdn.net/atv/atv_1080p.m3u8?e=1773191892&st=R0Zi21YNAeb87xjPdhFmwA&sid=88ev08qbhx3f&app=d1ce2d40-5256-4550-b02e-e73c185a314e&ce=3|User-Agent=Mozilla/5.0&Referer=https://www.atv.com.tr/
+#EXTINF:-1  tvg-id="ATV(src05).tr" tvg-logo="" group-title="Ulusal",ATVYEDEK46
+https://trkvz.daioncdn.net/atv/atv_720p.m3u8?e=1773191892&st=R0Zi21YNAeb87xjPdhFmwA&sid=88ev08qbhx3f&app=d1ce2d40-5256-4550-b02e-e73c185a314e&ce=3|User-Agent=Mozilla/5.0&Referer=https://www.atv.com.tr/
+#EXTINF:-1 tvg-id="ATV(src05).tr" tvg-logo="" group-title="Ulusal",ATVYEDEK45
+https://trkvz.daioncdn.net/atv/atv_480p.m3u8?e=1773191892&st=R0Zi21YNAeb87xjPdhFmwA&sid=88ev08qbhx3f&app=d1ce2d40-5256-4550-b02e-e73c185a314e&ce=3|User-Agent=Mozilla/5.0&Referer=https://www.atv.com.tr/
+#EXTINF:-1 tvg-id="ATV(src05).tr" tvg-logo="" group-title="Ulusal",ATVYEDEK46
+https://trkvz.daioncdn.net/atv/atv_360p.m3u8?e=1773191892&st=R0Zi21YNAeb87xjPdhFmwA&sid=88ev08qbhx3f&app=d1ce2d40-5256-4550-b02e-e73c185a314e&ce=3|User-Agent=Mozilla/5.0&Referer=https://www.atv.com.tr/
+
+
+
+
+
+
 
 #EXTINF:-1,KANALDYEDEK39
 http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
@@ -118,6 +132,20 @@ http://dygvideo.dygdigital.com/live/hls/stardai?m3u8
 http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
 #EXTINF:-1,STARTVYEDEK36
 https://streams.uzunmuhalefet.com/stream/a8ea8b0b-9c06-41ce-b7f9-35e895c78b77.m3u8
+#EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal",STARTVYEDEK37
+#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
+https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
+#EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal",STARTVYEDEK36
+#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
+https://dogus.daioncdn.net/startv/startv_480p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
+#EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal",STARTVYEDEK37
+#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
+https://dogus.daioncdn.net/startv/startv_360p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
+
+
+
+
+
 
 
 #EXTINF:-1,TV8YEDEK31
@@ -156,6 +184,18 @@ https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3&
 #EXTINF:-1,TV8YEDEK30
 https://streams.uzunmuhalefet.com/stream/e93b8e86-e4fc-450a-81d4-2188eda7dda0.m3u8
+#EXTINF:-1 tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal",TV8YEDEK31
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
+https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal",TV8YEDEK30
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
+https://tv8.daioncdn.net/tv8/tv8_720p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal",TV8YEDEK31
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
+https://tv8.daioncdn.net/tv8/tv8_480p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1  tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal",TV8YEDEK30
+#EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
+https://tv8.daioncdn.net/tv8/tv8_360p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
 
 #EXTINF:-1,NOWTVYEDEK34
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
