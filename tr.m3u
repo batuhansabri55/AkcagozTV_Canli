@@ -1,8 +1,6 @@
 #EXTM3U
 
 #EXTINF:-1,ATVYEDEK45
-http://89.187.191.41/ATV-HD-TR/video.m3u8
-#EXTINF:-1,ATVYEDEK45
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 #EXTINF:-1,ATVYEDEK46
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_720p.m3u8
@@ -15,8 +13,9 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 #EXTINF:-1,ATVYEDEK46
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8?checkedby:MyWay
 #EXTINF:-1,ATVYEDEK45
+http://89.187.191.41/ATV-HD-TR/video.m3u8
+#EXTINF:-1,ATVYEDEK46
 https://streams.uzunmuhalefet.com/stream/c8758555-8581-4dec-9a46-ebcfaf9ace0a.m3u8
-
 
 #EXTINF:-1,KANALDYEDEK39
 http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
@@ -434,8 +433,6 @@ https://www.canlitv.tech/hls/sozcu.m3u8
 #EXTINF:-1,SZCTVYEDEK
 https://cdn.tecostream.xyz/Sozcu_Tv.m3u8
 #EXTINF:-1,SZCTVYEDEK
-http://104.238.23.221/dsgo.php?id=246240
-#EXTINF:-1,SZCTVYEDEK
 https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8
 
 #EXTINF:-1,
@@ -444,8 +441,6 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Cnn
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
 #EXTINF:-1,CNNTURKYEDEK
 https://cdn.tecostream.xyz/Cnn_Turk.m3u8
-#EXTINF:-1,CNNTURKYEDEK
-http://104.238.23.221/dsgo.php?id=245940
 
 #EXTINF:-1,HABERTURKYEDEK
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
@@ -484,8 +479,6 @@ http://dygvideo.dygdigital.com/live/hls/puhuntvdai?m3u8
 https://dogus-live.daioncdn.net/ntv/playlist.m3u8
 #EXTINF:-1,NTVYEDEK
 http://dygvideo.dygdigital.com/live/hls/ntv4puhu?m3u8
-#EXTINF:-1,NTVYEDEK
-http://104.238.23.221/dsgo.php?id=246120
 #EXTINF:-1,NTVYEDEK
 https://www.canlitv.tech/hls/ntv.m3u8
 #EXTINF:-1,NTVYEDEK
@@ -565,8 +558,6 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber_360p.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
 #EXTINF:-1,AHABERYEDEK
 https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/A_haber.m3u8
-#EXTINF:-1,AHABERYEDEK
-http://65.108.239.207/ahaber/index.m3u8
 #EXTINF:-1,AHABERYEDEK
 https://turkuaz.tecostream.xyz/ahaber
 #EXTINF:-1,AHABERYEDEK
@@ -1099,17 +1090,17 @@ http://ventione.duckdns.org/index.php?id=369&token=DeaTHLesS
 http://ventione.duckdns.org/index.php?id=349&token=DeaTHLesS
 #EXTINF:-1,MOVİESMART CLASSİC HD+
 http://ventione.duckdns.org/index.php?id=350&token=DeaTHLesS
-#EXTINF:-1,Royals B0X 0FFİCE 1 HD+
+#EXTINF:-1,BEINBOXOFFICE1YEDEK
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/362968
-#EXTINF:-1,Royals B0X 0FFİCE 2 HD+
+#EXTINF:-1,BEINBOXOFFICE2YEDEK
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/362969
-#EXTINF:-1,Royals B0X 0FFİCE 3 HD+
+#EXTINF:-1,TR: beIN B0X 0FFİCE 3
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/362970
-#EXTINF:-1,beIN B0X 0FFİCE 1 HD+
+#EXTINF:-1,BEINBOXOFFICE1YEDEK
 http://ventione.duckdns.org/index.php?id=362968&token=DeaTHLesS
-#EXTINF:-1,beIN B0X 0FFİCE 2 HD+
+#EXTINF:-1,BEINBOXOFFICE2YEDEK
 http://ventione.duckdns.org/index.php?id=362969&token=DeaTHLesS
-#EXTINF:-1,beIN B0X 0FFİCE 3 HD+
+#EXTINF:-1,TR: beIN B0X 0FFİCE 3
 http://ventione.duckdns.org/index.php?id=362970&token=DeaTHLesS
 #EXTINF:-1,TRT 4K FHD
 http://umperisn.mywire.org/index.php?id=1842&token=DeaTHLesS
