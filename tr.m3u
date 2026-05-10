@@ -25,12 +25,6 @@ https://trkvz.daioncdn.net/atv/atv_480p.m3u8?e=1773191892&st=R0Zi21YNAeb87xjPdhF
 #EXTINF:-1 tvg-id="ATV(src05).tr" tvg-logo="" group-title="Ulusal",ATVYEDEK46
 https://trkvz.daioncdn.net/atv/atv_360p.m3u8?e=1773191892&st=R0Zi21YNAeb87xjPdhFmwA&sid=88ev08qbhx3f&app=d1ce2d40-5256-4550-b02e-e73c185a314e&ce=3|User-Agent=Mozilla/5.0&Referer=https://www.atv.com.tr/
 
-
-
-
-
-
-
 #EXTINF:-1,KANALDYEDEK39
 http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
 #EXTINF:-1,KANALDYEDEK40
@@ -101,7 +95,6 @@ https://ciner.daioncdn.net/showtv/showtv.m3u8?app=4bc856ef-4c68-4a94-bc87-37dfaa
 #EXTINF:-1,SHOWTVYEDEK42
 https://streams.uzunmuhalefet.com/stream/0ed1c367-312d-4a42-9772-ef257a36b775.m3u8
 
-
 #EXTINF:-1,STARTVYEDEK36
 https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web
 #EXTINF:-1,STARTVYEDEK37
@@ -141,12 +134,6 @@ https://dogus.daioncdn.net/startv/startv_480p.m3u8?&sid=859l7pyazxlp&app=a20ac41
 #EXTINF:-1 tvg-id="STARTV(src05).tr" tvg-logo="" group-title="Ulusal",STARTVYEDEK37
 #EXTVLCOPT:http-referer="https://www.startv.com.tr/"
 https://dogus.daioncdn.net/startv/startv_360p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
-
-
-
-
-
-
 
 #EXTINF:-1,TV8YEDEK31
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
@@ -239,7 +226,6 @@ https://raw.githubusercontent.com/rideordie16/YouTube/main/ch/showturk.m3u8
 #EXTINF:-1,SHOWTURKYEDEK
 https://streams.uzunmuhalefet.com/stream/16e43b9b-e175-482c-a105-2253c06515c9.m3u8
 
-
 #EXTINF:-1,EURODYEDEK
 https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1,EURODYEDEK
@@ -248,7 +234,6 @@ https://live.duhnet.tv/S2/HLS_LIVE/eurodnp/track_4_1000/playlist.m3u8
 http://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
 #EXTINF:-1,EURODYEDEK
 https://streams.uzunmuhalefet.com/stream/864c7cfd-0427-4997-b2dc-31b4aee312c9.m3u8
-
 
 #EXTINF:-1,TV4YEDEK
 https://turkmedya-live.ercdn.net/tv4/tv4_1080p.m3u8
@@ -262,7 +247,6 @@ https://turkmedya-live.ercdn.net/tv4/tv4_360p.m3u8
 https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
 #EXTINF:-1,TV4YEDEK
 https://streams.uzunmuhalefet.com/stream/39e2ff02-8468-4c67-8388-ab83d792071b.m3u8
-
 
 #EXTINF:-1,A2YEDEK
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8
@@ -297,7 +281,6 @@ https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8?checkedby:MyWay
 https://yurhnwtpys.turknet.ercdn.net/cvmbjbpmdx/kanal7/kanal7.m3u8
 #EXTINF:-1,KANAL7YEDEK
 https://streams.uzunmuhalefet.com/stream/7c94cb8c-63d1-46df-afac-a299e3910a5a.m3u8
-
 
 #EXTINF:-1,TEVE2YEDEK
 http://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
@@ -353,8 +336,6 @@ https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,360TVYEDEK
 https://streams.uzunmuhalefet.com/stream/90fefbea-4a78-4f02-962f-2e1e4ad22f98.m3u8
 
-
-
 #EXTINF:-1,TV85YEDEK
 https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk_1080p.m3u8
 #EXTINF:-1,TV85YEDEK
@@ -377,9 +358,6 @@ https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=bf58ab52-4865-4c81-b223-26b4
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web
 #EXTINF:-1,TV85YEDEK
 https://streams.uzunmuhalefet.com/stream/88228e59-ca29-4b4a-95e5-e9152bd9e1b4.m3u8
-
-
-
 
 #EXTINF:-1,TRT1YEDEK
 https://tv-trt1.medya.trt.com.tr/master_1440.m3u8
@@ -412,7 +390,6 @@ https://trt.daioncdn.net/trt-1/master.m3u8?app=web
 #EXTINF:-1,TRT1YEDEK
 https://streams.uzunmuhalefet.com/stream/535f4f5a-3ffa-4919-bb5d-5d31024c9237.m3u8
 
-
 #EXTINF:-1,TRT2YEDEK
 https://tv-trt2.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1,TRT2YEDEK
@@ -437,12 +414,10 @@ https://ceokzokgtd.erbvr.com/tabiitv/tabiitv_1080p.m3u8?sid=RelpFn2lZ0CjKERBg2si
 #EXTINF:-1,TABIITVYEDEK
 https://purple-fog-7608.han686314.workers.dev/androstreamlivetb.m3u8
 
-
 #EXTINF:-1,TRTGENCTVYEDEK
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8?checkedby:MyWay
 #EXTINF:-1,TRTGENCTVYEDEK
 https://tv-trtgenc.medya.trt.com.tr/master_1080.m3u8
-
 
 #EXTINF:-1,TRTTURKYEDEK
 https://tv-trtturk.medya.trt.com.tr/master_1440.m3u8
@@ -782,8 +757,6 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/97172
 #EXTINF:0,UNIVERSAL DISCOVERY
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/253585
 
-
-
 #EXTINF:-1,DMAXYEDEK
 http://dygvideo.dygdigital.com/live/hls/dmaxdai?m3u8
 #EXTINF:-1,DMAXYEDEK
@@ -827,8 +800,6 @@ http://dygvideo.dygdigital.com/live/hls/tlctvdai?m3u8
 #EXTINF:-1,TLCYEDEK
 https://streams.uzunmuhalefet.com/stream/7c98bf26-69a3-4f45-a330-d7c27459b375.m3u8
 
-
-
 #EXTINF:-1,TRTBELGESELYEDEK
 https://tv-trtbelgesel.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1,TRTBELGESELYEDEK
@@ -845,7 +816,6 @@ https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8?checkedby:MyWay
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
 #EXTINF:-1,TRTBELGESELYEDEK
 https://streams.uzunmuhalefet.com/stream/d2c6d071-d252-4b73-9607-df0084017f2e.m3u8
-
 
 #EXTINF:-1,CIFTCITVYEDEK
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
@@ -1852,8 +1822,6 @@ http://vepimon92.mywire.org/index.php?id=878808&token=DeaTHLesS
 http://vepimon92.mywire.org/index.php?id=878807&token=DeaTHLesS
 #EXTINF:-1,ULKE TV
 http://vepimon92.mywire.org/index.php?id=878825&token=DeaTHLesS
-
-
 
 #EXTINF:-1,TRT 1 
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/229
