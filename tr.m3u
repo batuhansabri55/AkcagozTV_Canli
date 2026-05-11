@@ -3220,7 +3220,7 @@ https://saran-live.ercdn.net/natgeowild/index.m3u8
 https://proud-river-e20b.pantonum1.workers.dev/lovenature.m3u8
 #EXTINF:-1,Viasat History
 https://proud-river-e20b.pantonum1.workers.dev/viasathistory.m3u8
-#EXTINF:-1,beIN Sport 1 HD
+#EXTINF:-1,BEINSPORT1YEDEK
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub1.m3u8
 #EXTINF:-1,beIN Sport 2 HD
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub2.m3u8
@@ -3892,6 +3892,16 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51100
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51102
 #EXTINF:0,VUSLAT TV
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51103
+#EXTINF:0 user-agent="Firefox" tvg-id="beIN SPORTS 2" tvg-name="TR: BEIN SPORTS 2 HD" tvg-logo="http://logo.multicms.info/logoslar/beinsports2.png" group-title="TR-SPOR",BEINSPORT2YEDEK
+http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/31408
+#EXTINF:0 user-agent="Firefox" tvg-id="beIN SPORTS 3" tvg-name="TR: BEIN SPORTS 3 HD" tvg-logo="http://logo.multicms.info/logoslar/beinsports3.png" group-title="TR-SPOR",BEINSPORT3YEDEK
+http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/31409
+#EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="TR: beIN SPORTS 4 FHD" tvg-logo="http://logo.multicms.info/logoslar/beinsports4.png" group-title="TR-SPOR",BEINSPORT4YEDEK
+http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/353187
+
+
+
+
 
 # --- DERİN TEMİZLİK VE TAZE AV (10-05-2026 13:48) --- #
 #EXTINF:-1 tvg-id=&quot;KanalDDrama.tr&quot; tvg-name=&quot;Kanal D Drama&quot; tvg-logo=&quot;https://i.imgur.com/WIeZMKT.png&quot; group-title=&quot;entertainment&quot;,Kanal D Drama
