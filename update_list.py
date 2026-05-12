@@ -18,6 +18,7 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 }
 
+# --- YASAKLI VE YEDEK LİSTELERİ ---
 YASAKLI_GRUPLAR = [
     "FreeShot", "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", 
     "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
@@ -61,8 +62,8 @@ def github_taze_link_avla():
 
 def link_saglam_mi(url):
     """
-    KUSURSUZ SÜZGEÇ: Sunucuların sahte 200 OK ve boş m3u8 tuzaklarını 
-    içerik analiziyle kesin olarak eler. Oynatılamayacak kanala geçit vermez.
+    ULTRA KUSURSUZ SÜZGEÇ: Hem sahte m3u8 tuzaklarını hem de 
+    Token'ı patlamış ama '200 OK' dönen sahte direkt yayınları (TS/Stream) acımasızca eler.
     """
     try:
         # Hantal/ölü sunucuları beklememek için timeout 4 saniye
@@ -70,33 +71,42 @@ def link_saglam_mi(url):
             if r.status_code != 200: 
                 return False
             
-            # Sunucunun döndüğü içerik tipini kontrol et
             content_type = r.headers.get('Content-Type', '').lower()
             
-            # Eğer video yayını yerine HTML sayfası veya JSON hata mesajı dönüyorsa direkt ele
+            # HTML veya JSON (hata/yönlendirme sayfası) ise direkt imha et
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
                 
-            # İlk 4KB veriyi indirip derinlemesine analiz yapıyoruz
-            content_start = next(r.iter_content(chunk_size=4096)).decode('utf-8', errors='ignore')
-            
-            # --- SAHTE M3U8 / HLS TUZAĞI KONTROLÜ ---
-            if "#EXTM3U" in content_start:
-                # Gerçek bir canlı yayın m3u8 listesinde mutlaka parça listesi veya alt yayın olur.
-                # Eğer dosya içeriğinde .ts (video parçası) veya yeni bir alt m3u8 linki yoksa sahtedir!
-                has_video_chunks = any(ext in content_start for ext in [".ts", ".m3u8", ".mp4", ".aac"])
+            # İlk 2KB veriyi BINARY (Ham) olarak çek
+            try:
+                chunk = next(r.iter_content(chunk_size=2048))
+            except StopIteration:
+                return False # Sunucu boş içerik fırlattıysa ele
                 
-                # Ek olarak satır sayısını kontrol et. Gerçek yayın listeleri en az 5-10 satır olur.
-                satir_sayisi = len(content_start.strip().split('\n'))
+            # TUZAK 1: Boyut. Video paketleri 200 bayttan küçük olamaz.
+            if len(chunk) < 200:
+                return False
+
+            content_text = chunk.decode('utf-8', errors='ignore').lower()
+
+            # --- M3U8 LİSTE KONTROLÜ ---
+            if "#extm3u" in content_text:
+                has_video_chunks = any(ext in content_text for ext in [".ts", ".m3u8", ".mp4", ".aac"])
+                satir_sayisi = len(content_text.strip().split('\n'))
                 
+                # İçinde .ts yoksa veya kısacık sahte bir dosyaysa ele
                 if has_video_chunks and satir_sayisi >= 4:
                     return True
-                else:
-                    # Sunucu içi boş veya sadece '#EXTM3U' yazan sahte dosya fırlatmıştır, İMHA ET.
-                    return False
+                return False
             
-            # Doğrudan ham video akışı yollayan (MPEG-TS, application/octet-stream vb.) linklere onay ver
-            if 'video/' in content_type or 'mpegurl' in content_type or 'stream' in content_type:
+            # --- DİREKT YAYIN (STREAM) KONTROLÜ ---
+            # TUZAK 2: İçine gizlenmiş token/error hata mesajları
+            hata_kelimeleri = ["expired", "invalid", "error", "forbidden", "unauthorized", "not found", "bad token"]
+            if any(hata in content_text for hata in hata_kelimeleri):
+                return False
+            
+            # Tüm tuzakları aştıysa ve video/stream formatındaysa onayla
+            if 'video/' in content_type or 'mpegurl' in content_type or 'stream' in content_type or 'octet-stream' in content_type:
                 return True
                 
             return False
@@ -123,13 +133,16 @@ def kanal_isleme(kanal_metni, eklenen_urller):
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         
+        # YEDEK kanallar için boşluk silme ve bitişik yazma kuralı (Örn: TRT1 YEDEK -> TRT1YEDEK)
+        isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
+        
         print(f" ✅ GERÇEK CANLI: {link_satiri[:50]}...")
         return f"{isim_temiz}\n{link_satiri}"
     
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V2: Tavizsiz temizlik ve gerçek canlı yayın avı başlıyor!")
+    print(f"🛡️  USTA SİSTEM V3: Tavizsiz temizlik ve gerçek canlı yayın avı başlıyor!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -141,7 +154,7 @@ def main():
     ana_liste_zirh = []
     ham_bulunanlar = []
 
-    # Zırhı ve Mevcut Linkleri Koru
+    # Zırhı ve Mevcut Linkleri Oku
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
@@ -150,7 +163,7 @@ def main():
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
 
-    # 1. Kaynakları Tara ve İçindeki Kanalları Yakala
+    # 1. Kaynakları Tara
     for kaynak in guncel_kaynak_listesi:
         try:
             print(f"📡 Kaynak Okunuyor: {kaynak[:50]}...")
@@ -160,7 +173,7 @@ def main():
                 ham_bulunanlar.extend(bulunan)
         except: continue
 
-    # 2. Aynı Linkleri Baştan Ele
+    # 2. Mükerrerleri Ele
     unique_adaylar = []
     gorulen_linkler = set()
     for k in ham_bulunanlar:
@@ -171,12 +184,12 @@ def main():
 
     print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Tavizsiz test başlıyor...")
 
-    # 3. Çoklu Test (Threads: 4) - Sahtekarları Ayıklama Noktası
+    # 3. Çoklu Test (Threads: 4)
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # 4. Dosyaya Temiz Yazım
+    # 4. Dosyaya Yaz
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(ana_liste_zirh)
         f.write(f"\n# --- TAVİZSİZ GERÇEK TEMİZLİK ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
