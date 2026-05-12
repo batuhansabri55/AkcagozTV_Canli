@@ -216,11 +216,17 @@ https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax_1080p.m3u8
 http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8
 #EXTINF:-1,SHOWMAXYEDEK
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8?checkedby:MyWay
+#EXTINF:-1,SHOWMAXYEDEK
+https://ciner-live.ercdn.net/showmax/showmax_1080p.m3u8?e=1778616021&st=Nd_rEM9NGC5yd7HfbqKNrQ&tv=1
 #EXTINF:-1,
 https://raw.githubusercontent.com/rideordie16/YouTube/main/ch/showmax.m3u8
 #EXTINF:-1,SHOWMAXYEDEK
 https://streams.uzunmuhalefet.com/stream/2ffa76f2-5c2b-4f98-b29b-9bbda2f75ad6.m3u8
 
+
+
+#EXTINF:-1,SHOWTURKYEDEK
+https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8?e=1778615916&st=GPtg2EDqiUPgybUwbiStbg&tv=1
 #EXTINF:-1,
 https://raw.githubusercontent.com/rideordie16/YouTube/main/ch/showturk.m3u8
 #EXTINF:-1,SHOWTURKYEDEK
@@ -515,10 +521,6 @@ https://ensonhaber-live.ercdn.net/haberglobal/haberglobal.m3u8
 https://cdn.tecostream.xyz/Haber_Global_TV.m3u8
 #EXTINF:-1,HABERGLOBALYEDEK
 https://github.com/tecotv2025/tecotv/raw/main/playlist/Haber_Global_TV.m3u8
-#EXTINF:-1,HABERRIZEYEDEK
-https://streams.uzunmuhalefet.com/stream/bf3a9fab-0ebe-4ae1-b35f-55a15579334d.m3u8
-#EXTINF:-1,HABERRIZEYEDEK
-https://cdn4.yayin.com.tr/haberrize/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1,TV100YEDEK
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
@@ -669,6 +671,11 @@ https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
 https://streams.uzunmuhalefet.com/stream/6a0ae937-29d4-455b-b498-8fc8e82b95b4.m3u8
 #EXTINF:-1,FLASHHABERYEDEK
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8
+#EXTINF:-1,FLASHHABERYEDEK
+ttps://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_0.m3u8
+#EXTINF:-1,FLASHHABERYEDEK
+ttps://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_1.m3u8
+
 
 #EXTINF:-1,BENGU
 https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Benguturk_Tv.m3u8
@@ -831,6 +838,15 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/15018
 
 #EXTINF:-1,CNBC-EYEDEK
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
+
+
+#EXTINF:-1,HABERRIZEYEDEK
+https://streams.uzunmuhalefet.com/stream/bf3a9fab-0ebe-4ae1-b35f-55a15579334d.m3u8
+#EXTINF:-1,HABERRIZEYEDEK
+https://cdn4.yayin.com.tr/haberrize/tracks-v1a1/mono.m3u8
+
+
+
 
 #EXTINF:-1,TRT 1 HD+
 http://ventione.duckdns.org/index.php?id=229&token=DeaTHLesS
