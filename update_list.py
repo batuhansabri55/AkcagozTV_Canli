@@ -37,7 +37,6 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://tinyurl.com/bdd2tz6h",
     "https://publiciptv.com/countries/tr/m3u",
-    "view-source:https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
