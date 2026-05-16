@@ -61,7 +61,6 @@ def youtube_linkleri_al():
     """MANIFEST.GOOGLEVIDEO.COM LİNKLERİNİ SÖKEN ASIL MOTOR"""
     linkler = {}
     
-    # Usta, bu özel parametreler YouTube engelini aşarak doğrudan manifest.googlevideo linkini çeker.
     ydl_opts = {
         'format': 'best',
         'quiet': True,
@@ -85,7 +84,6 @@ def youtube_linkleri_al():
                     linkler[isim] = stream_url
                     print(f"   🟢 {isim} Manifest Linki Başarıyla Söküldü.")
                 else:
-                    # Alternatif deneme
                     linkler[isim] = stream_url
                     print(f"   🟡 {isim} çözüldü ancak manifest kontrol edin.")
         except Exception as e:
@@ -186,18 +184,23 @@ def main():
     # Google manifest linklerini söken asıl motoru burada ateşliyoruz
     yt_linkleri = youtube_linkleri_al()
 
+    # 1. ESKİ LİSTEYİ (tr.m3u) YAZMA İŞLEMİ (Dokunmadık usta)
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(ana_liste_zirh)
         f.write(f"\n# --- TAVİZSİZ GERÇEK TEMİZLİK ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
-        
         for k in final_listesi:
             f.write(k + "\n")
             
-        if yt_linkleri:
-            f.write("\n# --- YOUTUBE CANLI HABER PAKETİ --- #\n")
+    # 2. YOUTUBE İÇİN BAMBAŞKA TERTEMİZ BİR DOSYA OLUŞTURUYORUZ USTA!
+    if yt_linkleri:
+        with open("youtube_canli.m3u", "w", encoding="utf-8") as y_file:
+            y_file.write("#EXTM3U\n")
+            y_file.write(f"# --- YOUTUBE HABER PAKETİ ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
             for isim, link in yt_linkleri.items():
-                f.write(f'#EXTINF:-1 tvg-name="{isim}" group-title="YouTube Canli",{isim}\n')
-                f.write(f"{link}\n")
+                if link:
+                    y_file.write(f'#EXTINF:-1 tvg-name="{isim}" group-title="YouTube Canli",{isim}\n')
+                    y_file.write(f"{link}\n")
+        print("\n🚀 YOUTUBE_CANLI.M3U DOSYASI AYRI OLARAK KLASÖRDE CANAVAR GİBİ OLUŞTU!")
 
     print(f"\n🏁 İŞLEM BİTTİ USTA!")
 
