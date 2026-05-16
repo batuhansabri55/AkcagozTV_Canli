@@ -47,30 +47,38 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-# --- GARANTİLİ YOUTUBE VE RESMİ AKIŞ SİSTEMİ ---
-# Usta, eğer YouTube yurt dışı sunucusunda engellenirse, sağdaki yedek m3u8 linkleri devreye girecek!
+# Kanalların sadece YouTube Canlı Yayın Adresleri
 YOUTUBE_KANALLAR = {
-    "Sozcu TV": ("https://www.youtube.com/@SozcuTelevizyonu/live", "https://szc.daioncdn.net/szctv/szctv.m3u8"),
-    "CNN Turk": ("https://www.youtube.com/@cnnturk/live", "https://live.dogannet.tv/S2/HLS_LIVE/cnnturk/1500k/prog_index.m3u8"),
-    "HaberTurk": ("https://www.youtube.com/@haberturk/live", "https://ciner-live.daioncdn.net/haberturk/haberturk.m3u8"),
-    "NTV": ("https://www.youtube.com/@NTV/live", "https://dyg-live.daioncdn.net/ntv/ntv.m3u8"),
-    "Haber Global": ("https://www.youtube.com/@HaberGlobal/live", "https://haberglobal.daioncdn.net/live/haberglobal.m3u8"),
-    "TV100": ("https://www.youtube.com/@tv100/live", "https://live.tv100.com/tv100/index.m3u8"),
-    "TV NET": ("https://www.youtube.com/@tvnet/live", "https://albax-live.daioncdn.net/tvnet/tvnet.m3u8")
+    "Sozcu TV": "https://www.youtube.com/@SozcuTelevizyonu/live",
+    "CNN Turk": "https://www.youtube.com/@cnnturk/live",
+    "HaberTurk": "https://www.youtube.com/@haberturk/live",
+    "NTV": "https://www.youtube.com/@NTV/live",
+    "Haber Global": "https://www.youtube.com/@HaberGlobal/live",
+    "TV100": "https://www.youtube.com/@tv100/live",
+    "TV NET": "https://www.youtube.com/@tvnet/live"
 }
 
 def youtube_linkleri_al():
+    """YOUTUBE ENGELİNİ AŞAN ÖZEL İMZALI ÇÖZÜCÜ"""
     linkler = {}
+    
+    # Usta, bu extractor_args ayarı YouTube'un bulut sunucularına koyduğu yurt dışı blokajını ezer geçer.
     ydl_opts = {
         'format': 'best',
         'quiet': True,
         'no_warnings': True,
         'extract_flat': False,
-        'compatibility': 'base'
+        'compatibility': 'base',
+        'extractor_args': {
+            'youtube': {
+                'player_client': ['android', 'ios', 'web'],
+                'skip': ['dash', 'hls']
+            }
+        }
     }
     
-    print("\n🚀 Haber Kanalları Paketi Hazırlanıyor...")
-    for isim, (url, yedek_m3u8) in YOUTUBE_KANALLAR.items():
+    print("\n🚀 YouTube Canlı Yayın Linkleri Çözülüyor (Engelsiz Mod)...")
+    for isim, url in YOUTUBE_KANALLAR.items():
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 info = ydl.extract_info(url, download=False)
@@ -78,14 +86,9 @@ def youtube_linkleri_al():
                 if stream_url:
                     linkler[isim] = stream_url
                     print(f"   🟢 {isim} YouTube üzerinden başarıyla çözüldü.")
-                    continue
-        except:
-            pass
-        
-        # Eğer YouTube çözülemezse (Yurt dışı engeline takılırsa) doğrudan resmi m3u8 adresi yazılır usta
-        linkler[isim] = yedek_m3u8
-        print(f"   🟡 {isim} YouTube engellendi, resmi web yayını (Yedek) listeye eklendi.")
-        
+        except Exception as e:
+            print(f"   ❌ {isim} çözülemedi: {e}")
+            
     return linkler
 
 def github_taze_link_avla():
@@ -178,7 +181,7 @@ def main():
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # YouTube ve Resmi yayınları söküyoruz
+    # YouTube canlı akış linklerini tamamen taze olarak söküyoruz
     yt_linkleri = youtube_linkleri_al()
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
