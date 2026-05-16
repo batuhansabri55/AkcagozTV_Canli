@@ -53,7 +53,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def youtube_link_coz(isim, url):
-    """Senin getirdiğin saf, kırpmasız yt_dlp mantığı ile %100 çalışan akış linkini çözer"""
+    """Senin ikinci koddaki tam linki çözen yt_dlp mantığı aynen entegre edildi usta"""
     ydl_opts = {
         'format': 'best',
         'quiet': True,
@@ -63,7 +63,7 @@ def youtube_link_coz(isim, url):
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url, download=False)
-            canli_url = info.get('url') # Doğrudan saf akış URL'sini çeker
+            canli_url = info.get('url')  # Hiçbir kırpma yapmadan linkin tamamını alan kısım
             if canli_url:
                 print(f"  🟢 YouTube Çözüldü: {isim}")
                 return f'#EXTINF:-1 tvg-name="{isim}" group-title="YouTube Canli",{isim}\n{canli_url}\n'
@@ -77,15 +77,9 @@ def github_taze_link_avla():
     tarih = (datetime.datetime.now() - datetime.timedelta(days=2)).strftime('%Y-%m-%d')
     search_url = f"https://api.github.com/search/code?q=extension:m3u+trt1+pushed:>{tarih}&sort=indexed"
     
-    # GitHub Actions ortamında çalışırken IP ban / limit yememek için token desteği ekledim
-    token = os.getenv("GITHUB_TOKEN")
-    local_headers = HEADERS.copy()
-    if token:
-        local_headers['Authorization'] = f'token {token}'
-        
     try:
         print(f"🕵️  GitHub'da derin arama yapılıyor (Filtre: >{tarih})...")
-        r = requests.get(search_url, headers=local_headers, timeout=10)
+        r = requests.get(search_url, headers=HEADERS, timeout=10)
         if r.status_code == 200:
             items = r.json().get('items', [])
             for item in items:
@@ -97,7 +91,7 @@ def github_taze_link_avla():
     
     return yeni_kaynaklar
 
-def link_solid_mi(url):
+def link_saglam_mi(url):
     """ULTRA KUSURSUZ SÜZGEÇ"""
     try:
         with requests.get(url, headers=HEADERS, timeout=4, stream=True, verify=False) as r:
@@ -147,7 +141,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR):
         return None
 
-    if link_solid_mi(link_satiri):
+    if link_saglam_mi(link_satiri):
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
@@ -158,7 +152,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V5: YouTube Canlı Entegrasyonu ve Zırh Limiti ({ZIRH_LIMIT}) devrede!")
+    print(f"🛡️  USTA SİSTEM V4: Tavizsiz temizlik ve Zırh Limiti ({ZIRH_LIMIT}) devrede!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -175,14 +169,13 @@ def main():
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
 
-    # --- 2. ADIM: YENİ ENTEGRE EDİLEN YOUTUBE KANALLARINI ÇÖZ VE EKLE ---
-    print("\n📺 YouTube Canlı Yayın Akışları Kırpılmadan Çözülüyor...")
+    # --- 2. ADIM: DOKUNULMAZ YOUTUBE KANALLARINI ÇÖZ VE EKLE ---
+    print("\n📺 Dokunulmaz YouTube Canlı Yayınları Çözülüyor...")
     youtube_blok = ""
     for isim, url in YOUTUBE_KANALLAR.items():
         kanal_m3u_metni = youtube_link_coz(isim, url)
         if kanal_m3u_metni:
             cozulmus_url = kanal_m3u_metni.strip().split('\n')[-1].strip()
-            # Eğer bu tam link zırhlı alanda yoksa listeye ekle
             if cozulmus_url not in eklenen_urller:
                 youtube_blok += kanal_m3u_metni
                 eklenen_urller.add(cozulmus_url)
@@ -224,7 +217,6 @@ def main():
         else:
             f.writelines(ana_liste_zirh)
             
-        # Tam çözülen kırpılmamış YouTube canlı yayınlarını zırhın tam altına yerleştiriyoruz
         if youtube_blok:
             f.write("\n# --- GÜNCEL YOUTUBE CANLI YAYINLARI --- #\n")
             f.write(youtube_blok)
@@ -233,7 +225,7 @@ def main():
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Zırh korundu, YouTube Canlı Yayınları tam link olarak güncellendi ve {len(final_listesi)} taze kanal eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Zırh korundu, YouTube güncellendi ve süzgeçten geçen {len(final_listesi)} yeni kanal eklendi.")
 
 if __name__ == "__main__":
     main()
