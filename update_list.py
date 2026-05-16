@@ -47,7 +47,7 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-# Sadece YouTube Canlı Yayın Adresleri
+# Kanalların sadece YouTube Canlı Yayın Adresleri
 YOUTUBE_KANALLAR = {
     "Sozcu TV": "https://www.youtube.com/@SozcuTelevizyonu/live",
     "CNN Turk": "https://www.youtube.com/@cnnturk/live",
