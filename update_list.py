@@ -53,7 +53,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 def youtube_link_coz(isim, url):
-    """Senin ikinci koddaki tam linki çözen yt_dlp mantığı aynen entegre edildi usta"""
+    """İkinci koddaki kırpmasız, tam linki alan canavar gibi çalışan yt_dlp mantığı"""
     ydl_opts = {
         'format': 'best',
         'quiet': True,
@@ -63,7 +63,7 @@ def youtube_link_coz(isim, url):
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url, download=False)
-            canli_url = info.get('url')  # Hiçbir kırpma yapmadan linkin tamamını alan kısım
+            canli_url = info.get('url')  # Linkin tamamını alan saf kısım
             if canli_url:
                 print(f"  🟢 YouTube Çözüldü: {isim}")
                 return f'#EXTINF:-1 tvg-name="{isim}" group-title="YouTube Canli",{isim}\n{canli_url}\n'
@@ -141,6 +141,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR):
         return None
 
+    # İsmi internet gitmeden önceki hatayı çözerek tam fonksiyon adına eşitledim usta
     if link_saglam_mi(link_satiri):
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
