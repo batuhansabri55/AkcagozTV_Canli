@@ -1,11 +1,22 @@
+import os
+import sys
+
+# --- OTOMATİK KÜTÜPHANE KONTROLÜ VE KURULUMU ---
+# Usta, bu kısım GitHub Actions sanal bilgisayarında yt-dlp yoksa otomatik olarak arka planda kurar.
+try:
+    import yt_dlp
+except ImportError:
+    print("⏳ 'yt-dlp' kütüphanesi eksik, otomatik kuruluyor...")
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "yt-dlp"])
+    import yt_dlp
+
 import requests
 import re
-import os
 import datetime
 import shutil
 from concurrent.futures import ThreadPoolExecutor
 import urllib3
-import yt_dlp  # Usta, YouTube için eklediğimiz yeni canavar modül
 
 # SSL hatalarını tamamen sustur
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -59,7 +70,8 @@ def youtube_linkleri_al():
         'format': 'best',
         'quiet': True,
         'no_warnings': True,
-        'extract_flat': False
+        'extract_flat': False,
+        'compatibility': 'base'  # Sunucularda ffmpeg veya sistem çakışması olmasın diye en temiz taban ayar
     }
     
     print("\n🚀 YouTube Canlı Yayın Linkleri Çözülüyor...")
@@ -174,7 +186,6 @@ def main():
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
-            # Eğer dosya boş değilse ve ilk satır #EXTM3U değilse ekleyelim
             if tum_lines and not tum_lines[0].strip().startswith("#EXTM3U"):
                 ana_liste_zirh.append("#EXTM3U\n")
             
