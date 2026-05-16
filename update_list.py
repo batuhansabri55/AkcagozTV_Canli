@@ -5,17 +5,29 @@ import datetime
 import shutil
 from concurrent.futures import ThreadPoolExecutor
 import urllib3
+import yt_dlp
 
 # SSL hatalarını tamamen sustur
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# --- AYARLAR ---
+# --- AYARLAR (TAM İSTEDİĞİN GİBİ BURADA USTA) ---
 FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 3950
 THREADS = 4        
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+}
+
+# --- DOKUNULMAZ YOUTUBE CANLI YAYIN LİSTESİ ---
+YOUTUBE_KANALLAR = {
+    "Sozcu TV": "https://www.youtube.com/@SozcuTelevizyonu/live",
+    "CNN Turk": "https://www.youtube.com/@cnnturk/live",
+    "HaberTurk": "https://www.youtube.com/@haberturk/live",
+    "NTV": "https://www.youtube.com/@NTV/live",
+    "Haber Global": "https://www.youtube.com/@HaberGlobal/live",
+    "TV100": "https://www.youtube.com/@tv100/live",
+    "TV NET": "https://www.youtube.com/@tvnet/live"
 }
 
 # --- YASAKLI VE YEDEK LİSTELERİ ---
@@ -40,6 +52,26 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
+def youtube_link_coz(isim, url):
+    """YouTube canlı yayın linkini IPTV oynatıcıların açacağı m3u8 formatına çevirir"""
+    ydl_opts = {
+        'format': 'best',
+        'quiet': True,
+        'no_warnings': True,
+        'extract_flat': False,
+        'socket_timeout': 10
+    }
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(url, download=False)
+            canli_url = info.get('manifest_url') or info.get('url')
+            if canli_url:
+                print(f"  🟢 YouTube Çözüldü: {isim}")
+                return f'#EXTINF:-1 tvg-name="{isim}" group-title="YouTube Canli",{isim}\n{canli_url}\n'
+    except:
+        print(f"  ❌ YouTube Çözülemedi: {isim}")
+    return ""
+
 def github_taze_link_avla():
     """GITHUB'DA SON 48 SAATTE PAYLAŞILAN TAZE LİNKLERİ BULUR"""
     yeni_kaynaklar = []
@@ -61,51 +93,37 @@ def github_taze_link_avla():
     return yeni_kaynaklar
 
 def link_saglam_mi(url):
-    """
-    ULTRA KUSURSUZ SÜZGEÇ: Hem sahte m3u8 tuzaklarını hem de 
-    Token'ı patlamış ama '200 OK' dönen sahte direkt yayınları (TS/Stream) acımasızca eler.
-    """
+    """ULTRA KUSURSUZ SÜZGEÇ"""
     try:
-        # Hantal/ölü sunucuları beklememek için timeout 4 saniye
         with requests.get(url, headers=HEADERS, timeout=4, stream=True, verify=False) as r:
             if r.status_code != 200: 
                 return False
             
             content_type = r.headers.get('Content-Type', '').lower()
-            
-            # HTML veya JSON (hata/yönlendirme sayfası) ise direkt imha et
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
                 
-            # İlk 2KB veriyi BINARY (Ham) olarak çek
             try:
                 chunk = next(r.iter_content(chunk_size=2048))
             except StopIteration:
-                return False # Sunucu boş içerik fırlattıysa ele
+                return False
                 
-            # TUZAK 1: Boyut. Video paketleri 200 bayttan küçük olamaz.
             if len(chunk) < 200:
                 return False
 
             content_text = chunk.decode('utf-8', errors='ignore').lower()
 
-            # --- M3U8 LİSTE KONTROLÜ ---
             if "#extm3u" in content_text:
                 has_video_chunks = any(ext in content_text for ext in [".ts", ".m3u8", ".mp4", ".aac"])
                 satir_sayisi = len(content_text.strip().split('\n'))
-                
-                # İçinde .ts yoksa veya kısacık sahte bir dosyaysa ele
                 if has_video_chunks and satir_sayisi >= 4:
                     return True
                 return False
             
-            # --- DİREKT YAYIN (STREAM) KONTROLÜ ---
-            # TUZAK 2: İçine gizlenmiş token/error hata mesajları
             hata_kelimeleri = ["expired", "invalid", "error", "forbidden", "unauthorized", "not found", "bad token"]
             if any(hata in content_text for hata in hata_kelimeleri):
                 return False
             
-            # Tüm tuzakları aştıysa ve video/stream formatındaysa onayla
             if 'video/' in content_type or 'mpegurl' in content_type or 'stream' in content_type or 'octet-stream' in content_type:
                 return True
                 
@@ -120,20 +138,13 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
     
-    # 1. Mükerrer Kontrolü
     if link_satiri in eklenen_urller: return None
-
-    # 2. Yasaklı Filtresi
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR):
         return None
 
-    # 3. KUSURSUZ Canlılık Testi
     if link_saglam_mi(link_satiri):
-        # İsim Temizleme (HEVC, 4K vb. temizle)
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
-        
-        # YEDEK kanallar için boşluk silme ve bitişik yazma kuralı (Örn: TRT1 YEDEK -> TRT1YEDEK)
         isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
         
         print(f" ✅ GERÇEK CANLI: {link_satiri[:50]}...")
@@ -142,28 +153,41 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V3: Tavizsiz temizlik ve gerçek canlı yayın avı başlıyor!")
+    print(f"🛡️  USTA SİSTEM V4: Tavizsiz temizlik ve Zırh Limiti ({ZIRH_LIMIT}) devrede!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
 
-    avlananlar = github_taze_link_avla()
-    guncel_kaynak_listesi = list(set(YEDEK_KAYNAKLAR + avlananlar))
-    
     eklenen_urller = set()
     ana_liste_zirh = []
-    ham_bulunanlar = []
 
-    # Zırhı ve Mevcut Linkleri Oku
+    # --- 1. ADIM: MEVCUT DOSYADAKİ ZIRHLI ALANI KORU ---
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
+            # Senin orijinal ZIRH_LIMIT mantığın aynen korundu
             ana_liste_zirh = tum_lines[:ZIRH_LIMIT]
             for s in ana_liste_zirh:
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
 
-    # 1. Kaynakları Tara
+    # --- 2. ADIM: DOKUNULMAZ YOUTUBE KANALLARINI ÇÖZ VE EKLE ---
+    print("\n📺 Dokunulmaz YouTube Canlı Yayınları Çözülüyor...")
+    youtube_blok = ""
+    for isim, url in YOUTUBE_KANALLAR.items():
+        kanal_m3u_metni = youtube_link_coz(isim, url)
+        if kanal_m3u_metni:
+            cozulmus_url = kanal_m3u_metni.strip().split('\n')[-1].strip()
+            # Eğer bu youtube linki zırhlı alanda veya eklenenlerde yoksa bloğa ekle
+            if cozulmus_url not in eklenen_urller:
+                youtube_blok += kanal_m3u_metni
+                eklenen_urller.add(cozulmus_url)
+
+    # --- 3. ADIM: İNTERNETTEN TAZE LİNKLERİ TOPLA ---
+    avlananlar = github_taze_link_avla()
+    guncel_kaynak_listesi = list(set(YEDEK_KAYNAKLAR + avlananlar))
+    ham_bulunanlar = []
+
     for kaynak in guncel_kaynak_listesi:
         try:
             print(f"📡 Kaynak Okunuyor: {kaynak[:50]}...")
@@ -173,7 +197,7 @@ def main():
                 ham_bulunanlar.extend(bulunan)
         except: continue
 
-    # 2. Mükerrerleri Ele
+    # --- 4. ADIM: MÜKERRER KONTROLÜ ---
     unique_adaylar = []
     gorulen_linkler = set()
     for k in ham_bulunanlar:
@@ -182,21 +206,31 @@ def main():
             unique_adaylar.append(k)
             gorulen_linkler.add(link)
 
-    print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Tavizsiz test başlıyor...")
+    print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Threads: {THREADS} ile test başlıyor...")
 
-    # 3. Çoklu Test (Threads: 4)
+    # --- 5. ADIM: ÇOKLU İŞ PARÇACIĞI TESTİ ---
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # 4. Dosyaya Yaz
+    # --- 6. ADIM: DOSYAYA YAZMA (ZIRH + YOUTUBE + YENİ LİNKLER) ---
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(ana_liste_zirh)
+        # Eğer dosya tamamen boşsa veya yeni açılıyorsa #EXTM3U koy
+        if not ana_liste_zirh:
+            f.write("#EXTM3U\n")
+        else:
+            f.writelines(ana_liste_zirh)
+            
+        # Çözülen güncel YouTube kanallarını zırhın hemen altına basıyoruz
+        if youtube_blok:
+            f.write("\n# --- GÜNCEL YOUTUBE CANLI YAYINLARI --- #\n")
+            f.write(youtube_blok)
+            
         f.write(f"\n# --- TAVİZSİZ GERÇEK TEMİZLİK ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Filtreleri aşabilen gerçek anlamda SAĞLAM {len(final_listesi)} kanal eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Zırh korundu, YouTube güncellendi ve süzgeçten geçen {len(final_listesi)} yeni kanal eklendi.")
 
 if __name__ == "__main__":
     main()
