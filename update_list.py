@@ -18,7 +18,7 @@ def canli_yayin_linki_al(url):
         'quiet': True,
         'no_warnings': True,
         'extract_flat': False,
-        # GitHub Actions sunucusunun YouTube engelini aşmasını sağlayan mobil parametreler
+        # GitHub sunucularının YouTube bot barajına takılmasını engelleyen mobil yapay istemci ayarı
         'extractor_args': {
             'youtube': {
                 'player_client': ['android', 'ios'],
