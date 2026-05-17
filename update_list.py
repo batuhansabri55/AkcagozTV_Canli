@@ -44,7 +44,7 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-# --- GARANTİLİ CANLI YAYIN ADRESLERİ - A HABER DAHİL ---
+# --- GENİŞLETİLMİŞ GARANTİLİ CANLI YAYIN ADRESLERİ ---
 YOUTUBE_KANALLAR = {
     "A Haber": "https://www.youtube.com/@ahaber/live",
     "Sozcu TV": "https://www.youtube.com/@SozcuTelevizyonu/live",
@@ -90,7 +90,7 @@ def youtube_linkleri_al():
                     stream_url = info.get('url')
                     if stream_url and "manifest.googlevideo.com" in stream_url:
                         linkler[isim] = stream_url
-                        print(f"   🟢 {isim} Manifest Linki Çekildi.")
+                        print(f"   CN70  {isim} Manifest Linki Çekildi.")
                         success = True
                         break
             except:
@@ -104,7 +104,7 @@ def youtube_linkleri_al():
                     linkler[isim] = info.get('url')
                     print(f"   🟡 {isim} Standart link ile geçildi.")
             except:
-                print(f"   ❌ {isim} Atlandı.")
+                print(f"   ❌ {isim} Atlandı (Yayında olmayabilir).")
                 
     return linkler
 
@@ -197,6 +197,7 @@ def main():
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
+    # YouTube Canlı Yayınlarını buradaki havuzdan çekiyoruz usta
     yt_linkleri = youtube_linkleri_al()
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
@@ -206,6 +207,7 @@ def main():
         for k in final_listesi:
             f.write(k + "\n")
             
+        # Alınan canlı yayınları hiçbir kırpma yapmadan tam url yapısıyla listenin sonuna ekliyoruz
         if yt_linkleri:
             f.write("\n# --- YOUTUBE CANLI HABER PAKETİ --- #\n")
             for isim, link in yt_linkleri.items():
