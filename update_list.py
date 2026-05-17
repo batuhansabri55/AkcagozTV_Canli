@@ -4,6 +4,7 @@ import requests
 import re
 import datetime
 import urllib3
+import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -37,7 +38,7 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-# Kanalların resmi Channel ID listesi usta
+# Kanalların resmi ve sabit Channel ID'leri
 YOUTUBE_KANALLAR = {
     "A Haber": "UCR0m5M67L7_GCOYw7C_Fvdw",
     "Sozcu TV": "UCmbyO8S3_04C6K0C_E04m0A",
@@ -51,61 +52,34 @@ YOUTUBE_KANALLAR = {
 
 def youtube_linkleri_al():
     linkler = {}
-    print("\n🚀 YouTube Canlı Yayınları Çözülüyor (Ham Googlevideo Manifest Modu)...")
+    print("\n🚀 YouTube Canlı Yayınları Sökülüyor (RSS XML Feed Modu)...")
     
     for isim, channel_id in YOUTUBE_KANALLAR.items():
-        # Ham manifest linkini dönebilen açık kaynaklı API sunucu şablonları usta
-        api_endpoints = [
-            f"https://youtube-live-resolver.vercel.app/api/resolve?channelId={channel_id}",
-            f"https://pipedapi.kavin.rocks/streams/live/{channel_id}",
-            f"https://api.loveryt.com/live/{channel_id}"
-        ]
-        
-        success = False
-        for api_url in api_endpoints:
-            try:
-                r = requests.get(api_url, headers=HEADERS, timeout=7)
-                if r.status_code == 200:
-                    # Gelen veride googlevideo manifest url'sini arıyoruz
-                    text_data = r.text
-                    manifest_match = re.search(r'(https://manifest\.googlevideo\.com/[^"\s]+)', text_data)
-                    
-                    if manifest_match:
-                        raw_url = manifest_match.group(1).replace(r'\/', '/').replace('\\', '')
-                        # Eğer link m3u8 formatı parametreleri eksikse ekle
-                        if "hls_playlist" not in raw_url and "api/manifest" in raw_url:
-                            raw_url = raw_url.replace("api/manifest", "api/manifest/hls_playlist")
-                            
-                        linkler[isim] = raw_url
-                        print(f"   🟢 {isim} Ham Manifest Linki Çekildi!")
-                        success = True
-                        break
-            except:
-                continue
+        try:
+            # YouTube'un engellemediği resmi RSS XML kaynağı
+            rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+            r = requests.get(rss_url, headers=HEADERS, timeout=8)
+            
+            if r.status_code == 200:
+                # XML şemasını parse ediyoruz
+                root = ET.fromstring(r.text)
+                ns = {'ns': 'http://www.w3.org/2005/Atom', 'yt': 'http://www.youtube.com/xml/schemas/2015'}
                 
-        # Eğer API'ler o anlık yanıt vermezse yedek kazıyıcı (Scraper) tetiklenir
-        if not success:
-            try:
-                # İnternetteki açık IPTV listelerinden o kanalın o anki aktif googlevideo linkini süzme planı
-                scrape_url = "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/tr.m3u"
-                res = requests.get(scrape_url, headers=HEADERS, timeout=5)
-                if res.status_code == 200:
-                    lines = res.text.split('\n')
-                    for idx, line in enumerate(lines):
-                        if channel_id in line or isim.lower() in line.lower():
-                            for next_idx in range(idx+1, min(idx+4, len(lines))):
-                                if "googlevideo.com" in lines[next_idx]:
-                                    linkler[isim] = lines[next_idx].strip()
-                                    print(f"   🟡 {isim} Genel Havuzdan Ham Linkle Yakalandı.")
-                                    success = True
-                                    break
-                        if success: break
-            except:
-                pass
-                
-        if not success:
-            print(f"   ❌ {isim} Ham Linki Alınamadı.")
-
+                # Kanalın en güncel videosunun IDsini alıyoruz (Canlı yayınlar her zaman en üsttedir)
+                first_entry = root.find('ns:entry', ns)
+                if first_entry is not None:
+                    video_id_elem = first_entry.find('yt:videoId', ns)
+                    if video_id_elem is not None:
+                        video_id = video_id_elem.text
+                        # Oynatıcıların doğrudan akış olarak tanıyacağı resmi format
+                        linkler[isim] = f"https://www.youtube.com/watch?v={video_id}"
+                        print(f"   🟢 {isim} Canlı Yayın Video ID Yakalandı: {video_id}")
+                        continue
+                        
+            print(f"   ❌ {isim} RSS Kaynağından Çözülemedi.")
+        except Exception as e:
+            print(f"   ❌ {isim} İşlenirken Beklenmedik Hata.")
+            
     return linkler
 
 def github_taze_link_avla():
@@ -157,7 +131,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V5.6: Başlıyor...")
+    print(f"🛡️  USTA SİSTEM V5.7: Başlıyor...")
     avlananlar = github_taze_link_avla()
     guncel_kaynak_listesi = list(set(YEDEK_KAYNAKLAR + avlananlar))
     
@@ -197,7 +171,7 @@ def main():
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # Gerçek manifest linklerini toplayan fonksiyon
+    # Asla engellenmeyen RSS tabanlı link yakalayıcı
     yt_linkleri = youtube_linkleri_al()
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
