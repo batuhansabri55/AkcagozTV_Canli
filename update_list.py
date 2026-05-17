@@ -6,13 +6,6 @@ import datetime
 import urllib3
 from concurrent.futures import ThreadPoolExecutor
 
-try:
-    import yt_dlp
-except ImportError:
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "yt-dlp"])
-    import yt_dlp
-
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 FILE_PATH = "tr.m3u"
@@ -20,7 +13,8 @@ ZIRH_LIMIT = 3950
 THREADS = 4        
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7'
 }
 
 YASAKLI_GRUPLAR = [
@@ -44,6 +38,7 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
+# Doğrudan canlı akış sayfaları üzerinden kazıma yapacağız usta
 YOUTUBE_KANALLAR = {
     "A Haber": "https://www.youtube.com/@ahaber/live",
     "Sozcu TV": "https://www.youtube.com/@SozcuTelevizyonu/live",
@@ -57,72 +52,28 @@ YOUTUBE_KANALLAR = {
 
 def youtube_linkleri_al():
     linkler = {}
+    print("\n🚀 YouTube Canlı Yayınları Sökülüyor (API Kesintisiz Mod)...")
     
-    # Sürekli patlayan statik IP'ler yerine test edilmiş daha güncel proxy havuzu usta
-    PROXIES = [
-        "http://185.184.211.238:1080",
-        "http://91.102.164.225:8888",
-        "http://85.105.141.22:8080"
-    ]
-    
-    print("\n🚀 YouTube Canlı Yayınları Çözülüyor...")
     for isim, url in YOUTUBE_KANALLAR.items():
-        success = False
-        
-        # Önce Proxy'li kombinasyonları deniyoruz
-        for proxy in PROXIES:
-            ydl_opts = {
-                'format': 'best',
-                'quiet': True,
-                'no_warnings': True,
-                'extract_flat': False,
-                'ignoreerrors': True,  # Hata durumunda kodun çökmesini engeller, bir sonrakine geçer
-                'proxy': proxy,
-                'socket_timeout': 4,
-                'extractor_args': {
-                    'youtube': {
-                        'player_client': ['android', 'ios'], # GitHub engeline takılmamak için mobil istemci taklidi
-                        'skip': ['dash', 'hls']
-                    }
-                }
-            }
-            try:
-                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                    info = ydl.extract_info(url, download=False)
-                    if info:
-                        stream_url = info.get('url')
-                        if stream_url and ("manifest" in stream_url or "googlevideo" in stream_url):
-                            linkler[isim] = stream_url
-                            print(f"   🟢 {isim} Manifest Linki Çekildi (Proxy ile).")
-                            success = True
-                            break
-            except:
-                continue
-        
-        # Eğer proxyler başarısız olursa, GitHub sunucusundan doğrudan temiz bağlantı dener (Yedek plan)
-        if not success:
-            try:
-                ydl_opts_direct = {
-                    'format': 'best',
-                    'quiet': True,
-                    'no_warnings': True,
-                    'ignoreerrors': True,
-                    'extractor_args': {
-                        'youtube': {
-                            'player_client': ['android', 'web']
-                        }
-                    }
-                }
-                with yt_dlp.YoutubeDL(ydl_opts_direct) as ydl:
-                    info = ydl.extract_info(url, download=False)
-                    if info and info.get('url'):
-                        linkler[isim] = info.get('url')
-                        print(f"   🟡 {isim} Standart direkt bağlantı ile geçildi.")
-                    else:
-                        print(f"   ❌ {isim} Atlandı (Link çözülemedi).")
-            except:
-                print(f"   ❌ {isim} Atlandı.")
-                
+        try:
+            # YouTube sayfasına tarayıcı gibi istek atıyoruz
+            session = requests.Session()
+            r = session.get(url, headers=HEADERS, timeout=8)
+            
+            if r.status_code == 200:
+                # Sayfa kaynağındaki gizli hlsManifestUrl (.m3u8) adresini avlıyoruz
+                match = re.search(r'"hlsManifestUrl":"(https://[^"]+)"', r.text)
+                if match:
+                    # JSON kaçış karakterlerini (\/) temizliyoruz
+                    stream_url = match.group(1).replace(r'\/', '/')
+                    linkler[isim] = stream_url
+                    print(f"   🟢 {isim} Canlı Yayın Linki Söküldü!")
+                    continue
+            
+            print(f"   ❌ {isim} Alınamadı (Yayında olmayabilir veya kısıtlı).")
+        except Exception as e:
+            print(f"   ❌ {isim} İşlenirken Hata Oluştu.")
+            
     return linkler
 
 def github_taze_link_avla():
@@ -174,7 +125,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V5.2: Başlıyor...")
+    print(f"🛡️  USTA SİSTEM V5.3: Başlıyor...")
     avlananlar = github_taze_link_avla()
     guncel_kaynak_listesi = list(set(YEDEK_KAYNAKLAR + avlananlar))
     
@@ -214,6 +165,7 @@ def main():
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
+    # Yeni sıfır engelli sökücü çalışıyor
     yt_linkleri = youtube_linkleri_al()
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
