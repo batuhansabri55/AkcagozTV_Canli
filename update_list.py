@@ -51,37 +51,60 @@ YOUTUBE_KANALLAR = {
 
 def youtube_linkleri_al():
     linkler = {}
-    print("\n🚀 YouTube Canlı Yayınları Sökülüyor (CDN Köprü Modu)...")
+    print("\n🚀 YouTube Canlı Yayınları Çözülüyor (Ham Googlevideo Manifest Modu)...")
     
     for isim, channel_id in YOUTUBE_KANALLAR.items():
-        # GitHub engeline takılmayan alternatif bypass proxy/cdn köprüleri
-        alternatif_cdnler = [
-            f"https://raw.githubusercontent.com/iptv-org/iptv/master/channels/tr.m3u", # Önce iptv-org havuzuna bakarız
-            f"https://youtube-live-stream-resolver.vercel.app/live/{channel_id}.m3u8",
-            f"https://ns-serve.com/yt-live/{channel_id}.m3u8"
+        # Ham manifest linkini dönebilen açık kaynaklı API sunucu şablonları usta
+        api_endpoints = [
+            f"https://youtube-live-resolver.vercel.app/api/resolve?channelId={channel_id}",
+            f"https://pipedapi.kavin.rocks/streams/live/{channel_id}",
+            f"https://api.loveryt.com/live/{channel_id}"
         ]
         
         success = False
-        
-        # Doğrudan stabil çalışan ana akış köprüsünü m3u8 formatında IPTV oynatıcılar için hazırlıyoruz
-        # Bu link oynatıcıya (VLC/Tivimate) gittiğinde köprü üzerinden dinamik çözülür usta
-        dinamik_url = f"https://youtube-live-stream-resolver.vercel.app/live/{channel_id}.m3u8"
-        
-        try:
-            # Köprünün aktifliğini hızlıca doğruluyoruz
-            r = requests.head(dinamik_url, headers=HEADERS, timeout=5)
-            if r.status_code in [200, 301, 302, 307]:
-                linkler[isim] = dinamik_url
-                print(f"   🟢 {isim} CDN Köprü Linki Tanımlandı!")
-                success = True
-        except:
-            pass
-            
+        for api_url in api_endpoints:
+            try:
+                r = requests.get(api_url, headers=HEADERS, timeout=7)
+                if r.status_code == 200:
+                    # Gelen veride googlevideo manifest url'sini arıyoruz
+                    text_data = r.text
+                    manifest_match = re.search(r'(https://manifest\.googlevideo\.com/[^"\s]+)', text_data)
+                    
+                    if manifest_match:
+                        raw_url = manifest_match.group(1).replace(r'\/', '/').replace('\\', '')
+                        # Eğer link m3u8 formatı parametreleri eksikse ekle
+                        if "hls_playlist" not in raw_url and "api/manifest" in raw_url:
+                            raw_url = raw_url.replace("api/manifest", "api/manifest/hls_playlist")
+                            
+                        linkler[isim] = raw_url
+                        print(f"   🟢 {isim} Ham Manifest Linki Çekildi!")
+                        success = True
+                        break
+            except:
+                continue
+                
+        # Eğer API'ler o anlık yanıt vermezse yedek kazıyıcı (Scraper) tetiklenir
         if not success:
-            # Alternatif Köprü 2
-            yedek_url = f"https://streamlink.squeezebox.workers.dev/?url=https://www.youtube.com/channel/{channel_id}/live"
-            linkler[isim] = yedek_url
-            print(f"   🟡 {isim} Yedek İşleyiciye Bağlandı.")
+            try:
+                # İnternetteki açık IPTV listelerinden o kanalın o anki aktif googlevideo linkini süzme planı
+                scrape_url = "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/tr.m3u"
+                res = requests.get(scrape_url, headers=HEADERS, timeout=5)
+                if res.status_code == 200:
+                    lines = res.text.split('\n')
+                    for idx, line in enumerate(lines):
+                        if channel_id in line or isim.lower() in line.lower():
+                            for next_idx in range(idx+1, min(idx+4, len(lines))):
+                                if "googlevideo.com" in lines[next_idx]:
+                                    linkler[isim] = lines[next_idx].strip()
+                                    print(f"   🟡 {isim} Genel Havuzdan Ham Linkle Yakalandı.")
+                                    success = True
+                                    break
+                        if success: break
+            except:
+                pass
+                
+        if not success:
+            print(f"   ❌ {isim} Ham Linki Alınamadı.")
 
     return linkler
 
@@ -134,7 +157,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V5.5: Başlıyor...")
+    print(f"🛡️  USTA SİSTEM V5.6: Başlıyor...")
     avlananlar = github_taze_link_avla()
     guncel_kaynak_listesi = list(set(YEDEK_KAYNAKLAR + avlananlar))
     
@@ -174,7 +197,7 @@ def main():
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # Engellenemeyen CDN sistemi tetikleniyor
+    # Gerçek manifest linklerini toplayan fonksiyon
     yt_linkleri = youtube_linkleri_al()
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
