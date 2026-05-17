@@ -18,7 +18,7 @@ def canli_yayin_linki_al(url):
         'quiet': True,
         'no_warnings': True,
         'extract_flat': False,
-        # Sadece bu alt kısmı ekledik usta; GitHub sunucusunu Android telefon gibi gösterip engeli aşıyor:
+        # GitHub Actions sunucusunun YouTube engelini aşmasını sağlayan mobil parametreler
         'extractor_args': {
             'youtube': {
                 'player_client': ['android', 'ios'],
@@ -64,7 +64,7 @@ def ana_fonksiyon():
         print("\n======================= YAKALANAN TAM LİNKLER =======================")
         for isim, link in yakalanan_linkler.items():
             print(f"\n[{isim} - TAM LINK]:")
-            print(link)  # İstediğin o upuzun googlevideo linki eksiksiz buraya basılacak usta
+            print(link)
             print("-" * 70)
             
         m3u_olustur(yakalanan_linkler)
