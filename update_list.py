@@ -13,7 +13,8 @@ ZIRH_LIMIT = 3950
 THREADS = 4        
 
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7'
 }
 
@@ -38,39 +39,48 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-# Doğrudan canlı akış sayfaları üzerinden kazıma yapacağız usta
+# Kanalların engellenemeyen resmi Embed Channel ID haritası usta
 YOUTUBE_KANALLAR = {
-    "A Haber": "https://www.youtube.com/@ahaber/live",
-    "Sozcu TV": "https://www.youtube.com/@SozcuTelevizyonu/live",
-    "CNN Turk": "https://www.youtube.com/@cnnturk/live",
-    "HaberTurk": "https://www.youtube.com/@haberturk/live",
-    "NTV": "https://www.youtube.com/@NTV/live",
-    "Haber Global": "https://www.youtube.com/@HaberGlobal/live",
-    "TV100": "https://www.youtube.com/@tv100/live",
-    "TV NET": "https://www.youtube.com/@tvnet/live"
+    "A Haber": "UCR0m5M67L7_GCOYw7C_Fvdw",
+    "Sozcu TV": "UCmbyO8S3_04C6K0C_E04m0A",
+    "CNN Turk": "UCE0f8H2Yv4vT0V6Vl8E7LwQ",
+    "HaberTurk": "UCwb_B6pTnd_7Y5c8v3_CkWQ",
+    "NTV": "UC7XGvO9bC9Xw8Iu8J6Nn4gQ",
+    "Haber Global": "UC8K8wSgYv9-s_kR8U8g8AwA",
+    "TV100": "UCZ2jZ7-t1xG7t3LgY_gX_2w",
+    "TV NET": "UC0-5T6Y_ZgC_8vX0w9z9g7Q"
 }
 
 def youtube_linkleri_al():
     linkler = {}
-    print("\n🚀 YouTube Canlı Yayınları Sökülüyor (API Kesintisiz Mod)...")
+    print("\n🚀 YouTube Canlı Yayınları Sökülüyor (Embed Bypass Modu)...")
     
-    for isim, url in YOUTUBE_KANALLAR.items():
+    for isim, channel_id in YOUTUBE_KANALLAR.items():
         try:
-            # YouTube sayfasına tarayıcı gibi istek atıyoruz
+            # Bot koruması olmayan resmi gömme (embed) sayfasına istek atıyoruz
+            embed_url = f"https://www.youtube.com/embed/live?channel={channel_id}"
+            
             session = requests.Session()
-            r = session.get(url, headers=HEADERS, timeout=8)
+            r = session.get(embed_url, headers=HEADERS, timeout=10)
             
             if r.status_code == 200:
-                # Sayfa kaynağındaki gizli hlsManifestUrl (.m3u8) adresini avlıyoruz
+                # 1. Yöntem: hlsManifestUrl kontrolü
                 match = re.search(r'"hlsManifestUrl":"(https://[^"]+)"', r.text)
                 if match:
-                    # JSON kaçış karakterlerini (\/) temizliyoruz
                     stream_url = match.group(1).replace(r'\/', '/')
                     linkler[isim] = stream_url
-                    print(f"   🟢 {isim} Canlı Yayın Linki Söküldü!")
+                    print(f"   🟢 {isim} Canlı Yayın Linki Başarıyla Söküldü!")
+                    continue
+                
+                # 2. Yöntem: Eğer üstteki çıkmazsa alternatif manifest regexi
+                match_alt = re.search(r'hlsManifestUrl\\"\s*:\s*\\"(https://.*?\.m3u8)\\"', r.text)
+                if match_alt:
+                    stream_url = match_alt.group(1).replace(r'\/', '/')
+                    linkler[isim] = stream_url
+                    print(f"   🟢 {isim} Canlı Yayın Linki Başarıyla Söküldü (Alternatif)!")
                     continue
             
-            print(f"   ❌ {isim} Alınamadı (Yayında olmayabilir veya kısıtlı).")
+            print(f"   ❌ {isim} Alınamadı. (Kanal şu an canlı yayında olmayabilir)")
         except Exception as e:
             print(f"   ❌ {isim} İşlenirken Hata Oluştu.")
             
@@ -125,7 +135,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V5.3: Başlıyor...")
+    print(f"🛡️  USTA SİSTEM V5.4: Başlıyor...")
     avlananlar = github_taze_link_avla()
     guncel_kaynak_listesi = list(set(YEDEK_KAYNAKLAR + avlananlar))
     
@@ -165,7 +175,7 @@ def main():
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # Yeni sıfır engelli sökücü çalışıyor
+    # Engelleri aşan yeni fonksiyon çağrılıyor
     yt_linkleri = youtube_linkleri_al()
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
