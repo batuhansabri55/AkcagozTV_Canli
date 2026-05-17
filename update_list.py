@@ -44,7 +44,6 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-# --- GENİŞLETİLMİŞ GARANTİLİ CANLI YAYIN ADRESLERİ ---
 YOUTUBE_KANALLAR = {
     "A Haber": "https://www.youtube.com/@ahaber/live",
     "Sozcu TV": "https://www.youtube.com/@SozcuTelevizyonu/live",
@@ -59,27 +58,30 @@ YOUTUBE_KANALLAR = {
 def youtube_linkleri_al():
     linkler = {}
     
-    # Ücretsiz, stabil Türkiye Proxyleri üzerinden istek atarak GitHub engelini kaldırıyoruz usta
+    # Sürekli patlayan statik IP'ler yerine test edilmiş daha güncel proxy havuzu usta
     PROXIES = [
-        "http://45.158.12.35:8080",
         "http://185.184.211.238:1080",
-        "http://91.102.164.225:8888"
+        "http://91.102.164.225:8888",
+        "http://85.105.141.22:8080"
     ]
     
     print("\n🚀 YouTube Canlı Yayınları Çözülüyor...")
     for isim, url in YOUTUBE_KANALLAR.items():
         success = False
+        
+        # Önce Proxy'li kombinasyonları deniyoruz
         for proxy in PROXIES:
             ydl_opts = {
                 'format': 'best',
                 'quiet': True,
                 'no_warnings': True,
                 'extract_flat': False,
+                'ignoreerrors': True,  # Hata durumunda kodun çökmesini engeller, bir sonrakine geçer
                 'proxy': proxy,
-                'socket_timeout': 5,
+                'socket_timeout': 4,
                 'extractor_args': {
                     'youtube': {
-                        'player_client': ['android', 'web'],
+                        'player_client': ['android', 'ios'], # GitHub engeline takılmamak için mobil istemci taklidi
                         'skip': ['dash', 'hls']
                     }
                 }
@@ -87,24 +89,39 @@ def youtube_linkleri_al():
             try:
                 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     info = ydl.extract_info(url, download=False)
-                    stream_url = info.get('url')
-                    if stream_url and "manifest.googlevideo.com" in stream_url:
-                        linkler[isim] = stream_url
-                        print(f"   CN70  {isim} Manifest Linki Çekildi.")
-                        success = True
-                        break
+                    if info:
+                        stream_url = info.get('url')
+                        if stream_url and ("manifest" in stream_url or "googlevideo" in stream_url):
+                            linkler[isim] = stream_url
+                            print(f"   🟢 {isim} Manifest Linki Çekildi (Proxy ile).")
+                            success = True
+                            break
             except:
                 continue
         
-        # Proxy takılırsa doğrudan deneme (Yedek plan)
+        # Eğer proxyler başarısız olursa, GitHub sunucusundan doğrudan temiz bağlantı dener (Yedek plan)
         if not success:
             try:
-                with yt_dlp.YoutubeDL({'format': 'best','quiet': True}) as ydl:
+                ydl_opts_direct = {
+                    'format': 'best',
+                    'quiet': True,
+                    'no_warnings': True,
+                    'ignoreerrors': True,
+                    'extractor_args': {
+                        'youtube': {
+                            'player_client': ['android', 'web']
+                        }
+                    }
+                }
+                with yt_dlp.YoutubeDL(ydl_opts_direct) as ydl:
                     info = ydl.extract_info(url, download=False)
-                    linkler[isim] = info.get('url')
-                    print(f"   🟡 {isim} Standart link ile geçildi.")
+                    if info and info.get('url'):
+                        linkler[isim] = info.get('url')
+                        print(f"   🟡 {isim} Standart direkt bağlantı ile geçildi.")
+                    else:
+                        print(f"   ❌ {isim} Atlandı (Link çözülemedi).")
             except:
-                print(f"   ❌ {isim} Atlandı (Yayında olmayabilir).")
+                print(f"   ❌ {isim} Atlandı.")
                 
     return linkler
 
@@ -197,7 +214,6 @@ def main():
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # YouTube Canlı Yayınlarını buradaki havuzdan çekiyoruz usta
     yt_linkleri = youtube_linkleri_al()
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
@@ -207,7 +223,6 @@ def main():
         for k in final_listesi:
             f.write(k + "\n")
             
-        # Alınan canlı yayınları hiçbir kırpma yapmadan tam url yapısıyla listenin sonuna ekliyoruz
         if yt_linkleri:
             f.write("\n# --- YOUTUBE CANLI HABER PAKETİ --- #\n")
             for isim, link in yt_linkleri.items():
