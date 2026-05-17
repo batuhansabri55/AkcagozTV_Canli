@@ -3740,6 +3740,7 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/115712
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/115713
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="CINE VISION 6" tvg-logo="https://www.cinevisiontv.com/wp-content/uploads/2016/08/cinevisionlogo.jpg" group-title="TR-SINEMA",CINE VISION 6
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/115714
+
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="FILM SCREEN" tvg-logo="https://logo.multicms.info/tvlogo/filmscreen.jpg" group-title="TR-SINEMA",FILM SCREEN
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/275983
 #EXTINF:0 user-agent="Firefox" tvg-id="SinemaTV" tvg-name="SINEMA TV" tvg-logo="https://logo.multicms.info/tvlogo/sinemaTV.jpg" group-title="TR-SINEMA",SINEMA TV
@@ -4136,7 +4137,8 @@ https://streams.uzunmuhalefet.com/stream/54fd8806-0142-4839-930e-aa1d662ad866.m3
 http://50.7.144.122:1935/live/cartoon-network.stream/playlist.m3u8?hash=505f26ef365e596036be981b1ad85ed4
 #EXTINF:-1 tvg-id="cartoonnetwork" tvg-name="Cartoon Network" tvg-logo="https://img.dsmartgo.com.tr/content/c/_s/13870/Thumbnail.png" group-title="Çocuk",Cartoon Network
 https://streamer.uzunmuhalefet.com/turkish/canlitv/11233.m3u8
-
+#EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="FILM SCREEN" tvg-logo="https://logo.multicms.info/tvlogo/filmscreen.jpg" group-title="TR-SINEMA",FILM SCREEN
+https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
 
 # --- DERİN TEMİZLİK VE TAZE AV (10-05-2026 13:48) --- #
 #EXTINF:-1 tvg-id=&quot;KanalDDrama.tr&quot; tvg-name=&quot;Kanal D Drama&quot; tvg-logo=&quot;https://i.imgur.com/WIeZMKT.png&quot; group-title=&quot;entertainment&quot;,Kanal D Drama
