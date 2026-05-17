@@ -56,59 +56,65 @@ def github_taze_link_avla():
                 yeni_kaynaklar.append(raw)
                 if len(yeni_kaynaklar) >= 10: break
     except:
-        print("⚠️  GitHub API limiti veya bağlantı sorunu. Mevcut listeden devam ediliyor.")
+        print("⚠️  GitHub API limiti veya bağlantı sorunu. Mevcut列表dan devam ediliyor.")
     
     return yeni_kaynaklar
 
 def link_saglam_mi(url):
     """
-    ULTRA KUSURSUZ SÜZGEÇ: Hem sahte m3u8 tuzaklarını hem de 
-    Token'ı patlamış ama '200 OK' dönen sahte direkt yayınları (TS/Stream) acımasızca eler.
+    MODİFİYELİ ULTRA KUSURSUZ SÜZGEÇ: 
+    Yavaş açılan canlı yayınları öldürmez, sahte 200 OK veren token tuzaklarını imha eder.
     """
     try:
-        # Hantal/ölü sunucuları beklememek için timeout 4 saniye
-        with requests.get(url, headers=HEADERS, timeout=4, stream=True, verify=False) as r:
+        # Önce hızlıca bir HEAD isteği atıp sunucu durumuna bakıyoruz (Trafiği ve zamanı korur)
+        h = requests.head(url, headers=HEADERS, timeout=3, verify=False, allow_redirects=True)
+        if h.status_code != 200:
+            return False
+            
+        content_type = h.headers.get('Content-Type', '').lower()
+        
+        # HTML veya JSON ise bu bir hata/panel sayfasıdır, direkt ele
+        if 'text/html' in content_type or 'application/json' in content_type:
+            return False
+            
+        # Akış testi için GET isteği (Bağlantı kilitlenmelerini önlemek için stream=True)
+        with requests.get(url, headers=HEADERS, timeout=4, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code != 200: 
                 return False
-            
-            content_type = r.headers.get('Content-Type', '').lower()
-            
-            # HTML veya JSON (hata/yönlendirme sayfası) ise direkt imha et
-            if 'text/html' in content_type or 'application/json' in content_type:
+                
+            # Sunucudan gelen ilk ufak veriyi güvenli oku (Çökme/Zaman aşımı korumalı)
+            try:
+                # iter_content yerine ham stream'den maksimum 1024 bayt oku (Daha hızlı ve güvenli)
+                chunk = r.raw.read(1024)
+            except:
                 return False
                 
-            # İlk 2KB veriyi BINARY (Ham) olarak çek
-            try:
-                chunk = next(r.iter_content(chunk_size=2048))
-            except StopIteration:
-                return False # Sunucu boş içerik fırlattıysa ele
-                
-            # TUZAK 1: Boyut. Video paketleri 200 bayttan küçük olamaz.
-            if len(chunk) < 200:
+            if not chunk or len(chunk) < 10:
                 return False
 
             content_text = chunk.decode('utf-8', errors='ignore').lower()
 
-            # --- M3U8 LİSTE KONTROLÜ ---
-            if "#extm3u" in content_text:
-                has_video_chunks = any(ext in content_text for ext in [".ts", ".m3u8", ".mp4", ".aac"])
-                satir_sayisi = len(content_text.strip().split('\n'))
-                
-                # İçinde .ts yoksa veya kısacık sahte bir dosyaysa ele
-                if has_video_chunks and satir_sayisi >= 4:
+            # --- M3U8 VEYA TEXT TABANLI LİSTE KONTROLÜ ---
+            if "#extm3u" in content_text or "#extinf" in content_text:
+                # Eğer alt alta dizilmiş m3u8 ise geçerli say
+                if any(ext in content_text for ext in [".ts", ".m3u8", ".mp4", "http"]):
                     return True
                 return False
             
-            # --- DİREKT YAYIN (STREAM) KONTROLÜ ---
-            # TUZAK 2: İçine gizlenmiş token/error hata mesajları
-            hata_kelimeleri = ["expired", "invalid", "error", "forbidden", "unauthorized", "not found", "bad token"]
+            # --- DİREKT TS / STREAM AKIŞI KONTROLÜ ---
+            # Token patlamışsa ekranda hata kelimeleri yazar, onları yakala
+            hata_kelimeleri = ["expired", "invalid", "error", "forbidden", "unauthorized", "not found", "bad token", "denied"]
             if any(hata in content_text for hata in hata_kelimeleri):
                 return False
             
-            # Tüm tuzakları aştıysa ve video/stream formatındaysa onayla
-            if 'video/' in content_type or 'mpegurl' in content_type or 'stream' in content_type or 'octet-stream' in content_type:
+            # Video akış türü doğrulaması
+            if any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream']):
                 return True
                 
+            # Eğer TS video akışı ise ham veri (binary) içinde "G" (0x47) Sync byte kontrolü (Opsiyonel ama garanti)
+            if chunk.startswith(b'\x47') or b'\x47' in chunk[:188]:
+                return True
+
             return False
     except: 
         return False
