@@ -19,6 +19,8 @@ HEADERS = {
 }
 
 # --- YASAKLI VE YEDEK LİSTELERİ ---
+# Not: Uluslararası belgesel kanallarının (Nat Geo, Discovery vb.) silinmemesi için 
+# "YASAKLI_GRUPLAR" listesindeki genel yabancı ülke isimleri filtrenizle çakışmıyor, gayet temiz.
 YASAKLI_GRUPLAR = [
     "FreeShot", "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", 
     "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
@@ -37,28 +39,38 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://tinyurl.com/bdd2tz6h",
     "https://publiciptv.com/countries/tr/m3u",
-    "https://iptv-org.github.io/iptv/countries/tr.m3u"
+    "https://iptv-org.github.io/iptv/countries/tr.m3u",
+    
+    # --- NOKTA ATIŞI BELGESEL KAYNAKLARI ---
+    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/categories/documentary.m3u",
+    "https://iptv-org.github.io/iptv/categories/documentary.m3u"
 ]
 
 def github_taze_link_avla():
     """GITHUB'DA SON 48 SAATTE PAYLAŞILAN TAZE LİNKLERİ BULUR"""
     yeni_kaynaklar = []
     tarih = (datetime.datetime.now() - datetime.timedelta(days=2)).strftime('%Y-%m-%d')
-    search_url = f"https://api.github.com/search/code?q=extension:m3u+trt1+pushed:>{tarih}&sort=indexed"
     
-    try:
-        print(f"🕵️  GitHub'da derin arama yapılıyor (Filtre: >{tarih})...")
-        r = requests.get(search_url, headers=HEADERS, timeout=10)
-        if r.status_code == 200:
-            items = r.json().get('items', [])
-            for item in items:
-                raw = item['html_url'].replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
-                yeni_kaynaklar.append(raw)
-                if len(yeni_kaynaklar) >= 10: break
-    except:
-        print("⚠️  GitHub API limiti veya bağlantı sorunu. Mevcut列表dan devam ediliyor.")
+    # Sadece trt1 değil, belgesel arayan güncel depoları da radara alıyoruz
+    arama_terimleri = ["trt1", "documentary", "belgesel"]
     
-    return yeni_kaynaklar
+    for terim in arama_terimleri:
+        search_url = f"https://api.github.com/search/code?q=extension:m3u+{terim}+pushed:>{tarih}&sort=indexed"
+        try:
+            print(f"🕵️  GitHub'da derin arama yapılıyor (Filtre: {terim} >{tarih})...")
+            r = requests.get(search_url, headers=HEADERS, timeout=10)
+            if r.status_code == 200:
+                items = r.json().get('items', [])
+                for item in items:
+                    raw = item['html_url'].replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+                    if raw not in yeni_kaynaklar:
+                        yeni_kaynaklar.append(raw)
+                    if len(yeni_kaynaklar) >= 15: break # Kotayı biraz esnettik
+        except:
+            print(f"⚠️  GitHub API limiti veya bağlantı sorunu ({terim}).")
+            continue
+            
+    return yeni_kaynaklar[:12]
 
 def link_saglam_mi(url):
     """
@@ -84,7 +96,7 @@ def link_saglam_mi(url):
                 
             # Sunucudan gelen ilk ufak veriyi güvenli oku (Çökme/Zaman aşımı korumalı)
             try:
-                # iter_content yerine ham stream'den maksimum 1024 bayt oku (Daha hızlı ve güvenli)
+                # ham stream'den maksimum 1024 bayt oku (Daha hızlı ve güvenli)
                 chunk = r.raw.read(1024)
             except:
                 return False
@@ -111,7 +123,7 @@ def link_saglam_mi(url):
             if any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream']):
                 return True
                 
-            # Eğer TS video akışı ise ham veri (binary) içinde "G" (0x47) Sync byte kontrolü (Opsiyonel ama garanti)
+            # Eğer TS video akışı ise ham veri (binary) içinde "G" (0x47) Sync byte kontrolü
             if chunk.startswith(b'\x47') or b'\x47' in chunk[:188]:
                 return True
 
@@ -148,7 +160,7 @@ def kanal_isleme(kanal_metni, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V3: Tavizsiz temizlik ve gerçek canlı yayın avı başlıyor!")
+    print(f"🛡️  USTA SİSTEM V3.1: Belgesel Takviyeli Canlı Yayın Avı Başlıyor!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
