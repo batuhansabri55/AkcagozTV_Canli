@@ -17,6 +17,8 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8?checkedby:MyWay
 #EXTINF:-1,ATVYEDEK46
 https://streams.uzunmuhalefet.com/stream/c8758555-8581-4dec-9a46-ebcfaf9ace0a.m3u8
+#EXTINF:-1 tvg-id="ATV.tr@SD",ATVYEDEK45
+https://raw.githubusercontent.com/don24crk/Don24crk-Repository/refs/heads/master/ATV.m3u8
 
 #EXTINF:-1,KANALDYEDEK39
 http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
@@ -73,6 +75,8 @@ https://ciner.daioncdn.net/showtv/showtv.m3u8?app=showtv_web
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 #EXTINF:-1,SHOWTVYEDEK43
 https://www.canlitv.tech/hls/showtv.m3u8
+#EXTINF:-1 group-title="🇹🇷 TÜRKİYƏ kanalları",SHOWTVYEDEK43
+https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=5c5vr8y2q331&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3&e=1664766175
 #EXTINF:-1,SHOWTVYEDEK42
 https://ciner.daioncdn.net/showtv/showtv_720p.m3u8?ex=1664766175&sig=ae489f32a87b0659d25bd88421729530&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=7ukrat2ms282&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
 #EXTINF:-1,SHOWTVYEDEK43
@@ -176,6 +180,11 @@ https://tv8.daioncdn.net/tv8/tv8_480p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4
 #EXTINF:-1  tvg-id="TV8(src05).tr" tvg-logo="" group-title="Ulusal",TV8YEDEK30
 #EXTVLCOPT:http-referer="https://www.tv8.com.tr/"
 https://tv8.daioncdn.net/tv8/tv8_360p.m3u8?&sid=859kc10mqffq&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+#EXTINF:-1 tvg-id="" tvg-name="TV8" tvg-logo="https://www.lyngsat-logo.com/logo/tv/tt/tv8_tr.png" group-title="ULUSAL-UHD",TV8YEDEK31
+http://149.13.0.66:4002/tv8hd
+#EXTINF:-1 tvg-id="" tvg-name="TV8" tvg-logo="https://www.lyngsat-logo.com/logo/tv/tt/tv8_tr.png" group-title="ULUSAL-UHD",TV8YEDEK30
+http://89.187.191.41/TV8-HD-TR/video.m3u8
+
 
 #EXTINF:-1,NOWTVYEDEK34
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
@@ -215,6 +224,8 @@ https://ciner-live.ercdn.net/showmax/showmax_1080p.m3u8?e=1778616021&st=Nd_rEM9N
 https://.githubusercontent.com/rideordie16/YouTube/main/ch/showmax.m3u8
 #EXTINF:-1,SHOWMAXYEDEK
 https://streams.uzunmuhalefet.com/stream/2ffa76f2-5c2b-4f98-b29b-9bbda2f75ad6.m3u8
+#EXTINF:-1 tvg-id="ShowMax.tr" tvg-logo="http://assets.tvcdn.net/ec1c55f6-b525-4466-b41c-a935915a6962.png" group-title="Eğlence",SHOWMAXYEDEK
+https://cdn.tecostream.xyz/ShowMax.m3u8
 
 #EXTINF:-1,SHOWTURKYEDEK
 https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8?e=1778615916&st=GPtg2EDqiUPgybUwbiStbg&tv=1
@@ -457,8 +468,10 @@ https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3
 
 #EXTINF:-1,
 https://.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Cnn_Turk.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",CNN TURK
+#EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",CNNTURKYEDEK
 https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Cnn_Turk.m3u8
+#EXTINF:-1 tvg-id="CNNTurk.tr" tvg-logo="http://assets.tvcdn.net/db0e3f2f-3191-4af2-9cde-5345eb7543e4.png" group-title="Haber",CNNTURKYEDEK
+https://live.tecostream.xyz/CnnTurk.php
 #EXTINF:-1,CNNTURKYEDEK
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
 #EXTINF:-1,CNNTURKYEDEK
@@ -584,6 +597,8 @@ https://.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/A_habe
 https://turkuaz.tecostream.xyz/ahaber
 #EXTINF:-1,AHABERYEDEK
 https://www.canlitv.tech/hls/ahaber.m3u8
+#EXTINF:-1 tvg-id="AHaber.tr" tvg-logo="http://assets.tvcdn.net/06e7abd9-0fbb-441f-af63-b895513d3aaa.png" group-title="Haber",AHABERYEDEK
+https://turkuaz.tecostream.xyz/ahaber
 
 #EXTINF:-1,TRTHABERYEDEK
 https://tv-trthaber.medya.trt.com.tr/master_1440.m3u8?checkedby:MyWay
