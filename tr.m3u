@@ -185,7 +185,6 @@ http://149.13.0.66:4002/tv8hd
 #EXTINF:-1 tvg-id="" tvg-name="TV8" tvg-logo="https://www.lyngsat-logo.com/logo/tv/tt/tv8_tr.png" group-title="ULUSAL-UHD",TV8YEDEK30
 http://89.187.191.41/TV8-HD-TR/video.m3u8
 
-
 #EXTINF:-1,NOWTVYEDEK34
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1,NOWTVYEDEK33
@@ -733,17 +732,13 @@ https://saran-live.ercdn.net/natgeowild/natgeowild1080p_1.m3u8
 #EXTINF:-1,NATIONALGEOGRAPHICWILDYEDEK
 https://saran-live.ercdn.net/natgeowild/index.m3u8
 
-
 #EXTINF:-1,BBCEARTHYEDEK
 https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist1080p.m3u8
-
 
 #EXTINF:-1,VIASATHISTORYYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=170684&extension=ts
 #EXTINF:-1,VIASATHISTORYYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10735&extension=ts
-
-
 
 #EXTINF:-1,HABITATTVYEDEK
 http://live.cdn-vizi.workers.dev/?ID=129
@@ -753,9 +748,6 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=31448
 
 #EXTINF:-1,BEINGURMEYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314486&extension=ts
-
-
-
 
 #EXTINF:-1,DMAXYEDEK
 http://dygvideo.dygdigital.com/live/hls/dmaxdai?m3u8
@@ -777,7 +769,6 @@ https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-09093
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7
 #EXTINF:-1,DMAXYEDEK
 https://streams.uzunmuhalefet.com/stream/ca37ad2f-27a2-4227-9e04-fdd4b2279f3e.m3u8
-
 
 #EXTINF:-1,TLCYEDEK
 https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469&token=V1JHMUZBdGFOV0k2d2szUm5hVzA4RFdmejliTEVnQkZEQWNEN29qNzJ6Yz0=.m3u8
@@ -841,18 +832,13 @@ http://188.245.211.255:1935/canlitv/yabantv.stream/playlist.m3u8?hash=505f26ef36
 #EXTINF:-1,YABANTVYEDEK
 https://streamer.uzunmuhalefet.com/turkish/canlitv/12044.m3u8
 
-
 #EXTINF:-1,CNBC-EYEDEK
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
-
 
 #EXTINF:-1,HABERRIZEYEDEK
 https://streams.uzunmuhalefet.com/stream/bf3a9fab-0ebe-4ae1-b35f-55a15579334d.m3u8
 #EXTINF:-1,HABERRIZEYEDEK
 https://cdn4.yayin.com.tr/haberrize/tracks-v1a1/mono.m3u8
-
-
-
 
 #EXTINF:-1,TRT 1 
 http://ventione.duckdns.org/index.php?id=229&token=DeaTHLesS
@@ -3740,7 +3726,6 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/115712
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/115713
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="CINE VISION 6" tvg-logo="https://www.cinevisiontv.com/wp-content/uploads/2016/08/cinevisionlogo.jpg" group-title="TR-SINEMA",CINE VISION 6
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/115714
-
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="FILM SCREEN" tvg-logo="https://logo.multicms.info/tvlogo/filmscreen.jpg" group-title="TR-SINEMA",FILM SCREEN
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/275983
 #EXTINF:0 user-agent="Firefox" tvg-id="SinemaTV" tvg-name="SINEMA TV" tvg-logo="https://logo.multicms.info/tvlogo/sinemaTV.jpg" group-title="TR-SINEMA",SINEMA TV
@@ -4303,7 +4288,6 @@ http://electranextssp.xyz:8080/bugraomerkiziltna/aJJvUKTFdEz6/97923
 http://electranextssp.xyz:8080/bugraomerkiziltna/aJJvUKTFdEz6/636780
 #EXTINF:-1 tvg-id="trtspor.tr" tvg-name="TRT SPOR " tvg-logo="https://uscloudpanel.com/logo/galeri_MTY0M_329.png" group-title="TR | TABii SPOR",TRT SPOR 
 http://electranextssp.xyz:8080/bugraomerkiziltna/aJJvUKTFdEz6/636778
-
 #EXTINF:-1 tvg-id="" tvg-name="Tabii Spor 1 " tvg-logo="https://uscloudpanel.com/uploads/Global/tr/tabi/102.png" group-title="TR | TABii SPOR",Tabii Spor 1 
 http://electranextssp.xyz:8080/bugraomerkiziltna/aJJvUKTFdEz6/508365
 #EXTINF:-1 tvg-id="" tvg-name="TRT Tabii Yedek" tvg-logo="https://uscloudpanel.com/uploads/logomavi/tr/tabi/121.png" group-title="TR | TABii SPOR",TRT Tabii Yedek
