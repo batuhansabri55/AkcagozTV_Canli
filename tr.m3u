@@ -204,6 +204,8 @@ https://streams.uzunmuhalefet.com/stream/e93b8e86-e4fc-450a-81d4-2188eda7dda0.m3
 #EXTINF:-1,NOWTVYEDEK34
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1,NOWTVYEDEK33
+https://tinyurl.com/SyndraxicFOX
+#EXTINF:-1,NOWTVYEDEK33
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_480p.m3u8
 #EXTINF:-1,NOWTVYEDEK34
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_360p.m3u8
@@ -500,6 +502,8 @@ EXTINF:-1,SZCTVYEDEK
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Sozcu_Tv.m3u8
 EXTINF:-1,SZCTVYEDEK
 https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Sozcu_Tv.m3u8
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",SZCTVYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Sozcu_Tv.m3u8?t=1773605748
 #EXTINF:-1,SZCTVYEDEK
 https://www.canlitv.tech/hls/sozcu.m3u8
 #EXTINF:-1,SZCTVYEDEK
@@ -507,6 +511,9 @@ https://cdn.tecostream.xyz/Sozcu_Tv.m3u8
 #EXTINF:-1,SZCTVYEDEK
 https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8
 
+
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",CNNTURKYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8?t=1773605748
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.cnn-turk.com.tr/" tvg-id="CNNTurk.tr",CNNTURKYEDEK
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",CNNTURKYEDEK
@@ -626,6 +633,9 @@ https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1,TVNETYEDEK
 https://streams.uzunmuhalefet.com/stream/9006885e-a09b-41e5-a19d-3273c30a74e9.m3u8
 
+
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",AHABERYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/A_haber.m3u8?t=1773605748
 #EXTINF:-1,AHABERYEDEK
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber_1080p.m3u8
 #EXTINF:-1,AHABERYEDEK
@@ -723,6 +733,9 @@ https://tele1-live.ercdn.net/tele1/tele1.m3u8
 #EXTINF:-1,TELE1YEDEK
 https://streams.uzunmuhalefet.com/stream/edba8b19-4745-4c5c-a235-b23a06d83eda.m3u8
 
+
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",ULUSALKANALYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ulusal_Kanal.m3u8?t=1773605748
 #EXTINF:-1,
 https://.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Ulusal_Kanal.m3u8
 #EXTINF:-1,ULUSALKANALYEDEK
@@ -732,6 +745,8 @@ https://cdn.tecostream.xyz/Ulusal_Kanal.m3u8
 #EXTINF:-1,ULUSALKANALYEDEK
 https://streams.uzunmuhalefet.com/stream/e8b425ad-571d-475d-a657-37bca8985836.m3u8
 
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",FLASHHABERYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Flash_Haber.m3u8?t=1773605748
 #EXTINF:-1,FLAS
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
 #EXTINF:-1,FLAS
@@ -747,6 +762,9 @@ ttps://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053
 #EXTINF:-1,FLASHHABERYEDEK
 ttps://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_1.m3u8
 
+
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",BENGUTURKYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Benguturk_Tv.m3u8?t=1773605748
 #EXTINF:-1,BENGUTURKYEDEK
 https://cdn.tecostream.xyz/Benguturk_Tv.m3u8
 #EXTINF:-1,BENGU
@@ -2226,6 +2244,8 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=31444
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314446&extension=ts
 #EXTINF:-1,BEINSPORTSHABERYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=196816&extension=ts
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",BEINSPORTSHABERYEDEK
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bein_Spor_Haber.m3u8?t=1773605748
 #EXTINF:-1,BEINSPORT1YEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10698&extension=ts
 #EXTINF:-1,BEINSPORT1YEDEK
@@ -2664,6 +2684,8 @@ https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/kon_tv/index.m3u8
 #EXTINF:-1,Cnbc-e 
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
+#EXTINF:-1 group-title="*TÜRK_ULUSAL",CNBC_E
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/CNBC_E.m3u8?t=1773605748
 #EXTINF:-1,Gzt Tv 
 https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1,Tmb 
@@ -2746,6 +2768,10 @@ https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
 #EXTINF:-1,Minika Çocuk 
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk_720p.m3u8
+#EXTINF:-1 group-title="*TÜRK_SPOR" tvg-logo="https://i.ibb.co/L8ftBdN/minikacocuk.png",Minika Çocuk 
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk_480p.m3u8
+#EXTINF:-1 group-title="*TÜRK_SPOR" tvg-logo="https://i.ibb.co/R2Zgy7F/minikago.png",Minika Go
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago_480p.m3u8
 #EXTINF:-1,Minika Go 
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
 #EXTINF:-1,Minika Go 
