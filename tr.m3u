@@ -17,12 +17,14 @@ http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_360p.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 #EXTINF:-1,ATVYEDEK46
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8?checkedby:MyWay
-#EXTINF:-1,ATVYEDEK46
-https://streams.uzunmuhalefet.com/stream/c8758555-8581-4dec-9a46-ebcfaf9ace0a.m3u8
-#EXTINF:-1 tvg-id="ATV.tr@SD",ATVYEDEK45
-https://raw.githubusercontent.com/don24crk/Don24crk-Repository/refs/heads/master/ATV.m3u8
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV HD" tvg-logo="https://www.tvlogolar.xyz/europa/turkey/atv.png" group-title="ULUSAL",ATVYEDEK46
 https://bstelevision.com/proxy.php?url=https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
+#EXTINF:-1 tvg-id="ATV.tr@SD",ATVYEDEK45
+https://raw.githubusercontent.com/don24crk/Don24crk-Repository/refs/heads/master/ATV.m3u8
+#EXTINF:-1,ATVYEDEK46
+https://streams.uzunmuhalefet.com/stream/c8758555-8581-4dec-9a46-ebcfaf9ace0a.m3u8
+
+
 
 #EXTINF:-1,KANALDYEDEK39
 http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
