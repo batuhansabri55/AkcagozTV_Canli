@@ -31,6 +31,8 @@ https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/track_4_1250/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalD.tr" tvg-name="KANAL D HD"  tvg-logo="https://www.tvlogolar.xyz/europa/turkey/kanald.png" group-title="ULUSAL",KANALDYEDEK40
 http://75.119.144.48/KANALD_elitvip_CH/playlist.m3u8
 #EXTINF:-1,KANALDYEDEK40
+http://demiroren.daioncdn.net/kanald/kanald.m3u8?app=da2109ea-5dfe-4107-89ab-23593336ed61
+#EXTINF:-1,KANALDYEDEK40
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8
 #EXTINF:-1,KANALDYEDEK39
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_720p.m3u8
