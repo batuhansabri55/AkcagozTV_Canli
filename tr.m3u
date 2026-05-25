@@ -3963,6 +3963,20 @@ http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/e6c0d979-a624-4473-bb58
 #EXTINF:-1 tvg-name="Tarih TV" tvg-id="" tvg-logo="gt/MTA4MHgxMDgwLnBu/Zw" group-title="Belgesel",TARIHTVYEDEK
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
 http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/70cae976-5e95-4a7c-8469-fef3856fb007.ts
+#EXTINF:-1 tvg-id="" tvg-name="NUH Kuyusu Caddesi" tvg-logo="https://titanplayer.net/logo/315465.png" group-title="TR Trafik Kameralari",NUH Kuyusu Caddesi
+https://hls.ibb.gov.tr/tkm2/hls/473.stream/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Ihlamurkuyu" tvg-logo="https://titanplayer.net/logo/345131.png" group-title="TR  Trafik Kameralari",Ihlamurkuyu
+https://hls.ibb.gov.tr/tkm2/hls/438.stream/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="İMES Tavuşçuyolu" tvg-logo="https://titanplayer.net/logo/974165.png" group-title="TR Trafik Kameralari",İMES Tavuşçuyolu
+https://hls.ibb.gov.tr/tkm2/hls/469.stream/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Büyük Çamlıca" tvg-logo="https://titanplayer.net/logo/663413.png" group-title="TR Sehir Kameralari",Büyük Çamlıca
+https://hls.ibb.gov.tr/ls/cam_turistik/b_buyukcaml%C4%B1ca.stream/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="KIZ Kulesi" tvg-logo="https://titanplayer.net/logo/663413.png" group-title="TR Sehir Kameralari",KIZ Kulesi
+https://hls.ibb.gov.tr/ls/cam_turistik/new_K%C4%B1zkulesi.stream/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Salacak" tvg-logo="https://titanplayer.net/logo/663413.png" group-title="TR Sehir Kameralari",Salacak
+https://hls.ibb.gov.tr/ls/cam_turistik/b_salacak.stream/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Üsküdar" tvg-logo="https://titanplayer.net/logo/663413.png" group-title="TR Sehir Kameralari",Üsküdar
+https://hls.ibb.gov.tr/ls/cam_turistik/b_uskudar.stream/chunklist.m3u8
 
 # --- TAVİZSİZ GERÇEK TEMİZLİK (22-05-2026 20:02) --- #
 #EXTINF:-1 tvg-id="30ALoomeredTV.us@" tvg-logo="https://cbs12.com/resources/media/0c1ecad8-fb09-4bb2-beaa-fc561dfe624a-small21x9_LoomerStill.jpg?1603419052801" group-title="Documentary;News",30A Loomered TV
