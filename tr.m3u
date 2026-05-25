@@ -3925,7 +3925,10 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51102
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51103
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",YOL TV
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/124
-
+#EXTINF:-1 tvg-id="EuroD.tr" tvg-logo="http://assets.tvcdn.net/f4a83153-48c6-4ece-8082-1b370768f88a.png" group-title="Ulusal - Yurt Disi",Euro D
+http://live.duhnet.tv/S2/HLS_LIVE/eurodnp/playlist.m3u8
+#EXTINF:-1 tvg-id="Rehber.tr" tvg-logo="https://i.imgur.com/fpkaw78.png" group-title="Dini",REHBERTVYEDEK
+https://cdn4.yayin.com.tr/rehbertv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Belgesel" tvg-logo="592f509e-2e57-445f-833c-e3388ae88120.png" tvg-url="https://koytv.tv/" tvg-id=",Köy TV
 https://streamer.uzunmuhalefet.com/turkish/canlitv/12013.m3u8
 #EXTINF:-1 group-title="Belgesel" tvg-logo="592f509e-2e57-445f-833c-e3388ae88120.png" tvg-url="https://koytv.tv/" tvg-id=",Köy TV
