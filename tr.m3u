@@ -3102,6 +3102,40 @@ http://nexusconnects.org:80/play/live.php?mac=00:1B:79:47:72:00&stream=988851&ex
 http://nexusconnects.org:80/play/live.php?mac=00:1B:79:47:72:00&stream=988867&extension=ts&play_token=a34h1OJXxe
 #EXTINF:-1 group-title="💫BEİNSPORTS DERBİ ÖZEL💫"tvg-logo="https://i.hizliresim.com/l6muq8p.png" ,BEİNSPORTS 1 
 http://nexusconnects.org:80/play/live.php?mac=00:1B:79:47:72:00&stream=988881&extension=ts&play_token=oLqDJ5qOzw
+#EXTINF:-1 tvg-logo="https://i.ibb.co/6401NQw/kraltv.png",KRALPOPTVYEDEK
+http://dygvideo.dygdigital.com/live/hls/puhukralpopdai?m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/6401NQw/kraltv.png",KRALPOPTVYEDEK
+https://dogus.daioncdn.net/kralpoptv/kralpoptv.m3u8?app=f38a38b4-ce55-4040-8676-9826937d6128
+#EXTINF:-1 tvg-logo="https://i.ibb.co/6401NQw/kraltv.png",KRALPOPTVYEDEK
+http://dygvideo.dygdigital.com/live/hls/kralpop?m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/4SsJS4R/dreamturk.png",DREAMTURKTVYEDEK
+https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/B6N9KsN/powerturk22.png",POWER TÜRK
+http://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/wSPFds2/nr1turk.png",NUMBER ONE TÜRK 
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e187770143.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/jJWLsCQ/nr1ask.jpg",NUMBER ONE TÜRK ASK
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/LR5v10B/nr1dance.jpg",NUMBER ONE TÜRK DANCE
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/824MwJ6/nr1damar.jpg",NUMBER ONE TÜRK DAMAR
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e198784bdc_1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/LR5v10B/nr1dance.jpg",NUMBER ONE TÜRK DANCE
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e2aa89e721.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/bQHyST5/nr1tv.png",NUMBER ONE
+https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/xhfcTC7/powertv.png",POWER TV
+http://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/xhfcTC7/powertv.png",POWER TV
+https://live.artidijitalmedya.com/artidijital_powertv/powertv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/FVNL477/pdance.png",POWER DANCE
+http://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png",KANAL 19 ÇORUM
+https://live.euromediacenter.com/kanal19/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png",SLOW KARADENİZ TV 
+https://yayin.slowkaradeniztv.com:3390/hybrid/play.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png",TEMPO TV 
+https://live.artidijitalmedya.com/artidijital_tempotv/tempotv/playlist.m3u8
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="MAXSPORTS 1" tvg-logo="http://logo.multicms.info/tvlogo/maxsports.jpg" group-title="TR-SPOR",MAXSPORTS 1
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/61351
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="MAXSPORTS 2" tvg-logo="http://logo.multicms.info/tvlogo/maxsports.jpg" group-title="TR-SPOR",MAXSPORTS 2
