@@ -535,6 +535,11 @@ https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3
 #EXTVLCOPT:http-user-agent=googleusercontent
 #EXTVLCOPT:http-referrer=https://twitter.com/
 https://nord.ayakkabiparti.lol/cnn/index.m3u8?token=lbLhoUtDNXL_vDWtT97-fA&tms=1779291101
+#EXTINF:-1 tvg-name="CNN Turk" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/cnn-turk-tr.png" group-title="Haber",CNNTURKYEDEK
+#EXTVLCOPT:http-referrer=https://telkkari2.smartiptvworld.workers.dev/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
+#EXTVLCOPT:http-origin=https://telkkari2.smartiptvworld.workers.dev
+http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/58110768-a9ad-49d8-9920-4c9510cf1962.ts
 #EXTINF:-1 group-title="*TÜRK_ULUSAL",CN
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8?t=1773605748
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.cnn-turk.com.tr/" tvg-id="CNNTurk.tr",CN
