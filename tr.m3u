@@ -3942,6 +3942,24 @@ http://50.7.144.122:1935/live/cartoon-network.stream/playlist.m3u8?hash=505f26ef
 https://streamer.uzunmuhalefet.com/turkish/canlitv/11233.m3u8
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="FILM SCREEN" tvg-logo="https://logo.multicms.info/tvlogo/filmscreen.jpg" group-title="TR-SINEMA",FILM SCREEN
 https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
+#EXTINF:-1 tvg-name="Nat Geo Wild" tvg-id="" tvg-logo="kyYWI5/LmpwZw" group-title="Belgesel",NATIONALGEOGRAPHICWILDYEDEK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
+https://tatataliscaa.testworker0y.workers.dev/channel/TmF0aW9uYWwgR2VvIFdJTEQ=
+#EXTINF:-1 tvg-name="Discovery" tvg-id="" tvg-logo="AxODM4NDc4LnBu/Zw" group-title="Belgesel",DISCOVERYCHANNELYEDEK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
+http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/cd2284b3-d910-4312-a8ee-d816963d6235.ts
+#EXTINF:-1 tvg-name="Viasat History" tvg-id="" tvg-logo="G5n/X3NlZWtsb2dvLTUy/NDU1MS5wbmc" group-title="Belgesel",VIASATHISTORYYEDEK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
+https://cr.denek1544.workers.dev/izle/viasathistory.m3u8
+#EXTINF:-1 tvg-name="BBC Earth" tvg-id="" tvg-logo="ffffff-no-rj" group-title="Belgesel",BBCEARTHYEDEK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
+http://piipizle.site/live/askinbozkurt/15yp35sls/14e1d151-daf5-4cac-b596-dd59e4461d64.ts
+#EXTINF:-1 tvg-name="Love Nature" tvg-id="" tvg-logo="https://lovenature.com/wp-content/uploads/2025/02/LoveNature2024_Logo_full_colour-copy.png" group-title="Belgesel",LOVENATUREYEDEK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
+http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/e6c0d979-a624-4473-bb58-e2defbd7c907.ts
+#EXTINF:-1 tvg-name="Tarih TV" tvg-id="" tvg-logo="gt/MTA4MHgxMDgwLnBu/Zw" group-title="Belgesel",TARIHTVYEDEK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
+http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/70cae976-5e95-4a7c-8469-fef3856fb007.ts
 
 # --- TAVİZSİZ GERÇEK TEMİZLİK (22-05-2026 20:02) --- #
 #EXTINF:-1 tvg-id="30ALoomeredTV.us@" tvg-logo="https://cbs12.com/resources/media/0c1ecad8-fb09-4bb2-beaa-fc561dfe624a-small21x9_LoomerStill.jpg?1603419052801" group-title="Documentary;News",30A Loomered TV
