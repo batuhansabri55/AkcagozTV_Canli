@@ -3727,6 +3727,14 @@ https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/chunks.m
 #EXTINF:-1 tvg-id=&quot;DenizPostasiTV.tr&quot; tvg-name=&quot;Deniz Postasi TV&quot; tvg-logo=&quot;https://i.imgur.com/Mm8hdfx.png&quot; group-title=&quot;general&quot;,Deniz Postasi TV
 https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/chunks.m3u8?nimblesessionid=3068852098
 
+#EXTINF:-1 tvg-id="babytv" tvg-name="Baby TV" tvg-logo="https://img.dsmartgo.com.tr/content/V/vi/11890/Thumbnail.png" group-title="Çocuk",Baby TV
+https://saran-live.ercdn.net/babytv/babytv720p_2.m3u8
+#EXTINF:-1 tvg-id="babytv" tvg-name="Baby TV" tvg-logo="https://img.dsmartgo.com.tr/content/V/vi/11890/Thumbnail.png" group-title="Çocuk",Baby TV
+https://saran-live.ercdn.net/babytv/babytv480p_2.m3u8
+#EXTINF:-1 tvg-id="babytv" tvg-name="Baby TV" tvg-logo="https://img.dsmartgo.com.tr/content/V/vi/11890/Thumbnail.png" group-title="Çocuk",Baby TV
+https://saran-live.ercdn.net/babytv/babytv360p_2.m3u8
+
+
 # --- TAVİZSİZ GERÇEK TEMİZLİK (22-05-2026 20:02) --- #
 #EXTINF:-1 tvg-id="30ALoomeredTV.us@" tvg-logo="https://cbs12.com/resources/media/0c1ecad8-fb09-4bb2-beaa-fc561dfe624a-small21x9_LoomerStill.jpg?1603419052801" group-title="Documentary;News",30A Loomered TV
 https://30a-tv.com/loomer.m3u8
