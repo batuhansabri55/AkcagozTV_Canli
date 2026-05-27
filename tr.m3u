@@ -765,7 +765,12 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10738
 https://saran-live.ercdn.net/natgeo/index.m3u8
 #EXTINF:-1,NATIONALGEOGRAPHICYEDEK
 https://saran-live.ercdn.net/natgeo/index.m3u8?st=uo_tiDvIzeRrTIyZ402B9g&e=1738278432
+#EXTINF:-1 group-title="BELGESEL" group-author="smartgmr" tvg-logo="http://sarkor.tv/static/images/channels/NatGeo channel SD.png",NATIONALGEOGRAPHICYEDEK
+http://live.sarkortv.workers.dev/?ID=150
 
+
+#EXTINF:-1 group-title="BELGESEL" group-author="smartgmr" tvg-logo="https://www.polskie.tv/play/images/logos/569.png",NATIONALGEOGRAPHICWILDYEDEK
+http://live.sarkortv.workers.dev/?ID=116
 #EXTINF:-1,NATIONALGEOGRAPHICWILDYEDEK
 https://saran-live.ercdn.net/natgeowild/natgeowild360p_2.m3u8
 #EXTINF:-1,NATIONALGEOGRAPHICWILDYEDEK
