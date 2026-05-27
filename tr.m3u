@@ -516,13 +516,13 @@ https://nord.ayakkabiparti.lol/cnn/index.m3u8?token=lbLhoUtDNXL_vDWtT97-fA&tms=1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
 #EXTVLCOPT:http-origin=https://telkkari2.smartiptvworld.workers.dev
 http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/58110768-a9ad-49d8-9920-4c9510cf1962.ts
-#EXTINF:-1 group-title="*TÜRK_ULUSAL",CN
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8?t=1773605748
-#EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.cnn-turk.com.tr/" tvg-id="CNNTurk.tr",CN
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8
-#EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",C
-https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Cnn_Turk.m3u8
-#EXTINF:-1 tvg-id="CNNTurk.tr" tvg-logo="http://assets.tvcdn.net/db0e3f2f-3191-4af2-9cde-5345eb7543e4.png" group-title="Haber",CN
+# #EXTINF:-1 group-title="*TÜRK_ULUSAL",CNNTURKYEDEK
+#https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8?t=1773605748
+# #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.cnn-turk.com.tr/" tvg-id="CNNTurk.tr",CNNTURKYEDEK
+#https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8
+# #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",CNNTURKYEDEK
+#https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Cnn_Turk.m3u8
+#EXTINF:-1 tvg-id="CNNTurk.tr" tvg-logo="http://assets.tvcdn.net/db0e3f2f-3191-4af2-9cde-5345eb7543e4.png" group-title="Haber",CNNTURKYEDEK
 https://live.tecostream.xyz/CnnTurk.php
 #EXTINF:-1,CNNTURKYEDEK
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
