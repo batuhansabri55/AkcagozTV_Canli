@@ -795,6 +795,9 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=31448
 #EXTINF:-1,BEINGURMEYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314486&extension=ts
 
+#EXTINF:-1 tvg-id="Show Turk.de"tvg-name="Show Turk TR"  tvg-logo="https://i.imgur.com/UsMsmA7.png"  group-title="ULUSAL",SHOW TURK 
+https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8?e=1779916369&st=J5yR0nCMz1_-tr1p1LQuzg&tv=1
+
 #EXTINF:-1,DMAXYEDEK
 http://dygvideo.dygdigital.com/live/hls/dmaxdai?m3u8
 #EXTINF:-1,DMAXYEDEK
