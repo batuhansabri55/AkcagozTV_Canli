@@ -718,14 +718,14 @@ https://streams.uzunmuhalefet.com/stream/e8b425ad-571d-475d-a657-37bca8985836.m3
 
 #EXTINF:-1 group-title="*TÜRK_ULUSAL",FLASHHABERYEDEK
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Flash_Haber.m3u8?t=1773605748
-#EXTINF:-1,FLAS
-https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
-#EXTINF:-1,FLAS
-https://flashhaber-live.ercdn.net/flashhaber/flashhaber_720p.m3u8
-#EXTINF:-1,FLAS
-https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
-#EXTINF:-1,FLAS
-https://streams.uzunmuhalefet.com/stream/6a0ae937-29d4-455b-b498-8fc8e82b95b4.m3u8
+# #EXTINF:-1,FLASHHABERYEDEK
+#https://flashhaber-live.ercdn.net/flashhaber/flashhaber_1080p.m3u8
+# #EXTINF:-1,FLASHHABERYEDEK
+#https://flashhaber-live.ercdn.net/flashhaber/flashhaber_720p.m3u8
+# #EXTINF:-1,FLASHHABERYEDEK
+#https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
+# #EXTINF:-1,FLASHHABERYEDEK
+#https://streams.uzunmuhalefet.com/stream/6a0ae937-29d4-455b-b498-8fc8e82b95b4.m3u8
 #EXTINF:-1,FLASHHABERYEDEK
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/playlist.m3u8
 #EXTINF:-1,FLASHHABERYEDEK
@@ -832,13 +832,9 @@ http://dygvideo.dygdigital.com/live/hls/tlctvdai?m3u8
 #EXTINF:-1,TLCYEDEK
 https://streams.uzunmuhalefet.com/stream/7c98bf26-69a3-4f45-a330-d7c27459b375.m3u8
 
-#EXTINF:-1,TRT
-https://tv-trtbelgesel.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1,TRTBELGESELYEDEK
 https://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1,TRT
-https://tv-trtbelgesel-dai.medya.trt.com.tr/master.m3u8
-#EXTINF:-1,TRT
+#EXTINF:-1,TRTBELGESELYEDEK
 https://tv-trtbelgesel-dai.medya.trt.com.tr/master_3.m3u8
 #EXTINF:-1,TRTBELGESELYEDEK
 https://tv-trtbelgesel-dash.medya.trt.com.tr/master.mpd
@@ -848,8 +844,6 @@ https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8?checkedby:MyWay
 #EXTINF:-1,TRTBELGESELYEDEK
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8?token=tStZH2zQN1DUgV7dNGbacQ&tms=1767241869
-#EXTINF:-1,TRT
-https://streams.uzunmuhalefet.com/stream/d2c6d071-d252-4b73-9607-df0084017f2e.m3u8
 
 #EXTINF:-1,CIFTCITVYEDEK
 ttps://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
