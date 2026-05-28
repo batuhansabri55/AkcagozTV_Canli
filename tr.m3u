@@ -906,6 +906,14 @@ https://edge2.taksimbilisim.com:443/birtv/bant1/chunks.m3u8
 https://nord.ayakkabiparti.lol/sinemakomedi/index.m3u8
 
 
+#EXTINF:-1,SINEMATV2YEDEK
+https://nord.ayakkabiparti.lol/sinema2/index.m3u8
+
+#EXTINF:-1,Sinema Tv 1001
+https://nord.ayakkabiparti.lol/sinema1001/index.m3u8
+
+
+
 #EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT1 "  tvg-logo="https://www.tvlogolar.xyz/europa/turkey/trt1.png" group-title="ULUSAL",TRT 1
 http://87.121.104.29:5010/proxy?url=https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT1 "  tvg-logo="https://picon-13398.kxcdn.com/trt1tr.jpg" tvg-url="" group-title="YEDEK ➾ ULUSAL",TRT 1 
