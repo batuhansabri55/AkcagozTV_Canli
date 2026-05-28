@@ -32,6 +32,7 @@ YASAKLI_GRUPLAR = [
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://tinyurl.com/ytpatron",
+    "https://raw.githubusercontent.com/mehmetey03/METV/refs/heads/main/selcuk.m3u",
     "https://urlz.fr/v1Xo",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
     "https://raw.githubusercontent.com/smartgmr/cdn/refs/heads/main/Perfect.m3u",
