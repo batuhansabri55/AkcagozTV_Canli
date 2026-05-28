@@ -506,6 +506,9 @@ https://www.canlitv.tech/hls/sozcu.m3u8
 #https://cdn.tecostream.xyz/Sozcu_Tv.m3u8
 # #EXTINF:-1,SZCTVYEDEK
 #https://streams.uzunmuhalefet.com/stream/30f86caf-1b7e-4e62-8bdc-4729ea68492a.m3u8
+#EXTINF:-1,SZCTVYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Sozcu_TV.m3u
+
 
 #EXTINF:-1 tvg-id="99" tvg-name="CNN TURK HD" tvg-logo="https://a.prectv70.lol/uploads/cache/channel_thumb/uploads/jpg/59310b5017a91855a65fd3993f085710.jpg" group-title="Canlı TV",CNNTURKYEDEK
 #EXTVLCOPT:http-user-agent=googleusercontent
@@ -524,10 +527,11 @@ http://germanydns15.com:8080/live/askinbozkurt/15yp35sls/58110768-a9ad-49d8-9920
 #https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/playlist/Cnn_Turk.m3u8
 # #EXTINF:-1 tvg-id="CNNTurk.tr" tvg-logo="http://assets.tvcdn.net/db0e3f2f-3191-4af2-9cde-5345eb7543e4.png" group-title="Haber",CNNTURKYEDEK
 #https://live.tecostream.xyz/CnnTurk.php
-# #EXTINF:-1,CNNTURKYEDEK
-#https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
-# #EXTINF:-1,CNNTURKYEDEK
-#https://cdn.tecostream.xyz/Cnn_Turk.m3u8
+#EXTINF:-1,CNNTURKYEDEK
+https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
+#EXTINF:-1,CNNTURKYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/CNN_Turk.m3u
+
 
 #EXTINF:-1,HABERTURKYEDEK
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
@@ -546,6 +550,8 @@ https://ensonhaber-live.ercdn.net/haberturk/haberturk.m3u8
 #EXTINF:-1,HABERTURKYEDEK
 https://streams.uzunmuhalefet.com/stream/0c0bc91d-ce3a-49cc-9054-1cff110967c4.m3u8
 
+#EXTINF:-1,NTVYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/NTV.m3u
 #EXTINF:-1,NTVYEDEK
 https://dogus.daioncdn.net/ntv/ntv_1080p.m3u8?token=e8c0dec16bf84c8cc187224d13811c0e705fd2c58b25d7ee&sid=7te15ul6hi4e&app=c68bddbe-3dbf-49f7-892a-93de5ae37f1f&ce=3
 #EXTINF:-1,NTVYEDEK
@@ -583,7 +589,11 @@ https://tv.ensonhaber.com/haberglobal/haberglobal_480p.m3u8
 https://tv.ensonhaber.com/haberglobal/haberglobal_360p.m3u8
 #EXTINF:-1,HABERGLOBALYEDEK
 https://ensonhaber-live.ercdn.net/haberglobal/haberglobal.m3u8
+#EXTINF:-1,HABERGLOBALYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Haber_Global.m3u
 
+#EXTINF:-1,TV100YEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/TV100.m3u
 #EXTINF:-1,TV100YEDEK
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 #EXTINF:-1,TV100YEDEK
@@ -621,7 +631,11 @@ https://turkmedya-live.ercdn.net/tv24/tv24_360p.m3u8
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 #EXTINF:-1,TV24YEDEK
 https://streams.uzunmuhalefet.com/stream/35b6fa6f-7915-4303-8198-30c2d7b82929.m3u8
+#EXTINF:-1,TV24YEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/24_TV.m3u
 
+#EXTINF:-1,TVNETYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/TVNET.m3u
 #EXTINF:-1,TVNETYEDEK
 https://tvnet-live.lg.mncdn.com/tvnet/tvnet/chunklist.m3u8
 #EXTINF:-1,TVNETYEDEK
@@ -639,6 +653,8 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber_360p.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
 #EXTINF:-1,AHABERYEDEK
 https://www.canlitv.tech/hls/ahaber.m3u8
+#EXTINF:-1,AHABERYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/A_Haber.m3u
 
 #EXTINF:-1,TRTHABERYEDEK
 https://tv-trthaber.medya.trt.com.tr/master_1440.m3u8?checkedby:MyWay
@@ -663,6 +679,8 @@ https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
 https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
 #EXTINF:-1,ULKETVYEDEK
 https://streams.uzunmuhalefet.com/stream/b94c88b7-3a36-48ce-9e04-19bc2b3921f9.m3u8
+#EXTINF:-1,ULKETVYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Ulke_TV.m3u
 
 #EXTINF:-1,HALKTVYEDEK
 https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?sid=7te19znnzjxx&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
@@ -734,6 +752,10 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c05
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_0.m3u8
 #EXTINF:-1,FLASHHABERYEDEK
 https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c053c48829f.smil/mt_1.m3u8
+#EXTINF:-1,FLASHHABERYEDEK
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Flash_Haber.m3u
+
+
 
 #EXTINF:-1,BENGUTURKYEDEK
 https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
