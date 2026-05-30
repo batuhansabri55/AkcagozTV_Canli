@@ -922,8 +922,6 @@ http://87.121.104.29:5010/proxy?url=https://tv-trt1-esdai.medya.trt.com.tr/maste
 http://87.121.104.29:5010/proxy?url=https://tv-trtturk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/atv.png" group-title="ULUSAL",ATV 
 https://bstelevision.com/proxy.php?url=http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV " tvg-logo="https://picon-13398.kxcdn.com/atvtr.jpg"  group-title="YEDEK ➾ ULUSAL",ATV 
-http://atv.supersatadmin.workers.dev/index.m3u8
 #EXTINF:-1 tvg-id="ATV Avrupa.de" tvg-name="ATV Avrupa TR" tvg-logo="https://i.imgur.com/8t5aAVx.png"  group-title="ULUSAL",ATV AVRUPA
 http://208.79.153.167/inim03/live1/atvavrupa/playlist.m3u8
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/showtv.png" group-title="ULUSAL",SHOW TV 
@@ -994,10 +992,6 @@ https://edge.socialsmart.tv/birtv/bant1/playlist.m3u8
 http://teleontvstreams.supersatadmin.workers.dev/index.m3u8
 #EXTINF:-1 tvg-id="TRTHaber.tr" tvg-name="TRT HABER " tvg-logo="https://picon-13398.kxcdn.com/trthabertr.jpg" tvg-url="" group-title="ULUSAL ➾ HABER",TRT HABER 
 https://tv-trthaber.medya.trt.com.tr/master_1080.m3u8
-#EXTINF:-1 tvg-id="AHaber.tr" tvg-name="A HABER " tvg-logo="https://picon-13398.kxcdn.com/ahabertr.jpg" group-title="ULUSAL ➾ HABER",A HABER 
-https://dmxtl.testworkery0.workers.dev/izle/ahaber.m3u8
-#EXTINF:-1 tvg-id="CNNTurk.tr" tvg-name="CNN TURK " tvg-logo="https://picon-13398.kxcdn.com/cnnturkradio.jpg" group-title="ULUSAL ➾ HABER",CNN TURK 
-https://dmxtl.testworkery0.workers.dev/izle/cnnturk.m3u8
 #EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL " tvg-logo="https://picon-13398.kxcdn.com/haberglobaltr.jpg" group-title="ULUSAL ➾ HABER",HABER GLOBAL 
 https://dmxtl.testworkery0.workers.dev/izle/haberglobal.m3u8
 #EXTINF:-1 tvg-id="24TV.tr" tvg-name="24 " tvg-logo="https://picon-13398.kxcdn.com/24tvtr.jpg" group-title="ULUSAL ➾ HABER",24 TV 
@@ -1014,8 +1008,6 @@ https://bstelevision.com/proxy.php?url=https://rmtftbjlne.turknet.ercdn.net/bpey
 https://dogus-yayin-gurubu.koprulu2.workers.dev/ntv.m3u8
 #EXTINF:-1 tvg-id="TGRTHaber.tr" tvg-name="TGRT HABER " tvg-logo="https://picon-13398.kxcdn.com/tgrthabertr.jpg" group-title="ULUSAL ➾ HABER",TGRT HABER 
 https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber.m3u8
-#EXTINF:-1 tvg-id="FlashTV.tr" tvg-url="" tvg-name="FLASH TV" tvg-logo="https://vipotv.com/wp-content/uploads/2022/03/Flash-tv--izle-vipotv-turkiye.png" group-title="ULUSAL ➾ HABER",FLASH TV 
-http://live.yt-hls.workers.dev/UCNcjCb2RnA3eMMhTZSxZu3A.m3u8
 #EXTINF:-1 tvg-id="AkitTV.tr" tvg-name="AKİT TV "  tvg-logo="https://i.ibb.co/MBwzD2b/akit-tv.png" group-title="ULUSAL ➾ HABER",AKIT TV 
 http://live.yt-hls.workers.dev/UCbaLyHJp6S9Lsj6oT9aJsQw.m3u8
 #EXTINF:-1 tvg-id="BenguturkTV.tr" tvg-name="BENGUTURK" tvg-logo="https://i.ibb.co/CHWhMvQ/bengu-turk.png" group-title="ULUSAL ➾ HABER",BENGU TURK 
@@ -1024,8 +1016,6 @@ https://ensonhaber-live.ercdn.net/benguturk/benguturk.m3u8
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/playlist.m3u8
 #EXTINF:-1 tvg-id="Ulusal TV.tr" tvg-name="ULUSAL KANAL" tvg-logo="https://picon-13398.kxcdn.com/ulsalkanaltr.jpg" group-title="ULUSAL ➾ HABER",ULUSAL KANAL 
 http://live.yt-hls.workers.dev/UC6T0L26KS1NHMPbTwI1L4Eg.m3u8
-#EXTINF:-1 tvg-id="SZC.tr" tvg-name="SÖZCÜ TV"  tvg-logo="https://www.szctv.com.tr/lib/img/logo.png" group-title="ULUSAL ➾ HABER" , SÖZCÜ TV 
-http://live.yt-hls.workers.dev/UCOulx_rep5O4i9y6AyDqVvw.m3u8
 #EXTINF:-1 tvg-id="HalkTV.tr" tvg-name="HALK TV"  tvg-logo="https://picon-13398.kxcdn.com/halktvtr.jpg" group-title="ULUSAL ➾ HABER",HALK TV 
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1 tvg-id="KRT.tr" tvg-name="KRT TV" tvg-logo="https://www.giniko.com/logos/190x110/1112.jpg" group-title="ULUSAL ➾ HABER",KRT TV 
@@ -1038,8 +1028,6 @@ https://live.euromediacenter.com/yenicagtv/playlist.m3u8
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 tvg-id="CNBC-E.tr" tvg-name="CNBC-E" tvg-logo="https://www.tivibu.com.tr/uploads/ChannelFiles/cnbcelogo_0AAADFA7-1B4C-4530-9C6C-941D80FD2A60.png" group-title="ULUSAL ➾ HABER",CNBC-E
 https://cdn.tecostream.xyz/CNBC_E.m3u8
-#EXTINF:-1 tvg-id="BloombergHT.tr" tvg-name="BLOOMBERG HT " tvg-logo="https://picon-13398.kxcdn.com/bloomberg.jpg" group-title="ULUSAL ➾ HABER",BLOOMBERG HT 
-https://cdn.tecostream.xyz/Bloomberg_Ht.m3u8
 #EXTINF:-1 tvg-id="APara.tr" tvg-name="A PARA " tvg-logo="https://picon-13398.kxcdn.com/aparatr.jpg" group-title="ULUSAL ➾ HABER",A PARA 
 https://bstelevision.com/proxy.php?url=https://live.cdn-vizi.workers.dev/?ID=49&e=.m3u8
 #EXTINF:-1 tvg-id="Ekoturk.tr" tvg-name="EKOTÜRK " tvg-logo="https://picon-13398.kxcdn.com/ekoturktr.jpg"  group-title="ULUSAL ➾ HABER",EKOTURK 
@@ -1048,10 +1036,6 @@ https://cdn.tecostream.xyz/Eko_Turk.m3u8
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://assets.uzunmuhalefet.com/logos/f24d133d-940f-49b9-9ea1-2ac2d48f5b99.png" group-title="ULUSAL ➾ HABER",BUSINESS CHANNEL TURK 
 #http://87.121.104.29:1796/businessyt/stream.m3u8
-#EXTINF:0 tvg-logo="https://i.postimg.cc/SRBXF6Dy/TGRT-Belgesel-logo.png" group-title="ULUSAL ➾ BELGESEL",TGRT BELGESEL 
-https://tgrt-live.ercdn.net/tgrtbelgesel/tgrtbelgesel.m3u8
-#EXTINF:0 tvg-logo="https://i.postimg.cc/NjwydxKD/In-Shot-20250209-231503024.png" group-title="ULUSAL ➾ BELGESEL",DMAX 
-https://trn03.tulix.tv/gt-dmax-tv/tracks-v1a1/mono.m3u8
 #EXTINF:0 tvg-logo="https://i.postimg.cc/pLDjv6w3/TLC-Logo-svg.png" group-title="ULUSAL ➾ BELGESEL",TLC 
 https://trn03.tulix.tv/gt-tlc-tv/tracks-v1a1/mono.m3u8
 #https://dogus-yayin-gurubu.koprulu2.workers.dev/tlctvdai.m3u8
@@ -2699,8 +2683,6 @@ https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv.m3u8
 https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8
 #EXTINF:-1,Ülke Tv 
 https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
-#EXTINF:-1,Tvnet 
-https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1,Brt 1 
 https://edge.kuzeykibrissmart.tv/brt1/bant1/playlist.m3u8
 #EXTINF:-1,Trt Türk 
@@ -3823,12 +3805,6 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51103
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="YOL TV" tvg-logo="http://ssiptv.net/logos/yol.png" group-title="TR-YEREL",YOL TV
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/124
 
-#EXTINF:-1,Mavi Karadeniz
-https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/chunks.m3u8?nimblesessionid=3080538347
-#EXTINF:-1,Mavi Karadeniz
-https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/chunks.m3u8?nimblesessionid=3080538372
-#EXTINF:-1 tvg-id=&quot;DenizPostasiTV.tr&quot; tvg-name=&quot;Deniz Postasi TV&quot; tvg-logo=&quot;https://i.imgur.com/Mm8hdfx.png&quot; group-title=&quot;general&quot;,Deniz Postasi TV
-https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/chunks.m3u8?nimblesessionid=3068852087
 #EXTINF:-1,TRT MÜZİK
 https://tv-trtmuzik.medya.trt.com.tr/master_1080.m3u8
 
