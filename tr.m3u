@@ -219,8 +219,6 @@ https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_360p.m3u8
 #EXTINF:-1,BEYAZTVYEDEK
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8
 #EXTINF:-1,BEYAZTVYEDEK
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8
-#EXTINF:-1,BEYAZTVYEDEK
 https://bstelevision.com/proxy.php?url=https://mlatlxfaaa.turknet.ercdn.net/zqhpjaumpm/beyaztv/beyaztv.m3u8
 #EXTINF:-1,BEYAZTVYEDEK
 https://streams.uzunmuhalefet.com/stream/710fb148-7b3d-4ca2-b6c2-743097885a45.m3u8
@@ -476,7 +474,7 @@ https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/S
 #EXTVLCOPT:http-user-agent=googleusercontent
 #EXTVLCOPT:http-referrer=https://twitter.com/
 https://nord.ayakkabiparti.lol/cnn/index.m3u8?token=lbLhoUtDNXL_vDWtT97-fA&tms=1779291101
-#EXTINF:-1 tvg-name="CNN Turk" tvg-id="" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/cnn-turk-tr.png" group-title="Haber",CNNTURKYEDEK
+#EXTINF:-1 tvg-name="CNN Turk" tvg-id="cnn" tvg-logo="https://raw.githubusercontent.com/GitLatte/m3ueditor/refs/heads/site/images/kanal-gorselleri/turkiye/cnn-turk-tr.png" group-title="Haber",CNNTURKYEDEK
 #EXTVLCOPT:http-referrer=https://telkkari2.smartiptvworld.workers.dev/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0
 #EXTVLCOPT:http-origin=https://telkkari2.smartiptvworld.workers.dev
@@ -885,8 +883,6 @@ http://208.79.153.167/inim03/live1/atvavrupa/playlist.m3u8
 https://bstelevision.com/proxy.php?url=http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV " tvg-logo="https://picon-13398.kxcdn.com/showtvtr.jpg" group-title="YEDEK ➾ ULUSAL",SHOW TV 
 http://showtv.supersatadmin.workers.dev/index.m3u8
-#EXTINF:-1 tvg-id="Show Turk.de"tvg-name="Show Turk TR"  tvg-logo="https://i.imgur.com/UsMsmA7.png"  group-title="ULUSAL",SHOW TURK 
-https://streams.uzunmuhalefet.com/stream/16e43b9b-e175-482c-a105-2253c06515c9.m3u8
 #EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV  " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/startv.png" group-title="ULUSAL",STAR TV 
 http://dygvideo.dygdigital.com/live/hls/startv4puhu/index.m3u8
 #EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV  " tvg-logo="https://picon-13398.kxcdn.com/startvtr.jpg" group-title="YEDEK ➾ ULUSAL",STAR TV 
