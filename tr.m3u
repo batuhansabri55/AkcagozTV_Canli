@@ -138,15 +138,6 @@ http://dygvideo.dygdigital.com/live/hls/stardai?m3u8
 http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
 #EXTINF:-1,STARTVYEDEK36
 https://streams.uzunmuhalefet.com/stream/a8ea8b0b-9c06-41ce-b7f9-35e895c78b77.m3u8
-#EXTINF:-1,STARTVYEDEK37
-#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
-https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
-#EXTINF:-1,STARTVYEDEK36
-#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
-https://dogus.daioncdn.net/startv/startv_480p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
-#EXTINF:-1,STARTVYEDEK37
-#EXTVLCOPT:http-referer="https://www.startv.com.tr/"
-https://dogus.daioncdn.net/startv/startv_360p.m3u8?&sid=859l7pyazxlp&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
 
 #EXTINF:-1,TV8YEDEK31
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
@@ -186,8 +177,6 @@ https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&c
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788
 #EXTINF:-1,TV8YEDEK30
 https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
-#EXTINF:-1,TV8YEDEK31
-https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3&
 #EXTINF:-1,TV8YEDEK30
 http://149.13.0.66:4002/tv8hd
 #EXTINF:-1,TV8YEDEK31
