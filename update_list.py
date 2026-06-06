@@ -31,6 +31,7 @@ YASAKLI_GRUPLAR = [
 
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
+    "https://raw.githubusercontent.com/smartwebos/cdn/refs/heads/main/viziTV.m3u",
     "https://tinyurl.com/ytpatron",
     "https://urlz.fr/v1Xo",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
