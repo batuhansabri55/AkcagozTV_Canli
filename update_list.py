@@ -16,9 +16,6 @@ THREADS = 4
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    # USTA NOTU: Eğer GitHub çok sık tarandığında "API limiti" hatası verirse, 
-    # aşağıdaki satırın başındaki '#' işaretini kaldırıp kendi token'ını yazabilirsin:
-    # 'Authorization': 'token ghp_BURAYA_GITHUB_TOKENINIZI_YAZIN'
 }
 
 # --- YASAKLI VE YEDEK LİSTELERİ ---
@@ -31,11 +28,10 @@ YASAKLI_GRUPLAR = [
 ]
 
 YEDEK_KAYNAKLAR = [
-    "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    # --- VİZİTV DOĞRULANMIŞ NOKTA ATIŞI LİNKLER (DÜZELTİLDİ) ---
-    "https://raw.githubusercontent.com/mianhuatang24/smart/refs/heads/main/vizitV.m3u",
-    "https://raw.githubusercontent.com/mehmetey03/METV/refs/heads/main/vizi.m3u",
+    # Sizin asıl doğrulanmış çalışan viziTV kaynağınız (Görseldeki tam link)
+    "https://raw.githubusercontent.com/smartwebos/cdn/refs/heads/main/viziTV.m3u",
     
+    "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://tinyurl.com/ytpatron",
     "https://urlz.fr/v1Xo",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
@@ -45,14 +41,11 @@ YEDEK_KAYNAKLAR = [
     "https://tinyurl.com/bdd2tz6h",
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    
-    # --- NOKTA ATIŞI BELGESEL KAYNAKLARI ---
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/categories/documentary.m3u",
     "https://iptv-org.github.io/iptv/categories/documentary.m3u"
 ]
 
 def github_taze_link_avla():
-    """GITHUB'DA SON 48 SAATTE PAYLAŞILAN TAZE LİNKLERİ BULUR"""
     yeni_kaynaklar = []
     tarih = (datetime.datetime.now() - datetime.timedelta(days=2)).strftime('%Y-%m-%d')
     arama_terimleri = ["trt1", "documentary", "belgesel"]
@@ -76,43 +69,39 @@ def github_taze_link_avla():
     return yeni_kaynaklar[:12]
 
 def link_saglam_mi(url):
-    """MODİFİYELİ ULTRA KUSURSUZ SÜZGEÇ"""
+    """VIZITV WORKERS VE CLOUDFLARE GEÇİŞLİ ULTRA ESNEK SÜZGEÇ"""
+    # EĞER LİNK BİR CLOUDFLARE WORKER PROXY LINKIYSE (Kilitlenmeyi önlemek için doğrudan güvenli kabul et)
+    if "workers.dev" in url.lower() or "vizitv" in url.lower():
+        return True
+
     try:
-        h = requests.head(url, headers=HEADERS, timeout=3, verify=False, allow_redirects=True)
-        if h.status_code != 200:
-            return False
-            
-        content_type = h.headers.get('Content-Type', '').lower()
-        if 'text/html' in content_type or 'application/json' in content_type:
-            return False
-            
-        with requests.get(url, headers=HEADERS, timeout=4, stream=True, verify=False, allow_redirects=True) as r:
-            if r.status_code != 200: 
+        # HEAD isteği olmadan, timeout süresini koruyarak direkt GET akış kontrolü
+        with requests.get(url, headers=HEADERS, timeout=3, stream=True, verify=False, allow_redirects=True) as r:
+            if r.status_code not in [200, 206]: 
+                return False
+                
+            content_type = r.headers.get('Content-Type', '').lower()
+            if 'text/html' in content_type or 'application/json' in content_type:
                 return False
                 
             try:
-                chunk = r.raw.read(1024)
+                chunk = r.raw.read(256)
             except:
                 return False
-                
-            if not chunk or len(chunk) < 10:
+
+            if not chunk:
                 return False
 
             content_text = chunk.decode('utf-8', errors='ignore').lower()
-
-            if "#extm3u" in content_text or "#extinf" in content_text:
-                if any(ext in content_text for ext in [".ts", ".m3u8", ".mp4", "http"]):
-                    return True
-                return False
             
-            hata_kelimeleri = ["expired", "invalid", "error", "forbidden", "unauthorized", "not found", "bad token", "denied"]
+            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied"]
             if any(hata in content_text for hata in hata_kelimeleri):
                 return False
             
-            if any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream']):
+            if "#extm3u" in content_text or "#extinf" in content_text or ".m3u8" in url.lower():
                 return True
                 
-            if chunk.startswith(b'\x47') or b'\x47' in chunk[:188]:
+            if any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream', 'text/plain', '']):
                 return True
 
             return False
@@ -134,13 +123,13 @@ def kanal_isleme(kanal_metni, eklenen_urller):
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
         
-        print(f" ✅ GERÇEK CANLI: {link_satiri[:50]}...")
+        print(f" ✅ LİSTEYE ALINDI: {link_satiri[:60]}...")
         return f"{isim_temiz}\n{link_satiri}"
     
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V3.2: Düzeltilmiş ViziTV ve Belgesel Avı Başlıyor!")
+    print(f"🛡️  USTA SİSTEM V3.4: ViziTV Workers Tam Desteği Aktif!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -165,10 +154,11 @@ def main():
             print(f"📡 Kaynak Okunuyor: {kaynak[:70]}...")
             r = requests.get(kaynak, headers=HEADERS, timeout=10, verify=False)
             if r.status_code == 200:
-                bulunan = re.findall(r"(#EXTINF:.*?\n+http.*?)(?=#EXTINF|$)", r.text, re.DOTALL)
+                # HTTP veya HTTPS olan tüm link gruplarını eksiksiz yakalar
+                bulunan = re.findall(r"(#EXTINF:.*?\n+https?.*?)(?=#EXTINF|$)", r.text, re.DOTALL | re.IGNORECASE)
                 ham_bulunanlar.extend(bulunan)
             else:
-                print(f"❌ Kaynak Yanıt Vermedi (Hata Kodu: {r.status_code}): {kaynak[:40]}...")
+                print(f"❌ Kaynak Yanıt Vermedi: {kaynak[:40]}...")
         except: continue
 
     unique_adaylar = []
@@ -179,7 +169,7 @@ def main():
             unique_adaylar.append(k)
             gorulen_linkler.add(link)
 
-    print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Tavizsiz test başlıyor...")
+    print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Test başlıyor...")
 
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
@@ -187,11 +177,11 @@ def main():
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(ana_liste_zirh)
-        f.write(f"\n# --- TAVİZSİZ GERÇEK TEMİZLİK ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
+        f.write(f"\n# --- VIZITV ENTEGRELİ GÜNCEL LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Filtreleri aşabilen gerçek anlamda SAĞLAM {len(final_listesi)} yeni kanal eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Yeni kriterlere uyan {len(final_listesi)} kanal eklendi.")
 
 if __name__ == "__main__":
     main()
