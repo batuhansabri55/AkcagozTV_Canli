@@ -2514,13 +2514,11 @@ https://proud-river-e20b.pantonum1.workers.dev/history.m3u8
 https://proud-river-e20b.pantonum1.workers.dev/lovenature.m3u8
 #EXTINF:-1,Viasat History
 https://proud-river-e20b.pantonum1.workers.dev/viasathistory.m3u8
-#EXTINF:-1,BEINSPORT1YEDEK
+#EXTINF:-1,ASPORYEDEK
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub1.m3u8
-#EXTINF:-1,beIN Sport 2
+#EXTINF:-1,BEINSPORT1YEDEK
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub2.m3u8
-#EXTINF:-1,beIN Sport 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub3.m3u8
-#EXTINF:-1,beIN Sport 4
+#EXTINF:-1,BEINSPORT4YEDEK
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub4.m3u8
 #EXTINF:-1,S Sport
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydus1.m3u8
@@ -3671,7 +3669,7 @@ http://87.121.104.29:1071/aparayt/stream.m3u8?token=5f72e92ed39ce9c4b975ec928421
 #EXTINF:-1 tvg-id="cnbceyt" tvg-name="CNBC-e YT" tvg-logo="https://yt3.googleusercontent.com/Rh1aC6tWB_CLSqR2gRW8UPXfCsqZE-7m83CPpBNLk8CI6ybTGDNWy7jF7jFGkHIffyUEyF8BW38=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",CNBC-EYEDEK
 http://87.121.104.29:1071/cnbceyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
 # --- VIZITV ENTEGRELİ GÜNCEL LİSTE (07-06-2026 09:24) --- #
-#EXTINF:-1 group-title="💫BEİNSPORTS DERBİ ÖZEL💫"tvg-logo="https://i.hizliresim.com/l6muq8p.png" ,💫BEİNSPORTS 1  2💫 
+#EXTINF:-1 group-title="💫BEİNSPORTS DERBİ ÖZEL💫"tvg-logo="https://i.hizliresim.com/l6muq8p.png",BEINSPORT3YEDEK
 http://taliptv01.xyz:8080/play/live.php?mac=00:1A:79:4D:06:6C&stream=2216&extension=ts&play_token=7qOBBgdbE3
 #EXTINF:-1 tvg-id="" tvg-name="TR:Trt 1 " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/80196fc2-f4f6-4e35-ae29-7925a5885a20.png" group-title="SONER BOZKURT YERLİ KANALLAR",TR:Trt 1 
 http://89.187.191.41/TRT-1-HD-TR/video.m3u8
