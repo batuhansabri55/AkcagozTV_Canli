@@ -745,25 +745,25 @@ https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
 #EXTINF:-1,HABITAT TV
 http://cdn.vizitv.workers.dev/129.m3u8
 
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 http://dygvideo.dygdigital.com/live/hls/dmaxdai?m3u8
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dUtLcFk4TkM1YjBOWlFIa1huL0UrMUYvcjhEcStnVU1TZUpsOVo5QXV4ST0=.m3u8
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax_720p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0UnlDWWNRVnQ1b0VMbWpHYndYRjRrM2l0Yz0=&sid=859nsaxc33ff&app=5a02c599-d17e-4982-9b04-090934d51af7&ce=3
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax_480p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0UnlDWWNRVnQ1b0VMbWpHYndYRjRrM2l0Yz0=&sid=859nsaxc33ff&app=5a02c599-d17e-4982-9b04-090934d51af7&ce=3
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax_360p.m3u8?token=RVlMSWxlU1Exc0QzemhZaGt0UnlDWWNRVnQ1b0VMbWpHYndYRjRrM2l0Yz0=&sid=859nsaxc33ff&app=5a02c599-d17e-4982-9b04-090934d51af7&ce=3
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
-##EXTINF:-1,DMAXYEDEK
+##EXTINF:-1,DMAX
 #https://dogus-blackout.daioncdn.net/tlctv_geoblock.smil/playlist.m3u8
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dUtLcFk4TkM1YjBOWlFIa1huL0UrMUYvcjhEcStnVU1TZUpsOVo5QXV4ST0=
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 https://streams.uzunmuhalefet.com/stream/ca37ad2f-27a2-4227-9e04-fdd4b2279f3e.m3u8
 
 #EXTINF:-1,TLCYEDEK
@@ -1855,13 +1855,13 @@ http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10767
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10769&extension=ts
 #EXTINF:-1,SINEMATVAILEYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10705&extension=ts
-#EXTINF:-1,BEINIZYEDEK
+#EXTINF:-1,BEIN IZ
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314487&extension=ts
 #EXTINF:-1,BEINGURMEYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=314486&extension=ts
 #EXTINF:-1,2ITCHENYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=196836&extension=ts
-#EXTINF:-1,DMAXYEDEK
+#EXTINF:-1,DMAX
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=170683&extension=ts
 #EXTINF:-1,HISTORYYEDEK
 http://plan9.store:80/play/live.php?mac=00%3A1A%3A79%3A59%3A82%3AB1&stream=10736&extension=ts
@@ -3552,7 +3552,7 @@ https://meclistv-live.ercdn.net/meclistv/meclistv_720p-1772411630.ts?e=&st=
 http://87.121.104.29:1071/naturetimetr/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
 #EXTINF:-1 tvg-id="bizimevyt" tvg-name="Bizim Ev " tvg-logo="https://yt3.googleusercontent.com/5KLD4QmX3I_Hwc4wrTpdqkcoVdTJfj86ABhRIkEV1ZtJ2jXNGWnqL-CLOjuC3MHM6hQLCgL4=s160k-c0x00ffffff-no-rj" group-title="Belgesel",Bizim_Ev_Tv
 http://87.121.104.29:1071/bizimevyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="dmax" tvg-name="Dmax " tvg-logo="https://yt3.googleusercontent.com/7caGBnut6H9aFvL71oqhRbMEy1sE0VIO3oOvuhONRRdQKNzjNqjLW3ySJr-8NR1dnjKcNI62_g=s160k-c0x00ffffff-no-rj" group-title="Belgesel",DMAXYEDEK
+#EXTINF:-1 tvg-id="dmax" tvg-name="Dmax " tvg-logo="https://yt3.googleusercontent.com/7caGBnut6H9aFvL71oqhRbMEy1sE0VIO3oOvuhONRRdQKNzjNqjLW3ySJr-8NR1dnjKcNI62_g=s160k-c0x00ffffff-no-rj" group-title="Belgesel",DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dUtLcFk4TkM1YjBOWlFIa1huL0UrMUYvcjhEcStnVU1TZUpsOVo5QXV4ST0=.m3u8
 #EXTINF:-1 tvg-id="tlc" tvg-name="TLC " tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/08cd8548f90ea341ac8bf315ec5ab4f9.jpg" group-title="Belgesel",TLCYEDEK
 https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469&token=V1JHMUZBdGFOV0k2d2szUm5hVzA4RFdmejliTEVnQkZEQWNEN29qNzJ6Yz0=.m3u8
