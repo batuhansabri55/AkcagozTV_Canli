@@ -38,6 +38,7 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://www.dropbox.com/scl/fi/p58t5o980tah2hz3234a5/SmartGO.m3u?rlkey=w44w0ycaa83uyn21uph77pp6v&st=mj0n6byr&raw=1",
     "https://publiciptv.com/countries/tr/m3u",
+    "view-source:https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://iptv-org.github.io/iptv/categories/documentary.m3u"
 ]
