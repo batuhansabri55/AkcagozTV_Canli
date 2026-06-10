@@ -4018,7 +4018,7 @@ https://amg01550-amg01550c6-samsung-in-4679.playouts.now.amagi.tv/playlist/amg01
 https://amg00861-terninternation-inwild-samsunguk-w5wic.amagi.tv/playlist/amg00861-terninternation-inwild-samsunguk/playlist.m3u8
 #EXTINF:-1 tvg-id="KTOOTV33.us@" tvg-logo="https://i.imgur.com/ppn5oJy.png" group-title="Documentary",KTOO 360TV 3 (FNX)
 https://api.v3.invintus.com/StreamURI/persis/2147483647/KTOO360TV.stream/media.m3u8
-#EXTINF:-1 tvg-id="LawCrime.us@" tvg-logo="https://yt3.googleusercontent.com/CRP3YudPa55QypbDnIvuh3erLZTsn2HK8ESR-2fJFFiLJVf7US2CKQELCKK_UowmHA3wCjAdxg=s512-c-k-c0x00ffffff-no-rj" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="Documentary",Law & Crime (720p)
+#EXTINF:-1 tvg-id="LawCrime.us@" tvg-logo="https://yt3.googleusercontent.com/CRP3YudPa55QypbDnIvuh3erLZTsn2HK8ESR-2fJFFiLJVf7US2CKQELCKK_UowmHA3wCjAdxg=s512k-c0x00ffffff-no-rj" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="Documentary",Law & Crime (720p)
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/law-crime/playlist_scte.m3u8?ads.vf=uF_BpgvA1oi
 #EXTINF:-1 tvg-id="LovePets.ca@US" tvg-logo="https://lovepetstv.com/wp-content/uploads/2022/12/LovePets_Logo_SecondaryColor.png" group-title="Documentary",Love Pets (1080p)
 https://amg01576-blueskyeenterta-lovepetsemea-samsungse-ctamh.amagi.tv/playlist/amg01576-blueskyeenterta-lovepetsemea-samsungse/playlist.m3u8
@@ -4120,7 +4120,7 @@ https://live.artidijitalmedya.com/artidijital_ertv_new/ertv/playlist.m3u8
 https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/iptvdelisi.m3u8
 #EXTINF:-1 tvg-id="ESTV.tr@" tvg-logo="https://i.imgur.com/epAEBrp.png" group-title="Undefined",ES TV (720p)
 https://live.artidijitalmedya.com/artidijital_estv/estv/playlist.m3u8
-#EXTINF:-1 tvg-id="ETVKayseri.tr@" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_msPtG6zfPKIJIIdvG4dehXLoVoXcHM2-2HL9YxsNYzGQ=s512-c-k-c0x00ffffff-no-rj" group-title="General",ETV Kayseri (720p)
+#EXTINF:-1 tvg-id="ETVKayseri.tr@" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_msPtG6zfPKIJIIdvG4dehXLoVoXcHM2-2HL9YxsNYzGQ=s512k-c0x00ffffff-no-rj" group-title="General",ETV Kayseri (720p)
 https://live.artidijitalmedya.com/artidijital_etv/etv/playlist.m3u8
 #EXTINF:-1 tvg-id="ETVManisa.tr@" tvg-logo="https://i.ibb.co/QKXtdkz/sOd3INg.png" group-title="Undefined",ETV Manisa (1080p) [Not 24/7]
 https://edge1.socialsmart.tv/manisaetv/bant1/playlist.m3u8
@@ -5296,410 +5296,7 @@ http://tabii.mobi-tv.workers.dev/tabiiSpor6.m3u8
 http://tabii.mobi-tv.workers.dev/tabiiSpor7.m3u8
 #EXTINF:-1 group-title="tabiiTV" tvg-logo="https://cms-tabii-public-image.tabii.com/int/webp/w273/h154/q90/60594_0-0-1919-1080.jpeg",tabii Spor 8
 http://tabii.mobi-tv.workers.dev/tabiiSpor8.m3u8
-#EXTINF:-1 group-title="YouTube DIZI Sevdiğim Sensin", tvg-logo="https://i.ytimg.com/vi/Qn1kdkbfgsw/hqdefault.jpg",Sevdiğim Sensin 4. Bölüm
-http://movies.yt-hls.workers.dev/Qn1kdkbfgsw.m3u8
-#EXTINF:-1 group-title="YouTube DIZI Sevdiğim Sensin", tvg-logo="https://i.ytimg.com/vi/srhO2rngqSc/hqdefault.jpg",Sevdiğim Sensin 2. Bölüm
-http://movies.yt-hls.workers.dev/srhO2rngqSc.m3u8
-#EXTINF:-1 group-title="YouTube DIZI Sevdiğim Sensin", tvg-logo="https://i.ytimg.com/vi/Ih-_ALi74OA/hqdefault.jpg",Sevdiğim Sensin 1. Bölüm
-http://movies.yt-hls.workers.dev/Ih-_ALi74OA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",1. Bölüm
-http://movies.yt-hls.workers.dev/ae4c_GUunms.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",2. Bölüm
-http://movies.yt-hls.workers.dev/-sPgcq0N8rk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",3. Bölüm
-http://movies.yt-hls.workers.dev/ORzFANgh_5k.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",4. Bölüm
-http://movies.yt-hls.workers.dev/wO1Gt2Yed50.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",5. Bölüm
-http://movies.yt-hls.workers.dev/zf6YGRedMB0.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",6. Bölüm
-http://movies.yt-hls.workers.dev/DeD3cy7450w.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",7. Bölüm
-http://movies.yt-hls.workers.dev/7ib3xpvaIUg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",8. Bölüm
-http://movies.yt-hls.workers.dev/s8_x1_6A2ak.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",9. Bölüm
-http://movies.yt-hls.workers.dev/s7wYorQZ4fk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",10. Bölüm
-http://movies.yt-hls.workers.dev/imb8yJctGQ0.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",11. Bölüm
-http://movies.yt-hls.workers.dev/90zS60-e04U.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",12. Bölüm
-http://movies.yt-hls.workers.dev/nchUKmpnFpc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",13. Bölüm
-http://movies.yt-hls.workers.dev/qcClnbVXAls.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",14. Bölüm
-http://movies.yt-hls.workers.dev/_9oMvBgd59U.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",15. Bölüm
-http://movies.yt-hls.workers.dev/mD5oHDX5oHo.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",16. Bölüm
-http://movies.yt-hls.workers.dev/6PGLcBPhpWw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",17. Bölüm
-http://movies.yt-hls.workers.dev/wQFUXePt2TQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",18. Bölüm
-http://movies.yt-hls.workers.dev/NpW640EWrGU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",19. Bölüm
-http://movies.yt-hls.workers.dev/ZUKD8gWJI-Q.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",20. Bölüm
-http://movies.yt-hls.workers.dev/KbQn9LaKqyg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",21. Bölüm
-http://movies.yt-hls.workers.dev/Kw_96yjPCX8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",22. Bölüm
-http://movies.yt-hls.workers.dev/05S2PHW90fk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",23. Bölüm
-http://movies.yt-hls.workers.dev/k7lFO9WiMSM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",24. Bölüm
-http://movies.yt-hls.workers.dev/9hd0XfwJwFI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",25. Bölüm
-http://movies.yt-hls.workers.dev/qI2V0CLYTNk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",26. Bölüm
-http://movies.yt-hls.workers.dev/rApyc1Vl8cw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",27. Bölüm
-http://movies.yt-hls.workers.dev/mCbvUkBrgwo.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",28. Bölüm
-http://movies.yt-hls.workers.dev/_ae0Qn6E-3s.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",29. Bölüm
-http://movies.yt-hls.workers.dev/TVZx_CQxMGg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",30. Bölüm
-http://movies.yt-hls.workers.dev/_HlaQ2i3XlY.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",31. Bölüm
-http://movies.yt-hls.workers.dev/JXO6Fu3pbQc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",32. Bölüm
-http://movies.yt-hls.workers.dev/EzUfpE5iZNA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",33. Bölüm
-http://movies.yt-hls.workers.dev/LL18xT_JRps.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",34. Bölüm
-http://movies.yt-hls.workers.dev/UL2mCjbHTnQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",35. Bölüm
-http://movies.yt-hls.workers.dev/EXIoBkYjw4k.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",36. Bölüm
-http://movies.yt-hls.workers.dev/gIZ5tV_oi8U.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",37. Bölüm
-http://movies.yt-hls.workers.dev/fNGUGL3Bj6I.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",38. Bölüm
-http://movies.yt-hls.workers.dev/_MNtD55Xkj0.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",39. Bölüm
-http://movies.yt-hls.workers.dev/ceJqQK2zxXI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",40. Bölüm
-http://movies.yt-hls.workers.dev/sq-av4_k5eQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",41. Bölüm
-http://movies.yt-hls.workers.dev/JYxzXDVVYTU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",42. Bölüm
-http://movies.yt-hls.workers.dev/EYhwgAgxREE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",43. Bölüm
-http://movies.yt-hls.workers.dev/c71a9Pg2qF0.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",44. Bölüm
-http://movies.yt-hls.workers.dev/6Fog5LAl_so.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",45. Bölüm
-http://movies.yt-hls.workers.dev/PDnGfw-mVJQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",46. Bölüm
-http://movies.yt-hls.workers.dev/gEUtgfjA7lI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",47. Bölüm
-http://movies.yt-hls.workers.dev/HYR2nemnj-o.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",48. Bölüm
-http://movies.yt-hls.workers.dev/5TAuZeP-CiE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",49. Bölüm
-http://movies.yt-hls.workers.dev/Y9J6z0djGv4.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",50. Bölüm
-http://movies.yt-hls.workers.dev/gUr6TI6Hbmc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",51. Bölüm
-http://movies.yt-hls.workers.dev/bKgcSaZXpMg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",52. Bölüm
-http://movies.yt-hls.workers.dev/FgB17CYW0h8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",53. Bölüm
-http://movies.yt-hls.workers.dev/sbsChIyvR5o.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",54. Bölüm
-http://movies.yt-hls.workers.dev/g-ug9pXv20E.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",55. Bölüm
-http://movies.yt-hls.workers.dev/-ol3HJyTqrQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",56. Bölüm
-http://movies.yt-hls.workers.dev/H9qtBp4bg1I.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",57. Bölüm
-http://movies.yt-hls.workers.dev/9qmDMAh8V5s.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",58. Bölüm
-http://movies.yt-hls.workers.dev/oVbvovdMZA0.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",59. Bölüm
-http://movies.yt-hls.workers.dev/TvlJU_O1hTQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",60. Bölüm
-http://movies.yt-hls.workers.dev/l1_KqNQRKvw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",61. Bölüm
-http://movies.yt-hls.workers.dev/fvMadnagAO4.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",62. Bölüm
-http://movies.yt-hls.workers.dev/q_8YIx4GcEo.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",63. Bölüm
-http://movies.yt-hls.workers.dev/7-G4x39lcqM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",64. Bölüm
-http://movies.yt-hls.workers.dev/_HxJSfouisQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",65. Bölüm
-http://movies.yt-hls.workers.dev/-YRoMS7Fu9I.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",66. Bölüm
-http://movies.yt-hls.workers.dev/EP4kcB6GiBw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",67. Bölüm
-http://movies.yt-hls.workers.dev/WzH_atmSMZ0.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",68. Bölüm
-http://movies.yt-hls.workers.dev/RUFn5BEU1h0.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",69. Bölüm
-http://movies.yt-hls.workers.dev/vW4eu6-Ya5k.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",70. Bölüm
-http://movies.yt-hls.workers.dev/OvjeOhVEt3Q.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",71. Bölüm
-http://movies.yt-hls.workers.dev/yswqR3P4utQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",72. Bölüm
-http://movies.yt-hls.workers.dev/tDwnnvjSbvI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",73. Bölüm
-http://movies.yt-hls.workers.dev/DDYcmL1lP4U.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",74. Bölüm
-http://movies.yt-hls.workers.dev/rhAFQeqeFTc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",75. Bölüm
-http://movies.yt-hls.workers.dev/8EayK3uJknE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",76. Bölüm
-http://movies.yt-hls.workers.dev/3qs56UWIByU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",77. Bölüm
-http://movies.yt-hls.workers.dev/LALJvqM4Lco.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",78. Bölüm
-http://movies.yt-hls.workers.dev/heqxWd45Y38.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",79. Bölüm
-http://movies.yt-hls.workers.dev/0x-8CBCWPgc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",80. Bölüm
-http://movies.yt-hls.workers.dev/J37r7F0lBas.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",81. Bölüm
-http://movies.yt-hls.workers.dev/iYW7pLjNOAs.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",82. Bölüm
-http://movies.yt-hls.workers.dev/p5LtRTNi2OQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",83. Bölüm
-http://movies.yt-hls.workers.dev/IXj_Sv_YZwE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",84. Bölüm
-http://movies.yt-hls.workers.dev/J-kQLxNQ5BE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",85. Bölüm
-http://movies.yt-hls.workers.dev/Z6gxfWEOucM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",86. Bölüm
-http://movies.yt-hls.workers.dev/mHSdUuDfp_o.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",87. Bölüm
-http://movies.yt-hls.workers.dev/WAC0SCC4_gg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",88. Bölüm
-http://movies.yt-hls.workers.dev/dyPO4B7mToE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",89. Bölüm
-http://movies.yt-hls.workers.dev/g44iV5ot-dE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",90. Bölüm
-http://movies.yt-hls.workers.dev/3AvFTVRfxCU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",91. Bölüm
-http://movies.yt-hls.workers.dev/M9vWoCvL3eo.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",92. Bölüm
-http://movies.yt-hls.workers.dev/b5KTenpjgNo.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",93. Bölüm
-http://movies.yt-hls.workers.dev/ImDznweZ8GM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",94. Bölüm
-http://movies.yt-hls.workers.dev/yTtaPzgyYxw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",95. Bölüm
-http://movies.yt-hls.workers.dev/3mIB1_FJvqI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",96. Bölüm
-http://movies.yt-hls.workers.dev/_FX9UrdrJYk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",97. Bölüm
-http://movies.yt-hls.workers.dev/Y1GIcF0D1Mc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",98. Bölüm
-http://movies.yt-hls.workers.dev/UcqySVrf8bk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",99. Bölüm
-http://movies.yt-hls.workers.dev/WFHz41cOz4k.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",100. Bölüm
-http://movies.yt-hls.workers.dev/oyfZjumtsNw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",101. Bölüm
-http://movies.yt-hls.workers.dev/krTAG4vBfws.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",102. Bölüm
-http://movies.yt-hls.workers.dev/aVxjWSxmoHs.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",103. Bölüm
-http://movies.yt-hls.workers.dev/Ephipzc3PoM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",104. Bölüm
-http://movies.yt-hls.workers.dev/OQQ2Xg2ENgE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",105. Bölüm
-http://movies.yt-hls.workers.dev/cgiyt_TPKGQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",106. Bölüm
-http://movies.yt-hls.workers.dev/A2iuJ9AjcD4.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",107. Bölüm
-http://movies.yt-hls.workers.dev/zk3IaCWoesw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",108. Bölüm
-http://movies.yt-hls.workers.dev/mhwOYZZ7j2Q.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",109. Bölüm
-http://movies.yt-hls.workers.dev/bvZ9WjVZDII.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",110. Bölüm
-http://movies.yt-hls.workers.dev/XFFup8Z0Bpc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",111. Bölüm
-http://movies.yt-hls.workers.dev/hULiTNCuxq8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",112. Bölüm
-http://movies.yt-hls.workers.dev/mQC9ZJmclow.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",113. Bölüm
-http://movies.yt-hls.workers.dev/DFC94_pwm0U.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",114. Bölüm
-http://movies.yt-hls.workers.dev/FCWnnOVEx3Q.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",115. Bölüm
-http://movies.yt-hls.workers.dev/FPs6hrDogSk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",116. Bölüm
-http://movies.yt-hls.workers.dev/zukWOY1W28I.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",117. Bölüm
-http://movies.yt-hls.workers.dev/zEZHXmjKXIE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",118. Bölüm
-http://movies.yt-hls.workers.dev/vDUvE6F1ppg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",119. Bölüm
-http://movies.yt-hls.workers.dev/YdZS9H2kUkg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",120. Bölüm
-http://movies.yt-hls.workers.dev/SIl8w2pbDJQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",121. Bölüm
-http://movies.yt-hls.workers.dev/O5Pi4xa8HZI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",122. Bölüm
-http://movies.yt-hls.workers.dev/0WLsfW0E5Uk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",123. Bölüm
-http://movies.yt-hls.workers.dev/mdAFTqN4pVU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",124. Bölüm
-http://movies.yt-hls.workers.dev/6cYiHXSRo0k.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",125. Bölüm
-http://movies.yt-hls.workers.dev/Hv_i_t8D33E.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",126. Bölüm
-http://movies.yt-hls.workers.dev/xGkcQk6MLKI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",127. Bölüm
-http://movies.yt-hls.workers.dev/GTRJ4iQMBqQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",128. Bölüm
-http://movies.yt-hls.workers.dev/oiAdLIEftg8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",129. Bölüm
-http://movies.yt-hls.workers.dev/EaTP5vnd6BI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",130. Bölüm
-http://movies.yt-hls.workers.dev/ChGlFLX_3ys.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",131. Bölüm
-http://movies.yt-hls.workers.dev/5vjC3iKc-Jk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",132. Bölüm
-http://movies.yt-hls.workers.dev/F6wJLqZSbIY.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",133. Bölüm
-http://movies.yt-hls.workers.dev/J_NHju4ftjc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",134. Bölüm
-http://movies.yt-hls.workers.dev/Y3XAa3SZYcI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",135. Bölüm
-http://movies.yt-hls.workers.dev/Da5JAsIRtqc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",136. Bölüm
-http://movies.yt-hls.workers.dev/sd7YlVFiB0A.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",137. Bölüm
-http://movies.yt-hls.workers.dev/QLCyk9coGVU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",138. Bölüm
-http://movies.yt-hls.workers.dev/eLPDRCOIzc4.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Aşk-ı Derûn", tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ",139. Bölüm
-http://movies.yt-hls.workers.dev/o_fMbHIj648.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",1. Bölüm
-http://movies.yt-hls.workers.dev/iljpQO4I40E.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",2. Bölüm
-http://movies.yt-hls.workers.dev/z-ad674q63A.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",3. Bölüm
-http://movies.yt-hls.workers.dev/VatCpp9VacM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",4. Bölüm
-http://movies.yt-hls.workers.dev/SDfhP8OA6Tc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",5. Bölüm
-http://movies.yt-hls.workers.dev/jhoq_sRqY4c.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",6. Bölüm
-http://movies.yt-hls.workers.dev/mIWTJHwsgMk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",7. Bölüm
-http://movies.yt-hls.workers.dev/vcUcAfGK3eU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",8. Bölüm
-http://movies.yt-hls.workers.dev/xUoaTycjCiA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",9. Bölüm
-http://movies.yt-hls.workers.dev/Epe8IFBQ00g.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",10. Bölüm
-http://movies.yt-hls.workers.dev/QnZOSFbV1SE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",11. Bölüm
-http://movies.yt-hls.workers.dev/7457X3SMErQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",12. Bölüm
-http://movies.yt-hls.workers.dev/Br9FGzXRrhU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",13. Bölüm
-http://movies.yt-hls.workers.dev/S_5ZjckEIrk.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",14. Bölüm
-http://movies.yt-hls.workers.dev/MWFzIYI6wh4.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",15. Bölüm
-http://movies.yt-hls.workers.dev/18wAMAb8ECM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",16. Bölüm
-http://movies.yt-hls.workers.dev/H4WMhiQ8fXI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",17. Bölüm
-http://movies.yt-hls.workers.dev/MwPu2_z6OTA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",18. Bölüm
-http://movies.yt-hls.workers.dev/aPTVAADcLL8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",19. Bölüm
-http://movies.yt-hls.workers.dev/dkY00AfFt4I.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",20. Bölüm
-http://movies.yt-hls.workers.dev/3jWP_sgsxFI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",21. Bölüm
-http://movies.yt-hls.workers.dev/jQzPx9JAE7k.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",22. Bölüm
-http://movies.yt-hls.workers.dev/Ujt6PNM4org.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",23. Bölüm
-http://movies.yt-hls.workers.dev/edFr5rH9rZU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",24. Bölüm
-http://movies.yt-hls.workers.dev/Crs8OWqq-zw.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",25. Bölüm
-http://movies.yt-hls.workers.dev/CGvSRyie9iQ.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",26. Bölüm
-http://movies.yt-hls.workers.dev/WkdayOr6oyU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",27. Bölüm
-http://movies.yt-hls.workers.dev/Sp1AAKdQ1js.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",28. Bölüm
-http://movies.yt-hls.workers.dev/jVPSINJfrgo.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",29. Bölüm
-http://movies.yt-hls.workers.dev/LBiABFgQ8e8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",30. Bölüm
-http://movies.yt-hls.workers.dev/EIsHoDpN6cM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",31. Bölüm
-http://movies.yt-hls.workers.dev/e54G_Cj3cf8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",32. Bölüm
-http://movies.yt-hls.workers.dev/0YT9dPy-dsY.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",33. Bölüm
-http://movies.yt-hls.workers.dev/-ML30D1jmKA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",34. Bölüm
-http://movies.yt-hls.workers.dev/C6vtUDlLo7s.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",35. Bölüm
-http://movies.yt-hls.workers.dev/dHh62rChPSM.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",36. Bölüm
-http://movies.yt-hls.workers.dev/SHT8cUig6Po.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",37. Bölüm
-http://movies.yt-hls.workers.dev/PL1MS2-6exI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",38. Bölüm
-http://movies.yt-hls.workers.dev/5Lv4iRUIb20.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",39. Bölüm
-http://movies.yt-hls.workers.dev/n7Cl5oQ9a8E.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",40. Bölüm
-http://movies.yt-hls.workers.dev/nagRxzwASIU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",41. Bölüm
-http://movies.yt-hls.workers.dev/KMVrvDAJmBo.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",42. Bölüm
-http://movies.yt-hls.workers.dev/WEpNQC-azmU.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",43. Bölüm
-http://movies.yt-hls.workers.dev/kDg3Gthp9RA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",44. Bölüm
-http://movies.yt-hls.workers.dev/Lo5NK5itTFE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",45. Bölüm
-http://movies.yt-hls.workers.dev/w7E0s0E-QjA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",46. Bölüm
-http://movies.yt-hls.workers.dev/ShAVEEm4N64.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",47. Bölüm
-http://movies.yt-hls.workers.dev/N5xtgURxTRI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",48. Bölüm
-http://movies.yt-hls.workers.dev/FB0lHkytJVs.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",49. Bölüm
-http://movies.yt-hls.workers.dev/s96zJ6vUXGI.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",50. Bölüm
-http://movies.yt-hls.workers.dev/173aQGbelJg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",51. Bölüm
-http://movies.yt-hls.workers.dev/gwEmpT-FkvE.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",52. Bölüm
-http://movies.yt-hls.workers.dev/nGZUMAdlgEY.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",53. Bölüm
-http://movies.yt-hls.workers.dev/Q0zEbPZiEuA.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",54. Bölüm
-http://movies.yt-hls.workers.dev/sz8zF9QXSL8.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",55. Bölüm
-http://movies.yt-hls.workers.dev/EMiMlbaqAtg.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",56. Bölüm
-http://movies.yt-hls.workers.dev/NEe00OO2UMc.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",57. Bölüm
-http://movies.yt-hls.workers.dev/9Q4zpjaS53I.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",58. Bölüm
-http://movies.yt-hls.workers.dev/LfAMU9d38Ts.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",59. Bölüm
-http://movies.yt-hls.workers.dev/dZXvrLLmkeY.m3u8
-#EXTINF:-1 group-title="Muhteşem Yüzyıl: Kösem", tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mXZ9Pn8aHyr4WCTqcNmNfgGK25Ari7j9UqQhfFqwTjDMw",60. Bölüm
-http://movies.yt-hls.workers.dev/mrf45ef8Bzc.m3u8
+
 #EXTINF:-1 tvg-logo="https://yt3.ggpht.com/PUOG4AugF5attdcdO6O1sOIkFykoEJBTKF0d6hLlzAj_VCPD3MUyMOZTiwyfs-NbqL7qLNJuRw" group-title="YouTube",NTV
 http://live.yt-hls.workers.dev/UC9TDTjbOjFB9jADmPhSAPsw.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.ggpht.com/_HznzWrS2cMaKa8Jp_uZhzWt7-25ijH7pZlXq45D9vapjDu5DRsh9uu0vfa2NH2Iayw5yxhaDQ" group-title="YouTube",SOZCU
@@ -5778,291 +5375,114 @@ http://live.yt-hls.workers.dev/UCUd3o920A_ijCRaTRRg8LSg.m3u8
 http://live.yt-hls.workers.dev/UCCfTktnzWK__FUN4gj0zIpA.m3u8
 #EXTINF:-1 tvg-logo="https://yt3.ggpht.com/6_jhTr2aolmOP8qNq24ReRalaiu8LNSX-OD4fh9wWcIALv67la_kYKHDe-2QjmGJ3GqH8UULVQ" group-title="YouTube",TRT COCUK
 http://live.yt-hls.workers.dev/UCrFf5dtMe6M1XJHqbKJ4X6Q.m3u8
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt1_Rwe.png",TRT 1
-http://live.cdn-vizi.workers.dev/?ID=1
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/atv_5qb.png",ATV
-http://live.cdn-vizi.workers.dev/?ID=2
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/show_tv_lNk.png",Show TV
-http://live.cdn-vizi.workers.dev/?ID=3
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/now_tv_dGf.png",Fox TV
-http://live.cdn-vizi.workers.dev/?ID=4
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/star_tv_3ey.png",Star TV
-http://live.cdn-vizi.workers.dev/?ID=5
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/euro_d_QNy.png",Euro D
-http://live.cdn-vizi.workers.dev/?ID=6
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/kanal7_avrupa_PSS.png",Kanal 7
-http://live.cdn-vizi.workers.dev/?ID=7
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv8_334.png",TV8
-http://live.cdn-vizi.workers.dev/?ID=8
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/beyaz_tv_j7S.png",Beyaz TV
-http://live.cdn-vizi.workers.dev/?ID=9
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/viziturk_komedi_TmR.png",ViziTürk Komedi
-http://live.cdn-vizi.workers.dev/?ID=10
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/viziturk_klasik_eQm.png",ViziTürk Klasik
-http://live.cdn-vizi.workers.dev/?ID=11
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/cnn_turk_Zrw.png",CNN Turk
-http://live.cdn-vizi.workers.dev/?ID=12
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/haber_turk_nEH.png",Haber Turk
-http://live.cdn-vizi.workers.dev/?ID=13
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/a_haber_Evs.png",A Haber
-http://live.cdn-vizi.workers.dev/?ID=14
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_haber_AIf.png",TRT Haber
-http://live.cdn-vizi.workers.dev/?ID=15
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/halk_tv_L5s.png",Halk TV
-http://live.cdn-vizi.workers.dev/?ID=16
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ntv_60R.png",NTV
-http://live.cdn-vizi.workers.dev/?ID=17
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/sozcu_tv_QyD.png",Sozcu TV
-http://live.cdn-vizi.workers.dev/?ID=18
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/a_spor_mcm.png",A Spor
-http://live.cdn-vizi.workers.dev/?ID=19
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_spor_GlG.png",TRT Spor
-http://live.cdn-vizi.workers.dev/?ID=20
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_cocuk_H2e.png",TRT Cocuk
-http://live.cdn-vizi.workers.dev/?ID=21
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/minika_cocuk_yet.png",Minika Cocuk
-http://live.cdn-vizi.workers.dev/?ID=22
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/minika_go_06m.png",MinikaGo
-http://live.cdn-vizi.workers.dev/?ID=23
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_diyanet_cocuk_czV.png",TRT Diyanet Çocuk
-http://live.cdn-vizi.workers.dev/?ID=24
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/cartoon_network_L3S.png",Cartoon Networks
-http://live.cdn-vizi.workers.dev/?ID=25
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/a2_tv_4s5.png",A2 TV
-http://live.cdn-vizi.workers.dev/?ID=26
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/teve2_cNO.png",TV2
-http://live.cdn-vizi.workers.dev/?ID=27
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv8.5_CZ2.png",TV8.5
-http://live.cdn-vizi.workers.dev/?ID=28
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/360_BNa.png",360 TV
-http://live.cdn-vizi.workers.dev/?ID=29
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/show_max_Ke7.png",Show Max
-http://live.cdn-vizi.workers.dev/?ID=30
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_belgesel_6fG.png",TRT Belgesel
-http://live.cdn-vizi.workers.dev/?ID=31
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tlc_y3J.png",TLC Turkiye
-http://live.cdn-vizi.workers.dev/?ID=32
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/dmax_Mi8.png",DMax
-http://live.cdn-vizi.workers.dev/?ID=33
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt2_7PU.png",TRT 2
-http://live.cdn-vizi.workers.dev/?ID=34
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tele1_0KK.png",Tele 1
-http://live.cdn-vizi.workers.dev/?ID=35
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv100_27m.png",TV 100
-http://live.cdn-vizi.workers.dev/?ID=36
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/24_tv_wsF.png",24 TV
-http://live.cdn-vizi.workers.dev/?ID=37
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/haber_global_SLu.png",Haber Global
-http://live.cdn-vizi.workers.dev/?ID=38
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tgrt_haber_SLy.png",TGRT Haber
-http://live.cdn-vizi.workers.dev/?ID=39
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/flash_haber_e2Q.png",Flash TV
-http://live.cdn-vizi.workers.dev/?ID=40
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/krt_Yln.png",KRT TV
-http://live.cdn-vizi.workers.dev/?ID=41
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ulke_tv_e4E.png",Ulke TV
-http://live.cdn-vizi.workers.dev/?ID=42
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tvnet_FeE.png",TVNet
-http://live.cdn-vizi.workers.dev/?ID=43
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_muzik_xcs.png",TRT Muzik
-http://live.cdn-vizi.workers.dev/?ID=44
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/powerturk_tv_dfW.png",Powerturk
-http://live.cdn-vizi.workers.dev/?ID=45
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/number_one_sDB.png",NR1 Turk
-http://live.cdn-vizi.workers.dev/?ID=46
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/dream_turk_2GH.png",Dream Turk
-http://live.cdn-vizi.workers.dev/?ID=48
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/a_para_k1C.png",A Para
-http://live.cdn-vizi.workers.dev/?ID=49
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/bloomberg_ht_c3h.png",Bloomberg HT
-http://live.cdn-vizi.workers.dev/?ID=50
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ekoturk_tpz.png",Ekoturk TV
-http://live.cdn-vizi.workers.dev/?ID=51
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/cbc_sport_92O.png",CBC Sport
-http://live.cdn-vizi.workers.dev/?ID=52
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/idman_tv_j8f.png",Idman TV
-http://live.cdn-vizi.workers.dev/?ID=53
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_spor_yildiz_U9a.png",TRT Spor Yildiz
-http://live.cdn-vizi.workers.dev/?ID=54
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/akit_BKG.png",Akit TV
-http://live.cdn-vizi.workers.dev/?ID=56
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv5_gMJ.png",TV5
-http://live.cdn-vizi.workers.dev/?ID=57
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ulusal_0t6.png",Ulusal Kanal
-http://live.cdn-vizi.workers.dev/?ID=58
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/kanal_b_pe4.png",Kanal B
-http://live.cdn-vizi.workers.dev/?ID=59
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/bengu_turk_bCB.png",Bengu Turk TV
-http://live.cdn-vizi.workers.dev/?ID=60
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_diyanet_zp6.png",TRT Diyanet
-http://live.cdn-vizi.workers.dev/?ID=62
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/vav_tv_6Yt.png",VAV TV
-http://live.cdn-vizi.workers.dev/?ID=63
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/lalegul_1v7.png",Lalegul TV
-http://live.cdn-vizi.workers.dev/?ID=64
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/semerkand_mJd.png",Semerkand TV
-http://live.cdn-vizi.workers.dev/?ID=65
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/kabe_tv_h0h.png",KabeTV
-http://live.cdn-vizi.workers.dev/?ID=66
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/dost_tv_9Qk.png",Dost TV
-http://live.cdn-vizi.workers.dev/?ID=67
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tgrt_belgesel_OK2.png",TGRT Belgesel
-http://live.cdn-vizi.workers.dev/?ID=68
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tgrt_eu_u0a.png",TGRT EU
-http://live.cdn-vizi.workers.dev/?ID=69
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/kanal_avrupa_NgH.png",Kanal Avrupa
-http://live.cdn-vizi.workers.dev/?ID=70
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/koy_tv_yCz.png",Koy TV
-http://live.cdn-vizi.workers.dev/?ID=71
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tv4_Vz8.png",TV 4
-http://live.cdn-vizi.workers.dev/?ID=72
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/brt1_m5c.png",BRT 1
-http://live.cdn-vizi.workers.dev/?ID=73
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_turk_bud.png",TRT Turk
-http://live.cdn-vizi.workers.dev/?ID=75
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_avaz_YkY.png",TRT Avaz
-http://live.cdn-vizi.workers.dev/?ID=76
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_kurdi_CCE.png",TRT Kurdi
-http://live.cdn-vizi.workers.dev/?ID=77
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/zarok_x5p.png",Zarok TV
-http://live.cdn-vizi.workers.dev/?ID=78
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_arapca_HQs.png",TRT Arapca
-http://live.cdn-vizi.workers.dev/?ID=79
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_world_GFv.png",TRT WORLD
-http://live.cdn-vizi.workers.dev/?ID=80
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tbmm_X3d.png",TBMM TV
-http://live.cdn-vizi.workers.dev/?ID=81
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/cine1_iPa.png",Cine 1
-http://live.cdn-vizi.workers.dev/?ID=86
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/trt_eba_6SV.png",TRT EBA TV
-http://live.cdn-vizi.workers.dev/?ID=88
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/cnbc_e_4ke.png",CNBC-e
-http://live.cdn-vizi.workers.dev/?ID=89
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/ekol_tv_aHD.png",Ekol TV
-http://live.cdn-vizi.workers.dev/?ID=91
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/vizi_sinema.png",Vizi Sinema
-http://live.cdn-vizi.workers.dev/?ID=94
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/vizi_belgesel.png",Vizi Belgesel
-http://live.cdn-vizi.workers.dev/?ID=96
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/meltem_tv_J7w.png",Meltem TV
-http://live.cdn-vizi.workers.dev/?ID=98
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/gzt_tv_tlM.png",GZT TV
-http://live.cdn-vizi.workers.dev/?ID=99
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/tyt_turk(vizi).png",TYT Turk
-http://live.cdn-vizi.workers.dev/?ID=100
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/anews_vizi.png",A News
-http://live.cdn-vizi.workers.dev/?ID=101
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/eurostar_vizi.png",Eurostar
-http://live.cdn-vizi.workers.dev/?ID=102
-#EXTINF:-1 group-title="viziTV" tvg-logo="https://d3ckc0u56niq67.cloudfront.net/conf/images/bi_vizi.png",B!
-http://live.cdn-vizi.workers.dev/?ID=103
-#EXTINF:-1 tvg-id="kanaldc" tvg-name="Kanal D -C-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",Kanal D -C-
+
+#EXTINF:-1 tvg-id="kanaldc" tvg-name="Kanal D " tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",Kanal D 
 https://kz.testworkery0.workers.dev/kanald?key=patr0n
-#EXTINF:-1 tvg-id="kanalddsmlegal" tvg-name="Kanal D -D-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",Kanal D -D-
+#EXTINF:-1 tvg-id="kanalddsmlegal" tvg-name="Kanal D " tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",Kanal D 
 http://87.121.104.29:5010/channel?id=245931&token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="kabloshowtv" tvg-name="Show Tv -C-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/93eebff893a76defd8ab61fdb69943c3.jpg" group-title="Ulusal",Show Tv -C-
+#EXTINF:-1 tvg-id="kabloshowtv" tvg-name="Show Tv " tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/93eebff893a76defd8ab61fdb69943c3.jpg" group-title="Ulusal",Show Tv 
 https://kz.testworkery0.workers.dev/showtv?key=patr0n
-#EXTINF:-1 tvg-id="startv" tvg-name="Star Tv -A-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/9077322c9860d2cd30e3f5cc3d46d56d.jpg" group-title="Ulusal",Star Tv -A-
+#EXTINF:-1 tvg-id="startv" tvg-name="Star Tv " tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/9077322c9860d2cd30e3f5cc3d46d56d.jpg" group-title="Ulusal",Star Tv 
 https://eskicr.denek1544.workers.dev/izle/startv-113.m3u8
-#EXTINF:-1 tvg-id="foxtvb" tvg-name="Now -B-" tvg-logo="https://i.ibb.co/rZhQ082/NOW-TV-Turkey-wordmark-red.png" group-title="Ulusal",Now -B-
+#EXTINF:-1 tvg-id="foxtvb" tvg-name="Now " tvg-logo="https://i.ibb.co/rZhQ082/NOW-TV-Turkey-wordmark-red.png" group-title="Ulusal",Now 
 http://87.121.104.29:5010/channel?id=245997&token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="nowc" tvg-name="Now -C-" tvg-logo="https://i.ibb.co/rZhQ082/NOW-TV-Turkey-wordmark-red.png" group-title="Ulusal",Now -C-
+#EXTINF:-1 tvg-id="nowc" tvg-name="Now " tvg-logo="https://i.ibb.co/rZhQ082/NOW-TV-Turkey-wordmark-red.png" group-title="Ulusal",Now 
 https://kz.testworkery0.workers.dev/now?key=patr0n
-#EXTINF:-1 tvg-id="tv8b" tvg-name="Tv 8 -B-" tvg-logo="https://img.dsmartgo.com.tr/content/a/WI/13727/Thumbnail.png" group-title="Ulusal",Tv 8 -B-
+#EXTINF:-1 tvg-id="tv8b" tvg-name="Tv 8 " tvg-logo="https://img.dsmartgo.com.tr/content/a/WI/13727/Thumbnail.png" group-title="Ulusal",Tv 8 
 http://87.121.104.29:5010/channel?id=246132&token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="ulketvkab" tvg-name="Ülke Tv" tvg-logo="https://img.dsmartgo.com.tr/content/R/oy/13522/Thumbnail.png" group-title="Haber",Ülke Tv
 https://kz.testworkery0.workers.dev/ulketv?key=patr0n
-#EXTINF:-1 tvg-id="ultetv" tvg-name="Ülke Tv - YT" tvg-logo="https://img.dsmartgo.com.tr/content/R/oy/13522/Thumbnail.png" group-title="Haber",Ülke Tv - YT
+#EXTINF:-1 tvg-id="ultetv" tvg-name="Ülke Tv " tvg-logo="https://img.dsmartgo.com.tr/content/R/oy/13522/Thumbnail.png" group-title="Haber",Ülke Tv 
 http://87.121.104.29:1071/ultetv/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="ahberyt" tvg-name="A Haber -A-" tvg-logo="https://img.dsmartgo.com.tr/content/L/oz/13722/Thumbnail.png" group-title="Haber",A Haber -A-
+#EXTINF:-1 tvg-id="ahberyt" tvg-name="A Haber " tvg-logo="https://img.dsmartgo.com.tr/content/L/oz/13722/Thumbnail.png" group-title="Haber",A Haber 
 http://87.121.104.29:1071/ahberyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="ahaber" tvg-name="A Haber -B-" tvg-logo="https://img.dsmartgo.com.tr/content/L/oz/13722/Thumbnail.png" group-title="Haber",A Haber -B-
+#EXTINF:-1 tvg-id="ahaber" tvg-name="A Haber " tvg-logo="https://img.dsmartgo.com.tr/content/L/oz/13722/Thumbnail.png" group-title="Haber",A Haber 
 https://kz.testworkery0.workers.dev/ahaber?key=patr0n
-#EXTINF:-1 tvg-id="anewsyt" tvg-name="A News - YT" tvg-logo="https://yt3.googleusercontent.com/6NEH0h3dFrnG36dk8lHHfocRKiz2GqiM0pzd-UeIvj_B-25aGYsB1sUUZodoD9JCgVpRt-hDGUM=s160-c-k-c0x00ffffff-no-rj" group-title="Haber",A News - YT
+#EXTINF:-1 tvg-id="anewsyt" tvg-name="A News " tvg-logo="https://yt3.googleusercontent.com/6NEH0h3dFrnG36dk8lHHfocRKiz2GqiM0pzd-UeIvj_B-25aGYsB1sUUZodoD9JCgVpRt-hDGUM=s160k-c0x00ffffff-no-rj" group-title="Haber",A News 
 http://87.121.104.29:1071/anewsyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="tvnetyt" tvg-name="TvNet - YT" tvg-logo="https://yt3.googleusercontent.com/WJm8IMexX9Atd0eOkmHFXagUieCC43mZO1B-TQAhBYm8iR4H5do0Go_kYWz_g-bSYxx6yXZPycI=s160-c-k-c0x00ffffff-no-rj" group-title="Haber",TvNet - YT
+#EXTINF:-1 tvg-id="tvnetyt" tvg-name="TvNet " tvg-logo="https://yt3.googleusercontent.com/WJm8IMexX9Atd0eOkmHFXagUieCC43mZO1B-TQAhBYm8iR4H5do0Go_kYWz_g-bSYxx6yXZPycI=s160k-c0x00ffffff-no-rj" group-title="Haber",TvNet 
 http://87.121.104.29:1071/tvnetyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="cnnturk" tvg-name="CNN Türk" tvg-logo="https://img.dsmartgo.com.tr/content/a/u2/11786/Thumbnail.png" group-title="Haber",CNN Türk
 http://87.121.104.29:5010/channel?id=245940&token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="ntvhaber" tvg-name="NTV -A-" tvg-logo="https://img.dsmartgo.com.tr/content/F/VA/13721/Thumbnail.png" group-title="Haber",NTV -A-
+#EXTINF:-1 tvg-id="ntvhaber" tvg-name="NTV " tvg-logo="https://img.dsmartgo.com.tr/content/F/VA/13721/Thumbnail.png" group-title="Haber",NTV 
 http://87.121.104.29:5010/channel?id=246120&token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="ntvyt" tvg-name="Ntv - YT" tvg-logo="https://yt3.googleusercontent.com/PUOG4AugF5attdcdO6O1sOIkFykoEJBTKF0d6hLlzAj_VCPD3MUyMOZTiwyfs-NbqL7qLNJuRw=s160-c-k-c0x00ffffff-no-rj" group-title="Haber",Ntv - YT
+#EXTINF:-1 tvg-id="ntvyt" tvg-name="Ntv " tvg-logo="https://yt3.googleusercontent.com/PUOG4AugF5attdcdO6O1sOIkFykoEJBTKF0d6hLlzAj_VCPD3MUyMOZTiwyfs-NbqL7qLNJuRw=s160k-c0x00ffffff-no-rj" group-title="Haber",Ntv 
 http://87.121.104.29:1071/ntvyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="kanal24" tvg-name="Kanal 24" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/a/a6/24_TV_logosu.png" group-title="Haber",Kanal 24
 https://sahsahbaz.testworker0y.workers.dev/channel/S2FuYWwgMjQ=
-#EXTINF:-1 tvg-id="kanal5yt" tvg-name="Kanal 5" tvg-logo="https://yt3.googleusercontent.com/M2veFhhzFF_d8hI7xc7Z9CTZic9ucyKI2e_CsD6-q98EtD6BmmBT2VSrLWD9t9FLpc58GVgMGC0=s160-c-k-c0x00ffffff-no-rj" group-title="Haber",Kanal 5
+#EXTINF:-1 tvg-id="kanal5yt" tvg-name="Kanal 5" tvg-logo="https://yt3.googleusercontent.com/M2veFhhzFF_d8hI7xc7Z9CTZic9ucyKI2e_CsD6-q98EtD6BmmBT2VSrLWD9t9FLpc58GVgMGC0=s160k-c0x00ffffff-no-rj" group-title="Haber",Kanal 5
 http://87.121.104.29:1071/kanal5yt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="benguturkyt" tvg-name="Bengü Türk" tvg-logo="https://yt3.googleusercontent.com/xfEZjkOt4ZAltabZ4Of6niPktZJ9uJQI7C3T8pjEXzQBKgY1rkgxzyBoXUQlOjhtGePCYcq0MW4=s160-c-k-c0x00ffffff-no-rj" group-title="Haber",Bengü Türk
+#EXTINF:-1 tvg-id="benguturkyt" tvg-name="Bengü Türk" tvg-logo="https://yt3.googleusercontent.com/xfEZjkOt4ZAltabZ4Of6niPktZJ9uJQI7C3T8pjEXzQBKgY1rkgxzyBoXUQlOjhtGePCYcq0MW4=s160k-c0x00ffffff-no-rj" group-title="Haber",Bengü Türk
 http://87.121.104.29:1071/benguturkyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="flashhaberyt" tvg-name="Flash Haber" tvg-logo="https://yt3.googleusercontent.com/9Hqnz42k04uQF15nx0Dk9sh6JtLWtVtzMIxp_W4TuxtUB2cq2Q515dnD095_muJUBjUhtRz70sA=s160-c-k-c0x00ffffff-no-rj" group-title="Haber",Flash Haber
+#EXTINF:-1 tvg-id="flashhaberyt" tvg-name="Flash Haber" tvg-logo="https://yt3.googleusercontent.com/9Hqnz42k04uQF15nx0Dk9sh6JtLWtVtzMIxp_W4TuxtUB2cq2Q515dnD095_muJUBjUhtRz70sA=s160k-c0x00ffffff-no-rj" group-title="Haber",Flash Haber
 http://87.121.104.29:1071/flashhaberyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="kemalsunal" tvg-name="Kemal Sunal 7/24" tvg-logo="https://yt3.googleusercontent.com/-ymD4Yk5B67ZHKsffxetYiFvZQB9Ckq-9Ft7gfk0JpietBDtGIIqGJQeloIasQy_DHIo_8jJYQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Kemal Sunal 7/24
+#EXTINF:-1 tvg-id="kemalsunal" tvg-name="Kemal Sunal 7/24" tvg-logo="https://yt3.googleusercontent.com/-ymD4Yk5B67ZHKsffxetYiFvZQB9Ckq-9Ft7gfk0JpietBDtGIIqGJQeloIasQy_DHIo_8jJYQ=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Kemal Sunal 7/24
 http://87.121.104.29:1071/kemalsunal/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="gulsahfilm" tvg-name="Gülşah Film 7/24" tvg-logo="https://yt3.googleusercontent.com/jHfMww520ZaX-PZ6CB5sqE5scVs0sl7Kgwc3rzzbzwa3IzXJy8iOyJM9WjLktwtLFgCbvpeZk9Q=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" group-title="YouTube Dizi - Film",Gülşah Film 7/24
 http://87.121.104.29:1071/gulsahfilm/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="adanalı" tvg-name="Adanalı 7/24" tvg-logo="https://yt3.googleusercontent.com/2bi7q6AcVbEQwlxZSvTthnHUTK-83MKOSuuSwvLA3uwuki8sYv0HfBN27TJjL7CM8zuMH3HzDg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Adanalı 7/24
+#EXTINF:-1 tvg-id="adanalı" tvg-name="Adanalı 7/24" tvg-logo="https://yt3.googleusercontent.com/2bi7q6AcVbEQwlxZSvTthnHUTK-83MKOSuuSwvLA3uwuki8sYv0HfBN27TJjL7CM8zuMH3HzDg=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Adanalı 7/24
 http://87.121.104.29:1071/adanalı/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="seksenleryt" tvg-name="Seksenler 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_nZ3O2m76f5kZZZLC5XKkAgUzq4AaEEuT7UyquE2EVgBw=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Seksenler 7/24
+#EXTINF:-1 tvg-id="seksenleryt" tvg-name="Seksenler 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_nZ3O2m76f5kZZZLC5XKkAgUzq4AaEEuT7UyquE2EVgBw=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Seksenler 7/24
 http://87.121.104.29:1071/seksenleryt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="soz" tvg-name="Söz 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_nJXAIa1X-ajL3YEj1hR9cXTnjqa6_G4UoQPpUylwpgbv8=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Söz 7/24
+#EXTINF:-1 tvg-id="soz" tvg-name="Söz 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_nJXAIa1X-ajL3YEj1hR9cXTnjqa6_G4UoQPpUylwpgbv8=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Söz 7/24
 http://87.121.104.29:1071/soz/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="cennetmahallesi" tvg-name="Cennet Mahallesi 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mKu0mjHEszLFRezgQr1A06wDsDZkvTnaNXbPn5_d0ZUA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Cennet Mahallesi 7/24
+#EXTINF:-1 tvg-id="cennetmahallesi" tvg-name="Cennet Mahallesi 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mKu0mjHEszLFRezgQr1A06wDsDZkvTnaNXbPn5_d0ZUA=s176k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Cennet Mahallesi 7/24
 http://87.121.104.29:1071/cennetmahallesi/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="kurtlarvadisipusu" tvg-name="Kurtlar Vadisi Pusu 7/24" tvg-logo="https://yt3.ggpht.com/tql8fK5S3O4w5ONQcdlOqYkpy_BKAq1wcTt7GilOGf3GpkhdeqIw5f55YI1ZDo_p5_DcoDyB1A=s176-c-k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Kurtlar Vadisi Pusu 7/24
+#EXTINF:-1 tvg-id="kurtlarvadisipusu" tvg-name="Kurtlar Vadisi Pusu 7/24" tvg-logo="https://yt3.ggpht.com/tql8fK5S3O4w5ONQcdlOqYkpy_BKAq1wcTt7GilOGf3GpkhdeqIw5f55YI1ZDo_p5_DcoDyB1A=s176k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Kurtlar Vadisi Pusu 7/24
 http://87.121.104.29:1071/kurtlarvadisipusu/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="behzatc" tvg-name="Behzat Ç. 7/24" tvg-logo="https://yt3.googleusercontent.com/Z8zZMS4sIhD7JJi20qr1fMFtHlJ7-liknZqqCzPg-0PfQGhgRv4sMxvUfT4x11U5QnFp1VbmYg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Behzat Ç. 7/24
+#EXTINF:-1 tvg-id="behzatc" tvg-name="Behzat Ç. 7/24" tvg-logo="https://yt3.googleusercontent.com/Z8zZMS4sIhD7JJi20qr1fMFtHlJ7-liknZqqCzPg-0PfQGhgRv4sMxvUfT4x11U5QnFp1VbmYg=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Behzat Ç. 7/24
 http://87.121.104.29:1071/behzatc/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="edho" tvg-name="Eşkıya Dünyaya Hükümdar Olmaz 7/24" tvg-logo="https://yt3.googleusercontent.com/TxAX1j0TdUlpfhmsbkCqtdFrM3AFV2DZGb6kef8TH80oOMDFEz2J2id5-SiWtDTcpH2mZhYGTg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Eşkıya Dünyaya Hükümdar Olmaz 7/24
+#EXTINF:-1 tvg-id="edho" tvg-name="Eşkıya Dünyaya Hükümdar Olmaz 7/24" tvg-logo="https://yt3.googleusercontent.com/TxAX1j0TdUlpfhmsbkCqtdFrM3AFV2DZGb6kef8TH80oOMDFEz2J2id5-SiWtDTcpH2mZhYGTg=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Eşkıya Dünyaya Hükümdar Olmaz 7/24
 http://87.121.104.29:1071/edho/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="kuzeygunay" tvg-name="Kuzey Güney 7/24" tvg-logo="https://yt3.googleusercontent.com/IYSskFu8LkkcG-tQjZT06DC3h598njGnWaubpOkA2nlTETHyIjIr0vTreVbBsGmVdrG80PGk=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Kuzey Güney 7/24
+#EXTINF:-1 tvg-id="kuzeygunay" tvg-name="Kuzey Güney 7/24" tvg-logo="https://yt3.googleusercontent.com/IYSskFu8LkkcG-tQjZT06DC3h598njGnWaubpOkA2nlTETHyIjIr0vTreVbBsGmVdrG80PGk=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Kuzey Güney 7/24
 http://87.121.104.29:1071/kuzeygunay/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="askimemnu" tvg-name="Aşk-ı Memnu 7/24" tvg-logo="https://yt3.googleusercontent.com/PDEALCyyxr3iZ2OpX4_vl5lQ5-7FaoRvihttV9R_gQcKCF7Q1RR7bGozobj9Ghh6ltkb_t8I=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Aşk-ı Memnu 7/24
+#EXTINF:-1 tvg-id="askimemnu" tvg-name="Aşk-ı Memnu 7/24" tvg-logo="https://yt3.googleusercontent.com/PDEALCyyxr3iZ2OpX4_vl5lQ5-7FaoRvihttV9R_gQcKCF7Q1RR7bGozobj9Ghh6ltkb_t8I=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Aşk-ı Memnu 7/24
 http://87.121.104.29:1071/askimemnu/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="gullergunahlar" tvg-name="Güller ve Günahlar 7/24" tvg-logo="https://yt3.ggpht.com/JXJiwiydpEJxMhGq8aHtafCXE4ME_tbyrtpI5DS1SumFK5QKTvwwC3XDfIBvQWh7LFuPHsjGCw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Güller ve Günahlar 7/24
+#EXTINF:-1 tvg-id="gullergunahlar" tvg-name="Güller ve Günahlar 7/24" tvg-logo="https://yt3.ggpht.com/JXJiwiydpEJxMhGq8aHtafCXE4ME_tbyrtpI5DS1SumFK5QKTvwwC3XDfIBvQWh7LFuPHsjGCw=s176k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Güller ve Günahlar 7/24
 http://87.121.104.29:1071/gullergunahlar/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="avrupayakasi" tvg-name="Avrupa Yakası 7/24" tvg-logo="https://yt3.googleusercontent.com/5bkS9MmbYWqBp6L5YLW2GKbUHg3ccliSqtZPTEDIKyATdaixag3ZWtvzloxX3elaJ1fmta-Gsg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Avrupa Yakası 7/24
+#EXTINF:-1 tvg-id="avrupayakasi" tvg-name="Avrupa Yakası 7/24" tvg-logo="https://yt3.googleusercontent.com/5bkS9MmbYWqBp6L5YLW2GKbUHg3ccliSqtZPTEDIKyATdaixag3ZWtvzloxX3elaJ1fmta-Gsg=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Avrupa Yakası 7/24
 http://87.121.104.29:1071/avrupayakasi/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="zenginkfakiro" tvg-name="Zengin Kız Fakir Oğlan 7/24" tvg-logo="https://yt3.ggpht.com/1YUINSwuuns9oNLOmYEQLkS9aNI_bE-hdOFTDF3S56Oq6rRBUWO_kd1ew2NkWmbj_4LznHe3V5M=s176-c-k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Zengin Kız Fakir Oğlan 7/24
+#EXTINF:-1 tvg-id="zenginkfakiro" tvg-name="Zengin Kız Fakir Oğlan 7/24" tvg-logo="https://yt3.ggpht.com/1YUINSwuuns9oNLOmYEQLkS9aNI_bE-hdOFTDF3S56Oq6rRBUWO_kd1ew2NkWmbj_4LznHe3V5M=s176k-c0x00ffffff-no-rj-mo" group-title="YouTube Dizi - Film",Zengin Kız Fakir Oğlan 7/24
 http://87.121.104.29:1071/zenginkfakiro/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="cocuklarduymasin" tvg-name="Çocuklar Duymasın 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_k2yAMqqZek-afJ0iWS-gMNfDR-1T_wWcjajhmZWMF3Kw=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Çocuklar Duymasın 7/24
+#EXTINF:-1 tvg-id="cocuklarduymasin" tvg-name="Çocuklar Duymasın 7/24" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_k2yAMqqZek-afJ0iWS-gMNfDR-1T_wWcjajhmZWMF3Kw=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Çocuklar Duymasın 7/24
 http://87.121.104.29:1071/cocuklarduymasin/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="leylamecnun" tvg-name="Leyla ile Mecnun 7/24" tvg-logo="https://yt3.googleusercontent.com/VvAVptRyVwMZ45DzlzEz2HJ738mBWncwZgb-xzuQQjqy9L7O649tKHOT-ujUBCixGQFMnBhUwQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Leyla ile Mecnun 7/24
+#EXTINF:-1 tvg-id="leylamecnun" tvg-name="Leyla ile Mecnun 7/24" tvg-logo="https://yt3.googleusercontent.com/VvAVptRyVwMZ45DzlzEz2HJ738mBWncwZgb-xzuQQjqy9L7O649tKHOT-ujUBCixGQFMnBhUwQ=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Leyla ile Mecnun 7/24
 http://87.121.104.29:1071/leylamecnun/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="sihirliannem" tvg-name="Sihirli Annem 7/24" tvg-logo="https://yt3.googleusercontent.com/P54859eAfyuolskOUg4icbpgTTJV3meue0MwVlMSiPOUpUAzF_Hff3G-7O0bFoAfF1N2e1Pb=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Sihirli Annem 7/24
+#EXTINF:-1 tvg-id="sihirliannem" tvg-name="Sihirli Annem 7/24" tvg-logo="https://yt3.googleusercontent.com/P54859eAfyuolskOUg4icbpgTTJV3meue0MwVlMSiPOUpUAzF_Hff3G-7O0bFoAfF1N2e1Pb=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Sihirli Annem 7/24
 http://87.121.104.29:1071/sihirliannem/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="sakaryafirat" tvg-name="Sakarya Fırat 7/24" tvg-logo="https://yt3.googleusercontent.com/uWY07vykFzXT_mCT7Iz1xelhFK7HnhjGhIGAZlJk6stWVcaPBnJeZioRr_8DIHTEDwHBtWCm=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Sakarya Fırat 7/24
+#EXTINF:-1 tvg-id="sakaryafirat" tvg-name="Sakarya Fırat 7/24" tvg-logo="https://yt3.googleusercontent.com/uWY07vykFzXT_mCT7Iz1xelhFK7HnhjGhIGAZlJk6stWVcaPBnJeZioRr_8DIHTEDwHBtWCm=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Sakarya Fırat 7/24
 http://87.121.104.29:1071/sakaryafirat/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="yaprakdokumu" tvg-name="Yaprak Dökümü 7/24" tvg-logo="https://yt3.googleusercontent.com/haTDIRamfCjs53RVuK8hHLD4V0z0Y5ZKrf20BEzGvZExlGa9D89RZkeD7Cx_XsbJnPHBC9qTxQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yaprak Dökümü 7/24
+#EXTINF:-1 tvg-id="yaprakdokumu" tvg-name="Yaprak Dökümü 7/24" tvg-logo="https://yt3.googleusercontent.com/haTDIRamfCjs53RVuK8hHLD4V0z0Y5ZKrf20BEzGvZExlGa9D89RZkeD7Cx_XsbJnPHBC9qTxQ=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yaprak Dökümü 7/24
 http://87.121.104.29:1071/yaprakdokumu/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="yesildenizyt" tvg-name="Yeşil Deniz 7/24" tvg-logo="https://yt3.googleusercontent.com/7X6QCeS0W93_Npl02OhYrpe4qx_9NfIka_lV_HdViwj0rxd452YmPchMwvVuj2tCgujcaTO7MA=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yeşil Deniz 7/24
+#EXTINF:-1 tvg-id="yesildenizyt" tvg-name="Yeşil Deniz 7/24" tvg-logo="https://yt3.googleusercontent.com/7X6QCeS0W93_Npl02OhYrpe4qx_9NfIka_lV_HdViwj0rxd452YmPchMwvVuj2tCgujcaTO7MA=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yeşil Deniz 7/24
 http://87.121.104.29:1071/yesildenizyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="gonuldagiyt" tvg-name="Gönül Dağı 7/24" tvg-logo="https://yt3.googleusercontent.com/zz6PtK-i5xDLSEID9h3fyAjJBVm0P3bdDtNWnldXYTYhvhMt0W9XdqC_VLL6uXlDpBp57EbNqg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Gönül Dağı 7/24
+#EXTINF:-1 tvg-id="gonuldagiyt" tvg-name="Gönül Dağı 7/24" tvg-logo="https://yt3.googleusercontent.com/zz6PtK-i5xDLSEID9h3fyAjJBVm0P3bdDtNWnldXYTYhvhMt0W9XdqC_VLL6uXlDpBp57EbNqg=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Gönül Dağı 7/24
 http://87.121.104.29:1071/gonuldagiyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="yedinumarayt" tvg-name="Yedi Numara 7/24" tvg-logo="https://yt3.googleusercontent.com/f-uSffpGIqYV1DDww_6wa8wtgNvH3ujCNzCeDyk8jpTqvU-aazkDwSg59DolP5kRmyr6gqSs=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yedi Numara 7/24
+#EXTINF:-1 tvg-id="yedinumarayt" tvg-name="Yedi Numara 7/24" tvg-logo="https://yt3.googleusercontent.com/f-uSffpGIqYV1DDww_6wa8wtgNvH3ujCNzCeDyk8jpTqvU-aazkDwSg59DolP5kRmyr6gqSs=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yedi Numara 7/24
 http://87.121.104.29:1071/yedinumarayt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="yalandunyayt" tvg-name="Yalan Dünya 7/24" tvg-logo="https://yt3.googleusercontent.com/-YDPepLyRkCMnen3OV6-QRAuvJcqzOWB3igTxkuPbIdXcvFBpZ_i3LpPqXxjMHjAV-aAiSPKow=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yalan Dünya 7/24
+#EXTINF:-1 tvg-id="yalandunyayt" tvg-name="Yalan Dünya 7/24" tvg-logo="https://yt3.googleusercontent.com/-YDPepLyRkCMnen3OV6-QRAuvJcqzOWB3igTxkuPbIdXcvFBpZ_i3LpPqXxjMHjAV-aAiSPKow=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Yalan Dünya 7/24
 http://87.121.104.29:1071/yalandunyayt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="aleminkiraliyt" tvg-name="Alemin Kıralı 7/24" tvg-logo="https://yt3.googleusercontent.com/HXSuS7IOMucLzbl-UC6OeH_PV8ID9FoMdg54gufdfTaf-gLZf8X9XGLFa8hPwEsacfpmABy4gg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Alemin Kıralı 7/24
+#EXTINF:-1 tvg-id="aleminkiraliyt" tvg-name="Alemin Kıralı 7/24" tvg-logo="https://yt3.googleusercontent.com/HXSuS7IOMucLzbl-UC6OeH_PV8ID9FoMdg54gufdfTaf-gLZf8X9XGLFa8hPwEsacfpmABy4gg=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Alemin Kıralı 7/24
 http://87.121.104.29:1071/aleminkiraliyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="hzyusufyt" tvg-name="Hz. Yusuf 7/24" tvg-logo="https://yt3.googleusercontent.com/D3GSWb8PhVI6qvxe2pjY-CgyRfQk-pRlFigUMDb6_Ogndk5RFyJjmPR-2DT-jOFL4s5eyYyK=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Hz. Yusuf 7/24
+#EXTINF:-1 tvg-id="hzyusufyt" tvg-name="Hz. Yusuf 7/24" tvg-logo="https://yt3.googleusercontent.com/D3GSWb8PhVI6qvxe2pjY-CgyRfQk-pRlFigUMDb6_Ogndk5RFyJjmPR-2DT-jOFL4s5eyYyK=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Hz. Yusuf 7/24
 http://87.121.104.29:1071/hzyusufyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="fatmagulyt" tvg-name="Fatmagül'ün Suçu Ne ? 7/24" tvg-logo="https://yt3.googleusercontent.com/H-nesJNqryOe9c4afu5y7DBxOjLRPtU0bPnrXDoaJT3N-gwkP2QNBrY423mLwGZF8yA_EVxUrQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Fatmagül'ün Suçu Ne ? 7/24
+#EXTINF:-1 tvg-id="fatmagulyt" tvg-name="Fatmagül'ün Suçu Ne ? 7/24" tvg-logo="https://yt3.googleusercontent.com/H-nesJNqryOe9c4afu5y7DBxOjLRPtU0bPnrXDoaJT3N-gwkP2QNBrY423mLwGZF8yA_EVxUrQ=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Fatmagül'ün Suçu Ne ? 7/24
 http://87.121.104.29:1071/fatmagulyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="mehmedfetihlersultani" tvg-name="Mehmed: Fetihler Sultanı 7/24" tvg-logo="https://yt3.googleusercontent.com/Z2mFmfLLm8ugjoJfTTevUUXUWMmlp-77Vc5nz9lq4Xd6wTU7XMt98SxqDUrIPeGJFgjBb_MVOg=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Mehmed: Fetihler Sultanı 7/24
+#EXTINF:-1 tvg-id="mehmedfetihlersultani" tvg-name="Mehmed: Fetihler Sultanı 7/24" tvg-logo="https://yt3.googleusercontent.com/Z2mFmfLLm8ugjoJfTTevUUXUWMmlp-77Vc5nz9lq4Xd6wTU7XMt98SxqDUrIPeGJFgjBb_MVOg=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Mehmed: Fetihler Sultanı 7/24
 http://87.121.104.29:1071/mehmedfetihlersultani/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="muhtesemyuzyil" tvg-name="Muhteşem Yüzyıl 7/24" tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Muhteşem Yüzyıl 7/24
+#EXTINF:-1 tvg-id="muhtesemyuzyil" tvg-name="Muhteşem Yüzyıl 7/24" tvg-logo="https://yt3.googleusercontent.com/epBgDKt7X076kstrFPsFyBPg1qKh1g3t6TC58kMitJvnDUiHd2XGFUuVJz1Ons0YIywZo5v-uQ=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Muhteşem Yüzyıl 7/24
 http://87.121.104.29:1071/muhtesemyuzyil/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="turkfilmleryt" tvg-name="Eski Türk Filmleri 7/24" tvg-logo="https://yt3.googleusercontent.com/HsrtQ2hiA1pmZLMLKSNX4Q3a-9lgJvQQBhB6JAUnckfBwP3HjNso4oHDLdVR51ycKUcEEAisCA=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Eski Türk Filmleri 7/24
+#EXTINF:-1 tvg-id="turkfilmleryt" tvg-name="Eski Türk Filmleri 7/24" tvg-logo="https://yt3.googleusercontent.com/HsrtQ2hiA1pmZLMLKSNX4Q3a-9lgJvQQBhB6JAUnckfBwP3HjNso4oHDLdVR51ycKUcEEAisCA=s160k-c0x00ffffff-no-rj" group-title="YouTube Dizi - Film",Eski Türk Filmleri 7/24
 http://87.121.104.29:1071/turkfilmleryt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="tlcsucvearastirma" tvg-name="TLC Suç ve Araştırma" tvg-logo="https://yt3.googleusercontent.com/_4BCgYVYzh2eD6doip7g2IopQ6uNdc4EbPJHtYwHBKTopTSPjcio-X0JEBlYi9vdaxP5bEBdgQ=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",TLC Suç ve Araştırma
+#EXTINF:-1 tvg-id="tlcsucvearastirma" tvg-name="TLC Suç ve Araştırma" tvg-logo="https://yt3.googleusercontent.com/_4BCgYVYzh2eD6doip7g2IopQ6uNdc4EbPJHtYwHBKTopTSPjcio-X0JEBlYi9vdaxP5bEBdgQ=s160k-c0x00ffffff-no-rj" group-title="Belgesel",TLC Suç ve Araştırma
 http://87.121.104.29:1071/tlcsucvearastirma/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="naturetimetr" tvg-name="Nature Time Türkçede" tvg-logo="https://yt3.googleusercontent.com/JwtQimeNj81XMiK6LjTT3Lfkorlme3nIWTF81K7EzugjszPuU3wD3dstoHvt4SRgb4EG1H1U=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",Nature Time Türkçede
+#EXTINF:-1 tvg-id="naturetimetr" tvg-name="Nature Time Türkçede" tvg-logo="https://yt3.googleusercontent.com/JwtQimeNj81XMiK6LjTT3Lfkorlme3nIWTF81K7EzugjszPuU3wD3dstoHvt4SRgb4EG1H1U=s160k-c0x00ffffff-no-rj" group-title="Belgesel",Nature Time Türkçede
 http://87.121.104.29:1071/naturetimetr/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="bizimevyt" tvg-name="Bizim Ev - YT" tvg-logo="https://yt3.googleusercontent.com/5KLD4QmX3I_Hwc4wrTpdqkcoVdTJfj86ABhRIkEV1ZtJ2jXNGWnqL-CLOjuC3MHM6hQLCgL4=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",Bizim Ev - YT
+#EXTINF:-1 tvg-id="bizimevyt" tvg-name="Bizim Ev " tvg-logo="https://yt3.googleusercontent.com/5KLD4QmX3I_Hwc4wrTpdqkcoVdTJfj86ABhRIkEV1ZtJ2jXNGWnqL-CLOjuC3MHM6hQLCgL4=s160k-c0x00ffffff-no-rj" group-title="Belgesel",Bizim Ev 
 http://87.121.104.29:1071/bizimevyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="discoveryid" tvg-name="Discovery ID" tvg-logo="https://dsmart-static-v2.ercdn.net/content/b/vE/11891/Thumbnail.png" group-title="Belgesel",Discovery ID
 https://new.testworkery0.workers.dev/stream/aHR0cHM6Ly9kc21hcnRnby1saXZlLmVyY2RuLm5ldC9kaXNjb3ZlcnlzY2llbmNlL2Rpc2NvdmVyeXNjaWVuY2UubTN1OA==.m3u8
-#EXTINF:-1 tvg-id="tgrtbelgeselyt" tvg-name="TGRT Belgesel" tvg-logo="https://yt3.googleusercontent.com/TWSgLJEkOPBFXWbyqzBuG0-EeXmhVXUKHEoRn3GnJ_WkJeknuh2Q9MJrLAC6k_-YKb4HeslA=s160-c-k-c0x00ffffff-no-rj" group-title="Belgesel",TGRT Belgesel
+#EXTINF:-1 tvg-id="tgrtbelgeselyt" tvg-name="TGRT Belgesel" tvg-logo="https://yt3.googleusercontent.com/TWSgLJEkOPBFXWbyqzBuG0-EeXmhVXUKHEoRn3GnJ_WkJeknuh2Q9MJrLAC6k_-YKb4HeslA=s160k-c0x00ffffff-no-rj" group-title="Belgesel",TGRT Belgesel
 http://87.121.104.29:1071/tgrtbelgeselyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="sinematvtesti" tvg-name="Sinema TvYEDEK" tvg-logo="https://img.dsmartgo.com.tr/content/T/QU/22894/Thumbnail.png" group-title="Sinema Kanalları",Sinema TvYEDEK
 https://eskicr.denek1544.workers.dev/izle/sinematv-61.m3u8
@@ -6096,15 +5516,15 @@ https://kizilmavi.denek1544.workers.dev/channel/RmlsbWJveCBUw7xya2l5ZQ==.m3u8
 https://kz.testworkery0.workers.dev/FilmScreen?key=patr0n
 #EXTINF:-1 tvg-id="epicdrama" tvg-name="Epic Drama" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/df8891dd-4c22-41f7-85b0-d516ab62b473.png" group-title="Sinema Kanalları",Epic Drama
 https://kz.testworkery0.workers.dev/epicdrama?key=patr0n
-#EXTINF:-1 tvg-id="bshaberyt" tvg-name="Bein Sports Haber" tvg-logo="https://yt3.googleusercontent.com/_vs7K9u3pS-C7flO0cVIkxqgLsIkjElGL6izCYFzI0COAYKda5g2J9DRB9-EHsfTXwA_ayi72g=s160-c-k-c0x00ffffff-no-rj" group-title="Spor",Bein Sports Haber
+#EXTINF:-1 tvg-id="bshaberyt" tvg-name="Bein Sports Haber" tvg-logo="https://yt3.googleusercontent.com/_vs7K9u3pS-C7flO0cVIkxqgLsIkjElGL6izCYFzI0COAYKda5g2J9DRB9-EHsfTXwA_ayi72g=s160k-c0x00ffffff-no-rj" group-title="Spor",Bein Sports Haber
 http://87.121.104.29:1071/bshaberyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="asporyt" tvg-name="A Spor" tvg-logo="https://yt3.googleusercontent.com/43xh3uEvLl7kAKca-zFauATzT3spixqjb9v-cYBVxBLzbcbVj42iV3Msbpd5zXwN_w7jXdnzFq8=s160-c-k-c0x00ffffff-no-rj" group-title="Spor",A Spor
+#EXTINF:-1 tvg-id="asporyt" tvg-name="A Spor" tvg-logo="https://yt3.googleusercontent.com/43xh3uEvLl7kAKca-zFauATzT3spixqjb9v-cYBVxBLzbcbVj42iV3Msbpd5zXwN_w7jXdnzFq8=s160k-c0x00ffffff-no-rj" group-title="Spor",A Spor
 http://87.121.104.29:1071/asporyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="htspor" tvg-name="HT Spor" tvg-logo="https://dsmart-static-v2.ercdn.net/content/u/S4/98405/Thumbnail.png" group-title="Spor",HT Spor
 http://87.121.104.29:5010/channel?id=394506&token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="rahatlamaseans" tvg-name="Relax Video" tvg-logo="https://yt3.googleusercontent.com/lyUMCjkrkgDMTt8LjZ0w6nBg5QWI7HxNeydcyzcvlknIclBzSiWGgJ1oeOeurH79SAF6ijrb=s160-c-k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Relax Video
+#EXTINF:-1 tvg-id="rahatlamaseans" tvg-name="Relax Video" tvg-logo="https://yt3.googleusercontent.com/lyUMCjkrkgDMTt8LjZ0w6nBg5QWI7HxNeydcyzcvlknIclBzSiWGgJ1oeOeurH79SAF6ijrb=s160k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Relax Video
 http://87.121.104.29:1071/rahatlamaseans/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="akustikturku" tvg-name="Akustik Türküler 7/24" tvg-logo="https://yt3.googleusercontent.com/VttDGdEB9Vej1Dm60_BfuHylzzsjSES8szXDckOjNMttBIG-2DGwjehwmCnwpscM6eA236Ji=s160-c-k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Akustik Türküler 7/24
+#EXTINF:-1 tvg-id="akustikturku" tvg-name="Akustik Türküler 7/24" tvg-logo="https://yt3.googleusercontent.com/VttDGdEB9Vej1Dm60_BfuHylzzsjSES8szXDckOjNMttBIG-2DGwjehwmCnwpscM6eA236Ji=s160k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Akustik Türküler 7/24
 http://87.121.104.29:1071/akustikturku/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="okyanus" tvg-name="Okyanus Sesleri" tvg-logo="https://yt3.googleusercontent.com/-NCv9pGDDs4mIhznDQrpRUb_8HHt7MxyK0RzfnnXkL8rFkZ2bog9lZHNGh2t8U4IinRd9wrH=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" group-title="Dinlenme Vakti",Okyanus Sesleri
 http://87.121.104.29:1071/okyanus/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
@@ -6112,31 +5532,31 @@ http://87.121.104.29:1071/okyanus/stream.m3u8?token=f966d85ebe19831109af18c271e0
 http://87.121.104.29:1071/rahatlaticises/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
 #EXTINF:-1 tvg-id="ormansesleri" tvg-name="Orman Sesleri" tvg-logo="https://i.ytimg.com/vi/hUC6wx0Zui4/hqdefault.jpg?v=68d35751&sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAUk2TrO0lALYRbJmOZdO89nDO7QA" group-title="Dinlenme Vakti",Orman Sesleri
 http://87.121.104.29:1071/ormansesleri/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="kralmuzikyt" tvg-name="Kral Müzik" tvg-logo="https://yt3.googleusercontent.com/VdVVUwzexITWPML3mfsUl7O2zUGa_f5gSuk6Gu5DNHVwzIlz99EnjNgO41Ay33_ovq48pQ5-0hA=s160-c-k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Kral Müzik
+#EXTINF:-1 tvg-id="kralmuzikyt" tvg-name="Kral Müzik" tvg-logo="https://yt3.googleusercontent.com/VdVVUwzexITWPML3mfsUl7O2zUGa_f5gSuk6Gu5DNHVwzIlz99EnjNgO41Ay33_ovq48pQ5-0hA=s160k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Kral Müzik
 http://87.121.104.29:1071/kralmuzikyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="ulusmuzikyt" tvg-name="Ulus Müzik - YT" tvg-logo="https://yt3.googleusercontent.com/Hb6KQ5js8q8ZxpEh4r0vEkSgtGbcQ31_UFaRs3G43m43LRy_JT5fiV_qe6QG52M69N9-uqMpKg=s160-c-k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Ulus Müzik - YT
+#EXTINF:-1 tvg-id="ulusmuzikyt" tvg-name="Ulus Müzik " tvg-logo="https://yt3.googleusercontent.com/Hb6KQ5js8q8ZxpEh4r0vEkSgtGbcQ31_UFaRs3G43m43LRy_JT5fiV_qe6QG52M69N9-uqMpKg=s160k-c0x00ffffff-no-rj" group-title="Dinlenme Vakti",Ulus Müzik 
 http://87.121.104.29:1071/ulusmuzikyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="askinevayt" tvg-name="Aşk-ı Neva YT" tvg-logo="https://yt3.googleusercontent.com/f5POobR9VwXrL7HJ6NTBaN_QSjN8M-jvTdDfeEMXPgbyEEZDGIFdNelUYbcoVTZjjmSfMB6axnI=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Aşk-ı Neva YT
+#EXTINF:-1 tvg-id="askinevayt" tvg-name="Aşk-ı Neva YT" tvg-logo="https://yt3.googleusercontent.com/f5POobR9VwXrL7HJ6NTBaN_QSjN8M-jvTdDfeEMXPgbyEEZDGIFdNelUYbcoVTZjjmSfMB6axnI=s160k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Aşk-ı Neva YT
 http://87.121.104.29:1071/askinevayt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="huzurpinariyt" tvg-name="Huzur Pinari Tv - YT" tvg-logo="https://yt3.googleusercontent.com/ZK8nsLnz1StMpGKezOm6tQ69FBoXDKC8CdjdVVWd3uweqwO9i10-lMKd9pCySAc4ud0MadRVxS4=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Huzur Pinari Tv - YT
+#EXTINF:-1 tvg-id="huzurpinariyt" tvg-name="Huzur Pinari Tv " tvg-logo="https://yt3.googleusercontent.com/ZK8nsLnz1StMpGKezOm6tQ69FBoXDKC8CdjdVVWd3uweqwO9i10-lMKd9pCySAc4ud0MadRVxS4=s160k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Huzur Pinari Tv 
 http://87.121.104.29:1071/huzurpinariyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="nilrtvyt" tvg-name="Nil RTV - YT" tvg-logo="https://yt3.googleusercontent.com/jpwZu-wuhCG0NOwFQgtzBt3JO_NBHVjuU9b9qMouvK9pRQ9PPU43kbvvyP2oUkaxhXVwkkFeiA=s160-c-k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Nil RTV - YT
+#EXTINF:-1 tvg-id="nilrtvyt" tvg-name="Nil RTV " tvg-logo="https://yt3.googleusercontent.com/jpwZu-wuhCG0NOwFQgtzBt3JO_NBHVjuU9b9qMouvK9pRQ9PPU43kbvvyP2oUkaxhXVwkkFeiA=s160k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Nil RTV 
 http://87.121.104.29:1071/nilrtvyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="mrbeancartoonyt" tvg-name="Mr Bean" tvg-logo="https://yt3.ggpht.com/ytc/AIdro_kub8dEh-nWBAd_dlh6BX53K5onxl6pZ3JaAC_pIvrormQ=s68-c-k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Mr Bean
+#EXTINF:-1 tvg-id="mrbeancartoonyt" tvg-name="Mr Bean" tvg-logo="https://yt3.ggpht.com/ytc/AIdro_kub8dEh-nWBAd_dlh6BX53K5onxl6pZ3JaAC_pIvrormQ=s68k-c0x00ffffff-no-rj" group-title="YouTube Kanalları",Mr Bean
 http://87.121.104.29:1071/mrbeancartoonyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="guldurguldur" tvg-name="Güldür Güldür 7/24" tvg-logo="https://yt3.ggpht.com/i2TaaYn_QBW_W0xsJ79qFQ58bw28wKxlopm9Cocq6O_Ws-Z0C84ap3DI3Q5zm-2o22_Pru4YNQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Eğlence",Güldür Güldür 7/24
+#EXTINF:-1 tvg-id="guldurguldur" tvg-name="Güldür Güldür 7/24" tvg-logo="https://yt3.ggpht.com/i2TaaYn_QBW_W0xsJ79qFQ58bw28wKxlopm9Cocq6O_Ws-Z0C84ap3DI3Q5zm-2o22_Pru4YNQ=s176k-c0x00ffffff-no-rj-mo" group-title="Eğlence",Güldür Güldür 7/24
 http://87.121.104.29:1071/guldurguldur/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="neselidunyam" tvg-name="Neşeli Dünyam - Minika" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_l3kNwTi1WBn4EDPvRSjt4jcNSBZ5GFzJXWhlwpk4FWSPY=s160-c-k-c0x00ffffff-no-rj" group-title="Çocuk",Neşeli Dünyam - Minika
+#EXTINF:-1 tvg-id="neselidunyam" tvg-name="Neşeli Dünyam - Minika" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_l3kNwTi1WBn4EDPvRSjt4jcNSBZ5GFzJXWhlwpk4FWSPY=s160k-c0x00ffffff-no-rj" group-title="Çocuk",Neşeli Dünyam - Minika
 http://87.121.104.29:1071/neselidunyam/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="diyanetcocukworkers" tvg-name="Diyanet Çocuk" tvg-logo="https://yt3.googleusercontent.com/_7UzbLRUPTG9PwZcMc042TV5TcOt8aPWBGqYfOQ56VlvJyGmog16BCv__H2ChJGcPaLr0fQ54rg=s160-c-k-c0x00ffffff-no-rj" group-title="Çocuk",Diyanet Çocuk
+#EXTINF:-1 tvg-id="diyanetcocukworkers" tvg-name="Diyanet Çocuk" tvg-logo="https://yt3.googleusercontent.com/_7UzbLRUPTG9PwZcMc042TV5TcOt8aPWBGqYfOQ56VlvJyGmog16BCv__H2ChJGcPaLr0fQ54rg=s160k-c0x00ffffff-no-rj" group-title="Çocuk",Diyanet Çocuk
 https://diyanetcocuk.testworkery0.workers.dev/
-#EXTINF:-1 tvg-id="vavtyyt" tvg-name="VAV Tv - YT" tvg-logo="https://yt3.googleusercontent.com/2m_4uFImiV24g-GaBxebdKKOWzLkY-e6LUk-vwZuyYwNgHNNmzqExkyxqrsd-lUx5LQ9Z6kBbko=s160-c-k-c0x00ffffff-no-rj" group-title="Dini",VAV Tv - YT
+#EXTINF:-1 tvg-id="vavtyyt" tvg-name="VAV Tv " tvg-logo="https://yt3.googleusercontent.com/2m_4uFImiV24g-GaBxebdKKOWzLkY-e6LUk-vwZuyYwNgHNNmzqExkyxqrsd-lUx5LQ9Z6kBbko=s160k-c0x00ffffff-no-rj" group-title="Dini",VAV Tv 
 http://87.121.104.29:1071/vavtyyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="ekoturkyt" tvg-name="EkoTürk" tvg-logo="https://yt3.googleusercontent.com/nRcWKlah9W0Sm24UlNIgtmyhyJZZ6LTdfc9J-pUOLH-4F50zzBysb1vPJbIkd_B7PrmTH1K5R88=s160-c-k-c0x00ffffff-no-rj" group-title="Ekonomi",EkoTürk
+#EXTINF:-1 tvg-id="ekoturkyt" tvg-name="EkoTürk" tvg-logo="https://yt3.googleusercontent.com/nRcWKlah9W0Sm24UlNIgtmyhyJZZ6LTdfc9J-pUOLH-4F50zzBysb1vPJbIkd_B7PrmTH1K5R88=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",EkoTürk
 http://87.121.104.29:1071/ekoturkyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="aparayt" tvg-name="APara-YT" tvg-logo="https://yt3.googleusercontent.com/XJtyMUH7ikXxeg2nrhjVb0k9LbpdqimTV9QawOxlQipdDFYe0cy6kdFZeFqzpeqPCyOkJCMM_w=s160-c-k-c0x00ffffff-no-rj" group-title="Ekonomi",APara-YT
+#EXTINF:-1 tvg-id="aparayt" tvg-name="APara-YT" tvg-logo="https://yt3.googleusercontent.com/XJtyMUH7ikXxeg2nrhjVb0k9LbpdqimTV9QawOxlQipdDFYe0cy6kdFZeFqzpeqPCyOkJCMM_w=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",APara-YT
 http://87.121.104.29:1071/aparayt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="cnbceyt" tvg-name="CNBC-e YT" tvg-logo="https://yt3.googleusercontent.com/Rh1aC6tWB_CLSqR2gRW8UPXfCsqZE-7m83CPpBNLk8CI6ybTGDNWy7jF7jFGkHIffyUEyF8BW38=s160-c-k-c0x00ffffff-no-rj" group-title="Ekonomi",CNBC-e YT
+#EXTINF:-1 tvg-id="cnbceyt" tvg-name="CNBC-e YT" tvg-logo="https://yt3.googleusercontent.com/Rh1aC6tWB_CLSqR2gRW8UPXfCsqZE-7m83CPpBNLk8CI6ybTGDNWy7jF7jFGkHIffyUEyF8BW38=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",CNBC-e YT
 http://87.121.104.29:1071/cnbceyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
-#EXTINF:-1 tvg-id="businessyt" tvg-name="Business Channel" tvg-logo="https://yt3.googleusercontent.com/zP1Fik1Cu0Cx7gU0ZR5vhsrzundUZnK0j1fXe38YKsd-R5ptibDxs5hcf0FTT8igp83uhKSG8w=s160-c-k-c0x00ffffff-no-rj" group-title="Ekonomi",Business Channel
+#EXTINF:-1 tvg-id="businessyt" tvg-name="Business Channel" tvg-logo="https://yt3.googleusercontent.com/zP1Fik1Cu0Cx7gU0ZR5vhsrzundUZnK0j1fXe38YKsd-R5ptibDxs5hcf0FTT8igp83uhKSG8w=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",Business Channel
 http://87.121.104.29:1071/businessyt/stream.m3u8?token=f966d85ebe19831109af18c271e0ba7f
