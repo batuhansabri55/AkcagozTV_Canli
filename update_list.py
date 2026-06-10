@@ -32,7 +32,7 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/smartwebos/cdn/refs/heads/main/viziTV.m3u",
     
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
-    "https://tinyurl.com/ytpatron",
+    "https://link.testworkery0.workers.dev/patron.m3u",
     "https://urlz.fr/v1Xo",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
     "https://raw.githubusercontent.com/smartgmr/cdn/refs/heads/main/Perfect.m3u",
