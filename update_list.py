@@ -33,7 +33,6 @@ YEDEK_KAYNAKLAR = [
     
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://link.testworkery0.workers.dev/patron.m3u",
-    "https://urlz.fr/v1Xo",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
     "https://raw.githubusercontent.com/smartgmr/cdn/refs/heads/main/Perfect.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
