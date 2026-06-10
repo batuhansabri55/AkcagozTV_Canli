@@ -41,7 +41,6 @@ YEDEK_KAYNAKLAR = [
     "https://tinyurl.com/bdd2tz6h",
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
-    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/categories/documentary.m3u",
     "https://iptv-org.github.io/iptv/categories/documentary.m3u"
 ]
 
