@@ -34,10 +34,9 @@ YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://link.testworkery0.workers.dev/patron.m3u",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
-    "https://raw.githubusercontent.com/smartgmr/cdn/refs/heads/main/Perfect.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
-    "https://tinyurl.com/bdd2tz6h",
+    "https://www.dropbox.com/scl/fi/p58t5o980tah2hz3234a5/SmartGO.m3u?rlkey=w44w0ycaa83uyn21uph77pp6v&st=mj0n6byr&raw=1",
     "https://publiciptv.com/countries/tr/m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u",
     "https://iptv-org.github.io/iptv/categories/documentary.m3u"
