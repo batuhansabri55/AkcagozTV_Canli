@@ -5,6 +5,7 @@ import datetime
 import shutil
 from concurrent.futures import ThreadPoolExecutor
 import urllib3
+from urllib.parse import urljoin  # Video parçalarını doğru birleştirmek için eklendi
 
 # SSL hatalarını tamamen sustur
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -65,38 +66,70 @@ def github_taze_link_avla():
     return yeni_kaynaklar[:12]
 
 def link_saglam_mi(url):
-    """VIZITV WORKERS VE CLOUDFLARE GEÇİŞLİ ULTRA ESNEK SÜZGEÇ"""
+    """GITHUB ÇÖPLERİNİ SIFIRA İNDİREN ULTRA GÜVENLİ V4 ZIRHLI SÜZGEÇ"""
     if "workers.dev" in url.lower() or "vizitv" in url.lower():
         return True
 
     try:
-        # Genel timeout süresi daha sağlıklı sonuç için 8 saniyeye çıkarıldı
+        # 1. Aşama: Linke sıkı bir istek at, yönlendirmeleri (redirect) takip et
         with requests.get(url, headers=HEADERS, timeout=8, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
             content_type = r.headers.get('Content-Type', '').lower()
+            # M3u8 taklidi yapan çakma HTML veya JSON sayfalarını anında engelle
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
                 
+            # Kandırmaca olmasın diye okuma parçasını 2048 byte'a çıkardık
             try:
-                chunk = r.raw.read(256)
+                chunk = r.raw.read(2048)
             except:
                 return False
 
             if not chunk:
                 return False
 
-            content_text = chunk.decode('utf-8', errors='ignore').lower()
+            content_text = chunk.decode('utf-8', errors='ignore')
+            content_text_lower = content_text.lower()
             
-            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied"]
-            if any(hata in content_text for hata in hata_kelimeleri):
+            # Gizli veya süresi bitmiş hata kelimelerini yakala
+            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403"]
+            if any(hata in content_text_lower for hata in hata_kelimeleri):
                 return False
             
-            if "#extm3u" in content_text or "#extinf" in content_text or ".m3u8" in url.lower():
+            # 2. Aşama: Canlı Yayın İçerik Kontrolü (#extm3u veya m3u8 playlist yapısı var mı?)
+            if "#extm3u" in content_text_lower or "#extinf" in content_text_lower or "media-sequence" in content_text_lower:
+                
+                # M3U8 listesinin içindeki gerçek .ts veya alt akış video satırını buluyoruz
+                lines = content_text.split('\n')
+                video_segment_url = None
+                
+                for line in lines:
+                    line = line.strip()
+                    if line and not line.startswith("#"):
+                        if "http" in line or ".ts" in line or ".m3u8" in line:
+                            if not line.startswith("http"):
+                                video_segment_url = urljoin(url, line)
+                            else:
+                                video_segment_url = line
+                            break
+                
+                # 3. Aşama: GERÇEK YAYIN TESTİ (En can alıcı nokta)
+                # İçeride video parçası bulduysak, gidip o parçanın gerçekten var olup olmadığını doğruluyoruz
+                if video_segment_url:
+                    try:
+                        segment_check = requests.head(video_segment_url, headers=HEADERS, timeout=4, verify=False)
+                        if segment_check.status_code in [200, 206]:
+                            return True # İçinden harbi video akan safkan canlı yayın linki!
+                        else:
+                            return False # Dosya içi sahte veya patlak çıktı, elendi!
+                    except:
+                        return False
+                
                 return True
                 
-            if any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream', 'text/plain', '']):
+            if any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream']):
                 return True
 
             return False
@@ -132,7 +165,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V3.5: TVANDO ve Özel Kaynak Takip Sistemi Aktif!")
+    print(f"🛡️  USTA SİSTEM V4.0: Ultra Zırhlı Filtre ve Akıllı Süzgeç Aktif!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -174,21 +207,20 @@ def main():
             unique_adaylar.append((k, kaynak_url))
             gorulen_linkler.add(link)
 
-    print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Test başlıyor...")
+    print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Derin zırhlı test başlıyor...")
 
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
-        # Tuple yapısını açarak işlemciye gönderiyoruz
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         # Zırhlı bölgeyi en başa hiç dokunmadan aynen yazıyoruz
         f.writelines(ana_liste_zirh)
-        f.write(f"\n# --- VIZITV ENTEGRELİ GÜNCEL LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
+        f.write(f"\n# --- VIZITV ENTEGRELİ GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Yeni kriterlere uyan {len(final_listesi)} kanal alta eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! GitHub çöpleri elendi, taş gibi sağlam {len(final_listesi)} yeni yedek alta eklendi.")
 
 if __name__ == "__main__":
     main()
