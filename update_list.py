@@ -28,7 +28,7 @@ YASAKLI_GRUPLAR = [
 ]
 
 YEDEK_KAYNAKLAR = [
-    # Sizin asıl doğrulanmış çalışan viziTV kaynağınız (Görseldeki tam link)
+    # Sizin asıl doğrulanmış çalışan viziTV kaynağınız
     "https://raw.githubusercontent.com/smartwebos/cdn/refs/heads/main/viziTV.m3u",
     
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
@@ -39,7 +39,7 @@ YEDEK_KAYNAKLAR = [
     "https://www.dropbox.com/scl/fi/p58t5o980tah2hz3234a5/SmartGO.m3u?rlkey=w44w0ycaa83uyn21uph77pp6v&st=mj0n6byr&raw=1",
     "https://raw.githubusercontent.com/hydrokin/M3U/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
-   ]
+]
 
 def github_taze_link_avla():
     yeni_kaynaklar = []
@@ -66,20 +66,12 @@ def github_taze_link_avla():
 
 def link_saglam_mi(url):
     """VIZITV WORKERS VE CLOUDFLARE GEÇİŞLİ ULTRA ESNEK SÜZGEÇ"""
-    
-    # --- YENİ EKLENEN BYPASS KISMI ---
-    # Özel listenizi hiçbir teste tabi tutmadan doğrudan güvenli kabul et
-    if "hydrokin/M3U" in url or "tvando.m3u" in url:
-        return True
-    # ---------------------------------
-
-    # EĞER LİNK BİR CLOUDFLARE WORKER PROXY LINKIYSE (Kilitlenmeyi önlemek için doğrudan güvenli kabul et)
     if "workers.dev" in url.lower() or "vizitv" in url.lower():
         return True
 
     try:
-        # HEAD isteği olmadan, timeout süresini 10'a çıkararak direkt GET akış kontrolü
-        with requests.get(url, headers=HEADERS, timeout=10, stream=True, verify=False, allow_redirects=True) as r:
+        # Genel timeout süresi daha sağlıklı sonuç için 8 saniyeye çıkarıldı
+        with requests.get(url, headers=HEADERS, timeout=8, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
@@ -111,28 +103,36 @@ def link_saglam_mi(url):
     except: 
         return False
 
-def kanal_isleme(kanal_metni, eklenen_urller):
+def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     satir_grubu = kanal_metni.strip().split('\n')
     if len(satir_grubu) < 2: return None
     
     ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
     
+    # Eğer link korunan 3750 zırh satırında zaten varsa kesinlikle es geç
     if link_satiri in eklenen_urller: return None
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR): return None
 
-    if link_saglam_mi(link_satiri):
+    # --- USTA ÖZEL AYARI ---
+    # Eğer bu kanal doğrudan tvando.m3u listesinden geliyorsa test etmeden direkt onay ver!
+    if "tvando.m3u" in kaynak_url.lower():
+        link_onayli = True
+    else:
+        link_onayli = link_saglam_mi(link_satiri)
+
+    if link_onayli:
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
         
-        print(f" ✅ LİSTEYE ALINDI: {link_satiri[:60]}...")
+        print(f" ✅ LİSTEYE ALINDI ({'TVANDO' if 'tvando.m3u' in kaynak_url.lower() else 'TESTED'}): {link_satiri[:60]}...")
         return f"{isim_temiz}\n{link_satiri}"
     
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V3.4: ViziTV Workers Tam Desteği Aktif!")
+    print(f"🛡️  USTA SİSTEM V3.5: TVANDO ve Özel Kaynak Takip Sistemi Aktif!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -144,6 +144,7 @@ def main():
     ana_liste_zirh = []
     ham_bulunanlar = []
 
+    # 3750 Satırlık Zırh Bölgesi Okunuyor (KORUMA ALTINDA)
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
@@ -155,36 +156,39 @@ def main():
     for kaynak in guncel_kaynak_listesi:
         try:
             print(f"📡 Kaynak Okunuyor: {kaynak[:70]}...")
-            r = requests.get(kaynak, headers=HEADERS, timeout=10, verify=False)
+            r = requests.get(kaynak, headers=HEADERS, timeout=12, verify=False)
             if r.status_code == 200:
-                # HTTP veya HTTPS olan tüm link gruplarını eksiksiz yakalar
                 bulunan = re.findall(r"(#EXTINF:.*?\n+https?.*?)(?=#EXTINF|$)", r.text, re.DOTALL | re.IGNORECASE)
-                ham_bulunanlar.extend(bulunan)
+                # Kanalları kaynak linkiyle eşleştirerek hafızaya alıyoruz
+                for b in bulunan:
+                    ham_bulunanlar.append((b, kaynak))
             else:
                 print(f"❌ Kaynak Yanıt Vermedi: {kaynak[:40]}...")
         except: continue
 
     unique_adaylar = []
     gorulen_linkler = set()
-    for k in ham_bulunanlar:
+    for k, kaynak_url in ham_bulunanlar:
         link = k.strip().split('\n')[-1].strip()
         if link not in eklenen_urller and link not in gorulen_linkler:
-            unique_adaylar.append(k)
+            unique_adaylar.append((k, kaynak_url))
             gorulen_linkler.add(link)
 
     print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Test başlıyor...")
 
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
-        results = list(executor.map(lambda k: kanal_isleme(k, eklenen_urller), unique_adaylar))
+        # Tuple yapısını açarak işlemciye gönderiyoruz
+        results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
+        # Zırhlı bölgeyi en başa hiç dokunmadan aynen yazıyoruz
         f.writelines(ana_liste_zirh)
         f.write(f"\n# --- VIZITV ENTEGRELİ GÜNCEL LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Yeni kriterlere uyan {len(final_listesi)} kanal eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Yeni kriterlere uyan {len(final_listesi)} kanal alta eklendi.")
 
 if __name__ == "__main__":
     main()
