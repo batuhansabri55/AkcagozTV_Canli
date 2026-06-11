@@ -28,9 +28,9 @@ YASAKLI_GRUPLAR = [
     "Superxfilm", "CINEMAMOD", "Adult", "XXX"
 ]
 
-# ⚠️ USTA ÖZEL AYARI: İçinde bu ana IP geçen her şeyi portuna bakmadan komple engeller!
+# ⚠️ DİĞER KAYNAKLAR İÇİN YASAKLI IP (Tvando dışındakiler buraya takılır)
 YASAKLI_IP_LISTESI = [
-    "87.121.104.29"  # Port numarasını sildik, bu IP komple kara listede!
+    "87.121.104.29"
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -53,7 +53,6 @@ def github_taze_link_avla():
     for terim in arama_terimleri:
         search_url = f"https://api.github.com/search/code?q=extension:m3u+{terim}+pushed:>{tarih}&sort=indexed"
         try:
-            print(f"🕵️  GitHub'da derin arama yapılıyor (Filtre: {terim} >{tarih})...")
             r = requests.get(search_url, headers=HEADERS, timeout=10)
             if r.status_code == 200:
                 items = r.json().get('items', [])
@@ -63,7 +62,6 @@ def github_taze_link_avla():
                         yeni_kaynaklar.append(raw)
                     if len(yeni_kaynaklar) >= 15: break
         except:
-            print(f"⚠️  GitHub API limiti veya bağlantı sorunu ({terim}).")
             continue
             
     return yeni_kaynaklar[:12]
@@ -74,7 +72,6 @@ def link_saglam_mi(url):
         return True
 
     try:
-        # 1. AŞAMA: Bağlantı ve İçerik Türü Kontrolü
         with requests.get(url, headers=HEADERS, timeout=5, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
@@ -98,7 +95,6 @@ def link_saglam_mi(url):
             if any(hata in content_text_lower for hata in hata_kelimeleri):
                 return False
             
-            # 2. AŞAMA: M3U8 VE XTREAM İÇİN GERÇEK VİDEO PARÇASI (SEGMENT) TESTİ
             if "#extm3u" in content_text_lower or "#extinf" in content_text_lower or "media-sequence" in content_text_lower:
                 lines = content_text.split('\n')
                 video_segment_url = None
@@ -113,7 +109,6 @@ def link_saglam_mi(url):
                                 video_segment_url = line
                             break
                 
-                # Akış doğrulaması (Token/Süre kontrolü)
                 if video_segment_url:
                     try:
                         with requests.get(video_segment_url, headers=HEADERS, timeout=4, stream=True, verify=False) as vr:
@@ -140,30 +135,36 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
     
-    # 🚫 USTA KÖKTEN ENGEL: Eğer linkin İÇİNDE yasaklı IP geçiyorsa (portu ne olursa olsun) anında blokla!
+    # 🎯 USTA EMRE KESİN İTAAT: Eğer bu kanal tvando listesinden geliyorsa, 
+    # kod ALTINDAKİ HİÇBİR SATIRA DOKUNMAZ. Filtre, IP kontrolü, test vs. her şeyi PAS GEÇER!
+    if "tvando.m3u" in kaynak_url.lower():
+        if link_satiri in eklenen_urller: return None
+        isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
+        isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
+        print(f" ✅ TVANDO'YA HİÇ DOKUNULMADI, DİREKT ALINDI: {link_satiri[:60]}...")
+        return f"{isim_temiz}\n{link_satiri}"
+
+    # --- DİĞER İNTERNETTEN TOPLANAN YEDEKLER İÇİN SIKI GÜMRÜK ---
     if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI):
         return None
         
     if link_satiri in eklenen_urller: return None
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR): return None
 
-    if "tvando.m3u" in kaynak_url.lower():
-        link_onayli = True
-    else:
-        link_onayli = link_saglam_mi(link_satiri)
+    # Diğer kaynaklar (GitHub, dropbox vs.) zorunlu canlılık testine girer
+    link_onayli = link_saglam_mi(link_satiri)
 
     if link_onayli:
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
-        
-        print(f" ✅ LİSTEYE ALINDI ({'TVANDO' if 'tvando.m3u' in kaynak_url.lower() else 'TESTED'}): {link_satiri[:60]}...")
+        print(f" ✅ TESTED YEDEK LİSTEYE ALINDI: {link_satiri[:60]}...")
         return f"{isim_temiz}\n{link_satiri}"
     
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V6.5: Kökten IP Engelleme ve Akış Kontrolü Aktif!")
+    print(f"🛡️  USTA SİSTEM V9.0: Tvando Korumalı ve Torpilsiz Taramalı Muazzam Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -191,8 +192,6 @@ def main():
                 bulunan = re.findall(r"(#EXTINF:.*?\n+https?.*?)(?=#EXTINF|$)", r.text, re.DOTALL | re.IGNORECASE)
                 for b in bulunan:
                     ham_bulunanlar.append((b, kaynak))
-            else:
-                print(f"❌ Kaynak Yanıt Vermedi: {kaynak[:40]}...")
         except: continue
 
     unique_adaylar = []
@@ -203,7 +202,7 @@ def main():
             unique_adaylar.append((k, kaynak_url))
             gorulen_linkler.add(link)
 
-    print(f"🔍 {len(unique_adaylar)} yeni benzersiz aday izlemeye alındı. Derin zırhlı test başlıyor...")
+    print(f"🔍 {len(unique_adaylar)} aday işleniyor...")
 
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
@@ -211,11 +210,11 @@ def main():
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
         f.writelines(ana_liste_zirh)
-        f.write(f"\n# --- VIZITV ENTEGRELİ GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
+        f.write(f"\n# --- GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Yasaklı IP'ye ait tüm portlar engellendi. {len(final_listesi)} sağlam yedek eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Tvando listesine dokunulmadı, diğer kaynaklar elendi.")
 
 if __name__ == "__main__":
     main()
