@@ -66,13 +66,20 @@ def github_taze_link_avla():
 
 def link_saglam_mi(url):
     """VIZITV WORKERS VE CLOUDFLARE GEÇİŞLİ ULTRA ESNEK SÜZGEÇ"""
+    
+    # --- YENİ EKLENEN BYPASS KISMI ---
+    # Özel listenizi hiçbir teste tabi tutmadan doğrudan güvenli kabul et
+    if "hydrokin/M3U" in url or "tvando.m3u" in url:
+        return True
+    # ---------------------------------
+
     # EĞER LİNK BİR CLOUDFLARE WORKER PROXY LINKIYSE (Kilitlenmeyi önlemek için doğrudan güvenli kabul et)
     if "workers.dev" in url.lower() or "vizitv" in url.lower():
         return True
 
     try:
-        # HEAD isteği olmadan, timeout süresini koruyarak direkt GET akış kontrolü
-        with requests.get(url, headers=HEADERS, timeout=3, stream=True, verify=False, allow_redirects=True) as r:
+        # HEAD isteği olmadan, timeout süresini 10'a çıkararak direkt GET akış kontrolü
+        with requests.get(url, headers=HEADERS, timeout=10, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
