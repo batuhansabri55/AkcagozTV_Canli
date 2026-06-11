@@ -28,9 +28,9 @@ YASAKLI_GRUPLAR = [
     "Superxfilm", "CINEMAMOD", "Adult", "XXX"
 ]
 
-# ⚠️ USTA ÖZEL AYARI: Tamamı patlak olan ve süzgeci yanıltan sunucu IP'leri
+# ⚠️ USTA ÖZEL AYARI: İçinde bu ana IP geçen her şeyi portuna bakmadan komple engeller!
 YASAKLI_IP_LISTESI = [
-    "87.121.104.29:1071"
+    "87.121.104.29"  # Port numarasını sildik, bu IP komple kara listede!
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -106,7 +106,7 @@ def link_saglam_mi(url):
                 for line in lines:
                     line = line.strip()
                     if line and not line.startswith("#"):
-                        if "http" in line or ".ts" in line or ".m3u8" in line or "stream" in line:
+                        if "http" in line or ".ts" in line or ".m3u8" in line or "stream" in line or "channel" in line:
                             if not line.startswith("http"):
                                 video_segment_url = urljoin(url, line)
                             else:
@@ -140,7 +140,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
     
-    # 🚫 USTA IP ENGELİ: Eğer link yasaklı IP listesindeki bir adresi içeriyorsa teste sokmadan direkt REDDET!
+    # 🚫 USTA KÖKTEN ENGEL: Eğer linkin İÇİNDE yasaklı IP geçiyorsa (portu ne olursa olsun) anında blokla!
     if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI):
         return None
         
@@ -163,7 +163,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V6.0: IP Kara Listesi ve Canlı Akış Kontrolü Aktif!")
+    print(f"🛡️  USTA SİSTEM V6.5: Kökten IP Engelleme ve Akış Kontrolü Aktif!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -215,7 +215,7 @@ def main():
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Kara listedeki IP'ler elendi, çalışan {len(final_listesi)} sağlam yedek alta eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Yasaklı IP'ye ait tüm portlar engellendi. {len(final_listesi)} sağlam yedek eklendi.")
 
 if __name__ == "__main__":
     main()
