@@ -3684,15 +3684,6 @@ https://morning-boat-919d.pantonum1.workers.dev/babytv.m3u8
 https://morning-boat-919d.pantonum1.workers.dev/disneyjunior.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="FX " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/01053a55-0936-405c-8017-d33ef351706f.png" group-title="SONER BOZKURT YERLİ KANALLAR",FX 
 https://morning-boat-919d.pantonum1.workers.dev/fx.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="Love Nature " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/f297ad42-3a86-42b7-90fd-ba2339a7a6d5.png" group-title="SONER BOZKURT YERLİ KANALLAR",Love Nature 
-https://dt-SINEMA.pantonum1.workers.dev/lovenature.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="Viasat History " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/c9bbb2de-204b-48f6-a62f-94fa4252a6b0.png" group-title="SONER BOZKURT YERLİ KANALLAR",Viasat History 
-https://dt-SINEMA.pantonum1.workers.dev/viasathistory.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA 1001 " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/8d9fbebd-cade-492d-9cb4-6522cb558794.png" group-title="SONER BOZKURT YERLİ KANALLAR",SINEMA 1001 
-https://dt-SINEMA.pantonum1.workers.dev/SINEMA1001.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA 1002 " tvg-logo="https://i.hizliresim.com/klzlrbf.png" group-title="SONER BOZKURT YERLİ KANALLAR",SINEMA 1002 
-https://dt-SINEMA.pantonum1.workers.dev/SINEMA1002.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA Aile " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/c8283b71-81f8-4fc6-8e48-6bb8f7f49ad7.png" group-title="SONER BOZKURT YERLİ KANALLAR",SINEMA Aile 
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA 1002 " tvg-logo="https://i.hizliresim.com/klzlrbf.png" group-title="SONER BOZKURT YERLİ KANALLAR", ALTAS ORDU TV
 https://edge.taksimbilisim.com/altastv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA 1002 " tvg-logo="https://i.hizliresim.com/klzlrbf.png" group-title="SONER BOZKURT YERLİ KANALLAR", TV52YEDEK
@@ -3724,16 +3715,6 @@ https://yayin.slowkaradeniztv.com:3390/hybrid/play.m3u8
 #EXTINF:-1,DENİZ POSTASI TV
 https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/playlist.m3u8
 
-# --- VIZITV ENTEGRELİ GÜNCEL LİSTE (08-06-2026 11:08) --- #
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA Aile " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/c8283b71-81f8-4fc6-8e48-6bb8f7f49ad7.png" group-title="SONER BOZKURT YERLİ KANALLAR",SINEMA Aile 
-https://dt-SINEMA.pantonum1.workers.dev/SINEMAaile.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA Yerli " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/ae3d90a0-37ee-4e48-a6bc-1375e5f1329a.png" group-title="SONER BOZKURT YERLİ KANALLAR",SINEMA Yerli 
-https://dt-SINEMA.pantonum1.workers.dev/SINEMAyerli.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA Komedi " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/4145ea10-96ad-400d-8870-f22a075f4add.png" group-title="SONER BOZKURT YERLİ KANALLAR",SINEMA Komedi 
-https://dt-SINEMA.pantonum1.workers.dev/SINEMAkomedi.m3u8
-
-# --- VIZITV ENTEGRELİ GÜNCEL LİSTE (08-06-2026 16:03) --- #
-#EXTINF:-1 group-title="tabiiTV" tvg-logo="https://cms-rotf-api.tabii.com/r/int/webp/w273/h154/q90/43023.jpeg",tabii spor
 
 # --- VIZITV ENTEGRELİ GÜNCEL LİSTE (11-06-2026 11:01) --- #
 #EXTINF:-1 group-title="Haber" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7404279-8923-4f40-ace3-eb7b33a7c86b.png" tvg-url="https://www.ahaber.com.tr/" tvg-id="AHaber.tr",A Haber
