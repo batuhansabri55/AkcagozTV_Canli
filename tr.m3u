@@ -3325,8 +3325,8 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/222390
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/123
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="ASTV" tvg-logo="http://logo.multicms.info/tvlogo/astv.png" group-title="TR-YEREL",ASTV
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/51070
-#EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="TV 52" tvg-logo="" group-title="TR-YEREL",TV 52
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/222397
+##EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="TV 52" tvg-logo="" group-title="TR-YEREL",TV 52
+#http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/222397
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="KAY TV KAYSERI" tvg-logo="" group-title="TR-YEREL",KAY TV KAYSERI
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/222395
 #EXTINF:0 user-agent="Firefox" tvg-id="NULL" tvg-name="HABER 61" tvg-logo="" group-title="TR-YEREL",HABER 61
