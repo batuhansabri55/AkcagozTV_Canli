@@ -30,7 +30,8 @@ YASAKLI_GRUPLAR = [
 
 # ⚠️ DİĞER KAYNAKLAR İÇİN YASAKLI IP (Tvando dışındakiler buraya takılır)
 YASAKLI_IP_LISTESI = [
-    "87.121.104.29"
+    "87.121.104.29",
+    "87.121.104.29:1071"
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -163,7 +164,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V9.1: Tvando & Patron Korumalı Muazzam Sürüm!")
+    print(f"🛡️  USTA SİSTEM V9.2: Tvando & Patron Korumalı Muazzam Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
