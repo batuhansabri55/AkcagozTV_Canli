@@ -135,13 +135,12 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
     
-    # 🎯 USTA EMRE KESİN İTAAT: Eğer bu kanal tvando listesinden geliyorsa, 
-    # kod ALTINDAKİ HİÇBİR SATIRA DOKUNMAZ. Filtre, IP kontrolü, test vs. her şeyi PAS GEÇER!
-    if "tvando.m3u" in kaynak_url.lower():
+    # 🎯 USTA EMRE KESİN İTAAT: tvando ve patron listeleri teste girmez, direkt alınır!
+    if "tvando.m3u" in kaynak_url.lower() or "testworkery0" in kaynak_url.lower() or "patron.m3u" in kaynak_url.lower():
         if link_satiri in eklenen_urller: return None
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
-        print(f" ✅ TVANDO'YA HİÇ DOKUNULMADI, DİREKT ALINDI: {link_satiri[:60]}...")
+        print(f" ✅ KORUMALI LİSTEDEN DİREKT ALINDI: {link_satiri[:60]}...")
         return f"{isim_temiz}\n{link_satiri}"
 
     # --- DİĞER İNTERNETTEN TOPLANAN YEDEKLER İÇİN SIKI GÜMRÜK ---
@@ -164,7 +163,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 def main():
-    print(f"🛡️  USTA SİSTEM V9.0: Tvando Korumalı ve Torpilsiz Taramalı Muazzam Sürüm!")
+    print(f"🛡️  USTA SİSTEM V9.1: Tvando & Patron Korumalı Muazzam Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -187,8 +186,9 @@ def main():
     for kaynak in guncel_kaynak_listesi:
         try:
             print(f"📡 Kaynak Okunuyor: {kaynak[:70]}...")
-            r = requests.get(kaynak, headers=HEADERS, timeout=12, verify=False)
-            if r.status_code == 200:
+            # Yönlendirmelere izin verildi (allow_redirects=True) ve 301/302 eklendi
+            r = requests.get(kaynak, headers=HEADERS, timeout=15, verify=False, allow_redirects=True)
+            if r.status_code in [200, 301, 302]:
                 bulunan = re.findall(r"(#EXTINF:.*?\n+https?.*?)(?=#EXTINF|$)", r.text, re.DOTALL | re.IGNORECASE)
                 for b in bulunan:
                     ham_bulunanlar.append((b, kaynak))
@@ -214,7 +214,7 @@ def main():
         for k in final_listesi:
             f.write(k + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Tvando listesine dokunulmadı, diğer kaynaklar elendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Tvando ve Patron listelerine dokunulmadı, diğer kaynaklar elendi.")
 
 if __name__ == "__main__":
     main()
