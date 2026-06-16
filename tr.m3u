@@ -853,8 +853,6 @@ http://208.79.153.167/inim03/live1/tgrteu/playlist.m3u8
 http://208.79.153.167/inim03/live1/tgrtbelgesel/playlist.m3u8
 #EXTINF:1 tvg-id="birtv.tr" tvg-language="Turkish" tvg-logo="https://www.canlitv.me/poster/bir-tv-canli.png"  group-title="ULUSAL",BİR TV
 https://edge.socialsmart.tv/birtv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL " tvg-logo="https://picon-13398.kxcdn.com/haberglobaltr.jpg" group-title="ULUSAL ➾ HABER",HABER GLOBAL
-https://dmxtl.testworkery0.workers.dev/izle/haberglobal.m3u8
 #EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET " tvg-logo="https://picon-13398.kxcdn.com/tvnettr.jpg" group-title="ULUSAL ➾ HABER",TV NET
 https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1 tvg-id="HaberturkTV.tr" tvg-name="HABERTURK " tvg-logo="https://picon-13398.kxcdn.com/haberturktr.jpg" group-title="ULUSAL ➾ HABER",HABER TURK
@@ -867,8 +865,6 @@ http://live.yt-hls.workers.dev/UCbaLyHJp6S9Lsj6oT9aJsQw.m3u8
 https://ensonhaber-live.ercdn.net/benguturk/benguturk.m3u8
 #EXTINF:-1 tvg-id="Lider Haber Tv.tr" tvg-name="LİDERTV"  tvg-logo="http://assets.tvcdn.net/0e7781ec-13ea-4dc4-963c-fa1925b5d965.png" group-title="ULUSAL ➾ HABER",LİDER HABER
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/playlist.m3u8
-#EXTINF:-1 tvg-id="KRT.tr" tvg-name="KRT TV" tvg-logo="https://www.giniko.com/logos/190x110/1112.jpg" group-title="ULUSAL ➾ HABER",KRT TV
-https://trn03.tulix.tv/gt-krt--tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Yenicagtv.tr" tvg-name="YENİ ÇAĞ TV" tvg-logo="https://i.ibb.co/fGnRLnLM/yenicag.png" group-title="ULUSAL ➾ HABER",YENİ ÇAĞ TV
 https://live.euromediacenter.com/yenicagtv/playlist.m3u8
 #EXTINF:-1 tvg-id="İlketv.tr" tvg-name="ILKE TV " tvg-logo="https://i.ibb.co/HfyGYgjw/ILKE-TV.png" group-title="ULUSAL ➾ HABER",ILKE TV
@@ -3480,32 +3476,14 @@ http://87.121.104.29:1071/anewsyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec928421
 http://87.121.104.29:1071/tvnetyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
 #EXTINF:-1 tvg-id="cnnturk" tvg-name="CNN Türk" tvg-logo="https://img.dsmartgo.com.tr/content/a/u2/11786/Thumbnail.png" group-title="Haber",CNNTURKYEDEK
 http://87.121.104.29:5010/channel?id=245940&token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="cnnyedek" tvg-name="CNN Türk " tvg-logo="https://img.dsmartgo.com.tr/content/a/u2/11786/Thumbnail.png" group-title="Haber",CNNTURKYEDEK
-https://dmxtl.testworkery0.workers.dev/izle/cnnturkhd.m3u8
 #EXTINF:-1 tvg-id="trthaber" tvg-name="TRT Haber" tvg-logo="https://img.dsmartgo.com.tr/content/6/F9/12895/Thumbnail.png" group-title="Haber",TRTHABERYEDEK
 https://tv-trthaber.medya.trt.com.tr/master_1080.m3u8
-#EXTINF:-1 tvg-id="haberturk" tvg-name="Haber Türk" tvg-logo="https://img.dsmartgo.com.tr/content/V/gp/13350/Thumbnail.png" group-title="Haber",HABERTURKYEDEK
-https://sahsahbaz.testworker0y.workers.dev/channel/SGFiZXJ0w7xyayB8IEI=
 #EXTINF:-1 tvg-id="ntvhaber" tvg-name="NTV " tvg-logo="https://img.dsmartgo.com.tr/content/F/VA/13721/Thumbnail.png" group-title="Haber",NTV 
 http://87.121.104.29:5010/channel?id=246120&token=5f72e92ed39ce9c4b975ec9284210421
 #EXTINF:-1 tvg-id="ntvhaber2" tvg-name="NTV " tvg-logo="https://img.dsmartgo.com.tr/content/F/VA/13721/Thumbnail.png" group-title="Haber",NTV 
 https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
-#EXTINF:-1 tvg-id="ntvyt" tvg-name="Ntv " tvg-logo="https://yt3.googleusercontent.com/PUOG4AugF5attdcdO6O1sOIkFykoEJBTKF0d6hLlzAj_VCPD3MUyMOZTiwyfs-NbqL7qLNJuRw=s160k-c0x00ffffff-no-rj" group-title="Haber",NTV
-http://87.121.104.29:1071/ntvyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="haberglobal" tvg-name="Haber Global" tvg-logo="https://img.dsmartgo.com.tr/content/d/R2/13858/Thumbnail.png" group-title="Haber",Haber Global
-https://sahsahbaz.testworker0y.workers.dev/channel/SGFiZXIgR2xvYmFs
 #EXTINF:-1 tvg-id="hanerglobalyeni" tvg-name="Haber Global " tvg-logo="https://img.dsmartgo.com.tr/content/d/R2/13858/Thumbnail.png" group-title="Haber",Haber Global 
 https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
-#EXTINF:-1 tvg-id="bloomberght" tvg-name="Bloomberg HT" tvg-logo="https://img.dsmartgo.com.tr/content/j/Q7/13734/Thumbnail.png" group-title="Haber",Bloomberg HT
-https://sahsahbaz.testworker0y.workers.dev/channel/Qmxvb21iZXJnIEhUIHwgQg==
-#EXTINF:-1 tvg-id="tgrthaber" tvg-name="TGRT Haber" tvg-logo="https://img.dsmartgo.com.tr/content/A/SU/13405/Thumbnail.png" group-title="Haber",TGRT Haber
-https://sahsahbaz.testworker0y.workers.dev/channel/VEdSVCBIYWJlcg==
-#EXTINF:-1 tvg-id="halktv" tvg-name="Halk Tv" tvg-logo="https://img.dsmartgo.com.tr/content/S/_q/13566/Thumbnail.png" group-title="Haber",Halk Tv 
-https://sahsahbaz.testworker0y.workers.dev/channel/SGFsayBUVg==
-#EXTINF:-1 tvg-id="akittv" tvg-name="Akit Tv" tvg-logo="https://img.dsmartgo.com.tr/content/E/lr/13378/Thumbnail.png?v=636926430128106828" group-title="Haber",Akit Tv
-https://sahsahbaz.testworker0y.workers.dev/channel/QWtpdCBUVg==
-#EXTINF:-1 tvg-id="tv100" tvg-name="TV 100 " tvg-logo="https://img.dsmartgo.com.tr/content/d/Ei/15008/Thumbnail.png" group-title="Haber",TV 100 
-https://sahsahbaz.testworker0y.workers.dev/channel/VFYxMDAgfCBB
 #EXTINF:-1 tvg-id="tvyuzb" tvg-name="TV 100 " tvg-logo="https://img.dsmartgo.com.tr/content/d/Ei/15008/Thumbnail.png" group-title="Haber",TV 100 
 https://tv100.daioncdn.net/tv100/tv100_720p.m3u8?&sid=8bopv0hcpuib&app=356e7599-d81d-4357-935a-355a1ad9846e&ce=2
 #EXTINF:-1 tvg-id="kanal5yt" tvg-name="Kanal 5" tvg-logo="https://yt3.googleusercontent.com/M2veFhhzFF_d8hI7xc7Z9CTZic9ucyKI2e_CsD6-q98EtD6BmmBT2VSrLWD9t9FLpc58GVgMGC0=s160k-c0x00ffffff-no-rj" group-title="Haber",Kanal 5
