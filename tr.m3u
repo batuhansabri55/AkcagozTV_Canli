@@ -3486,48 +3486,14 @@ https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
 https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
 #EXTINF:-1 tvg-id="tvyuzb" tvg-name="TV 100 " tvg-logo="https://img.dsmartgo.com.tr/content/d/Ei/15008/Thumbnail.png" group-title="Haber",TV 100 
 https://tv100.daioncdn.net/tv100/tv100_720p.m3u8?&sid=8bopv0hcpuib&app=356e7599-d81d-4357-935a-355a1ad9846e&ce=2
-#EXTINF:-1 tvg-id="kanal5yt" tvg-name="Kanal 5" tvg-logo="https://yt3.googleusercontent.com/M2veFhhzFF_d8hI7xc7Z9CTZic9ucyKI2e_CsD6-q98EtD6BmmBT2VSrLWD9t9FLpc58GVgMGC0=s160k-c0x00ffffff-no-rj" group-title="Haber",Kanal 5
-http://87.121.104.29:1071/kanal5yt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="benguturkyt" tvg-name="Bengü Türk" tvg-logo="https://yt3.googleusercontent.com/xfEZjkOt4ZAltabZ4Of6niPktZJ9uJQI7C3T8pjEXzQBKgY1rkgxzyBoXUQlOjhtGePCYcq0MW4=s160k-c0x00ffffff-no-rj" group-title="Haber",BENGU TURK
-http://87.121.104.29:1071/benguturkyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="flashhaberyt" tvg-name="Flash Haber" tvg-logo="https://yt3.googleusercontent.com/9Hqnz42k04uQF15nx0Dk9sh6JtLWtVtzMIxp_W4TuxtUB2cq2Q515dnD095_muJUBjUhtRz70sA=s160k-c0x00ffffff-no-rj" group-title="Haber",FLASH TV
-http://87.121.104.29:1071/flashhaberyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
 #EXTINF:-1 tvg-id="meclistv" tvg-name="Meclis Tv" tvg-logo="https://yt3.googleusercontent.com/mBJTe2io13C371k4yzEUVcP19p-rQvXIaX_YoP9pERlic62--YQtB2Zx0aGfR4ZBfvrQ4oh9CUQ=s160k-c0x00ffffff-no-rj" group-title="Haber",Meclis Tv
 https://meclistv-live.ercdn.net/meclistv/meclistv_720p-1772411630.ts?e=&st=
-#EXTINF:-1 tvg-id="naturetimetr" tvg-name="Nature Time Türkçede" tvg-logo="https://yt3.googleusercontent.com/JwtQimeNj81XMiK6LjTT3Lfkorlme3nIWTF81K7EzugjszPuU3wD3dstoHvt4SRgb4EG1H1U=s160k-c0x00ffffff-no-rj" group-title="Belgesel",Nature Time Türkçede
-http://87.121.104.29:1071/naturetimetr/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="bizimevyt" tvg-name="Bizim Ev " tvg-logo="https://yt3.googleusercontent.com/5KLD4QmX3I_Hwc4wrTpdqkcoVdTJfj86ABhRIkEV1ZtJ2jXNGWnqL-CLOjuC3MHM6hQLCgL4=s160k-c0x00ffffff-no-rj" group-title="Belgesel",Bizim_Ev_Tv
-http://87.121.104.29:1071/bizimevyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
 #EXTINF:-1 tvg-id="dmax" tvg-name="Dmax " tvg-logo="https://yt3.googleusercontent.com/7caGBnut6H9aFvL71oqhRbMEy1sE0VIO3oOvuhONRRdQKNzjNqjLW3ySJr-8NR1dnjKcNI62_g=s160k-c0x00ffffff-no-rj" group-title="Belgesel",DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dUtLcFk4TkM1YjBOWlFIa1huL0UrMUYvcjhEcStnVU1TZUpsOVo5QXV4ST0=.m3u8
 #EXTINF:-1 tvg-id="tlc" tvg-name="TLC " tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/08cd8548f90ea341ac8bf315ec5ab4f9.jpg" group-title="Belgesel",TLC TV
 https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469&token=V1JHMUZBdGFOV0k2d2szUm5hVzA4RFdmejliTEVnQkZEQWNEN29qNzJ6Yz0=.m3u8
-#EXTINF:-1 tvg-id="tlcyedek" tvg-name="TLC " tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/08cd8548f90ea341ac8bf315ec5ab4f9.jpg" group-title="Belgesel",TLC TV
-https://dmxtl.testworkery0.workers.dev//izle/tlc.m3u8
 #EXTINF:-1 tvg-id="trtbelgesela" tvg-name="TRT Belgesel" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/cee1ae3bfe067fe869b8e20c0272938b.jpg" group-title="Belgesel",TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="rectarihtv" tvg-name="Tarih TV" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/b61d518744b390174e6f672d7171107d.png" group-title="Belgesel",TARIH TV
-https://eskicr.denek1544.workers.dev/izle/tarihtv.m3u8
-#EXTINF:-1 tvg-id="natgeo" tvg-name="National Geographic" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/666cbc1feac437aea3fc2c8218b9539e.jpg" group-title="Belgesel",National Geographic
-https://virtvirty.testworker0y.workers.dev/channel/TmF0aW9uYWwgR2VvZ3JhcGhpYw==
-#EXTINF:-1 tvg-id="natgeowild" tvg-name="National Geographic Wild" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/ae18d42e87a266954420b315bb23c749.jpg" group-title="Belgesel",Nat Geo Wild
-https://virtvirty.testworker0y.workers.dev/channel/TmF0aW9uYWwgR2VvIFdJTEQ=
-#EXTINF:-1 tvg-id="historyrec" tvg-name="Viasat Nature" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/77f52eb67864c8f809626fa5c7d1bae6.png" group-title="Belgesel",Viasat Nature
-https://eskicr.denek1544.workers.dev/izle/historychannel.m3u8
-#EXTINF:-1 tvg-id="viasatrec" tvg-name="Viasat History" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/8ea2619561935fed906ee2278d5fa961.png" group-title="Belgesel",VIASATHISTORYYEDEK
-https://eskicr.denek1544.workers.dev/izle/viasathistory.m3u8
-#EXTINF:-1 tvg-id="lovenaturerec" tvg-name="Love Nature" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/c34095b97dc3f94306666eec346defb8.png" group-title="Belgesel",LOVENATUREYEDEK
-https://eskicr.denek1544.workers.dev/izle/lovenature.m3u8
-#EXTINF:-1 tvg-id="bbcearth" tvg-name="BBC Earth" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/9ed6faa15f968198d17c0362658f6b50.jpg" group-title="Belgesel",BBCEARTHYEDEK
-https://eskicr.denek1544.workers.dev/izle/bbcearthhd.m3u8
-#EXTINF:-1 tvg-id="discoverychannel" tvg-name="Discovery Channel" tvg-logo="https://img.dsmartgo.com.tr/content/r/9C/11894/Thumbnail.png" group-title="Belgesel",DISCOVERY CHANNEL
-https://virtvirty.testworker0y.workers.dev/channel/RGlzY292ZXJ5IENoYW5uZWw=
-#EXTINF:-1 tvg-id="discoveryscience" tvg-name="Discovery Science" tvg-logo="https://img.dsmartgo.com.tr/content/b/vE/11891/Thumbnail.png" group-title="Belgesel",DISCOVERY IDX
-https://virtvirty.testworker0y.workers.dev/channel/RGlzY292ZXJ5IFNjaWVuY2U=
-#EXTINF:-1 tvg-id="viasatexplore" tvg-name="Viasat Explore" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Viasat_Explore_Logo.jpg/715px-Viasat_Explore_Logo.jpg" group-title="Belgesel",VIASAT EXPLORER
-https://virtvirty.testworker0y.workers.dev/channel/Vmlhc2F0IEV4cGxvcmU=
-#EXTINF:-1 tvg-id="docubox" tvg-name="DocuBOX" tvg-logo="https://img.dsmartgo.com.tr/content/_/wh/11899/Thumbnail.png" group-title="Belgesel",DocuBOX
-https://virtvirty.testworker0y.workers.dev/channel/RG9jdUJveA==
 #EXTINF:-1 tvg-id="tgrtbelgeselyt" tvg-name="TGRT Belgesel" tvg-logo="https://yt3.googleusercontent.com/TWSgLJEkOPBFXWbyqzBuG0-EeXmhVXUKHEoRn3GnJ_WkJeknuh2Q9MJrLAC6k_-YKb4HeslA=s160k-c0x00ffffff-no-rj" group-title="Belgesel",TGRT Belgesel
 http://87.121.104.29:1071/tgrtbelgeselyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
 #EXTINF:-1 tvg-id="ciftcitv" tvg-name="Çiftçi Tv" tvg-logo="https://yt3.googleusercontent.com/ZHXZQwHOxuL-p_s8OFYYa-iykr9CeqOxIzcPt33cKCwC1UwMi7BdFByN2Ftlyv5F60db7iUk=s160k-c0x00ffffff-no-rj" group-title="Belgesel",ÇİFTÇİ TV
