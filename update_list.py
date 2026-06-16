@@ -28,11 +28,8 @@ YASAKLI_GRUPLAR = [
     "Superxfilm", "CINEMAMOD", "Adult", "XXX"
 ]
 
-# ⚠️ DİĞER KAYNAKLAR İÇİN YASAKLI IP (Tvando dışındakiler buraya takılır)
-YASAKLI_IP_LISTESI = [
-    "87.121.104.29",
-    "87.121.104.29:1071"
-]
+# ⚠️ DİĞER KAYNAKLAR İÇİN YASAKLI IP (Uzunmuhalefet linklerini bozduğu için içi boşaltıldı, gerektiğinde eklenebilir)
+YASAKLI_IP_LISTESI = []
 
 YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/smartwebos/cdn/refs/heads/main/viziTV.m3u",
@@ -117,7 +114,7 @@ def link_saglam_mi(url):
                                 v_chunk = vr.raw.read(512)
                                 if v_chunk and len(v_chunk) >= 256:
                                     return True 
-                            return False 
+                        return False 
                     except:
                         return False
                 return False
@@ -145,6 +142,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
         return f"{isim_temiz}\n{link_satiri}"
 
     # --- DİĞER İNTERNETTEN TOPLANAN YEDEKLER İÇİN SIKI GÜMRÜK ---
+    # Yasaklı IP listesi boş olduğu için burası artık kimseyi engellemeyecek
     if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI):
         return None
         
