@@ -3506,32 +3506,8 @@ http://87.121.104.29:5010/channel?id=394506&token=5f72e92ed39ce9c4b975ec92842104
 https://tv-trtspor-esdai.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-id="trtsporyildiz" tvg-name="TRT Spor Yıldız" tvg-logo="https://dsmart-static-v2.ercdn.net/content/h/NK/15953/Thumbnail.png" group-title="Spor",TRT Spor Yıldız
 https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor&ppid=e67f6aa79d604002f37ace34d2ca101c
-#EXTINF:-1 tvg-id="cartoonnetwork" tvg-name="Cartoon Network" tvg-logo="https://img.dsmartgo.com.tr/content/c/_s/13870/Thumbnail.png" group-title="Çocuk",Cartoon Network
-https://rabirt.denek1544.workers.dev/channel/Q2FydG9vbiBOZXR3b3JrIHwgQQ==
-#EXTINF:-1 tvg-id="minikacocuk" tvg-name="Minika Çocuk" tvg-logo="https://img.dsmartgo.com.tr/content/2/Q2/13402/Thumbnail.png" group-title="Çocuk",Minika Çocuk
-https://rabirt.denek1544.workers.dev/channel/TWluaWthIMOHb2N1aw==
-#EXTINF:-1 tvg-id="minikago" tvg-name="Minika Go" tvg-logo="https://img.dsmartgo.com.tr/content/I/WS/13404/Thumbnail.png" group-title="Çocuk",Minika Go
-https://rabirt.denek1544.workers.dev/channel/TWluaWthIEdv
-#EXTINF:-1 tvg-id="trtcocuk" tvg-name="TRT Çocuk" tvg-logo="https://img.dsmartgo.com.tr/content/L/_2/13369/Thumbnail.png" group-title="Çocuk",TRT Çocuk
-https://rabirt.denek1544.workers.dev/channel/VFJUIMOHb2N1aw==
-#EXTINF:-1 tvg-id="trtdiyanetcocuk" tvg-name="TRT Diyanet Çocuk" tvg-logo="https://yt3.googleusercontent.com/B63Iy6s7806LvjKeJZCQOdmXqp5F74QmMQmPDEHfDsTpipBrVFW4zraq4E5O3OZDYm417YhAJg=s160k-c0x00ffffff-no-rj" group-title="Çocuk",TRT Diyanet Çocuk
-https://rabirt.denek1544.workers.dev/channel/VFJUIERpeWFuZXQgw4dvY3Vr
-#EXTINF:-1 tvg-id="cocuksmart" tvg-name="Çocuk Smart" tvg-logo="https://img.dsmartgo.com.tr/content/_/-b/11912/Thumbnail.png" group-title="Çocuk",Çocuk Smart
-https://rabirt.denek1544.workers.dev/channel/w4dvY3VrIFNtYXJ0
-#EXTINF:-1 tvg-id="babytv" tvg-name="Baby TV" tvg-logo="https://img.dsmartgo.com.tr/content/V/vi/11890/Thumbnail.png" group-title="Çocuk",Baby TV
-https://rabirt.denek1544.workers.dev/channel/QmFieSBUVg==
-#EXTINF:-1 tvg-id="disneyjunior" tvg-name="Disney Junior" tvg-logo="https://img.dsmartgo.com.tr/content/n/ct/22903/Thumbnail.png" group-title="Çocuk",Disney Junior
-https://rabirt.denek1544.workers.dev/channel/RGlzbmV5IEp1bmlvcg==
 #EXTINF:-1 tvg-id="disneyjunior" tvg-name="Disney Junior" tvg-logo="https://img.dsmartgo.com.tr/content/n/ct/22903/Thumbnail.png" group-title="Çocuk",Disney Junior
 https://saran-live.ercdn.net/disneyjunior/index.m3u8
-#EXTINF:-1 tvg-id="vavtyyt" tvg-name="VAV Tv " tvg-logo="https://yt3.googleusercontent.com/2m_4uFImiV24g-GaBxebdKKOWzLkY-e6LUk-vwZuyYwNgHNNmzqExkyxqrsd-lUx5LQ9Z6kBbko=s160k-c0x00ffffff-no-rj" group-title="Dini",VAV Tv 
-http://87.121.104.29:1071/vavtyyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="ekoturkyt" tvg-name="EkoTürk" tvg-logo="https://yt3.googleusercontent.com/nRcWKlah9W0Sm24UlNIgtmyhyJZZ6LTdfc9J-pUOLH-4F50zzBysb1vPJbIkd_B7PrmTH1K5R88=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",EKOTURKYEDEK
-http://87.121.104.29:1071/ekoturkyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="aparayt" tvg-name="APara-YT" tvg-logo="https://yt3.googleusercontent.com/XJtyMUH7ikXxeg2nrhjVb0k9LbpdqimTV9QawOxlQipdDFYe0cy6kdFZeFqzpeqPCyOkJCMM_w=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",APARAYEDEK
-http://87.121.104.29:1071/aparayt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
-#EXTINF:-1 tvg-id="cnbceyt" tvg-name="CNBC-e YT" tvg-logo="https://yt3.googleusercontent.com/Rh1aC6tWB_CLSqR2gRW8UPXfCsqZE-7m83CPpBNLk8CI6ybTGDNWy7jF7jFGkHIffyUEyF8BW38=s160k-c0x00ffffff-no-rj" group-title="Ekonomi",CNBC-EYEDEK
-http://87.121.104.29:1071/cnbceyt/stream.m3u8?token=5f72e92ed39ce9c4b975ec9284210421
 # --- VIZITV ENTEGRELİ GÜNCEL LİSTE (07-06-2026 09:24) --- #
 #EXTINF:-1 group-title="💫BEİNSPORTS DERBİ ÖZEL💫"tvg-logo="https://i.hizliresim.com/l6muq8p.png",BEINSPORT3YEDEK
 http://taliptv01.xyz:8080/play/live.php?mac=00:1A:79:4D:06:6C&stream=2216&extension=ts&play_token=7qOBBgdbE3
