@@ -853,8 +853,6 @@ http://208.79.153.167/inim03/live1/tgrteu/playlist.m3u8
 http://208.79.153.167/inim03/live1/tgrtbelgesel/playlist.m3u8
 #EXTINF:1 tvg-id="birtv.tr" tvg-language="Turkish" tvg-logo="https://www.canlitv.me/poster/bir-tv-canli.png"  group-title="ULUSAL",BİR TV
 https://edge.socialsmart.tv/birtv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleOn.tr" tvg-name="TELE ON TR" tvg-logo="https://teleontv.at.ua/988.jpeg" group-title="ULUSAL",TELE ON
-http://teleontvstreams.supersatadmin.workers.dev/index.m3u8
 #EXTINF:-1 tvg-id="HaberGlobal.tr" tvg-name="HABER GLOBAL " tvg-logo="https://picon-13398.kxcdn.com/haberglobaltr.jpg" group-title="ULUSAL ➾ HABER",HABER GLOBAL
 https://dmxtl.testworkery0.workers.dev/izle/haberglobal.m3u8
 #EXTINF:-1 tvg-id="TVNET.tr" tvg-name="TVNET " tvg-logo="https://picon-13398.kxcdn.com/tvnettr.jpg" group-title="ULUSAL ➾ HABER",TV NET
