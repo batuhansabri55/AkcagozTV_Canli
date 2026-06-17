@@ -42,7 +42,6 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://www.dropbox.com/scl/fi/p58t5o980tah2hz3234a5/SmartGO.m3u?rlkey=w44w0ycaa83uyn21uph77pp6v&st=mj0n6byr&raw=1",
     "https://raw.githubusercontent.com/hydrokin/M3U/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u",
-    "https://raw.githubusercontent.com/tecotv2025/youtube-canli/f79f0fbf2b3711d64a2a20c9a80497a85a5a4e70/playlist.m3u",
     "https://raw.githubusercontent.com/kadirsener1/avva/537423d13dd489dd9ec1627c5b5b2bad765e25a5/playlist.m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
