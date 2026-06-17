@@ -717,14 +717,30 @@ https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/B
 
 #EXTINF:-1,DISCOVERY CHANNEL
 https://bstelevision.com/proxy.php?mode=proxy&url=http://65.108.239.207:80/discovery/index.m3u8
+#EXTINF:-1,DISCOVERY CHANNEL
+http://umperisn.mywire.org/index.php?id=594674&token=DeaTHLesS
+#EXTINF:-1,DISCOVERY CHANNEL
+#EXT-X-KANAL-TIPI:AUTO
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/3H98G67KZ9HAS9/6861/index.m3u8
+
+#EXTINF:-1 tvg-id="ID.tr" tvg-name="ID" tvg-logo="https://i.hizliresim.com/i21k4te.png" group-title="Belgesel",DISCOVERY IDX
+http://umperisn.mywire.org/index.php?id=594672&token=DeaTHLesS
+
+#EXTINF:-1 tvg-id="ID.tr" tvg-name="ID" tvg-logo="https://i.hizliresim.com/i21k4te.png" group-title="Belgesel",DISCOVERY IDX
+http://umperisn.mywire.org/index.php?id=594672&token=DeaTHLesS
 
 #EXTINF:-1,National Geographic
 https://saran-live.ercdn.net/natgeo/index.m3u8
 #EXTINF:-1 group-title="BELGESEL" group-author="smartgmr" tvg-logo="http://sarkor.tv/static/images/channels/NatGeo channel SD.png",National Geographic
 http://live.sarkortv.workers.dev/?ID=150
+#EXTINF:-1,National Geographic
+http://umperisn.mywire.org/index.php?id=594676&token=DeaTHLesS
+
 
 #EXTINF:-1 group-title="BELGESEL" group-author="smartgmr" tvg-logo="https://www.polskie.tv/play/images/logos/569.png",Nat Geo Wild
 http://live.sarkortv.workers.dev/?ID=116
+#EXTINF:-1,Nat Geo Wild
+http://umperisn.mywire.org/index.php?id=594678&token=DeaTHLesS
 #EXTINF:-1,Nat Geo Wild
 https://saran-live.ercdn.net/natgeowild/natgeowild360p_2.m3u8
 #EXTINF:-1,Nat Geo Wild
@@ -736,6 +752,8 @@ https://saran-live.ercdn.net/natgeowild/index.m3u8
 https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist1080p.m3u8
 #EXTINF:-1,BBC Earth
 https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
+#EXTINF:-1,BBC Earth
+http://umperisn.mywire.org/index.php?id=594660&token=DeaTHLesS
 
 #EXTINF:-1,HABITAT TV
 http://cdn.vizitv.workers.dev/129.m3u8
@@ -799,6 +817,12 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/playlist.m3u8
 #EXTINF:-1,Çiftçi TV
 https://streams.uzunmuhalefet.com/stream/e71083cf-eb54-408b-8aba-d66690520801.m3u8
+
+#EXTINF:-1 tvg-id="VIASAT.HISTORY.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://i.hizliresim.com/i21k4te.png" group-title="Belgesel",VIASAT EXPLORE
+http://umperisn.mywire.org/index.php?id=594656&token=DeaTHLesS
+
+#EXTINF:-1 tvg-id="VIASAT.HISTORY.tr" tvg-name="VIASAT HISTORY" tvg-logo="https://i.hizliresim.com/i21k4te.png" group-title="Belgesel",VIASAT HISTORY
+http://umperisn.mywire.org/index.php?id=594658&token=DeaTHLesS
 
 
 #EXTINF:-1,CNBC-EYEDEK
