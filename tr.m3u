@@ -904,8 +904,6 @@ http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/playlist.m3u8
 https://live.euromediacenter.com/yenicagtv/playlist.m3u8
 #EXTINF:-1 tvg-id="İlketv.tr" tvg-name="ILKE TV " tvg-logo="https://i.ibb.co/HfyGYgjw/ILKE-TV.png" group-title="ULUSAL ➾ HABER",ILKE TV
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
-#EXTINF:-1 tvg-id="APara.tr" tvg-name="A PARA " tvg-logo="https://picon-13398.kxcdn.com/aparatr.jpg" group-title="ULUSAL ➾ HABER",A PARA
-https://bstelevision.com/proxy.php?url=https://live.cdn-vizi.workers.dev/?ID=49&e=.m3u8
 #EXTINF:-1 tvg-id="Finansturk.tr" tvg-logo="https://finansturktv.com/images/logo.png" group-title="ULUSAL ➾ HABER",Finans Türk
 https://yayin30.haber100.com/live/finansturk/playlist.m3u8
 #EXTINF:0 tvg-logo="https://i.postimg.cc/pLDjv6w3/TLC-Logo-svg.png" group-title="ULUSAL ➾ BELGESEL",TLC TV
