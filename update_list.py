@@ -12,7 +12,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 3480
+ZIRH_LIMIT = 3500
 THREADS = 64         # 5600 link için tam güç hız ayarı!
 
 HEADERS = {
