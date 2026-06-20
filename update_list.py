@@ -45,11 +45,40 @@ YEDEK_KAYNAKLAR = [
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
-# --- 🎯 YENİ BÜYÜK HAVUZ AYARI ---
+# --- 🎯 BÜYÜK HAVUZ AYARI ---
 BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/Sword-Saint69/fifa/989a0fdbfce75e017a04a804df5ab2e62ca071cf/1.txt"
 
 # ==============================================================================
-# 🆕 YENİ FONKSİYONLAR: BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANEL BULMA MEKANİZMASI
+# 🆕 İSİM TEMİZLEME VE STANDARTLAŞTIRMA ROBOTU (EPG & ALIASES İÇİN)
+# ==============================================================================
+def havuz_kanal_ismini_temizle(extinf_satiri):
+    """Havuzdan gelen kanal isimlerini tırpanlayıp TiviMate'in tanıyacağı saf hale getirir."""
+    # Önce tvg-name veya logo gibi tırnak içindeki nitelikleri bozmamak için virgül sonrasını (kanal adını) ayırıyoruz
+    if "," in extinf_satiri:
+        prefix, kanal_adi = extinf_satiri.split(",", 1)
+    else:
+        prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
+        kanal_adi = extinf_satiri
+
+    # İsimdeki tüm gereksiz takıları temizle
+    kanal_adi = re.sub(r'(?i)\b(TR:|TR\s*\||TR\s*-|TURKISH|TÜRKÇE|TURKCE|TÜRK)\b', '', kanal_adi)
+    kanal_adi = re.sub(r'(?i)\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS)\b', '', kanal_adi)
+    kanal_adi = re.sub(r'(?i)\b(YEDEK|BACKUP|ALT|TEST)\b', '', kanal_adi)
+    
+    # Özel sembolleri ve gereksiz boşlukları temizle
+    kanal_adi = kanal_adi.replace("::", "").replace("-", "").replace("|", "").strip()
+    
+    # Çift boşlukları tek boşluğa düşür ve tamamen büyük harf yap (TiviMate Aliases daha rahat eşleşsin)
+    kanal_adi = " ".join(kanal_adi.split()).upper()
+    
+    # Eğer temizlik sonrası isim tamamen boş kaldıysa eski adı koru, yoksa yeni temiz adı bas
+    if not kanal_adi:
+        return extinf_satiri
+        
+    return f'{prefix},{kanal_adi}'
+
+# ==============================================================================
+# BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANEL BULMA MEKANİZMASI
 # ==============================================================================
 def havuzu_indir():
     print("📥 Büyük havuz listesi indiriliyor...")
@@ -88,11 +117,14 @@ def havuz_paneli_test_et(url):
                     if any(isaret in satir.upper() for isaret in tr_isaretleri):
                         if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
                             kanal_linki = satirlar[i+1]
-                            # TiviMate format optimizasyonu
                             temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
                             if "output=ts" not in temiz_link:
                                 temiz_link += "&output=ts"
-                            bulunan_tr_kanallari.append(f"{satir}\n{temiz_link}")
+                            
+                            # 🎯 İSİM DÜZENLEME ROBOTUNU BURADA ATEŞLİYORUZ
+                            temiz_satir = havuz_kanal_ismini_temizle(satir)
+                            
+                            bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
                             sadece_tr_linkleri.append(temiz_link)
             
             if len(sadece_tr_linkleri) >= 50:
@@ -117,7 +149,7 @@ def havuzdan_canli_kanallari_getir():
     return ""
 
 # ==============================================================================
-# 🛡️ SENİN MEVCUT ORİJİNAL FONKSİYONLARIN (KILINA BİLE DOKUNULMADI)
+# 🛡️ SENİN MEVCUT ORİJİNAL FONKSİYONLARIN
 # ==============================================================================
 def github_taze_link_avla():
     yeni_kaynaklar = []
@@ -212,7 +244,6 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
         if link_satiri in eklenen_urller: return None
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
-        print(f" ✅ KORUMALI LİSTEDEN DİREKT ALINDI: {link_satiri[:60]}...")
         return f"{isim_temiz}\n{link_satiri}"
 
     if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI):
@@ -227,16 +258,15 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
-        print(f" ✅ TESTED YEDEK LİSTEYE ALINDI: {link_satiri[:60]}...")
         return f"{isim_temiz}\n{link_satiri}"
     
     return None
 
 # ==============================================================================
-# 🚀 ANA MAİN FONKSİYONU (YENİ SİLİNMEZ ENTEGRASYON SİSTEMİ)
+# 🚀 ANA MAİN FONKSİYONU
 # ==============================================================================
 def main():
-    print(f"🛡️  USTA SİSTEM V9.5: Tvando & Patron Korumalı + CANLI Büyük Havuz Sürümü!")
+    print(f"🛡️  USTA SİSTEM V9.6: Otomatik Aliases Sabitleyici Akıllı Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -248,7 +278,6 @@ def main():
     ana_liste_zirh = []
     ham_bulunanlar = []
 
-    # 1. ADIM: tr.m3u dosyasından senin ilk 3500 satırını kilitliyoruz (Zırh Limit)
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
@@ -257,10 +286,8 @@ def main():
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
 
-    # 2. ADIM: Senin mevcut internet yedek kaynaklarının okunması
     for kaynak in guncel_kaynak_listesi:
         try:
-            print(f"📡 Kaynak Okunuyor: {kaynak[:70]}...")
             r = requests.get(kaynak, headers=HEADERS, timeout=15, verify=False, allow_redirects=True)
             if r.status_code in [200, 301, 302]:
                 bulunan = re.findall(r"(#EXTINF:.*?\n+https?.*?)(?=#EXTINF|$)", r.text, re.DOTALL | re.IGNORECASE)
@@ -276,34 +303,25 @@ def main():
             unique_adaylar.append((k, kaynak_url))
             gorulen_linkler.add(link)
 
-    print(f"🔍 {len(unique_adaylar)} aday yedek işleniyor...")
-
-    # Senin orijinal çoklu iş parçacığı (ThreadPool) havuzun çalışıyor
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # 🆕 YENİ ADIM: Bizim büyük havuzdan gelen %100 canlı yayınları şimdi çekiyoruz
-    # (Senin kodun temizlik ve filtreleme aşamasını bitirdikten sonra en son burası eklenir, asla silinmez!)
-    print("\n🔮 Adım 3: Büyük havuz taranıyor ve taze canlı paneller sökülüyor...")
+    print("\n🔮 Adım 3: Büyük havuz taranıyor ve isimler TiviMate için sabitleniyor...")
     havuz_canli_metni = havuzdan_canli_kanallari_getir()
 
-    # 4. ADIM: Dosyayı tek seferde baştan sona birleştirip yazıyoruz
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Önce senin kilitli ilk 3500 satırın yazılır
         f.writelines(ana_liste_zirh)
         
-        # Sonra senin kodunun internetten bulduğu ultra temiz yedekler yazılır
         f.write(f"\n# --- GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
             
-        # En son olarak büyük havuzdan gelen taze canlı yayınlar EN ALTTA zımbalanır
         if havuz_canli_metni.strip():
-            f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER --- #\n")
+            f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! İlk 3500 satır korundu, standart yedekler eklendi ve havuz canlıları listenin en sonuna mühürlendi!")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! İsimler traşlandı, TiviMate artık kanalları hep tanıyacak.")
 
 if __name__ == "__main__":
     main()
