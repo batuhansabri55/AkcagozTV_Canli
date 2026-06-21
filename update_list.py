@@ -54,6 +54,7 @@ BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/Sword-Saint69/fifa/989a0fdb
 # ==============================================================================
 def havuz_kanal_ismini_temizle(extinf_satiri):
     """Havuzdan gelen kanal isimlerini tırpanlayıp TiviMate'in tanıyacağı saf hale getirir."""
+    # Önce tvg-name veya logo gibi tırnak içindeki nitelikleri bozmamak için virgül sonrasını (kanal adını) ayırıyoruz
     if "," in extinf_satiri:
         prefix, kanal_adi = extinf_satiri.split(",", 1)
     else:
@@ -71,6 +72,7 @@ def havuz_kanal_ismini_temizle(extinf_satiri):
     # Çift boşlukları tek boşluğa düşür ve tamamen büyük harf yap (TiviMate Aliases daha rahat eşleşsin)
     kanal_adi = " ".join(kanal_adi.split()).upper()
     
+    # Eğer temizlik sonrası isim tamamen boş kaldıysa eski adı koru, yoksa yeni temiz adı bas
     if not kanal_adi:
         return extinf_satiri
         
@@ -92,24 +94,10 @@ def havuzu_indir():
 
 def havuz_yayin_canli_mi(test_url):
     try:
-        with requests.get(test_url, headers=HEADERS, timeout=5, stream=True, verify=False, allow_redirects=True) as r:
-            if r.status_code not in [200, 206]: 
-                return False
-                
-            content_type = r.headers.get('Content-Type', '').lower()
-            if 'text/html' in content_type or 'application/json' in content_type:
-                return False
-                
-            chunk = r.raw.read(1024)
-            if not chunk: 
-                return False
-
-            content_text = chunk.decode('utf-8', errors='ignore').lower()
-            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html"]
-            if any(hata in content_text for hata in hata_kelimeleri):
-                return False
-                
-            return True
+        with requests.get(test_url, headers=HEADERS, timeout=3, stream=True, verify=False) as r:
+            if r.status_code == 200:
+                for chunk in r.iter_content(chunk_size=512):
+                    if chunk: return True
     except Exception:
         pass
     return False
@@ -118,7 +106,7 @@ def havuz_paneli_test_et(url):
     test_url = url.replace("type=m3u_plus", "type=m3u").replace("type=m3u", "type=m3u_plus")
     tr_isaretleri = ["TR:", "TR|", "TR -", "TURKISH", "TÜRKÇE", "TURKCE", 'GROUP-TITLE="TR', "TÜRK"]
     try:
-        response = requests.get(test_url, headers=HEADERS, timeout=10, verify=False)
+        response = requests.get(test_url, headers=HEADERS, timeout=7, verify=False)
         if response.status_code == 200 and "#EXTM3U" in response.text:
             satirlar = response.text.splitlines()
             bulunan_tr_kanallari = []
@@ -131,20 +119,16 @@ def havuz_paneli_test_et(url):
                         if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
                             kanal_linki = satirlar[i+1]
                             temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
-                            
-                            # 🎯 URL PARAMETRE VE QUERY STRING DOĞRULAMA (Eksik Soru İşareti Hata Tamiri)
                             if "output=ts" not in temiz_link:
-                                if "?" in temiz_link:
-                                    temiz_link += "&output=ts"
-                                else:
-                                    if not any(temiz_link.lower().split('?')[0].endswith(ext) for ext in [".ts", ".m3u8", ".mkv", ".mp4"]):
-                                        temiz_link += "?output=ts"
+                                temiz_link += "&output=ts"
                             
+                            # 🎯 İSİM DÜZENLEME ROBOTUNU BURADA ATEŞLİYORUZ
                             temiz_satir = havuz_kanal_ismini_temizle(satir)
+                            
                             bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
                             sadece_tr_linkleri.append(temiz_link)
             
-            if len(sadece_tr_linkleri) >= 30:
+            if len(sadece_tr_linkleri) >= 50:
                 test_edilecekler = random.sample(sadece_tr_linkleri, min(3, len(sadece_tr_linkleri)))
                 if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
                     print(f"🟢 BÜYÜK HAVUZDAN CANLI PANEL BULUNDU: {test_url}")
@@ -166,7 +150,7 @@ def havuzdan_canli_kanallari_getir():
     return ""
 
 # ==============================================================================
-# 🛡️ MEVCUT ORİJİNAL FONKSİYONLARINIZ
+# 🛡️ SENİN MEVCUT ORİJİNAL FONKSİYONLARIN
 # ==============================================================================
 def github_taze_link_avla():
     yeni_kaynaklar = []
@@ -283,7 +267,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
 # 🚀 ANA MAİN FONKSİYONU
 # ==============================================================================
 def main():
-    print(f"🛡️  USTA SİSTEM V9.9: 4000 Satır Dokunulmaz Zırhlı Kararlı Sürüm!")
+    print(f"🛡️  USTA SİSTEM V9.6: Otomatik Aliases Sabitleyici Akıllı Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -295,11 +279,10 @@ def main():
     ana_liste_zirh = []
     ham_bulunanlar = []
 
-    # 🛡️ 4000 SATIR DOKUNULMAZ ZIRH KORUMA MEKANİZMASI
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
-            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]  # İlk 4000 satırı asla kaybetmemek üzere ayırır.
+            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]
             for s in ana_liste_zirh:
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
@@ -328,9 +311,8 @@ def main():
     print("\n🔮 Adım 3: Büyük havuz taranıyor ve isimler TiviMate için sabitleniyor...")
     havuz_canli_metni = havuzdan_canli_kanallari_getir()
 
-    # 🛡️ YENİDEN YAZMA AŞAMASINDA ZIRH KORUMASI VE DİNAMİK ALAN GÜNCELLEMESİ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(ana_liste_zirh)  # İlk 4000 dokunulmaz satırı başa aynen yazar.
+        f.writelines(ana_liste_zirh)
         
         f.write(f"\n# --- GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
@@ -340,7 +322,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! İlk {ZIRH_LIMIT} satıra dokunulmadı, altına sadece yeni çalışanlar eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! İsimler traşlandı, TiviMate artık kanalları hep tanıyacak.")
 
 if __name__ == "__main__":
     main()
