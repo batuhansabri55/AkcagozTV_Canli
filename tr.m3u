@@ -3802,10 +3802,6 @@ http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/121
 #EXTINF:0 tvg-agent="Firefox" tvg-id="ULUSAL KANAL" tvg-name="TR: ULUSAL KANAL" tvg-logo="http://logo.multicms.info/tvlogo/ulusal.png" group-title="TR-HABER",TR: ULUSAL KANAL
 http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/6
 
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (18-06-2026 04:24) --- #
-#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="Kanal D" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/a/-p/245931/logo.png?v=638804938239723164" group-title="Ulusal",Kanal D
-
 # --- GÜNCEL ULTRA TEMİZ LİSTE (18-06-2026 16:24) --- #
 #EXTINF:-1 tvg-id="4UTV.tr@",4U TV (720p)
 https://hls.4utv.live/hls/stream.m3u8
@@ -3813,9 +3809,6 @@ https://hls.4utv.live/hls/stream.m3u8
 https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="AksuTV.tr@",Aksu TV (720p)
 https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
-#EXTINF:-1 tvg-id="AlanyaPostaTV.tr@",Alanya Posta TV (1080p)
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (20-06-2026 16:32) --- #
 #EXTINF:-1 tvg-id="AlanyaPostaTV.tr@" tvg-logo="https://i.imgur.com/a3w9eFe.png" group-title="General",Alanya Posta TV (1080p)
 https://api-tv3.yayin.com.tr/postatv/postatv/playlist.m3u8
 #EXTINF:-1 tvg-id="AnadoluNetTV.tr@" tvg-logo="https://www.anadolunettv.com/d/r/logo.png" group-title="General",Anadolu Net TV (1080p)
@@ -3998,8 +3991,6 @@ https://purple-fog-7608.han686314.workers.dev/androstreamlivebs2.m3u8
 https://purple-fog-7608.han686314.workers.dev/androstreamlivebs3.m3u8
 #EXTINF:-1 tvg-id="sport.tr" tvg-name="TR:beIN Sport 4 " tvg-logo="https://i.hizliresim.com/1opo3ah.jpg" group-title="SONER BOZKURT YERLİ KANALLAR",TR:beIN Sport 4 
 https://purple-fog-7608.han686314.workers.dev/androstreamlivebs4.m3u8
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (21-06-2026 20:54) --- #
 #EXTINF:-1 tvg-id="patr0nListe" tvg-name="patr0n - patr0n" group-title="patr0n",patr0n - patr0n
 https://patr0npatr0npatr0n.patr0n
 #EXTINF:-1 tvg-id="testsinematv" tvg-name="sinematv - test" group-title="patr0n",sinematv - test
@@ -4538,37 +4529,37 @@ http://ventione.duckdns.org/index.php?id=265&token=DeaTHLesS
 http://ventione.duckdns.org/index.php?id=293&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT HABER " group-title="BEIN SPORT",TR: beIN SP0RT HABER 
 http://ventione.duckdns.org/index.php?id=267&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=106810&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=222303&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 2 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 2 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 2 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 2 
 http://ventione.duckdns.org/index.php?id=116091&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 2 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 2 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 2 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 2 
 http://ventione.duckdns.org/index.php?id=651874&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 3 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 3 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 3 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 3 
 http://ventione.duckdns.org/index.php?id=125160&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 3 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 3 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 3 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 3 
 http://ventione.duckdns.org/index.php?id=651875&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 4 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 4 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 4 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 4 
 http://ventione.duckdns.org/index.php?id=125161&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 4 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 4 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 4 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 4 
 http://ventione.duckdns.org/index.php?id=651876&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 ()
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 ()" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=349693&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (H.264)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 (H.264)
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (H.264)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=349695&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (1080p)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 (1080p)
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (1080p)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=362212&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (720p)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 (720p)
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (720p)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=286&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (480p)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 (480p)
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (480p)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=349694&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (TTNET)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 (TTNET)
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (TTNET)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=460531&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (TURKNET)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 (TURKNET)
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (TURKNET)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=650173&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (SUPERONLINE)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 (SUPERONLINE)
+#EXTINF:-1 tvg-id="" tvg-name="TR: beIN SP0RT 1 (SUPERONLINE)" group-title="BEIN SPORT VIP",TR: beIN SP0RT 1 
 http://ventione.duckdns.org/index.php?id=349722&token=DeaTHLesS
 #EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="Show TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/X/rT/245949/logo.png?v=638671713564122216" group-title="Ulusal",Show TV
 http://104.238.23.191/dsgo.php?id=245949
