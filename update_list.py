@@ -280,10 +280,10 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 # ==============================================================================
-# 🚀 ANA MAİN FONKSİYONU
+# 🚀 ANA MAİN FONKSİYONU (YENİLENMİŞ AKILLI ÖNBELLEKLİ SÜRÜM)
 # ==============================================================================
 def main():
-    print(f"🛡️  USTA SİSTEM V9.9: 4000 Satır Dokunulmaz Zırhlı Kararlı Sürüm!")
+    print(f"🛡️  USTA SİSTEM V10.0: Akıllı Havuz Korumalı Sürdürlebilir Kararlı Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -295,7 +295,10 @@ def main():
     ana_liste_zirh = []
     ham_bulunanlar = []
 
-    # 🛡️ 4000 SATIR DOKUNULMAZ ZIRH KORUMA MEKANİZMASI
+    # 🛡️ 4000 SATIR DOKUNULMAZ ZIRH KORUMASI VE ESKİ HAVUZ KONTROL MEKANİZMASI
+    eski_havuz_metni = ""
+    eski_havuz_canli_mi = False
+
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
@@ -303,6 +306,30 @@ def main():
             for s in ana_liste_zirh:
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
+            
+            # 🔍 --- AKILLI HAVUZ ANALİZ ROBOTU ---
+            alt_lines = tum_lines[ZIRH_LIMIT:]
+            havuz_header_index = -1
+            for idx, line in enumerate(alt_lines):
+                if "# --- BÜYÜK HAVUZDAN" in line:
+                    havuz_header_index = idx
+                    break
+            
+            # Eğer dosyada daha önce eklenmiş bir havuz bölümü varsa analiz et
+            if havuz_header_index != -1:
+                eski_havuz_satirlari = alt_lines[havuz_header_index+1:]
+                eski_havuz_linkleri = [s.strip() for s in eski_havuz_satirlari if s.strip().startswith("http")]
+                
+                if eski_havuz_linkleri:
+                    print("🕵️ Eski havuz paneli bulundu, canlılığı test ediliyor...")
+                    # Mevcut panelden rastgele 3 kanalı cımbızla seçip test ediyoruz
+                    test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
+                    if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
+                        print("%0A🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
+                        eski_havuz_metni = "".join(eski_havuz_satirlari)
+                        eski_havuz_canli_mi = True
+                    else:
+                        print("%0A🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ! Büyük havuzdan taze panel aranacak...")
 
     for kaynak in guncel_kaynak_listesi:
         try:
@@ -325,8 +352,13 @@ def main():
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    print("\n🔮 Adım 3: Büyük havuz taranıyor ve isimler TiviMate için sabitleniyor...")
-    havuz_canli_metni = havuzdan_canli_kanallari_getir()
+    # 🔮 ADIM 3: AKILLI KARAR VERME AŞAMASI
+    if eski_havuz_canli_mi:
+        print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
+        havuz_canli_metni = eski_havuz_metni
+    else:
+        print("\n🔮 Adım 3: Büyük havuz taranıyor ve isimler TiviMate için sabitleniyor...")
+        havuz_canli_metni = havuzdan_canli_kanallari_getir()
 
     # 🛡️ YENİDEN YAZMA AŞAMASINDA ZIRH KORUMASI VE DİNAMİK ALAN GÜNCELLEMESİ
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
