@@ -20,7 +20,7 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
 }
 
-# --- YASAKLI VE YEDEK LİSTELERİ ---
+# --- YASAKLI VE YEDEK LİSTELERI ---
 YASAKLI_GRUPLAR = [
     "FreeShot", "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", 
     "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
@@ -173,10 +173,16 @@ def github_taze_link_avla():
     tarih = (datetime.datetime.now() - datetime.timedelta(days=2)).strftime('%Y-%m-%d')
     arama_terimleri = ["trt1", "documentary", "belgesel"]
     
+    # GitHub Actions'da istek kısıtlamasına takılmamak için dahili güvenli başlık oluşturuyoruz
+    github_headers = HEADERS.copy()
+    github_token = os.environ.get("GITHUB_TOKEN")
+    if github_token:
+        github_headers["Authorization"] = f"token {github_token}"
+    
     for terim in arama_terimleri:
         search_url = f"https://api.github.com/search/code?q=extension:m3u+{terim}+pushed:>{tarih}&sort=indexed"
         try:
-            r = requests.get(search_url, headers=HEADERS, timeout=10)
+            r = requests.get(search_url, headers=github_headers, timeout=10)
             if r.status_code == 200:
                 items = r.json().get('items', [])
                 for item in items:
@@ -280,10 +286,10 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 # ==============================================================================
-# 🚀 ANA MAİN FONKSİYONU (YENİLENMİŞ AKILLI ÖNBELLEKLİ SÜRÜM)
+# 🚀 ANA MAIN FONKSİYONU (YENİLENMİŞ AKILLI ÖNBELLEKLİ SÜRÜM)
 # ==============================================================================
 def main():
-    print(f"🛡️  USTA SİSTEM V10.0: Akıllı Havuz Korumalı Sürdürlebilir Kararlı Sürüm!")
+    print("🛡️ USTA SİSTEM V10.0: Akıllı Havuz Korumalı Sürdürülebilir Kararlı Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -325,11 +331,11 @@ def main():
                     # Mevcut panelden rastgele 3 kanalı cımbızla seçip test ediyoruz
                     test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
                     if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
-                        print("%0A🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
+                        print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
                         eski_havuz_metni = "".join(eski_havuz_satirlari)
                         eski_havuz_canli_mi = True
                     else:
-                        print("%0A🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ! Büyük havuzdan taze panel aranacak...")
+                        print("\n🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ! Büyük havuzdan taze panel aranacak...")
 
     for kaynak in guncel_kaynak_listesi:
         try:
@@ -338,7 +344,8 @@ def main():
                 bulunan = re.findall(r"(#EXTINF:.*?\n+https?.*?)(?=#EXTINF|$)", r.text, re.DOTALL | re.IGNORECASE)
                 for b in bulunan:
                     ham_bulunanlar.append((b, kaynak))
-        except: continue
+        except: 
+            continue
 
     unique_adaylar = []
     gorulen_linkler = set()
