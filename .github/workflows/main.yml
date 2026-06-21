@@ -2,7 +2,7 @@ name: IPTV Guncelleme
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # 6 saatte bir otomatiğe bağlar
+    - cron: '0 */12 * * *' # 6 saatte bir otomatiğe bağlar
   workflow_dispatch: # Manuel çalıştırma düğmesini aktif eder
 
 jobs:
