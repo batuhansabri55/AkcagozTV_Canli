@@ -2,23 +2,23 @@ name: IPTV Guncelleme
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # 12 saatte bir otomatiğe bağlar
-  workflow_dispatch: # Manuel çalıştırma düğmesini aktif eder
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Dosyayı yazmak için gereken asıl yetki budur
+      contents: write
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # v3 yerine v4 yaptık (Uyarıyı susturur)
+        uses: actions/checkout@v4
         with:
           persist-credentials: true
 
       - name: Python Kur
-        uses: actions/setup-python@v5 # v4 yerine v5 yaptık (Geleceğe hazırlık)
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
           
@@ -26,18 +26,15 @@ jobs:
         run: pip install requests
         
       - name: Botu Calistir (Dosyayı Hazırla)
-        run: python update_list.py # Python scriptini ateşler
+        run: python update_list.py
 
       - name: Degisiklikleri Kaydet (Push)
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # tr.m3u dosyasını zorla ekle
           git add -f tr.m3u
           
-          # Değişiklik varsa commit yap, yoksa devam et
           git commit -m "♻️ Liste Guncellendi" || echo "Degisiklik yok"
           
-          # Hazırlanan dosyayı GitHub ana sayfasına zorla (force) bas
           git push origin main --force
