@@ -47,7 +47,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 # --- 🎯 BÜYÜK HAVUZ AYARI ---
-BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/Sword-Saint69/fifa/989a0fdbfce75e017a04a804df5ab2e62ca071cf/1.txt"
+BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/refs/heads/main/paneller.txt"
 
 # ==============================================================================
 # 🆕 İSİM TEMİZLEME VE STANDARTLAŞTIRMA ROBOTU (EPG & ALIASES İÇİN)
