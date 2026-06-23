@@ -30,6 +30,15 @@ YASAKLI_GRUPLAR = [
     "Superxfilm", "CINEMAMOD", "Adult", "XXX"
 ]
 
+# 🆕 HAVUZDAN GELEN DİZİ, FİLM, RADYO VE GEREKSİZ İÇERİKLERİ ENGELLEME FİLTRESİ
+HAVUZ_YASAKLI_KELIMELER = [
+    "S01", "S02", "S03", "E01", "E02", "E03", "E04", "E05", "1080p.m3u8", # Dizi sezon ve bölüm numaraları/formatları
+    "FILM", "CINEMA", "SINEMA", "MOVIES", "MOVIE", "SERIES", "DIZI", "DIZILERI", "DIZILER", # Film ve Dizi grupları
+    "RADIO", "RADYO", "FM", "BEST FM", "ALEM FM", "JOY TURK", "SUPER FM", # Radyo kanalları
+    "EXXEN", "GAIN", "BLUTV", "NETFLIX", "BEIN", "TOD ORIGINAL", "GUMRUK MUHAFAZA", # Platform içerikleri ve dizileri
+    "BELGESEL DIZILER", "K-POP", "EXATLON", "TURK TUTKUSU" # Ekran görüntülerindeki diğer spesifik dizi/şov yapıları
+]
+
 YASAKLI_IP_LISTESI = [
     "87.121.104.29",
     "87.121.104.29:1071"
@@ -128,9 +137,18 @@ def havuz_paneli_test_et(url):
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
+                    # 🆕 KRİTİK FİLTRE: Satırda dizi, film, radyo veya platform kelimeleri geçiyorsa pas geç!
+                    if any(yasak.lower() in satir.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
+                        continue
+                        
                     if any(isaret in satir.upper() for isaret in tr_isaretleri):
                         if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
                             kanal_linki = satirlar[i+1]
+                            
+                            # 🆕 Link satırında da dizi/film uzantısı veya yasaklı kelime kontrolü
+                            if any(yasak.lower() in kanal_linki.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
+                                continue
+                                
                             temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
                             
                             # 🎯 URL PARAMETRE VE QUERY STRING DOĞRULAMA (Eksik Soru İşareti Hata Tamiri)
@@ -145,7 +163,7 @@ def havuz_paneli_test_et(url):
                             bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
                             sadece_tr_linkleri.append(temiz_link)
             
-            if len(sadece_tr_linkleri) >= 30:
+            if len(sadece_tr_linkleri) >= 15: # Dizi/filmleri elediğimiz için limiti 15 saf TV kanalına çektik
                 test_edilecekler = random.sample(sadece_tr_linkleri, min(3, len(sadece_tr_linkleri)))
                 if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
                     print(f"🟢 BÜYÜK HAVUZDAN CANLI PANEL BULUNDU: {test_url}")
@@ -157,13 +175,26 @@ def havuz_paneli_test_et(url):
 def havuzdan_canli_kanallari_getir():
     link_listesi = havuzu_indir()
     if not link_listesi: return ""
-    print("⚡ Canlı ve aktif Türkçe panel aranıyor, lütfen bekleyin...")
+    print("⚡ Tam 3 adet canlı ve aktif Türkçe TV paneli aranıyor, lütfen bekleyin...")
+    
+    bulunan_panellerin_icerikleri = []
+    bulunan_adet = 0
+    
     with ThreadPoolExecutor(max_workers=30) as executor:
         gorevler = {executor.submit(havuz_paneli_test_et, url): url for url in link_listesi}
         for gosterge in as_completed(gorevler):
             sonuc = gosterge.result()
             if sonuc:
-                return sonuc
+                bulunan_panellerin_icerikleri.append(sonuc)
+                bulunan_adet += 1
+                print(f"📡 Sağlam Panel Sayısı: {bulunan_adet}/3")
+                
+                # 🎯 TAM 3 TANE SAĞLAM PANEL BULUNDUĞUNDA DURDURUYORUZ
+                if bulunan_adet >= 3:
+                    break
+                    
+    if bulunan_panellerin_icerikleri:
+        return "\n".join(bulunan_panellerin_icerikleri)
     return ""
 
 # ==============================================================================
@@ -244,7 +275,7 @@ def link_saglam_mi(url):
                                 v_chunk = vr.raw.read(512)
                                 if v_chunk and len(v_chunk) >= 256:
                                     return True 
-                            return False 
+                                return False 
                     except:
                         return False
                 return False
@@ -289,7 +320,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
 # 🚀 ANA MAIN FONKSİYONU (YENİLENMİŞ AKILLI ÖNBELLEKLİ SÜRÜM)
 # ==============================================================================
 def main():
-    print("🛡️ USTA SİSTEM V10.0: Akıllı Havuz Korumalı Sürdürülebilir Kararlı Sürüm!")
+    print("🛡️ USTA SİSTEM V11.0: 3 Canlı Panel Destekli & Dizi-Film Korumalı Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -313,7 +344,6 @@ def main():
                     eklenen_urller.add(s.strip())
             
             # 🔍 --- AKILLI HAVUZ ANALİZ ROBOTU ---
-            # Zırh limitinden bağımsız, tüm dosyada başlığı arar (Güvenli Yöntem)
             havuz_header_index = -1
             for idx, line in enumerate(tum_lines):
                 if "# --- BÜYÜK HAVUZDAN" in line:
@@ -321,7 +351,6 @@ def main():
                     break
             
             if havuz_header_index != -1:
-                # Zırhı, havuz başlığının başladığı yere kadar dinamik olarak daraltırız ki çakışma olmasın
                 ana_liste_zirh = tum_lines[:min(ZIRH_LIMIT, havuz_header_index)]
                 eski_havuz_satirlari = tum_lines[havuz_header_index+1:]
                 eski_havuz_linkleri = [s.strip() for s in eski_havuz_satirlari if s.strip().startswith("http")]
@@ -334,7 +363,7 @@ def main():
                         eski_havuz_metni = "".join(eski_havuz_satirlari)
                         eski_havuz_canli_mi = True
                     else:
-                        print("\n🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ! Büyük havuzdan taze panel aranacak...")
+                        print("\n🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ! Büyük havuzdan 3 adet taze panel aranacak...")
 
     for kaynak in guncel_kaynak_listesi:
         try:
@@ -362,7 +391,7 @@ def main():
         print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
         havuz_canli_metni = eski_havuz_metni
     else:
-        print("\n🔮 Adım 3: Büyük havuz taranıyor ve isimler TiviMate için sabitleniyor...")
+        print("\n🔮 Adım 3: Büyük havuzdan 3 adet sağlam panel taranıyor ve TV kanalları ayrıştırılıyor...")
         havuz_canli_metni = havuzdan_canli_kanallari_getir()
 
     # Dosya boşsa veya en başta M3U tagı yoksa güvenli bir şekilde ekle
@@ -381,10 +410,9 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Zırh koruması sağlandı, altına sadece yeni çalışanlar eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! 3 sağlam panelden sadece TV kanalları eklendi, dizi ve radyolar temizlendi.")
 
 if __name__ == "__main__":
-    # Windows sunucularında terminal encoding hatasını sıfıra indiren zırh:
     if sys.platform == "win32":
         try:
             sys.stdout.reconfigure(encoding='utf-8')
