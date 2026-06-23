@@ -14,7 +14,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 4200
-THREADS = 64         # 5600 link için tam güç hız ayarı!
+THREADS = 64  # Görünmez karakterler temizlendi
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -92,7 +92,7 @@ def havuzu_indir():
 
 def havuz_yayin_canli_mi(test_url):
     try:
-        with requests.get(test_url, headers=HEADERS, timeout=5, stream=True, verify=False, allow_redirects=True) as r:
+        with requests.get(test_url, headers=HEADERS, timeout=6, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
@@ -118,7 +118,7 @@ def havuz_paneli_test_et(url):
     test_url = url.replace("type=m3u_plus", "type=m3u").replace("type=m3u", "type=m3u_plus")
     tr_isaretleri = ["TR:", "TR|", "TR -", "TURKISH", "TÜRKÇE", "TURKCE", 'GROUP-TITLE="TR', "TÜRK"]
     try:
-        response = requests.get(test_url, headers=HEADERS, timeout=10, verify=False)
+        response = requests.get(test_url, headers=HEADERS, timeout=12, verify=False)
         if response.status_code == 200 and "#EXTM3U" in response.text:
             satirlar = response.text.splitlines()
             bulunan_tr_kanallari = []
@@ -132,7 +132,7 @@ def havuz_paneli_test_et(url):
                             kanal_linki = satirlar[i+1]
                             temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
                             
-                            # 🎯 URL PARAMETRE VE QUERY STRING DOĞRULAMA (Eksik Soru İşareti Hata Tamiri)
+                            # 🎯 URL PARAMETRE VE QUERY STRING DOĞRULAMA
                             if "output=ts" not in temiz_link:
                                 if "?" in temiz_link:
                                     temiz_link += "&output=ts"
@@ -173,7 +173,6 @@ def github_taze_link_avla():
     tarih = (datetime.datetime.now() - datetime.timedelta(days=2)).strftime('%Y-%m-%d')
     arama_terimleri = ["trt1", "documentary", "belgesel"]
     
-    # GitHub Actions'da istek kısıtlamasına takılmamak için dahili güvenli başlık oluşturuyoruz
     github_headers = HEADERS.copy()
     github_token = os.environ.get("GITHUB_TOKEN")
     if github_token:
@@ -200,7 +199,7 @@ def link_saglam_mi(url):
         return True
 
     try:
-        with requests.get(url, headers=HEADERS, timeout=5, stream=True, verify=False, allow_redirects=True) as r:
+        with requests.get(url, headers=HEADERS, timeout=6, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
@@ -239,7 +238,7 @@ def link_saglam_mi(url):
                 
                 if video_segment_url:
                     try:
-                        with requests.get(video_segment_url, headers=HEADERS, timeout=4, stream=True, verify=False) as vr:
+                        with requests.get(video_segment_url, headers=HEADERS, timeout=5, stream=True, verify=False) as vr:
                             if vr.status_code in [200, 206]:
                                 v_chunk = vr.raw.read(512)
                                 if v_chunk and len(v_chunk) >= 256:
@@ -286,7 +285,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 # ==============================================================================
-# 🚀 ANA MAIN FONKSİYONU (YENİLENMİŞ AKILLI ÖNBELLEKLİ SÜRÜM)
+# 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
     print("🛡️ USTA SİSTEM V10.0: Akıllı Havuz Korumalı Sürdürülebilir Kararlı Sürüm!")
@@ -301,19 +300,17 @@ def main():
     ana_liste_zirh = []
     ham_bulunanlar = []
 
-    # 🛡️ 4000 SATIR DOKUNULMAZ ZIRH KORUMASI VE ESKİ HAVUZ KONTROL MEKANİZMASI
     eski_havuz_metni = ""
     eski_havuz_canli_mi = False
 
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
-            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]  # İlk 4000 satırı asla kaybetmemek üzere ayırır.
+            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]
             for s in ana_liste_zirh:
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
             
-            # 🔍 --- AKILLI HAVUZ ANALİZ ROBOTU ---
             alt_lines = tum_lines[ZIRH_LIMIT:]
             havuz_header_index = -1
             for idx, line in enumerate(alt_lines):
@@ -321,21 +318,19 @@ def main():
                     havuz_header_index = idx
                     break
             
-            # Eğer dosyada daha önce eklenmiş bir havuz bölümü varsa analiz et
             if havuz_header_index != -1:
                 eski_havuz_satirlari = alt_lines[havuz_header_index+1:]
                 eski_havuz_linkleri = [s.strip() for s in eski_havuz_satirlari if s.strip().startswith("http")]
                 
                 if eski_havuz_linkleri:
                     print("🕵️ Eski havuz paneli bulundu, canlılığı test ediliyor...")
-                    # Mevcut panelden rastgele 3 kanalı cımbızla seçip test ediyoruz
                     test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
                     if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
-                        print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
+                        print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF!")
                         eski_havuz_metni = "".join(eski_havuz_satirlari)
                         eski_havuz_canli_mi = True
                     else:
-                        print("\n🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ! Büyük havuzdan taze panel aranacak...")
+                        print("\n🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ!")
 
     for kaynak in guncel_kaynak_listesi:
         try:
@@ -359,27 +354,32 @@ def main():
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # 🔮 ADIM 3: AKILLI KARAR VERME AŞAMASI
     if eski_havuz_canli_mi:
-        print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
+        print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için eski listeye sadık kalındı.")
         havuz_canli_metni = eski_havuz_metni
     else:
         print("\n🔮 Adım 3: Büyük havuz taranıyor ve isimler TiviMate için sabitleniyor...")
         havuz_canli_metni = havuzdan_canli_kanallari_getir()
 
-    # 🛡️ YENİDEN YAZMA AŞAMASINDA ZIRH KORUMASI VE DİNAMİK ALAN GÜNCELLEMESİ
+    # Dosya yazma aşaması optimize edildi
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        f.writelines(ana_liste_zirh)  # İlk 4000 dokunulmaz satırı başa aynen yazar.
+        if ana_liste_zirh:
+            if not ana_liste_zirh[0].startswith("#EXTM3U"):
+                f.write("#EXTM3U\n")
+            f.writelines(ana_liste_zirh)
+        else:
+            f.write("#EXTM3U\n")
         
         f.write(f"\n# --- GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
         for k in final_listesi:
             f.write(k + "\n")
             
         if havuz_canli_metni.strip():
-            f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
+            if "# --- BÜYÜK HAVUZDAN" not in havuz_canli_metni:
+                f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! İlk {ZIRH_LIMIT} satıra dokunulmadı, altına sadece yeni çalışanlar eklendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! İlk {ZIRH_LIMIT} satıra dokunulmadı, altına çalışanlar güncellendi.")
 
 if __name__ == "__main__":
     main()
