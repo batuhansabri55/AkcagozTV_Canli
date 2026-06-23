@@ -7,6 +7,7 @@ import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib3
 from urllib.parse import urljoin
+import sys
 
 # SSL hatalarını tamamen sustur
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -14,7 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 4200
-THREADS = 64  # Görünmez karakterler temizlendi
+THREADS = 64         # 5600 link için tam güç hız ayarı!
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -92,7 +93,7 @@ def havuzu_indir():
 
 def havuz_yayin_canli_mi(test_url):
     try:
-        with requests.get(test_url, headers=HEADERS, timeout=6, stream=True, verify=False, allow_redirects=True) as r:
+        with requests.get(test_url, headers=HEADERS, timeout=5, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
@@ -118,7 +119,7 @@ def havuz_paneli_test_et(url):
     test_url = url.replace("type=m3u_plus", "type=m3u").replace("type=m3u", "type=m3u_plus")
     tr_isaretleri = ["TR:", "TR|", "TR -", "TURKISH", "TÜRKÇE", "TURKCE", 'GROUP-TITLE="TR', "TÜRK"]
     try:
-        response = requests.get(test_url, headers=HEADERS, timeout=12, verify=False)
+        response = requests.get(test_url, headers=HEADERS, timeout=10, verify=False)
         if response.status_code == 200 and "#EXTM3U" in response.text:
             satirlar = response.text.splitlines()
             bulunan_tr_kanallari = []
@@ -132,7 +133,7 @@ def havuz_paneli_test_et(url):
                             kanal_linki = satirlar[i+1]
                             temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
                             
-                            # 🎯 URL PARAMETRE VE QUERY STRING DOĞRULAMA
+                            # 🎯 URL PARAMETRE VE QUERY STRING DOĞRULAMA (Eksik Soru İşareti Hata Tamiri)
                             if "output=ts" not in temiz_link:
                                 if "?" in temiz_link:
                                     temiz_link += "&output=ts"
@@ -199,7 +200,7 @@ def link_saglam_mi(url):
         return True
 
     try:
-        with requests.get(url, headers=HEADERS, timeout=6, stream=True, verify=False, allow_redirects=True) as r:
+        with requests.get(url, headers=HEADERS, timeout=5, stream=True, verify=False, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
@@ -238,7 +239,7 @@ def link_saglam_mi(url):
                 
                 if video_segment_url:
                     try:
-                        with requests.get(video_segment_url, headers=HEADERS, timeout=5, stream=True, verify=False) as vr:
+                        with requests.get(video_segment_url, headers=HEADERS, timeout=4, stream=True, verify=False) as vr:
                             if vr.status_code in [200, 206]:
                                 v_chunk = vr.raw.read(512)
                                 if v_chunk and len(v_chunk) >= 256:
@@ -256,7 +257,7 @@ def link_saglam_mi(url):
         return False
 
 def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
-    satir_grubu = kanal_metni.strip().split('\n')
+    satir_grubu = static_lines = kanal_metni.strip().split('\n')
     if len(satir_grubu) < 2: return None
     
     ext_satiri = satir_grubu[0]
@@ -285,7 +286,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     return None
 
 # ==============================================================================
-# 🚀 ANA MAIN FONKSİYONU
+# 🚀 ANA MAIN FONKSİYONU (YENİLENMİŞ AKILLI ÖNBELLEKLİ SÜRÜM)
 # ==============================================================================
 def main():
     print("🛡️ USTA SİSTEM V10.0: Akıllı Havuz Korumalı Sürdürülebilir Kararlı Sürüm!")
@@ -306,31 +307,34 @@ def main():
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
-            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]
+            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]  # Korunacak üst limit
             for s in ana_liste_zirh:
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
             
-            alt_lines = tum_lines[ZIRH_LIMIT:]
+            # 🔍 --- AKILLI HAVUZ ANALİZ ROBOTU ---
+            # Zırh limitinden bağımsız, tüm dosyada başlığı arar (Güvenli Yöntem)
             havuz_header_index = -1
-            for idx, line in enumerate(alt_lines):
+            for idx, line in enumerate(tum_lines):
                 if "# --- BÜYÜK HAVUZDAN" in line:
                     havuz_header_index = idx
                     break
             
             if havuz_header_index != -1:
-                eski_havuz_satirlari = alt_lines[havuz_header_index+1:]
+                # Zırhı, havuz başlığının başladığı yere kadar dinamik olarak daraltırız ki çakışma olmasın
+                ana_liste_zirh = tum_lines[:min(ZIRH_LIMIT, havuz_header_index)]
+                eski_havuz_satirlari = tum_lines[havuz_header_index+1:]
                 eski_havuz_linkleri = [s.strip() for s in eski_havuz_satirlari if s.strip().startswith("http")]
                 
                 if eski_havuz_linkleri:
                     print("🕵️ Eski havuz paneli bulundu, canlılığı test ediliyor...")
                     test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
                     if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
-                        print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF!")
+                        print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
                         eski_havuz_metni = "".join(eski_havuz_satirlari)
                         eski_havuz_canli_mi = True
                     else:
-                        print("\n🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ!")
+                        print("\n🔴 ESKİ HAVUZ PANELİ ÖLMÜŞ VEYA PATLAMIŞ! Büyük havuzdan taze panel aranacak...")
 
     for kaynak in guncel_kaynak_listesi:
         try:
@@ -355,31 +359,35 @@ def main():
         final_listesi = [r for r in results if r is not None]
 
     if eski_havuz_canli_mi:
-        print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için eski listeye sadık kalındı.")
+        print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
         havuz_canli_metni = eski_havuz_metni
     else:
         print("\n🔮 Adım 3: Büyük havuz taranıyor ve isimler TiviMate için sabitleniyor...")
         havuz_canli_metni = havuzdan_canli_kanallari_getir()
 
-    # Dosya yazma aşaması optimize edildi
+    # Dosya boşsa veya en başta M3U tagı yoksa güvenli bir şekilde ekle
+    if not ana_liste_zirh or not ana_liste_zirh[0].startswith("#EXTM3U"):
+        ana_liste_zirh.insert(0, "#EXTM3U\n")
+
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        if ana_liste_zirh:
-            if not ana_liste_zirh[0].startswith("#EXTM3U"):
-                f.write("#EXTM3U\n")
-            f.writelines(ana_liste_zirh)
-        else:
-            f.write("#EXTM3U\n")
+        f.writelines(ana_liste_zirh)
         
-        f.write(f"\n# --- GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
-        for k in final_listesi:
-            f.write(k + "\n")
+        if final_listesi:
+            f.write(f"\n# --- GÜNCEL ULTRA TEMİZ LİSTE ({datetime.datetime.now().strftime('%d-%m-%Y %H:%M')}) --- #\n")
+            for k in final_listesi:
+                f.write(k + "\n")
             
         if havuz_canli_metni.strip():
-            if "# --- BÜYÜK HAVUZDAN" not in havuz_canli_metni:
-                f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
+            f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! İlk {ZIRH_LIMIT} satıra dokunulmadı, altına çalışanlar güncellendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! Zırh koruması sağlandı, altına sadece yeni çalışanlar eklendi.")
 
 if __name__ == "__main__":
+    # Windows sunucularında terminal encoding hatasını sıfıra indiren zırh:
+    if sys.platform == "win32":
+        try:
+            sys.stdout.reconfigure(encoding='utf-8')
+        except AttributeError:
+            pass
     main()
