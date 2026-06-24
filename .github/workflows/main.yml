@@ -2,12 +2,12 @@ name: IPTV Guncelleme
 
 on:
   schedule:
-    - cron: '0 0,12 * * *'
+    - cron: '34 2,14 * * *'
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
     
