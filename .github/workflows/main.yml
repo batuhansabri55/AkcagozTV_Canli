@@ -5,17 +5,12 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 */6 * * *' # 6 saatte bir otomatik çalışır
+    - cron: '0 */12 * * *' # 🚀 USTA: Artık tam 12 saatte bir otomatik çalışacak!
   workflow_dispatch: # Elle tetiklemek için
 
 jobs:
   build:
-    runs-on: windows-latest # Sıra beklemeyen boş sunucu
-    
-    defaults:
-      run:
-        shell: bash # 👈 USTA: HATA VEREN YERİ DÜZELTEN SİHİRLİ SATIR BURASI! 
-                    # Windows üzerinde Linux komutlarını hatasız çalıştırır.
+    runs-on: ubuntu-latest
 
     steps:
       - name: Depoyu Klonla
@@ -35,7 +30,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python kod.py # ⚠️ USTA: Burada 'kod.py' yazan yere senin python dosyanın adı neyse (main.py, iptv.py vb.) onu yaz!
+          python kod.py # ⚠️ USTA: Python dosyanın adı farklıysa (main.py vb.) burayı güncellemeyi unutma!
 
       - name: Değişiklikleri Kaydet ve Pushla
         run: |
