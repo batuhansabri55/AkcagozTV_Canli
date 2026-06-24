@@ -30,7 +30,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python kod.py # ⚠️ USTA: Python dosyanın adı farklıysa (main.py vb.) burayı güncellemeyi unutma!
+          python update_list.py # 🚀 USTA: Dosya adın update_list.py olduğu için burayı güncelledik!
 
       - name: Değişiklikleri Kaydet ve Pushla
         run: |
