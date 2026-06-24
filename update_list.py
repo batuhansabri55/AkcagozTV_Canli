@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib3
 from urllib.parse import urljoin
 import sys
-import socket  # Kilitlemeleri engellemek için eklendi
+import socket
 
 # --- GLOBAL SOKET TIMEOUT (Yayınların askıda kalmasını kesin engeller) ---
 socket.setdefaulttimeout(7)
@@ -36,7 +36,8 @@ YASAKLI_GRUPLAR = [
     "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
     "MediabayTV", "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
     "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
-    "Superxfilm", "CINEMAMOD", "Adult", "XXX"
+    "Superxfilm", "CINEMAMOD", "Adult", "XXX",
+    "7/24", "Genel | Eğlence", "Genel | Eglence", "Disney+", "Screen Saver", "SS Screen Saver"
 ]
 
 HAVUZ_YASAKLI_KELIMELER = [
@@ -44,7 +45,8 @@ HAVUZ_YASAKLI_KELIMELER = [
     "FILM", "CINEMA", "SINEMA", "MOVIES", "MOVIE", "SERIES", "DIZI", "DIZILERI", "DIZILER",
     "RADIO", "RADYO", "FM", "BEST FM", "ALEM FM", "JOY TURK", "SUPER FM",
     "EXXEN", "GAIN", "BLUTV", "NETFLIX", "BEIN", "TOD ORIGINAL", "GUMRUK MUHAFAZA",
-    "BELGESEL DIZILER", "K-POP", "EXATLON", "TURK TUTKUSU"
+    "BELGESEL DIZILER", "K-POP", "EXATLON", "TURK TUTKUSU",
+    "7/24", "GENEL | EĞLENCE", "GENEL | EGLENCE", "DISNEY+", "SCREEN SAVER", "SS SCREEN"
 ]
 
 YASAKLI_IP_LISTESI = [
@@ -132,14 +134,20 @@ def havuz_paneli_test_et(url):
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
+                    # Havuz paneli için de Yasaklı Grup ve Kelime Kontrolleri
                     if any(yasak.lower() in satir.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
+                        continue
+                    if any(yasak.lower() in satir.lower() for yasak in YASAKLI_GRUPLAR):
                         continue
                         
                     if any(isaret in satir.upper() for isaret in tr_isaretleri):
                         if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
                             kanal_linki = satirlar[i+1]
                             
+                            # Havuz paneli link içi Yasaklı Kelime ve IP Kontrolleri
                             if any(yasak.lower() in kanal_linki.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
+                                continue
+                            if any(yasak_ip in kanal_linki for yasak_ip in YASAKLI_IP_LISTESI):
                                 continue
                                 
                             temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
@@ -180,7 +188,6 @@ def havuzdan_canli_kanallari_getir():
                 bulunan_adet += 1
                 print(f"📡 Sağlam Panel Sayısı: {bulunan_adet}/3")
                 if bulunan_adet >= 3:
-                    # USTA DİKKAT: Diğer bekleyen tüm işlemleri iptal et ki kilitlenme çözülsün!
                     executor.shutdown(wait=False, cancel_futures=True)
                     break
                     
@@ -213,6 +220,8 @@ def github_taze_link_avla():
 def link_saglam_mi(url):
     if any(x in url.lower() for x in ["atv-switch", "vizitv"]):
         return True
+    if any(yasak_ip in url for yasak_ip in YASAKLI_IP_LISTESI):
+        return False
 
     try:
         with session.get(url, timeout=4, stream=True, allow_redirects=True) as r:
@@ -264,17 +273,19 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
     
-    if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u"]):
-        if link_satiri in eklenen_urller: return None
-        isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
-        isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
-        return f"{isim_temiz}\n{link_satiri}"
-
     if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI) or link_satiri in eklenen_urller:
         return None
         
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR): 
         return None
+        
+    if any(yasak.lower() in ext_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER): 
+        return None
+
+    if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u"]):
+        isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
+        isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
+        return f"{isim_temiz}\n{link_satiri}"
 
     if link_saglam_mi(link_satiri):
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
@@ -288,7 +299,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    print("🛡️ USTA SİSTEM V11.1: Optimize Edilmiş Kilitlenme Korumalı Sürüm!")
+    print("🛡️ USTA SİSTEM V11.2: Kesin Sızdırmaz & Derin Filtreli Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -305,25 +316,74 @@ def main():
     if os.path.exists(FILE_PATH):
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
-            ana_liste_zirh = tum_lines[:ZIRH_LIMIT]
-            
-            for s in ana_liste_zirh:
-                if s.strip().startswith("http"):
-                    eklenen_urller.add(s.strip())
             
             havuz_header_index = next((idx for idx, line in enumerate(tum_lines) if "# --- BÜYÜK HAVUZDAN" in line), -1)
+            sinir_index = min(ZIRH_LIMIT, havuz_header_index) if havuz_header_index != -1 else ZIRH_LIMIT
+            ham_zirh_satirlari = tum_lines[:sinir_index]
+            
+            # --- USTA: ESKİ ZIRH DOSYASINI DERİNDEN TEMİZLEYEREK OKUMA (IP SIZMALARINI KÖKTEN ÇÖZER) ---
+            if ham_zirh_satirlari and ham_zirh_satirlari[0].startswith("#EXTM3U"):
+                ana_liste_zirh.append(ham_zirh_satirlari[0])
+                
+            idx = 1
+            while idx < len(ham_zirh_satirlari):
+                satir = ham_zirh_satirlari[idx]
+                if satir.startswith("#EXTINF"):
+                    if idx + 1 < len(ham_zirh_satirlari):
+                        link_satir = ham_zirh_satirlari[idx+1]
+                        
+                        # Eğer geçmişten gelen yasaklı IP veya Yasaklı Kelime varsa zırha dahil etme, sil!
+                        if any(yasak_ip in link_satir for yasak_ip in YASAKLI_IP_LISTESI) or \
+                           any(yasak.lower() in satir.lower() for yasak in HAVUZ_YASAKLI_KELIMELER) or \
+                           any(yasak.lower() in satir.lower() for yasak in YASAKLI_GRUPLAR):
+                            idx += 2
+                            continue
+                        
+                        ana_liste_zirh.append(satir)
+                        ana_liste_zirh.append(link_satir)
+                        eklenen_urller.add(link_satir.strip())
+                        idx += 2
+                        continue
+                else:
+                    if not satir.startswith("#EXTM3U") and satir.strip():
+                        ana_liste_zirh.append(satir)
+                idx += 1
             
             if havuz_header_index != -1:
-                ana_liste_zirh = tum_lines[:min(ZIRH_LIMIT, havuz_header_index)]
                 eski_havuz_satirlari = tum_lines[havuz_header_index+1:]
-                eski_havuz_linkleri = [s.strip() for s in eski_havuz_satirlari if s.strip().startswith("http")]
+                
+                # Eski havuz kayıtlarını da filtreden geçirerek temizle
+                temiz_eski_havuz_satirlari = []
+                h_idx = 0
+                while h_idx < len(eski_havuz_satirlari):
+                    satir = eski_havuz_satirlari[h_idx]
+                    if satir.startswith("#EXTINF"):
+                        if h_idx + 1 < len(eski_havuz_satirlari):
+                            link_satir = eski_havuz_satirlari[h_idx+1]
+                            
+                            if any(yasak_ip in link_satir for yasak_ip in YASAKLI_IP_LISTESI) or \
+                               any(yasak.lower() in satir.lower() for yasak in HAVUZ_YASAKLI_KELIMELER) or \
+                               any(yasak.lower() in satir.lower() for yasak in YASAKLI_GRUPLAR):
+                                h_idx += 2
+                                continue
+                            
+                            temiz_eski_havuz_satirlari.append(satir)
+                            temiz_eski_havuz_satirlari.append(link_satir)
+                            h_idx += 2
+                            continue
+                    else:
+                        if satir.strip():
+                            temiz_eski_havuz_satirlari.append(satir)
+                    h_idx += 1
+
+                eski_havuz_linkleri = [s.strip() for s in temiz_eski_havuz_satirlari if s.strip().startswith("http")]
                 
                 if eski_havuz_linkleri:
                     print("🕵️ Eski havuz paneli bulundu, canlılığı test ediliyor...")
                     test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
                     if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
                         print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
-                        eski_havuz_metni = "".join(eski_havuz_satirlari)
+                        eski_havuz_metni = "".join(temiz_eski_havuz_satirlari)
                         eski_havuz_canli_mi = True
                     else:
                         print("\n🔴 ESKİ HAVUZ PANELİ PATLAMIŞ! Büyük havuzdan 3 adet taze panel aranacak...")
@@ -370,7 +430,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! 3 sağlam panelden sadece TV kanalları eklendi, dizi ve radyolar temizlendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! İstenmeyen tüm gruplar ve o bela IP'ler tamamen temizlendi.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
