@@ -38,4 +38,5 @@ jobs:
           git config --local user.name "GitHub Actions"
           git add tr.m3u
           git commit -m "IPTV Otomatik Güncellendi ($(date +'%d-%m-%Y %H:%M'))" || echo "Değişiklik yok, pass geçiliyor."
+          git pull --rebase origin main # 🚀 USTA: Çakışmaları engellemek için önce uzak güncel kodları çekiyoruz!
           git push
