@@ -8,6 +8,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib3
 from urllib.parse import urljoin
 import sys
+import socket  # Kilitlemeleri engellemek için eklendi
+
+# --- GLOBAL SOKET TIMEOUT (Yayınların askıda kalmasını kesin engeller) ---
+socket.setdefaulttimeout(7)
 
 # SSL hatalarını tamamen sustur
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -15,7 +19,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 4200
-THREADS = 64  # 5600 link için tam güç hız ayarı!
+THREADS = 64 
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -84,7 +88,7 @@ def havuz_kanal_ismini_temizle(extinf_satiri):
 def havuzu_indir():
     print("📥 Büyük havuz listesi indiriliyor...")
     try:
-        response = session.get(BUYUK_HAVUZ_URL, timeout=15)
+        response = session.get(BUYUK_HAVUZ_URL, timeout=10)
         if response.status_code == 200:
             linkler = re.findall(r'(http://[^\s"\']+get\.php\?[^\s"\']+)', response.text)
             return list(dict.fromkeys(linkler))
@@ -94,7 +98,7 @@ def havuzu_indir():
 
 def havuz_yayin_canli_mi(test_url):
     try:
-        with session.get(test_url, timeout=5, stream=True, allow_redirects=True) as r:
+        with session.get(test_url, timeout=4, stream=True, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
@@ -112,7 +116,7 @@ def havuz_yayin_canli_mi(test_url):
                 return False
                 
             return True
-    except requests.RequestException:
+    except Exception:
         return False
 
 def havuz_paneli_test_et(url):
@@ -155,7 +159,7 @@ def havuz_paneli_test_et(url):
                 if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
                     print(f"🟢 BÜYÜK HAVUZDAN CANLI PANEL BULUNDU: {test_url}")
                     return "\n".join(bulunan_tr_kanallari)
-    except requests.RequestException:
+    except Exception:
         pass
     return None
 
@@ -176,6 +180,8 @@ def havuzdan_canli_kanallari_getir():
                 bulunan_adet += 1
                 print(f"📡 Sağlam Panel Sayısı: {bulunan_adet}/3")
                 if bulunan_adet >= 3:
+                    # USTA DİKKAT: Diğer bekleyen tüm işlemleri iptal et ki kilitlenme çözülsün!
+                    executor.shutdown(wait=False, cancel_futures=True)
                     break
                     
     return "\n".join(bulunan_panellerin_icerikleri) if bulunan_panellerin_icerikleri else ""
@@ -209,7 +215,7 @@ def link_saglam_mi(url):
         return True
 
     try:
-        with session.get(url, timeout=5, stream=True, allow_redirects=True) as r:
+        with session.get(url, timeout=4, stream=True, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
                 
@@ -238,7 +244,7 @@ def link_saglam_mi(url):
                         if any(x in line for x in ["http", ".ts", ".m3u8", "stream", "channel"]):
                             video_segment_url = line if line.startswith("http") else urljoin(url, line)
                             try:
-                                with session.get(video_segment_url, timeout=4, stream=True) as vr:
+                                with session.get(video_segment_url, timeout=3, stream=True) as vr:
                                     if vr.status_code in [200, 206]:
                                         v_chunk = vr.raw.read(512)
                                         return bool(v_chunk and len(v_chunk) >= 256)
@@ -282,7 +288,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    print("🛡️ USTA SİSTEM V11.0: 3 Canlı Panel Destekli & Dizi-Film Korumalı Sürüm!")
+    print("🛡️ USTA SİSTEM V11.1: Optimize Edilmiş Kilitlenme Korumalı Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -324,11 +330,11 @@ def main():
 
     for kaynak in guncel_kaynak_listesi:
         try:
-            r = session.get(kaynak, timeout=15, allow_redirects=True)
+            r = session.get(kaynak, timeout=10, allow_redirects=True)
             if r.status_code in [200, 301, 302]:
                 bulunan = re.findall(r"(#EXTINF:.*?\n+https?.*?)(?=#EXTINF|$)", r.text, re.DOTALL | re.IGNORECASE)
                 ham_bulunanlar.extend((b, kaynak) for b in bulunan)
-        except requests.RequestException: 
+        except Exception: 
             continue
 
     unique_adaylar = []
