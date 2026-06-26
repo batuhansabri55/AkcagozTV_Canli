@@ -56,6 +56,7 @@ YASAKLI_IP_LISTESI = [
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
+    "https://github.com/hydrokin/M3U/blob/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u#L3",
     "https://link.testworkery0.workers.dev/patron.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
