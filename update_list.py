@@ -6,7 +6,7 @@ import shutil
 import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib3
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import sys
 import socket  # Kilitlemeleri engellemek için eklendi
 
@@ -36,7 +36,8 @@ YASAKLI_GRUPLAR = [
     "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
     "MediabayTV", "SarkorTV", "GLWIZ", "PERSIAN", "GledaiTV", "RDS TV", 
     "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
-    "Superxfilm", "CINEMAMOD", "Adult", "XXX"
+    "Superxfilm", "CINEMAMOD", "Adult", "XXX", "+18", "Yetişkin", "Yetiskin",
+    "Pink", "Redlight", "Playboy", "Penthouse", "Vivid", "Hustler", "Erotic", "Forbidden"
 ]
 
 HAVUZ_YASAKLI_KELIMELER = [
@@ -45,7 +46,9 @@ HAVUZ_YASAKLI_KELIMELER = [
     "RADIO", "RADYO", "FM", "BEST FM", "ALEM FM", "JOY TURK", "SUPER FM",
     "EXXEN", "GAIN", "BLUTV", "NETFLIX", "BEIN", "TOD ORIGINAL", "GUMRUK MUHAFAZA",
     "BELGESEL DIZILER", "K-POP", "EXATLON", "TURK TUTKUSU",
-    "7/24", "GENEL | EĞLENCE", "GENEL | EGLENCE", "DISNEY+", "SCREEN SAVER", "SS SCREEN"
+    "7/24", "GENEL | EĞLENCE", "GENEL | EGLENCE", "DISNEY+", "SCREEN SAVER", "SS SCREEN",
+    "ADULT", "XXX", "+18", "YETISKIN", "YETİŞKİN", "PINK", "REDLIGHT", "PLAYBOY", 
+    "PENTHOUSE", "VIVID", "HUSTLER", "EROTIC", "FORBIDDEN"
 ]
 
 YASAKLI_IP_LISTESI = [
@@ -53,15 +56,15 @@ YASAKLI_IP_LISTESI = [
     "87.121.104.29:1071"
 ]
 
+# USTA DİKKAT: Hatalı GitHub arayüz linki düzeltilip çalışan RAW haline getirildi!
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
-    "https://github.com/hydrokin/M3U/blob/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u#L3",
+    "https://raw.githubusercontent.com/hydrokin/M3U/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u",
     "https://link.testworkery0.workers.dev/patron.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://www.dropbox.com/scl/fi/p58t5o980tah2hz3234a5/SmartGO.m3u?rlkey=w44w0ycaa83uyn21uph77pp6v&st=mj0n6byr&raw=1",
-    "https://raw.githubusercontent.com/hydrokin/M3U/e4e9ba44d54d360ff3e6388220a4dc1019bf34e/tvando.m3u",
     "https://raw.githubusercontent.com/kadirsener1/avva/537423d13dd489dd9ec1627c5b5b2bad765e25a5/playlist.m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
@@ -134,6 +137,7 @@ def havuz_paneli_test_et(url):
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
+                    # USTA DİKKAT: Sıkı ADULT ve dizi temizliği filtresi
                     if any(yasak.lower() in satir.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
                         continue
                         
@@ -168,21 +172,34 @@ def havuz_paneli_test_et(url):
 def havuzdan_canli_kanallari_getir():
     link_listesi = havuzu_indir()
     if not link_listesi: return ""
-    print("⚡ Tam 3 adet canlı ve aktif Türkçe TV paneli aranıyor, lütfen bekleyin...")
+    print("⚡ Tam 3 adet BENZERSİZ canlı ve aktif Türkçe TV paneli aranıyor, lütfen bekleyin...")
     
     bulunan_panellerin_icerikleri = []
+    bulunan_domainler = set()  # USTA DİKKAT: Tek bir panele kilitlenmeyi önlemek için domain hafızası
     bulunan_adet = 0
     
     with ThreadPoolExecutor(max_workers=30) as executor:
+        # Linkleri karıştırarak verimliliği arttırıyoruz
+        random.shuffle(link_listesi)
         gorevler = {executor.submit(havuz_paneli_test_et, url): url for url in link_listesi}
+        
         for gosterge in as_completed(gorevler):
+            url = gorevler[gosterge]
+            # Kaynağın ana adresini (domain) ayrıştırıyoruz (Örn: dinner6.xyz:8080)
+            parsed_url = urlparse(url)
+            domain = parsed_url.netloc
+            
+            # Eğer bu domainden zaten bir canlı panel aldıysak, bunu pas geçiyoruz!
+            if domain in bulunan_domainler:
+                continue
+                
             sonuc = gosterge.result()
             if sonuc:
                 bulunan_panellerin_icerikleri.append(sonuc)
+                bulunan_domainler.add(domain)  # Bu domaini kara listeye al, aynısından bir daha ekleme
                 bulunan_adet += 1
-                print(f"📡 Sağlam Panel Sayısı: {bulunan_adet}/3")
+                print(f"📡 Sağlam Farklı Panel Sayısı: {bulunan_adet}/3 -> (Eklenen: {domain})")
                 if bulunan_adet >= 3:
-                    # USTA DİKKAT: Diğer bekleyen tüm işlemleri iptal et ki kilitlenme çözülsün!
                     executor.shutdown(wait=False, cancel_futures=True)
                     break
                     
@@ -268,6 +285,9 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     
     if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u"]):
         if link_satiri in eklenen_urller: return None
+        # Yedek kaynaklar taranırken de sızabilecek yetişkin içeriklerini engelliyoruz
+        if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
+            return None
         isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
         isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
         return f"{isim_temiz}\n{link_satiri}"
@@ -275,7 +295,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI) or link_satiri in eklenen_urller:
         return None
         
-    if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR): 
+    if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER): 
         return None
 
     if link_saglam_mi(link_satiri):
@@ -372,7 +392,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! 3 sağlam panelden sadece TV kanalları eklendi, dizi ve radyolar temizlendi.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! 3 sağlam panelden sadece TV kanalları eklendi, dizi, radyo ve yetişkin içerikler temizlendi.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
