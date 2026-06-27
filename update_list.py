@@ -51,6 +51,12 @@ HAVUZ_YASAKLI_KELIMELER = [
     "PENTHOUSE", "VIVID", "HUSTLER", "EROTIC", "FORBIDDEN"
 ]
 
+YASAKLI_IP_LISTESI = [
+    "87.121.104.29",
+    "87.121.104.29:1071"
+]
+
+# USTA DİKKAT: Hatalı GitHub arayüz linki düzeltilip çalışan RAW haline getirildi!
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
@@ -131,6 +137,7 @@ def havuz_paneli_test_et(url):
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
+                    # USTA DİKKAT: Sıkı ADULT ve dizi temizliği filtresi
                     if any(yasak.lower() in satir.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
                         continue
                         
@@ -168,25 +175,28 @@ def havuzdan_canli_kanallari_getir():
     print("⚡ Tam 3 adet BENZERSİZ canlı ve aktif Türkçe TV paneli aranıyor, lütfen bekleyin...")
     
     bulunan_panellerin_icerikleri = []
-    bulunan_domainler = set()  
+    bulunan_domainler = set()  # USTA DİKKAT: Tek bir panele kilitlenmeyi önlemek için domain hafızası
     bulunan_adet = 0
     
     with ThreadPoolExecutor(max_workers=30) as executor:
+        # Linkleri karıştırarak verimliliği arttırıyoruz
         random.shuffle(link_listesi)
         gorevler = {executor.submit(havuz_paneli_test_et, url): url for url in link_listesi}
         
         for gosterge in as_completed(gorevler):
             url = gorevler[gosterge]
+            # Kaynağın ana adresini (domain) ayrıştırıyoruz (Örn: dinner6.xyz:8080)
             parsed_url = urlparse(url)
             domain = parsed_url.netloc
             
+            # Eğer bu domainden zaten bir canlı panel aldıysak, bunu pas geçiyoruz!
             if domain in bulunan_domainler:
                 continue
                 
             sonuc = gosterge.result()
             if sonuc:
                 bulunan_panellerin_icerikleri.append(sonuc)
-                bulunan_domainler.add(domain)  
+                bulunan_domainler.add(domain)  # Bu domaini kara listeye al, aynısından bir daha ekleme
                 bulunan_adet += 1
                 print(f"📡 Sağlam Farklı Panel Sayısı: {bulunan_adet}/3 -> (Eklenen: {domain})")
                 if bulunan_adet >= 3:
@@ -266,46 +276,41 @@ def link_saglam_mi(url):
     except Exception: 
         return False
 
-# ==============================================================================
-# %100 ADİL VE ANLIK CANLI TESTİ YAPAN FONKSİYON (IP ENGELİ KALDIRILDI)
-# ==============================================================================
 def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     satir_grubu = kanal_metni.strip().split('\n')
     if len(satir_grubu) < 2: return None
     
-    ext_satiri = satir_grubu[0].strip()
+    ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
     
-    # 1. M3U içinde zaten varsa pas geç (Mükerrer kontrolü)
-    if link_satiri in eklenen_urller: 
+    if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u"]):
+        if link_satiri in eklenen_urller: return None
+        # Yedek kaynaklar taranırken de sızabilecek yetişkin içeriklerini engelliyoruz
+        if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
+            return None
+        isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
+        isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
+        return f"{isim_temiz}\n{link_satiri}"
+
+    if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI) or link_satiri in eklenen_urller:
         return None
         
-    # 2. Kelime ve Grup Bazlı İçerik Temizliği (Adult, Dizi vb.)
-    ext_lower = ext_satiri.lower()
-    link_lower = link_satiri.lower()
-    
-    if any(yasak.lower() in ext_lower for yasak in YASAKLI_GRUPLAR):
-        return None
-    if any(yasak.lower() in ext_lower or yasak.lower() in link_lower for yasak in HAVUZ_YASAKLI_KELIMELER):
+    if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER): 
         return None
 
-    # 3. İSTİSNASIZ ANLIK CANLI TESTİ 
-    # (IP engeli yok! Eğer o IP o an çalışmıyorsa elenecek, yarın çalışırsa listeye girecek)
     if link_saglam_mi(link_satiri):
-        # Yalnızca o saniye aktif ve canlı olan linkler burayı geçebilir
-        isim = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
-        isim = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim, flags=re.I)
-        isim = re.sub(r'\s+YEDEK', 'YEDEK', isim, flags=re.IGNORECASE)
-        return f"{isim}\n{link_satiri}"
+        isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
+        isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
+        isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
+        return f"{isim_temiz}\n{link_satiri}"
     
-    # Link anlık olarak kapalıysa/çalışmıyorsa elenir, listeye sızamaz.
     return None
 
 # ==============================================================================
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    print("🛡️ USTA SİSTEM V11.3: Dinamik Canlılık Testli ve Ön Yargısız Sürüm!")
+    print("🛡️ USTA SİSTEM V11.1: Optimize Edilmiş Kilitlenme Korumalı Sürüm!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -387,7 +392,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    print(f"\n🏁 İŞLEM BİTTİ USTA! Çalışmayan linkler anlık testle elendi, yarın aktif olurlarsa listeye dahil edilirler.")
+    print(f"\n🏁 İŞLEM BİTTİ USTA! 3 sağlam panelden sadece TV kanalları eklendi, dizi, radyo ve yetişkin içerikler temizlendi.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
