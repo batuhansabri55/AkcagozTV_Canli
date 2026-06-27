@@ -18,7 +18,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 4200
+ZIRH_LIMIT = 1400
 THREADS = 64 
 
 HEADERS = {
