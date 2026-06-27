@@ -511,8 +511,6 @@ http://dygvideo.dygdigital.com/live/hls/startv4puhu/index.m3u8
 http://87.121.104.29:5010@46.32.176.50/kanald/playlist.m3u8
 #EXTINF:-1 tvg-id="Euro D.de"tvg-name="Euro D TR"   tvg-logo="https://i.imgur.com/4cr2gol.png"  group-title="ULUSAL",EURO D
 http://208.79.153.167/inim03/live1/eurod/playlist.m3u8
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8 " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tv8.png" group-title="ULUSAL",TV 8
-https://bstelevision.com/proxy.php?url=http://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
 #EXTINF:-1 tvg-id="TV8International.tr" tvg-name="TV8 Int TR"  tvg-logo="https://picon-13398.kxcdn.com/tv8inltr.jpg" group-title="ULUSAL",TV8 INT
 http://208.79.153.167/inim03/live1/tv8int/playlist.m3u8
 #EXTINF:-1 tvg-id="TV85.tr" tvg-name="TV8,5 "  tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tv8-5.png" group-title="ULUSAL",TV 8.5
