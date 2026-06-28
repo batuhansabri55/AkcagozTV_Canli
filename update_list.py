@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib3
 from urllib.parse import urljoin, urlparse
 import sys
-import socket  # Kilitlemeleri engellemek için eklendi
+import socket
 
 # --- GLOBAL SOKET TIMEOUT (Yayınların askıda kalmasını kesin engeller) ---
 socket.setdefaulttimeout(7)
@@ -56,7 +56,6 @@ YASAKLI_IP_LISTESI = [
     "87.121.104.29:1071"
 ]
 
-# USTA DİKKAT: Hatalı GitHub arayüz linki düzeltilip çalışan RAW haline getirildi!
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
@@ -75,17 +74,35 @@ BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Ca
 # ROBOT FONKSIYONLAR
 # ==============================================================================
 def havuz_kanal_ismini_temizle(extinf_satiri):
+    """ Tüm kanal isimlerini tertemiz, standart hale getiren ana motor """
     if "," in extinf_satiri:
         prefix, kanal_adi = extinf_satiri.split(",", 1)
     else:
         prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
         kanal_adi = extinf_satiri
 
-    kanal_adi = re.sub(r'(?i)\b(TR:|TR\s*\||TR\s*-|TURKISH|TÜRKÇE|TURKCE|TÜRK)\b', '', kanal_adi)
-    kanal_adi = re.sub(r'(?i)\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS)\b', '', kanal_adi)
+    # 1. Başta veya isim içinde kalan TR, TR.HABER gibi ekleri sil (\b TRT'yi korur)
+    kanal_adi = re.sub(r'(?i)\bTR\.HABER\b', '', kanal_adi)
+    kanal_adi = re.sub(r'(?i)\bTR\b[\.\:\-\|]?\s*', '', kanal_adi)
+    
+    # 2. Parantez () ve köşeli parantez [] içindeki her şeyi tamamen yok et
+    kanal_adi = re.sub(r'\[.*?\]', '', kanal_adi)
+    kanal_adi = re.sub(r'\(.*?\)', '', kanal_adi)
+    
+    # 3. Görüntü kalitesi, FPS, VIP ve özel "ʜᴅ", "HQ" etiketlerini sil
+    kalite_regex = r'(?i)\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|VIP|MOBILE|HQ|ʜᴅ)\b'
+    kanal_adi = re.sub(kalite_regex, '', kanal_adi)
+    
+    # 4. Yedek ve test ibarelerini sil
     kanal_adi = re.sub(r'(?i)\b(YEDEK|BACKUP|ALT|TEST)\b', '', kanal_adi)
     
-    kanal_adi = kanal_adi.replace("::", "").replace("-", "").replace("|", "").strip()
+    # 5. TURK, TURKISH kelimelerini temizle
+    kanal_adi = re.sub(r'(?i)\b(TURKISH|TÜRKÇE|TURKCE|TÜRK)\b', '', kanal_adi)
+    
+    # 6. Çöp sembolleri (+, -, |, ::) sil
+    kanal_adi = kanal_adi.replace("::", "").replace("-", "").replace("|", "").replace("+", "").strip()
+    
+    # 7. Fazla boşlukları tek boşluğa indir ve BÜYÜK HARF yap
     kanal_adi = " ".join(kanal_adi.split()).upper()
     
     return f'{prefix},{kanal_adi}' if kanal_adi else extinf_satiri
@@ -137,7 +154,7 @@ def havuz_paneli_test_et(url):
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
-                    # USTA DİKKAT: Sıkı ADULT ve dizi temizliği filtresi
+                    # Yetişkin ve dizi temizliği filtresi
                     if any(yasak.lower() in satir.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
                         continue
                         
@@ -145,7 +162,7 @@ def havuz_paneli_test_et(url):
                         if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
                             kanal_linki = satirlar[i+1]
                             
-                            # USTA DİKKAT: Havuzdan gelirken de yasaklı IP'yi ve kelimeleri filtrele
+                            # Havuzdan gelirken de yasaklı IP'yi ve kelimeleri filtrele
                             if any(yasak.lower() in kanal_linki.lower() for yasak in HAVUZ_YASAKLI_KELIMELER) or any(yasak_ip in kanal_linki for yasak_ip in YASAKLI_IP_LISTESI):
                                 continue
                                 
@@ -294,19 +311,15 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
         return None
 
     # 4. YEDEK/ÖZEL KAYNAKLAR BÖLÜMÜ
-    # USTA DİKKAT: Artık ayrıcalık yok, bu kaynaklar da çalışıyor mu diye test edilecek!
     if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u"]):
         if link_saglam_mi(link_satiri):
-            isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
-            isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
+            isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
             return f"{isim_temiz}\n{link_satiri}"
-        return None # Çalışmıyorsa testten geçemez
+        return None 
 
     # 5. DİĞER STANDART KAYNAKLAR BÖLÜMÜ
     if link_saglam_mi(link_satiri):
-        isim_temiz = re.sub(r'\s*\|\s*[A-Z0-9+]+\b', '', ext_satiri)
-        isim_temiz = re.sub(r'\b(HEVC|RAW|PLUS|HD|FHD|SD|UHD|4K)\b', '', isim_temiz, flags=re.I)
-        isim_temiz = re.sub(r'\s+YEDEK', 'YEDEK', isim_temiz, flags=re.IGNORECASE)
+        isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
     
     return None
