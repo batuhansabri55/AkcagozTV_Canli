@@ -2517,6 +2517,21 @@ http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/KanalD.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RTGint.ru@SD" tvg-logo="https://i.imgur.com/ZpUNou4.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,LIKE GECKO) CHROME/149.0.0.0 SAFARI/537.3" GROUPTITLE="TRAVEL",RTG INT.
 http://213.91.179.28:8000/play/a0bw
 
+
+# --- GÜNCEL ULTRA TEMİZ LİSTE (29-06-2026 17:43) --- #
+#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",SÖZCÜ
+https://helga.iptv2022.com/sh/szc_tv/tracks-v4a1/mono.ts.m3u8?filter.tracks=a1v1v2v3v4
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA KOMEDİ 2
+http://vipru.linetv.net:8004/stream/YWxhZHlufHxSMkZpY25sek1qQXhNQT09/7006/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN MOVİES ACTION 2
+http://vipru.linetv.net:8004/stream/YWxhZHlufHxSMkZpY25sek1qQXhNQT09/6960/index.m3u8
+#EXTINF:-1,ALANYA ATV
+https://helga.iptv2022.com/sh/AlanyaTV/tracks-v1a1/mono.m3u8
+#EXTINF:-1 Yedek="https://canli.tgrthaber.com/tgrt.m3u8" Yedek2="" Yedek3="" tvg-id="TGRT HABER HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TGRT_Haber_logosu.png" group-title="Haber",TGRT HABER
+https://canli.tgrthaber.com/tgrt.m3u8
+#EXTINF:1 tvg-id="" tvg-logo="http://assets.tvcdn.net/15e32d50-4058-4fa6-a6e2-3e1dbc35c70c.jpeg" group-title="Çocuk&Eğitim",ZAROK TV KÜRTÇE
+https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
+
 # --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #
 #EXTINF:-1 tvg-id="" tvg-name="TR:TRT 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/trt1.png" group-title="Türk Ulusal",TRT 1
 http://elitetr2.xyz/live/erayrende/ilttuta39/787a6f9f-0337-4634-9d49-3d2b94ce5b86.m3u?output=ts
