@@ -30,7 +30,7 @@ session = requests.Session()
 session.headers.update(HEADERS)
 session.verify = False
 
-# --- YASAKLI VE YEDEK LİSTELERI ---
+# --- YASAKLI VE YEDEK LİSTELERİ ---
 YASAKLI_GRUPLAR = [
     "FreeShot", "Webteizle", "TR FILM", "ARZU FILM", "ERLER FILM", 
     "Taşacak Bu Deniz", "EZEL", "FilmMedya", "Keloğlan", "PolskieTV", 
@@ -71,7 +71,7 @@ YEDEK_KAYNAKLAR = [
 BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/refs/heads/main/paneller.txt"
 
 # ==============================================================================
-# ROBOT FONKSIYONLAR
+# ROBOT FONKSİYONLAR
 # ==============================================================================
 def havuz_kanal_ismini_temizle(extinf_satiri):
     """ Tüm kanal isimlerini tertemiz, standart hale getiren ana motor """
@@ -415,7 +415,7 @@ def main():
         print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
         havuz_canli_metni = eski_havuz_metni
     else:
-        print("\n🔮 Adım 3: Büyük havuzdan 3 adet sağlam panel taranıyor ve TV kanalları ayrıştırılıyor...")
+        print("\n🔮 Adım 3: Büyük havuzdan 3 adet sağlam panel taranıyor and TV kanalları ayrıştırılıyor...")
         havuz_canli_metni = havuzdan_canli_kanallari_getir()
 
     if not ana_liste_zirh or not ana_liste_zirh[0].startswith("#EXTM3U"):
