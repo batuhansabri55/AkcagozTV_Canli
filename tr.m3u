@@ -5398,6 +5398,8 @@ https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 http://cdn.vizitv.workers.dev/12.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",AKIT TV
 http://cdn.vizitv.workers.dev/56.m3u8
+#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",SÖZCÜ
+https://helga.iptv2022.com/sh/szc_tv/tracks-v4a1/mono.ts.m3u8?filter.tracks=a1v1v2v3v4
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",LIDER HABER
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Haber",TH TÜRKHABER
@@ -8360,53 +8362,53 @@ http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTVd0Y2RyQ21qWkwyMGJRZExJWU5D
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRkZnMWFpOFppbHhaa1RnUHdabTlnZzZ5NS9ocTRyNUtPZVdhTDlSS0ErVQ?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="Tr: Sifir TV HD" tvg-logo="https://sifirtv.com/sifir-tv-logo.png" group-title="TR | SPOR",SIFIR TV
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRkZnMWFpOFppbHhaa1RnUHdabTlnZ0diVUZNYURvY1pqZWJnUnRVcHl5Qg?output=ts
-#EXTINF:-1 tvg-id="beINSportsHaber.tr" tvg-name="Tr: B**n Sp*rts Haber HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/BEIN_SPORT_HABER_SD.png" group-title="TR | B**N SPORTS",B**N SP*RTS HABER
+#EXTINF:-1 tvg-id="beINSportsHaber.tr" tvg-name="Tr: BEIN Sp*rts Haber HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/BEIN_SPORT_HABER_SD.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS HABER
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crS3NhclczUWl0WFVlS1ArV0QwNWF6Tk00dENteE5ZVjViZE0rVkJZbHZYbQ?output=ts
-#EXTINF:-1 tvg-id="beINSports2Turkey.tr" tvg-name="Tr: B**n Sp*rts HD 2" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_2_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS 2
+#EXTINF:-1 tvg-id="beINSports2Turkey.tr" tvg-name="Tr: BEIN Sp*rts HD 2" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_2_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS 2
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSG04L3BUd3lBaTJndU10emFvTFR5bzYrNXJ6YXJsOUtSa3czenZ1RStlNA?output=ts
-#EXTINF:-1 tvg-id="beINSports2Turkey.tr" tvg-name="Tr: B**n Sp*rts 2 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_2_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS 2
+#EXTINF:-1 tvg-id="beINSports2Turkey.tr" tvg-name="Tr: BEIN Sp*rts 2 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_2_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS 2
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSUo5S3ZOMmYrWmFZMGR1TzM4eGtTOUtqRTVCTGFnRlB1TDhjclJlQlA4Lw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Sp*rts 2 FHD (feed)" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_2_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS 2
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Sp*rts 2 FHD (feed)" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_2_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS 2
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crQTRqTngxVU1uYjcvWGJHOUJzRUFNb3UvWEJtS3Z1amhmQWViU2RUamorRw?output=ts
-#EXTINF:-1 tvg-id="beINSports3Turkey.tr" tvg-name="Tr: B**n Sp*rts HD 3" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_3_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS 3
+#EXTINF:-1 tvg-id="beINSports3Turkey.tr" tvg-name="Tr: BEIN Sp*rts HD 3" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_3_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS 3
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRFNBTjhzSzBmRmtxYXZLeVRMM1hMcmxvY09QLzU3bVpKTkNvNlo0Y1Jtdw?output=ts
-#EXTINF:-1 tvg-id="beINSports3Turkey.tr" tvg-name="Tr: B**n Sp*rts 3 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_3_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS 3
+#EXTINF:-1 tvg-id="beINSports3Turkey.tr" tvg-name="Tr: BEIN Sp*rts 3 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_3_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS 3
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSUo5S3ZOMmYrWmFZMGR1TzM4eGtTOFpVT1hxMXM1bGVsUTArVC81WjhFYQ?output=ts
-#EXTINF:-1 tvg-id="beINSports4Turkey.tr" tvg-name="Tr: B**n Sp*rts HD 4" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_4_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS 4
+#EXTINF:-1 tvg-id="beINSports4Turkey.tr" tvg-name="Tr: BEIN Sp*rts HD 4" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_4_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS 4
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crQkx3WlNTUkVSWEI3NzF4Y256UER2SG5VNkN2dHNnZDBuMWlid29GVHRQNQ?output=ts
-#EXTINF:-1 tvg-id="beINSports4Turkey.tr" tvg-name="Tr: B**n Sp*rts 4 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_4_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS 4
+#EXTINF:-1 tvg-id="beINSports4Turkey.tr" tvg-name="Tr: BEIN Sp*rts 4 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_4_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS 4
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSUo5S3ZOMmYrWmFZMGR1TzM4eGtTL21tYytIb3lubDZHdmFsZ25IRHNpYg?output=ts
-#EXTINF:-1 tvg-id="beINSportsMax2Turkey.tr" tvg-name="Tr: B**n Sp*rts MAX 2 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_max_2_2.png" group-title="TR | B**N SPORTS",B**N SP*RTS MAX 2
+#EXTINF:-1 tvg-id="beINSportsMax2Turkey.tr" tvg-name="Tr: BEIN Sp*rts MAX 2 FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_sports_max_2_2.png" group-title="TR | BEIN SPORTS",BEIN SP*RTS MAX 2
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRWtFWDkreWZnWHVNcE44cGV6Z3ZsazZGLzBnV0lFRmpFc00vU0xWd0IvaA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 1 (mac Zamani)" tvg-logo="https://i.hizliresim.com/74e2zmn.png" group-title="TR | B**N SPORTS",B**N CONNECT 1
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 1 (mac Zamani)" tvg-logo="https://i.hizliresim.com/74e2zmn.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 1
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTk55dWF5aHdTOWM1UWN6aWRLSzMvZXBFSURoRTk3ZmVIUVZ1VXFHMEJCSw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 2 (mac Zamani)" tvg-logo="https://i.hizliresim.com/ac1j3fw.png" group-title="TR | B**N SPORTS",B**N CONNECT 2
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 2 (mac Zamani)" tvg-logo="https://i.hizliresim.com/ac1j3fw.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 2
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRVZtY3g3ZktXY0FIRXFzVkRKZU5reHMyY05DTlRqRnNMU1N5S3hnRG15TQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 3 (mac Zamani)" tvg-logo="https://i.hizliresim.com/71in4qh.png" group-title="TR | B**N SPORTS",B**N CONNECT 3
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 3 (mac Zamani)" tvg-logo="https://i.hizliresim.com/71in4qh.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 3
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRVZtY3g3ZktXY0FIRXFzVkRKZU5rem5TY3BhUUJQK20vb3hLMFRwSUtaRg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 4 (mac Zamani)" tvg-logo="https://i.hizliresim.com/a7uekah.png" group-title="TR | B**N SPORTS",B**N CONNECT 4
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 4 (mac Zamani)" tvg-logo="https://i.hizliresim.com/a7uekah.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 4
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRVZtY3g3ZktXY0FIRXFzVkRKZU5reDBKQnpzM0U3V0xGOFlLSm0xQkFiaw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 5 (mac Zamani)" tvg-logo="https://i.hizliresim.com/81z0oar.png" group-title="TR | B**N SPORTS",B**N CONNECT 5
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 5 (mac Zamani)" tvg-logo="https://i.hizliresim.com/81z0oar.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 5
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRVZtY3g3ZktXY0FIRXFzVkRKZU5rejZlL2xnMmVvN3NoUGd0MWwyaGhXbA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 6 (mac Zamani)" tvg-logo="https://i.hizliresim.com/iql37fe.png" group-title="TR | B**N SPORTS",B**N CONNECT 6
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 6 (mac Zamani)" tvg-logo="https://i.hizliresim.com/iql37fe.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 6
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRVZtY3g3ZktXY0FIRXFzVkRKZU5reGgxWDJPc0paVWV4N2pKQ2gzbkI0UQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 7 (mac Zamani)" tvg-logo="https://i.hizliresim.com/hlozixx.png" group-title="TR | B**N SPORTS",B**N CONNECT 7
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 7 (mac Zamani)" tvg-logo="https://i.hizliresim.com/hlozixx.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 7
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crS2c2NExGSnNHczlGTXdoMnIyekNtRVByZGdFS0VaY05SNEdXL1IvdENyLw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 8 (mac Zamani)" tvg-logo="https://i.hizliresim.com/pylte1r.png" group-title="TR | B**N SPORTS",B**N CONNECT 8
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 8 (mac Zamani)" tvg-logo="https://i.hizliresim.com/pylte1r.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 8
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crS2c2NExGSnNHczlGTXdoMnIyekNtR2d4OVlZYmdHZ2ZSNzdmVmN2ZzBxaw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n Connect HD 9 (mac Zamani)" tvg-logo="https://i.hizliresim.com/n93mc7e.png" group-title="TR | B**N SPORTS",B**N CONNECT 9
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN Connect HD 9 (mac Zamani)" tvg-logo="https://i.hizliresim.com/n93mc7e.png" group-title="TR | BEIN SPORTS",BEIN CONNECT 9
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crS2c2NExGSnNHczlGTXdoMnIyekNtRy9Ib0lESngzQlVXWW1tL1M2T1ZtaA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Trendyol Süper LIG TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/c20vSSW/Trendyol-S-per-Lig-Haftan-n-zetleri.png" group-title="TR | B**N SPORTS",TRENDYOL SÜPER LIG TV
+#EXTINF:-1 tvg-id="" tvg-name="Tr: Trendyol Süper LIG TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/c20vSSW/Trendyol-S-per-Lig-Haftan-n-zetleri.png" group-title="TR | BEIN SPORTS",TRENDYOL SÜPER LIG TV
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTmdrd1RiTUNuQ04xQ0FOcFc3dFdxaXh1dExLdElQMmF4K1dvUHlHRDBBZw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Trendyol 1. LIG TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/6nfQCY3/Trendyol-1-Lig-Haftan-n-zetleri.png" group-title="TR | B**N SPORTS",TRENDYOL 1. LIG TV
+#EXTINF:-1 tvg-id="" tvg-name="Tr: Trendyol 1. LIG TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/6nfQCY3/Trendyol-1-Lig-Haftan-n-zetleri.png" group-title="TR | BEIN SPORTS",TRENDYOL 1. LIG TV
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTmdrd1RiTUNuQ04xQ0FOcFc3dFdxaGVyb1lxNHhkQ083WmswRmV2YnFKQw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Premier LIG TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/qJCcQMx/Premier-Lig-Haftan-n-zetleri.png" group-title="TR | B**N SPORTS",PREMIER LIG TV
+#EXTINF:-1 tvg-id="" tvg-name="Tr: Premier LIG TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/qJCcQMx/Premier-Lig-Haftan-n-zetleri.png" group-title="TR | BEIN SPORTS",PREMIER LIG TV
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTmdrd1RiTUNuQ04xQ0FOcFc3dFdxall4WVhYcDZQcnJxNy8rMGE2c2dYcQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Bundesliga TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/GHp5Mcf/Bundesliga-Haftan-n-zetleri.png" group-title="TR | B**N SPORTS",BUNDESLIGA TV
+#EXTINF:-1 tvg-id="" tvg-name="Tr: Bundesliga TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/GHp5Mcf/Bundesliga-Haftan-n-zetleri.png" group-title="TR | BEIN SPORTS",BUNDESLIGA TV
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTmdrd1RiTUNuQ04xQ0FOcFc3dFdxZ0g5cXVyeVZCaUNPRE9vN2pxM1RTdw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Bundesliga 2.lig TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/z6kH6v2/Bundesliga-2-Lig-Haftan-n-zetleri.png" group-title="TR | B**N SPORTS",BUNDESLIGA 2.LIG TV
+#EXTINF:-1 tvg-id="" tvg-name="Tr: Bundesliga 2.lig TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/z6kH6v2/Bundesliga-2-Lig-Haftan-n-zetleri.png" group-title="TR | BEIN SPORTS",BUNDESLIGA 2.LIG TV
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTmdrd1RiTUNuQ04xQ0FOcFc3dFdxZ3hRMDFjdG1XUWtteXZFVXV6UVZ5Uw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Fransa Ligue1 TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/8jpVYxw/Fransa-Ligue1-Haftan-n-zetleri.png" group-title="TR | B**N SPORTS",FRANSA LIGUE1 TV
+#EXTINF:-1 tvg-id="" tvg-name="Tr: Fransa Ligue1 TV HD (mac Ozetleri)" tvg-logo="https://i.ibb.co/8jpVYxw/Fransa-Ligue1-Haftan-n-zetleri.png" group-title="TR | BEIN SPORTS",FRANSA LIGUE1 TV
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTmdrd1RiTUNuQ04xQ0FOcFc3dFdxakxWczA1TkZ0bnl1L1JhSmNoTDlydg?output=ts
 #EXTINF:-1 tvg-id="SSport.tr" tvg-name="Tr: S Sport SD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/S_SPORT.png" group-title="TR | S Sport",S SPORT
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crT08vK2o1elo5TUdBYVl5SDcyeFpvRkhFVU1EcjhjVzl5T0xUQVpJL0VGZA?output=ts
@@ -8574,11 +8576,11 @@ http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSUhSS2xvMDN1bmlwTEdYQ1B3TmZG
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSm9kYTltZDQ1OTZNQUZUK2FTeXc0ZjNEUThDbUFEZzFtbDJBT05GcjJvSQ?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="----- (tr) Digiturk Kanallar----- HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/TURKIYE_LOGO_SD.png" group-title="TR | SINEMA DIGITURK",DIGITURK KANALLAR
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSkZ1SU9vMEZ5Um9BY29ldGpmQVhnTlo5OVgxS3c1U2Z2V3dDT1gzQWs5ag?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n BOX Office HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_box_office.png" group-title="TR | SINEMA DIGITURK",B**N BOX OFFICE
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN BOX Office HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_box_office.png" group-title="TR | SINEMA DIGITURK",BEIN BOX OFFICE
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRVVmMWRSSXBFU1VjQ04vQmdIWk9pNndZVmRpUk1zZFlUb2NteWhaYTRydQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n BOX Office 1 HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_box_office.png" group-title="TR | SINEMA DIGITURK",B**N BOX OFFICE 1
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN BOX Office 1 HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_box_office.png" group-title="TR | SINEMA DIGITURK",BEIN BOX OFFICE 1
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crQXpKd2RjV2pkUStxRmlNOGFEVGdjMEZnZkhQeWpMQURmWEdCcVd4SmUvNQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n BOX Office 2 HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_box_office.png" group-title="TR | SINEMA DIGITURK",B**N BOX OFFICE 2
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN BOX Office 2 HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/bein_box_office.png" group-title="TR | SINEMA DIGITURK",BEIN BOX OFFICE 2
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crUENCNlYrTzdEcHhCVzY0cTI0M1FrcU9kamFTYW54Q1Z2aGFWQ2lFQjg2Wg?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN BOX Office 1 FHD (1920x1080)" tvg-logo="" group-title="TR | SINEMA DIGITURK",BEIN BOX OFFICE 1
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRnQzUWtoOFdaQnVLbEFud2hIVHBQYVAzN2xTczdZUWtkZWpmVDk0OTBwSg?output=ts
@@ -8586,7 +8588,7 @@ http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRnQzUWtoOFdaQnVLbEFud2hIVHBQ
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRnQzUWtoOFdaQnVLbEFud2hIVHBQWTU5UXhXUThUZVRwK1doZm5jckU5TQ?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN BOX Office FHD (1920x1080)" tvg-logo="" group-title="TR | SINEMA DIGITURK",BEIN BOX OFFICE
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRnQzUWtoOFdaQnVLbEFud2hIVHBQYWk1Zi9JUUlYMkJ0ZkxmdVpqWEttUw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n HD" tvg-logo="https://i.ibb.co/v4zCMrt/beinhd.png" group-title="TR | SINEMA DIGITURK",B**N
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN HD" tvg-logo="https://i.ibb.co/v4zCMrt/beinhd.png" group-title="TR | SINEMA DIGITURK",BEIN
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTUlyR2xoTWJlYStKTmtMSXNCdUhrcCtPaStoREd0TEdUb2ZLVDl0cVhNVw?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="Tr: BBC First HD" tvg-logo="https://i.ibb.co/0tRmW6d/bbc-first-250x150.png" group-title="TR | SINEMA DIGITURK",BBC FIRST
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crT3cwYXljVDFkbVppZkc3dXUzSUpzYWlNWG44dmpCMzNybEEvaXNWQUMrTQ?output=ts
@@ -8646,7 +8648,7 @@ http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crT1B0S3dPNDQwT1V3WkdOVGN0YTk1
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRDF3UUVHR1hNZDRoelRpaWNIZ09mSjlRa3V4b0RmYnhKaURJOW04OVA2Lw?output=ts
 #EXTINF:-1 tvg-id="TRT.Belgesel.tr" tvg-name="Tr: TRT Belgesel FHD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/trt_belgesel_2.png" group-title="TR | BELGESEL",TRT BELGESEL
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSTlWQlhNcGRwdmUwc1B6UFBuOEl3c1Z4Zjk2bmxqV09lTkZweVVINUdabg?output=ts
-#EXTINF:-1 tvg-id="beINIZ.tr" tvg-name="Tr: B**n IZ HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/BEIN_IZ.png" group-title="TR | BELGESEL",B**N IZ
+#EXTINF:-1 tvg-id="beINIZ.tr" tvg-name="Tr: BEIN IZ HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/BEIN_IZ.png" group-title="TR | BELGESEL",BEIN IZ
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTS9QazJLU284WHJrUWNrLzRHalkxZHV5YlRwa3pRLzh4SUdxK2ZXQWp1NA?output=ts
 #EXTINF:-1 tvg-id="DMAX.tr" tvg-name="Tr: DMAX HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/dmax.png" group-title="TR | BELGESEL",DMAX
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTGtYZE1nODhKR2Y4U2h4Y0RaU0d1ZE9xNUdINStqQzAwYWRDbCtDOThRQg?output=ts
@@ -8694,9 +8696,9 @@ http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crQ0R4N0NPR0RNbmZTaWIzVTFyQnZ0
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSjcyaUdhRmJ0SUF0V01KdFlNVjFBYXB6cnhrN0syQVVCQ3V4MFZqa0dxbw?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="----- (tr) Yasam Kanallari----- HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/TURKIYE_LOGO_SD.png" group-title="TR | YASAM",YASAM KANALLARI
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crQTRNNlFvbU1yRU5wRDhlcUNtYVQ2RVllNUxpREo0a3lBY1VTeGVUcVVXag?output=ts
-#EXTINF:-1 tvg-id="beINGurme.tr" tvg-name="Tr: B**n Gurme HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/07/BEIN_GURME_HD.png" group-title="TR | YASAM",B**N GURME
+#EXTINF:-1 tvg-id="beINGurme.tr" tvg-name="Tr: BEIN Gurme HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/07/BEIN_GURME_HD.png" group-title="TR | YASAM",BEIN GURME
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTFFXZVkzeDRWWW5IdHlDbFVSQUp1UUo2ektXNS9LSXB3YmQrSXBIUVFOeA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: B**n H&e HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/BEIN_H-E_HD.png" group-title="TR | YASAM",B**N H&E
+#EXTINF:-1 tvg-id="" tvg-name="Tr: BEIN H&e HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/BEIN_H-E_HD.png" group-title="TR | YASAM",BEIN H&E
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crT013aS9UMmpqM2toRzNrd0hLVERpdlNhcmRUNzVYMjBrNy9jN1l6OXJvYg?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="Tr: WM TV Woman Kadin HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/TV_WOMAN_KADIN_SD.png" group-title="TR | YASAM",WM TV WOMAN KADIN
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTys5RUZwR21iM29Ed3owNzZ5SkdWcjI3SzR4eVFlZG9oazRaSlc2UGJaeQ?output=ts
@@ -8946,85 +8948,3 @@ http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRFhtTk1YbE5wbkxVc3ZUVXlnbEJj
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRFhtTk1YbE5wbkxVc3ZUVXlnbEJjek1IdUU0MEcxTUxadUVITnVRcHJhcw?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="Tr: Power TURK Taptaze HD" tvg-logo="https://i.imgur.com/31iTMdp.png" group-title="TR | MUZiK",POWER TURK TAPTAZE
 http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRFhtTk1YbE5wbkxVc3ZUVXlnbEJjeUl4VUNnc01PeWZqR1FsbjlsT1VJYw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Concerts HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",CONCERTS
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3SGhjYk11dkxSbG9BRjJKZS9VcXIyWQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Hottest HITS HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",HOTTEST HITS
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RWYxa1NJM0dUd0ZsVDQvVnpZZWNNOQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: SLOW TURK HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",SLOW TURK
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R2J0T1d5U2pFUk5jNTdveGpmZXVVRg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: KRAL POP HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",KRAL POP
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RWY3ZzljSVREY1hIaE1NV2hpQWFvVw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: International HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",INTERNATIONAL
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R040QzNVS2RkNW5jbnBZU29acCtqcw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Oldies BUT Goldies HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",OLDIES BUT GOLDIES
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RlErQU1nM0ZPb052TDdHaSt5ZVBPSw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: 90's HITS HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",90'S HITS
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RjdmNTVmRDZpUjUxVUthZGIxMFhTMQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Greek Songs HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",GREEK SONGS
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R1ZNWVFhUlJOb3NSSHgvMTlLZDAzeQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: America's Classics HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",AMERICA'S CLASSICS
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RmphdHhscXJyQ1FSQ3cwSzJKbUFCWg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Classical Music HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",CLASSICAL MUSIC
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RlpJdEh6OGIxZUNoRGx3WVo0NGNwRg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Classic ROCK HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",CLASSIC ROCK
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3SExvTm1hNWVxaVp0UTQzZmUrNVR6UA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: ROCK HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",ROCK
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RWtWZmFpdmV5T2RudW9JZU1iTDdHcg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: HIP HOP R&b HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",HIP HOP R&B
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R1A0V0RuZmpQTDlaR1E0NmZUZTNGcQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: 80's HITS HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",80'S HITS
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3SGdHZnhjUitCZjk2RzYxQVNPQ2R4SA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Latin HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",LATIN
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R3Z3Uk15Qm9BMnk4YlBpOFBKMUVWbw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Reggae HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",REGGAE
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R1J5TUNyUEpmYXhyTlZZNHUyUDNYUg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Blues HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",BLUES
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RXNLRjBSM29BcGR5WjFkL2JxVEdlcA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Happy HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",HAPPY
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R1phK0phN2twbmcvT2x3bHNLdkx1bg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: IN LOVE HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",IN LOVE
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RUlEclAydWZVR3EyclVjOUROQVVKdw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Party HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",PARTY
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RXdjOVlCcTMwT29LTStocnliZnF6RA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Melancholic HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",MELANCHOLIC
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R3N6RURFVmE2ZVRpZ2R2dDF3L2oxNA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Morning Coffee HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",MORNING COFFEE
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3SHJ3Z01TQmd0clUxZFNWcXo0RXZUUQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Dreamy HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",DREAMY
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RzViVjBFR1B5ZThDUXUvalhRaGhIZw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Smooth JAZZ HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",SMOOTH JAZZ
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3SHpPemQxWVQzWmNQK2hCY3Y4SisxVQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: JAZZ HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",JAZZ
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R1JvN2g5MDlpcDBFa3FJKzVtVTdHcA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: NU JAZZ HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",NU JAZZ
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RitPejI3VGt4WTU0NG5FREF5MlZENw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Chill OUT / Lounge HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",CHILL OUT / LOUNGE
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3SHprNTREVEEwU2NOdnZmWm50eWR0cA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Relaxation HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",RELAXATION
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3R2N2SGdWREdUMVRDeU5Uald5bHFzdg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: EASY Listening HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",EASY LISTENING
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RWJqRUJQZ016R3orWkIzZWZoWmFVRQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Energetic HD" tvg-logo="https://i.imgur.com/9CEjgKg.png" group-title="TR | MUZiK",ENERGETIC
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSHFacUJwZGFxRW1mSW5mNzZwMjJ3RXZiV3RhV0NWRzIrdjEzT1NGQW5HUg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Trace Urban HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/05/traceurban.png" group-title="TR | MUZiK",TRACE URBAN
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTzhYU21zR2JtTndrRFZveFhtRzQ4NG13Y2U5T1Z1NWtsTWJWaWRJTmJFVQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Milyon TV HD" tvg-logo="https://i.imgur.com/RKb0Qtv.png" group-title="TR | MUZiK",MILYON TV
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRVNKOHJKME1KTnZnc3dJRWhMVm41YVp2WmYxQzF4M3FRSkFqQzYyNUpmNA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: MTV HITS HD" tvg-logo="https://i.imgur.com/elnAycI.png" group-title="TR | MUZiK",MTV HITS
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crQVVvMWhxQjEzaGh1dVZpOWhNVXg0cEhsUWhXbEdZZDk5alZzallPbXpubQ?output=ts
-#EXTINF:-1 tvg-id="PowerTV.tr" tvg-name="Tr: Power TURK HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/powerTurk.png" group-title="TR | MUZiK",POWER TURK
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSjRteDBQd2RpZEF0cmMzdmhTZWhVOVd6OWorelhRQVMwcVJ0bFA3ZkhNcQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: MTV LIVE HD" tvg-logo="https://i.imgur.com/xCeUfDv.png" group-title="TR | MUZiK",MTV LIVE
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crQVVvMWhxQjEzaGh1dVZpOWhNVXg0cmVZdUVMa2Y1OTJZUWs5WERPd3VEbQ?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: KRAL POP TV HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2020/06/kralPop.png" group-title="TR | MUZiK",KRAL POP TV
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crSUZlcUVDeUx3N3cydWthREo3M21sUmlrSG0xV2tJWkVHd1o0c2ppaklmNg?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Dream TURK HD" tvg-logo="http://xopen.xyz/wp-content/uploads/2019/06/DREAMTURK_SD.png" group-title="TR | MUZiK",DREAM TURK
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTktpaUxtQndQenVSMFh6V2U2ZUZUK0E0WlZYMEZDN291K3VhY0F4dm5HTw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Power TURK SLOW HD" tvg-logo="https://i.imgur.com/SqZ0Ah9.png" group-title="TR | MUZiK",POWER TURK SLOW
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crRFhtTk1YbE5wbkxVc3ZUVXlnbEJjeXBRRzhkV3p2R1E0a3JNTlphVldIRw?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Tr: Tatlises HD" tvg-logo="https://www.lyngsat-logo.com/logo/tv/tt/tatlises-tv-tr.png" group-title="TR | MUZiK",TATLISES
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTWRRbDgwQTZNNkVQZ2U1SmhyMEc5NXIzTFkwN3dEenpyNmlCL1dIZ04wNA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Il: Turkish Drama 2 HD" tvg-logo="" group-title="IL | ISRAEL",IL: DRAMA 2
-http://vipmax.site:8080/dWtnOVo1Qm9DVlhqN2ZBRkhYK2crTUhpZGZDQUN5K1VJcFV4cXBEOVZMcE9ab0JqbGNBYnNVZFlrRmw5b3ltZA?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRKAN KARAOKE" tvg-logo="" group-title="KARAOKE",TÜRKAN KARAOKE
-http://vipmax.site:8080/TVppRFNMdXZFVjVSSTFDSHFLZjQzbUp2WmY3NWVMZ3N6T1dPUmk0cm0vbXpwWmY1R2dsYTNQeklabTh3WGl0WA?output=ts
