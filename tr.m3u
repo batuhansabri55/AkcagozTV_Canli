@@ -4702,6 +4702,8 @@ https://purple-fog-7608.han686314.workers.dev/androstreamlivebiraz1.m3u8
 # --- GÜNCEL ULTRA TEMİZ LİSTE (08-07-2026 18:47) --- #
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",BİLGİLENDİRME
 https://raw.githubusercontent.com/kadirsener1/avva/refs/heads/main/Bilgilendirme.mp4
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",S SPORT 2LİNE
+http://vipru.linetv.net:8004/stream/YWxhZHlufHxSMkZpY25sek1qQXhNQT09/10873/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 1İP
 https://65.108.239.207/t1/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 2İP
@@ -4762,6 +4764,8 @@ http://cdn.vizitv.workers.dev/12.m3u8
 https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",AKIT TV
 http://cdn.vizitv.workers.dev/56.m3u8
+#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",SÖZCÜ
+https://helga.iptv2022.com/sh/szc_tv/tracks-v4a1/mono.ts.m3u8?filter.tracks=a1v1v2v3v4
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",LIDER HABER
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Haber",TH TÜRKHABER
@@ -5208,6 +5212,8 @@ https://kafelok.testworker0y.workers.dev/channel/VFJUIEt1cmRp?token=d97b9a898293
 https://kafelok.testworker0y.workers.dev/channel/VFJUIFdvcmxk?token=d97b9a89829340eaef8fc598a59ba23d
 #EXTINF:-1 tvg-id="sozcuyedek" tvg-name="Sözcü Tv -B-" tvg-logo="https://www.indyturk.com/sites/default/files/article/main_image/2021/07/07/705061-474968398.jpg" group-title="Haber",SÖZCÜ TV B
 https://ddiyanetcocuk.testworkery0.workers.dev/?ch=sozcu&token=d97b9a89829340eaef8fc598a59ba23d
+#EXTINF:-1 tvg-id="cnnyedek" tvg-name="CNN Türk -B-" tvg-logo="https://img.dsmartgo.com.tr/content/a/u2/11786/Thumbnail.png" group-title="Haber",CNN B
+https://hassktrname.testworkery0.workers.dev/izle/cnnturkhd.m3u8?token=d97b9a89829340eaef8fc598a59ba23d
 #EXTINF:-1 tvg-id="haberturk" tvg-name="Haber Türk" tvg-logo="https://img.dsmartgo.com.tr/content/V/gp/13350/Thumbnail.png" group-title="Haber",HABER
 https://pattes.testworker0y.workers.dev/channel/SGFiZXJ0w7xyayB8IEI=?token=d97b9a89829340eaef8fc598a59ba23d
 #EXTINF:-1 tvg-id="haberglobal" tvg-name="Haber Global" tvg-logo="https://img.dsmartgo.com.tr/content/d/R2/13858/Thumbnail.png" group-title="Haber",HABER GLOBAL
@@ -5218,6 +5224,8 @@ https://pattes.testworker0y.workers.dev/channel/Qmxvb21iZXJnIEhUIHwgQg==?token=d
 https://pattes.testworker0y.workers.dev/channel/VEdSVCBIYWJlcg==?token=d97b9a89829340eaef8fc598a59ba23d
 #EXTINF:-1 tvg-id="halktv" tvg-name="Halk Tv" tvg-logo="https://img.dsmartgo.com.tr/content/S/_q/13566/Thumbnail.png" group-title="Haber",HALK TV
 https://pattes.testworker0y.workers.dev/channel/SGFsayBUVg==?token=d97b9a89829340eaef8fc598a59ba23d
+#EXTINF:-1 tvg-id="rectarihtv" tvg-name="Tarih TV" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/b61d518744b390174e6f672d7171107d.png" group-title="Belgesel",TARIH TV
+https://dosemeci.denek1544.workers.dev/izle/tarihtv.m3u8?token=d97b9a89829340eaef8fc598a59ba23d
 #EXTINF:-1 tvg-id="natgeo" tvg-name="National Geographic" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/666cbc1feac437aea3fc2c8218b9539e.jpg" group-title="Belgesel",NATIONAL GEOGRAPHIC
 https://cinciksi.testworker0y.workers.dev/channel/TmF0aW9uYWwgR2VvZ3JhcGhpYw==?token=d97b9a89829340eaef8fc598a59ba23d
 #EXTINF:-1 tvg-id="natgeowild" tvg-name="National Geographic Wild" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/ae18d42e87a266954420b315bb23c749.jpg" group-title="Belgesel",NATIONAL GEOGRAPHIC WILD
