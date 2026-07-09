@@ -382,7 +382,7 @@ https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8
 #EXTINF:-1,TIVI 6
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
 #EXTINF:-1,SZCTVYEDEK
-#https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Sozcu_TV.m3u
+https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Sozcu_TV.m3u
 #EXTINF:-1,SZCTVYEDEK
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/szc_tv/index.m3u8
 #EXTINF:-1,CNNTURKYEDEK
@@ -391,8 +391,8 @@ https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/c
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/CNN_Turk.m3u
 #EXTINF:-1,CNNTURKYEDEK
 http://46.32.176.50/cnnturk/playlist.m3u8
-#EXTINF:-1,CNNTURK YouTube
-https://orange-voice-0e97.huseyinakcagoz55.workers.dev/UCV6zcRug6p1UX_FdyUeBg.m3u8
+#EXTINF:-1,CNNTURKYEDEK
+http://87.121.104.29:5010@46.32.176.50/cnnturk/tracks-v1a1/mono.ts.m3u8?|User-Agent=house.com
 #EXTINF:-1,HABERTURKYEDEK
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
 #EXTINF:-1,HABERTURKYEDEK
@@ -5660,8 +5660,6 @@ https://tv-trtcocuk.medya.trt.com.tr/master_1080.m3u8
 https://tagesschau-live.ard-mcdn.de/tagesschau/live/hls/de/master.m3u8
 #EXTINF:-1 Yedek1="http://c3921155.edmonst.net/iptv/DVHP2VB5QXL7UC/15181/index.m3u8" Yedek2="https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/NDR_Dachmarke.png" group-title="ULUSAL",NDR
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
-#EXTINF:-1 Yedek1="https://cdn22lhr.tamashaweb.com:8087/jazzauth/SaudiSunnah(NW)-abr/playlist.m3u8" Yedek2="https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8" tvg-logo="https://e7.pngegg.com/pngimages/758/259/png-clipart-medina-mecca-television-channel-streaming-media-others-miscellaneous-television.png" group-title="ULUSAL",MADINAH TV
-https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/saudi_sunnah-avc1_600000=2-mp4a_145600_ara=3.m3u8
 #EXTINF:-1 Yedek="http://78.128.125.60:9980/play/a01n/index.m3u8" Yedek2="https://helga.iptv2022.com/sh/trt_spor/tracks-v3a1/mono.m3u8?filter.tracks=a1v1v2v3v4" Yedek3="https://iptv-worker.mark-clark.workers.dev/?ID=20" Yedek4="http://31.222.206.98/8827/tracks-v1a1/mono.ts.m3u8?token=test" Yedek5="https://trn03.tulix.tv/gt-trtspor1/index.m3u8" Yedek6="http://176.65.146.171:9981/stream/channelid/835819132?profile=htsp" Yedek7="http://85.209.248.3:9897/trt3spor" tvg-id="TRT SPOR HD.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNu1KowYW0Ywy_-lMPzCvLGBMUaNIUAUIcwGGX1iLjHzhRclixpxWjf4lLG9QeYDPg754&usqp=CAU" group-title="ULUSAL",TRT SPOR
 http://176.65.146.171:9981/stream/channelid/835819132?profile=htsp
 
