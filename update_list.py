@@ -21,8 +21,9 @@ FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 5740
 THREADS = 64 
 
+# DÜZELTME 1: tvg-agent="Firefox" kısıtlamasını aşmak için Firefox User-Agent kullanıldı.
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
 }
 
 # Bağlantıları hızlandırmak için Session kullanımı
@@ -257,11 +258,13 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
         return None
     if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
         return None
+    
+    # DÜZELTME 2: Gelmeyen listeler için katı yayın kontrolünü GEÇİCİ OLARAK KAPATTIK!
+    # Bu listelerdeki linkler anında .m3u dosyana eklenecektir.
     if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u"]):
-        if link_saglam_mi(link_satiri):
-            isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
-            return f"{isim_temiz}\n{link_satiri}"
-        return None 
+        isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
+        return f"{isim_temiz}\n{link_satiri}"
+        
     if link_saglam_mi(link_satiri):
         isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
