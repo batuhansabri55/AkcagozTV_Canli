@@ -4698,8 +4698,6 @@ https://cdn-onstv.yayin.com.tr/onstv/index.m3u8
 https://hls.4utv.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AfroturkTV.tr@SD",AFROTURK TV
 https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (09-07-2026 20:26) --- #
 #EXTINF:0 tvg-agent="Firefox" tvg-id="TRT 4K" tvg-name="TR: TRT 4K" tvg-logo="http://logo.multicms.info/logoslar/trt4k.png" group-title="TR-ULUSAL",TRT
 http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/51
 #EXTINF:0 tvg-agent="Firefox" tvg-id="TRT 1" tvg-name="TR: TRT 1 FHD" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="TR-ULUSAL",TRT 1
@@ -6992,76 +6990,6 @@ http://elitetr2.xyz/live/haciakkaya2/e2cc0epvl/d0f4ced4-e840-4926-a89d-a8818c2e8
 http://elitetr2.xyz/live/haciakkaya2/e2cc0epvl/8d58bb5c-6c48-4d14-b75d-4d2044e00b58.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:KIBRIS TV" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/kibris.png" group-title="KKTC",KIBRIS TV
 http://elitetr2.xyz/live/haciakkaya2/e2cc0epvl/e51f4e81-8c17-48ce-9a39-d8f0faa7a211.m3u?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="Ekintürk Tv SD" tvg-logo="http://logo1010.com/ens/38.png" group-title="► Yöresel Kanallar",EKINTÜRK TV
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/158695.ts
-#EXTINF:-1 tvg-id="" tvg-name="Haber Türk ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/haberturk.png" group-title="► Ulusal Raw | Android",HABER ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360148.ts
-#EXTINF:-1 tvg-id="" tvg-name="Türk Haber ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/turkhaber.png" group-title="► Ulusal Raw | Android",HABER ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360154.ts
-#EXTINF:-1 tvg-id="" tvg-name="Power Türk Tv ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/power.png" group-title="► Ulusal Raw | Android",POWER TV ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360175.ts
-#EXTINF:-1 tvg-id="" tvg-name="Power Türk Dance ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/power.png" group-title="► Ulusal Raw | Android",POWER DANCE ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360178.ts
-#EXTINF:-1 tvg-id="" tvg-name="Power Türk Love ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/power.png" group-title="► Ulusal Raw | Android",POWER LOVE ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360179.ts
-#EXTINF:-1 tvg-id="" tvg-name="Power Türk Slow ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/power.png" group-title="► Ulusal Raw | Android",POWER SLOW ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360180.ts
-#EXTINF:-1 tvg-id="" tvg-name="Power Türk Akustik ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/power.png" group-title="► Ulusal Raw | Android",POWER AKUSTIK ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360181.ts
-#EXTINF:-1 tvg-id="" tvg-name="Power Türk Taptaze ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/power.png" group-title="► Ulusal Raw | Android",POWER TAPTAZE ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360182.ts
-#EXTINF:-1 tvg-id="" tvg-name="TRT Türk ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/trtturk.png" group-title="► Ulusal Raw | Android",TRT ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360184.ts
-#EXTINF:-1 tvg-id="" tvg-name="Kent Türk Tv ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/kent.png" group-title="► Ulusal Raw | Android",KENT TV ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360214.ts
-#EXTINF:-1 tvg-id="" tvg-name="Olay Türk ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/olay.png" group-title="► Ulusal Raw | Android",OLAY ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360220.ts
-#EXTINF:-1 tvg-id="" tvg-name="SAT7 Türk ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/sat7.png" group-title="► Ulusal Raw | Android",SAT7 ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360222.ts
-#EXTINF:-1 tvg-id="" tvg-name="Trakya Türk Tv ʳᵃʷ" tvg-logo="https://logo1010.com/pictures/trakya.png" group-title="► Ulusal Raw | Android",TRAKYA TV ʳᵃʷ
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/360227.ts
-#EXTINF:-1 tvg-id="" tvg-name="Sinema ✦ TÜRKAN ŞORAY" tvg-logo="" group-title="► Sinema",SINEMA ✦ TÜRKAN ŞORAY
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/410068.ts
-#EXTINF:-1 tvg-id="" tvg-name="Eğlence ✦ Baturay Özdemir  Türkiye" tvg-logo="" group-title="► Eğlence",EĞLENCE ✦ BATURAY ÖZDEMIR TÜRKIYE
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/410209.ts
-#EXTINF:-1 tvg-id="" tvg-name="Dini ✦ Kur’an-ı Kerim Sesli Türkçe Meali" tvg-logo="" group-title="► Dini Kanallar",DINI ✦ KUR’ANI KERIM SESLI MEALI
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/410632.ts
-#EXTINF:-1 tvg-id="" tvg-name="DE: DAS ERSTE HD" tvg-logo="http://sltv-icon.cms-s.com/logo/germanynew/das_erste.png" group-title="TR • ⚽DÜNYA KUPASI 2026",DE: DAS ERSTE
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/434291.ts
-#EXTINF:-1 tvg-id="" tvg-name="DE: ZDF HD" tvg-logo="http://sltv-icon.cms-s.com/logo/germanynew/zdf.png" group-title="TR • ⚽DÜNYA KUPASI 2026",DE: ZDF
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/434294.ts
-#EXTINF:-1 tvg-id="" tvg-name="DE: MAGENTA SPORT HD" tvg-logo="http://sltv-icon.cms-s.com/logo/germany/telekomsport.png" group-title="TR • ⚽DÜNYA KUPASI 2026",DE: MAGENTA SPORT
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/434412.ts
-#EXTINF:-1 tvg-id="" tvg-name="FR: M6 HD" tvg-logo="http://sltv-icon.cms-s.com/logo/franceT-220x132/M6HD.png" group-title="TR • ⚽DÜNYA KUPASI 2026",FR: M6
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/434650.ts
-#EXTINF:-1 tvg-id="" tvg-name="AT: ORF 1" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2020-07/1a0cecb4d3e9d4a525acea5b3659f796.png" group-title="TR • ⚽DÜNYA KUPASI 2026",AT: ORF 1
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/437478.ts
-#EXTINF:-1 tvg-id="" tvg-name="AT: ORF Sport+" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2020-07/8abdd4d3253d178909b231d0c9913dbe.png" group-title="TR • ⚽DÜNYA KUPASI 2026",AT: ORF SPORT
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/437481.ts
-#EXTINF:-1 tvg-id="" tvg-name="CH: W9 Suisse" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/de9365f987d0a6cba1118cc1426016d2.png" group-title="TR • ⚽DÜNYA KUPASI 2026",CH: W9 SUISSE
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/437984.ts
-#EXTINF:-1 tvg-id="" tvg-name="CH: M6 Suisse" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/4d46c21ba88b269e2f174db1127239eb.png" group-title="TR • ⚽DÜNYA KUPASI 2026",CH: M6 SUISSE
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/438004.ts
-#EXTINF:-1 tvg-id="" tvg-name="CH: RSI La 2" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/c25edfb73d12a43e8193daa91e987e49.svg" group-title="TR • ⚽DÜNYA KUPASI 2026",CH: RSI LA 2
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/438008.ts
-#EXTINF:-1 tvg-id="" tvg-name="CH: SRF Info" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-05/10e1c1a91b05d33a3a07b3b688214138.png" group-title="TR • ⚽DÜNYA KUPASI 2026",CH: SRF INFO
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/438015.ts
-#EXTINF:-1 tvg-id="" tvg-name="CH: SRF Zwei" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-04/ebedeef3396154de7043a23cc8781851.svg" group-title="TR • ⚽DÜNYA KUPASI 2026",CH: SRF ZWEI
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/438016.ts
-#EXTINF:-1 tvg-id="" tvg-name="ES: DAZN 1" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/484784419a9faf9cbeac602c51174f16.png" group-title="TR • ⚽DÜNYA KUPASI 2026",ES: DAZN 1
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/439658.ts
-#EXTINF:-1 tvg-id="" tvg-name="ES: RTVE" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2024-03/920e3512b0534ffebdd1c31530c7aa84.png" group-title="TR • ⚽DÜNYA KUPASI 2026",ES: RTVE
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/439709.ts
-#EXTINF:-1 tvg-id="" tvg-name="BG: BNT 3" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2020-08/55a901309eab26a9f68c19e59dd326a1.png" group-title="TR • ⚽DÜNYA KUPASI 2026",BG: BNT 3
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/437357.ts
-#EXTINF:-1 tvg-id="" tvg-name="AL: Tring Turkish Stories" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2024-01/24da71afb30b0a51f33218126d49a770.png" group-title="► Albania",AL: TRING STORIES
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/436764.ts
-#EXTINF:-1 tvg-id="" tvg-name="HR: HRT 1" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-05/e638e112d71f62fda4106a5342c0faea.png" group-title="TR • ⚽DÜNYA KUPASI 2026",HR: HRT 1
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/438661.ts
-#EXTINF:-1 tvg-id="" tvg-name="RO: Antena 1" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2020-07/4659d2bca898e371660103eb401e30fd.png" group-title="TR • ⚽DÜNYA KUPASI 2026",RO: ANTENA 1
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/439354.ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: Ictimai TV" tvg-logo="http://s3.i3ns.net:2052/portal/picon/2020-07/2b721c033ec1d2e68d662ed594eb48d7.png" group-title="TR • ⚽DÜNYA KUPASI 2026",AZ: ICTIMAI TV
-http://4.438069.xyz:8080/live/TRi1972.rT/ruURRyYHxh/436136.ts
 #EXTINF:-1 tvg-id="beinsportshaber.tr" tvg-name="Bein Sports Haber HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/bein-sports-haber-tr.png" group-title="TR ⚡️ Spor | Spor",BEIN SPORTS HABER
 http://86.107.179.250:80/live/huseyinozbeyli/19062022asd/342232.ts
 #EXTINF:-1 tvg-id="beinsports1.tr" tvg-name="beIN Sports 1 HD +" tvg-logo="https://i.ibb.co/KxGRttW8/14.png" group-title="TR ⚡️ Spor | Bein Sports",BEIN SPORTS 1
