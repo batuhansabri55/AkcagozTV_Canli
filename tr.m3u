@@ -4748,9 +4748,9 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/253585
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/286
 #EXTINF:-1 tvg-id="Nat Geo Wild" tvg-name="NAT GEO WILD " tvg-logo="http://logo.multicms.info/tvlogo/natgeowild.png" group-title="TR-BELGESEL",NAT GEO WILD 
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/282
-#EXTINF:-1 tvg-id="HABİTAT TV" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="TR-BELGESEL",HABITAT TV
+#EXTINF:-1 tvg-id="HABİTAT TV" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="TR-BELGESEL",HABITAT
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/78416
-#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX F" tvg-logo="http://logo.multicms.info/tvlogo/dmax.png" group-title="TR-BELGESEL",DMAX F
+#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX F" tvg-logo="http://logo.multicms.info/tvlogo/dmax.png" group-title="TR-BELGESEL",DMAX
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/274
 #EXTINF:-1 tvg-id="beIN GURME" tvg-name="BEIN GURME " tvg-logo="http://logo.multicms.info/tvlogo/beingurme.png" group-title="TR-BELGESEL",BEIN GURME 
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/271
@@ -4845,7 +4845,7 @@ https://zibabulbiba.testworkery0.workers.dev/ahaber?key=patr0n
 #EXTINF:-1 tvg-id="cnnturk" tvg-name="CNN Türk" tvg-logo="https://img.dsmartgo.com.tr/content/a/u2/11786/Thumbnail.png" group-title="Haber ve Ekonomi",CNN
 https://zibabulbiba.testworkery0.workers.dev/cnn?key=patr0n
 #EXTINF:-1 tvg-id="cnnyedek" tvg-name="CNN Türk -B-" tvg-logo="https://img.dsmartgo.com.tr/content/a/u2/11786/Thumbnail.png" group-title="Haber ve Ekonomi",CNN B
-https://hastiroloji.testworkery0.workers.dev/izle/cnnturk.m3u8
+https://hastiroloji.testworkery0.workers.dev/izle/cnnturkhd.m3u8
 #EXTINF:-1 tvg-id="haberturk" tvg-name="Haber Türk" tvg-logo="https://img.dsmartgo.com.tr/content/V/gp/13350/Thumbnail.png" group-title="Haber ve Ekonomi",HABER
 https://poteytooo.testworker0y.workers.dev/channel/SGFiZXJ0w7xyayB8IEI=
 #EXTINF:-1 tvg-id="ntvhaber" tvg-name="NTV -A-" tvg-logo="https://img.dsmartgo.com.tr/content/F/VA/13721/Thumbnail.png" group-title="Haber ve Ekonomi",NTV A
@@ -4879,7 +4879,7 @@ https://dosemecik.denek1544.workers.dev/izle/viasathistory.m3u8?token=2e562507e2
 #EXTINF:-1 tvg-id="lovenaturerec" tvg-name="Love Nature" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/c34095b97dc3f94306666eec346defb8.png" group-title="Belgesel",LOVE NATURE
 https://dosemecik.denek1544.workers.dev/izle/lovenature.m3u8?token=2e562507e261a3dfddd5950ca4305f7c
 #EXTINF:-1 tvg-id="bbcearth" tvg-name="BBC Earth" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/9ed6faa15f968198d17c0362658f6b50.jpg" group-title="Belgesel",BBC EARTH
-https://dosemecik.denek1544.workers.dev/izle/bbcearth.m3u8?token=2e562507e261a3dfddd5950ca4305f7c
+https://dosemecik.denek1544.workers.dev/izle/bbcearthhd.m3u8?token=2e562507e261a3dfddd5950ca4305f7c
 #EXTINF:-1 tvg-id="discoverychannel" tvg-name="Discovery Channel" tvg-logo="https://img.dsmartgo.com.tr/content/r/9C/11894/Thumbnail.png" group-title="Belgesel",DISCOVERY CHANNEL
 https://simarikveled.testworker0y.workers.dev/channel/RGlzY292ZXJ5IENoYW5uZWw=?token=2e562507e261a3dfddd5950ca4305f7c
 #EXTINF:-1 tvg-id="discoveryscience" tvg-name="Discovery Science" tvg-logo="https://img.dsmartgo.com.tr/content/b/vE/11891/Thumbnail.png" group-title="Belgesel",DISCOVERY SCIENCE
@@ -5468,8 +5468,6 @@ https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 https://tv.ensonhaber.com/haberturk/haberturk.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr@SD",HUNAT TV
 https://live.artidijitalmedya.com/artidijital_hunattv/hunattv/playlist.m3u8
-#EXTINF:-1 tvg-id="IcelTV.tr@SD",ICEL TV
-https://edge1.socialsmart.tv/iceltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal3.tr@SD",KANAL 3
 https://live.artidijitalmedya.com/artidijital_kanal3/kanal3/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal12.tr@SD",KANAL 12
@@ -5502,8 +5500,6 @@ https://live.artidijitalmedya.com/artidijital_konyaolaytv/konyaolaytv/playlist.m
 http://54.36.110.140/live3/live3.m3u8
 #EXTINF:-1 tvg-id="MercanTV.tr@SD",MERCAN TV
 https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/playlist.m3u8
-#EXTINF:-1 tvg-id="MTurkTV.tr@SD",MTÜRK TV
-https://edge1.socialsmart.tv/muglaturk/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="NaturalTV.tr@SD",NATURAL TV
 https://edge1.socialsmart.tv/naturaltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerDance.tr@SD",POWER DANCE
@@ -5526,8 +5522,6 @@ https://live.artidijitalmedya.com/artidijital_sat7turk/sat7turk/playlist.m3u8
 https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SunRTV.tr@SD",SUN RTV
 https://live.artidijitalmedya.com/artidijital_sunrtv/sunrtv/playlist.m3u8
-#EXTINF:-1 tvg-id="TGRTHaber.tr@SD",TGRT HABER
-https://canli.tgrthaber.com/tgrt.m3u8
 #EXTINF:-1 tvg-id="TonTV.tr@SD",TON TV
 https://live.artidijitalmedya.com/artidijital_tontv/tontv/playlist.m3u8
 #EXTINF:-1 tvg-id="24TV.tr@SD",TR24 TV
