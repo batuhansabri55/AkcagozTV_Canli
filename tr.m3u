@@ -152,7 +152,7 @@ https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788
 #EXTINF:-1,TV8YEDEK30
 https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
 #EXTINF:-1,TV8YEDEK30
-http://149.13.0.66:4002/tv8hd
+http://149.13.0.66:4002/tv8
 #EXTINF:-1,NOWTVYEDEK34
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1,NOWTVYEDEK33
@@ -304,7 +304,7 @@ https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=bf58ab52-4865-4c81-b223-26b4
 #EXTINF:-1,TV85YEDEK
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web
 #EXTINF:-1,TV85YEDEK
-http://149.13.0.66:4002/tv85hd
+http://149.13.0.66:4002/tv85
 #EXTINF:-1,TV85YEDEK
 https://bstelevision.com/proxy.php?url=https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk.m3u8
 #EXTINF:-1,TRT1YEDEK
@@ -1176,7 +1176,7 @@ https://dogus.daioncdn.net/kralpoptv/kralpoptv.m3u8?app=f38a38b4-ce55-4040-8676-
 #EXTINF:-1 tvg-logo="https://i.ibb.co/6401NQw/kraltv.png",KRALPOPYEDEK
 http://dygvideo.dygdigital.com/live/hls/kralpop?m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/B6N9KsN/powerturk22.png",POWER TÜRK
-http://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
+http://livetv.powerapp.com.tr/powerturkTV/powerturk.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/wSPFds2/nr1turk.png",NUMBER ONE TÜRK
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e187770143.smil/chunklist_b400000.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/wSPFds2/nr1turk.png",NUMBER ONE TÜRK
@@ -1194,7 +1194,7 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e2a
 #EXTINF:-1 tvg-logo="https://i.ibb.co/bQHyST5/nr1tv.png",NUMBER ONE
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/xhfcTC7/powertv.png",POWER TV
-http://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
+http://livetv.powerapp.com.tr/powerTV/power.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/xhfcTC7/powertv.png",POWER TV
 https://live.artidijitalmedya.com/artidijital_powertv/powertv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/FVNL477/pdance.png",POWER DANCE
@@ -1244,7 +1244,7 @@ https://saran-live.ercdn.net/disneyjunior/index.m3u8
 #EXTINF:-1 group-title="💫BEİNSPORTS DERBİ ÖZEL💫"tvg-logo="https://i.hizliresim.com/l6muq8p.png",BEINSPORT3YEDEK
 http://taliptv01.xyz:8080/play/live.php?mac=00:1A:79:4D:06:6C&stream=2216&extension=ts&play_token=7qOBBgdbE3
 #EXTINF:-1 tvg-id="" tvg-name="Trt 1 " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/80196fc2-f4f6-4e35-ae29-7925a5885a20.png" group-title="SONER BOZKURT YERLİ KANALLAR",Trt 1 
-http://89.187.191.41/TRT-1-HD-TR/video.m3u8
+http://89.187.191.41/TRT-1--TR/video.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 4 " tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" group-title="SONER BOZKURT YERLİ KANALLAR",SINEMA TV 4
 https://raw.githubusercontent.com/Elvin4K/restream/refs/heads/pro4k/1siriustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA 1002 " tvg-logo="https://i.hizliresim.com/klzlrbf.png" group-title="SONER BOZKURT YERLİ KANALLAR", ALTAS ORDU TV
@@ -2142,7 +2142,7 @@ http://ventione.duckdns.org/index.php?id=278&token=DeaTHLesS
 http://ventione.duckdns.org/index.php?id=362964&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TJK TV" group-title="SPOR",TJK TV
 http://ventione.duckdns.org/index.php?id=279&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EXXEN TV FHD" group-title="Exxen Spor",EXXEN TV FHD
+#EXTINF:-1 tvg-id="" tvg-name="EXXEN TV F" group-title="Exxen Spor",EXXEN TV F
 http://ventione.duckdns.org/index.php?id=390014&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="EXXEN 1  (maczamani)" group-title="Exxen Spor",EXXEN 1  (maczamani)
 http://ventione.duckdns.org/index.php?id=361630&token=DeaTHLesS
@@ -2760,159 +2760,159 @@ http://ventione.duckdns.org/index.php?id=656367&token=DeaTHLesS
 http://ventione.duckdns.org/index.php?id=656365&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="#### TURK YEREL ####" group-title="YEREL",#### TURK YEREL ####
 http://ventione.duckdns.org/index.php?id=124&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT 1" group-title="QHD",TRT 1
+#EXTINF:-1 tvg-id="" tvg-name="TRT 1" group-title="Q",TRT 1
 http://ventione.duckdns.org/index.php?id=114554&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT 2" group-title="QHD",TRT 2
+#EXTINF:-1 tvg-id="" tvg-name="TRT 2" group-title="Q",TRT 2
 http://ventione.duckdns.org/index.php?id=114811&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ATV" group-title="QHD",ATV
+#EXTINF:-1 tvg-id="" tvg-name="ATV" group-title="Q",ATV
 http://ventione.duckdns.org/index.php?id=114836&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SHOW TV" group-title="QHD",SHOW TV
+#EXTINF:-1 tvg-id="" tvg-name="SHOW TV" group-title="Q",SHOW TV
 http://ventione.duckdns.org/index.php?id=114837&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="STAR TV" group-title="QHD",STAR TV
+#EXTINF:-1 tvg-id="" tvg-name="STAR TV" group-title="Q",STAR TV
 http://ventione.duckdns.org/index.php?id=114838&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL D" group-title="QHD",KANAL D
+#EXTINF:-1 tvg-id="" tvg-name="KANAL D" group-title="Q",KANAL D
 http://ventione.duckdns.org/index.php?id=114809&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NOW" group-title="QHD",NOW
+#EXTINF:-1 tvg-id="" tvg-name="NOW" group-title="Q",NOW
 http://ventione.duckdns.org/index.php?id=114822&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8" group-title="QHD",TV 8
+#EXTINF:-1 tvg-id="" tvg-name="TV 8" group-title="Q",TV 8
 http://ventione.duckdns.org/index.php?id=114831&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8 5" group-title="QHD",TV 8 5
+#EXTINF:-1 tvg-id="" tvg-name="TV 8 5" group-title="Q",TV 8 5
 http://ventione.duckdns.org/index.php?id=114830&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A2" group-title="QHD",A2
+#EXTINF:-1 tvg-id="" tvg-name="A2" group-title="Q",A2
 http://ventione.duckdns.org/index.php?id=114819&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV" group-title="QHD",BEYAZ TV
+#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV" group-title="Q",BEYAZ TV
 http://ventione.duckdns.org/index.php?id=114820&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 7" group-title="QHD",KANAL 7
+#EXTINF:-1 tvg-id="" tvg-name="KANAL 7" group-title="Q",KANAL 7
 http://ventione.duckdns.org/index.php?id=114824&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TEVE 2" group-title="QHD",TEVE 2
+#EXTINF:-1 tvg-id="" tvg-name="TEVE 2" group-title="Q",TEVE 2
 http://ventione.duckdns.org/index.php?id=114812&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NTV" group-title="QHD",NTV
+#EXTINF:-1 tvg-id="" tvg-name="NTV" group-title="Q",NTV
 http://ventione.duckdns.org/index.php?id=114825&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CNN TÜRK" group-title="QHD",CNN TÜRK
+#EXTINF:-1 tvg-id="" tvg-name="CNN TÜRK" group-title="Q",CNN TÜRK
 http://ventione.duckdns.org/index.php?id=114808&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HABERTURK" group-title="QHD",HABERTURK
+#EXTINF:-1 tvg-id="" tvg-name="HABERTURK" group-title="Q",HABERTURK
 http://ventione.duckdns.org/index.php?id=114823&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="QHD",A HABER
+#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="Q",A HABER
 http://ventione.duckdns.org/index.php?id=114815&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A NEWS" group-title="QHD",A NEWS
+#EXTINF:-1 tvg-id="" tvg-name="A NEWS" group-title="Q",A NEWS
 http://ventione.duckdns.org/index.php?id=114816&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="QHD",A PARA
+#EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="Q",A PARA
 http://ventione.duckdns.org/index.php?id=114817&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A SPOR" group-title="QHD",A SPOR
+#EXTINF:-1 tvg-id="" tvg-name="A SPOR" group-title="Q",A SPOR
 http://ventione.duckdns.org/index.php?id=114818&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="24" group-title="QHD",24
+#EXTINF:-1 tvg-id="" tvg-name="24" group-title="Q",24
 http://ventione.duckdns.org/index.php?id=114813&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="360" group-title="QHD",360
+#EXTINF:-1 tvg-id="" tvg-name="360" group-title="Q",360
 http://ventione.duckdns.org/index.php?id=114814&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BLOOMBERGHT" group-title="QHD",BLOOMBERGHT
+#EXTINF:-1 tvg-id="" tvg-name="BLOOMBERGHT" group-title="Q",BLOOMBERGHT
 http://ventione.duckdns.org/index.php?id=114821&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT BELGESEL" group-title="QHD",TRT BELGESEL
+#EXTINF:-1 tvg-id="" tvg-name="TRT BELGESEL" group-title="Q",TRT BELGESEL
 http://ventione.duckdns.org/index.php?id=114826&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT COCUK" group-title="QHD",TRT COCUK
+#EXTINF:-1 tvg-id="" tvg-name="TRT COCUK" group-title="Q",TRT COCUK
 http://ventione.duckdns.org/index.php?id=114827&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT HABER" group-title="QHD",TRT HABER
+#EXTINF:-1 tvg-id="" tvg-name="TRT HABER" group-title="Q",TRT HABER
 http://ventione.duckdns.org/index.php?id=114828&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR" group-title="QHD",TRT SPOR
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR" group-title="Q",TRT SPOR
 http://ventione.duckdns.org/index.php?id=114829&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT WORLD" group-title="QHD",TRT WORLD
+#EXTINF:-1 tvg-id="" tvg-name="TRT WORLD" group-title="Q",TRT WORLD
 http://ventione.duckdns.org/index.php?id=114832&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT TURK" group-title="QHD",TRT TURK
+#EXTINF:-1 tvg-id="" tvg-name="TRT TURK" group-title="Q",TRT TURK
 http://ventione.duckdns.org/index.php?id=114833&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT MUZIK" group-title="QHD",TRT MUZIK
+#EXTINF:-1 tvg-id="" tvg-name="TRT MUZIK" group-title="Q",TRT MUZIK
 http://ventione.duckdns.org/index.php?id=114834&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT KURDI" group-title="QHD",TRT KURDI
+#EXTINF:-1 tvg-id="" tvg-name="TRT KURDI" group-title="Q",TRT KURDI
 http://ventione.duckdns.org/index.php?id=114835&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR YILDIZ" group-title="QHD",TRT SPOR YILDIZ
+#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR YILDIZ" group-title="Q",TRT SPOR YILDIZ
 http://ventione.duckdns.org/index.php?id=114886&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER" group-title="QHD",beIN SPORTS HABER
+#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER" group-title="Q",beIN SPORTS HABER
 http://ventione.duckdns.org/index.php?id=114869&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BRT 1" group-title="QHD",BRT 1
+#EXTINF:-1 tvg-id="" tvg-name="BRT 1" group-title="Q",BRT 1
 http://ventione.duckdns.org/index.php?id=114882&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BRT 2" group-title="QHD",BRT 2
+#EXTINF:-1 tvg-id="" tvg-name="BRT 2" group-title="Q",BRT 2
 http://ventione.duckdns.org/index.php?id=114883&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DA VINCI LEARNING" group-title="QHD",DA VINCI LEARNING
+#EXTINF:-1 tvg-id="" tvg-name="DA VINCI LEARNING" group-title="Q",DA VINCI LEARNING
 http://ventione.duckdns.org/index.php?id=120748&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DOCUBOX" group-title="QHD",DOCUBOX
+#EXTINF:-1 tvg-id="" tvg-name="DOCUBOX" group-title="Q",DOCUBOX
 http://ventione.duckdns.org/index.php?id=120749&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="FIGHTBOX" group-title="QHD",FIGHTBOX
+#EXTINF:-1 tvg-id="" tvg-name="FIGHTBOX" group-title="Q",FIGHTBOX
 http://ventione.duckdns.org/index.php?id=120750&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="FILMBOX" group-title="QHD",FILMBOX
+#EXTINF:-1 tvg-id="" tvg-name="FILMBOX" group-title="Q",FILMBOX
 http://ventione.duckdns.org/index.php?id=120751&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA 1001" group-title="QHD",SİNEMA 1001
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA 1001" group-title="Q",SİNEMA 1001
 http://ventione.duckdns.org/index.php?id=120754&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA 1002" group-title="QHD",SİNEMA 1002
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA 1002" group-title="Q",SİNEMA 1002
 http://ventione.duckdns.org/index.php?id=120755&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA 2" group-title="QHD",SİNEMA 2
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA 2" group-title="Q",SİNEMA 2
 http://ventione.duckdns.org/index.php?id=120756&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AKSİYON" group-title="QHD",SİNEMA AKSİYON
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AKSİYON" group-title="Q",SİNEMA AKSİYON
 http://ventione.duckdns.org/index.php?id=120757&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AKSİYON 2" group-title="QHD",SİNEMA AKSİYON 2
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AKSİYON 2" group-title="Q",SİNEMA AKSİYON 2
 http://ventione.duckdns.org/index.php?id=120758&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AİLE" group-title="QHD",SİNEMA AİLE
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AİLE" group-title="Q",SİNEMA AİLE
 http://ventione.duckdns.org/index.php?id=120759&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AİLE 2" group-title="QHD",SİNEMA AİLE 2
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA AİLE 2" group-title="Q",SİNEMA AİLE 2
 http://ventione.duckdns.org/index.php?id=120760&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA KOMEDİ" group-title="QHD",SİNEMA KOMEDİ
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA KOMEDİ" group-title="Q",SİNEMA KOMEDİ
 http://ventione.duckdns.org/index.php?id=120761&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA KOMEDİ 2" group-title="QHD",SİNEMA KOMEDİ 2
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA KOMEDİ 2" group-title="Q",SİNEMA KOMEDİ 2
 http://ventione.duckdns.org/index.php?id=120762&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SİNEMA TV" group-title="QHD",SİNEMA TV
+#EXTINF:-1 tvg-id="" tvg-name="SİNEMA TV" group-title="Q",SİNEMA TV
 http://ventione.duckdns.org/index.php?id=120763&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="VIASAT HISTORY" group-title="QHD",VIASAT HISTORY
+#EXTINF:-1 tvg-id="" tvg-name="VIASAT HISTORY" group-title="Q",VIASAT HISTORY
 http://ventione.duckdns.org/index.php?id=120764&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="24 KITCHEN" group-title="QHD",24 KITCHEN
+#EXTINF:-1 tvg-id="" tvg-name="24 KITCHEN" group-title="Q",24 KITCHEN
 http://ventione.duckdns.org/index.php?id=120765&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BOOMERANG" group-title="QHD",BOOMERANG
+#EXTINF:-1 tvg-id="" tvg-name="BOOMERANG" group-title="Q",BOOMERANG
 http://ventione.duckdns.org/index.php?id=120767&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BABY TV" group-title="QHD",BABY TV
+#EXTINF:-1 tvg-id="" tvg-name="BABY TV" group-title="Q",BABY TV
 http://ventione.duckdns.org/index.php?id=120766&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY CHANNEL" group-title="QHD",DISCOVERY CHANNEL
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY CHANNEL" group-title="Q",DISCOVERY CHANNEL
 http://ventione.duckdns.org/index.php?id=120768&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DISNEY JUNIOR" group-title="QHD",DISNEY JUNIOR
+#EXTINF:-1 tvg-id="" tvg-name="DISNEY JUNIOR" group-title="Q",DISNEY JUNIOR
 http://ventione.duckdns.org/index.php?id=120770&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY SCIENCE" group-title="QHD",DISCOVERY SCIENCE
+#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY SCIENCE" group-title="Q",DISCOVERY SCIENCE
 http://ventione.duckdns.org/index.php?id=120769&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DİZİ PREMIUM" group-title="QHD",DİZİ PREMIUM
+#EXTINF:-1 tvg-id="" tvg-name="DİZİ PREMIUM" group-title="Q",DİZİ PREMIUM
 http://ventione.duckdns.org/index.php?id=120771&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DİZİSMART MAX" group-title="QHD",DİZİSMART MAX
+#EXTINF:-1 tvg-id="" tvg-name="DİZİSMART MAX" group-title="Q",DİZİSMART MAX
 http://ventione.duckdns.org/index.php?id=120772&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 1" group-title="QHD",EUROSPORT 1
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 1" group-title="Q",EUROSPORT 1
 http://ventione.duckdns.org/index.php?id=120773&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 2" group-title="QHD",EUROSPORT 2
+#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 2" group-title="Q",EUROSPORT 2
 http://ventione.duckdns.org/index.php?id=120774&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="FOX CRIME" group-title="QHD",FOX CRIME
+#EXTINF:-1 tvg-id="" tvg-name="FOX CRIME" group-title="Q",FOX CRIME
 http://ventione.duckdns.org/index.php?id=120775&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="FX" group-title="QHD",FX
+#EXTINF:-1 tvg-id="" tvg-name="FX" group-title="Q",FX
 http://ventione.duckdns.org/index.php?id=120776&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="LOVE NATURE" group-title="QHD",LOVE NATURE
+#EXTINF:-1 tvg-id="" tvg-name="LOVE NATURE" group-title="Q",LOVE NATURE
 http://ventione.duckdns.org/index.php?id=120777&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MOVIE CLASSIC" group-title="QHD",MOVIE CLASSIC
+#EXTINF:-1 tvg-id="" tvg-name="MOVIE CLASSIC" group-title="Q",MOVIE CLASSIC
 http://ventione.duckdns.org/index.php?id=120778&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MOVIE TÜRK" group-title="QHD",MOVIE TÜRK
+#EXTINF:-1 tvg-id="" tvg-name="MOVIE TÜRK" group-title="Q",MOVIE TÜRK
 http://ventione.duckdns.org/index.php?id=120779&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NAT GEO" group-title="QHD",NAT GEO
+#EXTINF:-1 tvg-id="" tvg-name="NAT GEO" group-title="Q",NAT GEO
 http://ventione.duckdns.org/index.php?id=120780&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NAT GEO WILD" group-title="QHD",NAT GEO WILD
+#EXTINF:-1 tvg-id="" tvg-name="NAT GEO WILD" group-title="Q",NAT GEO WILD
 http://ventione.duckdns.org/index.php?id=120781&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NATURE ESCAPE" group-title="QHD",NATURE ESCAPE
+#EXTINF:-1 tvg-id="" tvg-name="NATURE ESCAPE" group-title="Q",NATURE ESCAPE
 http://ventione.duckdns.org/index.php?id=120782&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NBA TV" group-title="QHD",NBA TV
+#EXTINF:-1 tvg-id="" tvg-name="NBA TV" group-title="Q",NBA TV
 http://ventione.duckdns.org/index.php?id=120783&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="OUTDOOR" group-title="QHD",OUTDOOR
+#EXTINF:-1 tvg-id="" tvg-name="OUTDOOR" group-title="Q",OUTDOOR
 http://ventione.duckdns.org/index.php?id=120784&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT" group-title="QHD",S SPORT
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT" group-title="Q",S SPORT
 http://ventione.duckdns.org/index.php?id=120785&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT2" group-title="QHD",S SPORT2
+#EXTINF:-1 tvg-id="" tvg-name="S SPORT2" group-title="Q",S SPORT2
 http://ventione.duckdns.org/index.php?id=120786&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPORSMART" group-title="QHD",SPORSMART
+#EXTINF:-1 tvg-id="" tvg-name="SPORSMART" group-title="Q",SPORSMART
 http://ventione.duckdns.org/index.php?id=120787&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPORSMART 2" group-title="QHD",SPORSMART 2
+#EXTINF:-1 tvg-id="" tvg-name="SPORSMART 2" group-title="Q",SPORSMART 2
 http://ventione.duckdns.org/index.php?id=120788&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ÇOCUKSMART" group-title="QHD",ÇOCUKSMART
+#EXTINF:-1 tvg-id="" tvg-name="ÇOCUKSMART" group-title="Q",ÇOCUKSMART
 http://ventione.duckdns.org/index.php?id=120789&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SEMERKAND" group-title="QHD",SEMERKAND
+#EXTINF:-1 tvg-id="" tvg-name="SEMERKAND" group-title="Q",SEMERKAND
 http://ventione.duckdns.org/index.php?id=114810&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TIVIBU SPOR" group-title="QHD",TIVIBU SPOR
+#EXTINF:-1 tvg-id="" tvg-name="TIVIBU SPOR" group-title="Q",TIVIBU SPOR
 http://ventione.duckdns.org/index.php?id=114868&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ULUSAL" group-title="ULUSAL",ULUSAL
 http://umperisn.mywire.org/index.php?id=488700&token=DeaTHLesS
@@ -4698,6 +4698,12 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/275983
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/163
 #EXTINF:-1 tvg-id="Sinema Tv 2" tvg-name="SINEMA TV 2" tvg-logo="https://logo.multicms.info/tvlogo/sinemaTV2.png" group-title="TR-SINEMA",SINEMA TV 2
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/103139
+#EXTINF:-1 tvg-id="NULL" tvg-name="FILM SCREEN" tvg-logo="https://logo.multicms.info/tvlogo/filmscreen.jpg" group-title="TR-SINEMA",FILM SCREEN
+http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/275983
+#EXTINF:-1 tvg-id="SinemaTV" tvg-name="SINEMA TV" tvg-logo="https://logo.multicms.info/tvlogo/sinemaTV.jpg" group-title="TR-SINEMA",SINEMA TV
+http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/163
+#EXTINF:-1 tvg-id="Sinema Tv 2" tvg-name="SINEMA TV 2" tvg-logo="https://logo.multicms.info/tvlogo/sinemaTV2.png" group-title="TR-SINEMA",SINEMA TV 2
+http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/103139
 #EXTINF:-1 tvg-id="Sinema Tv Komedi" tvg-name="SINEMA TV KOMEDI" tvg-logo="https://img.dsmartgo.com.tr//content/w/9a/22899/Thumbnail.png?v=637451113872971832" group-title="TR-SINEMA",SINEMA TV KOMEDI
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/168
 #EXTINF:-1 tvg-id="Sinema Tv Komedi 2" tvg-name="SINEMA TV KOMEDI 2" tvg-logo="https://img.dsmartgo.com.tr//content/o/oG/22900/Thumbnail.png?v=637451114172995678" group-title="TR-SINEMA",SINEMA TV KOMEDI 2
@@ -4742,7 +4748,7 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/253585
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/286
 #EXTINF:-1 tvg-id="Nat Geo Wild" tvg-name="NAT GEO WILD " tvg-logo="http://logo.multicms.info/tvlogo/natgeowild.png" group-title="TR-BELGESEL",NAT GEO WILD 
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/282
-#EXTINF:-1 tvg-id="HABİTAT TV" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="TR-BELGESEL",HABITAT TV
+#EXTINF:-1 tvg-id="HABİTAT TV" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="TR-BELGESEL",HABITAT
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/78416
 #EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX F" tvg-logo="http://logo.multicms.info/tvlogo/dmax.png" group-title="TR-BELGESEL",DMAX
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/274
@@ -4770,8 +4776,6 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/253
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/47970
 #EXTINF:-1 tvg-id="VIASAT EXPLORE" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="TR-BELGESEL",VIASAT EXPLORER
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/234449
-#EXTINF:-1 tvg-id="BBC First" tvg-name="BBC First" tvg-logo="https://logo.multicms.info/tvlogo/BBCFirst.jpg" group-title="TR-DIZI",BBC First
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/165462
 #EXTINF:-1 tvg-id="beIN SERIES 1" tvg-name="beIN Series 1" tvg-logo="http://logo.multicms.info/logoslar/beinseries.jpg" group-title="TR-DIZI",beIN Series 1
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/222
 #EXTINF:-1 tvg-id="beIN SERIES 2" tvg-name="beIN Series 2" tvg-logo="http://logo.multicms.info/logoslar/beinseries.jpg" group-title="TR-DIZI",beIN Series 2
