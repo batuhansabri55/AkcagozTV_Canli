@@ -18,7 +18,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 5000
+ZIRH_LIMIT = 4269
 THREADS = 64 
 
 # DÜZELTME 1: tvg-agent="Firefox" kısıtlamasını aşmak için Firefox User-Agent kullanıldı.
