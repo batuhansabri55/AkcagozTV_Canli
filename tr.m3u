@@ -5051,6 +5051,8 @@ http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago_720p.m3u8?tv=1
 http://65.108.239.207/sinemaaile/index.m3u8
 #EXTINF:43200,TRT AVAZ
 https://tv-trtavaz.medya.trt.com.tr/master_720.m3u8
+#EXTINF:16,TURKHABER
+https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
 #EXTINF:60,TRT MUZIK
 https://tv-trtmuzik.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1,TH TURK HABER TV
@@ -5087,6 +5089,10 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_6409f
 https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protocol=https&output=playlist.m3u8
 #EXTINF:-1,MUKABELE TV
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/mukabele-tv/playlist.m3u8
+#EXTINF:-1,AKSU TV
+https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
+#EXTINF:-1,ANADOLUNET TV
+https://live.artidijitalmedya.com/artidijital_anadolunet/anadolunet/playlist.m3u8
 #EXTINF:-1,ARAS TV
 https://2.rtmp.org/tv217/yayin.stream/chunklist.m3u8
 #EXTINF:-1,BURSA LINE TV
@@ -5095,6 +5101,10 @@ https://edge1.socialsmart.tv/linetv/bant1/chunks.m3u8
 https://cdn1-derintv.yayin.com.tr/derintv/derintv/chunklist_w1486394141_b1796000.m3u8
 #EXTINF:-1,GURBET 24 TV
 http://cdn-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
+#EXTINF:-1,HUNAT TV
+https://live.artidijitalmedya.com/artidijital_hunattv/hunattv/playlist.m3u8
+#EXTINF:-1,ICEL TV
+https://edge1.socialsmart.tv/iceltv/bant1/playlist.m3u8
 #EXTINF:-1,İZMİR TIME 35 TV
 https://cdn-time35tv.yayin.com.tr/time35tv/time35tv/playlist.m3u8
 #EXTINF:-1,TOKAT TV
