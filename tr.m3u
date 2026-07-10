@@ -4785,15 +4785,7 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/219
 #EXTINF:-1 tvg-id="NULL" tvg-name="beIN Series 4" tvg-logo="http://logo.multicms.info/TVlogolar/beinseries.jpg" group-title="TR-DIZI",beIN Series 4
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/103134
 
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (08-07-2026 22:17) --- #
-#EXTINF:-1 tvg-id="4UTV.tr@SD",4U TV
-https://hls.4utv.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="AfroturkTV.tr@SD",AFROTURK TV
-https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
-#EXTINF:0 tvg-agent="Firefox" tvg-id="TRT 4K" tvg-name="TR: TRT 4K" tvg-logo="http://logo.multicms.info/logoslar/trt4k.png" group-title="TR-ULUSAL",TRT
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (09-07-2026 22:17) --- #
+# --- GÜNCEL ULTRA TEMİZ LİSTE (09-07-2026 21:37) --- #
 #EXTINF:-1 tvg-id="patr0nListe" tvg-name="patr0n - patr0n" group-title="patr0n",PATR0N PATR0N
 https://patr0npatr0npatr0n.patr0n
 #EXTINF:-1 tvg-id="trt1b" tvg-name="TRT 1 -B-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/14f516e981f4bc0961c5a162665814bf.jpg" group-title="Ulusal",TRT 1 B
@@ -5628,10 +5620,14 @@ https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
 http://iptv.prosto.tv:7000/ch118/video.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://cdn-i.pr.trt.com.tr/trtportal/17936234.png" tvg-id="" ,TRT MÜZİK
 https://tv-trtmuzik.medya.trt.com.tr/master_1080.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://cdn.powergroup.com.tr/image/500x500/powerapp/channels/v3/logo_35.png" tvg-id="Dummy" ,POWER
+https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlists.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://pic.rutube.ru/video/a0/75/a075757aa5433c764f49cb9636b8443f.png" tvg-id="Dummy" ,TATLISES TV
 https://cdn-4turkpop.yayin.com.tr/4turkpop/4turkpop/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png" tvg-id="Dummy" ,EZGI TV
 https://live.euromediacenter.com/ezgitv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/wy1H8jM/pturkttaze.png" tvg-id="Dummy" ,POWER TAPTAZE
+http://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://i.imgur.com/slwbux7.png" tvg-id="" ,NUMBER 1 AŞK
 http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/chunklist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/FgCW885/pturkakustik.png" tvg-id="Dummy" ,POWER AKUSTİK
@@ -5644,6 +5640,8 @@ https://cdn4.yayin.com.tr/kntv/video.m3u8
 http://65.108.239.207/bsaction1/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 1
 http://65.108.239.207/box1/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA TV 2
+http://65.108.239.207/sinema/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON 22
 http://65.108.239.207/sinemaaksiyon2/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA 10012
@@ -5666,8 +5664,6 @@ http://65.108.239.207/mvturk/index.m3u8
 http://65.108.239.207/sinemaaksiyon/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX YEŞİLÇAM
 http://65.108.239.207/sinemayerli/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",DENİZ POSTASI
-https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/chunks.m3u8
 #EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI",#EXTINF:1 TVGLOGO="HTTPS://VIPOTV.COM/WPCONTENT/UPLOADS/2019/05/24TV.PNG" GROUPTITLE="NEO HABER
 https://edge1.taksimbilisim.com/neohaber/bant1/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",DHA 2
