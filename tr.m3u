@@ -5160,6 +5160,8 @@ http://65.108.239.207/sinemaaile/index.m3u8
 https://tv-trtavaz.medya.trt.com.tr/master_720.m3u8
 #EXTINF:60,TRT MUZIK
 https://tv-trtmuzik.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1,TH TURK HABER TV
+https://edge1.socialsmart.tv/turkhaber/bant1/chunks.m3u8
 #EXTINF:-1,HABER 61
 http://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 #EXTINF:-1,DREAM TURK
@@ -5188,6 +5190,8 @@ http://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a
 http://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
 #EXTINF:-1,SEMERKAND TV WAY
 https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_6409fdaa68111.smil/playlist.m3u8
+#EXTINF:-1,KANAL ON 4 TV
+https://edge1.socialsmart.tv/on4/bant1/chunks.m3u8
 #EXTINF:-1,MC TV
 https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protocol=https&output=playlist.m3u8
 #EXTINF:-1,MUKABELE TV
@@ -5208,6 +5212,8 @@ http://cdn-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
 https://cdn-time35tv.yayin.com.tr/time35tv/time35tv/playlist.m3u8
 #EXTINF:-1,İKRA TV
 https://live.artidijitalmedya.com/artidijital_diyartv/diyartv/chunks.m3u8
+#EXTINF:-1,KANAL 32
+https://edge1.socialsmart.tv/kanal32/bant1/chunks.m3u8
 #EXTINF:-1,TOKAT TV
 https://cdn-tokattv.yayin.com.tr/tokattv/tokattv/chunklist.m3u8
 #EXTINF:-1,BELEMTÜRK
