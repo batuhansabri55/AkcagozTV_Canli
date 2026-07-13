@@ -674,6 +674,12 @@ https://cdn4.yayin.com.tr/haberrize/tracks-v1a1/mono.m3u8
 https://edge.taksimbilisim.com/birtv/bant1/playlist.m3u8
 #EXTINF:-1,BİRTV
 https://edge2.taksimbilisim.com:443/birtv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",A HABER
+https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",A HABER
+http://176.65.146.171:9981/stream/channelid/1181186653?profile=htsp
+#EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="HABER",A PARA
+http://176.65.146.171:9981/stream/channelid/876847536?profile=htsp
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/atv.png" group-title="ULUSAL",ATV
 https://bstelevision.com/proxy.php?url=http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 #EXTINF:-1 tvg-id="ATV Avrupa.de" tvg-name="ATV Avrupa TR" tvg-logo="https://i.imgur.com/8t5aAVx.png"  group-title="ULUSAL",ATV AVRUPA
@@ -872,8 +878,6 @@ http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97886
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97887
 #EXTINF:-1,A HABER
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97888
-#EXTINF:-1,A HABER
-https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
 #EXTINF:-1,CNNTURKYEDEK
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97889
 #EXTINF:-1,TRT HABER
@@ -2062,8 +2066,6 @@ http://ventione.duckdns.org/index.php?id=280698&token=DeaTHLesS
 http://ventione.duckdns.org/index.php?id=280720&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="HABER",A PARA
 http://ventione.duckdns.org/index.php?id=410&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="HABER",A PARA
-http://176.65.146.171:9981/stream/channelid/876847536?profile=htsp
 #EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="HABER",A PARA
 http://ventione.duckdns.org/index.php?id=421&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="A NEWS" group-title="HABER",A NEWS
