@@ -501,6 +501,10 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber_360p.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
 #EXTINF:-1,AHABERYEDEK
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/A_Haber.m3u
+#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",AHABERYEDEK
+https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",AHABERYEDEK
+http://176.65.146.171:9981/stream/channelid/1181186653?profile=htsp
 #EXTINF:-1,TRTHABERYEDEK
 https://tv-trthaber.medya.trt.com.tr/master_1440.m3u8?checkedby:MyWay
 #EXTINF:-1,TRTHABERYEDEK
@@ -580,6 +584,8 @@ https://vhxyrsly.rocketcdn.com/meltemtv/chunklist.m3u8
 https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
 #EXTINF:-1,APARAYEDEK
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/A_Para.m3u
+#EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="HABER",APARAYEDEK
+http://176.65.146.171:9981/stream/channelid/876847536?profile=htsp
 #EXTINF:-1,EKOTURKYEDEK
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Ekol_TV.m3u
 #EXTINF:-1,BLOOMBERG HT
@@ -674,12 +680,6 @@ https://cdn4.yayin.com.tr/haberrize/tracks-v1a1/mono.m3u8
 https://edge.taksimbilisim.com/birtv/bant1/playlist.m3u8
 #EXTINF:-1,BİRTV
 https://edge2.taksimbilisim.com:443/birtv/bant1/chunks.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",A HABER
-https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",A HABER
-http://176.65.146.171:9981/stream/channelid/1181186653?profile=htsp
-#EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="HABER",A PARA
-http://176.65.146.171:9981/stream/channelid/876847536?profile=htsp
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/atv.png" group-title="ULUSAL",ATV
 https://bstelevision.com/proxy.php?url=http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 #EXTINF:-1 tvg-id="ATV Avrupa.de" tvg-name="ATV Avrupa TR" tvg-logo="https://i.imgur.com/8t5aAVx.png"  group-title="ULUSAL",ATV AVRUPA
