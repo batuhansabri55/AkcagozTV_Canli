@@ -501,6 +501,10 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber_360p.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
 #EXTINF:-1,AHABERYEDEK
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/A_Haber.m3u
+#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",AHABERYEDEK
+https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="A HABER" group-title="HABER",AHABERYEDEK
+http://176.65.146.171:9981/stream/channelid/1181186653?profile=htsp
 #EXTINF:-1,TRTHABERYEDEK
 https://tv-trthaber.medya.trt.com.tr/master_1440.m3u8?checkedby:MyWay
 #EXTINF:-1,TRTHABERYEDEK
@@ -580,6 +584,8 @@ https://vhxyrsly.rocketcdn.com/meltemtv/chunklist.m3u8
 https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8
 #EXTINF:-1,APARAYEDEK
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/A_Para.m3u
+#EXTINF:-1 tvg-id="" tvg-name="A PARA" group-title="HABER",APARAYEDEK
+http://176.65.146.171:9981/stream/channelid/876847536?profile=htsp
 #EXTINF:-1,EKOTURKYEDEK
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Ekol_TV.m3u
 #EXTINF:-1,BLOOMBERG HT
@@ -872,8 +878,6 @@ http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97886
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97887
 #EXTINF:-1,A HABER
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97888
-#EXTINF:-1,A HABER
-https://trkvz-live.ercdn.net/ahaberhd/ahaberhd.m3u8
 #EXTINF:-1,CNNTURKYEDEK
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/97889
 #EXTINF:-1,TRT HABER
