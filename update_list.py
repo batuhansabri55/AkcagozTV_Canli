@@ -253,16 +253,19 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     if len(satir_grubu) < 2: return None
     ext_satiri = satir_grubu[0]
     link_satiri = satir_grubu[-1].strip()
+    
     if any(yasak_ip in link_satiri for yasak_ip in YASAKLI_IP_LISTESI):
         return None
     if link_satiri in eklenen_urller:
         return None
-    if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
-        return None
+        
+    # --- YENİ DÜZELTME: FilmDizi.m3u listesi yasaklı kelime filtresinden muaf tutuluyor ---
+    if "FilmDizi.m3u" not in kaynak_url:
+        if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
+            return None
     
-    # DÜZELTME 2: Gelmeyen listeler için katı yayın kontrolünü GEÇİCİ OLARAK KAPATTIK!
-    # Bu listelerdeki linkler anında .m3u dosyana eklenecektir.
-    if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u"]):
+    # --- DÜZELTME 2: FilmDizi.m3u listesi (VOD olduğu için) katı canlı yayın kontrolünden de muaf tutuldu ---
+    if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u", "filmdizi.m3u"]):
         isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
         
