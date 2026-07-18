@@ -379,7 +379,6 @@ https://tv-trtturk.medya.trt.com.tr/master.m3u8
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8
 #EXTINF:-1,TIVI 6
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
-#EXTINF:-1,SZCTVYEDEK
 #https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Sozcu_TV.m3u
 #EXTINF:-1,SZCTVYEDEK
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/szc_tv/index.m3u8
@@ -1070,158 +1069,40 @@ https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
 http://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,Dream Türk
 https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
-#EXTM3U
-#EXTINF:0,Trt 1 
-https://tv-trt1.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Trt 1 
+#EXTINF:0,Trt 1
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/trt_1/index.m3u8
-#EXTINF:0,Trt 2  
-https://tv-trt2.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Trt 2  
+#EXTINF:0,Trt 2
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/trt_2/index.m3u8
-#EXTINF:0,Atv 
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
-#EXTINF:0,Atv 
+#EXTINF:0,Atv
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/ATV_tr/index.m3u8
-#EXTINF:0,Kanal D 
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web
-#EXTINF:0,Kanal D 
-http://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8
-#EXTINF:0,Show TV 
-https://ciner.daioncdn.net/showtv/showtv.m3u8?app=showtv_web
-#EXTINF:0,Show TV 
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
-#EXTINF:0,Star  
-https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web
-#EXTINF:0,Star  
-http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
-#EXTINF:1730,Now 
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
-#EXTINF:0,Now 
+#EXTINF:0,Now
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/NOW/index.m3u8
-#EXTINF:120,Tv 8 
-https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
-#EXTINF:0,TV 8 Buçuk 
-https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web
-#EXTINF:0,a2 
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8
-#EXTINF:0,Teve 2 
-https://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
-#EXTINF:0,360 
-https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
-#EXTINF:0,Tlc 
-https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
-#EXTINF:0,Dmax  
-https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
-#EXTINF:0,Tv 100 
-https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
-#EXTINF:0,Kon 
-https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/kon_tv/index.m3u8
-#EXTINF:0,Cnbc-e 
-https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
-#EXTINF:0,Gzt Tv 
-https://gzttv-live.lg.mncdn.com/gzttv/gzttv/chunklist.m3u8
-#EXTINF:0,Kanal B 
+#EXTINF:0,Kanal B
 https://tv.kanalb.tr/hls/kanalb/index.m3u8
-#EXTINF:0,Tyt Türk 
+#EXTINF:0,Tyt Türk
 https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
-#EXTINF:0,Tmb 
+#EXTINF:0,Tmb
 https://str.yodacdn.net/tmb_tr_app/index.m3u8
-#EXTINF:0,Tv 4 
-https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
-#EXTINF:0,Bengü Türk 
-https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
-#EXTINF:0,Trt Haber  
-https://tv-trthaber.medya.trt.com.tr/master.m3u8
-#EXTINF:0,A Haber 
+#EXTINF:0,A Haber
 https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/ahaber.m3u8
-#EXTINF:0,Ntv 
-https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
-#EXTINF:18,CNN Turk
-https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/cnn_turk/index.m3u8
-#EXTINF:0,24 Tv 
-https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
-#EXTINF:0,Tgrt Haber  
-https://tgrthaber-live.daioncdn.net/tgrthaber/tgrthaber.m3u8
-#EXTINF:0,Haber Türk 
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv.m3u8
-#EXTINF:0,Bloomberg Ht 
-https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8
-#EXTINF:0,Ülke Tv 
-https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
-#EXTINF:0,Tvnet 
-https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8
-#EXTINF:0,Akit Tv 
+#EXTINF:0,Akit Tv
 https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/Akit.m3u8
-#EXTINF:0,Brt 1 
+#EXTINF:0,Brt 1
 https://edge.kuzeykibrissmart.tv/brt1/bant1/playlist.m3u8
-#EXTINF:0,Trt Türk 
-https://tv-trtturk.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Trt Avaz 
-https://tv-trtavaz.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Trt 3 - Tbmm 
+#EXTINF:0,Trt 3 - Tbmm
 https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
-#EXTINF:0,Trt Kurdi 
-https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Haber Global 
-https://tv.ensonhaber.com/haberglobal/haberglobal.m3u8
-#EXTINF:0, HT Spor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
-#EXTINF:0,Ekol TV 
-https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8
-#EXTINF:0,Ekol Sport TV 
-https://ekoltv-live.ercdn.net/ekolsport/ekolsport.m3u8
-#EXTINF:0,Halk Tv 
-https://halktv-live.daioncdn.net/halktv/halktv.m3u8
-#EXTINF:0,Szc Tv 
-https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/szc_tv/index.m3u8
-#EXTINF:0,Tv 5  
+#EXTINF:0,Tv 5
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
-#EXTINF:0,Lider Haber 
+#EXTINF:0,Lider Haber
 https://liderhaber.han686314.workers.dev/?url=https://radyotelekomtv.com/player/m3u8/12e31d9bb13fb21e4adcd3b67cfe7826/12e31d9bb13fb21e4adcd3b67cfe7826.m3u8
-#EXTINF:0,Tele 1 
-https://tele1-live.ercdn.net/tele1/tele1.m3u8
-#EXTINF:0,As Tv 
-https://live.artidijitalmedya.com/artidijital_astv/astv/playlist.m3u8
-#EXTINF:0,Tivi 6 
-https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8
-#EXTINF:0,TRT World 
-https://tv-trtworld.medya.trt.com.tr/master.m3u8
-#EXTINF:0,TRT Arabia 
-https://tv-trtarabi.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Dw Tv (English) 
-https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
-#EXTINF:0,Trt Belgesel 
-http://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
-#EXTINF:0,Krt Tv 
+#EXTINF:0,Krt Tv
 https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/Krt.m3u8
-#EXTINF:0,Ulusal Kanal 
+#EXTINF:0,Ulusal Kanal
 https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/Ulustv.m3u8
-#EXTINF:0,Trt Spor 
-https://tv-trtspor1.medya.trt.com.tr/master.m3u8
-#EXTINF:0,A Spor 
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
-#EXTINF:0,Trt Spor Yhttps://tv-trtspor2.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Sports Tv 
+#EXTINF:0,Sports Tv
 https://live.sportstv.com.tr/hls/low/sportstv_/index.m3u8
-#EXTINF:0,Fb Tv 
-https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
-#EXTINF:0,Trt Çocuk  
+#EXTINF:0,Trt Çocuk
 https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
-#EXTINF:0,Minika Çocuk 
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk_720p.m3u8
-#EXTINF:0,Minika Go 
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago_720p.m3u8
-#EXTINF:0,Trt Diyanet Çocuk 
-https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
-#EXTINF:0,Diyanet Tv 
-https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
-#EXTINF:0,Lalegül Tv 
-https://lbl.netmedya.net/hls/lalegultv.m3u8
-#EXTINF:0,Trt Müzik 
-http://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-#EXTINF:0,Dream Türk 
-https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 #EXTINF:0,Sinema Komedi
 https://proud-river-e20b.pantonum1.workers.dev/sinemakomedi.m3u8
 #EXTINF:0,Sinema Aksiyon 1
@@ -1274,8 +1155,6 @@ https://proud-river-e20b.pantonum1.workers.dev/discs.m3u8
 https://proud-river-e20b.pantonum1.workers.dev/discovery.m3u8
 #EXTINF:0,Yaban
 https://proud-river-e20b.pantonum1.workers.dev/yaban.m3u8
-#EXTINF:0,Docubox
-https://proud-river-e20b.pantonum1.workers.dev/yaban.m3u8
 #EXTINF:0,Tarih Tv
 https://proud-river-e20b.pantonum1.workers.dev/tarihtv.m3u8
 #EXTINF:0,History
@@ -1284,100 +1163,62 @@ https://proud-river-e20b.pantonum1.workers.dev/history.m3u8
 https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
 #EXTINF:0,Nat Geo
 https://saran-live.ercdn.net/natgeo/index.m3u8
-#EXTINF:0,Nat Wild
-https://saran-live.ercdn.net/natgeowild/index.m3u8
 #EXTINF:0,Love Nature
 https://proud-river-e20b.pantonum1.workers.dev/lovenature.m3u8
 #EXTINF:0,Viasat History
 https://proud-river-e20b.pantonum1.workers.dev/viasathistory.m3u8
-#EXTINF:0,beIN Sport 1 
+#EXTINF:0,beIN Sport 1
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub1.m3u8
-#EXTINF:0,beIN Sport 2 
+#EXTINF:0,beIN Sport 2
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub2.m3u8
-#EXTINF:0,beIN Sport 3 
+#EXTINF:0,beIN Sport 3
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub3.m3u8
-#EXTINF:0,beIN Sport 4 
+#EXTINF:0,beIN Sport 4
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydub4.m3u8
-#EXTINF:0,S Sport 
+#EXTINF:0,S Sport
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydus1.m3u8
-#EXTINF:0,S Sport 2 
+#EXTINF:0,S Sport 2
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydus2.m3u8
-#EXTINF:0,Tivibu Spor 1 
+#EXTINF:0,Tivibu Spor 1
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydut1.m3u8
-#EXTINF:0,Tivibu Spor 2 
+#EXTINF:0,Tivibu Spor 2
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydut2.m3u8
-#EXTINF:0,Tivibu Spor 3 
+#EXTINF:0,Tivibu Spor 3
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydut3.m3u8
-#EXTINF:0,Tivibu Spor 4 
+#EXTINF:0,Tivibu Spor 4
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydut4.m3u8
-#EXTINF:0,beIN Sport 1 
+#EXTINF:0,beIN Sport 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs1.m3u8
-#EXTINF:0,beIN Sport 1 
+#EXTINF:0,beIN Sport 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebiraz1.m3u8
-#EXTINF:0,beIN Sport 2 
+#EXTINF:0,beIN Sport 2
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs2.m3u8
-#EXTINF:0,beIN Sport 3 
+#EXTINF:0,beIN Sport 3
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs3.m3u8
-#EXTINF:0,beIN Sport 4 
+#EXTINF:0,beIN Sport 4
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs4.m3u8
-#EXTINF:0,beIN Sport 5 
+#EXTINF:0,beIN Sport 5
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs5.m3u8
-#EXTINF:0,beIN Sport Max 1 
+#EXTINF:0,beIN Sport Max 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm1.m3u8
-#EXTINF:0,beIN Sport Max 2 
+#EXTINF:0,beIN Sport Max 2
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm2.m3u8
-#EXTINF:0,S Sport 1 
+#EXTINF:0,S Sport 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess1.m3u8
-#EXTINF:0,S Sport 2 
+#EXTINF:0,S Sport 2
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess2.m3u8
-#EXTINF:0,Smart Sport 1 
+#EXTINF:0,Smart Sport 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm1.m3u8
-#EXTINF:0,Smart Sport 2 
+#EXTINF:0,Smart Sport 2
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm2.m3u8
-#EXTINF:0,Euro Sport 1 
+#EXTINF:0,Euro Sport 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees1.m3u8
-#EXTINF:0,Euro Sport 2 
+#EXTINF:0,Euro Sport 2
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees2.m3u8
 #EXTINF:-1,FILMSCREENYEDEK
 https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
 #EXTINF:-1,SINEMA TV 8
 https://host.onlineradyotv.net:8081/sdmtv/tracks-v1a1/mono.m3u8
-#EXTINF:-1,A SPOR
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub1.m3u8
-#EXTINF:-1,BEIN SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub2.m3u8
-#EXTINF:-1,BEIN SPORT 4
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub4.m3u8
-#EXTINF:-1,S Sport
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydus1.m3u8
-#EXTINF:-1,S Sport 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydus2.m3u8
-#EXTINF:-1,Tivibu Spor 1
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut1.m3u8
-#EXTINF:-1,Tivibu Spor 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut2.m3u8
-#EXTINF:-1,Tivibu Spor 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut3.m3u8
-#EXTINF:-1,beIN Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs1.m3u8
-#EXTINF:-1,beIN Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebiraz1.m3u8
-#EXTINF:-1,beIN Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs2.m3u8
-#EXTINF:-1,beIN Sport 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs3.m3u8
-#EXTINF:-1,beIN Sport 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs4.m3u8
-#EXTINF:-1,beIN Sport 5
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs5.m3u8
-#EXTINF:-1,beIN Sport Max 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm1.m3u8
-#EXTINF:-1,beIN Sport Max 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm2.m3u8
-#EXTINF:-1,S Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess1.m3u8
-#EXTINF:-1,S Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivess2.m3u8
 #EXTINF:-1,Tivibu Sport
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets.m3u8
 #EXTINF:-1,Tivibu Sport 1
@@ -1388,14 +1229,6 @@ https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets2.m3u8
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets3.m3u8
 #EXTINF:-1,Tivibu Sport 4
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets4.m3u8
-#EXTINF:-1,Smart Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm1.m3u8
-#EXTINF:-1,Smart Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivesm2.m3u8
-#EXTINF:-1,Euro Sport 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees1.m3u8
-#EXTINF:-1,Euro Sport 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivees2.m3u8
 #EXTINF:-1,Tabii
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb.m3u8
 #EXTINF:-1,Tabii 1
@@ -1484,8 +1317,6 @@ https://cdn4.yayin.com.tr/rehbertv/tracks-v1a1/mono.m3u8
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3&
 #EXTINF:-1 tvg-id="sozcuyedek" tvg-name="Sözcü Tv " tvg-logo="https://www.indyturk.com/sites/default/files/article/main_image/2021/07/07/705061-474968398.jpg" group-title="Haber",SZCTVYEDEK
 https://diyanetcocuk.testworkery0.workers.dev/?ch=sozcu
-#EXTINF:-1 tvg-id="fxyedekkablo" tvg-name="Fx Yedek" tvg-logo="https://img.dsmartgo.com.tr/content/w/Uq/16203/Thumbnail.png" group-title="SINEMA Kanalları",Fx
-https://saran-live.ercdn.net/fx/index.m3u8
 #EXTINF:-1 tvg-id="trtspor" tvg-name="TRT Spor" tvg-logo="https://dsmart-static-v2.ercdn.net/content/l/MK/11888/Thumbnail.png" group-title="Spor",TRT Spor
 https://tv-trtspor-esdai.medya.trt.com.tr/master_1440p.m3u8
 #EXTINF:-1 tvg-id="trtsporyildiz" tvg-name="TRT Spor Yıldız" tvg-logo="https://dsmart-static-v2.ercdn.net/content/h/NK/15953/Thumbnail.png" group-title="Spor",TRT Spor Yıldız
@@ -1542,30 +1373,16 @@ http://116.202.238.88/FOXTV_TR/index.m3u8
 https://mn-nl.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/fc190867-720b-4e57-b561-993d0a02bcae.png" tvg-name="Kanal B " ,Kanal B
 https://baskentaudiovideo.xyz/LiveApp/streams/mUE22idl26lA1683879097431.m3u8
-#EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/b6c2e739-0336-4e34-9f27-38e181522363.png" tvg-name="Tyt Türk " ,Tyt Türk
-https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
-#EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/500/500/channels/logos/3d8f616d-a421-4fcd-a13a-1a29e3bbd88c.png" tvg-name="Tmb " ,Tmb
-https://str.yodacdn.net/tmb_tr_app/index.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/b6abbbf7-0822-448d-a942-7af6d079d997.png" tvg-name="Tvnet " ,Tvnet
 https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/76a7dd67-cee1-4c70-914e-551d77e09661.png" tvg-name="Akit Tv " ,Akit Tv
 https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
-#EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/1f260af7-37dd-4368-8c9a-2d4c28fa5fd1.png" tvg-name="Brt 1 " ,Brt 1
-https://edge.kuzeykibrissmart.tv/brt1/bant1/playlist.m3u8
-#EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/aac80fcc-d1e7-41da-85b6-3037cc3f1a4b.png" tvg-name="Trt 3 - Tbmm " ,Trt 3 - Tbmm
-https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
-#EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/043eff4d-bde2-493c-9c7d-c07a698bb0be.png" tvg-name="Tv 5  " ,Tv 5
-https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/be5ace80-d03f-40f1-8c6b-a6e66ca96927.png" tvg-name="Krt Tv " ,Krt Tv
 https://teknobaba.han686314.workers.dev/Krt_Tv.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/4c47b639-2916-4563-9e40-0f2a7925b2ea.png" tvg-name="Cartoon Network " ,Cartoon Network
 https://dt-sinema.pantonum1.workers.dev/cartoonnetwork.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/5f895c30-fa0a-4f74-b4b6-ee562fb27e26.png" tvg-name="Ulusal Kanal " ,Ulusal Kanal
 https://teknobaba.han686314.workers.dev/Ulusal_Kanal.m3u8
-#EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/ce3a853a-b638-44b8-b4f4-9728aec137d3.png" tvg-name="Sports Tv " ,Sports Tv
-https://live.sportstv.com.tr/hls/low/sportstv_/index.m3u8
-#EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/3261c5eb-0e08-4c96-b8fc-58211e3da29c.png" tvg-name="Trt Çocuk  " ,Trt Çocuk
-https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" tvg-name="Sinema TV 1 " ,Sinema TV 1
 https://teknobaba.han686314.workers.dev/Yesilcam_Tv.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://i.hizliresim.com/2qpuwst.jpg" tvg-name="Sinema TV 2 " ,Sinema TV 2
@@ -1588,12 +1405,6 @@ https://ip100.radyotelekomtv.com:3784/stream/play.m3u8
 http://jenerik2.cdn.zerocdn.com/DeaTHLess-Jenerik.mp4
 #EXTINF:0,A Haber
 https://trn03.tulix.tv/gt-ahabertv/playlist.m3u8
-#EXTINF:0,Nat Geo
-https://saran-live.ercdn.net/natgeo/index.m3u8
-#EXTINF:0,beIN Sport 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydub3.m3u8
-#EXTINF:0,Tivibu Spor 4
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut4.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="TR | SINEMA DSMART",| ULUSAL",TRT 1
 http://vipplayer1.com:8080/play/live.php?mac=00%3A1A%3A79%3A73%3A3F%3A18&stream=229&extension=ts
 #EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="TR | SINEMA DSMART",| ULUSAL",TRT 1
