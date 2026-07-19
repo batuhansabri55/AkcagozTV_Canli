@@ -392,9 +392,6 @@ https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/C
 http://46.32.176.50/cnnturk/playlist.m3u8
 #EXTINF:-1,CNNTURKYEDEK
 http://87.121.104.29:5010@46.32.176.50/cnnturk/tracks-v1a1/mono.ts.m3u8?|User-Agent=house.com
-#EXTINF:-1,CNNTURKYEDEK
-#EXTVLCOPT:http-referrer=https://turkcanli.tv
-https://helga.iptv2022.com/cnn_turk/index.m3u8
 #EXTINF:-1,HABERTURKYEDEK
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
 #EXTINF:-1,HABERTURKYEDEK
@@ -4568,6 +4565,8 @@ http://145.239.37.125:20458/megatv/megatv/playlist.m3u8
 https://edge1.socialsmart.tv/metropoltv/smil/metropoltv/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/SDzAqYVvMUBeXEAc.png" tvg-url="https://www.onmedya.com.tr/",ON MEDYA KODLUK.COM
 https://yayin11.sunucuodasi.com/hls/mtv/live.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/aekHQqtNDDTkbSsY.png" tvg-url="https://www.ortdijital.com/",ORT TV ORDU KODLUK.COM
+https://edge1.socialsmart.tv/orttv/bant1/chunks.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/f5ac2581-0f1d-431b-9903-aee09c84a395.png" tvg-url="https://www.habertekirdag.net/",PUSULA TV TEKIRDAĞ KODLUK.COM
 https://live.euromediacenter.com/pusulatv/video.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/EgUryMmkSMbQqndp.png" tvg-url="https://rizeturktv.fm.tc/",RIZE TV KODLUK.COM
@@ -4590,8 +4589,6 @@ https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8
 https://canli.tvden.com.tr/hls/live.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/f96ef417-bec2-401c-b7fe-bdc39eaab8b0.png" tvg-url="https://viyanatv.com/",VIYANA TV KODLUK.COM
 http://nrttn172.kesintisizyayin.com:29010/nrttn/nrttn/playlist.m3u8
-#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/rxVyqmAJtaMWdEqt.png" tvg-url="https://vrt.net.tr/",VRT TV KODLUK.COM
-https://vrttv.ozelip.com:3278/hybrid/play.m3u8
 #EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/fcbf6d4a-eebe-41c2-b7b0-db16bff9f57f.png" tvg-url="https://www.ankara.com.tr/",ABB TV KODLUK.COM
 https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/playlist.m3u8
 #EXTINF:-1 group-title="Kurumlar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ZiwsbLJCHKJeKIkZ.png" tvg-url="",MILLI PIYANGO TV KODLUK.COM
@@ -8088,6 +8085,8 @@ http://mag.tivi-one-iptv.net/play/live.php?mac=00%3A1A%3A79%3A4F%3A67%3A78&strea
 https://live.yoltv.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="TRT1"  group-title="ULUSAL",TRT1
 http://176.65.146.171:9981/stream/channelid/838617424?profile=htsp
+#EXTINF:-1,KANAL 23
+https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
 #EXTINF:-1,KANAL 34
 https://live.euromediacenter.com/kanal34/tracks-v1a1/mono.m3u8
 #EXTINF:-1,KANAL 58
@@ -8134,8 +8133,6 @@ http://65.108.239.207/sinemaaile/index.m3u8
 https://tv-trtavaz.medya.trt.com.tr/master_720.m3u8
 #EXTINF:60,TRT MUZIK
 https://tv-trtmuzik.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1,TH TURK HABER TV
-https://edge1.socialsmart.tv/turkhaber/bant1/chunks.m3u8
 #EXTINF:-1,HABER 61
 http://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 #EXTINF:-1,DREAM TURK
