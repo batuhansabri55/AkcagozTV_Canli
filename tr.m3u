@@ -5276,8 +5276,6 @@ http://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 https://live.duhnet.tv//S2/HLS_LIVE/dreamturknp/playlist.m3u8
 #EXTINF:-1,POWER LOVE
 https://listen.powerapp.com.tr/plove/love.smil/playlist.m3u8
-#EXTINF:-1,NR 1 DAMAR
-https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e19877b340.smil/chunklist_b400000.m3u8?md5=api5VtN5dEXl5cvRHMQBNQ&expires=1696713505
 #EXTINF:-1,NR 1 TV
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/chunklist_b400000.m3u8
 #EXTINF:-1,POWER TURK SLOW
@@ -5316,6 +5314,8 @@ https://edge1.socialsmart.tv/kanal32/bant1/chunks.m3u8
 https://cdn-tokattv.yayin.com.tr/tokattv/tokattv/chunklist.m3u8
 #EXTINF:-1,BELEMTÜRK
 https://edge.socialsmart.tv/belemturktv/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGcdX8RFFGHnr6abeuEUZYKUW9xNNlW_GmQ&s" group-title="ULUSAL",CINE 1
+https://canliyayin.cine1.com.tr/memfs/cbaef080-a742-4644-9e9e-2b9f6a5103c3.m3u8
 #EXTINF:-1 Yedek="https://tv-trtcocuk.medya.trt.com.tr/master_1080.m3u8" Yedek2="http://185.234.111.229:8000/play/a00b" Yedek3="https://trn03.tulix.tv/gt-trtcocuk/index.m3u8" Yedek4="https://helga.iptv2022.com/sh/trt_cocuk/tracks-v4a1/mono.ts.m3u8?filter.tracks=a1v1v2v3v4" tvg-id="TRT ÇOCUK HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/23/TRT_çocuk_logo.png" group-title="ULUSAL",TRT COCUK
 https://tv-trtcocuk.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 Yedek1="https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master-720p-3328.m3u8" Yedek2="https://tagesschau-live.ard-mcdn.de/tagesschau/live/hls/de/master.m3u8" tvg-id="tagesschau24.de" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/20/Tagesschau24_Cornerlogo.png" group-title="ULUSAL",TAGESSCHAU 24
@@ -5326,6 +5326,12 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/saudi_sunnah-avc1_600000=2-mp4a_145600_ara=3.m3u8
 #EXTINF:-1 Yedek="http://78.128.125.60:9980/play/a01n/index.m3u8" Yedek2="https://helga.iptv2022.com/sh/trt_spor/tracks-v3a1/mono.m3u8?filter.tracks=a1v1v2v3v4" Yedek3="https://iptv-worker.mark-clark.workers.dev/?ID=20" Yedek4="http://31.222.206.98/8827/tracks-v1a1/mono.ts.m3u8?token=test" Yedek5="https://trn03.tulix.tv/gt-trtspor1/index.m3u8" Yedek6="http://176.65.146.171:9981/stream/channelid/835819132?profile=htsp" Yedek7="http://85.209.248.3:9897/trt3spor" tvg-id="TRT SPOR HD.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNu1KowYW0Ywy_-lMPzCvLGBMUaNIUAUIcwGGX1iLjHzhRclixpxWjf4lLG9QeYDPg754&usqp=CAU" group-title="ULUSAL",TRT SPOR
 http://176.65.146.171:9981/stream/channelid/835819132?profile=htsp
+#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="Kanal D" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/a/-p/245931/logo.png?v=638804938239723164" group-title="Ulusal",KANAL D
+http://104.238.23.191/1571dsgo.php?id=245931
+#EXTINF:-1 tvg-id="TV2.tr" tvg-name="TV2" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/B/WE/245991/logo.png?v=639029456898926668" group-title="Ulusal",TV2
+http://104.238.23.191/1571dsgo.php?id=245991
+#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="Show TV" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/X/rT/245949/logo.png?v=638671713564122216" group-title="Ulusal",SHOW TV
+http://104.238.23.191/1571dsgo.php?id=245949
 #EXTINF:-1 tvg-id="trt1b" tvg-name="TRT 1 -B-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/14f516e981f4bc0961c5a162665814bf.jpg" group-title="Ulusal",TRT 1 B
 https://ghjkli.denek1544.workers.dev/izle/trt1-114.m3u8?token=9f729ead4550d54b1b7a4cc67e270569
 #EXTINF:-1 tvg-id="kanald" tvg-name="Kanal D -A-" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/7c5c8e0ca5549732e5ceda6fcc62748d.jpg" group-title="Ulusal",KANAL D A
@@ -5400,8 +5406,6 @@ https://ghjkli.denek1544.workers.dev/izle/viasathistory.m3u8?token=9f729ead4550d
 https://ghjkli.denek1544.workers.dev/izle/lovenature.m3u8?token=9f729ead4550d54b1b7a4cc67e270569
 #EXTINF:-1 tvg-id="bbcearth" tvg-name="BBC Earth" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/jpg/9ed6faa15f968198d17c0362658f6b50.jpg" group-title="Belgesel",BBC EARTH
 https://ghjkli.denek1544.workers.dev/izle/bbcearthhd.m3u8?token=9f729ead4550d54b1b7a4cc67e270569
-#EXTINF:-1 tvg-id="discoverychannel" tvg-name="Discovery Channel" tvg-logo="https://img.dsmartgo.com.tr/content/r/9C/11894/Thumbnail.png" group-title="Belgesel",DISCOVERY CHANNEL
-https://oevladi.testworker0y.workers.dev/channel/RGlzY292ZXJ5IENoYW5uZWw=?token=9f729ead4550d54b1b7a4cc67e270569
 #EXTINF:-1 tvg-id="discoveryscience" tvg-name="Discovery Science" tvg-logo="https://img.dsmartgo.com.tr/content/b/vE/11891/Thumbnail.png" group-title="Belgesel",DISCOVERY SCIENCE
 https://oevladi.testworker0y.workers.dev/channel/RGlzY292ZXJ5IFNjaWVuY2U=?token=9f729ead4550d54b1b7a4cc67e270569
 #EXTINF:-1 tvg-id="discoveryid" tvg-name="Discovery ID" tvg-logo="https://dsmart-static-v2.ercdn.net/content/b/vE/11891/Thumbnail.png" group-title="Belgesel",DISCOVERY ID
