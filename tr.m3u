@@ -4380,6 +4380,8 @@ https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/chunks.m3u8
 https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/chunks.m3u8
 #EXTINF:-1,METROPOL TV
 https://edge1.socialsmart.tv/metropoltv/smil/metropoltv/bant1/chunks.m3u8?app=supersatforum
+#EXTINF:-1,MUGLA TV
+https://edge1.socialsmart.tv/muglaturk/bant1/chunks.m3u8
 #EXTINF:-1,VUSLAT TV
 https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
 #EXTINF:-1,DAMAR TV
@@ -4404,6 +4406,8 @@ https://tvsms.club/tvz.php?kanal=arma&file=.m3u8
 https://tvsms.club/tv.php?kanal=genctv&file=.m3u8
 #EXTINF:-1,SAGLIK CHANEL
 https://live.euromediacenter.com/saglikchannel/tracks-v1a1/mono.m3u8
+#EXTINF:-1,ALANYA ATV
+https://helga.iptv2022.com/sh/AlanyaTV/tracks-v1a1/mono.m3u8
 #EXTINF:-1,HÜR TV
 https://live.euromediacenter.com/hurtv/tracks-v1a1/mono.m3u8
 #EXTINF:-1,BRÜKSEL
@@ -7920,6 +7924,8 @@ https://live.artidijitalmedya.com/artidijital_sunrtv/sunrtv/chunks.m3u8
 https://cdn-telenews.yayin.com.tr/telenews/index.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/JtoRCZaFGLCIRAzB.png" tvg-url="http://www.tokattv.com/",TOKAT RADYO TV KODLUK.COM
 https://cdn-tokattv.yayin.com.tr/tokattv/tokattv/playlist.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/VHXdgSoDPClqVGGJ.png" tvg-url="https://www.tvbir.com.tr/",TV1 KAYSERI KODLUK.COM
+https://edge1.socialsmart.tv/tv1/bant1/chunks.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/npFwvILQbUBBRTKm.png" tvg-url="https://tv41.com.tr/",TV 41 KODLUK.COM
 https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/IIcmINZGiVpMMzGS.png" tvg-url="https://tvden.com.tr/",TV DEN KODLUK.COM
@@ -7940,6 +7946,8 @@ https://live.duhnet.tv/S2/HLS_LIVE/sisalsansanp/playlist.m3u8
 https://live.duhnet.tv/S2/HLS_LIVE/sisalsanscnp/playlist.m3u8
 #EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/" tvg-url="https://www.millipiyangoonline.com/sanal-oyunlar",TERS KÖŞE KODLUK.COM
 https://live.duhnet.tv/S2/HLS_LIVE/sisalsansdnp/playlist.m3u8
+#EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/cbelsPOmBCTnEzVC.png" tvg-url="https://brtk.net/",BRT 1 KODLUK.COM
+https://edge.kuzeykibrissmart.tv/brt1hd/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/gulobIFJZVxVMwJH.png" tvg-url="https://brtk.net/",BRT 2 KODLUK.COM
 https://edge.kuzeykibrissmart.tv/brt2hd/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/NqdbTUtLejrZyoGA.png" tvg-url="https://www.adatv.tv/",ADA TV KODLUK.COM
@@ -7958,8 +7966,6 @@ https://edge.kuzeykibrissmart.tv/tv2020/bant1/playlist.m3u8
 https://yayin.santraltr.com/hls/arabeskyeni.m3u8
 #EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/KfQFMvnjBlZdvoyg.png" tvg-url="https://tvsms.club/",DAMAR TV KODLUK.COM
 https://yayin.santraltr.com/hls/damar.m3u8
-#EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/UcZwKbIMEWLHVwVZ.png" tvg-url="https://tvsms.club/",DOST WEB TV KODLUK.COM
-https://yayin.santraltr.com/hls/dost.m3u8
 #EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/iLFrTjDGWjlPUddV.png" tvg-url="https://tvsms.club/",EZO TV KODLUK.COM
 https://yayin.santraltr.com/hls/ezo.m3u8
 #EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/KEsnOtpGgHfMaWMo.png" tvg-url="https://tvsms.club/",GENÇ SMS TV KODLUK.COM
@@ -7970,8 +7976,6 @@ https://yayin.santraltr.com/hls/zeynotv.m3u8
 https://yayin.santraltr.com/hls/rosatv.m3u8
 #EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/RBeouGPRYoxROPZg.png" tvg-url="https://tvsms.club/",SILA TV KODLUK.COM
 https://yayin.santraltr.com/hls/silatv.m3u8
-#EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/pYjWMUmLeUHlFzdI.png" tvg-url="https://tvsms.club/",TOP POP TV KODLUK.COM
-https://yayin.santraltr.com/hls/toppop.m3u8
 #EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ruJJnriKStvAyRem.png" tvg-url="https://foramuzik.com/",FORA MÜZIK KODLUK.COM
 http://145.239.37.125:20458/foramuzik/foramuzik/playlist.m3u8
 #EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="Kanal D" tvg-logo="https://zdi2vdd5r0wt.merlincdn.net/content/a/-p/245931/logo.png?v=638804938239723164" group-title="Ulusal",KANAL D
@@ -15082,8 +15086,6 @@ http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/db3008c7-02fb-41af-8b99-34e10d5
 http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/fca0bcec-69fe-42e8-8942-a766563eb82b.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeo.png" group-title="Türk UHD",NAT GEOGRAPHIC
 http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/2c50d6dc-9669-4ff5-a04d-9fad60147cde.m3u?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk UHD",NAT GEOGRAPHIC WILD
-http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/e50821ba-9c39-40b1-b6b4-7657ff96b8a0.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:BEINSPORTS 4K (MAC ZAMANI)" tvg-logo="https://i0.wp.com/resim.yayins.com/ek1/bein4Kmac.png" group-title="Türk UHD",BEINSPORTS
 http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/553f6670-08c6-412f-b7c8-51ef5ec5a95d.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:BEINSPORTS 1 UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/bein1.png" group-title="Türk UHD",BEINSPORTS 1
@@ -15392,7 +15394,7 @@ http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/656ebd7c-b56e-4439-90ba-3311d1f
 http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/58e211f5-109b-45ef-a331-61bde172676d.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeo.png" group-title="Türk Belgesel",NAT GEOGRAPHIC
 http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/4dd3480f-60a7-4f71-bb2f-e32ae1f0d208.m3u?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk Belgesel",NAT GEOGRAPHIC WILD
+#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk Belgesel",NAT GEOGRAPHIC
 http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/5e553f2a-701d-4765-8dc0-26533da601db.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:DISCOVERY CHANNEL HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/discovery.png" group-title="Türk Belgesel",DISCOVERY CHANNEL
 http://portal.priwes.com/live/qGSiDGvN/gfhnbrtdw/cd2284b3-d910-4312-a8ee-d816963d6235.m3u?output=ts
