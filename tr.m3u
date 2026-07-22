@@ -8672,6 +8672,8 @@ http://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
 http://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/AmbjxRavXbOLkuNk.png" tvg-url="https://www.turkuvapp.com/",MÜZIK TV KODLUK.COM
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/muziktv/playlist.m3u8
+#EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/WIUPgUzQTWHKqJfN.png" tvg-url="https://www.semerkandway.com/",SEMERKAND WAY KODLUK.COM
+https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_6409fdaa68111.smil/playlist.m3u8
 #EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/mZWrPstELGyrvhKQ.png" tvg-url="https://www.mihrap.tv/",MIHRAP TV KODLUK.COM
 https://yayin30.haber100.com/live/mihraptv/chunklist.m3u8
 #EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/klFLfwPuisNUlgQL.png" tvg-url="https://asftv.com.tr/",ASF TV KODLUK.COM
@@ -8696,6 +8698,8 @@ https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/islamtv/playlist.m3u8
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/kurani-kerim-dersleri-tv/playlist.m3u8
 #EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/blLZMhLIwwPDSmCf.png" tvg-url="https://www.turkuvapp.com/",AILE TV KODLUK.COM
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/aile-tv/playlist.m3u8
+#EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/HScxDtghFCKLqdVn.png" tvg-url="https://www.turkuvapp.com/",MUKABELE TV KODLUK.COM
+https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/mukabele-tv/playlist.m3u8
 #EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ZfAbIBvlWKcQKLsm.png" tvg-url="https://www.turkuvapp.com/",TARIH TV KODLUK.COM
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/tarih-tv/playlist.m3u8
 #EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/qcOrqYXUNozsqMVd.png" tvg-url="https://www.turkuvapp.com/",VAAZ TV KODLUK.COM
@@ -8772,10 +8776,18 @@ https://live.euromediacenter.com/euronews34/video.m3u8
 https://edge1.socialsmart.tv/frttv/bant1/chunks.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/qZIsvyMwodnNRHnb.png" tvg-url="https://gemlikinsesitv.com/",GEMLIKIN SESI TV KODLUK.COM
 https://gemlikinsesitv.ozelip.com:3764/stream/play.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://assets.uzunmuhalefet.com/logos/f7ec78f8-43d2-4117-913a-7f45893d6774.png" tvg-url="https://www.grt.com.tr/",GRT TV KODLUK.COM
+https://live.artidijitalmedya.com/artidijital_grt/grt/chunks.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/tlxIQlRonMkaeTav.png" tvg-url="https://www.gurbet24.com/",GURBET 24 TV KODLUK.COM
 https://cdn1-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/njAlcivViYFPGaUJ.png" tvg-url="https://www.haber61.net/haber61-tv",HABER 61 TV KODLUK.COM
 https://cdn-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/bvpxbkuyJjvCTrQT.png" tvg-url="https://www.hurtvradyo.com/",HÜR TV KODLUK.COM
+https://live.euromediacenter.com/hurtv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/TSgzGlSZAbFmvDQd.png" tvg-url="https://www.isvicretv.com/",İSVIÇRE TV KODLUK.COM
+https://i41.ozelip.com:3269/hybrid/play.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/wqIlIpGITrxarhWa.png" tvg-url="https://www.izmirtime35.com/",İZMIR TIME 35 TV KODLUK.COM
+https://cdn-time35tv.yayin.com.tr/time35tv/time35tv/playlist.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/LwGgfatdptroYOeD.png" tvg-url="https://kanal13.com.tr/",KANAL 13 KODLUK.COM
 https://cdn4.yayin.com.tr/kanal13/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/KDYBwPhwjwViCXEz.png" tvg-url="https://www.kanal23.com/",KANAL 23 KODLUK.COM
@@ -8786,10 +8798,18 @@ https://live.artidijitalmedya.com/artidijital_kanal3/kanal3/chunks.m3u8
 https://live.euromediacenter.com/kanal34/index.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/rpyDzLxGdFCToLmf.png" tvg-url="https://www.kanalada.com/",KANAL ADA KODLUK.COM
 http://ip252.ozelip.com:28008/kanalada/kanalada/sec-f5-v1-a1.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/qLEQgkxLCnXxwvnp.png" tvg-url="https://www.kanalplus.com.tr/",KANAL KODLUK.COM
+https://live.artidijitalmedya.com/artidijital_kanalplus/kanalplus/mpeg/playlist.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/twNRsHEFCSaJggGY.png" tvg-url="https://www.kanalurfa.com/",KANAL URFA KODLUK.COM
+https://edge1.socialsmart.tv/kanalurfa/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/WlQrWhPoQLWltFCn.png" tvg-url="",KARADENIZ TV KODLUK.COM
 https://live.euromediacenter.com/karadeniztv/video.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/UrUUDEDhrNyAMOdQ.png" tvg-url="https://kent64.com.tr/",KENT 64 TV KODLUK.COM
 http://145.239.37.125:20458/kent64/kent64/playlist.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/vUdUeOjMswCwOndA.png" tvg-url="https://ktvtv.com.tr/",KTV KONYA KODLUK.COM
+https://cdn-ktvtv.yayin.com.tr/ktvtv/ktvtv/playlist.m3u8
+#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/fqxlBQHLbsRIsUzI.png" tvg-url="https://www.malatyavuslattv.com/",MALATYA VUSLAT TV KODLUK.COM
+https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ZqvNdfgLMqFkSDtS.png" tvg-url="",MEDYA TV KODLUK.COM
 https://live.euromediacenter.com/medyatv/index.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/cHWGdmHJjnxTvnWb.png" tvg-url="https://www.megatviskenderun.com/",MEGA TV İSKENDERUN KODLUK.COM
@@ -8806,8 +8826,6 @@ https://live.euromediacenter.com/pusulatv/video.m3u8
 http://145.239.37.125:20458/rumeliturk/rumeliturk/playlist.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/RBGtgTIXAlxbeaES.png" tvg-url="https://sen1ordusun.org/",SEN 1 ORDUSUN KODLUK.COM
 https://live.euromediacenter.com/sen1ordusun/video.m3u8
-#EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/iGLwKhhYCQQZSTNs.png" tvg-url="https://www.serhattv.com.tr/",SERHAT TV KODLUK.COM
-https://sonmeztv.ozelip.com.tr:3826/live/sonmeztvlive.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/TgFQGtGFlBwNwyte.png" tvg-url="https://www.sunrtv.com.tr/",SUN RTV KODLUK.COM
 https://live.artidijitalmedya.com/artidijital_sunrtv/sunrtv/chunks.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/yQgoEdMuZaJdHHuj.png" tvg-url="https://telenews.com.tr/",TELE NEWS KODLUK.COM
