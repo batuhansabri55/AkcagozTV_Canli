@@ -19,9 +19,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 4350
-THREADS = 64 
+THREADS = 64
 
-# DÜZELTME 1: tvg-agent="Firefox" kısıtlamasını aşmak için Firefox User-Agent kullanıldı.
+# tvg-agent="Firefox" kısıtlamasını aşmak için Firefox User-Agent kullanıldı.
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
 }
@@ -40,32 +40,23 @@ YASAKLI_GRUPLAR = [
     "Superxfilm", "CINEMAMOD", "Adult", "XXX", "+18", "Yetişkin", "Yetiskin",
     "Pink", "Redlight", "Playboy", "Penthouse", "Vivid", "Hustler", "Erotic", "Forbidden",
 
-    # CINE OFFICE (1 - 20)
+    # EKSİK OLAN CINE, SPOR VE YESILCAM GRUPLARI EKLENDİ
     "CINE OFFICE 1", "CINE OFFICE 2", "CINE OFFICE 3", "CINE OFFICE 4", "CINE OFFICE 5",
     "CINE OFFICE 6", "CINE OFFICE 7", "CINE OFFICE 8", "CINE OFFICE 9", "CINE OFFICE 10",
     "CINE OFFICE 11", "CINE OFFICE 12", "CINE OFFICE 13", "CINE OFFICE 14", "CINE OFFICE 15",
     "CINE OFFICE 16", "CINE OFFICE 17", "CINE OFFICE 18", "CINE OFFICE 19", "CINE OFFICE 20",
-    
-    # TABII SPOR (TABII SPOR ve 1 - 7)
     "TABII SPOR", "TABII SPOR 1", "TABII SPOR 2", "TABII SPOR 3", "TABII SPOR 4", 
     "TABII SPOR 5", "TABII SPOR 6", "TABII SPOR 7",
-    
-    # TIVIBUSPOR (TIVIBUSPOR ve 1 - 10)
     "TIVIBUSPOR", "TIVIBUSPOR 1", "TIVIBUSPOR 2", "TIVIBUSPOR 3", "TIVIBUSPOR 4", 
     "TIVIBUSPOR 5", "TIVIBUSPOR 6", "TIVIBUSPOR 7", "TIVIBUSPOR 8", "TIVIBUSPOR 9", "TIVIBUSPOR 10",
-    
-    # CINE YESILCAM (1 - 10)
     "CINE YESILCAM 1", "CINE YESILCAM 2", "CINE YESILCAM 3", "CINE YESILCAM 4", "CINE YESILCAM 5",
     "CINE YESILCAM 6", "CINE YESILCAM 7", "CINE YESILCAM 8", "CINE YESILCAM 9", "CINE YESILCAM 10",
-    
-    # CINELUX VIZYON (1 - 10)
     "CINELUX VIZYON 1", "CINELUX VIZYON 2", "CINELUX VIZYON 3", "CINELUX VIZYON 4", "CINELUX VIZYON 5",
     "CINELUX VIZYON 6", "CINELUX VIZYON 7", "CINELUX VIZYON 8", "CINELUX VIZYON 9", "CINELUX VIZYON 10",
-    
-    # CINELUX YESILCAM (CINELUX YESILCAM ve 1 - 10)
     "CINELUX YESILCAM", "CINELUX YESILCAM 1", "CINELUX YESILCAM 2", "CINELUX YESILCAM 3", "CINELUX YESILCAM 4",
     "CINELUX YESILCAM 5", "CINELUX YESILCAM 6", "CINELUX YESILCAM 7", "CINELUX YESILCAM 8", "CINELUX YESILCAM 9", "CINELUX YESILCAM 10"
 ]
+
 HAVUZ_YASAKLI_KELIMELER = [
     "S01", "S02", "S03", "E01", "E02", "E03", "E04", "E05", "1080p.m3u8",
     "FILM", "MOVIES", "MOVIE", "SERIES", "DIZI", "DIZILERI", "DIZILER",
@@ -76,32 +67,23 @@ HAVUZ_YASAKLI_KELIMELER = [
     "ADULT", "XXX", "+18", "YETISKIN", "YETİŞKİN", "PINK", "REDLIGHT", "PLAYBOY", 
     "PENTHOUSE", "VIVID", "HUSTLER", "EROTIC", "FORBIDDEN",
     
-    # CINE OFFICE (1 - 20)
+    # EKSİK OLAN CINE, SPOR VE YESILCAM GRUPLARI EKLENDİ
     "CINE OFFICE 1", "CINE OFFICE 2", "CINE OFFICE 3", "CINE OFFICE 4", "CINE OFFICE 5",
     "CINE OFFICE 6", "CINE OFFICE 7", "CINE OFFICE 8", "CINE OFFICE 9", "CINE OFFICE 10",
     "CINE OFFICE 11", "CINE OFFICE 12", "CINE OFFICE 13", "CINE OFFICE 14", "CINE OFFICE 15",
     "CINE OFFICE 16", "CINE OFFICE 17", "CINE OFFICE 18", "CINE OFFICE 19", "CINE OFFICE 20",
-    
-    # TABII SPOR (TABII SPOR ve 1 - 7)
     "TABII SPOR", "TABII SPOR 1", "TABII SPOR 2", "TABII SPOR 3", "TABII SPOR 4", 
     "TABII SPOR 5", "TABII SPOR 6", "TABII SPOR 7",
-    
-    # TIVIBUSPOR (TIVIBUSPOR ve 1 - 10)
     "TIVIBUSPOR", "TIVIBUSPOR 1", "TIVIBUSPOR 2", "TIVIBUSPOR 3", "TIVIBUSPOR 4", 
     "TIVIBUSPOR 5", "TIVIBUSPOR 6", "TIVIBUSPOR 7", "TIVIBUSPOR 8", "TIVIBUSPOR 9", "TIVIBUSPOR 10",
-    
-    # CINE YESILCAM (1 - 10)
     "CINE YESILCAM 1", "CINE YESILCAM 2", "CINE YESILCAM 3", "CINE YESILCAM 4", "CINE YESILCAM 5",
     "CINE YESILCAM 6", "CINE YESILCAM 7", "CINE YESILCAM 8", "CINE YESILCAM 9", "CINE YESILCAM 10",
-    
-    # CINELUX VIZYON (1 - 10)
     "CINELUX VIZYON 1", "CINELUX VIZYON 2", "CINELUX VIZYON 3", "CINELUX VIZYON 4", "CINELUX VIZYON 5",
     "CINELUX VIZYON 6", "CINELUX VIZYON 7", "CINELUX VIZYON 8", "CINELUX VIZYON 9", "CINELUX VIZYON 10",
-    
-    # CINELUX YESILCAM (CINELUX YESILCAM ve 1 - 10)
     "CINELUX YESILCAM", "CINELUX YESILCAM 1", "CINELUX YESILCAM 2", "CINELUX YESILCAM 3", "CINELUX YESILCAM 4",
     "CINELUX YESILCAM 5", "CINELUX YESILCAM 6", "CINELUX YESILCAM 7", "CINELUX YESILCAM 8", "CINELUX YESILCAM 9", "CINELUX YESILCAM 10"
 ]
+
 YASAKLI_IP_LISTESI = [
     "87.121.104.29",
     "87.121.104.29:1071"
@@ -150,7 +132,8 @@ def havuzu_indir():
     try:
         response = session.get(BUYUK_HAVUZ_URL, timeout=10)
         if response.status_code == 200:
-            linkler = re.findall(r'(http://[^\s"\']+get\.php\?[^\s"\']+)', response.text)
+            # HTTPS destekleyen regex ile düzeltildi
+            linkler = re.findall(r'(https?://[^\s"\']+get\.php\?[^\s"\']+)', response.text)
             return list(dict.fromkeys(linkler))
     except requests.RequestException:
         pass
@@ -310,12 +293,10 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
     if link_satiri in eklenen_urller:
         return None
         
-    # --- YENİ DÜZELTME: FilmDizi.m3u listesi yasaklı kelime filtresinden muaf tutuluyor ---
     if "FilmDizi.m3u" not in kaynak_url:
         if any(yasak.lower() in ext_satiri.lower() for yasak in YASAKLI_GRUPLAR) or any(yasak.lower() in link_satiri.lower() for yasak in HAVUZ_YASAKLI_KELIMELER):
             return None
     
-    # --- DÜZELTME 2: FilmDizi.m3u listesi (VOD olduğu için) katı canlı yayın kontrolünden de muaf tutuldu ---
     if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u", "filmdizi.m3u"]):
         isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
@@ -347,18 +328,12 @@ def main():
         with open(FILE_PATH, 'r', encoding='utf-8') as f:
             tum_lines = f.readlines()
 
-            # --- KESİN KORUMA ALANI ---
-            # Zırhlı satırları HİÇBİR FİLTREYE SOKMADAN direkt alıyoruz.
             ana_liste_zirh = tum_lines[:ZIRH_LIMIT]
             
-            # Zırhlı içindeki linkleri kaydedelim ki aşağıda yenileri bulduğunda tekrar eklemesin
             for s in ana_liste_zirh:
                 if s.strip().startswith("http"):
                     eklenen_urller.add(s.strip())
-            # --------------------------
 
-            # --- HAVUZ ARAMA ALANI ---
-            # Zırhın "dışında" kalan kısımlarda havuzu arıyoruz, zırha dokunması imkansız.
             geriye_kalan_satirlar = tum_lines[ZIRH_LIMIT:]
             havuz_header_index = next((idx for idx, line in enumerate(geriye_kalan_satirlar) if "# --- BÜYÜK HAVUZDAN" in line), -1)
             
@@ -372,7 +347,6 @@ def main():
                     if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
                         print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
                         
-                        # Eski havuz için yasaklı IP temizliği yapılıyor
                         temiz_eski_havuz = []
                         for s in eski_havuz_satirlari:
                             if any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
@@ -418,7 +392,6 @@ def main():
         ana_liste_zirh.insert(0, "#EXTM3U\n")
 
     with open(FILE_PATH, 'w', encoding='utf-8') as f:
-        # Zırhlı liste en başa direkt yazılıyor
         f.writelines(ana_liste_zirh)
         
         if final_listesi:
