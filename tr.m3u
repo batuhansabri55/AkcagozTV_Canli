@@ -7254,16 +7254,10 @@ https://canli.tgrthaber.com/tgrt.m3u8
 https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 #EXTINF:-1 group-title="Haber" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/epcuVsgMJHjvCeYO.png" tvg-url="https://flashhabertv.com.tr/",FLASH HABER TV KODLUK.COM
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/wEMxkhIvtEcalAvH.png" tvg-url="https://www.liderhaber.com.tr/",LIDER HABER TV KODLUK.COM
-http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
 #EXTINF:-1 group-title="Haber" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/zevFsdrUNkeZWdph.png" tvg-url="https://neohaber.com/",NEO HABER KODLUK.COM
 https://edge.socialsmart.tv/neohaber/bant1/chunks.m3u8
 #EXTINF:-1 group-title="Haber" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/KdCbonwcVLwONRDp.png" tvg-url="https://www.dha.com.tr/",DHA 1 KODLUK.COM
 https://603c568fccdf5.streamlock.net/live/dhaweb1_C5efC/chunklist_w630024058.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/KdCbonwcVLwONRDp.png" tvg-url="https://www.dha.com.tr/",DHA 2 KODLUK.COM
-https://603c568fccdf5.streamlock.net/live2/dhaweb2/playlist.m3u8
-#EXTINF:-1 group-title="Haber" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/bYRxrbPqEtjemIzy.png" tvg-url="https://bha.net.tr/",BHA TV KODLUK.COM
-https://live.euromediacenter.com/bhatv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Ulusal - Yurt Dışı" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/fDbEcrRksiSZiXlF.png" tvg-url="https://kanalavrupa.tv/",KANAL AVRUPA KODLUK.COM
 http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 #EXTINF:-1 group-title="Ekonomi" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/wzUGHXTqTnYAzacY.png" tvg-url="https://www.apara.com.tr/",A PARA KODLUK.COM
@@ -7296,12 +7290,6 @@ https://str.yodacdn.net/tmb_tr_app/tracks-v1a1/mono.ts.m3u8?token=tmb_app_token_
 http://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/iCHdBqrywsbKyyFo.png" tvg-url="https://www.powerapp.com.tr/",POWERTÜRK SLOW KODLUK.COM
 http://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/IzxFlzYGlzdSMNaQ.png" tvg-url="https://www.powerapp.com.tr/",POWERTÜRK AKUSTIK KODLUK.COM
-http://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/bHPmyBOLeZMlJoyd.png" tvg-url="https://www.powerapp.com.tr/",POWER LOVE KODLUK.COM
-http://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/WpKVsqlJuaeOkuWZ.png" tvg-url="",4 POP KODLUK.COM
-https://cdn-4turkpop.yayin.com.tr/4turkpop/4turkpop/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/AmbjxRavXbOLkuNk.png" tvg-url="https://www.turkuvapp.com/",MÜZIK TV KODLUK.COM
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/muziktv/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/taEcDziWxGeGuBRt.png" tvg-url="https://www.turkuvapp.com/",CHILL TV KODLUK.COM
@@ -7382,8 +7370,6 @@ https://live.euromediacenter.com/turkishpress/video.m3u8
 https://live.euromediacenter.com/tvmor/index.m3u8
 #EXTINF:-1 group-title="Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/EzapQdTrMtxTSBbY.png" tvg-url="https://uluslararasitv.com/",ULUSLARARASI TV KODLUK.COM
 http://145.239.37.125:20458/uluslar/uluslar/playlist.m3u8
-#EXTINF:-1 group-title="Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/xuGPjaLJumMrrQCH.png" tvg-url="",ÜRETEN TÜRKIYE TV KODLUK.COM
-https://live.euromediacenter.com/uretenturkiye/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/TBNAFshOOANnlrqA.png" tvg-url="https://yenicag.az/",YENIÇAĞ TV KODLUK.COM
 https://live.euromediacenter.com/yenicagtv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/gqgnSEOJgInaNXhX.png" tvg-url="https://www.alanyapostatv.com/",ALANYA POSTA TV KODLUK.COM
