@@ -102,6 +102,7 @@ YASAKLI_IP_LISTESI = [
 YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "http://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Film/refs/heads/main/FilmDizi.m3u",
+    "https://raw.githubusercontent.com/smtv62/smtv/bfe2fd49dfaf43fb3219abd1893dcd4f47e26781/turkce.m3u",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
     "https://raw.githubusercontent.com/hydrokin/M3U/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u",
     "https://link.testworkery0.workers.dev/patron.m3u",
