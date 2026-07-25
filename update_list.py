@@ -357,11 +357,32 @@ def main():
                         print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
                         
                         temiz_eski_havuz = []
+                        # Tüm yasaklı listeleri birleştirip küçük harfe çeviriyoruz ki kaçış olmasın
+                        tum_yasaklar = [y.lower() for y in YASAKLI_GRUPLAR + HAVUZ_YASAKLI_KELIMELER]
+                        
+                        baslik_yasakli_mi = False
                         for s in eski_havuz_satirlari:
-                            if any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
+                            s_lower = s.lower()
+                            
+                            # Eğer satır bir başlık (EXTINF) ise kontrol et
+                            if s.startswith("#EXTINF"):
+                                if any(yasak in s_lower for yasak in tum_yasaklar):
+                                    baslik_yasakli_mi = True
+                                    continue
+                                else:
+                                    baslik_yasakli_mi = False
+                            
+                            # Eğer başlık yasaklıysa, altındaki link satırını da otomatik atla
+                            if baslik_yasakli_mi:
+                                continue
+                                
+                            # Eğer linkin kendisinde yasaklı kelime veya yasaklı IP varsa
+                            if any(yasak in s_lower for yasak in tum_yasaklar) or any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
+                                # Listeye eklenmiş olan temiz sanılan başlığı (EXTINF) geri sil
                                 if temiz_eski_havuz and temiz_eski_havuz[-1].startswith("#EXTINF"):
                                     temiz_eski_havuz.pop()
                                 continue
+                                
                             temiz_eski_havuz.append(s)
                             
                         eski_havuz_metni = "".join(temiz_eski_havuz)
