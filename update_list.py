@@ -21,10 +21,12 @@ FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 3400
 THREADS = 64
 
+# tvg-agent="Firefox" kısıtlamasını aşmak için Firefox User-Agent kullanıldı.
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
 }
 
+# Bağlantıları hızlandırmak için Session kullanımı
 session = requests.Session()
 session.headers.update(HEADERS)
 session.verify = False
@@ -37,6 +39,8 @@ YASAKLI_GRUPLAR = [
     "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
     "Superxfilm", "CINEMAMOD", "Adult", "XXX", "+18", "Yetişkin", "Yetiskin",
     "Pink", "Redlight", "Playboy", "Penthouse", "Vivid", "Hustler", "Erotic", "Forbidden",
+
+    # EKSİK OLAN CINE, SPOR VE YESILCAM GRUPLARI
     "CINE OFFICE 1", "CINE OFFICE 2", "CINE OFFICE 3", "CINE OFFICE 4", "CINE OFFICE 5",
     "CINE OFFICE 6", "CINE OFFICE 7", "CINE OFFICE 8", "CINE OFFICE 9", "CINE OFFICE 10",
     "CINE OFFICE 11", "CINE OFFICE 12", "CINE OFFICE 13", "CINE OFFICE 14", "CINE OFFICE 15",
@@ -47,9 +51,13 @@ YASAKLI_GRUPLAR = [
     "TIVIBUSPOR 5", "TIVIBUSPOR 6", "TIVIBUSPOR 7", "TIVIBUSPOR 8", "TIVIBUSPOR 9", "TIVIBUSPOR 10",
     "CINE YESILCAM 1", "CINE YESILCAM 2", "CINE YESILCAM 3", "CINE YESILCAM 4", "CINE YESILCAM 5",
     "CINE YESILCAM 6", "CINE YESILCAM 7", "CINE YESILCAM 8", "CINE YESILCAM 9", "CINE YESILCAM 10",
+    
+    # YENİ EKLENEN EXXEN VE TIVIBU KANALLARI
     "EXXEN SPORTS 1", "EXXEN SPORTS 2", "EXXEN SPORTS 3", "EXXEN SPORTS 4 F",
     "EXXEN SPORTS 5 F", "EXXEN SPORTS 6 F", "EXXEN SPORTS 7 F", "EXXEN SPORTS 8 F",
     "TIVIBU SPOR 1", "TIVIBU SPOR 2", "TIVIBU SPOR 3", "TIVIBU SPOR 4",
+    
+    # KÖKTEN SİLİNECEK ANA KELİMELER (Varyasyonların hepsini engeller)
     "GLIFE", "CINELUX"
 ]
 
@@ -62,6 +70,8 @@ HAVUZ_YASAKLI_KELIMELER = [
     "7/24", "GENEL | EĞLENCE", "GENEL | EGLENCE", "DISNEY+", "SCREEN SAVER", "SS SCREEN",
     "ADULT", "XXX", "+18", "YETISKIN", "YETİŞKİN", "PINK", "REDLIGHT", "PLAYBOY", 
     "PENTHOUSE", "VIVID", "HUSTLER", "EROTIC", "FORBIDDEN",
+    
+    # EKSİK OLAN CINE, SPOR VE YESILCAM GRUPLARI
     "CINE OFFICE 1", "CINE OFFICE 2", "CINE OFFICE 3", "CINE OFFICE 4", "CINE OFFICE 5",
     "CINE OFFICE 6", "CINE OFFICE 7", "CINE OFFICE 8", "CINE OFFICE 9", "CINE OFFICE 10",
     "CINE OFFICE 11", "CINE OFFICE 12", "CINE OFFICE 13", "CINE OFFICE 14", "CINE OFFICE 15",
@@ -72,9 +82,13 @@ HAVUZ_YASAKLI_KELIMELER = [
     "TIVIBUSPOR 5", "TIVIBUSPOR 6", "TIVIBUSPOR 7", "TIVIBUSPOR 8", "TIVIBUSPOR 9", "TIVIBUSPOR 10",
     "CINE YESILCAM 1", "CINE YESILCAM 2", "CINE YESILCAM 3", "CINE YESILCAM 4", "CINE YESILCAM 5",
     "CINE YESILCAM 6", "CINE YESILCAM 7", "CINE YESILCAM 8", "CINE YESILCAM 9", "CINE YESILCAM 10",
+    
+    # YENİ EKLENEN EXXEN VE TIVIBU KANALLARI
     "EXXEN SPORTS 1", "EXXEN SPORTS 2", "EXXEN SPORTS 3", "EXXEN SPORTS 4 F",
     "EXXEN SPORTS 5 F", "EXXEN SPORTS 6 F", "EXXEN SPORTS 7 F", "EXXEN SPORTS 8 F",
     "TIVIBU SPOR 1", "TIVIBU SPOR 2", "TIVIBU SPOR 3", "TIVIBU SPOR 4",
+    
+    # KÖKTEN SİLİNECEK ANA KELİMELER (Varyasyonların hepsini engeller)
     "GLIFE", "CINELUX"
 ]
 
@@ -87,9 +101,9 @@ YEDEK_KAYNAKLAR = [
     "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "http://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Film/refs/heads/main/FilmDizi.m3u",
     "https://raw.githubusercontent.com/smtv62/smtv/bfe2fd49dfaf43fb3219abd1893dcd4f47e26781/turkce.m3u",
+    "https://raw.githubusercontent.com/efendikral54-max/M3u-Listen/refs/heads/main/IPTVSevenler.m3u",
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
     "https://raw.githubusercontent.com/hydrokin/M3U/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u",
-    "https://raw.githubusercontent.com/efendikral54-max/M3u-Listen/refs/heads/main/IPTVSevenler.m3u",
     "https://link.testworkery0.workers.dev/patron.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://files.manuscdn.com/user_upload_by_module/session_file/310519663091167371/lXQCJEWGepXILedX.m3u8",
@@ -128,6 +142,7 @@ def havuzu_indir():
     try:
         response = session.get(BUYUK_HAVUZ_URL, timeout=10)
         if response.status_code == 200:
+            # HTTPS destekleyen regex ile düzeltildi
             linkler = re.findall(r'(https?://[^\s"\']+get\.php\?[^\s"\']+)', response.text)
             return list(dict.fromkeys(linkler))
     except requests.RequestException:
@@ -136,19 +151,15 @@ def havuzu_indir():
 
 def havuz_yayin_canli_mi(test_url):
     try:
-        with session.get(test_url, timeout=5, stream=True, allow_redirects=True) as r:
+        with session.get(test_url, timeout=4, stream=True, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
             content_type = r.headers.get('Content-Type', '').lower()
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
-            
-            chunk = r.raw.read(4096)
-            # USTA NOTU: Buradaki 512 sınırını 128'e düşürdüm. 
-            # Bazı paneller ilk paketi küçük yollar, boş yere kanalı çöpe atmayalım.
-            if not chunk or len(chunk) < 128: 
+            chunk = r.raw.read(1024)
+            if not chunk: 
                 return False
-                
             content_text = chunk.decode('utf-8', errors='ignore').lower()
             hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html"]
             if any(hata in content_text for hata in hata_kelimeleri):
@@ -164,8 +175,8 @@ def havuz_paneli_test_et(url):
         response = session.get(test_url, timeout=10)
         if response.status_code == 200 and "#EXTM3U" in response.text:
             satirlar = response.text.splitlines()
-            aday_kanallar = []
-            
+            bulunan_tr_kanallari = []
+            sadece_tr_linkleri = []
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
@@ -182,32 +193,14 @@ def havuz_paneli_test_et(url):
                                     temiz_link += "&output=ts"
                                 elif not any(temiz_link.lower().split('?')[0].endswith(ext) for ext in [".ts", ".m3u8", ".mkv", ".mp4"]):
                                     temiz_link += "?output=ts"
-                            
                             temiz_satir = havuz_kanal_ismini_temizle(satir)
-                            aday_kanallar.append((temiz_satir, temiz_link))
-            
-            # USTA NOTU: Burada 15 barajı vardı, panellerin çoğunu es geçmesine sebep oluyordu.
-            # Bunu 3'e düşürdüm. Panelde 3 tane bile sağlam TR kanal varsa teste sokacak.
-            if len(aday_kanallar) >= 3:
-                hizli_test_linkleri = [k[1] for k in random.sample(aday_kanallar, min(3, len(aday_kanallar)))]
-                # Hızlı testte 3 kanaldan 1'i bile çalışsa paneli onayla (eski hali 2'ydi)
-                if sum(1 for link in hizli_test_linkleri if havuz_yayin_canli_mi(link)) >= 1:
-                    
-                    calisan_kanallar_metni = []
-                    
-                    with ThreadPoolExecutor(max_workers=15) as ex:
-                        gelecek_testler = {ex.submit(havuz_yayin_canli_mi, k[1]): k for k in aday_kanallar}
-                        for future in as_completed(gelecek_testler):
-                            k = gelecek_testler[future]
-                            try:
-                                if future.result(): 
-                                    calisan_kanallar_metni.append(f"{k[0]}\n{k[1]}")
-                            except:
-                                pass
-                                
-                    if len(calisan_kanallar_metni) > 0:
-                        print(f"🟢 BÜYÜK HAVUZDAN {len(calisan_kanallar_metni)} ADET %100 CANLI KANAL BULUNDU: {test_url}")
-                        return "\n".join(calisan_kanallar_metni)
+                            bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
+                            sadece_tr_linkleri.append(temiz_link)
+            if len(sadece_tr_linkleri) >= 15:
+                test_edilecekler = random.sample(sadece_tr_linkleri, min(3, len(sadece_tr_linkleri)))
+                if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
+                    print(f"🟢 BÜYÜK HAVUZDAN CANLI PANEL BULUNDU: {test_url}")
+                    return "\n".join(bulunan_tr_kanallari)
     except Exception:
         pass
     return None
@@ -233,13 +226,9 @@ def havuzdan_canli_kanallari_getir():
                 bulunan_panellerin_icerikleri.append(sonuc)
                 bulunan_domainler.add(domain)  
                 bulunan_adet += 1
-                print(f"📡 Sağlam Farklı Panel Sayısı: {bulunan_adet}/3 -> (Eklenen Domain: {domain})")
+                print(f"📡 Sağlam Farklı Panel Sayısı: {bulunan_adet}/3 -> (Eklenen: {domain})")
                 if bulunan_adet >= 3:
-                    # USTA NOTU: Python sürüm uyumsuzluklarına karşı cancel_futures=True'yu try içine aldım.
-                    try:
-                        executor.shutdown(wait=False, cancel_futures=True)
-                    except TypeError:
-                        executor.shutdown(wait=False)
+                    executor.shutdown(wait=False, cancel_futures=True)
                     break
     return "\n".join(bulunan_panellerin_icerikleri) if bulunan_panellerin_icerikleri else ""
 
@@ -331,7 +320,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    print("🛡️ USTA SİSTEM V12.1: ZIRHLI LİSTE KESİNLİKLE KORUMAYA ALINDI!")
+    print("🛡️ USTA SİSTEM V12.0: ZIRHLI LİSTE KESİNLİKLE KORUMAYA ALINDI!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -369,12 +358,14 @@ def main():
                         print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
                         
                         temiz_eski_havuz = []
+                        # Tüm yasaklı listeleri birleştirip küçük harfe çeviriyoruz ki kaçış olmasın
                         tum_yasaklar = [y.lower() for y in YASAKLI_GRUPLAR + HAVUZ_YASAKLI_KELIMELER]
                         
                         baslik_yasakli_mi = False
                         for s in eski_havuz_satirlari:
                             s_lower = s.lower()
                             
+                            # Eğer satır bir başlık (EXTINF) ise kontrol et
                             if s.startswith("#EXTINF"):
                                 if any(yasak in s_lower for yasak in tum_yasaklar):
                                     baslik_yasakli_mi = True
@@ -382,10 +373,13 @@ def main():
                                 else:
                                     baslik_yasakli_mi = False
                             
+                            # Eğer başlık yasaklıysa, altındaki link satırını da otomatik atla
                             if baslik_yasakli_mi:
                                 continue
                                 
+                            # Eğer linkin kendisinde yasaklı kelime veya yasaklı IP varsa
                             if any(yasak in s_lower for yasak in tum_yasaklar) or any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
+                                # Listeye eklenmiş olan temiz sanılan başlığı (EXTINF) geri sil
                                 if temiz_eski_havuz and temiz_eski_havuz[-1].startswith("#EXTINF"):
                                     temiz_eski_havuz.pop()
                                 continue
@@ -418,7 +412,6 @@ def main():
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
-    # EĞER SÜREKLİ YENİ PANEL ARASIN İSTİYORSAN BURADAKİ İF ŞARTINI KALDIRABİLİRSİN.
     if eski_havuz_canli_mi:
         print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
         havuz_canli_metni = eski_havuz_metni
