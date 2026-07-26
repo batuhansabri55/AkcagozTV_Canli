@@ -21,12 +21,10 @@ FILE_PATH = "tr.m3u"
 ZIRH_LIMIT = 3400
 THREADS = 64
 
-# tvg-agent="Firefox" kısıtlamasını aşmak için Firefox User-Agent kullanıldı.
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
 }
 
-# Bağlantıları hızlandırmak için Session kullanımı
 session = requests.Session()
 session.headers.update(HEADERS)
 session.verify = False
@@ -39,8 +37,6 @@ YASAKLI_GRUPLAR = [
     "TouchTV", "Slovakia", "Bulgaria", "Romania", "Azerbeycan",
     "Superxfilm", "CINEMAMOD", "Adult", "XXX", "+18", "Yetişkin", "Yetiskin",
     "Pink", "Redlight", "Playboy", "Penthouse", "Vivid", "Hustler", "Erotic", "Forbidden",
-
-    # EKSİK OLAN CINE, SPOR VE YESILCAM GRUPLARI
     "CINE OFFICE 1", "CINE OFFICE 2", "CINE OFFICE 3", "CINE OFFICE 4", "CINE OFFICE 5",
     "CINE OFFICE 6", "CINE OFFICE 7", "CINE OFFICE 8", "CINE OFFICE 9", "CINE OFFICE 10",
     "CINE OFFICE 11", "CINE OFFICE 12", "CINE OFFICE 13", "CINE OFFICE 14", "CINE OFFICE 15",
@@ -51,13 +47,9 @@ YASAKLI_GRUPLAR = [
     "TIVIBUSPOR 5", "TIVIBUSPOR 6", "TIVIBUSPOR 7", "TIVIBUSPOR 8", "TIVIBUSPOR 9", "TIVIBUSPOR 10",
     "CINE YESILCAM 1", "CINE YESILCAM 2", "CINE YESILCAM 3", "CINE YESILCAM 4", "CINE YESILCAM 5",
     "CINE YESILCAM 6", "CINE YESILCAM 7", "CINE YESILCAM 8", "CINE YESILCAM 9", "CINE YESILCAM 10",
-    
-    # YENİ EKLENEN EXXEN VE TIVIBU KANALLARI
     "EXXEN SPORTS 1", "EXXEN SPORTS 2", "EXXEN SPORTS 3", "EXXEN SPORTS 4 F",
     "EXXEN SPORTS 5 F", "EXXEN SPORTS 6 F", "EXXEN SPORTS 7 F", "EXXEN SPORTS 8 F",
     "TIVIBU SPOR 1", "TIVIBU SPOR 2", "TIVIBU SPOR 3", "TIVIBU SPOR 4",
-    
-    # KÖKTEN SİLİNECEK ANA KELİMELER (Varyasyonların hepsini engeller)
     "GLIFE", "CINELUX"
 ]
 
@@ -70,8 +62,6 @@ HAVUZ_YASAKLI_KELIMELER = [
     "7/24", "GENEL | EĞLENCE", "GENEL | EGLENCE", "DISNEY+", "SCREEN SAVER", "SS SCREEN",
     "ADULT", "XXX", "+18", "YETISKIN", "YETİŞKİN", "PINK", "REDLIGHT", "PLAYBOY", 
     "PENTHOUSE", "VIVID", "HUSTLER", "EROTIC", "FORBIDDEN",
-    
-    # EKSİK OLAN CINE, SPOR VE YESILCAM GRUPLARI
     "CINE OFFICE 1", "CINE OFFICE 2", "CINE OFFICE 3", "CINE OFFICE 4", "CINE OFFICE 5",
     "CINE OFFICE 6", "CINE OFFICE 7", "CINE OFFICE 8", "CINE OFFICE 9", "CINE OFFICE 10",
     "CINE OFFICE 11", "CINE OFFICE 12", "CINE OFFICE 13", "CINE OFFICE 14", "CINE OFFICE 15",
@@ -82,13 +72,9 @@ HAVUZ_YASAKLI_KELIMELER = [
     "TIVIBUSPOR 5", "TIVIBUSPOR 6", "TIVIBUSPOR 7", "TIVIBUSPOR 8", "TIVIBUSPOR 9", "TIVIBUSPOR 10",
     "CINE YESILCAM 1", "CINE YESILCAM 2", "CINE YESILCAM 3", "CINE YESILCAM 4", "CINE YESILCAM 5",
     "CINE YESILCAM 6", "CINE YESILCAM 7", "CINE YESILCAM 8", "CINE YESILCAM 9", "CINE YESILCAM 10",
-    
-    # YENİ EKLENEN EXXEN VE TIVIBU KANALLARI
     "EXXEN SPORTS 1", "EXXEN SPORTS 2", "EXXEN SPORTS 3", "EXXEN SPORTS 4 F",
     "EXXEN SPORTS 5 F", "EXXEN SPORTS 6 F", "EXXEN SPORTS 7 F", "EXXEN SPORTS 8 F",
     "TIVIBU SPOR 1", "TIVIBU SPOR 2", "TIVIBU SPOR 3", "TIVIBU SPOR 4",
-    
-    # KÖKTEN SİLİNECEK ANA KELİMELER (Varyasyonların hepsini engeller)
     "GLIFE", "CINELUX"
 ]
 
@@ -148,7 +134,6 @@ def havuzu_indir():
         pass
     return []
 
-# --- GÜNCELLENDİ: DAHA SIKI YAYIN KONTROLÜ ---
 def havuz_yayin_canli_mi(test_url):
     try:
         with session.get(test_url, timeout=5, stream=True, allow_redirects=True) as r:
@@ -158,9 +143,10 @@ def havuz_yayin_canli_mi(test_url):
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
             
-            # Daha büyük bir chunk okuyoruz ki gerçek TS verisi olduğuna emin olalım
             chunk = r.raw.read(4096)
-            if not chunk or len(chunk) < 512: 
+            # USTA NOTU: Buradaki 512 sınırını 128'e düşürdüm. 
+            # Bazı paneller ilk paketi küçük yollar, boş yere kanalı çöpe atmayalım.
+            if not chunk or len(chunk) < 128: 
                 return False
                 
             content_text = chunk.decode('utf-8', errors='ignore').lower()
@@ -171,7 +157,6 @@ def havuz_yayin_canli_mi(test_url):
     except Exception:
         return False
 
-# --- GÜNCELLENDİ: PANELDEKİ HER KANALI TEK TEK TEST EDER ---
 def havuz_paneli_test_et(url):
     test_url = url.replace("type=m3u_plus", "type=m3u").replace("type=m3u", "type=m3u_plus")
     tr_isaretleri = ["TR:", "TR|", "TR -", "TURKISH", "TÜRKÇE", "TURKCE", 'GROUP-TITLE="TR', "TÜRK"]
@@ -200,22 +185,22 @@ def havuz_paneli_test_et(url):
                             
                             temiz_satir = havuz_kanal_ismini_temizle(satir)
                             aday_kanallar.append((temiz_satir, temiz_link))
-                            
-            if len(aday_kanallar) >= 15:
-                # Önce panelin tamamen patlak olup olmadığını anlamak için hızlı 3'lü test
+            
+            # USTA NOTU: Burada 15 barajı vardı, panellerin çoğunu es geçmesine sebep oluyordu.
+            # Bunu 3'e düşürdüm. Panelde 3 tane bile sağlam TR kanal varsa teste sokacak.
+            if len(aday_kanallar) >= 3:
                 hizli_test_linkleri = [k[1] for k in random.sample(aday_kanallar, min(3, len(aday_kanallar)))]
-                if sum(1 for link in hizli_test_linkleri if havuz_yayin_canli_mi(link)) >= 2:
+                # Hızlı testte 3 kanaldan 1'i bile çalışsa paneli onayla (eski hali 2'ydi)
+                if sum(1 for link in hizli_test_linkleri if havuz_yayin_canli_mi(link)) >= 1:
                     
-                    # Panel sağlam! Şimdi İÇİNDEKİ KANALLARI GERÇEKTEN TEST EDİP SEÇİYORUZ
                     calisan_kanallar_metni = []
                     
-                    # Aynı anda 15 kanal test edilecek şekilde sınırlandırdık (çok uzamasın diye)
                     with ThreadPoolExecutor(max_workers=15) as ex:
                         gelecek_testler = {ex.submit(havuz_yayin_canli_mi, k[1]): k for k in aday_kanallar}
                         for future in as_completed(gelecek_testler):
                             k = gelecek_testler[future]
                             try:
-                                if future.result(): # Eğer bu özel kanal "Canlı" ise ekle
+                                if future.result(): 
                                     calisan_kanallar_metni.append(f"{k[0]}\n{k[1]}")
                             except:
                                 pass
@@ -250,7 +235,11 @@ def havuzdan_canli_kanallari_getir():
                 bulunan_adet += 1
                 print(f"📡 Sağlam Farklı Panel Sayısı: {bulunan_adet}/3 -> (Eklenen Domain: {domain})")
                 if bulunan_adet >= 3:
-                    executor.shutdown(wait=False, cancel_futures=True)
+                    # USTA NOTU: Python sürüm uyumsuzluklarına karşı cancel_futures=True'yu try içine aldım.
+                    try:
+                        executor.shutdown(wait=False, cancel_futures=True)
+                    except TypeError:
+                        executor.shutdown(wait=False)
                     break
     return "\n".join(bulunan_panellerin_icerikleri) if bulunan_panellerin_icerikleri else ""
 
@@ -342,7 +331,7 @@ def kanal_isleme(kanal_metni, kaynak_url, eklenen_urller):
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    print("🛡️ USTA SİSTEM V12.0: ZIRHLI LİSTE KESİNLİKLE KORUMAYA ALINDI!")
+    print("🛡️ USTA SİSTEM V12.1: ZIRHLI LİSTE KESİNLİKLE KORUMAYA ALINDI!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -380,14 +369,12 @@ def main():
                         print("\n🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
                         
                         temiz_eski_havuz = []
-                        # Tüm yasaklı listeleri birleştirip küçük harfe çeviriyoruz ki kaçış olmasın
                         tum_yasaklar = [y.lower() for y in YASAKLI_GRUPLAR + HAVUZ_YASAKLI_KELIMELER]
                         
                         baslik_yasakli_mi = False
                         for s in eski_havuz_satirlari:
                             s_lower = s.lower()
                             
-                            # Eğer satır bir başlık (EXTINF) ise kontrol et
                             if s.startswith("#EXTINF"):
                                 if any(yasak in s_lower for yasak in tum_yasaklar):
                                     baslik_yasakli_mi = True
@@ -395,13 +382,10 @@ def main():
                                 else:
                                     baslik_yasakli_mi = False
                             
-                            # Eğer başlık yasaklıysa, altındaki link satırını da otomatik atla
                             if baslik_yasakli_mi:
                                 continue
                                 
-                            # Eğer linkin kendisinde yasaklı kelime veya yasaklı IP varsa
                             if any(yasak in s_lower for yasak in tum_yasaklar) or any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
-                                # Listeye eklenmiş olan temiz sanılan başlığı (EXTINF) geri sil
                                 if temiz_eski_havuz and temiz_eski_havuz[-1].startswith("#EXTINF"):
                                     temiz_eski_havuz.pop()
                                 continue
@@ -434,6 +418,7 @@ def main():
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
 
+    # EĞER SÜREKLİ YENİ PANEL ARASIN İSTİYORSAN BURADAKİ İF ŞARTINI KALDIRABİLİRSİN.
     if eski_havuz_canli_mi:
         print("\n🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
         havuz_canli_metni = eski_havuz_metni
