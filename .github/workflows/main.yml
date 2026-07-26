@@ -8,6 +8,12 @@ on:
     - cron: '0 */12 * * *' # 🚀 USTA: Artık tam 12 saatte bir otomatik çalışacak!
   workflow_dispatch: # Elle tetiklemek için
 
+# --- USTA EKLENTİSİ: İŞLEMLERİN SIRA BEKLEMESİNİ KESİN ENGELLER ---
+# Yeni bir işlem tetiklendiğinde kuyrukta bekleyen veya çalışan eski işlemi iptal eder.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
