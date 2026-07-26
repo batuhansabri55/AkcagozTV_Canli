@@ -141,24 +141,27 @@ def havuzu_indir():
     try:
         response = session.get(BUYUK_HAVUZ_URL, timeout=10)
         if response.status_code == 200:
-            # HTTPS destekleyen regex ile düzeltildi
             linkler = re.findall(r'(https?://[^\s"\']+get\.php\?[^\s"\']+)', response.text)
             return list(dict.fromkeys(linkler))
     except requests.RequestException:
         pass
     return []
 
+# --- GÜNCELLENDİ: DAHA SIKI YAYIN KONTROLÜ ---
 def havuz_yayin_canli_mi(test_url):
     try:
-        with session.get(test_url, timeout=4, stream=True, allow_redirects=True) as r:
+        with session.get(test_url, timeout=5, stream=True, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
                 return False
             content_type = r.headers.get('Content-Type', '').lower()
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
-            chunk = r.raw.read(1024)
-            if not chunk: 
+            
+            # Daha büyük bir chunk okuyoruz ki gerçek TS verisi olduğuna emin olalım
+            chunk = r.raw.read(4096)
+            if not chunk or len(chunk) < 512: 
                 return False
+                
             content_text = chunk.decode('utf-8', errors='ignore').lower()
             hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html"]
             if any(hata in content_text for hata in hata_kelimeleri):
@@ -167,6 +170,7 @@ def havuz_yayin_canli_mi(test_url):
     except Exception:
         return False
 
+# --- GÜNCELLENDİ: PANELDEKİ HER KANALI TEK TEK TEST EDER ---
 def havuz_paneli_test_et(url):
     test_url = url.replace("type=m3u_plus", "type=m3u").replace("type=m3u", "type=m3u_plus")
     tr_isaretleri = ["TR:", "TR|", "TR -", "TURKISH", "TÜRKÇE", "TURKCE", 'GROUP-TITLE="TR', "TÜRK"]
@@ -174,8 +178,8 @@ def havuz_paneli_test_et(url):
         response = session.get(test_url, timeout=10)
         if response.status_code == 200 and "#EXTM3U" in response.text:
             satirlar = response.text.splitlines()
-            bulunan_tr_kanallari = []
-            sadece_tr_linkleri = []
+            aday_kanallar = []
+            
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
@@ -192,14 +196,32 @@ def havuz_paneli_test_et(url):
                                     temiz_link += "&output=ts"
                                 elif not any(temiz_link.lower().split('?')[0].endswith(ext) for ext in [".ts", ".m3u8", ".mkv", ".mp4"]):
                                     temiz_link += "?output=ts"
+                            
                             temiz_satir = havuz_kanal_ismini_temizle(satir)
-                            bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
-                            sadece_tr_linkleri.append(temiz_link)
-            if len(sadece_tr_linkleri) >= 15:
-                test_edilecekler = random.sample(sadece_tr_linkleri, min(3, len(sadece_tr_linkleri)))
-                if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
-                    print(f"🟢 BÜYÜK HAVUZDAN CANLI PANEL BULUNDU: {test_url}")
-                    return "\n".join(bulunan_tr_kanallari)
+                            aday_kanallar.append((temiz_satir, temiz_link))
+                            
+            if len(aday_kanallar) >= 15:
+                # Önce panelin tamamen patlak olup olmadığını anlamak için hızlı 3'lü test
+                hizli_test_linkleri = [k[1] for k in random.sample(aday_kanallar, min(3, len(aday_kanallar)))]
+                if sum(1 for link in hizli_test_linkleri if havuz_yayin_canli_mi(link)) >= 2:
+                    
+                    # Panel sağlam! Şimdi İÇİNDEKİ KANALLARI GERÇEKTEN TEST EDİP SEÇİYORUZ
+                    calisan_kanallar_metni = []
+                    
+                    # Aynı anda 15 kanal test edilecek şekilde sınırlandırdık (çok uzamasın diye)
+                    with ThreadPoolExecutor(max_workers=15) as ex:
+                        gelecek_testler = {ex.submit(havuz_yayin_canli_mi, k[1]): k for k in aday_kanallar}
+                        for future in as_completed(gelecek_testler):
+                            k = gelecek_testler[future]
+                            try:
+                                if future.result(): # Eğer bu özel kanal "Canlı" ise ekle
+                                    calisan_kanallar_metni.append(f"{k[0]}\n{k[1]}")
+                            except:
+                                pass
+                                
+                    if len(calisan_kanallar_metni) > 0:
+                        print(f"🟢 BÜYÜK HAVUZDAN {len(calisan_kanallar_metni)} ADET %100 CANLI KANAL BULUNDU: {test_url}")
+                        return "\n".join(calisan_kanallar_metni)
     except Exception:
         pass
     return None
@@ -225,7 +247,7 @@ def havuzdan_canli_kanallari_getir():
                 bulunan_panellerin_icerikleri.append(sonuc)
                 bulunan_domainler.add(domain)  
                 bulunan_adet += 1
-                print(f"📡 Sağlam Farklı Panel Sayısı: {bulunan_adet}/3 -> (Eklenen: {domain})")
+                print(f"📡 Sağlam Farklı Panel Sayısı: {bulunan_adet}/3 -> (Eklenen Domain: {domain})")
                 if bulunan_adet >= 3:
                     executor.shutdown(wait=False, cancel_futures=True)
                     break
