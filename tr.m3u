@@ -654,8 +654,6 @@ https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df4
 #EXTINF:-1,TLC TV
 http://dygvideo.dygdigital.com/live/hls/tlctvdai?m3u8
 #EXTINF:-1,TRT BELGESEL
-https://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1,TRT BELGESEL
 https://tv-trtbelgesel-dash.medya.trt.com.tr/master.mpd
 #EXTINF:-1,TRT BELGESEL
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
@@ -7692,8 +7690,6 @@ http://elitetr2.xyz/live/nadirkavak/jczjvbou8/db3008c7-02fb-41af-8b99-34e10d569f
 http://elitetr2.xyz/live/nadirkavak/jczjvbou8/fca0bcec-69fe-42e8-8942-a766563eb82b.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeo.png" group-title="Türk UHD",NAT GEOGRAPHIC
 http://elitetr2.xyz/live/nadirkavak/jczjvbou8/2c50d6dc-9669-4ff5-a04d-9fad60147cde.m3u?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk UHD",NAT GEOGRAPHIC WILD
-http://elitetr2.xyz/live/nadirkavak/jczjvbou8/e50821ba-9c39-40b1-b6b4-7657ff96b8a0.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:BEINSPORTS 4K (MAC ZAMANI)" tvg-logo="https://i0.wp.com/resim.yayins.com/ek1/bein4Kmac.png" group-title="Türk UHD",BEINSPORTS
 http://elitetr2.xyz/live/nadirkavak/jczjvbou8/553f6670-08c6-412f-b7c8-51ef5ec5a95d.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:BEINSPORTS 1 UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/bein1.png" group-title="Türk UHD",BEINSPORTS 1
@@ -7958,7 +7954,7 @@ http://elitetr2.xyz/live/nadirkavak/jczjvbou8/656ebd7c-b56e-4439-90ba-3311d1fcb4
 http://elitetr2.xyz/live/nadirkavak/jczjvbou8/58e211f5-109b-45ef-a331-61bde172676d.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeo.png" group-title="Türk Belgesel",NAT GEOGRAPHIC
 http://elitetr2.xyz/live/nadirkavak/jczjvbou8/4dd3480f-60a7-4f71-bb2f-e32ae1f0d208.m3u?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk Belgesel",NAT GEOGRAPHIC WILD
+#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk Belgesel",NAT GEOGRAPHIC
 http://elitetr2.xyz/live/nadirkavak/jczjvbou8/5e553f2a-701d-4765-8dc0-26533da601db.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:DISCOVERY CHANNEL HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/discovery.png" group-title="Türk Belgesel",DISCOVERY CHANNEL
 http://elitetr2.xyz/live/nadirkavak/jczjvbou8/cd2284b3-d910-4312-a8ee-d816963d6235.m3u?output=ts
@@ -8724,8 +8720,6 @@ http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/db3008c7-02fb-41af-8b99-34
 http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/fca0bcec-69fe-42e8-8942-a766563eb82b.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeo.png" group-title="Türk UHD",NAT GEOGRAPHIC
 http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/2c50d6dc-9669-4ff5-a04d-9fad60147cde.m3u?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk UHD",NAT GEOGRAPHIC WILD
-http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/e50821ba-9c39-40b1-b6b4-7657ff96b8a0.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:BEINSPORTS 4K (MAC ZAMANI)" tvg-logo="https://i0.wp.com/resim.yayins.com/ek1/bein4Kmac.png" group-title="Türk UHD",BEINSPORTS
 http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/553f6670-08c6-412f-b7c8-51ef5ec5a95d.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:BEINSPORTS 1 UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/bein1.png" group-title="Türk UHD",BEINSPORTS 1
@@ -8990,7 +8984,7 @@ http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/656ebd7c-b56e-4439-90ba-33
 http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/58e211f5-109b-45ef-a331-61bde172676d.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeo.png" group-title="Türk Belgesel",NAT GEOGRAPHIC
 http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/4dd3480f-60a7-4f71-bb2f-e32ae1f0d208.m3u?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk Belgesel",NAT GEOGRAPHIC WILD
+#EXTINF:-1 tvg-id="" tvg-name="TR:NAT GEOGRAPHIC WILD HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/nationalgeowil.png" group-title="Türk Belgesel",NAT GEOGRAPHIC
 http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/5e553f2a-701d-4765-8dc0-26533da601db.m3u?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR:DISCOVERY CHANNEL HD" tvg-logo="https://i0.wp.com/resim.yayins.com/belgesel/discovery.png" group-title="Türk Belgesel",DISCOVERY CHANNEL
 http://europlayiptv.de/live/davut2805yenpnar/qbqJSGeP/cd2284b3-d910-4312-a8ee-d816963d6235.m3u?output=ts
