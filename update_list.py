@@ -164,40 +164,69 @@ def havuz_yayin_canli_mi(test_url: str) -> bool:
 def havuz_paneli_test_et(url: str):
     test_url = url.replace("type=m3u_plus", "type=m3u").replace("type=m3u", "type=m3u_plus")
     tr_isaretleri = ["TR:", "TR|", "TR -", "TURKISH", "TÜRKÇE", "TURKCE", 'GROUP-TITLE="TR', "TÜRK"]
+    
     try:
         response = session.get(test_url, timeout=10)
         if response.status_code == 200 and "#EXTM3U" in response.text:
             satirlar = response.text.splitlines()
             bulunan_tr_kanallari = []
-            sadece_tr_linkleri = []
+            
+            # Ustanın İstediği VIP Test Hedefleri
+            vip_test_linkleri = {
+                "cnn": None,
+                "kanald": None,
+                "discovery": None,
+                "sinema": None
+            }
             
             for i in range(len(satirlar)):
                 satir = satirlar[i]
                 if satir.startswith("#EXTINF"):
                     if yasakli_mi(satir):
                         continue
-                    if any(isaret in satir.upper() for isaret in tr_isaretleri):
-                        if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
-                            kanal_linki = satirlar[i+1]
-                            if yasakli_mi(kanal_linki) or any(yasak_ip in kanal_linki for yasak_ip in YASAKLI_IP_LISTESI):
-                                continue
+                    
+                    if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
+                        kanal_linki = satirlar[i+1]
+                        if yasakli_mi(kanal_linki) or any(yasak_ip in kanal_linki for yasak_ip in YASAKLI_IP_LISTESI):
+                            continue
                             
-                            temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
-                            if "output=ts" not in temiz_link:
-                                if "?" in temiz_link:
-                                    temiz_link += "&output=ts"
-                                elif not any(temiz_link.lower().split('?')[0].endswith(ext) for ext in [".ts", ".m3u8", ".mkv", ".mp4"]):
-                                    temiz_link += "?output=ts"
-                            
-                            temiz_satir = havuz_kanal_ismini_temizle(satir)
+                        temiz_link = kanal_linki.replace("type=m3u_plus", "output=ts").replace("type=m3u", "output=ts")
+                        if "output=ts" not in temiz_link:
+                            if "?" in temiz_link:
+                                temiz_link += "&output=ts"
+                            elif not any(temiz_link.lower().split('?')[0].endswith(ext) for ext in [".ts", ".m3u8", ".mkv", ".mp4"]):
+                                temiz_link += "?output=ts"
+                        
+                        temiz_satir = havuz_kanal_ismini_temizle(satir)
+                        
+                        # Eğer kanal TR grubundaysa ana listeye eklenmek üzere topla
+                        if any(isaret in satir.upper() for isaret in tr_isaretleri):
                             bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
-                            sadece_tr_linkleri.append(temiz_link)
-                            
-            if len(sadece_tr_linkleri) >= 15:
-                test_edilecekler = random.sample(sadece_tr_linkleri, min(3, len(sadece_tr_linkleri)))
-                if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
-                    logging.info(f"🟢 BÜYÜK HAVUZDAN CANLI PANEL BULUNDU: {test_url}")
+                        
+                        # --- VIP KANAL YAKALAMA (Test için) ---
+                        satir_upper = satir.upper()
+                        if not vip_test_linkleri["cnn"] and re.search(r'CNN\s*T[UÜ]RK', satir_upper):
+                            vip_test_linkleri["cnn"] = temiz_link
+                        elif not vip_test_linkleri["kanald"] and re.search(r'KANAL\s*D', satir_upper):
+                            vip_test_linkleri["kanald"] = temiz_link
+                        elif not vip_test_linkleri["discovery"] and "DISCOVERY CHANNEL" in satir_upper:
+                            vip_test_linkleri["discovery"] = temiz_link
+                        elif not vip_test_linkleri["sinema"] and re.search(r'S[Iİ]NEMA\s*(TV|1)', satir_upper):
+                            vip_test_linkleri["sinema"] = temiz_link
+            
+            # Bulunan VIP hedefleri listele (None olmayanlar)
+            test_edilecekler = [link for link in vip_test_linkleri.values() if link is not None]
+            
+            # Eğer panelde bu özel kanallardan en az 3 tanesi varsa teste başla
+            if len(test_edilecekler) >= 3:
+                # Çalışan VIP kanal sayısını say
+                calisan_sayisi = sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link))
+                
+                # Test edilen kanalların tamamı (veya en az 3'ü) çalışıyorsa paneli kabul et
+                if calisan_sayisi >= 3:
+                    logging.info(f"🟢 VIP KANALLARI (Kanal D, CNN, Belgesel, Sinema) ÇALIŞAN PANEL BULUNDU: {test_url}")
                     return "\n".join(bulunan_tr_kanallari)
+                    
     except Exception:
         pass
     return None
@@ -205,7 +234,7 @@ def havuz_paneli_test_et(url: str):
 def havuzdan_canli_kanallari_getir():
     link_listesi = havuzu_indir()
     if not link_listesi: return ""
-    logging.info("⚡ Tam 3 adet BENZERSİZ canlı ve aktif Türkçe TV paneli aranıyor, lütfen bekleyin...")
+    logging.info("⚡ Tam 3 adet BENZERSİZ canlı ve VIP testinden geçmiş Türkçe TV paneli aranıyor, lütfen bekleyin...")
     
     bulunan_panellerin_icerikleri = []
     bulunan_domainler = set()  
@@ -358,7 +387,7 @@ def main():
                 eski_havuz_linkleri = [s.strip() for s in eski_havuz_satirlari if s.strip().startswith("http")]
                 
                 if eski_havuz_linkleri:
-                    logging.info("🕵️ Eski havuz paneli bulundu, canlılığı test ediliyor...")
+                    logging.info("🕵️ Eski havuz paneli bulundu, VIP test canlılığı deneniyor...")
                     test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
                     if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
                         logging.info("🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
