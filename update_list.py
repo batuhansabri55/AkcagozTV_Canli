@@ -96,7 +96,6 @@ YEDEK_KAYNAKLAR = [
 ]
 
 BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/refs/heads/main/paneller.txt"
-
 # REGEX ÖNBELLEKLERİ (Temizleme için)
 KALITE_REGEX = re.compile(r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|VIP|MOBILE|HQ|ʜᴅ)\b', re.IGNORECASE)
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
@@ -105,6 +104,8 @@ PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
 PRE_TR = re.compile(r'\bTR\b[\.\:\-\|]?\s*', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
 
+# REKLAM VE SITE UZANTILARI REGEX (KODLUK.COM ve diğer site ekleri için)
+REKLAM_REGEX = re.compile(r'\b(KODLUK\.COM|KODLUK|\b[\w\-]+\.(COM|NET|ORG|TV|SITE|ONLINE|CLUB|INFO|XYZ|ME)\b)', re.IGNORECASE)
 # ==============================================================================
 # ROBOT FONKSİYONLAR
 # ==============================================================================
