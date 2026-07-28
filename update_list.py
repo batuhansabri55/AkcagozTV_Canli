@@ -20,7 +20,7 @@ logging.basicConfig(
     datefmt='%H:%M:%S'
 )
 
-# --- GLOBAL SOKET TIMEOUT (Yayınların askıda kalmasını kesin engeller) ---
+# --- GLOBAL SOKET TIMEOUT ---
 socket.setdefaulttimeout(7)
 
 # SSL uyarısını sustur
@@ -38,7 +38,6 @@ HEADERS = {
 # --- OPTİMİZE EDİLMİŞ THREAD-SAFE SESSION ---
 def create_optimized_session():
     s = requests.Session()
-    # 64 Thread için havuz boyutunu genişletiyoruz (Kilitlenmeleri ve race-condition'ı önler)
     adapter = HTTPAdapter(pool_connections=100, pool_maxsize=100, max_retries=1)
     s.mount("http://", adapter)
     s.mount("https://", adapter)
@@ -69,7 +68,6 @@ YASAKLI_SET = {
     "tabii spor", "tivibuspor", "tivibu spor", "exxen sports", "cine yesilcam", "cine office"
 }
 
-# Hızlı arama için Compile edilmiş Regex (Sadece bir kez derlenir, mikrosaniye hızında çalışır)
 YASAKLI_PATTERN = re.compile(
     r'(' + '|'.join(re.escape(k) for k in sorted(YASAKLI_SET, key=len, reverse=True)) + r')', 
     re.IGNORECASE
@@ -96,6 +94,7 @@ YEDEK_KAYNAKLAR = [
 ]
 
 BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/refs/heads/main/paneller.txt"
+
 # REGEX ÖNBELLEKLERİ (Temizleme için)
 KALITE_REGEX = re.compile(r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|VIP|MOBILE|HQ|ʜᴅ)\b', re.IGNORECASE)
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
@@ -104,8 +103,9 @@ PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
 PRE_TR = re.compile(r'\bTR\b[\.\:\-\|]?\s*', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
 
-# REKLAM VE SITE UZANTILARI REGEX (KODLUK.COM ve diğer site ekleri için)
+# REKLAM VE SITE UZANTILARI REGEX (KODLUK.COM ve diğer site/reklam ekleri için)
 REKLAM_REGEX = re.compile(r'\b(KODLUK\.COM|KODLUK|\b[\w\-]+\.(COM|NET|ORG|TV|SITE|ONLINE|CLUB|INFO|XYZ|ME)\b)', re.IGNORECASE)
+
 # ==============================================================================
 # ROBOT FONKSİYONLAR
 # ==============================================================================
@@ -120,12 +120,18 @@ def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
         prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
         kanal_adi = extinf_satiri
 
+    # Parantez ve Reklam/Site uzantılarını temizle (KODLUK.COM dahil)
+    kanal_adi = BRACKETS_REGEX.sub('', kanal_adi)
+    kanal_adi = REKLAM_REGEX.sub('', kanal_adi)
+    
+    # TR takılarını ve kaliteleri temizle
     kanal_adi = PRE_TR_HABER.sub('', kanal_adi)
     kanal_adi = PRE_TR.sub('', kanal_adi)
-    kanal_adi = BRACKETS_REGEX.sub('', kanal_adi)
     kanal_adi = KALITE_REGEX.sub('', kanal_adi)
     kanal_adi = YEDEK_REGEX.sub('', kanal_adi)
     kanal_adi = DIL_REGEX.sub('', kanal_adi)
+    
+    # Özel sembolleri uçur ve fazlalıkları düzenle
     kanal_adi = kanal_adi.replace("::", "").replace("-", "").replace("|", "").replace("+", "").strip()
     kanal_adi = " ".join(kanal_adi.split()).upper()
     
@@ -171,7 +177,6 @@ def havuz_paneli_test_et(url: str):
             satirlar = response.text.splitlines()
             bulunan_tr_kanallari = []
             
-            # Ustanın İstediği VIP Test Hedefleri
             vip_test_linkleri = {
                 "cnn": None,
                 "kanald": None,
@@ -199,11 +204,9 @@ def havuz_paneli_test_et(url: str):
                         
                         temiz_satir = havuz_kanal_ismini_temizle(satir)
                         
-                        # Eğer kanal TR grubundaysa ana listeye eklenmek üzere topla
                         if any(isaret in satir.upper() for isaret in tr_isaretleri):
                             bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
                         
-                        # --- VIP KANAL YAKALAMA (Test için) ---
                         satir_upper = satir.upper()
                         if not vip_test_linkleri["cnn"] and re.search(r'CNN\s*T[UÜ]RK', satir_upper):
                             vip_test_linkleri["cnn"] = temiz_link
@@ -214,15 +217,10 @@ def havuz_paneli_test_et(url: str):
                         elif not vip_test_linkleri["sinema"] and re.search(r'S[Iİ]NEMA\s*(TV|1)', satir_upper):
                             vip_test_linkleri["sinema"] = temiz_link
             
-            # Bulunan VIP hedefleri listele (None olmayanlar)
             test_edilecekler = [link for link in vip_test_linkleri.values() if link is not None]
             
-            # Eğer panelde bu özel kanallardan en az 3 tanesi varsa teste başla
             if len(test_edilecekler) >= 3:
-                # Çalışan VIP kanal sayısını say
                 calisan_sayisi = sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link))
-                
-                # Test edilen kanalların tamamı (veya en az 3'ü) çalışıyorsa paneli kabul et
                 if calisan_sayisi >= 3:
                     logging.info(f"🟢 VIP KANALLARI (Kanal D, CNN, Belgesel, Sinema) ÇALIŞAN PANEL BULUNDU: {test_url}")
                     return "\n".join(bulunan_tr_kanallari)
@@ -396,7 +394,6 @@ def main():
                         baslik_yasakli_mi = False
                         
                         for s in eski_havuz_satirlari:
-                            # Eğer satır bir başlık (EXTINF) ise kontrol et
                             if s.startswith("#EXTINF"):
                                 if yasakli_mi(s):
                                     baslik_yasakli_mi = True
@@ -404,11 +401,9 @@ def main():
                                 else:
                                     baslik_yasakli_mi = False
                             
-                            # Eğer başlık yasaklıysa, altındaki link satırını da atla
                             if baslik_yasakli_mi:
                                 continue
                                 
-                            # Link seviyesinde yasaklı kelime veya IP kontrolü
                             if yasakli_mi(s) or any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
                                 if temiz_eski_havuz and temiz_eski_havuz[-1].startswith("#EXTINF"):
                                     temiz_eski_havuz.pop()
