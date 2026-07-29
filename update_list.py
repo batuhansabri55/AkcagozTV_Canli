@@ -68,9 +68,10 @@ YASAKLI_PATTERN = re.compile(
     re.IGNORECASE
 )
 
+# --- SÜREKLİ PATLAYAN SAHTE VE ÖLÜ SUNUCU IP'LERİ ---
 YASAKLI_IP_LISTESI = [
     "87.121.104.29",
-    "87.121.104.29:1071"
+    "65.108.239.207"
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -144,10 +145,10 @@ def havuz_yayin_canli_mi(test_url: str) -> bool:
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
             chunk = r.raw.read(1024)
-            if not chunk: 
+            if not chunk or len(chunk) < 512: 
                 return False
             content_text = chunk.decode('utf-8', errors='ignore').lower()
-            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html"]
+            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html", "not found"]
             if any(hata in content_text for hata in hata_kelimeleri):
                 return False
             return True
@@ -156,6 +157,10 @@ def havuz_yayin_canli_mi(test_url: str) -> bool:
 
 def link_saglam_mi(url: str) -> bool:
     """Yayın bağlantısını canlı içerik/segment doğrulayarak rigorously test eder."""
+    # Sahte ve patlak IP/Domainleri direkt reddet
+    if any(yasak_ip in url for yasak_ip in YASAKLI_IP_LISTESI):
+        return False
+
     try:
         with session.get(url, timeout=5, stream=True, allow_redirects=True) as r:
             if r.status_code not in [200, 206]: 
@@ -170,32 +175,36 @@ def link_saglam_mi(url: str) -> bool:
             except Exception:
                 return False
 
-            if not chunk:
+            if not chunk or len(chunk) < 256:
                 return False
             
             content_text = chunk.decode('utf-8', errors='ignore').lower()
-            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html"]
+            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html", "not found", "404"]
             if any(hata in content_text for hata in hata_kelimeleri):
                 return False
                 
             # M3U8 Playlist ise içindeki ts/stream segmentini çekip gerçek veri paketi doğrulayalım
             if any(key in content_text for key in ["#extm3u", "#extinf", "media-sequence"]):
+                gecerli_parca_bulundu = False
                 for line in content_text.split('\n'):
                     line = line.strip()
                     if line and not line.startswith("#"):
+                        gecerli_parca_bulundu = True
                         video_segment_url = line if line.startswith("http") else urljoin(url, line)
                         try:
                             with session.get(video_segment_url, timeout=4, stream=True) as vr:
                                 if vr.status_code in [200, 206]:
-                                    v_chunk = vr.raw.read(1024)
-                                    return bool(v_chunk and len(v_chunk) >= 256)
+                                    v_chunk = vr.raw.read(2048)
+                                    # Gerçek video/medya paketi en az 1 KB (1024 byte) olmalıdır
+                                    return bool(v_chunk and len(v_chunk) >= 1024)
                         except Exception:
                             return False
                         break
-                return False
+                # Eğer M3U8 dosyasının içinde hiç video parçası yoksa sahtedir
+                return gecerli_parca_bulundu
 
-            # Doğrudan TS veya raw stream ise veri boyutuna bak
-            return len(chunk) >= 512 and any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream'])
+            # Doğrudan TS veya raw stream ise veri boyutuna bak (En az 1024 byte akmalıdır)
+            return len(chunk) >= 1024 and any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream'])
     except Exception: 
         return False
 
@@ -213,7 +222,7 @@ def kanal_isleme(kanal_metni: str, kaynak_url: str, eklenen_urller: set):
     if yasakli_mi(ext_satiri) or yasakli_mi(link_satiri):
         return None
         
-    # TÜM KANALLAR İSTİSNASIZ CANLILIK TESTİNDEN GEÇER
+    # TÜM KANALLAR İSTİSNASIZ GERÇEK MEDYA VERİ AKIŞI TESTİNDEN GEÇER
     if link_saglam_mi(link_satiri):
         isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
@@ -339,7 +348,7 @@ def github_taze_link_avla():
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    logging.info("🛡️ USTA SİSTEM V12.1: SIFIR HATA CANLI KONTROL SİSTEMİ ÇALIŞIYOR!")
+    logging.info("🛡️ USTA SİSTEM V12.2: SIFIR TOLERANS AKIŞ DOĞRULAMA SİSTEMİ ÇALIŞIYOR!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -372,13 +381,11 @@ def main():
                 
                 if eski_havuz_linkleri:
                     logging.info("🕵️ Eski havuz taranıyor ve ölü linkler süzülüyor...")
-                    # Rastgele 3 taneye güvenmek yerine linklerin genel çalışırlığına bakalım
                     test_sample = random.sample(eski_havuz_linkleri, min(5, len(eski_havuz_linkleri)))
                     calisanlar = sum(1 for link in test_sample if havuz_yayin_canli_mi(link))
                     
                     if calisanlar >= 3:
                         logging.info("🟢 ESKİ HAVUZ PANELİ AKTİF! Ölü yayınlar ayıklanıp korunuyor.")
-                        # Eski havuzdaki ölü kanalları tek tek temizleyelim
                         temiz_eski_kanallar = []
                         for i in range(0, len(eski_havuz_satirlari) - 1):
                             if eski_havuz_satirlari[i].startswith("#EXTINF") and eski_havuz_satirlari[i+1].startswith("http"):
