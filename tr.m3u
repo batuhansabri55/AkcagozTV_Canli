@@ -681,8 +681,6 @@ https://edge.taksimbilisim.com/birtv/bant1/playlist.m3u8
 https://edge2.taksimbilisim.com:443/birtv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/atv.png" group-title="ULUSAL",ATV
 https://bstelevision.com/proxy.php?url=http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
-#EXTINF:-1 tvg-id="ATV Avrupa.de" tvg-name="ATV Avrupa TR" tvg-logo="https://i.imgur.com/8t5aAVx.png"  group-title="ULUSAL",ATV AVRUPA
-http://208.79.153.167/inim03/live1/atvavrupa/playlist.m3u8
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/showtv.png" group-title="ULUSAL",SHOW TV
 https://bstelevision.com/proxy.php?url=http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 #EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV  " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/startv.png" group-title="ULUSAL",STAR TV
@@ -799,8 +797,6 @@ http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/258
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/244
 #EXTINF:-1,TRT
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/245
-#EXTINF:-1,ATV AVRUPA
-http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/240
 #EXTINF:-1,SHOW TURK
 http://schwarzer-1903.com:8080/zonnergsTRR/eTtRAEcSuU/209141
 #EXTINF:-1,SHOWMAX
