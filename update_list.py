@@ -79,7 +79,6 @@ YASAKLI_IP_LISTESI = [
 ]
 
 YEDEK_KAYNAKLAR = [
-    "https://streams.uzunmuhalefet.com/lists/tr.m3u",
     "http://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Film/refs/heads/main/FilmDizi.m3u",
     "https://raw.githubusercontent.com/smtv62/smtv/bfe2fd49dfaf43fb3219abd1893dcd4f47e26781/turkce.m3u",
     "https://raw.githubusercontent.com/efendikral54-max/M3u-Listen/refs/heads/main/IPTVSevenler.m3u",
