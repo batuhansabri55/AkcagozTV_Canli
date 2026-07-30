@@ -94,7 +94,8 @@ YEDEK_KAYNAKLAR = [
 
 BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/refs/heads/main/paneller.txt"
 
-# REGEX ÖNBELLEKLERİ (Temizleme için)
+# REGEX ÖNBELLEKLERİ (TÜRKÇE KANAL YAKALAMA VE TEMİZLEME İÇİN)
+TR_KANAL_REGEX = re.compile(r'(\[TR\]|\bTR\b|\.TR\b|TURKEY|TÜRK|TURKISH|TÜRKÇE)', re.IGNORECASE)
 KALITE_REGEX = re.compile(r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|VIP|MOBILE|HQ|ʜᴅ)\b', re.IGNORECASE)
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
 DIL_REGEX = re.compile(r'\b(TURKISH|TÜRKÇE|TURKCE|TÜRK)\b', re.IGNORECASE)
@@ -168,7 +169,6 @@ def havuz_yayin_canli_mi(test_url: str) -> bool:
 
 def havuz_paneli_test_et(url: str):
     test_url = url.replace("type=m3u_plus", "type=m3u").replace("type=m3u", "type=m3u_plus")
-    tr_isaretleri = ["TR:", "TR|", "TR -", "TURKISH", "TÜRKÇE", "TURKCE", 'GROUP-TITLE="TR', "TÜRK"]
     
     try:
         response = session.get(test_url, timeout=10)
@@ -203,7 +203,8 @@ def havuz_paneli_test_et(url: str):
                         
                         temiz_satir = havuz_kanal_ismini_temizle(satir)
                         
-                        if any(isaret in satir.upper() for isaret in tr_isaretleri):
+                        # --- GÜNCELLENEN DÜZELTME: REGEX ILE ESNEK TÜRKÇE KANAL KONTROLÜ ---
+                        if TR_KANAL_REGEX.search(satir):
                             bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
                         
                         satir_upper = satir.upper()
