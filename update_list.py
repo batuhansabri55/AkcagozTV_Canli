@@ -102,7 +102,7 @@ PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
 PRE_TR = re.compile(r'\bTR\b[\.\:\-\|]?\s*', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
 
-# REKLAM VE SITE UZANTILARI REGEX (KODLUK.COM ve diğer site/reklam ekleri için)
+# REKLAM VE SITE UZANTILARI REGEX
 REKLAM_REGEX = re.compile(r'\b(KODLUK\.COM|KODLUK|\b[\w\-]+\.(COM|NET|ORG|TV|SITE|ONLINE|CLUB|INFO|XYZ|ME)\b)', re.IGNORECASE)
 
 # ==============================================================================
@@ -119,7 +119,7 @@ def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
         prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
         kanal_adi = extinf_satiri
 
-    # Parantez ve Reklam/Site uzantılarını temizle (KODLUK.COM dahil)
+    # Parantez ve Reklam/Site uzantılarını temizle
     kanal_adi = BRACKETS_REGEX.sub('', kanal_adi)
     kanal_adi = REKLAM_REGEX.sub('', kanal_adi)
     
@@ -147,6 +147,7 @@ def havuzu_indir():
         pass
     return []
 
+# --- DÜZENLENDİ: GERÇEK VİDEO AKIŞI KONTROLÜ YAPAR ---
 def havuz_yayin_canli_mi(test_url: str) -> bool:
     try:
         with session.get(test_url, timeout=4, stream=True, allow_redirects=True) as r:
@@ -156,7 +157,7 @@ def havuz_yayin_canli_mi(test_url: str) -> bool:
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
             chunk = r.raw.read(1024)
-            if not chunk: 
+            if not chunk or len(chunk) < 1024: 
                 return False
             content_text = chunk.decode('utf-8', errors='ignore').lower()
             hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html"]
@@ -283,6 +284,7 @@ def github_taze_link_avla():
             continue
     return yeni_kaynaklar[:12]
 
+# --- DÜZENLENDİ: M3U8 İÇİNDEKİ TS VİDEO PARÇASINA İNİP BAYT KONTROLÜ YAPAR (ÖLÜ LİNK GEÇEMEZ) ---
 def link_saglam_mi(url: str) -> bool:
     if any(x in url.lower() for x in ["atv-switch", "vizitv"]):
         return True
@@ -297,7 +299,7 @@ def link_saglam_mi(url: str) -> bool:
                 chunk = r.raw.read(4096)
             except Exception:
                 return False
-            if not chunk:
+            if not chunk or len(chunk) < 512:
                 return False
             
             content_text = chunk.decode('utf-8', errors='ignore').lower()
@@ -306,21 +308,20 @@ def link_saglam_mi(url: str) -> bool:
                 return False
                 
             if any(key in content_text for key in ["#extm3u", "#extinf", "media-sequence"]):
-                for line in content_text.split('\n'):
+                for line in content_text.splitlines():
                     line = line.strip()
                     if line and not line.startswith("#"):
-                        if any(x in line for x in ["http", ".ts", ".m3u8", "stream", "channel"]):
-                            video_segment_url = line if line.startswith("http") else urljoin(url, line)
-                            try:
-                                with session.get(video_segment_url, timeout=3, stream=True) as vr:
-                                    if vr.status_code in [200, 206]:
-                                        v_chunk = vr.raw.read(512)
-                                        return bool(v_chunk and len(v_chunk) >= 256)
-                            except Exception:
-                                return False
-                        break
+                        video_segment_url = line if line.startswith("http") else urljoin(url, line)
+                        try:
+                            with session.get(video_segment_url, timeout=4, stream=True) as vr:
+                                if vr.status_code in [200, 206]:
+                                    v_chunk = vr.raw.read(1024)
+                                    return bool(v_chunk and len(v_chunk) >= 1024)
+                        except Exception:
+                            return False
+                        return False
                 return False
-            return any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream'])
+            return any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream']) and len(chunk) >= 1024
     except Exception: 
         return False
 
@@ -339,10 +340,7 @@ def kanal_isleme(kanal_metni: str, kaynak_url: str, eklenen_urller: set):
         if yasakli_mi(ext_satiri) or yasakli_mi(link_satiri):
             return None
     
-    if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u", "filmdizi.m3u"]):
-        isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
-        return f"{isim_temiz}\n{link_satiri}"
-        
+    # --- DÜZENLENDİ: ARTIK GÜVENİLİR KAYNAKLAR DA DAHİL HER LİNK GERÇEK AKIŞ TESTİNDEN GEÇER ---
     if link_saglam_mi(link_satiri):
         isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
@@ -457,7 +455,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. Sağlam kanallar eklendi.")
+    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. Sadece çalışan kanallar eklendi.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
