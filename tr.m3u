@@ -2100,10 +2100,6 @@ https://tivi44.ozelip.com:3269/stream/play.m3u8
 https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="137" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/47fcca43-c2ac-4ab8-ae92-2b007655be9f.png" group-title="Çocuk",TRT EBA TV
 https://tv-e-okul01.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",CARTOON NETWORK
-http://65.108.239.207:80/cartoonnetwork/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",DISCOVERY2
-https://65.108.239.207/discovery/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",LOVE NATURE EN
 https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",NATURE TIME FR
@@ -2136,26 +2132,6 @@ http://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
 http://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png" tvg-id="Dummy" ,KNTVAZ
 https://cdn4.yayin.com.tr/kntv/video.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON
-http://65.108.239.207/bsaction1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 1
-http://65.108.239.207/box1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA TV 2
-http://65.108.239.207/sinema/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON 22
-http://65.108.239.207/sinemaaksiyon2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA 10012
-http://65.108.239.207/sinema1001/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA KOMEDİ2
-http://65.108.239.207/sinemakomedi/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 2
-http://65.108.239.207/box2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 3
-http://65.108.239.207/box3/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX ACTION
-http://65.108.239.207/sinemaaksiyon/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX YEŞİLÇAM
-http://65.108.239.207/sinemayerli/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",DENİZ POSTASI
 https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/chunks.m3u8
 #EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI",#EXTINF:1 TVGLOGO="HTTPS:///WPCONTENT/UPLOADS/2019/05/24TV.PNG" GROUPTITLE="NEO HABER
@@ -5528,26 +5504,6 @@ http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/67
 http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/54
 #EXTINF:0 tvg-agent="Firefox" tvg-id="SPORTS TV" tvg-name="TR: SPORTS TV HD" tvg-logo="http://logo.multicms.info/logoslar/sportstv.png" group-title="TR-SPOR",SPORTS TV
 http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/59
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 1 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 1
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/233930
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 2 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 2
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/233931
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 3 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 3
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/233932
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 4 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 4
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/337176
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 5 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 5
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/337175
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 6 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 6
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/337174
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 7 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 7
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/337173
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 8 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 8
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/337172
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 9 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 9
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/337171
-#EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: S Sport+ 10 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 10
-http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/337170
 #EXTINF:0 tvg-agent="Firefox" tvg-id="NULL" tvg-name="TR: BI TV" group-title="TR-SPOR",BI TV
 http://190502.tomtv.eu:80/LiudmilaSheremet/233v9m9kjc/314376
 #EXTINF:0 tvg-agent="Firefox" tvg-id="A Haber" tvg-name="TR: A HABER FHD" tvg-logo="http://logo.multicms.info/tvlogo/ahaberhd.png" group-title="TR-HABER",A HABER
@@ -5860,26 +5816,6 @@ http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/67?output=ts
 http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/54?output=ts
 #EXTINF:-1 tvg-id="SPORTS TV" tvg-name="TR: SPORTS TV HD" tvg-logo="http://logo.multicms.info/logoslar/sportstv.png" group-title="TR-SPOR",SPORTS TV
 http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/59?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 1 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 1
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/233930?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 2 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 2
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/233931?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 3 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 3
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/233932?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 4 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 4
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/337176?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 5 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 5
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/337175?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 6 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 6
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/337174?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 7 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 7
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/337173?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 8 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 8
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/337172?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 9 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 9
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/337171?output=ts
-#EXTINF:-1 tvg-id="NULL" tvg-name="TR: S Sport+ 10 ( YAYIN ZAMANI AKTİF )" tvg-logo="https://www.oyunfor.com/Public/upload/kategori/2471/anaResim/s-sport-plus-ana.jpg" group-title="TR-SPOR",S SPORT 10
-http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/337170?output=ts
 #EXTINF:-1 tvg-id="TRT 4K" tvg-name="TR: TRT 4K" tvg-logo="http://logo.multicms.info/logoslar/trt4k.png" group-title="TR-ULUSAL",TRT
 http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/51?output=ts
 #EXTINF:-1 tvg-id="TRT 1" tvg-name="TR: TRT 1 FHD" tvg-logo="http://logo.multicms.info/logoslar/trt1hd.png" group-title="TR-ULUSAL",TRT 1
@@ -6454,105 +6390,105 @@ http://190502.tomtv.eu:80/UgurKinik2/C1f0FHX2GVW/240402?output=ts
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/164988?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="-- ☪ ULUSAL ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",☪ ULUSAL ☪
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171127?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TRT 4ᴋ ᴜʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/TRT_4K_logo.svg/2560px-TRT_4K_logo.svg.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TRT 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TRT  " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/TRT_4K_logo.svg/2560px-TRT_4K_logo.svg.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TRT  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/129138?output=ts
 #EXTINF:-1 tvg-id="TRT 1.tr" tvg-name="[TR] TRT 1 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_1.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TRT 1
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20484?output=ts
-#EXTINF:-1 tvg-id="TRT 1.tr" tvg-name="[TR] TRT 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_1.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TRT 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="TRT 1.tr" tvg-name="[TR] TRT 1 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_1.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TRT 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113265?output=ts
-#EXTINF:-1 tvg-id="France24English" tvg-name="[TR] TRT 1 ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_1.png" group-title="[TR] ▶️ ULUSAL [RAW]",TRT 1 Ʀᴀᴡ
+#EXTINF:-1 tvg-id="France24English" tvg-name="[TR] TRT 1 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_1.png" group-title="[TR] ▶️ ULUSAL [RAW]",TRT 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207951?output=ts
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="[TR] TRT 1 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_1.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TRT 1 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="[TR] TRT 1  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_1.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TRT 1  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199920?output=ts
 #EXTINF:-1 tvg-id="TRT 2.tr" tvg-name="[TR] TRT 2 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_2.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TRT 2
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/169389?output=ts
 #EXTINF:-1 tvg-id="ATV.tr" tvg-name="[TR] ATV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/atv.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",ATV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6266?output=ts
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] ATV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/atv.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",ATV Ғʜᴅ
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] ATV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/atv.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",ATV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113266?output=ts
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] ATV ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/atv.png" group-title="[TR] ▶️ ULUSAL [RAW]",ATV Ʀᴀᴡ
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] ATV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/atv.png" group-title="[TR] ▶️ ULUSAL [RAW]",ATV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207952?output=ts
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="[TR] ATV 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/atv.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",ATV 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="ATV.tr" tvg-name="[TR] ATV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/atv.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",ATV  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199921?output=ts
 #EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="[TR] STAR TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/star.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",STAR TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6270?output=ts
-#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="[TR] STAR TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/star.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",STAR TV Ғʜᴅ
+#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="[TR] STAR TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/star.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",STAR TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113269?output=ts
-#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="[TR] STAR TV ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/star.png" group-title="[TR] ▶️ ULUSAL [RAW]",STAR TV Ʀᴀᴡ
+#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="[TR] STAR TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/star.png" group-title="[TR] ▶️ ULUSAL [RAW]",STAR TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207953?output=ts
-#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="[TR] STAR TV 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/star.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",STAR TV 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="STAR TV.tr" tvg-name="[TR] STAR TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/star.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",STAR TV  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199922?output=ts
 #EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="[TR] SHOW TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/show.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",SHOW TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6273?output=ts
-#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="[TR] SHOW TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/show.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",SHOW TV Ғʜᴅ
+#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="[TR] SHOW TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/show.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",SHOW TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113270?output=ts
-#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="[TR] SHOW TV ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/show.png" group-title="[TR] ▶️ ULUSAL [RAW]",SHOW TV Ʀᴀᴡ
+#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="[TR] SHOW TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/show.png" group-title="[TR] ▶️ ULUSAL [RAW]",SHOW TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207954?output=ts
-#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="[TR] SHOW TV 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/show.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",SHOW TV 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="SHOW TV.tr" tvg-name="[TR] SHOW TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/show.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",SHOW TV  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199923?output=ts
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] KANAL D ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanald.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",KANAL D
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6275?output=ts
-#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="[TR] Kanal D ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanald.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",KANAL D Ғʜᴅ
+#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="[TR] Kanal D " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanald.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",KANAL D 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113267?output=ts
-#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="[TR] KANAL D ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanald.png" group-title="[TR] ▶️ ULUSAL [RAW]",KANAL D Ʀᴀᴡ
+#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="[TR] KANAL D " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanald.png" group-title="[TR] ▶️ ULUSAL [RAW]",KANAL D 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207955?output=ts
-#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="[TR] KANAL D 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanald.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",KANAL D 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="KANAL D.tr" tvg-name="[TR] KANAL D  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanald.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",KANAL D  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199924?output=ts
 #EXTINF:-1 tvg-id="FOX.tr" tvg-name="[TR] NOW TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/now.tv.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",NOW TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6276?output=ts
-#EXTINF:-1 tvg-id="FOX.tr" tvg-name="[TR] NOW TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/now.tv.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",NOW TV Ғʜᴅ
+#EXTINF:-1 tvg-id="FOX.tr" tvg-name="[TR] NOW TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/now.tv.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",NOW TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113268?output=ts
-#EXTINF:-1 tvg-id="FOX.tr" tvg-name="[TR] NOW TV ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/now.tv.png" group-title="[TR] ▶️ ULUSAL [RAW]",NOW TV Ʀᴀᴡ
+#EXTINF:-1 tvg-id="FOX.tr" tvg-name="[TR] NOW TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/now.tv.png" group-title="[TR] ▶️ ULUSAL [RAW]",NOW TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207956?output=ts
-#EXTINF:-1 tvg-id="FOX.tr" tvg-name="[TR] NOW TV 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/now.tv.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",NOW TV 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="FOX.tr" tvg-name="[TR] NOW TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/now.tv.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",NOW TV  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199925?output=ts
 #EXTINF:-1 tvg-id="TV8.tr" tvg-name="[TR] TV 8 ʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 8
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20742?output=ts
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] TV 8 ғʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 8 Ғʜᴅ
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] TV 8 " tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 8 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113271?output=ts
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="[TR] TV 8 ʀᴀᴡ" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title="[TR] ▶️ ULUSAL [RAW]",TV 8 Ʀᴀᴡ
+#EXTINF:-1 tvg-id="TV8.tr" tvg-name="[TR] TV 8 " tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title="[TR] ▶️ ULUSAL [RAW]",TV 8 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207957?output=ts
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="[TR] TV 8 4ᴋ ᴜʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TV 8 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="TV8.tr" tvg-name="[TR] TV 8  " tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TV 8  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199926?output=ts
 #EXTINF:-1 tvg-id="TV8,5." TVGNAME=" TV 8.5 " TVGLOGO="HTTP://XPLUSLOGO./TVTUMDUNYALOGOLAR/LOGOLAR/TVTUMDUNYALOGOLAR/TURKEYT/TV_85.PNG" GROUPTITLE=" ▶️ ULUSAL / ", TV 8.5
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6281?output=ts
-#EXTINF:-1 tvg-id="TV8,5." TVGNAME=" TV 8.5 Ғʜᴅ" TVGLOGO="HTTP://XPLUSLOGO./TVTUMDUNYALOGOLAR/LOGOLAR/TVTUMDUNYALOGOLAR/TURKEYT/TV_85.PNG" GROUPTITLE=" ▶️ ULUSAL / ", TV 8.5 Ғʜᴅ
+#EXTINF:-1 tvg-id="TV8,5." TVGNAME=" TV 8.5 " TVGLOGO="HTTP://XPLUSLOGO./TVTUMDUNYALOGOLAR/LOGOLAR/TVTUMDUNYALOGOLAR/TURKEYT/TV_85.PNG" GROUPTITLE=" ▶️ ULUSAL / ", TV 8.5 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171172?output=ts
-#EXTINF:-1 tvg-id="TV8,5." TVGNAME=" TV 8.5 Ʀᴀᴡ" TVGLOGO="HTTP://XPLUSLOGO./TVTUMDUNYALOGOLAR/LOGOLAR/TVTUMDUNYALOGOLAR/TURKEYT/TV_85.PNG" GROUPTITLE=" ▶️ ULUSAL ", TV 8.5 Ʀᴀᴡ
+#EXTINF:-1 tvg-id="TV8,5." TVGNAME=" TV 8.5 " TVGLOGO="HTTP://XPLUSLOGO./TVTUMDUNYALOGOLAR/LOGOLAR/TVTUMDUNYALOGOLAR/TURKEYT/TV_85.PNG" GROUPTITLE=" ▶️ ULUSAL ", TV 8.5 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207958?output=ts
-#EXTINF:-1 tvg-id="TV8,5." TVGNAME=" TV 8.5 4ᴋ ᴜʜᴅ" TVGLOGO="HTTP://XPLUSLOGO./TVTUMDUNYALOGOLAR/LOGOLAR/TVTUMDUNYALOGOLAR/TURKEYT/TV_85.PNG" GROUPTITLE=" ▶️ ULUSAL ", TV 8.5 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="TV8,5." TVGNAME=" TV 8.5  " TVGLOGO="HTTP://XPLUSLOGO./TVTUMDUNYALOGOLAR/LOGOLAR/TVTUMDUNYALOGOLAR/TURKEYT/TV_85.PNG" GROUPTITLE=" ▶️ ULUSAL ", TV 8.5  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199927?output=ts
 #EXTINF:-1 tvg-id="TV8 HD.tr" tvg-name="[TR] TV 8 INT ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tv8int.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 8 INT
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171109?output=ts
 #EXTINF:-1 tvg-id="360 HD.tr" tvg-name="[TR] TV 360 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/360.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 360
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6272?output=ts
-#EXTINF:-1 tvg-id="24 HD.tr" tvg-name="[TR] TV 360 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/360.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 360 Ғʜᴅ
+#EXTINF:-1 tvg-id="24 HD.tr" tvg-name="[TR] TV 360 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/360.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 360 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/102066?output=ts
-#EXTINF:-1 tvg-id="360.tr" tvg-name="[TR] TV 360 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/360.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TV 360 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="360.tr" tvg-name="[TR] TV 360  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/360.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TV 360  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199929?output=ts
 #EXTINF:-1 tvg-id="BEYAZ TV.tr" tvg-name="[TR] BEYAZ TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/beyaz.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",BEYAZ TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6277?output=ts
-#EXTINF:-1 tvg-id="BEYAZ TV.tr" tvg-name="[TR] BEYAZ TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/beyaz.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",BEYAZ TV Ғʜᴅ
+#EXTINF:-1 tvg-id="BEYAZ TV.tr" tvg-name="[TR] BEYAZ TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/beyaz.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",BEYAZ TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171173?output=ts
-#EXTINF:-1 tvg-id="BEYAZ TV.tr" tvg-name="[TR] BEYAZ TV 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/beyaz.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",BEYAZ TV 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="BEYAZ TV.tr" tvg-name="[TR] BEYAZ TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/beyaz.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",BEYAZ TV  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199928?output=ts
 #EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal_7.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",KANAL 7
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6278?output=ts
-#EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal_7.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",KANAL 7 Ғʜᴅ
+#EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal_7.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",KANAL 7 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171174?output=ts
-#EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7 ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal_7.png" group-title="[TR] ▶️ ULUSAL [RAW]",KANAL 7 Ʀᴀᴡ
+#EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal_7.png" group-title="[TR] ▶️ ULUSAL [RAW]",KANAL 7 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207959?output=ts
-#EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal_7.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",KANAL 7 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal_7.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",KANAL 7  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199930?output=ts
 #EXTINF:-1 tvg-id="KANAL 7.tr" tvg-name="[TR] KANAL 7 EU ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kanal7av.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",KANAL 7 EU
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171110?output=ts
 #EXTINF:-1 tvg-id="TEVE2.tr" tvg-name="[TR] TEVE 2 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/teve2.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TEVE 2
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6279?output=ts
-#EXTINF:-1 tvg-id="TEVE2.tr" tvg-name="[TR] TEVE 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/teve2.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TEVE 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="TEVE2.tr" tvg-name="[TR] TEVE 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/teve2.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TEVE 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171175?output=ts
 #EXTINF:-1 tvg-id="TV 4.tr" tvg-name="[TR] TV 4 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_4.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 4
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35997?output=ts
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] TV 4 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_4.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 4 Ғʜᴅ
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] TV 4 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_4.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TV 4 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198422?output=ts
 #EXTINF:-1 tvg-id="A2.tr" tvg-name="[TR] A2 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_2.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",A2
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6268?output=ts
@@ -6576,337 +6512,249 @@ http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6091?output=ts
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/164989?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS HABER.tr" tvg-name="[TR] beIN SPORTS HABER ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sp_haber.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/103337?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS HABER.tr" tvg-name="[TR] beIN SPORTS HABER ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sp_haber.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="beIN SPORTS HABER.tr" tvg-name="[TR] beIN SPORTS HABER " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sp_haber.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167847?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 sᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 Sᴅ
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35762?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 sᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 Sᴅ ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 sᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 Sᴅ 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195345?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/Logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/98925?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 ʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 ʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195346?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/126272?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195347?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4k.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4k.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35650?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 4ᴋ ᴜʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4k.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4ᴋ ᴜʜᴅ ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS   " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4k.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS   
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195348?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 50 ғᴘs" tvg-logo="http://xplus-logo.dynuddns.net/Logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 50 ҒᴘS
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/196323?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 Hevc ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 1.tr" tvg-name="[TR] beIN SPORTS 1 Hevc " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195349?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35730?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2 ʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2 ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2 ʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195350?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101508?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195351?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 2.tr" tvg-name="[TR] beIN SPORTS 2 50 ғᴘs" tvg-logo="http://xplus-logo.dynuddns.net/Logolar/turkeyT/bein_sports_2.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 2 50 ҒᴘS
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/196324?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6097?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3 ʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3 ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3 ʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195353?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3 Ғʜᴅ
+#EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101507?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195354?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 3.tr" tvg-name="[TR] beIN SPORTS 3 50 ғᴘs" tvg-logo="http://xplus-logo.dynuddns.net/Logolar/turkeyT/bein_sports_3.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 3 50 ҒᴘS
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/196325?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6098?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4 ʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4 ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4 ʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195356?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4 Ғʜᴅ
+#EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101506?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195357?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 4.tr" tvg-name="[TR] beIN SPORTS 4 50 ғᴘs" tvg-logo="http://xplus-logo.dynuddns.net/Logolar/turkeyT/bein_sports_4.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 4 50 ҒᴘS
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/196326?output=ts
 #EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171208?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5 ʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5 ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5 ʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195359?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5 Ғʜᴅ
+#EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/125936?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
+#EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/195360?output=ts
-#EXTINF:-1 tvg-id="beIN SPORTS 5.tr" tvg-name="[TR] beIN SPORTS 5 50 ғᴘs" tvg-logo="http://xplus-logo.dynuddns.net/Logolar/turkeyT/bein_sports_5.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN SPORTS 5 50 ҒᴘS
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/196327?output=ts
-#EXTINF:-1 tvg-id="beIN.tr" tvg-name="[TR] beIN CONNECT 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bein_sp.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN CONNECT 1 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137710?output=ts
-#EXTINF:-1 tvg-id="beIN.tr" tvg-name="[TR] beIN CONNECT 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bein_sp.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN CONNECT 2 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137711?output=ts
-#EXTINF:-1 tvg-id="beIN.tr" tvg-name="[TR] beIN CONNECT 3 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bein_sp.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN CONNECT 3 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137712?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] beIN CONNECT 4 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bein_sp.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN CONNECT 4 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174770?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] beIN CONNECT 5 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bein_sp.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN CONNECT 5 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174771?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] beIN CONNECT 6 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bein_sp.png" group-title=" [TR] ▶️ BEIN SPORTS",BEIN CONNECT 6 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174772?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="-- ☪ S SPORT ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ S SPORT PLUS",☪ S SPORT ☪
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171124?output=ts
-#EXTINF:-1 tvg-id="S Sport.tr" tvg-name="[TR] S SPORT ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6104?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT ʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285620?output=ts
-#EXTINF:-1 tvg-id="S Sport.tr" tvg-name="[TR] S SPORT ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/115598?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285621?output=ts
-#EXTINF:-1 tvg-id="S Sport2.tr" tvg-name="[TR] S SPORT 2 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_2.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 2
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6105?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT 2 ʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_2.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 2 ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285622?output=ts
-#EXTINF:-1 tvg-id="S Sport2.tr" tvg-name="[TR] S SPORT 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_2.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 2 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/115599?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT 2 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_2.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 2 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285623?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 1 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137713?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 1 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 1 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285624?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 2 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137714?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 2 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 2 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285625?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 3 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 3 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137715?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 3 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 3 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285626?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 4 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 4 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137716?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 4 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 4 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285627?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 5 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 5 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/137717?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 5 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 5 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285628?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 6 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 6 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/204106?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 6 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 6 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285629?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 7 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 7 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/284959?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 7 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 7 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285630?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 8 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 8 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/284960?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 8 ғʜᴅ ᴇᴜʀᴏᴘᴇ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 8 Ғʜᴅ ᴇᴜƦᴏᴘᴇ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285631?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 9 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 9 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/284961?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] S SPORT PLUS 10 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport_plus.png" group-title=" [TR] ▶️ S SPORT PLUS",S SPORT 10 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/284962?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="-- ☪ TIVIBU & D-SMART ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",☪ TIVIBU & DSMART ☪
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171125?output=ts
-#EXTINF:-1 tvg-id="Spor Smart.tr" tvg-name="[TR] SPOR SMART 1 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/spor_smart.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",SPOR SMART 1
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/170815?output=ts
-#EXTINF:-1 tvg-id="Spor Smart.tr" tvg-name="[TR] SPOR SMART 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/spor_smart.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",SPOR SMART 1 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/121246?output=ts
-#EXTINF:-1 tvg-id="Spor Smart 2.tr" tvg-name="[TR] SPOR SMART 2 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/spor_smart.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",SPOR SMART 2
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6108?output=ts
-#EXTINF:-1 tvg-id="Spor Smart 2.tr" tvg-name="[TR] SPOR SMART 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/spor_smart.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",SPOR SMART 2 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113272?output=ts
-#EXTINF:-1 tvg-id="EUROSPORT 1.tr" tvg-name="[TR] EUROSPORT 1 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/eurosport1.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",EUROSPORT 1
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6106?output=ts
-#EXTINF:-1 tvg-id="EUROSPORT 1.tr" tvg-name="[TR] EUROSPORT 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/eurosport1.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",EUROSPORT 1 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174380?output=ts
-#EXTINF:-1 tvg-id="EUROSPORT 2.tr" tvg-name="[TR] EUROSPORT 2 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/eurosport2.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",EUROSPORT 2
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6107?output=ts
-#EXTINF:-1 tvg-id="EUROSPORT 2.tr" tvg-name="[TR] EUROSPORT 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/eurosport2.png" group-title=" [TR] ▶️ TIVIBU & D-SMART",EUROSPORT 2 Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174381?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="-- ☪ ULUSAL SPOR ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ SPOR ",☪ ULUSAL SPOR ☪
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171126?output=ts
 #EXTINF:-1 tvg-id="TRTSPOR.tr" tvg-name="[TR] TRT SPOR ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title=" [TR] ▶️ SPOR ",TRT SPOR
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6109?output=ts
-#EXTINF:-1 tvg-id="TRTSPOR.tr" tvg-name="[TR] TRT SPOR ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title=" [TR] ▶️ SPOR ",TRT SPOR Ғʜᴅ
+#EXTINF:-1 tvg-id="TRTSPOR.tr" tvg-name="[TR] TRT SPOR " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title=" [TR] ▶️ SPOR ",TRT SPOR 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167849?output=ts
-#EXTINF:-1 tvg-id="TRT SPOR.tr" tvg-name="[TR] TRT SPOR 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TRT SPOR 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="TRT SPOR.tr" tvg-name="[TR] TRT SPOR  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",TRT SPOR  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199931?output=ts
-#EXTINF:-1 tvg-id="TRT SPOR.tr" tvg-name="[TR] TRT SPOR ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title="[TR] ▶️ ULUSAL [RAW]",TRT SPOR Ʀᴀᴡ
+#EXTINF:-1 tvg-id="TRT SPOR.tr" tvg-name="[TR] TRT SPOR " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title="[TR] ▶️ ULUSAL [RAW]",TRT SPOR 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207960?output=ts
-#EXTINF:-1 tvg-id="TRT 3.tr" tvg-name="[TR] TRT 3 SPOR ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/trt_sopr3_tbmm.png" group-title=" [TR] ▶️ SPOR ",TRT 3 SPOR Ғʜᴅ
+#EXTINF:-1 tvg-id="TRT 3.tr" tvg-name="[TR] TRT 3 SPOR " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/trt_sopr3_tbmm.png" group-title=" [TR] ▶️ SPOR ",TRT 3 SPOR 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198434?output=ts
 #EXTINF:-1 tvg-id="TRT SPOR YILDIZ.tr" tvg-name="[TR] TRT SPOR YILDIZ ʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg/2560px-TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg.png" group-title=" [TR] ▶️ SPOR ",TRT SPOR YILDIZ
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/194341?output=ts
-#EXTINF:-1 tvg-id="TRTSPORYILDIZ.tr" tvg-name="[TR] TRT SPOR YILDIZ ғʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg/2560px-TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg.png" group-title=" [TR] ▶️ SPOR ",TRT SPOR YILDIZ Ғʜᴅ
+#EXTINF:-1 tvg-id="TRTSPORYILDIZ.tr" tvg-name="[TR] TRT SPOR YILDIZ " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg/2560px-TRT_Spor_Y%C4%B1ld%C4%B1z_Logo.svg.png" group-title=" [TR] ▶️ SPOR ",TRT SPOR YILDIZ 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35774?output=ts
 #EXTINF:-1 tvg-id="ASpor.tr" tvg-name="[TR] A SPOR ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title=" [TR] ▶️ SPOR ",A SPOR
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6113?output=ts
-#EXTINF:-1 tvg-id="ASpor.tr" tvg-name="[TR] A SPOR ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title=" [TR] ▶️ SPOR ",A SPOR Ғʜᴅ
+#EXTINF:-1 tvg-id="ASpor.tr" tvg-name="[TR] A SPOR " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title=" [TR] ▶️ SPOR ",A SPOR 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167848?output=ts
-#EXTINF:-1 tvg-id="A SPOR.tr" tvg-name="[TR] A SPOR 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",A SPOR 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="A SPOR.tr" tvg-name="[TR] A SPOR  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",A SPOR  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/199932?output=ts
-#EXTINF:-1 tvg-id="A SPOR.tr" tvg-name="[TR] A SPOR ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title="[TR] ▶️ ULUSAL [RAW]",A SPOR Ʀᴀᴡ
+#EXTINF:-1 tvg-id="A SPOR.tr" tvg-name="[TR] A SPOR " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title="[TR] ▶️ ULUSAL [RAW]",A SPOR 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207961?output=ts
 #EXTINF:-1 tvg-id="HT SPOR.tr" tvg-name="[TR] HT SPOR ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/7-24spor.png" group-title=" [TR] ▶️ SPOR ",HT SPOR
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174778?output=ts
-#EXTINF:-1 tvg-id="HT SPOR.tr" tvg-name="[TR] HT SPOR 4ᴋ ᴜʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/7-24spor.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",HT SPOR 4ᴋ ᴜʜᴅ
+#EXTINF:-1 tvg-id="HT SPOR.tr" tvg-name="[TR] HT SPOR  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/7-24spor.png" group-title="[TR] ▶️ ULUSAL UHD [4K]",HT SPOR  
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/203982?output=ts
-#EXTINF:-1 tvg-id="HT SPOR.tr" tvg-name="[TR] HT SPOR ʀᴀᴡ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/7-24spor.png" group-title="[TR] ▶️ ULUSAL [RAW]",HT SPOR Ʀᴀᴡ
+#EXTINF:-1 tvg-id="HT SPOR.tr" tvg-name="[TR] HT SPOR " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/7-24spor.png" group-title="[TR] ▶️ ULUSAL [RAW]",HT SPOR 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/207962?output=ts
-#EXTINF:-1 tvg-id="EKOL Sports.tr" tvg-name="[TR] EKOL SPORTS ғʜᴅ" tvg-logo="https://pbs.twimg.com/profile_images/1884171440934563840/8PAU1gpT_400x400.jpg" group-title=" [TR] ▶️ SPOR ",EKOL SPORTS Ғʜᴅ
+#EXTINF:-1 tvg-id="EKOL Sports.tr" tvg-name="[TR] EKOL SPORTS " tvg-logo="https://pbs.twimg.com/profile_images/1884171440934563840/8PAU1gpT_400x400.jpg" group-title=" [TR] ▶️ SPOR ",EKOL SPORTS 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113283?output=ts
-#EXTINF:-1 tvg-id="24 HD.tr" tvg-name="[TR] FB TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/fb_tv.png" group-title=" [TR] ▶️ SPOR ",FB TV Ғʜᴅ
+#EXTINF:-1 tvg-id="24 HD.tr" tvg-name="[TR] FB TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/fb_tv.png" group-title=" [TR] ▶️ SPOR ",FB TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6114?output=ts
 #EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] TRT GENÇ ʜᴅ" tvg-logo="https://www.trt.net.tr/_nuxt/img/trt-genc.0b68abf.png" group-title=" [TR] ▶️ ULUSAL HD / FHD",TRT GENÇ
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6115?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] SIFIR TV ғʜᴅ" tvg-logo="" group-title=" [TR] ▶️ SPOR ",SIFIR TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] SIFIR TV " tvg-logo="" group-title=" [TR] ▶️ SPOR ",SIFIR TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223905?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] REDBULL TV ғʜᴅ" tvg-logo="https://static.ssportplus.com/wp-content/uploads/2024/03/redbull-tv-800x800-1-768x768.png" group-title=" [TR] ▶️ SPOR ",REDBULL TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] REDBULL TV " tvg-logo="https://static.ssportplus.com/wp-content/uploads/2024/03/redbull-tv-800x800-1-768x768.png" group-title=" [TR] ▶️ SPOR ",REDBULL TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/194464?output=ts
-#EXTINF:-1 tvg-id="Sports TV.tr" tvg-name="[TR] SPORTS TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sports_tv.png" group-title=" [TR] ▶️ SPOR ",SPORTS TV Ғʜᴅ
+#EXTINF:-1 tvg-id="Sports TV.tr" tvg-name="[TR] SPORTS TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sports_tv.png" group-title=" [TR] ▶️ SPOR ",SPORTS TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20772?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="SPOR-VIP: NBA TV" tvg-logo="" group-title=" [TR] ▶️ SPOR ",SPOR: NBA TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/272988?output=ts
-#EXTINF:-1 tvg-id="CosmoSports.tr" tvg-name="[TR] COSMO SPORTS ғʜᴅ" tvg-logo="https://cosmobluemedia.com/wp-content/uploads/elementor/thumbs/cosmo-sports-channel-qifts6jdf924r8ryqkmua1hnttkq3nfwrxw5u2eya2.png" group-title=" [TR] ▶️ SPOR ",COSMO SPORTS Ғʜᴅ
+#EXTINF:-1 tvg-id="CosmoSports.tr" tvg-name="[TR] COSMO SPORTS " tvg-logo="https://cosmobluemedia.com/wp-content/uploads/elementor/thumbs/cosmo-sports-channel-qifts6jdf924r8ryqkmua1hnttkq3nfwrxw5u2eya2.png" group-title=" [TR] ▶️ SPOR ",COSMO SPORTS 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167850?output=ts
 #EXTINF:-1 tvg-id="FIGHT NETWORK.tr" tvg-name="[TR] FIGHT BOX" tvg-logo="" group-title=" [TR] ▶️ SPOR ",FIGHT BOX
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171112?output=ts
-#EXTINF:-1 tvg-id="FIGHT NETWORK.tr" tvg-name="[TR] FIGHT NETWORK ғʜᴅ" tvg-logo="" group-title=" [TR] ▶️ SPOR ",FIGHT NETWORK Ғʜᴅ
+#EXTINF:-1 tvg-id="FIGHT NETWORK.tr" tvg-name="[TR] FIGHT NETWORK " tvg-logo="" group-title=" [TR] ▶️ SPOR ",FIGHT NETWORK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171113?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] UFC FIGHT PASS ғʜᴅ" tvg-logo="" group-title=" [TR] ▶️ SPOR ",UFC FIGHT PASS Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] UFC FIGHT PASS " tvg-logo="" group-title=" [TR] ▶️ SPOR ",UFC FIGHT PASS 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171114?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TJK TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tjk_tv.png" group-title=" [TR] ▶️ SPOR ",TJK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TJK TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tjk_tv.png" group-title=" [TR] ▶️ SPOR ",TJK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6116?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="-- ☪ HABER ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ HABER",☪ HABER ☪
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171129?output=ts
 #EXTINF:-1 tvg-id="TRT HABER.tr" tvg-name="[TR] TRT HABER ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_haber.png" group-title=" [TR] ▶️ HABER",TRT HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6208?output=ts
-#EXTINF:-1 tvg-id="TRT HABER.tr" tvg-name="[TR] TRT HABER ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/trt_haber.png" group-title=" [TR] ▶️ HABER",TRT HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="TRT HABER.tr" tvg-name="[TR] TRT HABER " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/trt_haber.png" group-title=" [TR] ▶️ HABER",TRT HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174580?output=ts
 #EXTINF:-1 tvg-id="CNN TURK.tr" tvg-name="[TR] CNN TURK ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/cnn_turk.png" group-title=" [TR] ▶️ HABER",CNN TURK
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6210?output=ts
-#EXTINF:-1 tvg-id="CNN TURK.tr" tvg-name="[TR] CNN TURK ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/cnn_turk.png" group-title=" [TR] ▶️ HABER",CNN TURK Ғʜᴅ
+#EXTINF:-1 tvg-id="CNN TURK.tr" tvg-name="[TR] CNN TURK " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/cnn_turk.png" group-title=" [TR] ▶️ HABER",CNN TURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174582?output=ts
 #EXTINF:-1 tvg-id="HABERTURK.tr" tvg-name="[TR] HABER TURK ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/haberturk.png" group-title=" [TR] ▶️ HABER",HABER TURK
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6212?output=ts
-#EXTINF:-1 tvg-id="HABERTÜRK TV.tr" tvg-name="[TR] HABER TURK ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/haberturk.png" group-title=" [TR] ▶️ HABER",HABER TURK Ғʜᴅ
+#EXTINF:-1 tvg-id="HABERTÜRK TV.tr" tvg-name="[TR] HABER TURK " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/haberturk.png" group-title=" [TR] ▶️ HABER",HABER TURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174583?output=ts
 #EXTINF:-1 tvg-id="HABERGLOBAL.tr" tvg-name="[TR] HABER GLOBAL ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/haber_global.png" group-title=" [TR] ▶️ HABER",HABER GLOBAL
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6219?output=ts
-#EXTINF:-1 tvg-id="HABERGLOBAL.tr" tvg-name="[TR] HABER GLOBAL ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/haber_global.png" group-title=" [TR] ▶️ HABER",HABER GLOBAL Ғʜᴅ
+#EXTINF:-1 tvg-id="HABERGLOBAL.tr" tvg-name="[TR] HABER GLOBAL " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/haber_global.png" group-title=" [TR] ▶️ HABER",HABER GLOBAL 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174584?output=ts
 #EXTINF:-1 tvg-id="TV100.tr" tvg-name="[TR] TV 100 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tv_100.png" group-title=" [TR] ▶️ HABER",TV 100
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6225?output=ts
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="[TR] TV 100 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_100.png" group-title=" [TR] ▶️ HABER",TV 100 Ғʜᴅ
+#EXTINF:-1 tvg-id="tv100.tr" tvg-name="[TR] TV 100 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_100.png" group-title=" [TR] ▶️ HABER",TV 100 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174593?output=ts
 #EXTINF:-1 tvg-id="24 TV.tr" tvg-name="[TR] TV 24 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/24_tv.png" group-title=" [TR] ▶️ HABER",TV 24
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20748?output=ts
-#EXTINF:-1 tvg-id="24.tr" tvg-name="[TR] TV 24 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/24_tv.png" group-title=" [TR] ▶️ HABER",TV 24 Ғʜᴅ
+#EXTINF:-1 tvg-id="24.tr" tvg-name="[TR] TV 24 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/24_tv.png" group-title=" [TR] ▶️ HABER",TV 24 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174591?output=ts
 #EXTINF:-1 tvg-id="SÖZCÜ TV.tr" tvg-name="[TR] SZC TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/SZC_TV.png" group-title=" [TR] ▶️ HABER",SZC TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/165138?output=ts
-#EXTINF:-1 tvg-id="SÖZCÜ TV.tr" tvg-name="[TR] SZC TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/szc.png" group-title=" [TR] ▶️ HABER",SZC TV Ғʜᴅ
+#EXTINF:-1 tvg-id="SÖZCÜ TV.tr" tvg-name="[TR] SZC TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/szc.png" group-title=" [TR] ▶️ HABER",SZC TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174588?output=ts
 #EXTINF:-1 tvg-id="AHABER.tr" tvg-name="[TR] A HABER ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_haber.png" group-title=" [TR] ▶️ HABER",A HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20768?output=ts
-#EXTINF:-1 tvg-id="A Haber.tr" tvg-name="[TR] A HABER ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/a_haber.png" group-title=" [TR] ▶️ HABER",A HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="A Haber.tr" tvg-name="[TR] A HABER " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/a_haber.png" group-title=" [TR] ▶️ HABER",A HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174581?output=ts
 #EXTINF:-1 tvg-id="BENGÜTÜRK.tr" tvg-name="[TR] BENGU TURK ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/benguturk.png" group-title=" [TR] ▶️ HABER",BENGU TURK
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20811?output=ts
 #EXTINF:-1 tvg-id="NTV.tr" tvg-name="[TR] NTV HABER ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ntv_haber.png" group-title=" [TR] ▶️ HABER",NTV HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101114?output=ts
-#EXTINF:-1 tvg-id="NTV.tr" tvg-name="[TR] NTV HABER ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ntv_haber.png" group-title=" [TR] ▶️ HABER",NTV HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="NTV.tr" tvg-name="[TR] NTV HABER " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ntv_haber.png" group-title=" [TR] ▶️ HABER",NTV HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174586?output=ts
 #EXTINF:-1 tvg-id="HALK TV.tr" tvg-name="[TR] HALK TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/halk_tv.png" group-title=" [TR] ▶️ HABER",HALK TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20758?output=ts
-#EXTINF:-1 tvg-id="HALK TV.tr" tvg-name="[TR] HALK TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/halk_tv.png" group-title=" [TR] ▶️ HABER",HALK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="HALK TV.tr" tvg-name="[TR] HALK TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/halk_tv.png" group-title=" [TR] ▶️ HABER",HALK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174589?output=ts
 #EXTINF:-1 tvg-id="24 HD.tr" tvg-name="[TR] TELE 1 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/tele_1_tr.png" group-title=" [TR] ▶️ HABER",TELE 1
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101115?output=ts
-#EXTINF:-1 tvg-id="TELE 1.tr" tvg-name="[TR] TELE 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tele_1.png" group-title=" [TR] ▶️ HABER",TELE 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="TELE 1.tr" tvg-name="[TR] TELE 1 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tele_1.png" group-title=" [TR] ▶️ HABER",TELE 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174594?output=ts
 #EXTINF:-1 tvg-id="KRT TV.tr" tvg-name="[TR] KRT TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/krt_tr.png" group-title=" [TR] ▶️ HABER",KRT TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101118?output=ts
-#EXTINF:-1 tvg-id="KRT TV.tr" tvg-name="[TR] KRT TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/krt.png" group-title=" [TR] ▶️ HABER",KRT TV Ғʜᴅ
+#EXTINF:-1 tvg-id="KRT TV.tr" tvg-name="[TR] KRT TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/krt.png" group-title=" [TR] ▶️ HABER",KRT TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174587?output=ts
 #EXTINF:-1 tvg-id="BLOOMBERG HT.tr" tvg-name="[TR] BLOOMBERG HT ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bloombeerg_ht.png" group-title=" [TR] ▶️ HABER",BLOOMBERG HT
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6214?output=ts
-#EXTINF:-1 tvg-id="BLOOMBERG HT.tr" tvg-name="[TR] BLOOMBERG HT ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bloombeerg_ht.png" group-title=" [TR] ▶️ HABER",BLOOMBERG HT Ғʜᴅ
+#EXTINF:-1 tvg-id="BLOOMBERG HT.tr" tvg-name="[TR] BLOOMBERG HT " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bloombeerg_ht.png" group-title=" [TR] ▶️ HABER",BLOOMBERG HT 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174599?output=ts
 #EXTINF:-1 tvg-id="EKOTURK.tr" tvg-name="[TR] EKOTURK ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/ekoturk.png" group-title=" [TR] ▶️ HABER",EKOTURK
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20486?output=ts
-#EXTINF:-1 tvg-id="EKOTURK.tr" tvg-name="[TR] EKOTURK ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ekoturk.png" group-title=" [TR] ▶️ HABER",EKOTURK Ғʜᴅ
+#EXTINF:-1 tvg-id="EKOTURK.tr" tvg-name="[TR] EKOTURK " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ekoturk.png" group-title=" [TR] ▶️ HABER",EKOTURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174597?output=ts
 #EXTINF:-1 tvg-id="EKOL TV.tr" tvg-name="[TR] EKOL TV ʜᴅ" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/thumbnail_EKOL_TV_LOGO_PNG.png" group-title=" [TR] ▶️ HABER",EKOL TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20921?output=ts
-#EXTINF:-1 tvg-id="EKOL TV.tr" tvg-name="[TR] EKOL TV ғʜᴅ" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/thumbnail_EKOL_TV_LOGO_PNG.png" group-title=" [TR] ▶️ HABER",EKOL TV Ғʜᴅ
+#EXTINF:-1 tvg-id="EKOL TV.tr" tvg-name="[TR] EKOL TV " tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/thumbnail_EKOL_TV_LOGO_PNG.png" group-title=" [TR] ▶️ HABER",EKOL TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6291?output=ts
 #EXTINF:-1 tvg-id="Tvnet.tr" tvg-name="[TR] TV NET ʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Tvnet.png/800px-Tvnet.png" group-title=" [TR] ▶️ HABER",TV NET
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20813?output=ts
-#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="[TR] TV NET ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_net.png" group-title=" [TR] ▶️ HABER",TV NET Ғʜᴅ
+#EXTINF:-1 tvg-id="TVNET.tr" tvg-name="[TR] TV NET " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_net.png" group-title=" [TR] ▶️ HABER",TV NET 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174595?output=ts
 #EXTINF:-1 tvg-id="TGRT HABER.tr" tvg-name="[TR] TGRT HABER ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tgrt_haber.png" group-title=" [TR] ▶️ HABER",TGRT HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6209?output=ts
-#EXTINF:-1 tvg-id="TGRT HABER.tr" tvg-name="[TR] TGRT HABER ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tgrt_haber.png" group-title=" [TR] ▶️ HABER",TGRT HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="TGRT HABER.tr" tvg-name="[TR] TGRT HABER " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tgrt_haber.png" group-title=" [TR] ▶️ HABER",TGRT HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174585?output=ts
 #EXTINF:-1 tvg-id="ÜLKE TV.tr" tvg-name="[TR] ULKE TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/ulke_tv_tr.png" group-title=" [TR] ▶️ HABER",ULKE TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20814?output=ts
-#EXTINF:-1 tvg-id="Ülke TV.tr" tvg-name="[TR] ULKE TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ulke_tv.png" group-title=" [TR] ▶️ HABER",ULKE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="Ülke TV.tr" tvg-name="[TR] ULKE TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ulke_tv.png" group-title=" [TR] ▶️ HABER",ULKE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174590?output=ts
 #EXTINF:-1 tvg-id="Flash Haber.tr" tvg-name="[TR] FLASH HABER ʜᴅ" tvg-logo="https://flashhabertv.com/assets/images/logo.png" group-title=" [TR] ▶️ HABER",FLASH HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20812?output=ts
-#EXTINF:-1 tvg-id="FLASH HABER.tr" tvg-name="[TR] FLASH HABER ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/flashTv.png" group-title=" [TR] ▶️ HABER",FLASH HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="FLASH HABER.tr" tvg-name="[TR] FLASH HABER " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/flashTv.png" group-title=" [TR] ▶️ HABER",FLASH HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174592?output=ts
 #EXTINF:-1 tvg-id="A PARA.tr" tvg-name="[TR] A PARA ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_para.png" group-title=" [TR] ▶️ HABER",A PARA
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6206?output=ts
-#EXTINF:-1 tvg-id="A PARA.tr" tvg-name="[TR] A PARA ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/a_para.png" group-title=" [TR] ▶️ HABER",A PARA Ғʜᴅ
+#EXTINF:-1 tvg-id="A PARA.tr" tvg-name="[TR] A PARA " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/a_para.png" group-title=" [TR] ▶️ HABER",A PARA 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174598?output=ts
 #EXTINF:-1 tvg-id="TRT WORLD.tr" tvg-name="[TR] TRT WORLD ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_world.png" group-title=" [TR] ▶️ HABER",TRT WORLD
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6207?output=ts
-#EXTINF:-1 tvg-id="Kanal B.tr" tvg-name="[TR] KANAL B ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_b.png" group-title=" [TR] ▶️ HABER",KANAL B Ғʜᴅ
+#EXTINF:-1 tvg-id="Kanal B.tr" tvg-name="[TR] KANAL B " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_b.png" group-title=" [TR] ▶️ HABER",KANAL B 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174596?output=ts
-#EXTINF:-1 tvg-id="TH Türk Haber.tr" tvg-name="[TR] TH TURK HABER ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/thturkhaber.png" group-title=" [TR] ▶️ HABER",TH TURK HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="TH Türk Haber.tr" tvg-name="[TR] TH TURK HABER " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/thturkhaber.png" group-title=" [TR] ▶️ HABER",TH TURK HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174600?output=ts
 #EXTINF:-1 tvg-id="Lider Haber.tr" tvg-name="[TR] LIDER HABER ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/liderHaber.png" group-title=" [TR] ▶️ HABER",LIDER HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174601?output=ts
 #EXTINF:-1 tvg-id="TÜRKHABER TV.tr" tvg-name="[TR] UZAY HABER ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/uzay_haber.png" group-title=" [TR] ▶️ HABER",UZAY HABER
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174602?output=ts
-#EXTINF:-1 tvg-id="CNBC-e.tr" tvg-name="[TR] CNBC-E ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/CNBC-e.png" group-title=" [TR] ▶️ HABER",CNBCE Ғʜᴅ
+#EXTINF:-1 tvg-id="CNBC-e.tr" tvg-name="[TR] CNBC-E " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/CNBC-e.png" group-title=" [TR] ▶️ HABER",CNBCE 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/194463?output=ts
-#EXTINF:-1 tvg-id="SZC TV.tr" tvg-name="[TR] NEO HABER ғʜᴅ" tvg-logo="" group-title=" [TR] ▶️ HABER",NEO HABER Ғʜᴅ
+#EXTINF:-1 tvg-id="SZC TV.tr" tvg-name="[TR] NEO HABER " tvg-logo="" group-title=" [TR] ▶️ HABER",NEO HABER 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/224284?output=ts
-#EXTINF:-1 tvg-id="TELE 1.tr" tvg-name="[TR] TELENEWS ғʜᴅ" tvg-logo="" group-title=" [TR] ▶️ HABER",TELENEWS Ғʜᴅ
+#EXTINF:-1 tvg-id="TELE 1.tr" tvg-name="[TR] TELENEWS " tvg-logo="" group-title=" [TR] ▶️ HABER",TELENEWS 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/224285?output=ts
-#EXTINF:-1 tvg-id="24.tr" tvg-name="[TR] ILKE TV ғʜᴅ" tvg-logo="" group-title=" [TR] ▶️ HABER",ILKE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="24.tr" tvg-name="[TR] ILKE TV " tvg-logo="" group-title=" [TR] ▶️ HABER",ILKE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/224286?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="-- ☪ BELGESEL ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ BELGESEL",☪ BELGESEL ☪
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171133?output=ts
 #EXTINF:-1 tvg-id="TRT BELGESEL.tr" tvg-name="[TR] TRT BELGESEL ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_belgesel.png" group-title=" [TR] ▶️ BELGESEL",TRT BELGESEL
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/13286?output=ts
-#EXTINF:-1 tvg-id="TRT BELGESEL.tr" tvg-name="[TR] TRT BELGESEL ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/trt_belgesel.png" group-title=" [TR] ▶️ BELGESEL",TRT BELGESEL Ғʜᴅ
+#EXTINF:-1 tvg-id="TRT BELGESEL.tr" tvg-name="[TR] TRT BELGESEL " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/trt_belgesel.png" group-title=" [TR] ▶️ BELGESEL",TRT BELGESEL 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198423?output=ts
 #EXTINF:-1 tvg-id="National Geographic.tr" tvg-name="[TR] NATIONAL GEOGRAPHIC ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/national_geo.png" group-title=" [TR] ▶️ BELGESEL",NATIONAL GEOGRAPHIC
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6286?output=ts
-#EXTINF:-1 tvg-id="NATIONAL GEO..tr" tvg-name="[TR] NATIONAL GEOGRAPHIC ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/national_geo.png" group-title=" [TR] ▶️ BELGESEL",NATIONAL GEOGRAPHIC Ғʜᴅ
+#EXTINF:-1 tvg-id="NATIONAL GEO..tr" tvg-name="[TR] NATIONAL GEOGRAPHIC " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/national_geo.png" group-title=" [TR] ▶️ BELGESEL",NATIONAL GEOGRAPHIC 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198425?output=ts
 #EXTINF:-1 tvg-id="NAT.GEO.WILD.tr" tvg-name="[TR] NAT GEO WILD ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/national_geo_wild.png" group-title=" [TR] ▶️ BELGESEL",NAT GEO WILD
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6287?output=ts
-#EXTINF:-1 tvg-id="NAT.GEO.WILD.tr" tvg-name="[TR] NAT GEO WILD ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/national_geo_wild.png" group-title=" [TR] ▶️ BELGESEL",NAT GEO WILD Ғʜᴅ
+#EXTINF:-1 tvg-id="NAT.GEO.WILD.tr" tvg-name="[TR] NAT GEO WILD " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/national_geo_wild.png" group-title=" [TR] ▶️ BELGESEL",NAT GEO WILD 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198426?output=ts
 #EXTINF:-1 tvg-id="DISCOVERY CHANNEL.tr" tvg-name="[TR] DISCOVERY CHANNEL ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/discovery_channel.png" group-title=" [TR] ▶️ BELGESEL",DISCOVERY CHANNEL
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6289?output=ts
-#EXTINF:-1 tvg-id="DISCOVERY CHANNEL.tr" tvg-name="[TR] DISCOVERY CHANNEL ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/discovery_channel.png" group-title=" [TR] ▶️ BELGESEL",DISCOVERY CHANNEL Ғʜᴅ
+#EXTINF:-1 tvg-id="DISCOVERY CHANNEL.tr" tvg-name="[TR] DISCOVERY CHANNEL " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/discovery_channel.png" group-title=" [TR] ▶️ BELGESEL",DISCOVERY CHANNEL 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198427?output=ts
 #EXTINF:-1 tvg-id="BBC EARTH.tr" tvg-name="[TR] BBC EARTH ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bbc_earth.png" group-title=" [TR] ▶️ BELGESEL",BBC EARTH
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6294?output=ts
-#EXTINF:-1 tvg-id="BBC EARTH.tr" tvg-name="[TR] BBC EARTH ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bbc_earth.png" group-title=" [TR] ▶️ BELGESEL",BBC EARTH Ғʜᴅ
+#EXTINF:-1 tvg-id="BBC EARTH.tr" tvg-name="[TR] BBC EARTH " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/bbc_earth.png" group-title=" [TR] ▶️ BELGESEL",BBC EARTH 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198428?output=ts
 #EXTINF:-1 tvg-id="TLC.tr" tvg-name="[TR] TLC TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tlc.png" group-title=" [TR] ▶️ BELGESEL",TLC TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35593?output=ts
-#EXTINF:-1 tvg-id="TLC.tr" tvg-name="[TR] TLC TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tlc.png" group-title=" [TR] ▶️ BELGESEL",TLC TV Ғʜᴅ
+#EXTINF:-1 tvg-id="TLC.tr" tvg-name="[TR] TLC TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tlc.png" group-title=" [TR] ▶️ BELGESEL",TLC TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198429?output=ts
 #EXTINF:-1 tvg-id="Discovery ID.tr" tvg-name="[TR] INVESTIGATION DISCOVERY ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/discovery_idx.png" group-title=" [TR] ▶️ BELGESEL",INVESTIGATION DISCOVERY
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6290?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] FAST FUN ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/fastandfunbox.png" group-title=" [TR] ▶️ BELGESEL",FAST FUN Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] FAST FUN " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/fastandfunbox.png" group-title=" [TR] ▶️ BELGESEL",FAST FUN 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198430?output=ts
 #EXTINF:-1 tvg-id="Da Vinci.tr" tvg-name="[TR] DA VINCI ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/da_vici_learning.png" group-title=" [TR] ▶️ BELGESEL",DA VINCI
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6293?output=ts
@@ -6914,15 +6762,15 @@ http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6293?output=ts
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6302?output=ts
 #EXTINF:-1 tvg-id="beIN İZ.tr" tvg-name="[TR] BEIN IZ ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/beiniz.png" group-title=" [TR] ▶️ BELGESEL",BEIN IZ
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/105919?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN H&E ғʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4b/BeIN_H%26E-HD.png" group-title=" [TR] ▶️ BELGESEL",BEIN H&E Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN H&E " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4b/BeIN_H%26E-HD.png" group-title=" [TR] ▶️ BELGESEL",BEIN H&E 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/172569?output=ts
 #EXTINF:-1 tvg-id="24.tr" tvg-name="[TR] FORMULA 1 TV ʜᴅ" tvg-logo="https://images.seeklogo.com/logo-png/32/2/formula-one-2017-logo-png_seeklogo-322033.png" group-title=" [TR] ▶️ SPOR ",FORMULA 1 TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/12822?output=ts
 #EXTINF:-1 tvg-id="Love Nature.tr" tvg-name="[TR] LOVE NATURE ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/love_nature.png" group-title=" [TR] ▶️ BELGESEL",LOVE NATURE
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/22098?output=ts
-#EXTINF:-1 tvg-id="HABİTAT TV.tr" tvg-name="[TR] HABIBAT ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/habitat.png" group-title=" [TR] ▶️ BELGESEL",HABIBAT Ғʜᴅ
+#EXTINF:-1 tvg-id="HABİTAT TV.tr" tvg-name="[TR] HABIBAT " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/habitat.png" group-title=" [TR] ▶️ BELGESEL",HABIBAT 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174376?output=ts
-#EXTINF:-1 tvg-id="TARİH TV.tr" tvg-name="[TR] TARIH TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tarih-tv.png" group-title=" [TR] ▶️ BELGESEL",TARIH TV Ғʜᴅ
+#EXTINF:-1 tvg-id="TARİH TV.tr" tvg-name="[TR] TARIH TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tarih-tv.png" group-title=" [TR] ▶️ BELGESEL",TARIH TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174377?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="[TR] NATURE TIME ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/rtginternational.png" group-title=" [TR] ▶️ BELGESEL",NATURE TIME
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/23924?output=ts
@@ -6930,7 +6778,7 @@ http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/23924?output=ts
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/203984?output=ts
 #EXTINF:-1 tvg-id="DocuScreen.tr" tvg-name="[TR] DOCUBOX ʜᴅ" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8a/DocuBox_HD_logo.png" group-title=" [TR] ▶️ BELGESEL",DOCUBOX
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35998?output=ts
-#EXTINF:-1 tvg-id="YABAN TV.tr" tvg-name="[TR] YABAN TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/yaban_tv.png" group-title=" [TR] ▶️ BELGESEL",YABAN TV Ғʜᴅ
+#EXTINF:-1 tvg-id="YABAN TV.tr" tvg-name="[TR] YABAN TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/yaban_tv.png" group-title=" [TR] ▶️ BELGESEL",YABAN TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/165131?output=ts
 #EXTINF:-1 tvg-id="Viasat History.tr" tvg-name="[TR] VIASAT HISTORY ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/viasat_history.png" group-title=" [TR] ▶️ BELGESEL",VIASAT HISTORY
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/110174?output=ts
@@ -6940,462 +6788,292 @@ http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6284?output=ts
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/210770?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="-- ☪ SINEMA ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ SINEMA",☪ SINEMA ☪
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171134?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN BOX OFFICE 1 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_box_office.png" group-title=" [TR] ▶️ SINEMA",BEIN BOX OFFICE 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN BOX OFFICE 1 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_box_office.png" group-title=" [TR] ▶️ SINEMA",BEIN BOX OFFICE 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6195?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN BOX OFFICE 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_box_office_2.png" group-title=" [TR] ▶️ SINEMA",BEIN BOX OFFICE 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN BOX OFFICE 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_box_office_2.png" group-title=" [TR] ▶️ SINEMA",BEIN BOX OFFICE 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6196?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN BOX OFFICE 3 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_box_office_3.png" group-title=" [TR] ▶️ SINEMA",BEIN BOX OFFICE 3 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BEIN BOX OFFICE 3 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_box_office_3.png" group-title=" [TR] ▶️ SINEMA",BEIN BOX OFFICE 3 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6197?output=ts
-#EXTINF:-1 tvg-id="Sinema TV.tr" tvg-name="[TR] SINEMA TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_tv.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema TV.tr" tvg-name="[TR] SINEMA TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_tv.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174606?output=ts
-#EXTINF:-1 tvg-id="Sinema 2.tr" tvg-name="[TR] SINEMA TV 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_tv_2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema 2.tr" tvg-name="[TR] SINEMA TV 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_tv_2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174607?output=ts
-#EXTINF:-1 tvg-id="Sinema Aksiyon.tr" tvg-name="[TR] SINEMA TV AKSIYON ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aksiyon.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AKSIYON Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema Aksiyon.tr" tvg-name="[TR] SINEMA TV AKSIYON " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aksiyon.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AKSIYON 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113293?output=ts
-#EXTINF:-1 tvg-id="Sinema Aksiyon 2.tr" tvg-name="[TR] SINEMA TV AKSIYON 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aksiyon2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AKSIYON 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema Aksiyon 2.tr" tvg-name="[TR] SINEMA TV AKSIYON 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aksiyon2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AKSIYON 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113557?output=ts
-#EXTINF:-1 tvg-id="Sinema Yerli.tr" tvg-name="[TR] SINEMA TV YERLI ғʜᴅ" tvg-logo="https://x-plus.danielxdqcx.online/tv-tum-dunya-logolar/turkeyT/sinema_yerli.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV YERLI Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema Yerli.tr" tvg-name="[TR] SINEMA TV YERLI " tvg-logo="https://x-plus.danielxdqcx.online/tv-tum-dunya-logolar/turkeyT/sinema_yerli.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV YERLI 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113294?output=ts
-#EXTINF:-1 tvg-id="Sinema Yerli 2.tr" tvg-name="[TR] SINEMA TV YERLI 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinemaYerli2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV YERLI 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema Yerli 2.tr" tvg-name="[TR] SINEMA TV YERLI 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinemaYerli2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV YERLI 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174605?output=ts
-#EXTINF:-1 tvg-id="Sinema Komedi.tr" tvg-name="[TR] SINEMA TV KOMEDI ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_komedi.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV KOMEDI Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema Komedi.tr" tvg-name="[TR] SINEMA TV KOMEDI " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_komedi.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV KOMEDI 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113295?output=ts
-#EXTINF:-1 tvg-id="Sinema Komedi 2.tr" tvg-name="[TR] SINEMA TV KOMEDI 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinemaKomedi2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV KOMEDI 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema Komedi 2.tr" tvg-name="[TR] SINEMA TV KOMEDI 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinemaKomedi2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV KOMEDI 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174604?output=ts
-#EXTINF:-1 tvg-id="Sinema Aile.tr" tvg-name="[TR] SINEMA TV AILE ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aile.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AILE Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema Aile.tr" tvg-name="[TR] SINEMA TV AILE " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aile.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AILE 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113292?output=ts
-#EXTINF:-1 tvg-id="SİNEMA AİLE 2.tr" tvg-name="[TR] SINEMA TV AILE 2 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aile2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AILE 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="SİNEMA AİLE 2.tr" tvg-name="[TR] SINEMA TV AILE 2 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_aile2.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV AILE 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113556?output=ts
-#EXTINF:-1 tvg-id="Sinema 1001.tr" tvg-name="[TR] SINEMA TV 1001 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_1001.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV 1001 Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema 1001.tr" tvg-name="[TR] SINEMA TV 1001 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema_1001.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV 1001 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113296?output=ts
-#EXTINF:-1 tvg-id="Sinema 1002.tr" tvg-name="[TR] SINEMA TV 1002 ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema1002.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV 1002 Ғʜᴅ
+#EXTINF:-1 tvg-id="Sinema 1002.tr" tvg-name="[TR] SINEMA TV 1002 " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sinema1002.png" group-title=" [TR] ▶️ SINEMA",SINEMA TV 1002 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113558?output=ts
-#EXTINF:-1 tvg-id="Epic Drama.tr" tvg-name="[TR] EPIC DRAMA ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/epicdrama.png" group-title=" [TR] ▶️ SINEMA",EPIC DRAMA Ғʜᴅ
+#EXTINF:-1 tvg-id="Epic Drama.tr" tvg-name="[TR] EPIC DRAMA " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/epicdrama.png" group-title=" [TR] ▶️ SINEMA",EPIC DRAMA 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174603?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="-- ☪ Müzik ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ MUZIK",☪ MÜZIK ☪
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171130?output=ts
-#EXTINF:-1 tvg-id="France24English" tvg-name="[TR] TRT MUZIK ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/trt_muzik.png" group-title=" [TR] ▶️ MUZIK",TRT MUZIK Ғʜᴅ
+#EXTINF:-1 tvg-id="France24English" tvg-name="[TR] TRT MUZIK " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/trt_muzik.png" group-title=" [TR] ▶️ MUZIK",TRT MUZIK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/61298?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KRAL POP TV ғʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/kral_tr_pop_tv.png" group-title=" [TR] ▶️ MUZIK",KRAL POP TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KRAL POP TV " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/kral_tr_pop_tv.png" group-title=" [TR] ▶️ MUZIK",KRAL POP TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101124?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK TV ғʜᴅ " tvg-logo="https://i.ibb.co/GVWZrhp/powerturk.png" group-title=" [TR] ▶️ MUZIK",POWERTURK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK TV  " tvg-logo="https://i.ibb.co/GVWZrhp/powerturk.png" group-title=" [TR] ▶️ MUZIK",POWERTURK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/102077?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK AKUSTIK TV ғʜᴅ " tvg-logo="https://i.imgur.com/9OPoXQG.png" group-title=" [TR] ▶️ MUZIK",POWERTURK AKUSTIK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK AKUSTIK TV  " tvg-logo="https://i.imgur.com/9OPoXQG.png" group-title=" [TR] ▶️ MUZIK",POWERTURK AKUSTIK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/102020?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK SLOW TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/powerturk-slow.png" group-title=" [TR] ▶️ MUZIK",POWERTURK SLOW TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK SLOW TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/powerturk-slow.png" group-title=" [TR] ▶️ MUZIK",POWERTURK SLOW TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174143?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK TAPTAZE TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/powerturk-taptaze.png" group-title=" [TR] ▶️ MUZIK",POWERTURK TAPTAZE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] POWERTURK TAPTAZE TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/powerturk-taptaze.png" group-title=" [TR] ▶️ MUZIK",POWERTURK TAPTAZE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174144?output=ts
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] POWER TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/power_tr_tv.png" group-title=" [TR] ▶️ MUZIK",POWER TV Ғʜᴅ
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="[TR] POWER TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/power_tr_tv.png" group-title=" [TR] ▶️ MUZIK",POWER TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101126?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] PWER DANCE TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/power-dance.png" group-title=" [TR] ▶️ MUZIK",PWER DANCE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] PWER DANCE TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/power-dance.png" group-title=" [TR] ▶️ MUZIK",PWER DANCE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174141?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] POWER LOVE TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/power-love.png" group-title=" [TR] ▶️ MUZIK",POWER LOVE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] POWER LOVE TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/power-love.png" group-title=" [TR] ▶️ MUZIK",POWER LOVE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174142?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/number1_tr_tv.png" group-title=" [TR] ▶️ MUZIK",NUMBER ONE Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/number1_tr_tv.png" group-title=" [TR] ▶️ MUZIK",NUMBER ONE 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101888?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE TURK ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/number1_tr_tv_turk.png" group-title=" [TR] ▶️ MUZIK",NUMBER ONE TURK Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE TURK  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/number1_tr_tv_turk.png" group-title=" [TR] ▶️ MUZIK",NUMBER ONE TURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101887?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE ASK TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nr1_ask.png" group-title=" [TR] ▶️ MUZIK",NUMBER ONE ASK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE ASK TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nr1_ask.png" group-title=" [TR] ▶️ MUZIK",NUMBER ONE ASK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174145?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE RAP TV ғʜᴅ " tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2017/10/raptv.jpg" group-title=" [TR] ▶️ MUZIK",NUMBER ONE RAP TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] NUMBER ONE RAP TV  " tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2017/10/raptv.jpg" group-title=" [TR] ▶️ MUZIK",NUMBER ONE RAP TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174146?output=ts
-#EXTINF:-1 tvg-id="24 HD.tr" tvg-name="[TR] DREAM TURK ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/dream_tv_tr.png" group-title=" [TR] ▶️ MUZIK",DREAM TURK Ғʜᴅ
+#EXTINF:-1 tvg-id="24 HD.tr" tvg-name="[TR] DREAM TURK  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/dream_tv_tr.png" group-title=" [TR] ▶️ MUZIK",DREAM TURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101885?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TATLISES TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/mesaj.png" group-title=" [TR] ▶️ MUZIK",TATLISES TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TATLISES TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkey/mesaj.png" group-title=" [TR] ▶️ MUZIK",TATLISES TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/101125?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MILYON TV ғʜᴅ " tvg-logo="https://x-plus.danielxdqcx.online/tv-tum-dunya-logolar/turkeyT/milyon_tv.png" group-title=" [TR] ▶️ MUZIK",MILYON TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/175121?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI SOMINE ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/SOMINE.png" group-title=" [TR] ▶️ MUZIK",ARMONI SOMINE ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223875?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI HUZUR ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/HUZUR.png" group-title=" [TR] ▶️ MUZIK",ARMONI HUZUR ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223876?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI POP ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/POP.png" group-title=" [TR] ▶️ MUZIK",ARMONI POP ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223877?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI RAP ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/RAP.png" group-title=" [TR] ▶️ MUZIK",ARMONI RAP ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223878?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI SLOW ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/SLOW.png" group-title=" [TR] ▶️ MUZIK",ARMONI SLOW ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223879?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI HIT ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/HIT.png" group-title=" [TR] ▶️ MUZIK",ARMONI HIT ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223880?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI AKUSTIK ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/AKUSTIK.png" group-title=" [TR] ▶️ MUZIK",ARMONI AKUSTIK ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223881?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI ARABESK ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/ARABESK.png" group-title=" [TR] ▶️ MUZIK",ARMONI ARABESK ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223882?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARMONI KARADENIZ ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/KARADENIZ.png" group-title=" [TR] ▶️ MUZIK",ARMONI KARADENIZ ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223883?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] NESET ERTAS ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/NESET.ERTAS.png" group-title=" [TR] ▶️ MUZIK",NESET ERTAS ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223884?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MUSLUM GURSES ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/MUSLUM.GURSES.png" group-title=" [TR] ▶️ MUZIK",MUSLUM GURSES ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223885?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] FERDI TAYFUR  ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/FERDI.TAYFUR.png" group-title=" [TR] ▶️ MUZIK",FERDI TAYFUR ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223886?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ORHAN GENCEBAY ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/ORHAN.GENCEBAY.png" group-title=" [TR] ▶️ MUZIK",ORHAN GENCEBAY ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223887?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] IBRAHIM TATLISES ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/IBRAHIM.TATLISES.png" group-title=" [TR] ▶️ MUZIK",IBRAHIM TATLISES ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223888?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] AHMET KAYA ♬ ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/MUZIK/AHMET.KAYA.png" group-title=" [TR] ▶️ MUZIK",AHMET KAYA ♬ Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223889?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="-- ☪ Çocuk ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ COCUK",☪ ÇOCUK ☪
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171132?output=ts
 #EXTINF:-1 tvg-id="TRT ÇOCUK.tr" tvg-name="[TR] TRT COCUK ʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_cocuk.png" group-title=" [TR] ▶️ COCUK",TRT COCUK
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/48856?output=ts
-#EXTINF:-1 tvg-id="TRT ÇOCUK.tr" tvg-name="[TR] TRT COCUK ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_cocuk.png" group-title=" [TR] ▶️ COCUK",TRT COCUK Ғʜᴅ
+#EXTINF:-1 tvg-id="TRT ÇOCUK.tr" tvg-name="[TR] TRT COCUK  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_cocuk.png" group-title=" [TR] ▶️ COCUK",TRT COCUK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6240?output=ts
-#EXTINF:-1 tvg-id="TRT Diyanet Çocuk.tr" tvg-name="[TR] TRT DIYANET COCUK ғʜᴅ " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/af/TRT_Diyanet_%C3%87ocuk_logo.png" group-title=" [TR] ▶️ COCUK",TRT DIYANET COCUK Ғʜᴅ
+#EXTINF:-1 tvg-id="TRT Diyanet Çocuk.tr" tvg-name="[TR] TRT DIYANET COCUK  " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/af/TRT_Diyanet_%C3%87ocuk_logo.png" group-title=" [TR] ▶️ COCUK",TRT DIYANET COCUK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167631?output=ts
-#EXTINF:-1 tvg-id="CARTOON NETWORK.tr" tvg-name="[TR] CARTOON NETWORK ғʜᴅ " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Cartoon_Network_2010_logo_variant.png/1200px-Cartoon_Network_2010_logo_variant.png" group-title=" [TR] ▶️ COCUK",CARTOON NETWORK Ғʜᴅ
+#EXTINF:-1 tvg-id="CARTOON NETWORK.tr" tvg-name="[TR] CARTOON NETWORK  " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Cartoon_Network_2010_logo_variant.png/1200px-Cartoon_Network_2010_logo_variant.png" group-title=" [TR] ▶️ COCUK",CARTOON NETWORK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6234?output=ts
-#EXTINF:-1 tvg-id="CBeebies.tr" tvg-name="[TR] CBEEBIES ғʜᴅ " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/CBeebies_2023.svg/1200px-CBeebies_2023.svg.png" group-title=" [TR] ▶️ COCUK",CBEEBIES Ғʜᴅ
+#EXTINF:-1 tvg-id="CBeebies.tr" tvg-name="[TR] CBEEBIES  " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/CBeebies_2023.svg/1200px-CBeebies_2023.svg.png" group-title=" [TR] ▶️ COCUK",CBEEBIES 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/172408?output=ts
-#EXTINF:-1 tvg-id="NBA TV.tr" tvg-name="[TR] AZOOME ғʜᴅ" tvg-logo="" group-title=" [TR] ▶️ COCUK",AZOOME Ғʜᴅ
+#EXTINF:-1 tvg-id="NBA TV.tr" tvg-name="[TR] AZOOME " tvg-logo="" group-title=" [TR] ▶️ COCUK",AZOOME 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6111?output=ts
-#EXTINF:-1 tvg-id="NICKTOONS.tr" tvg-name="[TR] NICKTOONS ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nick_toons.png" group-title=" [TR] ▶️ COCUK",NICKTOONS Ғʜᴅ
+#EXTINF:-1 tvg-id="NICKTOONS.tr" tvg-name="[TR] NICKTOONS  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nick_toons.png" group-title=" [TR] ▶️ COCUK",NICKTOONS 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6235?output=ts
-#EXTINF:-1 tvg-id="DISNEY JUNIOR.tr" tvg-name="[TR] DISNEY JUNIOR ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/disney_junior.png" group-title=" [TR] ▶️ COCUK",DISNEY JUNIOR Ғʜᴅ
+#EXTINF:-1 tvg-id="DISNEY JUNIOR.tr" tvg-name="[TR] DISNEY JUNIOR  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/disney_junior.png" group-title=" [TR] ▶️ COCUK",DISNEY JUNIOR 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6236?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MASA ILE KOCA AYI ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/MASA.ILE.KOCA.AYI.png" group-title=" [TR] ▶️ COCUK",MASA ILE KOCA AYI Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] MASA ILE KOCA AYI  " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/MASA.ILE.KOCA.AYI.png" group-title=" [TR] ▶️ COCUK",MASA ILE KOCA AYI 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6238?output=ts
-#EXTINF:-1 tvg-id="BABY TV.tr" tvg-name="[TR] BABY TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/BabyTV.png" group-title=" [TR] ▶️ COCUK",BABY TV Ғʜᴅ
+#EXTINF:-1 tvg-id="BABY TV.tr" tvg-name="[TR] BABY TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/BabyTV.png" group-title=" [TR] ▶️ COCUK",BABY TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6239?output=ts
-#EXTINF:-1 tvg-id="Çocuk Smart.tr" tvg-name="[TR] COCUK SMART ғʜᴅ " tvg-logo="https://upload.wikimedia.org/wikipedia/tr/5/52/Smart_%C3%87ocuk_2015.png" group-title=" [TR] ▶️ COCUK",COCUK SMART Ғʜᴅ
+#EXTINF:-1 tvg-id="Çocuk Smart.tr" tvg-name="[TR] COCUK SMART  " tvg-logo="https://upload.wikimedia.org/wikipedia/tr/5/52/Smart_%C3%87ocuk_2015.png" group-title=" [TR] ▶️ COCUK",COCUK SMART 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6241?output=ts
-#EXTINF:-1 tvg-id="NICKELODEON HD.tr" tvg-name="[TR] NICKELODEON ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nickelodeon.png" group-title=" [TR] ▶️ COCUK",NICKELODEON Ғʜᴅ
+#EXTINF:-1 tvg-id="NICKELODEON HD.tr" tvg-name="[TR] NICKELODEON  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nickelodeon.png" group-title=" [TR] ▶️ COCUK",NICKELODEON 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6242?output=ts
-#EXTINF:-1 tvg-id="MİNİKAGO.tr" tvg-name="[TR] MINIKA GO  ғʜᴅ " tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f1/Minika_go_old.png" group-title=" [TR] ▶️ COCUK",MINIKA GO Ғʜᴅ
+#EXTINF:-1 tvg-id="MİNİKAGO.tr" tvg-name="[TR] MINIKA GO   " tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f1/Minika_go_old.png" group-title=" [TR] ▶️ COCUK",MINIKA GO 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6244?output=ts
-#EXTINF:-1 tvg-id="Moonbug Kids.tr" tvg-name="[TR] MOOUNBUG KIDS ғʜᴅ " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Moonbug_Kids.svg/2560px-Moonbug_Kids.svg.png" group-title=" [TR] ▶️ COCUK",MOOUNBUG KIDS Ғʜᴅ
+#EXTINF:-1 tvg-id="Moonbug Kids.tr" tvg-name="[TR] MOOUNBUG KIDS  " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Moonbug_Kids.svg/2560px-Moonbug_Kids.svg.png" group-title=" [TR] ▶️ COCUK",MOOUNBUG KIDS 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6245?output=ts
-#EXTINF:-1 tvg-id="Minika Çocuk.tr" tvg-name="[TR] MINIKA COCUK ғʜᴅ " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/69/MinikaCOCUK.png" group-title=" [TR] ▶️ COCUK",MINIKA COCUK Ғʜᴅ
+#EXTINF:-1 tvg-id="Minika Çocuk.tr" tvg-name="[TR] MINIKA COCUK  " tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/69/MinikaCOCUK.png" group-title=" [TR] ▶️ COCUK",MINIKA COCUK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/6247?output=ts
-#EXTINF:-1 tvg-id="Da Vinci.tr" tvg-name="[TR] DA VINCI KIDS ғʜᴅ " tvg-logo="" group-title=" [TR] ▶️ COCUK",DA VINCI KIDS Ғʜᴅ
+#EXTINF:-1 tvg-id="Da Vinci.tr" tvg-name="[TR] DA VINCI KIDS  " tvg-logo="" group-title=" [TR] ▶️ COCUK",DA VINCI KIDS 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/20416?output=ts
 #EXTINF:-1 tvg-id="CARTOONITO.tr" tvg-name="[TR] CARTOONITO ʜᴅ " tvg-logo="http://sltv-icon.cms-s.com/logo/germanynew/Cartoonito.png" group-title=" [TR] ▶️ COCUK",CARTOONITO
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/35592?output=ts
-#EXTINF:-1 tvg-id="CARTOONITO.tr" tvg-name="[TR] CARTOONITO ғʜᴅ " tvg-logo="http://sltv-icon.cms-s.com/logo/germanynew/Cartoonito.png" group-title=" [TR] ▶️ COCUK",CARTOONITO Ғʜᴅ
+#EXTINF:-1 tvg-id="CARTOONITO.tr" tvg-name="[TR] CARTOONITO  " tvg-logo="http://sltv-icon.cms-s.com/logo/germanynew/Cartoonito.png" group-title=" [TR] ▶️ COCUK",CARTOONITO 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/113702?output=ts
-#EXTINF:-1 tvg-id="BABY TV.tr" tvg-name="[TR] BABY TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/BabyTV.png" group-title=" [TR] ▶️ COCUK",BABY TV Ғʜᴅ
+#EXTINF:-1 tvg-id="BABY TV.tr" tvg-name="[TR] BABY TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/BabyTV.png" group-title=" [TR] ▶️ COCUK",BABY TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198433?output=ts
-#EXTINF:-1 tvg-id="Duck TV.tr" tvg-name="[TR] DUCK TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ducktv.png" group-title=" [TR] ▶️ COCUK",DUCK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="Duck TV.tr" tvg-name="[TR] DUCK TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ducktv.png" group-title=" [TR] ▶️ COCUK",DUCK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198432?output=ts
-#EXTINF:-1 tvg-id="NICK JR.tr" tvg-name="[TR] NICKJR TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nickJr.png" group-title=" [TR] ▶️ COCUK",NICKJR TV Ғʜᴅ
+#EXTINF:-1 tvg-id="NICK JR.tr" tvg-name="[TR] NICKJR TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/nickJr.png" group-title=" [TR] ▶️ COCUK",NICKJR TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/198431?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BATMAN ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/BATMAN.png" group-title=" [TR] ▶️ COCUK",BATMAN Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174078?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] PEPEE TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/PEPEE.png" group-title=" [TR] ▶️ COCUK",PEPEE TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174079?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] NILOYA ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/NILOYA.png" group-title=" [TR] ▶️ COCUK",NILOYA Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174080?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] SIRINLER ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/SIRINLER.png" group-title=" [TR] ▶️ COCUK",SIRINLER Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174081?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KRAL SAKIR ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/KRAL.SAKIR.png" group-title=" [TR] ▶️ COCUK",KRAL SAKIR Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174082?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ANIGO ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/ANIGO.png" group-title=" [TR] ▶️ COCUK",ANIGO Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174083?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TOM & JERRY ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/TOM.VE.JERRY.png" group-title=" [TR] ▶️ COCUK",TOM & JERRY Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174084?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MASA ILE KOCA AYI ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/MASA.ILE.KOCA.AYI.png" group-title=" [TR] ▶️ COCUK",MASA ILE KOCA AYI Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174085?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ANIMIX ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/ANIMIX.png" group-title=" [TR] ▶️ COCUK",ANIMIX Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174087?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ANIVERSE ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/ANIVERSE.png" group-title=" [TR] ▶️ COCUK",ANIVERSE Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174088?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KUKULI TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/KUKULI.png" group-title=" [TR] ▶️ COCUK",KUKULI TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223890?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] FURKIS TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/FURKIS.png" group-title=" [TR] ▶️ COCUK",FURKIS TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223891?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BATMAN TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/BATMAN.png" group-title=" [TR] ▶️ COCUK",BATMAN TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223892?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] SEVIMLI DOSTLAR TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/SEVIMLI.DOSTLAR.png" group-title=" [TR] ▶️ COCUK",SEVIMLI DOSTLAR TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223893?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ANIGO TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/ANIGO.png" group-title=" [TR] ▶️ COCUK",ANIGO TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223895?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ANIZONE TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/ANIZONE.png" group-title=" [TR] ▶️ COCUK",ANIZONE TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223896?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TRAZOS TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/TRAZOS.png" group-title=" [TR] ▶️ COCUK",TRAZOS TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223897?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] IMAGIX TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/IMAGIX.png" group-title=" [TR] ▶️ COCUK",IMAGIX TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223898?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ZING TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/ZING.png" group-title=" [TR] ▶️ COCUK",ZING TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223899?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] REEL SPARK TV ғʜᴅ " tvg-logo="http://zorexlogo.dynuddns.com:8080/zrx/ANIMASYON/REEL.SPARK.png" group-title=" [TR] ▶️ COCUK",REEL SPARK TV Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/223900?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="-- ☪ YEREL ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ YEREL ",☪ YEREL ☪
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171128?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TATLISES TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tatlisesTv.png" group-title=" [TR] ▶️ YEREL ",TATLISES TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TATLISES TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tatlisesTv.png" group-title=" [TR] ▶️ YEREL ",TATLISES TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174387?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] YILDIZ EN TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/yildiz_rize.png" group-title=" [TR] ▶️ YEREL ",YILDIZ EN TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] YILDIZ EN TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/yildiz_rize.png" group-title=" [TR] ▶️ YEREL ",YILDIZ EN TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174388?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] VAV TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/vavTV.png" group-title=" [TR] ▶️ YEREL ",VAV TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] VAV TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/vavTV.png" group-title=" [TR] ▶️ YEREL ",VAV TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174389?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] SUN RTV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sunTV.png" group-title=" [TR] ▶️ YEREL ",SUN RTV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] SUN RTV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sunTV.png" group-title=" [TR] ▶️ YEREL ",SUN RTV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174390?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] CINE 1 ʜᴅ ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",CINE 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] CINE 1 ʜᴅ  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",CINE 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174391?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KONTV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kon_tv.png" group-title=" [TR] ▶️ YEREL ",KONTV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KONTV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kon_tv.png" group-title=" [TR] ▶️ YEREL ",KONTV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174392?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] CADDE TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/caddeTv.png" group-title=" [TR] ▶️ YEREL ",CADDE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] CADDE TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/caddeTv.png" group-title=" [TR] ▶️ YEREL ",CADDE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174393?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MALATYA VUSLAT TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/malatyaVuslattv.png" group-title=" [TR] ▶️ YEREL ",MALATYA VUSLAT TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] MALATYA VUSLAT TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/malatyaVuslattv.png" group-title=" [TR] ▶️ YEREL ",MALATYA VUSLAT TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174394?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ER TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/er_tv.png" group-title=" [TR] ▶️ YEREL ",ER TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] ER TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/er_tv.png" group-title=" [TR] ▶️ YEREL ",ER TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174395?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] AGRO TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",AGRO TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] AGRO TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",AGRO TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174396?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TIVI 6 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",TIVI 6 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TIVI 6  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",TIVI 6 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174397?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ON4 TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/on4_tv.png" group-title=" [TR] ▶️ YEREL ",ON4 TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] ON4 TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/on4_tv.png" group-title=" [TR] ▶️ YEREL ",ON4 TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174398?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TARIMTURK TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tarim_turk.png" group-title=" [TR] ▶️ YEREL ",TARIMTURK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TARIMTURK TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tarim_turk.png" group-title=" [TR] ▶️ YEREL ",TARIMTURK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174399?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] GOZDE ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",GOZDE Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] GOZDE  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",GOZDE 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174400?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL V ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_v_antalya.png" group-title=" [TR] ▶️ YEREL ",KANAL V Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL V  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_v_antalya.png" group-title=" [TR] ▶️ YEREL ",KANAL V 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174401?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 26 ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal26.png" group-title=" [TR] ▶️ YEREL ",KANAL 26
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174402?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 2020 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv2020.png" group-title=" [TR] ▶️ YEREL ",TV 2020 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 2020  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv2020.png" group-title=" [TR] ▶️ YEREL ",TV 2020 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174403?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL S ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_5.png" group-title=" [TR] ▶️ YEREL ",KANAL S Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL S  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_5.png" group-title=" [TR] ▶️ YEREL ",KANAL S 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174404?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] AKSU TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/aksu_tv.png" group-title=" [TR] ▶️ YEREL ",AKSU TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] AKSU TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/aksu_tv.png" group-title=" [TR] ▶️ YEREL ",AKSU TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174405?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TVDEN ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_den.png" group-title=" [TR] ▶️ YEREL ",TVDEN Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TVDEN  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_den.png" group-title=" [TR] ▶️ YEREL ",TVDEN 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174406?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MERCAN TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/mercan_tv.png" group-title=" [TR] ▶️ YEREL ",MERCAN TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] MERCAN TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/mercan_tv.png" group-title=" [TR] ▶️ YEREL ",MERCAN TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174407?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BRTV  ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brtvBRKdz.png" group-title=" [TR] ▶️ YEREL ",BRTV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BRTV   " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brtvBRKdz.png" group-title=" [TR] ▶️ YEREL ",BRTV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174408?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 68 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_68.png" group-title=" [TR] ▶️ YEREL ",KANAL 68 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 68  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_68.png" group-title=" [TR] ▶️ YEREL ",KANAL 68 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174409?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 41 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",TV 41 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 41  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",TV 41 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174410?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MAVI KARADENIZ ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/mavi_krdnz.png" group-title=" [TR] ▶️ YEREL ",MAVI KARADENIZ Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] MAVI KARADENIZ  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/mavi_krdnz.png" group-title=" [TR] ▶️ YEREL ",MAVI KARADENIZ 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174411?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TEMPO TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tempo_tv.png" group-title=" [TR] ▶️ YEREL ",TEMPO TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TEMPO TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tempo_tv.png" group-title=" [TR] ▶️ YEREL ",TEMPO TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174412?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 58 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal58.png" group-title=" [TR] ▶️ YEREL ",KANAL 58 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 58  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal58.png" group-title=" [TR] ▶️ YEREL ",KANAL 58 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174413?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 23 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_23_rtv.png" group-title=" [TR] ▶️ YEREL ",KANAL 23 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 23  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_23_rtv.png" group-title=" [TR] ▶️ YEREL ",KANAL 23 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174414?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 15 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Kanal15.png" group-title=" [TR] ▶️ YEREL ",KANAL 15 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 15  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Kanal15.png" group-title=" [TR] ▶️ YEREL ",KANAL 15 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174415?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TON TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ton_tv_canakkkale.png" group-title=" [TR] ▶️ YEREL ",TON TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TON TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ton_tv_canakkkale.png" group-title=" [TR] ▶️ YEREL ",TON TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174416?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] SAT7TURK ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sat_7_turk.png" group-title=" [TR] ▶️ YEREL ",SAT7TURK Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] SAT7TURK  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/sat_7_turk.png" group-title=" [TR] ▶️ YEREL ",SAT7TURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174417?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KOZA TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/koza_tv.png" group-title=" [TR] ▶️ YEREL ",KOZA TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KOZA TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/koza_tv.png" group-title=" [TR] ▶️ YEREL ",KOZA TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174418?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BFZ TURK ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",BFZ TURK Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BFZ TURK  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",BFZ TURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174419?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] HRT AKDENIZ ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/hrt_akdeniz.png" group-title=" [TR] ▶️ YEREL ",HRT AKDENIZ Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] HRT AKDENIZ  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/hrt_akdeniz.png" group-title=" [TR] ▶️ YEREL ",HRT AKDENIZ 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174420?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL ANTALYA ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanalAntalya.png" group-title=" [TR] ▶️ YEREL ",KANAL ANTALYA Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL ANTALYA  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanalAntalya.png" group-title=" [TR] ▶️ YEREL ",KANAL ANTALYA 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174421?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] CIFTCI TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ciftci_tv.png" group-title=" [TR] ▶️ YEREL ",CIFTCI TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] CIFTCI TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ciftci_tv.png" group-title=" [TR] ▶️ YEREL ",CIFTCI TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174422?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 3 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal3.png" group-title=" [TR] ▶️ YEREL ",KANAL 3 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 3  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal3.png" group-title=" [TR] ▶️ YEREL ",KANAL 3 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174423?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV A ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_a.png" group-title=" [TR] ▶️ YEREL ",TV A Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV A  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_a.png" group-title=" [TR] ▶️ YEREL ",TV A 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174424?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] YENI KOCAELI TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",YENI KOCAELI TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] YENI KOCAELI TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",YENI KOCAELI TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174425?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KUDUS TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kudus_tv.png" group-title=" [TR] ▶️ YEREL ",KUDUS TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KUDUS TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kudus_tv.png" group-title=" [TR] ▶️ YEREL ",KUDUS TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174426?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL AVRUPA ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_av.png" group-title=" [TR] ▶️ YEREL ",KANAL AVRUPA Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL AVRUPA  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_av.png" group-title=" [TR] ▶️ YEREL ",KANAL AVRUPA 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174427?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 33 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_33_mersin.png" group-title=" [TR] ▶️ YEREL ",KANAL 33 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 33  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_33_mersin.png" group-title=" [TR] ▶️ YEREL ",KANAL 33 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174428?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ES TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/es_tv.png" group-title=" [TR] ▶️ YEREL ",ES TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] ES TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/es_tv.png" group-title=" [TR] ▶️ YEREL ",ES TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174429?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] PAMUKKALE TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/pamukkale_tv.png" group-title=" [TR] ▶️ YEREL ",PAMUKKALE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] PAMUKKALE TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/pamukkale_tv.png" group-title=" [TR] ▶️ YEREL ",PAMUKKALE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174430?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MELTEM TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/meltem_tv.png" group-title=" [TR] ▶️ YEREL ",MELTEM TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] MELTEM TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/meltem_tv.png" group-title=" [TR] ▶️ YEREL ",MELTEM TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174431?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] EDESSA TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/edessa_tv.png" group-title=" [TR] ▶️ YEREL ",EDESSA TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] EDESSA TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/edessa_tv.png" group-title=" [TR] ▶️ YEREL ",EDESSA TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174432?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL URFA ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanalurfa.png" group-title=" [TR] ▶️ YEREL ",KANAL URFA Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL URFA  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanalurfa.png" group-title=" [TR] ▶️ YEREL ",KANAL URFA 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174433?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV5 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_5.png" group-title=" [TR] ▶️ YEREL ",TV5 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV5  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv_5.png" group-title=" [TR] ▶️ YEREL ",TV5 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174434?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] GUNEYDOGU TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/guneydogu_tv.png" group-title=" [TR] ▶️ YEREL ",GUNEYDOGU TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] GUNEYDOGU TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/guneydogu_tv.png" group-title=" [TR] ▶️ YEREL ",GUNEYDOGU TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174435?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] LINE TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/line_tv.png" group-title=" [TR] ▶️ YEREL ",LINE TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] LINE TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/line_tv.png" group-title=" [TR] ▶️ YEREL ",LINE TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174436?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ARGO TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",ARGO TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] ARGO TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",ARGO TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174437?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] REHBER TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/rehber_tv.png" group-title=" [TR] ▶️ YEREL ",REHBER TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] REHBER TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/rehber_tv.png" group-title=" [TR] ▶️ YEREL ",REHBER TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174438?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] AKIT TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/akit_tv.png" group-title=" [TR] ▶️ YEREL ",AKIT TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] AKIT TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/akit_tv.png" group-title=" [TR] ▶️ YEREL ",AKIT TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174439?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TMB TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tmb.png" group-title=" [TR] ▶️ YEREL ",TMB TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TMB TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tmb.png" group-title=" [TR] ▶️ YEREL ",TMB TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174440?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] CAY TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/cay_tv.png" group-title=" [TR] ▶️ YEREL ",CAY TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] CAY TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/cay_tv.png" group-title=" [TR] ▶️ YEREL ",CAY TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174441?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] DOST TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/dost_tv.png" group-title=" [TR] ▶️ YEREL ",DOST TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] DOST TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/dost_tv.png" group-title=" [TR] ▶️ YEREL ",DOST TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174442?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 1 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv1_kayseri.png" group-title=" [TR] ▶️ YEREL ",TV 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 1  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv1_kayseri.png" group-title=" [TR] ▶️ YEREL ",TV 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174443?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TRAKYA TURK ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",TRAKYA TURK Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TRAKYA TURK  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",TRAKYA TURK 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174444?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV KAYSERI ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv1_kayseri.png" group-title=" [TR] ▶️ YEREL ",TV KAYSERI Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV KAYSERI  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv1_kayseri.png" group-title=" [TR] ▶️ YEREL ",TV KAYSERI 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174445?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL FIRAT ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_firat.png" group-title=" [TR] ▶️ YEREL ",KANAL FIRAT Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL FIRAT  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal_firat.png" group-title=" [TR] ▶️ YEREL ",KANAL FIRAT 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174446?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 32 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal32.png" group-title=" [TR] ▶️ YEREL ",KANAL 32 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL 32  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanal32.png" group-title=" [TR] ▶️ YEREL ",KANAL 32 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174447?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 42 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv42.png" group-title=" [TR] ▶️ YEREL ",TV 42 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 42  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv42.png" group-title=" [TR] ▶️ YEREL ",TV 42 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174449?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KOY TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/koy_tv.png" group-title=" [TR] ▶️ YEREL ",KOY TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KOY TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/koy_tv.png" group-title=" [TR] ▶️ YEREL ",KOY TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174451?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ORDU ALTAS TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",ORDU ALTAS TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] ORDU ALTAS TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",ORDU ALTAS TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174452?output=ts
 #EXTINF:-1 tvg-id="ULUSAL TV.tr" tvg-name="[TR] ULUSAL TV ʜᴅ" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ulusal_tv.png" group-title=" [TR] ▶️ HABER",ULUSAL TV
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174453?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] DIYAR TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/diyar_tv.png" group-title=" [TR] ▶️ YEREL ",DIYAR TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] DIYAR TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/diyar_tv.png" group-title=" [TR] ▶️ YEREL ",DIYAR TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174454?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BRT 1 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brt_1.png" group-title=" [TR] ▶️ YEREL ",BRT 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BRT 1  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brt_1.png" group-title=" [TR] ▶️ YEREL ",BRT 1 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174455?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BRT 2 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brt2.png" group-title=" [TR] ▶️ YEREL ",BRT 2 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BRT 2  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brt2.png" group-title=" [TR] ▶️ YEREL ",BRT 2 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174456?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] BRT 3 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brt_3.png" group-title=" [TR] ▶️ YEREL ",BRT 3 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] BRT 3  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/brt_3.png" group-title=" [TR] ▶️ YEREL ",BRT 3 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174457?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KADIRGA TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kadirga_Tv.png" group-title=" [TR] ▶️ YEREL ",KADIRGA TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KADIRGA TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kadirga_Tv.png" group-title=" [TR] ▶️ YEREL ",KADIRGA TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174458?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] VAN TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",VAN TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] VAN TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/" group-title=" [TR] ▶️ YEREL ",VAN TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174459?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL T ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanalT_kibris.png" group-title=" [TR] ▶️ YEREL ",KANAL T Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KANAL T  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kanalT_kibris.png" group-title=" [TR] ▶️ YEREL ",KANAL T 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174460?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KIBRIS TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kibris_tv.png" group-title=" [TR] ▶️ YEREL ",KIBRIS TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KIBRIS TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/kibris_tv.png" group-title=" [TR] ▶️ YEREL ",KIBRIS TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174461?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] RUMELI TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/rumeli_tv.png" group-title=" [TR] ▶️ YEREL ",RUMELI TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] RUMELI TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/rumeli_tv.png" group-title=" [TR] ▶️ YEREL ",RUMELI TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174462?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] EKIN TURK TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ekinturk_tv.png" group-title=" [TR] ▶️ YEREL ",EKIN TURK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] EKIN TURK TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/ekinturk_tv.png" group-title=" [TR] ▶️ YEREL ",EKIN TURK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174463?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ANADOLU DERNEK TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/anadolu_dernek.png" group-title=" [TR] ▶️ YEREL ",ANADOLU DERNEK TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] ANADOLU DERNEK TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/anadolu_dernek.png" group-title=" [TR] ▶️ YEREL ",ANADOLU DERNEK TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174464?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TEK RUMELI ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tekRumeli.png" group-title=" [TR] ▶️ YEREL ",TEK RUMELI Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TEK RUMELI  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tekRumeli.png" group-title=" [TR] ▶️ YEREL ",TEK RUMELI 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174466?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 52 ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv52_ordu.png" group-title=" [TR] ▶️ YEREL ",TV 52 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] TV 52  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/tv52_ordu.png" group-title=" [TR] ▶️ YEREL ",TV 52 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/174467?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="-- ☪ Dini ☪ --" tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/turkeyT/Turkey_flag.png" group-title=" [TR] ▶️ DINI KANALLAR",☪ DINI ☪
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/171131?output=ts
-#EXTINF:-1 tvg-id="DİYANET TV.tr" tvg-name="[TR] DIYANET TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_diyanet.png" group-title=" [TR] ▶️ DINI KANALLAR",DIYANET TV Ғʜᴅ
+#EXTINF:-1 tvg-id="DİYANET TV.tr" tvg-name="[TR] DIYANET TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_diyanet.png" group-title=" [TR] ▶️ DINI KANALLAR",DIYANET TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167616?output=ts
-#EXTINF:-1 tvg-id="VAV TV.tr" tvg-name="[TR] VAV TV ғʜᴅ " tvg-logo="" group-title=" [TR] ▶️ DINI KANALLAR",VAV TV Ғʜᴅ
+#EXTINF:-1 tvg-id="VAV TV.tr" tvg-name="[TR] VAV TV  " tvg-logo="" group-title=" [TR] ▶️ DINI KANALLAR",VAV TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167617?output=ts
-#EXTINF:-1 tvg-id="SEMERKAND TV.tr" tvg-name="[TR] SEMERKAND ғʜᴅ " tvg-logo="" group-title=" [TR] ▶️ DINI KANALLAR",SEMERKAND Ғʜᴅ
+#EXTINF:-1 tvg-id="SEMERKAND TV.tr" tvg-name="[TR] SEMERKAND  " tvg-logo="" group-title=" [TR] ▶️ DINI KANALLAR",SEMERKAND 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167618?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MELTEM TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/meltem_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",MELTEM TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] MELTEM TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/meltem_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",MELTEM TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167619?output=ts
-#EXTINF:-1 tvg-id="Lâlegul.tr" tvg-name="[TR] LALEGUL TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/lalegul_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",LALEGUL TV Ғʜᴅ
+#EXTINF:-1 tvg-id="Lâlegul.tr" tvg-name="[TR] LALEGUL TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/lalegul_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",LALEGUL TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167620?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] MEDINE CANLI ғʜᴅ " tvg-logo="" group-title=" [TR] ▶️ DINI KANALLAR",MEDINE CANLI Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] MEDINE CANLI  " tvg-logo="" group-title=" [TR] ▶️ DINI KANALLAR",MEDINE CANLI 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167621?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KUDUS TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kudus_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",KUDUS TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KUDUS TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kudus_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",KUDUS TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167622?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] KABE (CANLI) ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kabe_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",KABE Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] KABE (CANLI)  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/kabe_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",KABE 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167624?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] GONCA TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/gonca_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",GONCA TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] GONCA TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/gonca_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",GONCA TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167625?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] DOST TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/dost_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",DOST TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] DOST TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/dost_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",DOST TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167626?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] ON4 TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/on4_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",ON4 TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] ON4 TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/on4_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",ON4 TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167628?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] REHBER TV ғʜᴅ " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/rehber_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",REHBER TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="[TR] REHBER TV  " tvg-logo="http://xplus-logo.dynuddns.net/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/rehber_tv.png" group-title=" [TR] ▶️ DINI KANALLAR",REHBER TV 
 http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/167629?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="[TR] Cosmo EN ғʜᴅ" tvg-logo="https://i.dsmart.com.tr/kanallar/cosmo-en_logo.png" group-title=" [TR] ▶️ BELGESEL",COSMO EN Ғʜᴅ
-http://zoburdng.online:8080/ozdemir29/NXLz9KugXx/285699?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="MUZIK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",MUZIK
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/268536.ts
-#EXTINF:-1 tvg-id="" tvg-name="ÇALIŞIRKEN" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",ÇALIŞIRKEN
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/360219.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRKÇE POP" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",POP
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414484.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRKÇE SLOW" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",SLOW
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414485.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRK HALK MÜZİĞİ" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",HALK MÜZİĞİ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414486.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRK SANAT MÜZİĞİ" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",SANAT MÜZİĞİ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414487.ts
-#EXTINF:-1 tvg-id="" tvg-name="TAŞ PLAK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",TAŞ PLAK
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414488.ts
-#EXTINF:-1 tvg-id="" tvg-name="DİNİ MUSİKİ" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",DİNİ MUSİKİ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414489.ts
-#EXTINF:-1 tvg-id="" tvg-name="ARABESK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",ARABESK
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414490.ts
-#EXTINF:-1 tvg-id="" tvg-name="90’ LAR" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",90’ LAR
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414491.ts
-#EXTINF:-1 tvg-id="" tvg-name="YABANCI POP" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",YABANCI POP
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414492.ts
-#EXTINF:-1 tvg-id="" tvg-name="YABANCI ROCK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",YABANCI ROCK
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414493.ts
-#EXTINF:-1 tvg-id="" tvg-name="YABANCI SLOW" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",YABANCI SLOW
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/414494.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS HABER
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418439.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS HABER
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418440.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 FHD 50 FPS" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 1 50 FPS
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418441.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 1
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418442.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 1
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418443.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 SD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 1
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418444.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 2 FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 2
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418445.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 2 HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 2
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418446.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 3 FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 3
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418447.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 3 HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 3
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418448.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 4 FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 4
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418449.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 4 HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 4
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418450.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 5 FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 5
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418451.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 5 HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 5
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418452.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 1 Ʀᴀᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435779.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ғʜᴅ ʜɪ̇ɢʜ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 1 Ғʜᴅ ʜꞮ̇ɢʜ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435780.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 1 Ғʜᴅ ʟᴏᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435781.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ᴋᴏᴛᴀ ᴅᴏsᴛᴜ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 1 ᴋᴏᴛᴀ ᴅᴏSᴛᴜ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435782.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 1
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435783.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 sᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 1 Sᴅ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435784.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 2 Ʀᴀᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435785.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 2 Ғʜᴅ ʟᴏᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435786.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 2
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435787.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 3 Ʀᴀᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435788.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 3 Ғʜᴅ ʟᴏᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435789.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 3
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435790.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 4 Ʀᴀᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435791.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 4 Ғʜᴅ ʟᴏᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435792.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 4
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435793.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 5 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 5 Ʀᴀᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435794.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 5 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",• B**N SPORTS 5 Ғʜᴅ ʟᴏᴡ
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/435795.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SPOR TURKIYE ⫷",BEIN SPORTS HABER
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/417137.ts
 #EXTINF:-1 tvg-id="" tvg-name="A SPOR" tvg-logo="https://ruzgarplayer.site/png@png/a-spor-tr.png" group-title="⫸TR SPOR TURKIYE ⫷",A SPOR
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/337938.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR.: A SPOR HD" tvg-logo="https://ruzgarplayer.site/png@png/a-spor-tr.png" group-title="⫸TR SPOR TURKIYE ⫷",: A SPOR
@@ -7426,24 +7104,6 @@ http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275719.ts
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/298892.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: S SPORT 2  FHD" tvg-logo="https://ruzgarplayer.site/png@png/s-sport-2-tr.png" group-title="⫸TR S SPOR ⫷",S SPORT 2
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/313620.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275721.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275722.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275723.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png   85.97.241.21" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275724.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275725.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275726.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/275727.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="https://ruzgarplayer.site/png@png/s-sport-plus-tr.png" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418709.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TVBU SPOR 4 FHD" tvg-logo="https://ruzgarplayer.site/png@png/tvbu.png" group-title="⫸TR SPOR TVBU⫷",TVBU SPOR 4
-http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/104898.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: Eurosport 1 HD" tvg-logo="https://ruzgarplayer.site/png@png/eurosport-.png" group-title="⫸TR SPOR  SMART⫷",EUROSPORT 1
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/135454.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: Eurosport 2 HD" tvg-logo="https://ruzgarplayer.site/png@png/eurosport-.png" group-title="⫸TR SPOR  SMART⫷",EUROSPORT 2
@@ -7452,39 +7112,39 @@ http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/135455.ts
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/135441.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: SporSmart 2 HD" tvg-logo="https://ruzgarplayer.site/png@png/Smart-spor-2_.png" group-title="⫸TR SPOR  SMART⫷",SPORSMART 2
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/135444.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Trt 1 ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/trt-1-tr.png" group-title="⫸TR ULUSAL 1⫷",• TRT 1 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Trt 1 " tvg-logo="https://ruzgarplayer.site/png@png/trt-1-tr.png" group-title="⫸TR ULUSAL 1⫷",• TRT 1 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343278.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Trt 1 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/trt-1-tr.png" group-title="⫸TR ULUSAL 1⫷",• TRT 1
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343279.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Show Tv ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/show-tr.png" group-title="⫸TR ULUSAL 1⫷",• SHOW TV
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343283.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Show Tv ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/show-tr.png" group-title="⫸TR ULUSAL 1⫷",• SHOW TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Show Tv " tvg-logo="https://ruzgarplayer.site/png@png/show-tr.png" group-title="⫸TR ULUSAL 1⫷",• SHOW TV 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343282.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Kanal D ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/kanal-d-tr.png" group-title="⫸TR ULUSAL 1⫷",• KANAL D Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Kanal D " tvg-logo="https://ruzgarplayer.site/png@png/kanal-d-tr.png" group-title="⫸TR ULUSAL 1⫷",• KANAL D 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343286.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Kanal D ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/kanal-d-tr.png" group-title="⫸TR ULUSAL 1⫷",• KANAL D
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343287.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Atv ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/atv-tr.png" group-title="⫸TR ULUSAL 1⫷",• ATV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Atv " tvg-logo="https://ruzgarplayer.site/png@png/atv-tr.png" group-title="⫸TR ULUSAL 1⫷",• ATV 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343290.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Atv ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/atv-tr.png" group-title="⫸TR ULUSAL 1⫷",• ATV
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343291.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Star Tv ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/star-tv-tr.png" group-title="⫸TR ULUSAL 1⫷",• STAR TV
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343295.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Star Tv ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/star-tv-tr.png" group-title="⫸TR ULUSAL 1⫷",• STAR TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Star Tv " tvg-logo="https://ruzgarplayer.site/png@png/star-tv-tr.png" group-title="⫸TR ULUSAL 1⫷",• STAR TV 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343294.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Now Tv ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/now-tr.png" group-title="⫸TR ULUSAL 1⫷",• NOW TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Now Tv " tvg-logo="https://ruzgarplayer.site/png@png/now-tr.png" group-title="⫸TR ULUSAL 1⫷",• NOW TV 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343298.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Now Tv ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/now-tr.png" group-title="⫸TR ULUSAL 1⫷",• NOW TV
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343299.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Tv 8 ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/tv8-tr.png" group-title="⫸TR ULUSAL 1⫷",• TV 8 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Tv 8 " tvg-logo="https://ruzgarplayer.site/png@png/tv8-tr.png" group-title="⫸TR ULUSAL 1⫷",• TV 8 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343302.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Tv 8 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/tv8-tr.png" group-title="⫸TR ULUSAL 1⫷",• TV 8
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343303.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Tv 8.5 ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/tv85-tr.png" group-title="⫸TR ULUSAL 1⫷",• TV 8.5 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Tv 8.5 " tvg-logo="https://ruzgarplayer.site/png@png/tv85-tr.png" group-title="⫸TR ULUSAL 1⫷",• TV 8.5 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343306.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Tv 8.5 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/tv85-tr.png" group-title="⫸TR ULUSAL 1⫷",• TV 8.5
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343307.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Beyaz Tv ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/beyaz-tv-tr.png" group-title="⫸TR ULUSAL 1⫷",• BEYAZ TV Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Beyaz Tv " tvg-logo="https://ruzgarplayer.site/png@png/beyaz-tv-tr.png" group-title="⫸TR ULUSAL 1⫷",• BEYAZ TV 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343310.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Beyaz Tv ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/beyaz-tv-tr.png" group-title="⫸TR ULUSAL 1⫷",• BEYAZ TV
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343311.ts
@@ -7492,15 +7152,15 @@ http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343311.ts
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343314.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • TV 2 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/tv2-tr.png" group-title="⫸TR ULUSAL 1⫷",• TV 2
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343315.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • A2 ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/a2-tr.png" group-title="⫸TR ULUSAL 1⫷",• A2 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • A2 " tvg-logo="https://ruzgarplayer.site/png@png/a2-tr.png" group-title="⫸TR ULUSAL 1⫷",• A2 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343318.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • A2 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/a2-tr.png" group-title="⫸TR ULUSAL 1⫷",• A2
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343319.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • 360 ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/360-tr.png" group-title="⫸TR ULUSAL 1⫷",• 360 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • 360 " tvg-logo="https://ruzgarplayer.site/png@png/360-tr.png" group-title="⫸TR ULUSAL 1⫷",• 360 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343322.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • 360 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/360-tr.png" group-title="⫸TR ULUSAL 1⫷",• 360
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343323.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • Kanal 7 ғʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/kanal-7-tr.png" group-title="⫸TR ULUSAL 1⫷",• KANAL 7 Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR • Kanal 7 " tvg-logo="https://ruzgarplayer.site/png@png/kanal-7-tr.png" group-title="⫸TR ULUSAL 1⫷",• KANAL 7 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343326.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR • Kanal 7 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/kanal-7-tr.png" group-title="⫸TR ULUSAL 1⫷",• KANAL 7
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/343327.ts
@@ -7946,5 +7606,5 @@ http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418396.ts
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418398.ts
 #EXTINF:-1 tvg-id="" tvg-name="Mukemmel.Aile" tvg-logo="" group-title="⫸TR SALON 3 ⫷",MUKEMMEL.AILE
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/418400.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : Viasat Explore ғʜᴅ" tvg-logo="" group-title="⫸TR BELGESEL⫷",: VIASAT EXPLORE Ғʜᴅ
+#EXTINF:-1 tvg-id="" tvg-name="TR : Viasat Explore " tvg-logo="" group-title="⫸TR BELGESEL⫷",: VIASAT EXPLORE 
 http://new278.xyz:8080/live/gKnBq5VquWjq/63vsuF92PJ3B/419305.ts
