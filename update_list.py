@@ -104,9 +104,10 @@ KALITE_REGEX = re.compile(
     re.IGNORECASE
 )
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
-DIL_REGEX = re.compile(r'\b(TURKISH|TÜRKÇE|TURKCE|TÜRK)\b', re.IGNORECASE)
+
+# DİL VE ÜLKE TAKILARINI (TR, TURKISH, TURKEY VB.) TEMİZLEME REGEX'İ
+DIL_REGEX = re.compile(r'\b(TURKISH|TÜRKÇE|TURKCE|TURKEY|TR)\b', re.IGNORECASE)
 PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
-PRE_TR = re.compile(r'^(\[TR\]|\bTR\b[\.\:\-\|]?|\▶️)\s*', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
 
 # REKLAM VE SITE UZANTILARI REGEX
@@ -129,23 +130,27 @@ def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
         prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
         kanal_adi = extinf_satiri
 
+    # Özel durum: TRT HABER veya TR HABER gibi isimler bozulmasın
+    kanal_adi = PRE_TR_HABER.sub('TRT_HABER_TEMP', kanal_adi)
+
     # 1. Parantez içleri ve reklam/site uzantılarını uçur
     kanal_adi = BRACKETS_REGEX.sub('', kanal_adi)
     kanal_adi = REKLAM_REGEX.sub('', kanal_adi)
     
-    # 2. Ön takıları, dil isimlerini ve yedek ibarelerini temizle
-    kanal_adi = PRE_TR_HABER.sub('', kanal_adi)
-    kanal_adi = PRE_TR.sub('', kanal_adi)
-    kanal_adi = YEDEK_REGEX.sub('', kanal_adi)
+    # 2. Ülke / Dil Takılarını (TR, TURKEY, TURKISH) ve Yedek İbarelerini Temizle
     kanal_adi = DIL_REGEX.sub('', kanal_adi)
+    kanal_adi = YEDEK_REGEX.sub('', kanal_adi)
 
     # 3. Süslü veya Standart Kalite/Bölge takılarını (Europe, 50FPS, FHD vb.) temizle
     kanal_adi = KALITE_REGEX.sub('', kanal_adi)
     
+    # Geçici TRT HABER korumasını geri getir
+    kanal_adi = kanal_adi.replace('TRT_HABER_TEMP', 'TR HABER')
+
     # 4. Sembolleri, emojileri, bayrakları uçur
     kanal_adi = SEMBOL_REGEX.sub(' ', kanal_adi)
     
-    # 5. Fazla boşlukları toparla, başındaki/sonundaki boşlukları sil ve tam büyük harf yap
+    # 5. Fazla boşlukları toparla ve tam büyük harf yap
     kanal_adi = " ".join(kanal_adi.split()).strip().upper()
     
     return f'{prefix},{kanal_adi}' if kanal_adi else extinf_satiri
