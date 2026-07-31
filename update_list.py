@@ -28,7 +28,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 2000
+ZIRH_LIMIT = 2040
 THREADS = 64
 
 HEADERS = {
@@ -97,7 +97,7 @@ BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Ca
 # REGEX ÖNBELLEKLERİ
 TR_KANAL_REGEX = re.compile(r'(\[TR\]|\bTR\b|\.TR\b|TURKEY|TÜRK|TURKISH|TÜRKÇE)', re.IGNORECASE)
 
-# GÜNCELLENDİ: Europe, FPS, 50fps, 60fps ve kalite takıları temizleme regex'i
+# Europe, FPS, 50fps, 60fps ve kalite takıları temizleme regex'i
 KALITE_REGEX = re.compile(
     r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|FPS|EUROPE|EURO|EUR|EU|VIP|MOBILE|HQ|'
     r'ғʜᴅ|ʜᴅ|sᴅ|ᴜʜᴅ|4ᴋ|ʜᴇᴠc|ʀᴀᴡ|ᴘʟᴜs|ᴇᴜƦᴏᴘᴇ|ғᴘs)\b', 
@@ -106,7 +106,7 @@ KALITE_REGEX = re.compile(
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
 DIL_REGEX = re.compile(r'\b(TURKISH|TÜRKÇE|TURKCE|TÜRK)\b', re.IGNORECASE)
 PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
-PRE_TR = re.compile(r'\bTR\b[\.\:\-\|]?\s*', re.IGNORECASE)
+PRE_TR = re.compile(r'^(\[TR\]|\bTR\b[\.\:\-\|]?|\▶️)\s*', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
 
 # REKLAM VE SITE UZANTILARI REGEX
@@ -145,12 +145,8 @@ def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
     # 4. Sembolleri, emojileri, bayrakları uçur
     kanal_adi = SEMBOL_REGEX.sub(' ', kanal_adi)
     
-    # 5. Fazla boşlukları toparla ve tam büyük harf yap
-    kanal_adi = " ".join(kanal_adi.split()).upper()
-    
-    # 6. USTA İSTEDİĞİ FORMAT: "[TR] ▶️ KANAL ADI" şeklinde giydir
-    if kanal_adi:
-        kanal_adi = f"[TR] ▶️ {kanal_adi}"
+    # 5. Fazla boşlukları toparla, başındaki/sonundaki boşlukları sil ve tam büyük harf yap
+    kanal_adi = " ".join(kanal_adi.split()).strip().upper()
     
     return f'{prefix},{kanal_adi}' if kanal_adi else extinf_satiri
 
@@ -472,10 +468,10 @@ def main():
             f.write("\n".join(final_listesi) + "\n")
             
         if havuz_canli_metni.strip():
-            f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
+            f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. Sağlam ve pürüzsüz kanallar eklendi.")
+    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. İsimler tertemiz yapıldı.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
