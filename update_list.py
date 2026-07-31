@@ -94,17 +94,26 @@ YEDEK_KAYNAKLAR = [
 
 BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/refs/heads/main/paneller.txt"
 
-# REGEX ÖNBELLEKLERİ (TÜRKÇE KANAL YAKALAMA VE TEMİZLEME İÇİN)
+# REGEX ÖNBELLEKLERİ (TÜRKÇE KANAL YAKALAMA VE USTA TEMİZLİK İÇİN)
 TR_KANAL_REGEX = re.compile(r'(\[TR\]|\bTR\b|\.TR\b|TURKEY|TÜRK|TURKISH|TÜRKÇE)', re.IGNORECASE)
-KALITE_REGEX = re.compile(r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|VIP|MOBILE|HQ|ʜᴅ)\b', re.IGNORECASE)
+
+# Standart + Süslü/Unicode Kalite Takıları (FHD, Ғʜᴅ, 4ᴋ ᴜʜᴅ, Ʀᴀᴡ vb.)
+KALITE_REGEX = re.compile(
+    r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|VIP|MOBILE|HQ|'
+    r'ғʜᴅ|ʜᴅ|sᴅ|ᴜʜᴅ|4ᴋ|ʜᴇᴠc|ʀᴀᴡ|ᴘʟᴜs)\b', 
+    re.IGNORECASE
+)
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
 DIL_REGEX = re.compile(r'\b(TURKISH|TÜRKÇE|TURKCE|TÜRK)\b', re.IGNORECASE)
 PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
 PRE_TR = re.compile(r'\bTR\b[\.\:\-\|]?\s*', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
 
-# REKLAM VE SITE UZANTILARI REGEX (KODLUK.COM ve diğer site/reklam ekleri için)
+# REKLAM VE SITE UZANTILARI REGEX
 REKLAM_REGEX = re.compile(r'\b(KODLUK\.COM|KODLUK|\b[\w\-]+\.(COM|NET|ORG|TV|SITE|ONLINE|CLUB|INFO|XYZ|ME)\b)', re.IGNORECASE)
+
+# SEMBOLLER VE SÜSLÜ RESİMLER/EMOJİLER TEMİZLEME REGEX'İ
+SEMBOL_REGEX = re.compile(r'[^\w\s]', re.UNICODE)
 
 # ==============================================================================
 # ROBOT FONKSİYONLAR
@@ -120,19 +129,23 @@ def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
         prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
         kanal_adi = extinf_satiri
 
-    # Parantez ve Reklam/Site uzantılarını temizle (KODLUK.COM dahil)
+    # 1. Parantez içleri ve reklam/site uzantılarını uçur
     kanal_adi = BRACKETS_REGEX.sub('', kanal_adi)
     kanal_adi = REKLAM_REGEX.sub('', kanal_adi)
     
-    # TR takılarını ve kaliteleri temizle
+    # 2. Ön takıları, dil isimlerini ve yedek ibarelerini temizle
     kanal_adi = PRE_TR_HABER.sub('', kanal_adi)
     kanal_adi = PRE_TR.sub('', kanal_adi)
-    kanal_adi = KALITE_REGEX.sub('', kanal_adi)
     kanal_adi = YEDEK_REGEX.sub('', kanal_adi)
     kanal_adi = DIL_REGEX.sub('', kanal_adi)
+
+    # 3. Süslü veya Standart Kalite takılarını (4K UHD, FHD, Ғʜᴅ, Ʀᴀᴡ vb.) temizle
+    kanal_adi = KALITE_REGEX.sub('', kanal_adi)
     
-    # Özel sembolleri uçur ve fazlalıkları düzenle
-    kanal_adi = kanal_adi.replace("::", "").replace("-", "").replace("|", "").replace("+", "").strip()
+    # 4. Sembolleri, emojileri, bayrakları (☪ vb.) uçur
+    kanal_adi = SEMBOL_REGEX.sub(' ', kanal_adi)
+    
+    # 5. Fazla boşlukları toparla ve tam büyük harf yap
     kanal_adi = " ".join(kanal_adi.split()).upper()
     
     return f'{prefix},{kanal_adi}' if kanal_adi else extinf_satiri
@@ -203,7 +216,6 @@ def havuz_paneli_test_et(url: str):
                         
                         temiz_satir = havuz_kanal_ismini_temizle(satir)
                         
-                        # --- GÜNCELLENEN DÜZELTME: REGEX ILE ESNEK TÜRKÇE KANAL KONTROLÜ ---
                         if TR_KANAL_REGEX.search(satir):
                             bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
                         
@@ -388,7 +400,7 @@ def main():
                     logging.info("🕵️ Eski havuz paneli bulundu, VIP test canlılığı deneniyor...")
                     test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
                     if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
-                        logging.info("🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Kod yorulmayacak, aynen korunuyor.")
+                        logging.info("🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Temizlik süzgecinden geçiriliyor...")
                         
                         temiz_eski_havuz = []
                         baslik_yasakli_mi = False
@@ -400,6 +412,7 @@ def main():
                                     continue
                                 else:
                                     baslik_yasakli_mi = False
+                                    s = havuz_kanal_ismini_temizle(s) + "\n"
                             
                             if baslik_yasakli_mi:
                                 continue
@@ -438,7 +451,7 @@ def main():
         final_listesi = [r for r in results if r is not None]
 
     if eski_havuz_canli_mi:
-        logging.info("🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski listeye sadık kalındı.")
+        logging.info("🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski liste temizlenerek korundu.")
         havuz_canli_metni = eski_havuz_metni
     else:
         logging.info("🔮 Adım 3: Büyük havuzdan 3 adet sağlam panel taranıyor ve TV kanalları ayrıştırılıyor...")
@@ -458,7 +471,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER (SABİT İSİMLİ) --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. Sağlam kanallar eklendi.")
+    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. Sağlam ve pürüzsüz kanallar eklendi.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
