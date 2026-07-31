@@ -97,78 +97,63 @@ BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Ca
 # REGEX ÖNBELLEKLERİ
 TR_KANAL_REGEX = re.compile(r'(\[TR\]|\bTR\b|\.TR\b|TURKEY|TÜRK|TURKISH|TÜRKÇE)', re.IGNORECASE)
 
-# 1. BAŞTAKİ VEYA YALIN KATEGORİ İSİMLERİ (ULUSAL, SPOR, HABER VB.)
-KATEGORI_REGEX = re.compile(
-    r'^\s*\b(ULUSAL|SPOR|HABER|BELGESEL|COCUK|ÇOCUK|SINEMA|SİNEMA|MUZIK|MÜZİK|EGLENCE|EĞLENCE|GENERAL|TURK|TÜRK)\b\s*', 
-    re.IGNORECASE
-)
-
-# 2. KALİTE VE BÖLGE EKLERİ (FHD, HD, SD, 4K VB.)
+# Europe, FPS, 50fps, 60fps ve kalite takıları temizleme regex'i
 KALITE_REGEX = re.compile(
     r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|FPS|EUROPE|EURO|EUR|EU|VIP|MOBILE|HQ|'
     r'ғʜᴅ|ʜᴅ|sᴅ|ᴜʜᴅ|4ᴋ|ʜᴇᴠc|ʀᴀᴡ|ᴘʟᴜs|ᴇᴜƦᴏᴘᴇ|ғᴘs)\b', 
     re.IGNORECASE
 )
-
-# 3. YEDEK VEYA TEST TAKILARI
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
 
-# 4. TR VE DİL TAKILARI (BAŞTA, ORTADA, SONDA)
+# DİL VE ÜLKE TAKILARINI (TR, TURKISH, TURKEY VB.) TEMİZLEME REGEX'İ
 DIL_REGEX = re.compile(r'\b(TURKISH|TÜRKÇE|TURKCE|TURKEY|TR)\b', re.IGNORECASE)
 PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
 
-# REKLAM VE SITE UZANTILARI
+# REKLAM VE SITE UZANTILARI REGEX
 REKLAM_REGEX = re.compile(r'\b(KODLUK\.COM|KODLUK|\b[\w\-]+\.(COM|NET|ORG|TV|SITE|ONLINE|CLUB|INFO|XYZ|ME)\b)', re.IGNORECASE)
 
-# SEMBOLLER VE EMOJİLER
+# SEMBOLLER VE SÜSLÜ RESİMLER/EMOJİLER TEMİZLEME REGEX'İ
 SEMBOL_REGEX = re.compile(r'[^\w\s]', re.UNICODE)
 
 # ==============================================================================
 # ROBOT FONKSİYONLAR
 # ==============================================================================
 def yasakli_mi(metin: str) -> bool:
-    """Tek bir hızlı regex sorgusu ile yasakli kelime kontrolü yapar."""
+    """Tek bir hızlı regex sorgusu ile yasaklı kelime kontrolü yapar."""
     return bool(YASAKLI_PATTERN.search(metin))
 
 def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
-    # 1. Virgülden öncesini kes (group-title, tvg-id vb. parametreleri komple at)
     if "," in extinf_satiri:
-        kanal_adi = extinf_satiri.split(",", 1)[1]
+        prefix, kanal_adi = extinf_satiri.split(",", 1)
     else:
-        kanal_adi = extinf_satiri.replace('#EXTINF:-1', '')
+        prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
+        kanal_adi = extinf_satiri
 
-    # TRT HABER veya TR HABER özel koruması
+    # Özel durum: TRT HABER veya TR HABER gibi isimler bozulmasın
     kanal_adi = PRE_TR_HABER.sub('TRT_HABER_TEMP', kanal_adi)
 
-    # 2. Parantez içlerini ve reklam/site uzantılarını sil
+    # 1. Parantez içleri ve reklam/site uzantılarını uçur
     kanal_adi = BRACKETS_REGEX.sub('', kanal_adi)
     kanal_adi = REKLAM_REGEX.sub('', kanal_adi)
-
-    # 3. Baştaki Kategori İsimlerini Temizle (ULUSAL, SPOR, HABER vb.)
-    # Kanal adı sadece "ULUSAL KANAL" gibi bir isimse silinmesin diye 2 aşamalı kontrol:
-    temp_adi = KATEGORI_REGEX.sub('', kanal_adi).strip()
-    if temp_adi:  # Eğer kategori silindikten sonra geride kelime kalıyorsa temiz halini kabul et
-        kanal_adi = temp_adi
     
-    # 4. TR, TURKEY, TURKISH ve YEDEK takılarını sil
+    # 2. Ülke / Dil Takılarını (TR, TURKEY, TURKISH) ve Yedek İbarelerini Temizle
     kanal_adi = DIL_REGEX.sub('', kanal_adi)
     kanal_adi = YEDEK_REGEX.sub('', kanal_adi)
 
-    # 5. HD, FHD, 4K, 50FPS, Europe gibi kalite/bölge takılarını sil
+    # 3. Süslü veya Standart Kalite/Bölge takılarını (Europe, 50FPS, FHD vb.) temizle
     kanal_adi = KALITE_REGEX.sub('', kanal_adi)
     
     # Geçici TRT HABER korumasını geri getir
-    kanal_adi = kanal_adi.replace('TRT_HABER_TEMP', 'TRT HABER')
+    kanal_adi = kanal_adi.replace('TRT_HABER_TEMP', 'TR HABER')
 
-    # 6. Tüm sembol ve emojileri uçur (Sadece harf ve rakamlar kalsın)
+    # 4. Sembolleri, emojileri, bayrakları uçur
     kanal_adi = SEMBOL_REGEX.sub(' ', kanal_adi)
     
-    # 7. Fazla boşlukları temizle ve BÜYÜK HARF yap
+    # 5. Fazla boşlukları toparla ve tam büyük harf yap
     kanal_adi = " ".join(kanal_adi.split()).strip().upper()
     
-    # 8. Sadece tertemiz `#EXTINF:-1,KANAL ADI` formatında döndür
-    return f'#EXTINF:-1,{kanal_adi}' if kanal_adi else extinf_satiri
+    return f'{prefix},{kanal_adi}' if kanal_adi else extinf_satiri
 
 def havuzu_indir():
     logging.info("📥 Büyük havuz listesi indiriliyor...")
@@ -491,7 +476,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    logging.info("🏁 İŞLEM BİTTİ USTA! Baştaki kategori adları (ULUSAL, SPOR vb.) ve FHD/HD ekleri söküldü.")
+    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. İsimler tertemiz yapıldı.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
