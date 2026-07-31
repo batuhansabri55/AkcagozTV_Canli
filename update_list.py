@@ -94,13 +94,13 @@ YEDEK_KAYNAKLAR = [
 
 BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Canli/refs/heads/main/paneller.txt"
 
-# REGEX ÖNBELLEKLERİ (TÜRKÇE KANAL YAKALAMA VE USTA TEMİZLİK İÇİN)
+# REGEX ÖNBELLEKLERİ
 TR_KANAL_REGEX = re.compile(r'(\[TR\]|\bTR\b|\.TR\b|TURKEY|TÜRK|TURKISH|TÜRKÇE)', re.IGNORECASE)
 
-# Standart + Süslü/Unicode Kalite Takıları (FHD, Ғʜᴅ, 4ᴋ ᴜʜᴅ, Ʀᴀᴡ vb.)
+# GÜNCELLENDİ: Europe, FPS, 50fps, 60fps ve kalite takıları temizleme regex'i
 KALITE_REGEX = re.compile(
-    r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|VIP|MOBILE|HQ|'
-    r'ғʜᴅ|ʜᴅ|sᴅ|ᴜʜᴅ|4ᴋ|ʜᴇᴠc|ʀᴀᴡ|ᴘʟᴜs)\b', 
+    r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|FPS|EUROPE|EURO|EUR|EU|VIP|MOBILE|HQ|'
+    r'ғʜᴅ|ʜᴅ|sᴅ|ᴜʜᴅ|4ᴋ|ʜᴇᴠc|ʀᴀᴡ|ᴘʟᴜs|ᴇᴜƦᴏᴘᴇ|ғᴘs)\b', 
     re.IGNORECASE
 )
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
@@ -139,14 +139,18 @@ def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
     kanal_adi = YEDEK_REGEX.sub('', kanal_adi)
     kanal_adi = DIL_REGEX.sub('', kanal_adi)
 
-    # 3. Süslü veya Standart Kalite takılarını (4K UHD, FHD, Ғʜᴅ, Ʀᴀᴡ vb.) temizle
+    # 3. Süslü veya Standart Kalite/Bölge takılarını (Europe, 50FPS, FHD vb.) temizle
     kanal_adi = KALITE_REGEX.sub('', kanal_adi)
     
-    # 4. Sembolleri, emojileri, bayrakları (☪ vb.) uçur
+    # 4. Sembolleri, emojileri, bayrakları uçur
     kanal_adi = SEMBOL_REGEX.sub(' ', kanal_adi)
     
     # 5. Fazla boşlukları toparla ve tam büyük harf yap
     kanal_adi = " ".join(kanal_adi.split()).upper()
+    
+    # 6. USTA İSTEDİĞİ FORMAT: "[TR] ▶️ KANAL ADI" şeklinde giydir
+    if kanal_adi:
+        kanal_adi = f"[TR] ▶️ {kanal_adi}"
     
     return f'{prefix},{kanal_adi}' if kanal_adi else extinf_satiri
 
@@ -234,7 +238,7 @@ def havuz_paneli_test_et(url: str):
             if len(test_edilecekler) >= 3:
                 calisan_sayisi = sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link))
                 if calisan_sayisi >= 3:
-                    logging.info(f"🟢 VIP KANALLARI (Kanal D, CNN, Belgesel, Sinema) ÇALIŞAN PANEL BULUNDU: {test_url}")
+                    logging.info(f"🟢 VIP KANALLARI ÇALIŞAN PANEL BULUNDU: {test_url}")
                     return "\n".join(bulunan_tr_kanallari)
                     
     except Exception:
