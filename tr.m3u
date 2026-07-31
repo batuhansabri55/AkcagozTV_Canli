@@ -53,6 +53,8 @@ https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_360p.m3u8
 https://demiroren.daioncdn.net/kanald/kanald_360p.m3u8?&sid=859jhvmn96hf&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
 #EXTINF:-1,KANALDYEDEK40
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8?checkedby:MyWay
+#EXTINF:-1,SHOWTVYEDEK42
+https://bstelevision.com/proxy.php?url=http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 #EXTINF:-1,SHOWTVYEDEK43
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv_1080p.m3u8
 #EXTINF:-1,SHOWTVYEDEK43
@@ -87,6 +89,8 @@ https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna
 https://ciner.daioncdn.net/showtv/showtv_720p.m3u8?ex=1664766175&sig=ae489f32a87b0659d25bd88421729530&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=7ukrat2ms282&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
 #EXTINF:-1,SHOWTVYEDEK42
 https://bstelevision.com/proxy.php?url=https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
+#EXTINF:-1,STARTVYEDEK37
+http://dygvideo.dygdigital.com/live/hls/startv4puhu/index.m3u8
 #EXTINF:-1,STARTVYEDEK36
 https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web
 #EXTINF:-1,STARTVYEDEK36
@@ -119,6 +123,8 @@ https://dogus.daioncdn.net/startv/startv.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484
 http://dygvideo.dygdigital.com/live/hls/stardai?m3u8
 #EXTINF:-1,STARTVYEDEK37
 http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8
+#EXTINF:-1,TV8YEDEK30
+https://bstelevision.com/proxy.php?url=http://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
 #EXTINF:-1,TV8YEDEK31
 https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?app=tv8_web
 #EXTINF:-1,TV8YEDEK30
@@ -155,6 +161,8 @@ https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&c
 https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788
 #EXTINF:-1,TV8YEDEK30
 https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
+#EXTINF:0,NOWTVYEDEK33
+https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/NOW/index.m3u8
 #EXTINF:-1,NOWTVYEDEK34
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8
 #EXTINF:-1,NOWTVYEDEK33
@@ -183,6 +191,8 @@ https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_360p.m3u8
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8
 #EXTINF:-1,BEYAZ TV
 https://bstelevision.com/proxy.php?url=https://mlatlxfaaa.turknet.ercdn.net/zqhpjaumpm/beyaztv/beyaztv.m3u8
+#EXTINF:-1,SHOWMAX
+https://bstelevision.com/proxy.php?url=http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8
 #EXTINF:-1,SHOWMAX
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax_1080p.m3u8
 #EXTINF:-1,SHOWMAX
@@ -665,16 +675,10 @@ https://cdn4.yayin.com.tr/haberrize/tracks-v1a1/mono.m3u8
 https://edge.taksimbilisim.com/birtv/bant1/playlist.m3u8
 #EXTINF:-1,BİRTV
 https://edge2.taksimbilisim.com:443/birtv/bant1/chunks.m3u8
-#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="SHOW TV " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/showtv.png" group-title="ULUSAL",SHOW TV
-https://bstelevision.com/proxy.php?url=http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
-#EXTINF:-1 tvg-id="StarTV.tr" tvg-name="STAR TV  " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/startv.png" group-title="ULUSAL",STAR TV
-http://dygvideo.dygdigital.com/live/hls/startv4puhu/index.m3u8
 #EXTINF:-1 tvg-id="Euro Star.de" tvg-name="EuroStar TR" tvg-logo="https://picon-13398.kxcdn.com/eurostartr.jpg"   group-title="ULUSAL",EURO STAR
 https://dogus-yayin-gurubu.koprulu2.workers.dev/staravrupa.m3u8
 #EXTINF:-1 tvg-id="Euro D.de"tvg-name="Euro D TR"   tvg-logo="https://i.imgur.com/4cr2gol.png"  group-title="ULUSAL",EURO D
 http://208.79.153.167/inim03/live1/eurod/playlist.m3u8
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8 " tvg-logo="https://www.tvlogolar.xyz/europa/turkey/tv8.png" group-title="ULUSAL",TV 8
-https://bstelevision.com/proxy.php?url=http://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8/tv8.m3u8
 #EXTINF:-1 tvg-id="BeyazTV.tr" tvg-name="BeyazTV.tr" tvg-logo="https://picon-13398.kxcdn.com/beyaztvtr.jpg" group-title="YEDEK ? ULUSAL",BEYAZ TV
 https://bstelevision.com/proxy.php?url=http://mlatlxfaaa.turknet.ercdn.net/zqhpjaumpm/beyaztv/beyaztv.m3u8
 #EXTINF:-1 tvg-id="Kanal7Avrupa.tr"tvg-name="KANAL 7 Avrupa TR"   tvg-logo="https://picon-13398.kxcdn.com/kanal7avrupatr.jpg" group-title="ULUSAL",KANAL 7 AVRUPA
@@ -683,8 +687,6 @@ https://livetv.radyotvonline.net/kanal7live/kanal7avr/playlist.m3u8
 https://bstelevision.com/proxy.php?url=http://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/teve2/teve2.m3u8
 #EXTINF:-1 tvg-id="A2.tr" tvg-name="A2.tr" tvg-logo="https://picon-13398.kxcdn.com/a2tr.jpg"aspect-ratio="16:9"    group-title="ULUSAL",A2 TV
 https://bstelevision.com/proxy.php?url=http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
-#EXTINF:-1 tvg-id="ShowMax.tr" tvg-url="" tvg-name="ShowMax" tvg-logo="https://picon-13398.kxcdn.com/showmaxtr.jpg" aspect-ratio="Aspect"  group-title="ULUSAL" ,SHOWMAX
-https://bstelevision.com/proxy.php?url=http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showmax/showmax.m3u8
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" tvg-name="TGRT Belgesel"  tvg-logo="https://picon-13398.kxcdn.com/tgrtbelgeseltr.jpg" aspect-ratio="16:9"  group-title="ULUSAL",TGRT BELGESEL
 http://208.79.153.167/inim03/live1/tgrtbelgesel/playlist.m3u8
 #EXTINF:1 tvg-id="birtv.tr" tvg-language="Turkish" tvg-logo="https://www.canlitv.me/poster/bir-tv-canli.png"  group-title="ULUSAL",BİR TV
@@ -775,18 +777,12 @@ https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/trt_1/index.m3u8
 #EXTINF:0,TRT 2
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/trt_2/index.m3u8
-#EXTINF:0,NOW
-https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/NOW/index.m3u8
 #EXTINF:0,KANAL B
 https://tv.kanalb.tr/hls/kanalb/index.m3u8
 #EXTINF:0,TYT TüRK
 https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
 #EXTINF:0,TMB
 https://str.yodacdn.net/tmb_tr_app/index.m3u8
-#EXTINF:0,A HABER
-https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/ahaber.m3u8
-#EXTINF:0,AKIT TV
-https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/Akit.m3u8
 #EXTINF:0,BRT 1
 https://edge.kuzeykibrissmart.tv/brt1/bant1/playlist.m3u8
 #EXTINF:0,TRT 3 - TBMM
@@ -795,12 +791,6 @@ https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:0,LIDER HABER
 https://liderhaber.han686314.workers.dev/?url=https://radyotelekomtv.com/player/m3u8/12e31d9bb13fb21e4adcd3b67cfe7826/12e31d9bb13fb21e4adcd3b67cfe7826.m3u8
-#EXTINF:0,KRT TV
-https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/Krt.m3u8
-#EXTINF:0,ULUSAL KANAL
-https://raw.githubusercontent.com/panorea744/stawerlo/refs/heads/main/noutube1/Ulustv.m3u8
-#EXTINF:0,SPORTS TV
-https://live.sportstv.com.tr/hls/low/sportstv_/index.m3u8
 #EXTINF:0,TRT ÇOCUK
 https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:0,SINEMA KOMEDI
@@ -851,18 +841,14 @@ https://proud-river-e20b.pantonum1.workers.dev/bsseries3.m3u8
 #https://proud-river-e20b.pantonum1.workers.dev/bsseries4.m3u8
 #EXTINF:0,Disney Junior
 https://proud-river-e20b.pantonum1.workers.dev/discs.m3u8
-#EXTINF:0,DISCOVERY
+#EXTINF:0,Disney Junior
 https://proud-river-e20b.pantonum1.workers.dev/discovery.m3u8
-#EXTINF:0,YABAN
-https://proud-river-e20b.pantonum1.workers.dev/yaban.m3u8
-#EXTINF:0,TARIH TV
+#EXTINF:0,TRT BELGESEL
 https://proud-river-e20b.pantonum1.workers.dev/tarihtv.m3u8
 #EXTINF:0,HISTORY
 https://proud-river-e20b.pantonum1.workers.dev/history.m3u8
 #EXTINF:0,BBC EARTH
 https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
-#EXTINF:0,NAT GEO
-https://saran-live.ercdn.net/natgeo/index.m3u8
 #EXTINF:0,LOVE NATURE
 https://proud-river-e20b.pantonum1.workers.dev/lovenature.m3u8
 #EXTINF:0,VIASAT HISTORY
@@ -1989,8 +1975,6 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/47970
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/234449
 #EXTINF:-1 tvg-id="BBC First" tvg-name="BBC First" tvg-logo="https://logo.multicms.info/tvlogo/BBCFirst.jpg" group-title="TR-DIZI",BBC FIRST
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/165462
-
-
 
 # --- GÜNCEL ULTRA TEMİZ LİSTE (31-07-2026 13:42) --- #
 #EXTINF:-1 group-title="Haber" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/kLTAJVBIXFAvMakM.png" tvg-url="https://www.tgrthaber.com/",[TR] ▶️ TGRT HABER
