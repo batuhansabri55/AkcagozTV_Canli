@@ -4154,8 +4154,6 @@ https://mn-nl.mncdn.com/tvnet/tvnet/playlist.m3u8
 https://akittv-live.ercdn.net/akittv/akittv_720p.m3u8
 #EXTINF:0,BRT 1
 https://edge.kuzeykibrissmart.tv/brt1/bant1/playlist.m3u8
-#EXTINF:0,TRT 3 TBMM
-https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 #EXTINF:0,TV 5
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:0,LIDER HABER
@@ -4168,26 +4166,8 @@ http://tv-trtbelgesel.medya.trt.com.tr/master_720.m3u8
 https://teknobaba.han686314.workers.dev/Krt_Tv.m3u8
 #EXTINF:0,ULUSAL KANAL
 https://teknobaba.han686314.workers.dev/Ulusal_Kanal.m3u8
-#EXTINF:0,TRT SPOR YHTTPS TV TRTSPOR2 MEDYA MASTER M3U8
+#EXTINF:0,TRT SPOR 
 https://live.sportstv.com.tr/hls/low/sportstv_/index.m3u8
-#EXTINF:0,SINEMA TV 1
-https://teknobaba.han686314.workers.dev/Yesilcam_Tv.m3u8
-#EXTINF:0,SINEMA TV 2
-https://ip100.radyotelekomtv.com:3784/stream/play.m3u8
-#EXTINF:0,SINEMA TV 3
-https://teknobaba.han686314.workers.dev/Kemal_Sunal_Tv.m3u8
-#EXTINF:0,SINEMA TV 5
-https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
-#EXTINF:0,SINEMA TV 6
-https://host.onlineradyotv.net:8081/cine5tv/index.m3u8
-#EXTINF:0,SINEMA TV 7
-https://ip100.radyotelekomtv.com:3303/stream/play.m3u8
-#EXTINF:0,SINEMA TV 8
-https://host.onlineradyotv.net:8081/sdmtv/tracks-v1a1/mono.m3u8
-#EXTINF:0,SINEMA TV 9
-https://cdn-onstv.yayin.com.tr/onstv/index.m3u8
-#EXTINF:0,SINEMA TV 10
-https://trn03.tulix.tv/gt-tivi6/tracks-v1a1/rewind-588800.m3u8
 #EXTINF:0,SINEMA YERLI
 https://proud-river-e20b.pantonum1.workers.dev/sinemayerli.m3u8
 #EXTINF:0,BEIN SERIES 4
@@ -4200,14 +4180,6 @@ https://saran-live.ercdn.net/natgeo/index.m3u8
 https://saran-live.ercdn.net/natgeowild/index.m3u8
 #EXTINF:0,S SPORT 2
 https://tinyurl.com/Fiat-linea-multijet/yula/ceydus2.m3u8
-#EXTINF:0,TIVIBU SPOR 1
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut1.m3u8
-#EXTINF:0,TIVIBU SPOR 2
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut2.m3u8
-#EXTINF:0,TIVIBU SPOR 3
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut3.m3u8
-#EXTINF:0,TIVIBU SPOR 4
-https://tinyurl.com/Fiat-linea-multijet/yula/ceydut4.m3u8
 #EXTINF:0,BEIN SPORT 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs1.m3u8
 #EXTINF:0,BEIN SPORT 1
@@ -4222,38 +4194,6 @@ https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs4.m3u8
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebs5.m3u8
 #EXTINF:0,BEIN SPORT MAX 1
 https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivebsm1.m3u8
-#EXTINF:0,TIVIBU SPORT
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets.m3u8
-#EXTINF:0,TIVIBU SPORT 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets1.m3u8
-#EXTINF:0,TIVIBU SPORT 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets2.m3u8
-#EXTINF:0,TIVIBU SPORT 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets3.m3u8
-#EXTINF:0,TIVIBU SPORT 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivets4.m3u8
-#EXTINF:0,TABII
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb.m3u8
-#EXTINF:0,TABII 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb1.m3u8
-#EXTINF:0,TABII 2
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb2.m3u8
-#EXTINF:0,TABII 3
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb3.m3u8
-#EXTINF:0,TABII 4
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb4.m3u8
-#EXTINF:0,TABII 5
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb5.m3u8
-#EXTINF:0,TABII 6
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb6.m3u8
-#EXTINF:0,TABII 7
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb7.m3u8
-#EXTINF:0,TABII 8
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamlivetb8.m3u8
-#EXTINF:0,EXXEN
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn.m3u8
-#EXTINF:0,EXXEN 1
-https://tinyurl.com/Fiat-linea-multijet/Emu/androstreamliveexn1.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/25c7c620-dfe4-4c78-9d9b-185d8a91885f.png" tvg-name="Now " ,NOW
 http://116.202.238.88/FOXTV_TR/index.m3u8
 #EXTINF:-1 group-title="Ümitm0d-Türk Kanalları" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/4c47b639-2916-4563-9e40-0f2a7925b2ea.png" tvg-name="Cartoon Network " ,CARTOON NETWORK
@@ -5564,16 +5504,6 @@ https://sonmeztv.ozelip.com.tr:3826/live/sonmeztvlive.m3u8
 https://cdn-telenews.yayin.com.tr/telenews/index.m3u8
 #EXTINF:-1 group-title="Yerel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/VHXdgSoDPClqVGGJ.png" tvg-url="https://www.tvbir.com.tr/",TV1 KAYSERI
 https://edge1.socialsmart.tv/tv1/bant1/chunks.m3u8
-#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ZiwsbLJCHKJeKIkZ.png" tvg-url="",MILLI PIYANGO TV
-https://live.duhnet.tv/S2/HLS_LIVE/sisalsansenp/playlist.m3u8
-#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/" tvg-url="https://www.millipiyangoonline.com/sanal-oyunlar",SERBEST VURUŞ PRO
-https://live.duhnet.tv/S2/HLS_LIVE/sisalsansbnp/playlist.m3u8
-#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/" tvg-url="https://www.millipiyangoonline.com/sanal-oyunlar",SERBEST VURUŞ PRO LA LIGA
-https://live.duhnet.tv/S2/HLS_LIVE/sisalsansanp/playlist.m3u8
-#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/" tvg-url="https://www.millipiyangoonline.com/sanal-oyunlar",SERBEST VURUŞ PRO LIG
-https://live.duhnet.tv/S2/HLS_LIVE/sisalsanscnp/playlist.m3u8
-#EXTINF:-1 group-title="Kurumlar" tvg-logo="https://assets.uzunmuhalefet.com/logos/" tvg-url="https://www.millipiyangoonline.com/sanal-oyunlar",TERS KÖŞE
-https://live.duhnet.tv/S2/HLS_LIVE/sisalsansdnp/playlist.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/cbelsPOmBCTnEzVC.png" tvg-url="https://brtk.net/",BRT 1
 https://edge.kuzeykibrissmart.tv/brt1hd/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/gulobIFJZVxVMwJH.png" tvg-url="https://brtk.net/",BRT 2
@@ -5668,16 +5598,6 @@ https://cdn4.yayin.com.tr/kntv/tracks-v1a1/mono.m3u8
 http://213.91.179.28:8000/play/a0bw
 #EXTINF:-1 tvg-id="YOLTV.de@SD" tvg-logo="https://i.imgur.com/rTBX6lS.png" group-title="General",YOL TV
 https://live.yoltv.com/hls/stream.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",BİLGİLENDİRME
-https://raw.githubusercontent.com/kadirsener1/avva/refs/heads/main/Bilgilendirme.mp4
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 1 İP
-https://65.108.239.207/t1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 2 İP
-https://65.108.239.207/t2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 3 İP
-https://65.108.239.207/t3/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 4 İP
-https://65.108.239.207/t4/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 1 AVVA
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/95f0000dd0e/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 2
@@ -5730,28 +5650,6 @@ http://iptv.prosto.tv:7000/ch118/video.m3u8
 https://tv-trtmuzik.medya.trt.com.tr/master_1080.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://i.imgur.com/slwbux7.png" tvg-id="" ,NUMBER 1 AŞK
 http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/chunklist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png" tvg-id="Dummy" ,KNTV AZ
-https://cdn4.yayin.com.tr/kntv/video.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON
-http://65.108.239.207/bsaction1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 1
-http://65.108.239.207/box1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON 2 2
-http://65.108.239.207/sinemaaksiyon2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA 1001 2
-http://65.108.239.207/sinema1001/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA KOMEDİ 2
-http://65.108.239.207/sinemakomedi/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 2
-http://65.108.239.207/box2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 3
-http://65.108.239.207/box3/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX ACTION
-http://65.108.239.207/sinemaaksiyon/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX YEŞİLÇAM
-http://65.108.239.207/sinemayerli/index.m3u8
-#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",5 MINUTES CRAFT
-https://soul-5mincrafteng-rakuten.amagi.tv/playlist.m3u8
 
 # --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER --- #
 #EXTINF:-1 tvg-id="" tvg-name="MUZIK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",MUZIK
