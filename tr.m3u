@@ -578,11 +578,15 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtyycglqauzjhlive/broadcast_67c05
 #EXTINF:-1,FLASH TV
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Flash_Haber.m3u
 #EXTINF:-1,BENGU TURK
+https://tv.ensonhaber.com/benguturk/benguturk.m3u8?checkedby:MyWay
+#EXTINF:-1,BENGU TURK
 https://tv.ensonhaber.com/benguturk/benguturk_720p.m3u8
 #EXTINF:-1,BENGU TURK
 https://tv.ensonhaber.com/benguturk/benguturk_480p.m3u8
 #EXTINF:-1,BENGU TURK
 https://tv.ensonhaber.com/benguturk/benguturk_360p.m3u8
+#EXTINF:-1,MELTEMTVYEDEK
+https://vhxyrsly.rocketcdn.com/meltemtv/playlist.m3u8?checkedby:MyWay
 #EXTINF:-1,MELTEMTVYEDEK
 https://vhxyrsly.rocketcdn.com/meltemtv/chunklist.m3u8
 #EXTINF:-1,-1TVG-ID="MELTEMTV.TR@SD",MELTEMTVYEDEK
@@ -724,11 +728,15 @@ https://tv-trtspor2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,FB TV
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 #EXTINF:-1,MINIKA ÇOCUK
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8?checkedby:MyWay
+#EXTINF:-1,MINIKA ÇOCUK
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
 #EXTINF:-1,MINIKA ÇOCUK
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk_720p.m3u8
 #EXTINF:-1 group-title="*TÜRK_SPOR" tvg-logo="https://i.ibb.co/L8ftBdN/minikacocuk.png",MINIKA ÇOCUK
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk_480p.m3u8
+#EXTINF:-1 group-title="*TÜRK_SPOR" tvg-logo="https://i.ibb.co/R2Zgy7F/minikago.png",MINIKA GO
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8?checkedby:MyWay
 #EXTINF:-1 group-title="*TÜRK_SPOR" tvg-logo="https://i.ibb.co/R2Zgy7F/minikago.png",MINIKA GO
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago_480p.m3u8
 #EXTINF:-1,MINIKA GO
@@ -737,6 +745,8 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago_720p.m3u8
 #EXTINF:-1,TRT DIYANET ÇOCUK
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1,TRT ÇOCUK
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8?checkedby:MyWay
 #EXTINF:-1,TRT MüZIK
 http://tv-trtmuzik.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,DREAM TüRK
