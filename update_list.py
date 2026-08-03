@@ -28,7 +28,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 1940
+ZIRH_LIMIT = 2040
 THREADS = 64
 
 HEADERS = {
@@ -71,7 +71,8 @@ YASAKLI_PATTERN = re.compile(
 
 YASAKLI_IP_LISTESI = [
     "87.121.104.29",
-    "87.121.104.29:1071"
+    "87.121.104.29:1071",
+    "65.108.239.207"
 ]
 
 YEDEK_KAYNAKLAR = [
@@ -142,11 +143,6 @@ def havuzu_indir():
     return []
 
 def link_gercekten_canli_mi(url: str) -> bool:
-    """
-    KUSURSUZ CANLI YAYIN TESTİ (DÜZELTİLDİ):
-    - Sağlam linkleri yanlışlıkla elenmekten kurtarır.
-    - 404, 500, sahte HTML/JSON hata sayfaları, bitti vs. anında çöpe atar.
-    """
     try:
         with session.get(url, timeout=5, stream=True, allow_redirects=True) as r:
             if r.status_code not in [200, 206, 301, 302, 307]:
@@ -154,18 +150,15 @@ def link_gercekten_canli_mi(url: str) -> bool:
                 
             content_type = r.headers.get('Content-Type', '').lower()
             
-            # Web sayfası veya JSON hatası dönüyorsa yayında değildir
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
 
-            # Akış verisinden küçük bir parça çekelim
             chunk = r.raw.read(1024)
-            r.close() # Soket asılı kalmasın, hemen serbest bırakılsın
+            r.close()
             
             if not chunk or len(chunk) < 32:
                 return False
 
-            # Metin bazlı (.m3u8 vb.) akış listesi mi, doğrudan video (.ts/.mp4 vb.) mu?
             try:
                 content_text = chunk.decode('utf-8', errors='ignore').lower()
                 hata_kelimeleri = [
@@ -175,8 +168,13 @@ def link_gercekten_canli_mi(url: str) -> bool:
                 ]
                 if any(hata in content_text for hata in hata_kelimeleri):
                     return False
+                
+                if ".m3u8" in url.lower():
+                    if "#extm3u" not in content_text and ".ts" not in content_text and "#extinf" not in content_text:
+                        return False
+
             except Exception:
-                pass # Binary video akışıysa decode hata verir ama sorun yok, canlı demektir
+                pass
 
             return True
 
@@ -237,12 +235,12 @@ def havuz_paneli_test_et(url: str):
             if len(test_edilecekler) >= 3:
                 calisan_sayisi = sum(1 for link in test_edilecekler if link_gercekten_canli_mi(link))
                 if calisan_sayisi >= 3:
-                    logging.info(f"🟢 VIP KANALLARI ÇALIŞAN PANEL BULUNDU: {test_url}")
+                    logging.info(f"🟢 VIP KANALLARI ÇALIŞAN SAĞLAM PANEL BULUNDU: {test_url}")
+                    logging.info("⚡ Panel onay aldı! Tüm Türkçe kanallar saniyeler içinde havuza çekiliyor...")
                     
                     calisan_tr_kanallari = []
                     for baslik, url_link in bulunan_tr_kanallari:
-                        if link_gercekten_canli_mi(url_link):
-                            calisan_tr_kanallari.append(f"{baslik}\n{url_link}")
+                        calisan_tr_kanallari.append(f"{baslik}\n{url_link}")
                             
                     return "\n".join(calisan_tr_kanallari)
                     
@@ -320,7 +318,6 @@ def kanal_isleme(kanal_metni: str, kaynak_url: str, eklenen_urller: set):
         if yasakli_mi(ext_satiri) or yasakli_mi(link_satiri):
             return None
             
-    # Geliştirilmiş Canlılık Testi Kontrolü
     if link_gercekten_canli_mi(link_satiri):
         isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
@@ -331,7 +328,7 @@ def kanal_isleme(kanal_metni: str, kaynak_url: str, eklenen_urller: set):
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    logging.info("🛡️ USTA SİSTEM V12.1: KUSURSUZ CANLI YAYIN TESTİ VE ÖLÜ LİNK ELEYİCİ AKTİF!")
+    logging.info("🛡️ USTA SİSTEM V12.2: ZIRH 2040 VE SAHTE LİNK ENGELLEYİCİ AKTİF!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
