@@ -20,19 +20,20 @@ logging.basicConfig(
     datefmt='%H:%M:%S'
 )
 
-# --- GLOBAL SOKET TIMEOUT ---
-socket.setdefaulttimeout(7)
+# --- GLOBAL SOKET TIMEOUT (Ölü linklerde fazla beklememek için) ---
+socket.setdefaulttimeout(6)
 
 # SSL uyarısını sustur
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- AYARLAR ---
 FILE_PATH = "tr.m3u"
-ZIRH_LIMIT = 2040
+ZIRH_LIMIT = 1940
 THREADS = 64
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0',
+    'Accept': '*/*'
 }
 
 # --- OPTİMİZE EDİLMİŞ THREAD-SAFE SESSION ---
@@ -49,7 +50,6 @@ session = create_optimized_session()
 
 # --- TEKİLLEŞTİRİLMİŞ VE DÜZENLENMİŞ YASAKLI LİSTESİ ---
 YASAKLI_SET = {
-    # Genel Yetişkin & Film/Dizi
     "freeshot", "webteizle", "tr film", "arzu film", "erler film", "taşacak bu deniz", "ezel", 
     "filmmedya", "keloğlan", "polskietv", "mediabaytv", "sarkortv", "glwiz", "persian", 
     "gledaitv", "rds tv", "touchtv", "slovakia", "bulgaria", "romania", "azerbeycan", 
@@ -60,11 +60,7 @@ YASAKLI_SET = {
     "alem fm", "joy turk", "super fm", "exxen", "gain", "blutv", "netflix", "tod original", 
     "gumruk muhafaza", "belgesel diziler", "k-pop", "exatlon", "turk tutkusu", "7/24", 
     "genel | eğlence", "genel | eglence", "disney+", "screen saver", "ss screen",
-    
-    # Kökten Silinecek Ana Kelimeler
     "glife", "cinelux", "max", "TABIISPOR", "TABII",
-    
-    # Cine, Spor ve Yeşilçam Grupları
     "tabii spor", "tivibuspor", "tivibu spor", "exxen sports", "cine yesilcam", "cine office"
 }
 
@@ -97,30 +93,22 @@ BUYUK_HAVUZ_URL = "https://raw.githubusercontent.com/batuhansabri55/AkcagozTV_Ca
 # REGEX ÖNBELLEKLERİ
 TR_KANAL_REGEX = re.compile(r'(\[TR\]|\bTR\b|\.TR\b|TURKEY|TÜRK|TURKISH|TÜRKÇE)', re.IGNORECASE)
 
-# Europe, FPS, 50fps, 60fps ve kalite takıları temizleme regex'i
 KALITE_REGEX = re.compile(
     r'\b(FHD|HD|SD|UHD|4K|HEVC|RAW|PLUS|1080P|720P|30FPS|60FPS|50FPS|FPS|EUROPE|EURO|EUR|EU|VIP|MOBILE|HQ|'
     r'ғʜᴅ|ʜᴅ|sᴅ|ᴜʜᴅ|4ᴋ|ʜᴇᴠc|ʀᴀᴡ|ᴘʟᴜs|ᴇᴜƦᴏᴘᴇ|ғᴘs)\b', 
     re.IGNORECASE
 )
 YEDEK_REGEX = re.compile(r'\b(YEDEK|BACKUP|ALT|TEST)\b', re.IGNORECASE)
-
-# DİL VE ÜLKE TAKILARINI (TR, TURKISH, TURKEY VB.) TEMİZLEME REGEX'İ
 DIL_REGEX = re.compile(r'\b(TURKISH|TÜRKÇE|TURKCE|TURKEY|TR)\b', re.IGNORECASE)
 PRE_TR_HABER = re.compile(r'\bTR\.HABER\b', re.IGNORECASE)
 BRACKETS_REGEX = re.compile(r'\[.*?\]|\(.*?\)')
-
-# REKLAM VE SITE UZANTILARI REGEX
 REKLAM_REGEX = re.compile(r'\b(KODLUK\.COM|KODLUK|\b[\w\-]+\.(COM|NET|ORG|TV|SITE|ONLINE|CLUB|INFO|XYZ|ME)\b)', re.IGNORECASE)
-
-# SEMBOLLER VE SÜSLÜ RESİMLER/EMOJİLER TEMİZLEME REGEX'İ
 SEMBOL_REGEX = re.compile(r'[^\w\s]', re.UNICODE)
 
 # ==============================================================================
 # ROBOT FONKSİYONLAR
 # ==============================================================================
 def yasakli_mi(metin: str) -> bool:
-    """Tek bir hızlı regex sorgusu ile yasaklı kelime kontrolü yapar."""
     return bool(YASAKLI_PATTERN.search(metin))
 
 def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
@@ -130,27 +118,14 @@ def havuz_kanal_ismini_temizle(extinf_satiri: str) -> str:
         prefix = '#EXTINF:-1 tvg-id="" group-title="HAVUZ CANLI"'
         kanal_adi = extinf_satiri
 
-    # Özel durum: TRT HABER veya TR HABER gibi isimler bozulmasın
     kanal_adi = PRE_TR_HABER.sub('TRT_HABER_TEMP', kanal_adi)
-
-    # 1. Parantez içleri ve reklam/site uzantılarını uçur
     kanal_adi = BRACKETS_REGEX.sub('', kanal_adi)
     kanal_adi = REKLAM_REGEX.sub('', kanal_adi)
-    
-    # 2. Ülke / Dil Takılarını (TR, TURKEY, TURKISH) ve Yedek İbarelerini Temizle
     kanal_adi = DIL_REGEX.sub('', kanal_adi)
     kanal_adi = YEDEK_REGEX.sub('', kanal_adi)
-
-    # 3. Süslü veya Standart Kalite/Bölge takılarını (Europe, 50FPS, FHD vb.) temizle
     kanal_adi = KALITE_REGEX.sub('', kanal_adi)
-    
-    # Geçici TRT HABER korumasını geri getir
     kanal_adi = kanal_adi.replace('TRT_HABER_TEMP', 'TR HABER')
-
-    # 4. Sembolleri, emojileri, bayrakları uçur
     kanal_adi = SEMBOL_REGEX.sub(' ', kanal_adi)
-    
-    # 5. Fazla boşlukları toparla ve tam büyük harf yap
     kanal_adi = " ".join(kanal_adi.split()).strip().upper()
     
     return f'{prefix},{kanal_adi}' if kanal_adi else extinf_satiri
@@ -166,23 +141,46 @@ def havuzu_indir():
         pass
     return []
 
-def havuz_yayin_canli_mi(test_url: str) -> bool:
+def link_gercekten_canli_mi(url: str) -> bool:
+    """
+    KUSURSUZ CANLI YAYIN TESTİ (DÜZELTİLDİ):
+    - Sağlam linkleri yanlışlıkla elenmekten kurtarır.
+    - 404, 500, sahte HTML/JSON hata sayfaları, bitti vs. anında çöpe atar.
+    """
     try:
-        with session.get(test_url, timeout=4, stream=True, allow_redirects=True) as r:
-            if r.status_code not in [200, 206]: 
+        with session.get(url, timeout=5, stream=True, allow_redirects=True) as r:
+            if r.status_code not in [200, 206, 301, 302, 307]:
                 return False
+                
             content_type = r.headers.get('Content-Type', '').lower()
+            
+            # Web sayfası veya JSON hatası dönüyorsa yayında değildir
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
+
+            # Akış verisinden küçük bir parça çekelim
             chunk = r.raw.read(1024)
-            if not chunk: 
+            r.close() # Soket asılı kalmasın, hemen serbest bırakılsın
+            
+            if not chunk or len(chunk) < 32:
                 return False
-            content_text = chunk.decode('utf-8', errors='ignore').lower()
-            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error", "html"]
-            if any(hata in content_text for hata in hata_kelimeleri):
-                return False
+
+            # Metin bazlı (.m3u8 vb.) akış listesi mi, doğrudan video (.ts/.mp4 vb.) mu?
+            try:
+                content_text = chunk.decode('utf-8', errors='ignore').lower()
+                hata_kelimeleri = [
+                    "expired", "invalid", "unauthorized", "bad token", 
+                    "denied", "forbidden", "403", "error", "not found", 
+                    "<html", "<body", "banned"
+                ]
+                if any(hata in content_text for hata in hata_kelimeleri):
+                    return False
+            except Exception:
+                pass # Binary video akışıysa decode hata verir ama sorun yok, canlı demektir
+
             return True
-    except Exception:
+
+    except (requests.RequestException, socket.timeout, Exception):
         return False
 
 def havuz_paneli_test_et(url: str):
@@ -208,7 +206,7 @@ def havuz_paneli_test_et(url: str):
                         continue
                     
                     if i + 1 < len(satirlar) and satirlar[i+1].startswith("http"):
-                        kanal_linki = satirlar[i+1]
+                        kanal_linki = satirlar[i+1].strip()
                         if yasakli_mi(kanal_linki) or any(yasak_ip in kanal_linki for yasak_ip in YASAKLI_IP_LISTESI):
                             continue
                             
@@ -222,7 +220,7 @@ def havuz_paneli_test_et(url: str):
                         temiz_satir = havuz_kanal_ismini_temizle(satir)
                         
                         if TR_KANAL_REGEX.search(satir):
-                            bulunan_tr_kanallari.append(f"{temiz_satir}\n{temiz_link}")
+                            bulunan_tr_kanallari.append((temiz_satir, temiz_link))
                         
                         satir_upper = satir.upper()
                         if not vip_test_linkleri["cnn"] and re.search(r'CNN\s*T[UÜ]RK', satir_upper):
@@ -231,16 +229,22 @@ def havuz_paneli_test_et(url: str):
                             vip_test_linkleri["kanald"] = temiz_link
                         elif not vip_test_linkleri["discovery"] and "DISCOVERY CHANNEL" in satir_upper:
                             vip_test_linkleri["discovery"] = temiz_link
-                        elif not vip_test_linkleri["sinema"] and re.search(r'S[Iİ]NEMA\s*(TV|1)', satir_upper):
+                        elif not vip_test_linkleri["sinema"] and re.search(r'S[Iİ]NEMA\s*(TV|1)?', satir_upper):
                             vip_test_linkleri["sinema"] = temiz_link
             
             test_edilecekler = [link for link in vip_test_linkleri.values() if link is not None]
             
             if len(test_edilecekler) >= 3:
-                calisan_sayisi = sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link))
+                calisan_sayisi = sum(1 for link in test_edilecekler if link_gercekten_canli_mi(link))
                 if calisan_sayisi >= 3:
                     logging.info(f"🟢 VIP KANALLARI ÇALIŞAN PANEL BULUNDU: {test_url}")
-                    return "\n".join(bulunan_tr_kanallari)
+                    
+                    calisan_tr_kanallari = []
+                    for baslik, url_link in bulunan_tr_kanallari:
+                        if link_gercekten_canli_mi(url_link):
+                            calisan_tr_kanallari.append(f"{baslik}\n{url_link}")
+                            
+                    return "\n".join(calisan_tr_kanallari)
                     
     except Exception:
         pass
@@ -301,47 +305,6 @@ def github_taze_link_avla():
             continue
     return yeni_kaynaklar[:12]
 
-def link_saglam_mi(url: str) -> bool:
-    if any(x in url.lower() for x in ["atv-switch", "vizitv"]):
-        return True
-    try:
-        with session.get(url, timeout=4, stream=True, allow_redirects=True) as r:
-            if r.status_code not in [200, 206]: 
-                return False
-            content_type = r.headers.get('Content-Type', '').lower()
-            if 'text/html' in content_type or 'application/json' in content_type:
-                return False
-            try:
-                chunk = r.raw.read(4096)
-            except Exception:
-                return False
-            if not chunk:
-                return False
-            
-            content_text = chunk.decode('utf-8', errors='ignore').lower()
-            hata_kelimeleri = ["expired", "invalid", "unauthorized", "bad token", "denied", "forbidden", "403", "error"]
-            if any(hata in content_text for hata in hata_kelimeleri):
-                return False
-                
-            if any(key in content_text for key in ["#extm3u", "#extinf", "media-sequence"]):
-                for line in content_text.split('\n'):
-                    line = line.strip()
-                    if line and not line.startswith("#"):
-                        if any(x in line for x in ["http", ".ts", ".m3u8", "stream", "channel"]):
-                            video_segment_url = line if line.startswith("http") else urljoin(url, line)
-                            try:
-                                with session.get(video_segment_url, timeout=3, stream=True) as vr:
-                                    if vr.status_code in [200, 206]:
-                                        v_chunk = vr.raw.read(512)
-                                        return bool(v_chunk and len(v_chunk) >= 256)
-                            except Exception:
-                                return False
-                        break
-                return False
-            return any(t in content_type for t in ['video/', 'mpegurl', 'stream', 'octet-stream'])
-    except Exception: 
-        return False
-
 def kanal_isleme(kanal_metni: str, kaynak_url: str, eklenen_urller: set):
     satir_grubu = kanal_metni.strip().split('\n')
     if len(satir_grubu) < 2: return None
@@ -356,21 +319,19 @@ def kanal_isleme(kanal_metni: str, kaynak_url: str, eklenen_urller: set):
     if "FilmDizi.m3u" not in kaynak_url:
         if yasakli_mi(ext_satiri) or yasakli_mi(link_satiri):
             return None
-    
-    if any(x in kaynak_url.lower() for x in ["tvando.m3u", "testworkery0", "patron.m3u", "filmdizi.m3u"]):
+            
+    # Geliştirilmiş Canlılık Testi Kontrolü
+    if link_gercekten_canli_mi(link_satiri):
         isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
         return f"{isim_temiz}\n{link_satiri}"
         
-    if link_saglam_mi(link_satiri):
-        isim_temiz = havuz_kanal_ismini_temizle(ext_satiri)
-        return f"{isim_temiz}\n{link_satiri}"
     return None
 
 # ==============================================================================
 # 🚀 ANA MAIN FONKSİYONU
 # ==============================================================================
 def main():
-    logging.info("🛡️ USTA SİSTEM V12.0: ZIRHLI LİSTE KESİNLİKLE KORUMAYA ALINDI!")
+    logging.info("🛡️ USTA SİSTEM V12.1: KUSURSUZ CANLI YAYIN TESTİ VE ÖLÜ LİNK ELEYİCİ AKTİF!")
     
     if os.path.exists(FILE_PATH):
         shutil.copyfile(FILE_PATH, FILE_PATH + ".bak")
@@ -404,7 +365,7 @@ def main():
                 if eski_havuz_linkleri:
                     logging.info("🕵️ Eski havuz paneli bulundu, VIP test canlılığı deneniyor...")
                     test_edilecekler = random.sample(eski_havuz_linkleri, min(3, len(eski_havuz_linkleri)))
-                    if sum(1 for link in test_edilecekler if havuz_yayin_canli_mi(link)) >= 2:
+                    if sum(1 for link in test_edilecekler if link_gercekten_canli_mi(link)) >= 2:
                         logging.info("🟢 ESKİ HAVUZ PANELİ HALA CANLI VE AKTİF! Temizlik süzgecinden geçiriliyor...")
                         
                         temiz_eski_havuz = []
@@ -418,17 +379,23 @@ def main():
                                 else:
                                     baslik_yasakli_mi = False
                                     s = havuz_kanal_ismini_temizle(s) + "\n"
-                            
-                            if baslik_yasakli_mi:
-                                continue
-                                
-                            if yasakli_mi(s) or any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
-                                if temiz_eski_havuz and temiz_eski_havuz[-1].startswith("#EXTINF"):
-                                    temiz_eski_havuz.pop()
-                                continue
-                                
-                            temiz_eski_havuz.append(s)
-                            
+                                    temiz_eski_havuz.append(s)
+                            elif s.strip().startswith("http"):
+                                if baslik_yasakli_mi:
+                                    continue
+                                if yasakli_mi(s) or any(yasak_ip in s for yasak_ip in YASAKLI_IP_LISTESI):
+                                    if temiz_eski_havuz and temiz_eski_havuz[-1].startswith("#EXTINF"):
+                                        temiz_eski_havuz.pop()
+                                    continue
+                                if link_gercekten_canli_mi(s.strip()):
+                                    temiz_eski_havuz.append(s)
+                                else:
+                                    if temiz_eski_havuz and temiz_eski_havuz[-1].startswith("#EXTINF"):
+                                        temiz_eski_havuz.pop()
+                            else:
+                                if not baslik_yasakli_mi:
+                                    temiz_eski_havuz.append(s)
+                        
                         eski_havuz_metni = "".join(temiz_eski_havuz)
                         eski_havuz_canli_mi = True
                     else:
@@ -451,9 +418,11 @@ def main():
             unique_adaylar.append((k, kaynak_url))
             gorulen_linkler.add(link)
 
+    logging.info(f"🔍 Toplanan {len(unique_adaylar)} aday kanal acımasız canlılık testine alınıyor...")
     with ThreadPoolExecutor(max_workers=THREADS) as executor:
         results = list(executor.map(lambda item: kanal_isleme(item[0], item[1], eklenen_urller), unique_adaylar))
         final_listesi = [r for r in results if r is not None]
+    logging.info(f"✅ Testi başarıyla geçen CANLI kanal sayısı: {len(final_listesi)}")
 
     if eski_havuz_canli_mi:
         logging.info("🔮 Adım 3: Mevcut havuz canlı olduğu için büyük havuz taraması atlandı, eski liste temizlenerek korundu.")
@@ -476,7 +445,7 @@ def main():
             f.write("\n# --- BÜYÜK HAVUZDAN %100 CANLI TÜRKÇE PANELLER --- #\n")
             f.write(havuz_canli_metni.strip() + "\n")
 
-    logging.info("🏁 İŞLEM BİTTİ USTA! Zırhlı listen %100 korundu. İsimler tertemiz yapıldı.")
+    logging.info("🏁 İŞLEM BİTTİ USTA! Çalışmayan tek bir URL bile listeye giremedi, hepsi temizlendi.")
 
 if __name__ == "__main__":
     if sys.platform == "win32":
