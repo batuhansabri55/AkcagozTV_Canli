@@ -143,12 +143,12 @@ def havuzu_indir():
 
 def link_gercekten_canli_mi(url: str) -> bool:
     """
-    KUSURSUZ CANLI YAYIN TESTİ (GÜNCELLENDİ):
-    - Askıda kalmayı (hang) önleyen raw okuma timeout eklendi.
+    KUSURSUZ CANLI YAYIN TESTİ (DÜZELTİLDİ):
+    - Sağlam linkleri yanlışlıkla elenmekten kurtarır.
+    - 404, 500, sahte HTML/JSON hata sayfaları, bitti vs. anında çöpe atar.
     """
     try:
-        # Hem bağlantı hem okuma için (connect timeout, read timeout) eklendi
-        with session.get(url, timeout=(5, 5), stream=True, allow_redirects=True) as r:
+        with session.get(url, timeout=5, stream=True, allow_redirects=True) as r:
             if r.status_code not in [200, 206, 301, 302, 307]:
                 return False
                 
@@ -158,8 +158,7 @@ def link_gercekten_canli_mi(url: str) -> bool:
             if 'text/html' in content_type or 'application/json' in content_type:
                 return False
 
-            # Soket okuma işlemine de Python seviyesinde raw timeout verelim ki 30 dk asılı kalmasın
-            r.raw.socket.settimeout(5.0)
+            # Akış verisinden küçük bir parça çekelim
             chunk = r.raw.read(1024)
             r.close() # Soket asılı kalmasın, hemen serbest bırakılsın
             
