@@ -401,7 +401,6 @@ https://tv-trtturk.medya.trt.com.tr/master.m3u8
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8
 #EXTINF:-1,TIVI 6
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
-#https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Sozcu_TV.m3u
 #EXTINF:-1,SZCTVYEDEK
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/szc_tv/index.m3u8
 #EXTINF:-1,CNNTURKYEDEK
@@ -528,7 +527,6 @@ https://ensonhaber-live.ercdn.net/trthaber/trthaber.m3u8
 https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
 #EXTINF:-1,ULKETVYEDEK
 https://livetv.radyotvonline.net/kanal7live/ulketv/chunklist.m3u8
-#https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Ulke_TV.m3u
 #EXTINF:-1,HALKTVYEDEK
 https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?sid=7te19znnzjxx&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 #EXTINF:-1,HALKTVYEDEK
@@ -603,12 +601,10 @@ https://tv.ensonhaber.com/bloomberght/bloomberght_360p.m3u8
 https://raw.githubusercontent.com/Tahir2020/TR_Avrupa/refs/heads/main/playlist/Bloomberg_HT.m3u
 #EXTINF:-1,DISCOVERY CHANNEL
 http://umperisn.mywire.org/index.php?id=594674&token=DeaTHLesS
-#EXT-X-KANAL-TIPI:AUTO
 #EXTINF:-1,NATIONAL GEOGRAPHIC
 http://umperisn.mywire.org/index.php?id=594676&token=DeaTHLesS
 #EXTINF:-1,NAT GEO WILD
 http://umperisn.mywire.org/index.php?id=594678&token=DeaTHLesS
-#https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist1080p.m3u8
 #EXTINF:-1,BBC EARTH
 http://umperisn.mywire.org/index.php?id=594660&token=DeaTHLesS
 #EXTINF:-1,DMAX
@@ -667,8 +663,6 @@ https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e_1080p.m3u8
 #EXTINF:-1,CNBC-EYEDEK
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e_720p.m3u8
-#EXTINF:-1,HABERRIZEYEDEK
-https://cdn4.yayin.com.tr/haberrize/tracks-v1a1/mono.m3u8
 #EXTINF:-1,BİRTV
 https://edge.taksimbilisim.com/birtv/bant1/playlist.m3u8
 #EXTINF:-1,BİRTV
@@ -757,8 +751,6 @@ https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/s
 https://sweet-truth-729d.han686314.workers.dev/?url=https://helga.iptv2022.com/sh/trt_2/index.m3u8
 #EXTINF:0,KANAL B
 https://tv.kanalb.tr/hls/kanalb/index.m3u8
-#EXTINF:0,TYT TüRK
-https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
 #EXTINF:0,TRT ÇOCUK
 https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:0,SINEMA KOMEDI
@@ -767,8 +759,6 @@ https://proud-river-e20b.pantonum1.workers.dev/sinemakomedi.m3u8
 https://proud-river-e20b.pantonum1.workers.dev/sinemaaksiyon.m3u8
 #EXTINF:0,SINEMA AKSIYON 2
 https://proud-river-e20b.pantonum1.workers.dev/sinemaaksiyon2.m3u8
-#EXTINF:0,SINEMA YERLI
-#https://proud-river-e20b.pantonum1.workers.dev/sinemayerli.m3u8
 #EXTINF:53,SINEMA AILE
 https://proud-river-e20b.pantonum1.workers.dev/sinemaaile.m3u8
 #EXTINF:0,SINEMA 1001
@@ -805,8 +795,6 @@ https://proud-river-e20b.pantonum1.workers.dev/bsseries1.m3u8
 https://proud-river-e20b.pantonum1.workers.dev/bsseries2.m3u8
 #EXTINF:0,BEIN SERIES 3
 https://proud-river-e20b.pantonum1.workers.dev/bsseries3.m3u8
-#EXTINF:0,BEIN SERIES 4
-#https://proud-river-e20b.pantonum1.workers.dev/bsseries4.m3u8
 #EXTINF:0,Disney Junior
 https://proud-river-e20b.pantonum1.workers.dev/discs.m3u8
 #EXTINF:0, Discovery Channel
@@ -941,7 +929,7 @@ https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/playlist
 http://463758a0.ucomist.net/iptv/42L7TCH8YYKLBRHNPV52HBRN/6868/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="ULUSAL" group-title="ULUSAL",ULUSAL
 http://umperisn.mywire.org/index.php?id=488700&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT  U 2160p" group-title="ULUSAL",TRT 
+#EXTINF:-1 tvg-id="" tvg-name="TRT  U 2160p" group-title="ULUSAL",TRT
 http://umperisn.mywire.org/index.php?id=1841&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT  " group-title="ULUSAL",TRT
 http://umperisn.mywire.org/index.php?id=1842&token=DeaTHLesS
@@ -954,83 +942,23 @@ http://umperisn.mywire.org/index.php?id=1845&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT 2 " group-title="ULUSAL",TRT 2
 http://umperisn.mywire.org/index.php?id=1846&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="ULUSAL",ATV
-http://umperisn.mywire.org/index.php?id=1849&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="ULUSAL",ATV
 http://umperisn.mywire.org/index.php?id=1850&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="STAR TV " group-title="ULUSAL",STAR TV
-http://umperisn.mywire.org/index.php?id=1853&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="STAR TV " group-title="ULUSAL",STAR TV
-http://umperisn.mywire.org/index.php?id=1854&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="ULUSAL",SHOW TV
 http://umperisn.mywire.org/index.php?id=1847&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="ULUSAL",SHOW TV
-http://umperisn.mywire.org/index.php?id=1848&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="ULUSAL",KANAL D
-http://umperisn.mywire.org/index.php?id=1851&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="ULUSAL",KANAL D
 http://umperisn.mywire.org/index.php?id=1852&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="ULUSAL",NOW TV
-http://umperisn.mywire.org/index.php?id=1855&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="ULUSAL",NOW TV
-http://umperisn.mywire.org/index.php?id=1856&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="ULUSAL",TV 8
 http://umperisn.mywire.org/index.php?id=1857&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="ULUSAL",TV 8
 http://umperisn.mywire.org/index.php?id=1858&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="ULUSAL",TV 8.5
-http://umperisn.mywire.org/index.php?id=1859&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="ULUSAL",TV 8.5
-http://umperisn.mywire.org/index.php?id=1860&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="ULUSAL",BEYAZ TV
-http://umperisn.mywire.org/index.php?id=1861&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="ULUSAL",BEYAZ TV
-http://umperisn.mywire.org/index.php?id=1862&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="ULUSAL",KANAL 7
-http://umperisn.mywire.org/index.php?id=1863&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="ULUSAL",KANAL 7
-http://umperisn.mywire.org/index.php?id=1864&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 AVRUPA" group-title="ULUSAL",KANAL 7 AVRUPA
-http://umperisn.mywire.org/index.php?id=1865&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TEVE 2 " group-title="ULUSAL",TEVE 2
-http://umperisn.mywire.org/index.php?id=1866&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TEVE 2 " group-title="ULUSAL",TEVE 2
-http://umperisn.mywire.org/index.php?id=1867&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A2 " group-title="ULUSAL",A2
-http://umperisn.mywire.org/index.php?id=1868&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="A2 " group-title="ULUSAL",A2
 http://umperisn.mywire.org/index.php?id=1869&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="360 TV " group-title="ULUSAL",360 TV
-http://umperisn.mywire.org/index.php?id=1870&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="360 TV " group-title="ULUSAL",360 TV
-http://umperisn.mywire.org/index.php?id=1871&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 4 " group-title="ULUSAL",TV 4
-http://umperisn.mywire.org/index.php?id=2168&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 4 " group-title="ULUSAL",TV 4
-http://umperisn.mywire.org/index.php?id=2167&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT AVAZ " group-title="ULUSAL",TRT AVAZ
 http://umperisn.mywire.org/index.php?id=1879&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT AVAZ " group-title="ULUSAL",TRT AVAZ
-http://umperisn.mywire.org/index.php?id=1880&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SHOW MAX" group-title="ULUSAL",SHOW MAX
-http://umperisn.mywire.org/index.php?id=1873&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SHOW TURK" group-title="ULUSAL",SHOW TURK
-http://umperisn.mywire.org/index.php?id=1874&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ATV AVRUPA" group-title="ULUSAL",ATV AVRUPA
 http://umperisn.mywire.org/index.php?id=1875&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EURO STAR" group-title="ULUSAL",EURO STAR
-http://umperisn.mywire.org/index.php?id=1876&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EURO D" group-title="ULUSAL",EURO D
-http://umperisn.mywire.org/index.php?id=1877&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="Bİ KANAL" group-title="ULUSAL",Bİ KANAL
-http://umperisn.mywire.org/index.php?id=605319&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TABII TV" group-title="ULUSAL",TABII TV
-http://umperisn.mywire.org/index.php?id=578322&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TV 8 INT" group-title="ULUSAL",TV 8 INT
 http://umperisn.mywire.org/index.php?id=1883&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT TURK" group-title="ULUSAL",TRT TURK
-http://umperisn.mywire.org/index.php?id=1878&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TYT TURK" group-title="ULUSAL",TYT TURK
-http://umperisn.mywire.org/index.php?id=67665&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="U",TRT 1
 http://umperisn.mywire.org/index.php?id=268106&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="U",ATV
@@ -1039,214 +967,56 @@ http://umperisn.mywire.org/index.php?id=268107&token=DeaTHLesS
 http://umperisn.mywire.org/index.php?id=268110&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="U",SHOW TV
 http://umperisn.mywire.org/index.php?id=268108&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="U",KANAL D
-http://umperisn.mywire.org/index.php?id=268109&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="U",NOW TV
-http://umperisn.mywire.org/index.php?id=268111&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="U",TV 8
-http://umperisn.mywire.org/index.php?id=268112&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="U",TV 8.5
-http://umperisn.mywire.org/index.php?id=268113&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="U",BEYAZ TV
-http://umperisn.mywire.org/index.php?id=268114&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="U",KANAL 7
-http://umperisn.mywire.org/index.php?id=268115&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TV 360 " group-title="U",TV 360
 http://umperisn.mywire.org/index.php?id=268116&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="",TRT 1
-http://umperisn.mywire.org/index.php?id=1947&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="",ATV
-http://umperisn.mywire.org/index.php?id=1951&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="STAR TV " group-title="",STAR TV
-http://umperisn.mywire.org/index.php?id=1955&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="",SHOW TV
-http://umperisn.mywire.org/index.php?id=1949&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="",KANAL D
-http://umperisn.mywire.org/index.php?id=1953&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="",TV 8
-http://umperisn.mywire.org/index.php?id=1959&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="",NOW TV
 http://umperisn.mywire.org/index.php?id=1957&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="",BEYAZ TV
-http://umperisn.mywire.org/index.php?id=1961&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="",KANAL 7
-http://umperisn.mywire.org/index.php?id=1965&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TEVE 2 " group-title="",TEVE 2
-http://umperisn.mywire.org/index.php?id=1967&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT BELGESEL " group-title="",TRT BELGESEL
-http://umperisn.mywire.org/index.php?id=1993&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A2 " group-title="",A2
-http://umperisn.mywire.org/index.php?id=1969&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="360 TV " group-title="",360 TV
-http://umperisn.mywire.org/index.php?id=1971&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="",TV 8.5
-http://umperisn.mywire.org/index.php?id=1963&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT TURK " group-title="",TRT TURK
 http://umperisn.mywire.org/index.php?id=1973&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT HABER " group-title="",TRT HABER
-http://umperisn.mywire.org/index.php?id=1975&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HALK TV " group-title="",HALK TV
-http://umperisn.mywire.org/index.php?id=1977&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="NTV " group-title="",NTV
 http://umperisn.mywire.org/index.php?id=1987&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="A HABER " group-title="",A HABER
 http://umperisn.mywire.org/index.php?id=1981&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CNN TURK " group-title="",CNN TURK
-http://umperisn.mywire.org/index.php?id=1985&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HABERTURK " group-title="",HABERTURK
-http://umperisn.mywire.org/index.php?id=1979&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG HT " group-title="",BLOOMBERG HT
 http://umperisn.mywire.org/index.php?id=1983&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TV 100 " group-title="",TV 100
 http://umperisn.mywire.org/index.php?id=1989&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="" group-title="",
-http://umperisn.mywire.org/index.php?id=620290&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="",TRT 1
-http://umperisn.mywire.org/index.php?id=1946&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="",ATV
 http://umperisn.mywire.org/index.php?id=1950&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="STAR TV  " group-title="",STAR TV
-http://umperisn.mywire.org/index.php?id=1954&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SHOW TV " group-title="",SHOW TV
-http://umperisn.mywire.org/index.php?id=1948&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="",KANAL D
-http://umperisn.mywire.org/index.php?id=1952&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NOW TV " group-title="",NOW TV
-http://umperisn.mywire.org/index.php?id=1956&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TV 8 " group-title="",TV 8
 http://umperisn.mywire.org/index.php?id=1958&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BEYAZ TV " group-title="",BEYAZ TV
-http://umperisn.mywire.org/index.php?id=1960&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 8.5 " group-title="",TV 8.5
-http://umperisn.mywire.org/index.php?id=1962&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 7 " group-title="",KANAL 7
-http://umperisn.mywire.org/index.php?id=1964&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TEVE 2 " group-title="",TEVE 2
 http://umperisn.mywire.org/index.php?id=1966&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A2 " group-title="",A2
-http://umperisn.mywire.org/index.php?id=1968&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A HABER " group-title="",A HABER
-http://umperisn.mywire.org/index.php?id=1980&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="360 TV " group-title="",360 TV
-http://umperisn.mywire.org/index.php?id=1970&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT TURK " group-title="",TRT TURK
-http://umperisn.mywire.org/index.php?id=1972&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT HABER " group-title="",TRT HABER
-http://umperisn.mywire.org/index.php?id=1974&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="HALK TV " group-title="",HALK TV
 http://umperisn.mywire.org/index.php?id=1976&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 100 " group-title="",TV 100
-http://umperisn.mywire.org/index.php?id=1988&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="FLASH HABER TV " group-title="",FLASH HABER TV
 http://umperisn.mywire.org/index.php?id=437542&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HABER GLOBAL " group-title="",HABER GLOBAL
-http://umperisn.mywire.org/index.php?id=437543&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="HABERTURK " group-title="",HABERTURK
 http://umperisn.mywire.org/index.php?id=1978&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CNN TURK " group-title="",CNN TURK
-http://umperisn.mywire.org/index.php?id=1984&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG HT " group-title="",BLOOMBERG HT
 http://umperisn.mywire.org/index.php?id=1982&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="NTV " group-title="",NTV
 http://umperisn.mywire.org/index.php?id=1986&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ULUSAL KANAL " group-title="",ULUSAL KANAL
 http://umperisn.mywire.org/index.php?id=437556&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ULKE TV " group-title="",ULKE TV
-http://umperisn.mywire.org/index.php?id=437559&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 24 " group-title="",KANAL 24
-http://umperisn.mywire.org/index.php?id=437534&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPOR" group-title="SPOR",SPOR
-http://umperisn.mywire.org/index.php?id=2013&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR " group-title="SPOR",TRT SPOR
-http://umperisn.mywire.org/index.php?id=2015&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR " group-title="SPOR",TRT SPOR
-http://umperisn.mywire.org/index.php?id=2016&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A SPOR " group-title="SPOR",A SPOR
-http://umperisn.mywire.org/index.php?id=2021&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A SPOR " group-title="SPOR",A SPOR
-http://umperisn.mywire.org/index.php?id=2022&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR YILDIZ " group-title="SPOR",TRT SPOR YILDIZ
-http://umperisn.mywire.org/index.php?id=2018&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT SPOR YILDIZ " group-title="SPOR",TRT SPOR YILDIZ
-http://umperisn.mywire.org/index.php?id=2019&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="HT SPOR " group-title="SPOR",HT SPOR
 http://umperisn.mywire.org/index.php?id=551321&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HT SPOR " group-title="SPOR",HT SPOR
-http://umperisn.mywire.org/index.php?id=551322&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SIFIR TV" group-title="SPOR",SIFIR TV
-http://umperisn.mywire.org/index.php?id=611874&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART " group-title="SPOR",SPOR SMART
-http://umperisn.mywire.org/index.php?id=2031&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART " group-title="SPOR",SPOR SMART
-http://umperisn.mywire.org/index.php?id=2032&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART 2 " group-title="SPOR",SPOR SMART 2
-http://umperisn.mywire.org/index.php?id=2033&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPOR SMART 2 " group-title="SPOR",SPOR SMART 2
-http://umperisn.mywire.org/index.php?id=2034&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 1 " group-title="SPOR",EUROSPORT 1
-http://umperisn.mywire.org/index.php?id=2036&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 1 " group-title="SPOR",EUROSPORT 1
-http://umperisn.mywire.org/index.php?id=196082&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 2 " group-title="SPOR",EUROSPORT 2
-http://umperisn.mywire.org/index.php?id=2037&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="EUROSPORT 2 " group-title="SPOR",EUROSPORT 2
 http://umperisn.mywire.org/index.php?id=196081&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="W-SPORT " group-title="SPOR",W-SPORT
-http://umperisn.mywire.org/index.php?id=613376&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EKOL SPORT " group-title="SPOR",EKOL SPORT
-http://umperisn.mywire.org/index.php?id=602665&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPORTS TV " group-title="SPOR",SPORTS TV
-http://umperisn.mywire.org/index.php?id=196080&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SPORTS TV " group-title="SPOR",SPORTS TV
-http://umperisn.mywire.org/index.php?id=2035&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="FB TV " group-title="SPOR",FB TV
 http://umperisn.mywire.org/index.php?id=541402&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="FB TV" group-title="SPOR",FB TV
 http://umperisn.mywire.org/index.php?id=2038&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TAY TV" group-title="SPOR",TAY TV
 http://umperisn.mywire.org/index.php?id=2051&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TJK TV" group-title="SPOR",TJK TV
-http://umperisn.mywire.org/index.php?id=2050&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT 3 SPOR (TBMM)" group-title="SPOR",TRT 3 SPOR 
-http://umperisn.mywire.org/index.php?id=2020&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NBA TV" group-title="SPOR",NBA TV
-http://umperisn.mywire.org/index.php?id=2048&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="FIGHTBOX" group-title="SPOR",FIGHTBOX
-http://umperisn.mywire.org/index.php?id=2047&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT 1 " group-title="S-SPORT",S SPORT 1
-http://umperisn.mywire.org/index.php?id=481300&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="S SPORT 1 " group-title="S-SPORT",S SPORT 1
 http://umperisn.mywire.org/index.php?id=2025&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT 1 " group-title="S-SPORT",S SPORT 1
-http://umperisn.mywire.org/index.php?id=2026&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT 2 " group-title="S-SPORT",S SPORT 2
-http://umperisn.mywire.org/index.php?id=481301&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT 2 " group-title="S-SPORT",S SPORT 2
-http://umperisn.mywire.org/index.php?id=2028&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT 2 " group-title="S-SPORT",S SPORT 2
-http://umperisn.mywire.org/index.php?id=2029&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT PLUS 1" group-title="S-SPORT",S SPORT PLUS 1
-http://umperisn.mywire.org/index.php?id=393375&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="S SPORT PLUS 2" group-title="S-SPORT",S SPORT PLUS 2
 http://umperisn.mywire.org/index.php?id=471724&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT PLUS 3" group-title="S-SPORT",S SPORT PLUS 3
-http://umperisn.mywire.org/index.php?id=432053&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="S SPORT PLUS 4" group-title="S-SPORT",S SPORT PLUS 4
-http://umperisn.mywire.org/index.php?id=432052&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BELGESEL" group-title="BELGESEL",BELGESEL
-http://umperisn.mywire.org/index.php?id=2136&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT BELGESEL " group-title="BELGESEL",TRT BELGESEL
-http://umperisn.mywire.org/index.php?id=594681&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT BELGESEL " group-title="BELGESEL",TRT BELGESEL
-http://umperisn.mywire.org/index.php?id=594680&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NAT GEO WILD " group-title="BELGESEL",NAT GEO WILD
-http://umperisn.mywire.org/index.php?id=594679&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="NATIONAL GEOGRAPHIC " group-title="BELGESEL",NATIONAL GEOGRAPHIC
 http://umperisn.mywire.org/index.php?id=594677&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DISCOVERY " group-title="BELGESEL",DISCOVERY
 http://umperisn.mywire.org/index.php?id=594675&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DISCOVERY ID " group-title="BELGESEL",DISCOVERY ID
-http://umperisn.mywire.org/index.php?id=594673&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DMAX " group-title="BELGESEL",DMAX
 http://umperisn.mywire.org/index.php?id=594671&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DMAX " group-title="BELGESEL",DMAX
@@ -1257,102 +1027,32 @@ http://umperisn.mywire.org/index.php?id=594669&token=DeaTHLesS
 http://umperisn.mywire.org/index.php?id=594668&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="HISTORY " group-title="BELGESEL",HISTORY
 http://umperisn.mywire.org/index.php?id=594667&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HISTORY " group-title="BELGESEL",HISTORY
-http://umperisn.mywire.org/index.php?id=594666&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TLC " group-title="BELGESEL",TLC
-http://umperisn.mywire.org/index.php?id=594665&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TLC " group-title="BELGESEL",TLC
-http://umperisn.mywire.org/index.php?id=594664&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TARIH TV " group-title="BELGESEL",TARIH TV
-http://umperisn.mywire.org/index.php?id=594663&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TARIH TV " group-title="BELGESEL",TARIH TV
-http://umperisn.mywire.org/index.php?id=594662&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BBC EARTH " group-title="BELGESEL",BBC EARTH
-http://umperisn.mywire.org/index.php?id=594661&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="VIASAT HISTORY " group-title="BELGESEL",VIASAT HISTORY
-http://umperisn.mywire.org/index.php?id=594659&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="VIASAT EXPLORE " group-title="BELGESEL",VIASAT EXPLORE
-http://umperisn.mywire.org/index.php?id=594657&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN IZ " group-title="BELGESEL",BEIN IZ
 http://umperisn.mywire.org/index.php?id=594655&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN IZ " group-title="BELGESEL",BEIN IZ
-http://umperisn.mywire.org/index.php?id=594654&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN GURME " group-title="BELGESEL",BEIN GURME
-http://umperisn.mywire.org/index.php?id=594653&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN GURME " group-title="BELGESEL",BEIN GURME
-http://umperisn.mywire.org/index.php?id=594652&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="HABITAT TV " group-title="BELGESEL",HABITAT TV
 http://umperisn.mywire.org/index.php?id=594651&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HABITAT TV " group-title="BELGESEL",HABITAT TV
-http://umperisn.mywire.org/index.php?id=594650&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TARIM TV " group-title="BELGESEL",TARIM TV
-http://umperisn.mywire.org/index.php?id=594649&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TARIM TV " group-title="BELGESEL",TARIM TV
-http://umperisn.mywire.org/index.php?id=594648&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="YABAN TV " group-title="BELGESEL",YABAN TV
-http://umperisn.mywire.org/index.php?id=594647&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="YABAN TV" group-title="BELGESEL",YABAN TV
-http://umperisn.mywire.org/index.php?id=594646&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ÇİFTÇİ TV " group-title="BELGESEL",ÇİFTÇİ TV
 http://umperisn.mywire.org/index.php?id=594645&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ÇİFTÇİ TV" group-title="BELGESEL",ÇİFTÇİ TV
 http://umperisn.mywire.org/index.php?id=594644&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KÖY TV " group-title="BELGESEL",KÖY TV
-http://umperisn.mywire.org/index.php?id=594643&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="KÖY TV" group-title="BELGESEL",KÖY TV
 http://umperisn.mywire.org/index.php?id=594642&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TGRT BELGESEL " group-title="BELGESEL",TGRT BELGESEL
 http://umperisn.mywire.org/index.php?id=594641&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TGRT BELGESEL " group-title="BELGESEL",TGRT BELGESEL
 http://umperisn.mywire.org/index.php?id=594640&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN" group-title="beIN SINEMA",BEIN
-http://umperisn.mywire.org/index.php?id=2752&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES TURK " group-title="beIN SINEMA",BEIN MOVIES TURK
 http://umperisn.mywire.org/index.php?id=591389&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES TURK " group-title="beIN SINEMA",BEIN MOVIES TURK
-http://umperisn.mywire.org/index.php?id=591388&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES ACTION " group-title="beIN SINEMA",BEIN MOVIES ACTION
-http://umperisn.mywire.org/index.php?id=591399&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES ACTION " group-title="beIN SINEMA",BEIN MOVIES ACTION
-http://umperisn.mywire.org/index.php?id=591398&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES FAMILY " group-title="beIN SINEMA",BEIN MOVIES FAMILY
-http://umperisn.mywire.org/index.php?id=591397&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES FAMILY " group-title="beIN SINEMA",BEIN MOVIES FAMILY
-http://umperisn.mywire.org/index.php?id=620420&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES PREMIERE " group-title="beIN SINEMA",BEIN MOVIES PREMIERE
 http://umperisn.mywire.org/index.php?id=591393&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES PREMIERE " group-title="beIN SINEMA",BEIN MOVIES PREMIERE
-http://umperisn.mywire.org/index.php?id=591392&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES PREMIERE 2 " group-title="beIN SINEMA",BEIN MOVIES PREMIERE 2
-http://umperisn.mywire.org/index.php?id=591395&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES PREMIERE 2 " group-title="beIN SINEMA",BEIN MOVIES PREMIERE 2
-http://umperisn.mywire.org/index.php?id=591394&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES STARS " group-title="beIN SINEMA",BEIN MOVIES STARS
-http://umperisn.mywire.org/index.php?id=591391&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN MOVIES STARS " group-title="beIN SINEMA",BEIN MOVIES STARS
-http://umperisn.mywire.org/index.php?id=591390&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN BOX OFFICE 1 " group-title="beIN SINEMA",BEIN BOX OFFICE 1
-http://umperisn.mywire.org/index.php?id=591405&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN BOX OFFICE 1 " group-title="beIN SINEMA",BEIN BOX OFFICE 1
 http://umperisn.mywire.org/index.php?id=591404&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN BOX OFFICE 2 " group-title="beIN SINEMA",BEIN BOX OFFICE 2
-http://umperisn.mywire.org/index.php?id=591403&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN BOX OFFICE 2 " group-title="beIN SINEMA",BEIN BOX OFFICE 2
-http://umperisn.mywire.org/index.php?id=591402&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN BOX OFFICE 3 " group-title="beIN SINEMA",BEIN BOX OFFICE 3
-http://umperisn.mywire.org/index.php?id=591401&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN BOX OFFICE 3 " group-title="beIN SINEMA",BEIN BOX OFFICE 3
-http://umperisn.mywire.org/index.php?id=591400&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SERIES 1 " group-title="beIN SINEMA",BEIN SERIES 1
-http://umperisn.mywire.org/index.php?id=620418&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SERIES 1 " group-title="beIN SINEMA",BEIN SERIES 1
 http://umperisn.mywire.org/index.php?id=591386&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SERIES 2 " group-title="beIN SINEMA",BEIN SERIES 2
 http://umperisn.mywire.org/index.php?id=591385&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SERIES 2 " group-title="beIN SINEMA",BEIN SERIES 2
 http://umperisn.mywire.org/index.php?id=591384&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SERIES 3 " group-title="beIN SINEMA",BEIN SERIES 3
-http://umperisn.mywire.org/index.php?id=591383&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SERIES 3 " group-title="beIN SINEMA",BEIN SERIES 3
 http://umperisn.mywire.org/index.php?id=591382&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SERIES 4 " group-title="beIN SINEMA",BEIN SERIES 4
@@ -1361,38 +1061,8 @@ http://umperisn.mywire.org/index.php?id=591381&token=DeaTHLesS
 http://umperisn.mywire.org/index.php?id=591380&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="FX " group-title="D-SMART & TIVIBU",FX
 http://umperisn.mywire.org/index.php?id=591435&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="FX " group-title="D-SMART & TIVIBU",FX
-http://umperisn.mywire.org/index.php?id=591434&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EPIC DRAMA " group-title="D-SMART & TIVIBU",EPIC DRAMA
-http://umperisn.mywire.org/index.php?id=591437&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EPIC DRAMA " group-title="D-SMART & TIVIBU",EPIC DRAMA
-http://umperisn.mywire.org/index.php?id=591436&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DIZI SMART MAX " group-title="D-SMART & TIVIBU",DIZI SMART MAX
-http://umperisn.mywire.org/index.php?id=591441&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DIZI SMART MAX " group-title="D-SMART & TIVIBU",DIZI SMART MAX
-http://umperisn.mywire.org/index.php?id=591440&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DIZI SMART PREMIUM " group-title="D-SMART & TIVIBU",DIZI SMART PREMIUM
-http://umperisn.mywire.org/index.php?id=591439&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DIZI SMART PREMIUM " group-title="D-SMART & TIVIBU",DIZI SMART PREMIUM
-http://umperisn.mywire.org/index.php?id=591438&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART TURK " group-title="D-SMART & TIVIBU",MOVIESMART TURK
-http://umperisn.mywire.org/index.php?id=591431&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART TURK " group-title="D-SMART & TIVIBU",MOVIESMART TURK
-http://umperisn.mywire.org/index.php?id=591430&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART CLASSIC " group-title="D-SMART & TIVIBU",MOVIESMART CLASSIC
-http://umperisn.mywire.org/index.php?id=591433&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MOVIESMART CLASSIC " group-title="D-SMART & TIVIBU",MOVIESMART CLASSIC
-http://umperisn.mywire.org/index.php?id=591432&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA TV " group-title="D-SMART & TIVIBU",SINEMA TV
 http://umperisn.mywire.org/index.php?id=591415&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV " group-title="D-SMART & TIVIBU",SINEMA TV
-http://umperisn.mywire.org/index.php?id=591414&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 2 " group-title="D-SMART & TIVIBU",SINEMA TV 2
-http://umperisn.mywire.org/index.php?id=591429&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 2 " group-title="D-SMART & TIVIBU",SINEMA TV 2
-http://umperisn.mywire.org/index.php?id=591428&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AILE " group-title="D-SMART & TIVIBU",SINEMA TV AILE
-http://umperisn.mywire.org/index.php?id=591421&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AILE " group-title="D-SMART & TIVIBU",SINEMA TV AILE
 http://umperisn.mywire.org/index.php?id=591420&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AILE 2 " group-title="D-SMART & TIVIBU",SINEMA TV AILE 2
@@ -1405,42 +1075,10 @@ http://umperisn.mywire.org/index.php?id=591407&token=DeaTHLesS
 http://umperisn.mywire.org/index.php?id=591406&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA TV YERLI 2 " group-title="D-SMART & TIVIBU",SINEMA TV YERLI 2
 http://umperisn.mywire.org/index.php?id=591409&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV YERLI 2 " group-title="D-SMART & TIVIBU",SINEMA TV YERLI 2
-http://umperisn.mywire.org/index.php?id=591408&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV KOMEDI " group-title="D-SMART & TIVIBU",SINEMA TV KOMEDI
-http://umperisn.mywire.org/index.php?id=591411&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA TV KOMEDI " group-title="D-SMART & TIVIBU",SINEMA TV KOMEDI
 http://umperisn.mywire.org/index.php?id=591410&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV KOMEDI 2 " group-title="D-SMART & TIVIBU",SINEMA TV KOMEDI 2
-http://umperisn.mywire.org/index.php?id=591413&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV KOMEDI 2 " group-title="D-SMART & TIVIBU",SINEMA TV KOMEDI 2
-http://umperisn.mywire.org/index.php?id=591412&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON " group-title="D-SMART & TIVIBU",SINEMA TV AKSIYON
-http://umperisn.mywire.org/index.php?id=591417&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON " group-title="D-SMART & TIVIBU",SINEMA TV AKSIYON
-http://umperisn.mywire.org/index.php?id=591416&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON 2 " group-title="D-SMART & TIVIBU",SINEMA TV AKSIYON 2
-http://umperisn.mywire.org/index.php?id=591419&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV AKSIYON 2 " group-title="D-SMART & TIVIBU",SINEMA TV AKSIYON 2
-http://umperisn.mywire.org/index.php?id=591418&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1001 " group-title="D-SMART & TIVIBU",SINEMA TV 1001
-http://umperisn.mywire.org/index.php?id=591427&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1001 " group-title="D-SMART & TIVIBU",SINEMA TV 1001
 http://umperisn.mywire.org/index.php?id=591426&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1002 " group-title="D-SMART & TIVIBU",SINEMA TV 1002
-http://umperisn.mywire.org/index.php?id=591425&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SINEMA TV 1002 " group-title="D-SMART & TIVIBU",SINEMA TV 1002
-http://umperisn.mywire.org/index.php?id=591424&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HABER" group-title="HABER",HABER
-http://umperisn.mywire.org/index.php?id=2087&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT HABER " group-title="HABER",TRT HABER
-http://umperisn.mywire.org/index.php?id=594257&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT HABER " group-title="HABER",TRT HABER
-http://umperisn.mywire.org/index.php?id=594256&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A HABER " group-title="HABER",A HABER
-http://umperisn.mywire.org/index.php?id=594255&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A HABER " group-title="HABER",A HABER
-http://umperisn.mywire.org/index.php?id=594254&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="CNN TURK " group-title="HABER",CNN TURK
 http://umperisn.mywire.org/index.php?id=594253&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="CNN TURK " group-title="HABER",CNN TURK
@@ -1458,39 +1096,9 @@ http://umperisn.mywire.org/index.php?id=594247&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="HABER GLOBAL " group-title="HABER",HABER GLOBAL
 http://umperisn.mywire.org/index.php?id=594246&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="NTV " group-title="HABER",NTV
-http://umperisn.mywire.org/index.php?id=594243&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NTV " group-title="HABER",NTV
 http://umperisn.mywire.org/index.php?id=594242&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 100 " group-title="HABER",TV 100
-http://umperisn.mywire.org/index.php?id=594241&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV 100 " group-title="HABER",TV 100
-http://umperisn.mywire.org/index.php?id=594240&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EKOL TV " group-title="HABER",EKOL TV
-http://umperisn.mywire.org/index.php?id=594239&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EKOL TV " group-title="HABER",EKOL TV
-http://umperisn.mywire.org/index.php?id=594238&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="AKIT TV " group-title="HABER",AKIT TV
-http://umperisn.mywire.org/index.php?id=594237&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="AKIT TV " group-title="HABER",AKIT TV
-http://umperisn.mywire.org/index.php?id=594236&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="24 TV " group-title="HABER",24 TV
-http://umperisn.mywire.org/index.php?id=594235&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="24 TV " group-title="HABER",24 TV
-http://umperisn.mywire.org/index.php?id=594234&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TELE 1 " group-title="HABER",TELE 1
-http://umperisn.mywire.org/index.php?id=594233&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TELE 1 " group-title="HABER",TELE 1
 http://umperisn.mywire.org/index.php?id=594232&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TURKHABER " group-title="HABER",TURKHABER
-http://umperisn.mywire.org/index.php?id=594757&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TURKHABER " group-title="HABER",TURKHABER
-http://umperisn.mywire.org/index.php?id=594762&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KRT TV " group-title="HABER",KRT TV
-http://umperisn.mywire.org/index.php?id=594231&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KRT TV " group-title="HABER",KRT TV
-http://umperisn.mywire.org/index.php?id=594230&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SOZCU TV " group-title="HABER",SOZCU TV
-http://umperisn.mywire.org/index.php?id=594229&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SOZCU TV " group-title="HABER",SOZCU TV
 http://umperisn.mywire.org/index.php?id=594228&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ULKE TV " group-title="HABER",ULKE TV
@@ -1503,78 +1111,32 @@ http://umperisn.mywire.org/index.php?id=594225&token=DeaTHLesS
 http://umperisn.mywire.org/index.php?id=594224&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG HT " group-title="HABER",BLOOMBERG HT
 http://umperisn.mywire.org/index.php?id=594223&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BLOOMBERG HT " group-title="HABER",BLOOMBERG HT
-http://umperisn.mywire.org/index.php?id=594222&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="LIDER HABER " group-title="HABER",LIDER HABER
-http://umperisn.mywire.org/index.php?id=594221&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="LIDER HABER " group-title="HABER",LIDER HABER
 http://umperisn.mywire.org/index.php?id=594220&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="BENGU TURK " group-title="HABER",BENGU TURK
 http://umperisn.mywire.org/index.php?id=594219&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BENGU TURK " group-title="HABER",BENGU TURK
-http://umperisn.mywire.org/index.php?id=594218&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EKOTURK " group-title="HABER",EKOTURK
-http://umperisn.mywire.org/index.php?id=594217&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="EKOTURK " group-title="HABER",EKOTURK
 http://umperisn.mywire.org/index.php?id=594216&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ULUSAL KANAL " group-title="HABER",ULUSAL KANAL
-http://umperisn.mywire.org/index.php?id=594215&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ULUSAL KANAL " group-title="HABER",ULUSAL KANAL
-http://umperisn.mywire.org/index.php?id=594214&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TVNET " group-title="HABER",TVNET
-http://umperisn.mywire.org/index.php?id=594213&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TVNET " group-title="HABER",TVNET
-http://umperisn.mywire.org/index.php?id=594212&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CNBC-E " group-title="HABER",CNBC-E
-http://umperisn.mywire.org/index.php?id=594245&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="CNBC-E " group-title="HABER",CNBC-E
 http://umperisn.mywire.org/index.php?id=594244&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TGRT HABER " group-title="HABER",TGRT HABER
-http://umperisn.mywire.org/index.php?id=594211&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TGRT HABER " group-title="HABER",TGRT HABER
 http://umperisn.mywire.org/index.php?id=594210&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="A PARA " group-title="HABER",A PARA
 http://umperisn.mywire.org/index.php?id=594209&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A PARA " group-title="HABER",A PARA
-http://umperisn.mywire.org/index.php?id=594208&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TIVI 6" group-title="HABER",TIVI 6
 http://umperisn.mywire.org/index.php?id=594207&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ILKE TV" group-title="HABER",ILKE TV
-http://umperisn.mywire.org/index.php?id=594206&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TYT TURK" group-title="HABER",TYT TURK
 http://umperisn.mywire.org/index.php?id=594205&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MK HABER" group-title="HABER",MK HABER
-http://umperisn.mywire.org/index.php?id=598046&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="KANAL B" group-title="HABER",KANAL B
 http://umperisn.mywire.org/index.php?id=594204&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="BRT 1" group-title="HABER",BRT 1
 http://umperisn.mywire.org/index.php?id=594203&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="BRT 2" group-title="HABER",BRT 2
 http://umperisn.mywire.org/index.php?id=594202&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CAN TV" group-title="HABER",CAN TV
-http://umperisn.mywire.org/index.php?id=594201&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="EGEMAX TV" group-title="HABER",EGEMAX TV
-http://umperisn.mywire.org/index.php?id=594200&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRABZON HABER 61" group-title="HABER",TRABZON HABER 61
-http://umperisn.mywire.org/index.php?id=594814&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TGRT EU" group-title="HABER",TGRT EU
-http://umperisn.mywire.org/index.php?id=594199&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT WORLD" group-title="HABER",TRT WORLD
-http://umperisn.mywire.org/index.php?id=594198&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="A NEWS" group-title="HABER",A NEWS
-http://umperisn.mywire.org/index.php?id=594258&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MUZIK" group-title="MUZIK 7/24",MUZIK
-http://umperisn.mywire.org/index.php?id=233444&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT MUZIK " group-title="MUZIK 7/24",TRT MUZIK
 http://umperisn.mywire.org/index.php?id=595438&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT MUZIK " group-title="MUZIK 7/24",TRT MUZIK
-http://umperisn.mywire.org/index.php?id=595437&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DREAM TURK " group-title="MUZIK 7/24",DREAM TURK
-http://umperisn.mywire.org/index.php?id=595434&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DREAM TURK " group-title="MUZIK 7/24",DREAM TURK
 http://umperisn.mywire.org/index.php?id=595433&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DREAM TV " group-title="MUZIK 7/24",DREAM TV
-http://umperisn.mywire.org/index.php?id=595432&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DREAM TV " group-title="MUZIK 7/24",DREAM TV
 http://umperisn.mywire.org/index.php?id=595431&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="POWERTURK " group-title="MUZIK 7/24",POWERTURK
@@ -1589,30 +1151,14 @@ http://umperisn.mywire.org/index.php?id=595427&token=DeaTHLesS
 http://umperisn.mywire.org/index.php?id=595426&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="POWER TURK SLOW" group-title="MUZIK 7/24",POWER TURK SLOW
 http://umperisn.mywire.org/index.php?id=595425&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="POWER TURK TAPTAZE" group-title="MUZIK 7/24",POWER TURK TAPTAZE
-http://umperisn.mywire.org/index.php?id=595424&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="NR1 TURK " group-title="MUZIK 7/24",NR1 TURK
 http://umperisn.mywire.org/index.php?id=595423&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NR1 TURK " group-title="MUZIK 7/24",NR1 TURK
-http://umperisn.mywire.org/index.php?id=595422&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="NR1 " group-title="MUZIK 7/24",NR1
 http://umperisn.mywire.org/index.php?id=595421&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NR1 " group-title="MUZIK 7/24",NR1
-http://umperisn.mywire.org/index.php?id=595420&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT ÇOCUK " group-title="COCUK",TRT ÇOCUK
-http://umperisn.mywire.org/index.php?id=481412&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT ÇOCUK " group-title="COCUK",TRT ÇOCUK
-http://umperisn.mywire.org/index.php?id=481411&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT DİYANET ÇOCUK " group-title="COCUK",TRT DİYANET ÇOCUK
 http://umperisn.mywire.org/index.php?id=477575&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TRT DİYANET ÇOCUK " group-title="COCUK",TRT DİYANET ÇOCUK
-http://umperisn.mywire.org/index.php?id=481359&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="BABY TV " group-title="COCUK",BABY TV
 http://umperisn.mywire.org/index.php?id=481410&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BABY TV " group-title="COCUK",BABY TV
-http://umperisn.mywire.org/index.php?id=481409&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DİSNEY JR " group-title="COCUK",DİSNEY JR
-http://umperisn.mywire.org/index.php?id=481408&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DİSNEY JR " group-title="COCUK",DİSNEY JR
 http://umperisn.mywire.org/index.php?id=481407&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ÇOCUK SMART " group-title="COCUK",ÇOCUK SMART
@@ -1625,232 +1171,74 @@ http://umperisn.mywire.org/index.php?id=481404&token=DeaTHLesS
 http://umperisn.mywire.org/index.php?id=481403&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="CARTOONITO " group-title="COCUK",CARTOONITO
 http://umperisn.mywire.org/index.php?id=593150&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CARTOONITO " group-title="COCUK",CARTOONITO
-http://umperisn.mywire.org/index.php?id=593155&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NICKELODEON " group-title="COCUK",NICKELODEON
-http://umperisn.mywire.org/index.php?id=481400&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NICKELODEON " group-title="COCUK",NICKELODEON
-http://umperisn.mywire.org/index.php?id=481399&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NICK JR " group-title="COCUK",NICK JR
-http://umperisn.mywire.org/index.php?id=481402&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NICK JR" group-title="COCUK",NICK JR
-http://umperisn.mywire.org/index.php?id=481401&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="MINIKA GO " group-title="COCUK",MINIKA GO
 http://umperisn.mywire.org/index.php?id=481398&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MINIKA GO" group-title="COCUK",MINIKA GO
-http://umperisn.mywire.org/index.php?id=481397&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MINIKA ÇOCUK " group-title="COCUK",MINIKA ÇOCUK
-http://umperisn.mywire.org/index.php?id=481396&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="MINIKA ÇOCUK" group-title="COCUK",MINIKA ÇOCUK
 http://umperisn.mywire.org/index.php?id=481395&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NICKTOONS" group-title="COCUK",NICKTOONS
-http://umperisn.mywire.org/index.php?id=165&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DA VINCI " group-title="COCUK",DA VINCI
 http://umperisn.mywire.org/index.php?id=531384&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DIYANET TV " group-title="DINI",DIYANET TV
 http://umperisn.mywire.org/index.php?id=2874&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="DOST TV" group-title="DINI",DOST TV
-http://umperisn.mywire.org/index.php?id=2875&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="LALEGUL TV" group-title="DINI",LALEGUL TV
 http://umperisn.mywire.org/index.php?id=2880&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SEMERKAND TV " group-title="DINI",SEMERKAND TV
-http://umperisn.mywire.org/index.php?id=2881&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="REHBER TV" group-title="DINI",REHBER TV
 http://umperisn.mywire.org/index.php?id=2882&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="MELTEM TV" group-title="DINI",MELTEM TV
 http://umperisn.mywire.org/index.php?id=2883&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="KUDUS TV" group-title="DINI",KUDUS TV
 http://umperisn.mywire.org/index.php?id=2884&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="FM TV" group-title="DINI",FM TV
-http://umperisn.mywire.org/index.php?id=2885&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="GONCA TV" group-title="DINI",GONCA TV
-http://umperisn.mywire.org/index.php?id=2886&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="VAV TV " group-title="DINI",VAV TV
 http://umperisn.mywire.org/index.php?id=2888&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="LALEGUL RADYO" group-title="DINI",LALEGUL RADYO
-http://umperisn.mywire.org/index.php?id=137991&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV5" group-title="DINI",TV5
-http://umperisn.mywire.org/index.php?id=147815&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="SAT 7 TURK" group-title="DINI",SAT 7 TURK
 http://umperisn.mywire.org/index.php?id=147817&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="YEREL" group-title="YEREL",YEREL
-http://umperisn.mywire.org/index.php?id=2889&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ENGELSIZ TV" group-title="YEREL",ENGELSIZ TV
-http://umperisn.mywire.org/index.php?id=566367&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="LINE TV (BURSA)" group-title="YEREL",LINE TV (BURSA)
 http://umperisn.mywire.org/index.php?id=564402&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ADANA KOZA TV" group-title="YEREL",ADANA KOZA TV
-http://umperisn.mywire.org/index.php?id=2891&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="AFYON TURK TV" group-title="YEREL",AFYON TURK TV
-http://umperisn.mywire.org/index.php?id=2892&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="AFYON KANAL 3 " group-title="YEREL",AFYON KANAL 3
 http://umperisn.mywire.org/index.php?id=2893&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="AKSARAY KANAL 68" group-title="YEREL",AKSARAY KANAL 68
 http://umperisn.mywire.org/index.php?id=2895&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL S (SAMSUN)" group-title="YEREL",KANAL S (SAMSUN)
-http://umperisn.mywire.org/index.php?id=587756&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL 58" group-title="YEREL",KANAL 58
-http://umperisn.mywire.org/index.php?id=2965&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ANTALYA KANAL V" group-title="YEREL",ANTALYA KANAL V
-http://umperisn.mywire.org/index.php?id=2899&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ANADOLU DERNEK TV" group-title="YEREL",ANADOLU DERNEK TV
-http://umperisn.mywire.org/index.php?id=2900&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ADIYAMAN MERCAN TV " group-title="YEREL",ADIYAMAN MERCAN TV
-http://umperisn.mywire.org/index.php?id=2901&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="AYDIN TVDEN" group-title="YEREL",AYDIN TVDEN
-http://umperisn.mywire.org/index.php?id=147061&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BURSA AS TV " group-title="YEREL",BURSA AS TV
-http://umperisn.mywire.org/index.php?id=2904&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BURSA TV" group-title="YEREL",BURSA TV
-http://umperisn.mywire.org/index.php?id=2905&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="BUCAK K15" group-title="YEREL",BUCAK K15
-http://umperisn.mywire.org/index.php?id=2907&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CANAKKALE TON TV" group-title="YEREL",CANAKKALE TON TV
-http://umperisn.mywire.org/index.php?id=2910&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="CORUM KANAL 19" group-title="YEREL",CORUM KANAL 19
-http://umperisn.mywire.org/index.php?id=2911&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KANAL AVRUPA " group-title="YEREL",KANAL AVRUPA
-http://umperisn.mywire.org/index.php?id=2912&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MAVİ KARADENİZ TV" group-title="YEREL",MAVİ KARADENİZ TV
-http://umperisn.mywire.org/index.php?id=274957&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DENIZLI DEHA TV" group-title="YEREL",DENIZLI DEHA TV
 http://umperisn.mywire.org/index.php?id=2914&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="DENIZLI DRT TV" group-title="YEREL",DENIZLI DRT TV
 http://umperisn.mywire.org/index.php?id=2915&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ELAZIG KANAL 23" group-title="YEREL",ELAZIG KANAL 23
-http://umperisn.mywire.org/index.php?id=2918&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ELAZIG KANAL FIRAT" group-title="YEREL",ELAZIG KANAL FIRAT
-http://umperisn.mywire.org/index.php?id=2919&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ELAZIG ZAZA TV" group-title="YEREL",ELAZIG ZAZA TV
 http://umperisn.mywire.org/index.php?id=147062&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ERZURUM KARDELEN TV" group-title="YEREL",ERZURUM KARDELEN TV
-http://umperisn.mywire.org/index.php?id=2921&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ESKISEHIR KANAL 26 " group-title="YEREL",ESKISEHIR KANAL 26
-http://umperisn.mywire.org/index.php?id=2922&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="GAZIANTEP OLAY TV" group-title="YEREL",GAZIANTEP OLAY TV
-http://umperisn.mywire.org/index.php?id=2925&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ISTANBUL TEMPO TV " group-title="YEREL",ISTANBUL TEMPO TV
 http://umperisn.mywire.org/index.php?id=2930&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KAHRAMANMARAS AKSU TV" group-title="YEREL",KAHRAMANMARAS AKSU TV
-http://umperisn.mywire.org/index.php?id=2932&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KONYA KON TV" group-title="YEREL",KONYA KON TV
-http://umperisn.mywire.org/index.php?id=2933&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="KONYA KANAL 42" group-title="YEREL",KONYA KANAL 42
 http://umperisn.mywire.org/index.php?id=2934&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KADIRGA TV (TRABZON)" group-title="YEREL",KADIRGA TV (TRABZON)
-http://umperisn.mywire.org/index.php?id=511826&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KARABUK BRTV" group-title="YEREL",KARABUK BRTV
-http://umperisn.mywire.org/index.php?id=2937&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="KANAL 32" group-title="YEREL",KANAL 32
 http://umperisn.mywire.org/index.php?id=2939&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TV KAYSERI" group-title="YEREL",TV KAYSERI
-http://umperisn.mywire.org/index.php?id=2942&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KOCAELI TV 41" group-title="YEREL",KOCAELI TV 41
-http://umperisn.mywire.org/index.php?id=2943&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="KOCAELI TV" group-title="YEREL",KOCAELI TV
-http://umperisn.mywire.org/index.php?id=2944&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="YILDIZ EN" group-title="YEREL",YILDIZ EN
-http://umperisn.mywire.org/index.php?id=2946&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MALATYA ER TV" group-title="YEREL",MALATYA ER TV
-http://umperisn.mywire.org/index.php?id=2949&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MALATYA VUSLAT TV" group-title="YEREL",MALATYA VUSLAT TV
-http://umperisn.mywire.org/index.php?id=2950&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="MERSIN KANAL 33" group-title="YEREL",MERSIN KANAL 33
-http://umperisn.mywire.org/index.php?id=2952&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ON4 TV" group-title="YEREL",ON4 TV
 http://umperisn.mywire.org/index.php?id=2955&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="ORDU ALTAS TV" group-title="YEREL",ORDU ALTAS TV
-http://umperisn.mywire.org/index.php?id=2956&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ORDU TV 52 " group-title="YEREL",ORDU TV 52
 http://umperisn.mywire.org/index.php?id=2957&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="RIZE CAY TV" group-title="YEREL",RIZE CAY TV
-http://umperisn.mywire.org/index.php?id=2958&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="RUMELI TV (KIRKLARELİ)" group-title="YEREL",RUMELI TV (KIRKLARELİ)
 http://umperisn.mywire.org/index.php?id=2959&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SAKARYA TV 264" group-title="YEREL",SAKARYA TV 264
-http://umperisn.mywire.org/index.php?id=133507&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="SANLIURFA KANAL URFA" group-title="YEREL",SANLIURFA KANAL URFA
-http://umperisn.mywire.org/index.php?id=2960&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="TOKAT TV" group-title="YEREL",TOKAT TV
-http://umperisn.mywire.org/index.php?id=559063&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TV 5" group-title="YEREL",TV 5
 http://umperisn.mywire.org/index.php?id=2967&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="HRT AKDENIZ TV" group-title="YEREL",HRT AKDENIZ TV
-http://umperisn.mywire.org/index.php?id=2970&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="MC EU TV (AVRUPA)" group-title="YEREL",MC EU TV (AVRUPA)
 http://umperisn.mywire.org/index.php?id=2972&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="LIVE CAMS" group-title="YEREL",LIVE CAMS
-http://umperisn.mywire.org/index.php?id=216221&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER " group-title="beIN SPORTS",BEIN SPORTS HABER
-http://umperisn.mywire.org/index.php?id=2194&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER " group-title="beIN SPORTS",BEIN SPORTS HABER
-http://umperisn.mywire.org/index.php?id=620421&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 " group-title="beIN SPORTS",BEIN SPORTS 1
-http://umperisn.mywire.org/index.php?id=2216&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 " group-title="beIN SPORTS",BEIN SPORTS 1
-http://umperisn.mywire.org/index.php?id=2197&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NX SPORTS 1 " group-title="beIN SPORTS",SPORTS 1
-http://umperisn.mywire.org/index.php?id=2193&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NX SPORTS 1 +" group-title="beIN SPORTS",SPORTS 1 
-http://umperisn.mywire.org/index.php?id=585506&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 " group-title="beIN SPORTS",BEIN SPORTS 1
 http://umperisn.mywire.org/index.php?id=2198&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NX SPORTS 1 " group-title="beIN SPORTS",SPORTS 1
-http://umperisn.mywire.org/index.php?id=585504&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NX SPORTS 1 +" group-title="beIN SPORTS",SPORTS 1 +
-http://umperisn.mywire.org/index.php?id=618459&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 " group-title="beIN SPORTS",BEIN SPORTS 1
 http://umperisn.mywire.org/index.php?id=2199&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NX SPORTS 1 SD" group-title="beIN SPORTS",SPORTS 1 
-http://umperisn.mywire.org/index.php?id=622706&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="NX SPORTS 1 SD+" group-title="beIN SPORTS",SPORTS 1 
-http://umperisn.mywire.org/index.php?id=622707&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 SD" group-title="beIN SPORTS",BEIN SPORTS 1 
-http://umperisn.mywire.org/index.php?id=2201&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 2 " group-title="beIN SPORTS",BEIN SPORTS 2
 http://umperisn.mywire.org/index.php?id=2207&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 2 " group-title="beIN SPORTS",BEIN SPORTS 2
-http://umperisn.mywire.org/index.php?id=2206&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 2 " group-title="beIN SPORTS",BEIN SPORTS 2
-http://umperisn.mywire.org/index.php?id=2205&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 3 " group-title="beIN SPORTS",BEIN SPORTS 3
-http://umperisn.mywire.org/index.php?id=2210&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 3 " group-title="beIN SPORTS",BEIN SPORTS 3
 http://umperisn.mywire.org/index.php?id=2209&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 3 " group-title="beIN SPORTS",BEIN SPORTS 3
-http://umperisn.mywire.org/index.php?id=491883&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 4 " group-title="beIN SPORTS",BEIN SPORTS 4
-http://umperisn.mywire.org/index.php?id=2213&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 4 " group-title="beIN SPORTS",BEIN SPORTS 4
-http://umperisn.mywire.org/index.php?id=2212&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 4 " group-title="beIN SPORTS",BEIN SPORTS 4
 http://umperisn.mywire.org/index.php?id=491884&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 5 " group-title="beIN SPORTS",BEIN SPORTS 5
-http://umperisn.mywire.org/index.php?id=423873&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 5 " group-title="beIN SPORTS",BEIN SPORTS 5
-http://umperisn.mywire.org/index.php?id=620422&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 5 " group-title="beIN SPORTS",BEIN SPORTS 5
-http://umperisn.mywire.org/index.php?id=491885&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS MAX 1 " group-title="beIN SPORTS",BEIN SPORTS MAX 1
-http://umperisn.mywire.org/index.php?id=551691&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS MAX 1 " group-title="beIN SPORTS",BEIN SPORTS MAX 1
 http://umperisn.mywire.org/index.php?id=2215&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS MAX 1 " group-title="beIN SPORTS",BEIN SPORTS MAX 1
-http://umperisn.mywire.org/index.php?id=620289&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS MAX 2 " group-title="beIN SPORTS",BEIN SPORTS MAX 2
-http://umperisn.mywire.org/index.php?id=551689&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS MAX 2 " group-title="beIN SPORTS",BEIN SPORTS MAX 2
 http://umperisn.mywire.org/index.php?id=2217&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS MAX 2 " group-title="beIN SPORTS",BEIN SPORTS MAX 2
-http://umperisn.mywire.org/index.php?id=620288&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="TRT 1 " group-title="U",TRT 1
 http://umperisn.mywire.org/index.php?id=603812&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="ATV " group-title="U",ATV
 http://umperisn.mywire.org/index.php?id=603811&token=DeaTHLesS
 #EXTINF:-1 tvg-id="" tvg-name="KANAL D " group-title="U",KANAL D
 http://umperisn.mywire.org/index.php?id=603809&token=DeaTHLesS
-#EXTINF:-1 tvg-id="" tvg-name="STAR TV " group-title="U",STAR TV
-http://umperisn.mywire.org/index.php?id=603808&token=DeaTHLesS
 #EXTINF:-1 tvg-id="NULL" tvg-name="FILM SCREEN" tvg-logo="https://logo.multicms.info/tvlogo/filmscreen.jpg" group-title="TR-SINEMA",FILM SCREEN
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/275983
 #EXTINF:-1 tvg-id="SinemaTV" tvg-name="SINEMA TV" tvg-logo="https://logo.multicms.info/tvlogo/sinemaTV.jpg" group-title="TR-SINEMA",SINEMA TV
@@ -1875,66 +1263,20 @@ http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/165
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/232360
 #EXTINF:-1 tvg-id="Sinema Tv 1001" tvg-name="SINEMA TV 1001" tvg-logo="https://www.turksatkablo.com.tr/inc/Kanaldosya-getir.aspx?ID=171" group-title="TR-SINEMA",SINEMA TV 1001
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/164
-#EXTINF:-1 tvg-id="Sinema Tv 1002" tvg-name="SINEMA TV 1002" tvg-logo="https://www.tvyayinakisi.com/wp-content/uploads/2020/05/sinema-1002-300x217.png" group-title="TR-SINEMA",SINEMA TV 1002
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/103140
 #EXTINF:-1 tvg-id="MovieSmart Classic" tvg-name="MOVIESMART Classic HD" tvg-logo="http://logo.multicms.info/logoslar/moviesmart.jpg" group-title="TR-SINEMA",MOVIESMART CLASSIC HD
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/216
-#EXTINF:-1 tvg-id="MovieSmart Türk" tvg-name="MOVIESMART TURK" tvg-logo="http://logo.multicms.info/logoslar/moviesmart.jpg" group-title="TR-SINEMA",MOVIESMART TURK
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/64828
-#EXTINF:-1 tvg-id="Filmbox" tvg-name="Filmbox HD" tvg-logo="http://logo.multicms.info/tvlogo/filmboxhd.png" group-title="TR-SINEMA",FILMBOX HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/66460
-#EXTINF:-1 tvg-id="beIN MOVIES PREMIERE" tvg-name="beIN Movies Premiere HD" tvg-logo="http://logo.multicms.info/logoslar/beINmovies.jpg" group-title="TR-SINEMA",BEIN MOVIES PREMIERE HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/225
-#EXTINF:-1 tvg-id="beIN MOVIES PREMIERE 2" tvg-name="beIN MOVIES PREMIER 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/67/beIN_MOVIES_Premier-2_HD.png" group-title="TR-SINEMA",BEIN MOVIES PREMIER 2
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/234446
 #EXTINF:-1 tvg-id="beIN MOVIES STARS" tvg-name="beIN Movies Stars HD" tvg-logo="http://logo.multicms.info/logoslar/beINmovies.jpg" group-title="TR-SINEMA",BEIN MOVIES STARS HD
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/224
-#EXTINF:-1 tvg-id="beIN MOVIES TURK" tvg-name="beIN Movies Turk HD" tvg-logo="http://logo.multicms.info/logoslar/beINmovies.jpg" group-title="TR-SINEMA",BEIN MOVIES TURK HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/223
 #EXTINF:-1 tvg-id="TRT TURK" tvg-name="TRT TURK" tvg-logo="https://logo.multicms.info/tvlogo/trtturk.png" group-title="TR-ULUSAL",TRT TURK
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/234447
-#EXTINF:-1 tvg-id="NULL" tvg-name="UNIVERSAL BELGESEL" tvg-logo="http://logo.multicms.info/tvlogo/universal_channel_global.png" group-title="TR-BELGESEL",UNIVERSAL BELGESEL
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/97172
-#EXTINF:-1 tvg-id="NULL" tvg-name="UNIVERSAL DISCOVERY" tvg-logo="https://logo.multicms.info/TVlogolar/UniversalDiscovery.jpg" group-title="TR-BELGESEL",UNIVERSAL DISCOVERY
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/253585
-#EXTINF:-1 tvg-id="National Geographic" tvg-name="NATIONAL GEOGRAPHIC HD" tvg-logo="http://logo.multicms.info/tvlogo/natgeohd.png" group-title="TR-BELGESEL",NATIONAL GEOGRAPHIC HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/286
-#EXTINF:-1 tvg-id="Nat Geo Wild" tvg-name="NAT GEO WILD HD" tvg-logo="http://logo.multicms.info/tvlogo/natgeowild.png" group-title="TR-BELGESEL",NAT GEO WILD HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/282
 #EXTINF:-1 tvg-id="HABİTAT TV" tvg-name="HABITAT TV" tvg-logo="http://logo.multicms.info/tvlogo/HABITATTV.jpg" group-title="TR-BELGESEL",HABITAT TV
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/78416
-#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX FHD" tvg-logo="http://logo.multicms.info/tvlogo/dmax.png" group-title="TR-BELGESEL",DMAX FHD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/274
-#EXTINF:-1 tvg-id="beIN GURME" tvg-name="beIN GURME HD" tvg-logo="http://logo.multicms.info/tvlogo/beINgurme.png" group-title="TR-BELGESEL",BEIN GURME HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/271
 #EXTINF:-1 tvg-id="beIN İZ" tvg-name="beIN IZ HD" tvg-logo="http://logo.multicms.info/tvlogo/beINiz.png" group-title="TR-BELGESEL",BEIN IZ HD
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/270
-#EXTINF:-1 tvg-id="Love Nature" tvg-name="LOVE NATURE" tvg-logo="http://logo.multicms.info/logoslar/lovenaturehd.png" group-title="TR-BELGESEL",LOVE NATURE
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/50428
-#EXTINF:-1 tvg-id="Discovery Channel" tvg-name="DISCOVERY CHANNEL" tvg-logo="http://logo.multicms.info/tvlogo/discoveryhd.png" group-title="TR-BELGESEL",DISCOVERY CHANNEL
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/264
-#EXTINF:-1 tvg-id="ID" tvg-name="DISCOVERY IDX" tvg-logo="http://logo.multicms.info/tvlogo/idxhd.png" group-title="TR-BELGESEL",DISCOVERY IDX
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/261
 #EXTINF:-1 tvg-id="Yaban TV" tvg-name="YABAN TV HD" tvg-logo="http://logo.multicms.info/tvlogo/yaban.png" group-title="TR-BELGESEL",YABAN TV HD
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/15018
 #EXTINF:-1 tvg-id="Tarih TV" tvg-name="TARIH TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tarih-tv-logo-siyah-1080x1080.png/250px-Tarih-tv-logo-siyah-1080x1080.png" group-title="TR-BELGESEL",TARIH TV
 http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/140595
-#EXTINF:-1 tvg-id="TRT Belgesel" tvg-name="TRT BELGESEL HD" tvg-logo="http://logo.multicms.info/tvlogo/trtbelgeselhd.png" group-title="TR-BELGESEL",TRT BELGESEL HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/50847
-#EXTINF:-1 tvg-id="BBC EARTH" tvg-name="BBC Earth HD" tvg-logo="http://logo.multicms.info/tvlogo/bbcearth.png" group-title="TR-BELGESEL",BBC EARTH HD
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/258
-#EXTINF:-1 tvg-id="Da Vinci" tvg-name="DA Vinci" tvg-logo="http://logo.multicms.info/tvlogo/davincilearning.png" group-title="TR-BELGESEL",DA VINCI
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/253
-#EXTINF:-1 tvg-id="Viasat History" tvg-name="VIASAT HISTORY" tvg-logo="http://logo.multicms.info/tvlogo/VIASAT-HISTORY.jpg" group-title="TR-BELGESEL",VIASAT HISTORY
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/47970
-#EXTINF:-1 tvg-id="VIASAT EXPLORE" tvg-name="VIASAT EXPLORER" tvg-logo="https://logo.multicms.info/tvlogo/viasatexplore.png" group-title="TR-BELGESEL",VIASAT EXPLORER
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/234449
-#EXTINF:-1 tvg-id="BBC First" tvg-name="BBC First" tvg-logo="https://logo.multicms.info/tvlogo/BBCFirst.jpg" group-title="TR-DIZI",BBC FIRST
-http://190502.tomtv.eu:80/MustafaozdemR7808/z189b8mv2r/165462
-
-
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (31-07-2026 17:24) --- #
 #EXTINF:-1 tvg-id="ext" tvg-name="DOST TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/dost-tv-tr.png" group-title="ULUSAL",DOST TV
 https://dost.stream.emsal.im/tv/live.m3u8
 #EXTINF:-1 tvg-id="ext" tvg-name="TRT EBA ORTAKUL" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/turkey/eba-tv-ortaokul-tr.png" group-title="ULUSAL",TRT EBA ORTAKUL
@@ -1995,26 +1337,6 @@ https://live.artidijitalmedya.com/artidijital_urfanatiktv/urfanatiktv/playlist.m
 https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
 #EXTINF:-1,RIZE TURK
 https://yayin.rizeturk.com:3777/hybrid/play.m3u8
-#EXTINF:-1,DAMAR TV
-https://tvsms.club/tv.php?kanal=damar&file=.m3u8
-#EXTINF:-1,ARABESK TV
-https://tvsms.club/tv.php?kanal=arabeskyeni&file=.m3u8
-#EXTINF:-1,SILA TV
-https://tvsms.club/tv.php?kanal=silatv&file=.m3u8
-#EXTINF:-1,ZEYNO TV
-https://tvsms.club/tv.php?kanal=zeynotv&file=.m3u8
-#EXTINF:-1,DOST TV
-https://tvsms.club/tvz.php?kanal=dost&file=.m3u8
-#EXTINF:-1,EZO TV
-https://tvsms.club/tvz.php?kanal=ezo&file=.m3u8
-#EXTINF:-1,TOP POP TV
-https://tvsms.club/tvz.php?kanal=toppop&file=.m3u8
-#EXTINF:-1,A VİVA TV
-https://tvsms.club/tv.php?kanal=vivatv&file=.m3u8
-#EXTINF:-1,ARMA TV
-https://tvsms.club/tvz.php?kanal=arma&file=.m3u8
-#EXTINF:-1,GENC SMS TV
-https://tvsms.club/tv.php?kanal=genctv&file=.m3u8
 #EXTINF:-1,SAGLIK CHANEL
 https://live.euromediacenter.com/saglikchannel/tracks-v1a1/mono.m3u8
 #EXTINF:-1,HÜR TV
@@ -2037,6 +1359,3 @@ https://tv-trtmuzik.medya.trt.com.tr/master_720.m3u8
 http://livetv.powerapp.com.tr/pturktaptaze/taptaze.smil/playlist.m3u8
 #EXTINF:-1,TH TURK HABER TV
 https://edge1.socialsmart.tv/turkhaber/bant1/chunks.m3u8
-
-
-
