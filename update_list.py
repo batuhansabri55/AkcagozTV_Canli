@@ -62,7 +62,7 @@ YASAKLI_SET = {
     "genel | eğlence", "genel | eglence", "disney+", "screen saver", "ss screen",
     
     # Kökten Silinecek Ana Kelimeler
-    "glife", "cinelux", "max", "TABIISPOR", "TABII", "TR > KARAOKE", "TR | SINEMA VIP",
+    "glife", "cinelux", "max", "TABIISPOR", "TABII", "TR > KARAOKE", "TR | SINEMA VIP", "TR > AKSIYON|GERILIM|SUC",
     
     # Cine, Spor ve Yeşilçam Grupları
     "tabii spor", "tivibuspor", "tivibu spor", "exxen sports", "cine yesilcam", "cine office"
