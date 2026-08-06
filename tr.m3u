@@ -1947,9 +1947,6 @@ http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196686
 http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196682&extension=ts
 #EXTINF:-1 tvg-id="" tvg-name="┃TR┃ NOW TV" group-title="┃TR┃ ULUSAL",NOW TV
 http://line.tvdsz.cc/play/live.php?mac=00%3A1A%3A79%3AB5%3ACD%3A60&stream=196678&extension=ts
-#EXTINF:-1 tvg-id="" tvg-name="┃TR┃ BEYAZ TV" group-title="┃TR┃ ULUSAL",BEYAZ TV
-
-# --- GÜNCEL ULTRA TEMİZ LİSTE (06-08-2026 13:52) --- #
 #EXTINF:0 tvg-id="STAR TV HD.tr" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/turkey/star-tv-tr.png?raw=true" ,STAR TV
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8laoxi44qj2k&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
 #EXTINF:0 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQczc3D_tjuhgNlouc32_Z8V8-QGl8i3WijOg&s" ,CINEBOX
@@ -2534,16 +2531,6 @@ https://atom.han686314.workers.dev/bein-sports-4.m3u8
 https://atom.han686314.workers.dev/s-sport.m3u8
 #EXTINF:-1 tvg-id="sport.tr" tvg-name="TR:S Sport 2 HD" tvg-logo="https://i.hizliresim.com/1opo3ah.jpg" group-title="SONER BOZKURT YERLİ KANALLAR",S SPORT 2
 https://atom.han686314.workers.dev/s-sport-2.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",BİLGİLENDİRME
-https://raw.githubusercontent.com/kadirsener1/avva/refs/heads/main/Bilgilendirme.mp4
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 1 İP
-https://65.108.239.207/t1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 2 İP
-https://65.108.239.207/t2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 3 İP
-https://65.108.239.207/t3/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 4 İP
-https://65.108.239.207/t4/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 1 AVVA
 https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/95f0000dd0e/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 2
@@ -2586,10 +2573,6 @@ https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 https://hnc-free-viewlift.amagi.tv/playlist720_p.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",ISVICRE TV
 https://tivi44.ozelip.com:3269/stream/play.m3u8
-#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",CARTOON NETWORK
-http://65.108.239.207:80/cartoonnetwork/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",DISCOVERY 2
-https://65.108.239.207/discovery/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",LOVE NATURE EN
 https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",NATURE TIME FR
@@ -2610,26 +2593,6 @@ http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9
 http://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/VLQ6cmV/plove.png" tvg-id="Dummy" ,POWER LOVE
 http://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png" tvg-id="Dummy" ,KNTV AZ
-https://cdn4.yayin.com.tr/kntv/video.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON
-http://65.108.239.207/bsaction1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 1
-http://65.108.239.207/box1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON 2 2
-http://65.108.239.207/sinemaaksiyon2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA 1001 2
-http://65.108.239.207/sinema1001/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA KOMEDİ 2
-http://65.108.239.207/sinemakomedi/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 2
-http://65.108.239.207/box2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 3
-http://65.108.239.207/box3/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX ACTION
-http://65.108.239.207/sinemaaksiyon/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX YEŞİLÇAM
-http://65.108.239.207/sinemayerli/index.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",DENİZ POSTASI
 https://live.artidijitalmedya.com/artidijital_denizpostasi/denizpostasi/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",DHA 2
@@ -3678,11 +3641,11 @@ http://tekno072.xyz:2095/baba1946/bb3005gg00/88006?output=ts
 http://tekno072.xyz:2095/baba1946/bb3005gg00/147538?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: NATURE ESCAPE" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/NATURO.ESPACE.png" group-title="TR ⚜️ BELGESEL",NATURE ESCAPE
 http://tekno072.xyz:2095/baba1946/bb3005gg00/173916?output=ts
-#EXTINF:-1 tvg-id="beiniz.tr" tvg-name="TR: be*IN IZ FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.IZ.png" group-title="TR ⚜️ BELGESEL",BE IN IZ
+#EXTINF:-1 tvg-id="beiniz.tr" tvg-name="TR: be*IN IZ FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.IZ.png" group-title="TR ⚜️ BELGESEL",beIN IZ
 http://tekno072.xyz:2095/baba1946/bb3005gg00/156939?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: LUYS TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/LUYS.png" group-title="TR ⚜️ BELGESEL",LUYS TV
 http://tekno072.xyz:2095/baba1946/bb3005gg00/131315?output=ts
-#EXTINF:-1 tvg-id="beingurme.tr" tvg-name="TR: BE*IN GURME HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.GURME.png" group-title="TR ⚜️ BELGESEL",BE IN GURME
+#EXTINF:-1 tvg-id="beingurme.tr" tvg-name="TR: BE*IN GURME HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.GURME.png" group-title="TR ⚜️ BELGESEL",beIN GURME
 http://tekno072.xyz:2095/baba1946/bb3005gg00/95161?output=ts
 #EXTINF:-1 tvg-id="davinci.tr" tvg-name="TR: DA VINCI LEARNING" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/DAVINCI.LEARING.png" group-title="TR ⚜️ BELGESEL",DA VINCI LEARNING
 http://tekno072.xyz:2095/baba1946/bb3005gg00/65083?output=ts
@@ -3784,7 +3747,7 @@ http://tekno072.xyz:2095/baba1946/bb3005gg00/12613?output=ts
 http://tekno072.xyz:2095/baba1946/bb3005gg00/106148?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: EKOLTV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/YEREL/EKOL.TV.png" group-title="TR ⚜️ HABERLER",EKOLTV
 http://tekno072.xyz:2095/baba1946/bb3005gg00/2491?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN H&E HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/BEIN.H.E.png" group-title="TR ⚜️ BELGESEL",BE IN H E
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN H&E HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/BEIN.H.E.png" group-title="TR ⚜️ BELGESEL",beIN H E
 http://tekno072.xyz:2095/baba1946/bb3005gg00/6673?output=ts
 #EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TR: TV NET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/ULUSALL/TV.NET.png" group-title="TR ⚜️ HABERLER",TV NET
 http://tekno072.xyz:2095/baba1946/bb3005gg00/83263?output=ts
@@ -3802,105 +3765,61 @@ http://tekno072.xyz:2095/baba1946/bb3005gg00/197161?output=ts
 http://tekno072.xyz:2095/baba1946/bb3005gg00/197162?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: S-SPORT 2 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/S.SPORT.2.FHD.png" group-title="TR ⚜️ S SPORT",S SPORT 2
 http://tekno072.xyz:2095/baba1946/bb3005gg00/197163?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 1 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.1.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://tekno072.xyz:2095/baba1946/bb3005gg00/193970?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 1 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.1.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://tekno072.xyz:2095/baba1946/bb3005gg00/140143?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 1 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.1.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://tekno072.xyz:2095/baba1946/bb3005gg00/193972?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 2 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.2.png" group-title="TR ⚜️ S SPORT",S SPORT 2
-http://tekno072.xyz:2095/baba1946/bb3005gg00/197160?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 3 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.3.png" group-title="TR ⚜️ S SPORT",S SPORT 3
-http://tekno072.xyz:2095/baba1946/bb3005gg00/11332?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 4 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.4.png" group-title="TR ⚜️ S SPORT",S SPORT 4
-http://tekno072.xyz:2095/baba1946/bb3005gg00/17471?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 5 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.5.png" group-title="TR ⚜️ S SPORT",S SPORT 5
-http://tekno072.xyz:2095/baba1946/bb3005gg00/154120?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 6 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.6.png" group-title="TR ⚜️ S SPORT",S SPORT 6
-http://tekno072.xyz:2095/baba1946/bb3005gg00/139705?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 7 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.7.png" group-title="TR ⚜️ S SPORT",S SPORT 7
-http://tekno072.xyz:2095/baba1946/bb3005gg00/95505?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 8 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 8
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199044?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 9 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 9
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199045?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 10 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 10
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199046?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 11 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 11
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199047?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 12 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 12
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199048?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 13 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 13
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199049?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 14 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 14
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199050?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 15 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 15
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199051?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 16 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 16
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199052?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 17 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 17
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199053?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 18 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 18
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199054?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 19 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 19
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199055?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 20 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 20
-http://tekno072.xyz:2095/baba1946/bb3005gg00/199056?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ BEIN SPORTS  ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ beIN SPORTS LIVE",BEIN SPORTS
 http://tekno072.xyz:2095/baba1946/bb3005gg00/125033?output=ts
-#EXTINF:-1 tvg-id="beinsportshaber.tr" tvg-name="TR: be*IN SPORTS HABER HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.HABER.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS HABER
+#EXTINF:-1 tvg-id="beinsportshaber.tr" tvg-name="TR: be*IN SPORTS HABER HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.HABER.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS HABER
 http://tekno072.xyz:2095/baba1946/bb3005gg00/155847?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 RAW" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 RAW" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://tekno072.xyz:2095/baba1946/bb3005gg00/214050?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://tekno072.xyz:2095/baba1946/bb3005gg00/209141?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 fHD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 EXTRA
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 fHD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 EXTRA
 http://tekno072.xyz:2095/baba1946/bb3005gg00/209476?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://tekno072.xyz:2095/baba1946/bb3005gg00/214051?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 EXTRA
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 EXTRA
 http://tekno072.xyz:2095/baba1946/bb3005gg00/220373?output=ts
-#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 TICARI YAYIN" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.TICARI.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 TICARI YAYIN
+#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 TICARI YAYIN" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.TICARI.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 TICARI YAYIN
 http://tekno072.xyz:2095/baba1946/bb3005gg00/66811?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 PREMIUM" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 PREMIUM
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 PREMIUM" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 PREMIUM
 http://tekno072.xyz:2095/baba1946/bb3005gg00/209477?output=ts
-#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://tekno072.xyz:2095/baba1946/bb3005gg00/139901?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 PREMIUM" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.PREMIUM.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2 PREMIUM
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 PREMIUM" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.PREMIUM.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2 PREMIUM
 http://tekno072.xyz:2095/baba1946/bb3005gg00/124880?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2
 http://tekno072.xyz:2095/baba1946/bb3005gg00/143131?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2
 http://tekno072.xyz:2095/baba1946/bb3005gg00/148075?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2
 http://tekno072.xyz:2095/baba1946/bb3005gg00/114123?output=ts
-#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 3
+#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 3
 http://tekno072.xyz:2095/baba1946/bb3005gg00/19218?output=ts
-#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 3
+#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 3
 http://tekno072.xyz:2095/baba1946/bb3005gg00/63479?output=ts
-#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 3
+#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 3
 http://tekno072.xyz:2095/baba1946/bb3005gg00/104267?output=ts
-#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 4
+#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 4
 http://tekno072.xyz:2095/baba1946/bb3005gg00/24606?output=ts
-#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 4
+#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 4
 http://tekno072.xyz:2095/baba1946/bb3005gg00/46669?output=ts
-#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 4
+#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 4
 http://tekno072.xyz:2095/baba1946/bb3005gg00/122537?output=ts
-#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: be*IN SPORTS 5 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 5
+#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: be*IN SPORTS 5 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 5
 http://tekno072.xyz:2095/baba1946/bb3005gg00/3461?output=ts
-#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*IN SPORTS 5 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 5
+#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*IN SPORTS 5 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 5
 http://tekno072.xyz:2095/baba1946/bb3005gg00/107904?output=ts
-#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*iN SPORTS 5 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 5
+#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*iN SPORTS 5 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 5
 http://tekno072.xyz:2095/baba1946/bb3005gg00/149161?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 1" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.1.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 1" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.1.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 1
 http://tekno072.xyz:2095/baba1946/bb3005gg00/127511?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 2" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.2.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 2
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 2" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.2.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 2
 http://tekno072.xyz:2095/baba1946/bb3005gg00/103792?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 3" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.3.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 3
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 3" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.3.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 3
 http://tekno072.xyz:2095/baba1946/bb3005gg00/106452?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 4" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.4.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 4
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 4" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.4.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 4
 http://tekno072.xyz:2095/baba1946/bb3005gg00/22121?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 5" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.5.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 5
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 5" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.5.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 5
 http://tekno072.xyz:2095/baba1946/bb3005gg00/89842?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️TR SPOR⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ SPORT ARENA",SPOR
 http://tekno072.xyz:2095/baba1946/bb3005gg00/82918?output=ts
@@ -3936,60 +3855,11 @@ http://tekno072.xyz:2095/baba1946/bb3005gg00/145527?output=ts
 http://tekno072.xyz:2095/baba1946/bb3005gg00/39047?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: EKOL SPORTS HD" tvg-logo="" group-title="TR ⚜️ SPORT ARENA",EKOL SPORTS
 http://tekno072.xyz:2095/baba1946/bb3005gg00/197063?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: COSMO SPORTS FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/COSMOS.png" group-title="TR ⚜️ SPORT ARENA",COSMO SPORTS
-http://tekno072.xyz:2095/baba1946/bb3005gg00/173947?output=ts
-#EXTINF:-1 tvg-id="sportstv.tr" tvg-name="TR: SPORTS TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/SPORTS.TV.png" group-title="TR ⚜️ SPORT ARENA",SPORTS TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/80505?output=ts
-#EXTINF:-1 tvg-id="gstv.tr" tvg-name="TR: GS TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/GS.TV.png" group-title="TR ⚜️ SPORT ARENA",GS TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/71653?output=ts
-#EXTINF:-1 tvg-id="fbtv.tr" tvg-name="TR: FB TV  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/FB.TV.png" group-title="TR ⚜️ SPORT ARENA",FB TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/86393?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TJK TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/TJK.TV.png" group-title="TR ⚜️ SPORT ARENA",TJK TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/50692?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: T.A.Y TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/TAY.TV.png" group-title="TR ⚜️ SPORT ARENA",T A Y TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/80939?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NBA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/NBA.png" group-title="TR ⚜️ SPORT ARENA",NBA TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/44520?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV SMACKDOWN FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/SMACK.DOWN.png" group-title="TR ⚜️ SPORT ARENA",BLUETV SMACKDOWN
-http://tekno072.xyz:2095/baba1946/bb3005gg00/121925?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Blue TV BOX FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/BOX.png" group-title="TR ⚜️ SPORT ARENA",BLUE TV BOX
-http://tekno072.xyz:2095/baba1946/bb3005gg00/42342?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: TRT 3 - SPOR FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/TRT.3.SPOR.png" group-title="TR ⚜️ SPORT ARENA",TRT 3 SPOR
 http://tekno072.xyz:2095/baba1946/bb3005gg00/22940?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 6" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.6.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 6
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 6" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.6.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 6
 http://tekno072.xyz:2095/baba1946/bb3005gg00/50138?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ ÖZET ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",ÖZET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/102580?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DERBİ ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/derbi.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",DERBİ ÖZET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/43709?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: GALATASARAY ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/galatasaray.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",GALATASARAY ÖZET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/21183?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FENERBAHÇE ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/fenerbahce.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",FENERBAHÇE ÖZET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/7527?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BEŞİKTAŞ ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/besiktas.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",BEŞİKTAŞ ÖZET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/11002?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TRABZONSPOR ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/trabzonspor.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",TRABZONSPOR ÖZET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/134259?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ TEKRAR ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",TEKRAR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/149365?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: GALATASARAY TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/galatasaray.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",GALATASARAY TEKRAR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/87018?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FENERBAHÇE TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/fenerbahce.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",FENERBAHÇE TEKRAR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/146644?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BEŞİKTAŞ TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/besiktas.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",BEŞİKTAŞ TEKRAR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/38622?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TRABZONSPOR TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/trabzonspor.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",TRABZONSPOR TEKRAR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/124465?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 7" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.7.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 7
-http://tekno072.xyz:2095/baba1946/bb3005gg00/19677?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN CONNECT 8" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.8.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 8
-http://tekno072.xyz:2095/baba1946/bb3005gg00/145966?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 9" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.9.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 9
-http://tekno072.xyz:2095/baba1946/bb3005gg00/15360?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*iN CONNECT 10" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.10.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 10
-http://tekno072.xyz:2095/baba1946/bb3005gg00/159662?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 11" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.11.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 11
-http://tekno072.xyz:2095/baba1946/bb3005gg00/34680?output=ts
+#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ ÖZET ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="
 #EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️TÜRK ÇOCUKLAR⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ ÇOCUK",TÜRK ÇOCUKLAR
 http://tekno072.xyz:2095/baba1946/bb3005gg00/138815?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: TRT ÇOCUK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/TRT.COCUK.png" group-title="TR ⚜️ ÇOCUK",TRT ÇOCUK
@@ -4020,78 +3890,8 @@ http://tekno072.xyz:2095/baba1946/bb3005gg00/20524?output=ts
 http://tekno072.xyz:2095/baba1946/bb3005gg00/90936?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: SMART COCUK FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/SMART.COCUK.png" group-title="TR ⚜️ ÇOCUK",SMART COCUK
 http://tekno072.xyz:2095/baba1946/bb3005gg00/58639?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: STOON TV" tvg-logo="" group-title="TR ⚜️ ÇOCUK",STOON TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/213817?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PEPEE TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/PEPEE.png" group-title="TR ⚜️ ÇOCUK",PEPEE TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/49356?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KRAL ŞAKİR HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",KRAL ŞAKİR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/51821?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KUKULI TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/KUKULI.png" group-title="TR ⚜️ ÇOCUK",KUKULI TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/17519?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PIJAMA MASKELILER TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",PIJAMA MASKELILER TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/66359?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: RAFADAN TAYFA HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",RAFADAN TAYFA
-http://tekno072.xyz:2095/baba1946/bb3005gg00/78160?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PAW PATROL TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/PAV.PETROL.png" group-title="TR ⚜️ ÇOCUK",PAW PATROL TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/50245?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PATRON BEBEK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/PATRON.BEBEK.png" group-title="TR ⚜️ ÇOCUK",PATRON BEBEK
-http://tekno072.xyz:2095/baba1946/bb3005gg00/51832?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Booba TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BOOBA.png" group-title="TR ⚜️ ÇOCUK",BOOBA TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/25302?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: POKEMON HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/POKEMON.png" group-title="TR ⚜️ ÇOCUK",POKEMON
-http://tekno072.xyz:2095/baba1946/bb3005gg00/127190?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ODDBODS HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/ODDBODS.png" group-title="TR ⚜️ ÇOCUK",ODDBODS
-http://tekno072.xyz:2095/baba1946/bb3005gg00/168232?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: SUNGER BOB HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/SUNGERBOB.png" group-title="TR ⚜️ ÇOCUK",SUNGER BOB
-http://tekno072.xyz:2095/baba1946/bb3005gg00/44026?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ÇOCUK ŞARKILARI HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BLUETV.COCUK.SARKILARI.png" group-title="TR ⚜️ ÇOCUK",ÇOCUK ŞARKILARI
-http://tekno072.xyz:2095/baba1946/bb3005gg00/27055?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ANİMASYON 1 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BLUETV.COCUK.1.png" group-title="TR ⚜️ ÇOCUK",ANİMASYON 1
-http://tekno072.xyz:2095/baba1946/bb3005gg00/167888?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ANİMASYON HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BLUETV.COCUK.2.png" group-title="TR ⚜️ ÇOCUK",ANİMASYON
-http://tekno072.xyz:2095/baba1946/bb3005gg00/127166?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NİLOYA HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/NILOYA.png" group-title="TR ⚜️ ÇOCUK",NİLOYA
-http://tekno072.xyz:2095/baba1946/bb3005gg00/169152?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ŞİRİNLER HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/SIRINLER.png" group-title="TR ⚜️ ÇOCUK",ŞİRİNLER
-http://tekno072.xyz:2095/baba1946/bb3005gg00/83843?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: REDKİT HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/REDKIT.png" group-title="TR ⚜️ ÇOCUK",REDKİT
-http://tekno072.xyz:2095/baba1946/bb3005gg00/159261?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV HE-MAN HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/HEMAN.png" group-title="TR ⚜️ ÇOCUK",BLUETV HE MAN
-http://tekno072.xyz:2095/baba1946/bb3005gg00/23326?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TOM & JERRY HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/TOM.VE.JERY.png" group-title="TR ⚜️ ÇOCUK",TOM JERRY
-http://tekno072.xyz:2095/baba1946/bb3005gg00/128777?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: MAŞA ile KOCA AYI HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/MASA.ILE.KOCA.AYI.png" group-title="TR ⚜️ ÇOCUK",MAŞA ILE KOCA AYI
-http://tekno072.xyz:2095/baba1946/bb3005gg00/124344?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NİNJA KAPLUMBAĞALAR HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/NINJA.KAPLUMBAGALAR.png" group-title="TR ⚜️ ÇOCUK",NİNJA KAPLUMBAĞALAR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/87002?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Müfettiş Gadget HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/MUFETTIS.GADGET.png" group-title="TR ⚜️ ÇOCUK",MÜFETTIŞ GADGET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/156825?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: MOONBUG KIDS TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/MOONBUQ.png" group-title="TR ⚜️ ÇOCUK",MOONBUG KIDS TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/33613?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: TRT DIYANET COCUK" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/TRT.DIYANET.COCUK.png" group-title="TR ⚜️ ÇOCUK",TRT DIYANET COCUK
 http://tekno072.xyz:2095/baba1946/bb3005gg00/36989?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DORU" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",DORU
-http://tekno072.xyz:2095/baba1946/bb3005gg00/159340?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : GUMBALL" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",GUMBALL
-http://tekno072.xyz:2095/baba1946/bb3005gg00/92735?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : HEIDI" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",HEIDI
-http://tekno072.xyz:2095/baba1946/bb3005gg00/57412?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : Limon ile Zeytin" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",LIMON ILE ZEYTIN
-http://tekno072.xyz:2095/baba1946/bb3005gg00/60356?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : PIRIL" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",PIRIL
-http://tekno072.xyz:2095/baba1946/bb3005gg00/133772?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: RICHIE RICH" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",RICHIE RICH
-http://tekno072.xyz:2095/baba1946/bb3005gg00/111659?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: SCOOBY DOO" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",SCOOBY DOO
-http://tekno072.xyz:2095/baba1946/bb3005gg00/75681?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ŞEKER HOCA" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",ŞEKER HOCA
-http://tekno072.xyz:2095/baba1946/bb3005gg00/82791?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Tenten" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",TENTEN
-http://tekno072.xyz:2095/baba1946/bb3005gg00/160639?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ZORRO" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",ZORRO
-http://tekno072.xyz:2095/baba1946/bb3005gg00/121973?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ DİNİ  ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ DİNİ",DİNİ
-http://tekno072.xyz:2095/baba1946/bb3005gg00/40557?output=ts
 #EXTINF:-1 tvg-id="trtdiyanet.tr" tvg-name="TR: DIYANET TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DIYANET.png" group-title="TR ⚜️ DİNİ",DIYANET TV
 http://tekno072.xyz:2095/baba1946/bb3005gg00/41691?output=ts
 #EXTINF:-1 tvg-id="semerkand.tr" tvg-name="TR: SEMERKAND TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/SEMERKAND.png" group-title="TR ⚜️ DİNİ",SEMERKAND TV
@@ -4100,50 +3900,6 @@ http://tekno072.xyz:2095/baba1946/bb3005gg00/79626?output=ts
 http://tekno072.xyz:2095/baba1946/bb3005gg00/168862?output=ts
 #EXTINF:-1 tvg-id="vav.tr" tvg-name="TR: VAV TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/VAV.png" group-title="TR ⚜️ DİNİ",VAV TV
 http://tekno072.xyz:2095/baba1946/bb3005gg00/51133?output=ts
-#EXTINF:-1 tvg-id="aösunnahalnabawiyah.tr" tvg-name="TR: AL SUNNAH AL NABAWIYAH HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/AL.SUNNAH.png" group-title="TR ⚜️ DİNİ",AL SUNNAH AL NABAWIYAH
-http://tekno072.xyz:2095/baba1946/bb3005gg00/3273?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KABE TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KABE.png" group-title="TR ⚜️ DİNİ",KABE TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/137001?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: REHBER TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/REHBER.png" group-title="TR ⚜️ DİNİ",REHBER TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/3304?output=ts
-#EXTINF:-1 tvg-id="tv5.tr" tvg-name="TR: TV5" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/TV5.png" group-title="TR ⚜️ DİNİ",TV5
-http://tekno072.xyz:2095/baba1946/bb3005gg00/25797?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DOST TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DOST.png" group-title="TR ⚜️ DİNİ",DOST TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/119016?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KUDUS TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KUDUS.png" group-title="TR ⚜️ DİNİ",KUDUS TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/70533?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: HADI TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/HADI.TV.png" group-title="TR ⚜️ DİNİ",HADI TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/42585?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KANAL 12" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KANAL.12.png" group-title="TR ⚜️ DİNİ",KANAL 12
-http://tekno072.xyz:2095/baba1946/bb3005gg00/89084?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: CAMIA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/CAMIA.png" group-title="TR ⚜️ DİNİ",CAMIA TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/11249?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: AL ZAHRA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/AL.ZAHRA.png" group-title="TR ⚜️ DİNİ",AL ZAHRA TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/34543?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: IKRA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DIYAR.TV.png" group-title="TR ⚜️ DİNİ",IKRA TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/8917?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: SUNNAH TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/SUNNA.TV.png" group-title="TR ⚜️ DİNİ",SUNNAH TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/123796?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV İLAHİ 1 ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/ILAHI.1.png" group-title="TR ⚜️ DİNİ",BLUETV İLAHİ 1
-http://tekno072.xyz:2095/baba1946/bb3005gg00/8417?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV İLAHİ 2 ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/ILAHI.2.png" group-title="TR ⚜️ DİNİ",BLUETV İLAHİ 2
-http://tekno072.xyz:2095/baba1946/bb3005gg00/159637?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV İLAHİ 3 ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/ILAHI.3.png" group-title="TR ⚜️ DİNİ",BLUETV İLAHİ 3
-http://tekno072.xyz:2095/baba1946/bb3005gg00/117702?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DİNİ SOHBET ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DINI.SOHBET.png" group-title="TR ⚜️ DİNİ",DİNİ SOHBET
-http://tekno072.xyz:2095/baba1946/bb3005gg00/41840?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KURAN-ı KERİM ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KURAN.png" group-title="TR ⚜️ DİNİ",KURAN I KERİM
-http://tekno072.xyz:2095/baba1946/bb3005gg00/68006?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 1 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 1 TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/151385?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 2 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 2 TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/31290?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 3 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 3 TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/18415?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZER DINI 4 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZER DINI 4 TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/94439?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 5 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 5 TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/162770?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: AS TV BURSA" tvg-logo="" group-title="TR ⚜️ YEREL",AS TV BURSA
 http://box1.tvben.xyz:2095/kaynaklive/irhh47gdh4p8dsdr4/274142?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️  YEREL  ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ YEREL",YEREL
@@ -4364,71 +4120,11 @@ http://tekno072.xyz:2095/baba1946/bb3005gg00/101948?output=ts
 http://tekno072.xyz:2095/baba1946/bb3005gg00/89959?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: POWER TÜRK SLOW" tvg-logo="https://cdn.powergroup.com.tr/image/75x75/powerapp/channels/v3/logo_2577.png" group-title="TR ⚜️ MÜZİK",POWER TÜRK SLOW
 http://tekno072.xyz:2095/baba1946/bb3005gg00/27767?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: POWER TÜRK TAPTAZE" tvg-logo="https://cdn.powergroup.com.tr/image/75x75/powerapp/channels/v3/logo_2534.png" group-title="TR ⚜️ MÜZİK",POWER TÜRK TAPTAZE
-http://tekno072.xyz:2095/baba1946/bb3005gg00/46803?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: OYUN HAVALARI HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/OYUN.HAVASI.png" group-title="TR ⚜️ MÜZİK",OYUN HAVALARI
-http://tekno072.xyz:2095/baba1946/bb3005gg00/119712?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TÜRKÇE POP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/POP.MUZIK.png" group-title="TR ⚜️ MÜZİK",POP
-http://tekno072.xyz:2095/baba1946/bb3005gg00/63522?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TÜRKÇE RAP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/TURKCE.RAP.png" group-title="TR ⚜️ MÜZİK",RAP
-http://tekno072.xyz:2095/baba1946/bb3005gg00/168964?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TÜRKÇE SLOW HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/TURKCE.SLOW.png" group-title="TR ⚜️ MÜZİK",SLOW
-http://tekno072.xyz:2095/baba1946/bb3005gg00/23810?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: YABANCI RAP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/YABANCI.RAP.png" group-title="TR ⚜️ MÜZİK",YABANCI RAP
-http://tekno072.xyz:2095/baba1946/bb3005gg00/56456?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: YABANCI POP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/YABANCI.POP.png" group-title="TR ⚜️ MÜZİK",YABANCI POP
-http://tekno072.xyz:2095/baba1946/bb3005gg00/112352?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KARADENİZ MÜZİK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/KARADENIZ.png" group-title="TR ⚜️ MÜZİK",KARADENİZ MÜZİK
-http://tekno072.xyz:2095/baba1946/bb3005gg00/69905?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ARABESK TÜRK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/ARABESK.TURK.png" group-title="TR ⚜️ MÜZİK",ARABESK TÜRK
-http://tekno072.xyz:2095/baba1946/bb3005gg00/150195?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NEŞET ERTAŞ  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/NESET.ERTAS.png" group-title="TR ⚜️ MÜZİK",NEŞET ERTAŞ
-http://tekno072.xyz:2095/baba1946/bb3005gg00/61558?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: IBRAHİM TATLISES HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/IBRAHIM.TATLISES.png" group-title="TR ⚜️ MÜZİK",IBRAHİM TATLISES
-http://tekno072.xyz:2095/baba1946/bb3005gg00/25036?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ORHAN GENCEBAY  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/ORHAN.GENCEBAY.png" group-title="TR ⚜️ MÜZİK",ORHAN GENCEBAY
-http://tekno072.xyz:2095/baba1946/bb3005gg00/49128?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: MEYHANE TV  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/MEYHANE.png" group-title="TR ⚜️ MÜZİK",MEYHANE TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/150759?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: AHMET KAYA HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/AHMET.KAYA.png" group-title="TR ⚜️ MÜZİK",AHMET KAYA
-http://tekno072.xyz:2095/baba1946/bb3005gg00/11837?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FASHION TV FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/FASHION.png" group-title="TR ⚜️ MÜZİK",FASHION TV
-http://tekno072.xyz:2095/baba1946/bb3005gg00/166812?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Müslüm Gürses   HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/MUSLUM.GURSES.png" group-title="TR ⚜️ MÜZİK",MÜSLÜM GÜRSES
-http://tekno072.xyz:2095/baba1946/bb3005gg00/129358?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FERDİ TAYFUR  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/FERDI.TAYFUR.png" group-title="TR ⚜️ MÜZİK",FERDİ TAYFUR
-http://tekno072.xyz:2095/baba1946/bb3005gg00/72278?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="INFO" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",INFO
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/268536.ts
-#EXTINF:-1 tvg-id="" tvg-name="ÇALIŞIRKEN" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",ÇALIŞIRKEN
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/360219.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRKÇE POP" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",POP
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414484.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRKÇE SLOW" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",SLOW
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414485.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRK HALK MÜZİĞİ" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",TÜRK HALK MÜZİĞİ
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414486.ts
-#EXTINF:-1 tvg-id="" tvg-name="TÜRK SANAT MÜZİĞİ" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",TÜRK SANAT MÜZİĞİ
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414487.ts
-#EXTINF:-1 tvg-id="" tvg-name="TAŞ PLAK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",TAŞ PLAK
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414488.ts
-#EXTINF:-1 tvg-id="" tvg-name="DİNİ MUSİKİ" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",DİNİ MUSİKİ
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414489.ts
-#EXTINF:-1 tvg-id="" tvg-name="ARABESK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",ARABESK
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414490.ts
-#EXTINF:-1 tvg-id="" tvg-name="90’ LAR" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",90 LAR
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414491.ts
-#EXTINF:-1 tvg-id="" tvg-name="YABANCI POP" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",YABANCI POP
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414492.ts
-#EXTINF:-1 tvg-id="" tvg-name="YABANCI ROCK" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",YABANCI ROCK
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414493.ts
-#EXTINF:-1 tvg-id="" tvg-name="YABANCI SLOW" tvg-logo="https://ruzgarplayer.site/png@png/bayrak-turkey-flag.png" group-title="⫸TR INFO⫷",YABANCI SLOW
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/414494.ts
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS HABER
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418439.ts
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS HABER
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418440.ts
-#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 FHD 50 FPS" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 1 50
+#EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 FHD 50 FPS" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 1 
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418441.ts
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 1 FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 1
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418442.ts
@@ -4452,39 +4148,39 @@ http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418450.ts
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418451.ts
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS 5 HD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 1⫷",BEIN SPORTS 5
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418452.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 1
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435779.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ғʜᴅ ʜɪ̇ɢʜ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 1 ʜꞮ ɢʜ
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ғʜᴅ ʜɪ̇ɢʜ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 1
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435780.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 1 ʟᴏᴡ
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ғʜᴅ " tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 1 
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435781.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ᴋᴏᴛᴀ ᴅᴏsᴛᴜ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 1 ᴋᴏᴛᴀ ᴅᴏSᴛᴜ
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ᴋᴏᴛᴀ ᴅᴏsᴛᴜ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 1 
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435782.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 1
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435783.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 sᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 1 sᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 1
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435784.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 2
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 2
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435785.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 2 ʟᴏᴡ
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ғʜᴅ " tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 2 
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435786.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 2
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 2 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 2
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435787.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 3
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 3
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435788.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 3 ʟᴏᴡ
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ғʜᴅ " tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 3 
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435789.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 3
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 3 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 3
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435790.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 4
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 4
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435791.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 4 ʟᴏᴡ
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ғʜᴅ " tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 4 
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435792.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 4
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 4 ʜᴅ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 4
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435793.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 5 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 5
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 5 ʀᴀᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 5
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435794.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 5 ғʜᴅ ʟᴏᴡ" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",B N SPORTS 5 ʟᴏᴡ
+#EXTINF:-1 tvg-id="" tvg-name="TR • b**N Sports 5 ғʜᴅ " tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SUPER LİG 2⫷",beIN SPORTS 5 
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/435795.ts
 #EXTINF:-1 tvg-id="" tvg-name="beIN SPORTS HABER FHD" tvg-logo="https://ruzgarplayer.site/png@png/bein-sports-bein-sports-.png" group-title="⫸TR SPOR TURKIYE ⫷",BEIN SPORTS HABER
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/417137.ts
@@ -4518,24 +4214,6 @@ http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275719.ts
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/298892.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: S SPORT 2  FHD" tvg-logo="" group-title="⫸TR S SPOR ⫷",S SPORT 2
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/313620.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275721.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275722.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275723.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275724.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275725.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275726.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/275727.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Plus+ " tvg-logo="" group-title="⫸TR S  SPOR + ⫷",S
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/418709.ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TVBU SPOR 4 FHD" tvg-logo="" group-title="⫸TR SPOR TVBU⫷",TVBU SPOR 4
-http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/104898.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: Eurosport 1 HD" tvg-logo="" group-title="⫸TR SPOR  SMART⫷",EUROSPORT 1
 http://new278.xyz:8080/live/ZgvL5LN483R9/fXPgp7LdcCxQ/135454.ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: Eurosport 2 HD" tvg-logo="" group-title="⫸TR SPOR  SMART⫷",EUROSPORT 2
@@ -5220,11 +4898,11 @@ http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/88006?output=ts
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/147538?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: NATURE ESCAPE" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/NATURO.ESPACE.png" group-title="TR ⚜️ BELGESEL",NATURE ESCAPE
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/173916?output=ts
-#EXTINF:-1 tvg-id="beiniz.tr" tvg-name="TR: be*IN IZ FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.IZ.png" group-title="TR ⚜️ BELGESEL",BE IN IZ
+#EXTINF:-1 tvg-id="beiniz.tr" tvg-name="TR: be*IN IZ FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.IZ.png" group-title="TR ⚜️ BELGESEL",beIN IZ
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/156939?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: LUYS TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/LUYS.png" group-title="TR ⚜️ BELGESEL",LUYS TV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/131315?output=ts
-#EXTINF:-1 tvg-id="beingurme.tr" tvg-name="TR: BE*IN GURME HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.GURME.png" group-title="TR ⚜️ BELGESEL",BE IN GURME
+#EXTINF:-1 tvg-id="beingurme.tr" tvg-name="TR: BE*IN GURME HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/BEIN.GURME.png" group-title="TR ⚜️ BELGESEL",beIN GURME
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/95161?output=ts
 #EXTINF:-1 tvg-id="davinci.tr" tvg-name="TR: DA VINCI LEARNING" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BELGESELL/DAVINCI.LEARING.png" group-title="TR ⚜️ BELGESEL",DA VINCI LEARNING
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/65083?output=ts
@@ -5326,123 +5004,65 @@ http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/12613?output=ts
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/106148?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: EKOLTV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/YEREL/EKOL.TV.png" group-title="TR ⚜️ HABERLER",EKOLTV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/2491?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN H&E HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/BEIN.H.E.png" group-title="TR ⚜️ BELGESEL",BE IN H E
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN H&E HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/BEIN.H.E.png" group-title="TR ⚜️ BELGESEL",beIN H E
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/6673?output=ts
 #EXTINF:-1 tvg-id="tvnet.tr" tvg-name="TR: TV NET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/ULUSALL/TV.NET.png" group-title="TR ⚜️ HABERLER",TV NET
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/83263?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ S SPORT ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ S SPORT",S SPORT
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/44623?output=ts
-#EXTINF:-1 tvg-id="ssport.tr" tvg-name="TR: S-SPORT 1 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/S.SPORT.1.FHD.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/71749?output=ts
-#EXTINF:-1 tvg-id="ssport.tr" tvg-name="TR: S-SPORT 1 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/S.SPORT.1.HD.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/13736?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S-SPORT 1 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/S.SPORT.1.SD.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/96209?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S-SPORT 2 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/S.SPORT.2.FHD.png" group-title="TR ⚜️ S SPORT",S SPORT 2
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/197161?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S-SPORT 2 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/S.SPORT.2.FHD.png" group-title="TR ⚜️ S SPORT",S SPORT 2
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/197162?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S-SPORT 2 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/S.SPORT.2.FHD.png" group-title="TR ⚜️ S SPORT",S SPORT 2
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/197163?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 1 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.1.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/193970?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 1 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.1.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/140143?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 1 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.1.png" group-title="TR ⚜️ S SPORT",S SPORT 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/193972?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 2 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.2.png" group-title="TR ⚜️ S SPORT",S SPORT 2
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/197160?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 3 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.3.png" group-title="TR ⚜️ S SPORT",S SPORT 3
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/11332?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 4 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.4.png" group-title="TR ⚜️ S SPORT",S SPORT 4
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/17471?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 5 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.5.png" group-title="TR ⚜️ S SPORT",S SPORT 5
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/154120?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 6 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.6.png" group-title="TR ⚜️ S SPORT",S SPORT 6
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/139705?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 7 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/S.SPORT/PLUS.7.png" group-title="TR ⚜️ S SPORT",S SPORT 7
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/95505?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 8 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 8
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199044?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 9 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 9
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199045?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 10 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 10
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199046?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 11 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 11
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199047?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 12 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 12
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199048?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 13 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 13
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199049?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 14 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 14
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199050?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 15 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 15
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199051?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 16 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 16
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199052?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 17 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 17
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199053?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 18 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 18
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199054?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 19 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 19
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199055?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: S Sport Plus 20 HD" tvg-logo="" group-title="TR ⚜️ S SPORT",S SPORT 20
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/199056?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ BEIN SPORTS  ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ beIN SPORTS LIVE",BEIN SPORTS
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/125033?output=ts
-#EXTINF:-1 tvg-id="beinsportshaber.tr" tvg-name="TR: be*IN SPORTS HABER HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.HABER.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS HABER
+#EXTINF:-1 tvg-id="beinsportshaber.tr" tvg-name="TR: be*IN SPORTS HABER HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.HABER.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS HABER
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/155847?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 RAW" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 RAW" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/214050?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/209141?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 fHD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 EXTRA
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 fHD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 EXTRA
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/209476?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/214051?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 EXTRA
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 HD - EXTRA" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 EXTRA
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/220373?output=ts
-#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 TICARI YAYIN" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.TICARI.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 TICARI YAYIN
+#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 TICARI YAYIN" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.TICARI.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 TICARI YAYIN
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/66811?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 PREMIUM" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1 PREMIUM
+#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN SPORTS 1 PREMIUM" tvg-logo="" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1 PREMIUM
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/209477?output=ts
-#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 1
+#EXTINF:-1 tvg-id="taraftar1.tr" tvg-name="TR: be*IN SPORTS 1 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.1.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 1
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/139901?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 PREMIUM" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.PREMIUM.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2 PREMIUM
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 PREMIUM" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.PREMIUM.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2 PREMIUM
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/124880?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/143131?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/148075?output=ts
-#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 2
+#EXTINF:-1 tvg-id="taraftar2.tr" tvg-name="TR: be*IN SPORTS 2 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.2.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 2
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/114123?output=ts
-#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 3
+#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 3
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/19218?output=ts
-#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 3
+#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 3
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/63479?output=ts
-#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 3
+#EXTINF:-1 tvg-id="beinsports3.tr" tvg-name="TR: be*IN SPORTS 3 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.3.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 3
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/104267?output=ts
-#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 4
+#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 4
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/24606?output=ts
-#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 4
+#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 4
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/46669?output=ts
-#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 4
+#EXTINF:-1 tvg-id="beinsports4.tr" tvg-name="TR: be*IN SPORTS 4 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.4.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 4
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/122537?output=ts
-#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: be*IN SPORTS 5 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 5
+#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: be*IN SPORTS 5 FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.FHD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 5
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/3461?output=ts
-#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*IN SPORTS 5 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 5
+#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*IN SPORTS 5 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.HD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 5
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/107904?output=ts
-#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*iN SPORTS 5 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN SPORTS 5
+#EXTINF:-1 tvg-id="beinsports5.tr" tvg-name="TR: bE*iN SPORTS 5 SD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/BEIN.SPORTS.5.SD.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN SPORTS 5
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/149161?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 1" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.1.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 1
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 1" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.1.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 1
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/127511?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 2" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.2.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 2
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 2" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.2.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 2
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/103792?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 3" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.3.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 3
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 3" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.3.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 3
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/106452?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 4" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.4.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 4
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 4" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.4.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 4
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/22121?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 5" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.5.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 5
+#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 5" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.5.png" group-title="TR ⚜️ beIN SPORTS LIVE",beIN CONNECT 5
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/89842?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️TR SPOR⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ SPORT ARENA",SPOR
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/82918?output=ts
@@ -5478,70 +5098,18 @@ http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/145527?output=ts
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/39047?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: EKOL SPORTS HD" tvg-logo="" group-title="TR ⚜️ SPORT ARENA",EKOL SPORTS
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/197063?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: COSMO SPORTS FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/COSMOS.png" group-title="TR ⚜️ SPORT ARENA",COSMO SPORTS
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/173947?output=ts
-#EXTINF:-1 tvg-id="sportstv.tr" tvg-name="TR: SPORTS TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/SPORTS.TV.png" group-title="TR ⚜️ SPORT ARENA",SPORTS TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/80505?output=ts
-#EXTINF:-1 tvg-id="gstv.tr" tvg-name="TR: GS TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/GS.TV.png" group-title="TR ⚜️ SPORT ARENA",GS TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/71653?output=ts
-#EXTINF:-1 tvg-id="fbtv.tr" tvg-name="TR: FB TV  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/FB.TV.png" group-title="TR ⚜️ SPORT ARENA",FB TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/86393?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: TJK TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/TJK.TV.png" group-title="TR ⚜️ SPORT ARENA",TJK TV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/50692?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: T.A.Y TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/TAY.TV.png" group-title="TR ⚜️ SPORT ARENA",T A Y TV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/80939?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NBA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/NBA.png" group-title="TR ⚜️ SPORT ARENA",NBA TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/44520?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV SMACKDOWN FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/SMACK.DOWN.png" group-title="TR ⚜️ SPORT ARENA",BLUETV SMACKDOWN
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/121925?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Blue TV BOX FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/BOX.png" group-title="TR ⚜️ SPORT ARENA",BLUE TV BOX
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/42342?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: TRT 3 - SPOR FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/TR.SPOR/TRT.3.SPOR.png" group-title="TR ⚜️ SPORT ARENA",TRT 3 SPOR
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/22940?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 6" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.6.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 6
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/50138?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ ÖZET ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",ÖZET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/102580?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DERBİ ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/derbi.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",DERBİ ÖZET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/43709?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: GALATASARAY ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/galatasaray.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",GALATASARAY ÖZET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/21183?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FENERBAHÇE ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/fenerbahce.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",FENERBAHÇE ÖZET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/7527?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BEŞİKTAŞ ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/besiktas.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",BEŞİKTAŞ ÖZET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/11002?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TRABZONSPOR ÖZET HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/trabzonspor.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",TRABZONSPOR ÖZET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/134259?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ TEKRAR ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",TEKRAR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/149365?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: GALATASARAY TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/galatasaray.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",GALATASARAY TEKRAR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/87018?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FENERBAHÇE TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/fenerbahce.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",FENERBAHÇE TEKRAR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/146644?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BEŞİKTAŞ TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/besiktas.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",BEŞİKTAŞ TEKRAR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/38622?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TRABZONSPOR TEKRAR" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/OZET/trabzonspor.png" group-title="TR ⚜️ SüPERLiG öZET & TEKRAR",TRABZONSPOR TEKRAR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/124465?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 7" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.7.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 7
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/19677?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*IN CONNECT 8" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.8.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 8
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/145966?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 9" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.9.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 9
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/15360?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: be*iN CONNECT 10" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.10.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 10
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/159662?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: bE*IN CONNECT 11" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/BEIN.Y/CONNECT.11.png" group-title="TR ⚜️ beIN SPORTS LIVE",BE IN CONNECT 11
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/34680?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️TÜRK ÇOCUKLAR⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ ÇOCUK",TÜRK ÇOCUKLAR
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/138815?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: TRT ÇOCUK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/TRT.COCUK.png" group-title="TR ⚜️ ÇOCUK",TRT ÇOCUK
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/15821?output=ts
 #EXTINF:-1 tvg-id="babytv.tr" tvg-name="TR: BABY TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BABY.TV.png" group-title="TR ⚜️ ÇOCUK",BABY TV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/46169?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: AZOOMEE HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/SONRADAN/AZOMEE.png" group-title="TR ⚜️ ÇOCUK",AZOOMEE
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/173973?output=ts
-#EXTINF:-1 tvg-id="ducktv.tr" tvg-name="TR: DUCK TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/DUCK.png" group-title="TR ⚜️ ÇOCUK",DUCK TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/123202?output=ts
 #EXTINF:-1 tvg-id="nickjr.tr" tvg-name="TR: NICK JR HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/NICKJR.png" group-title="TR ⚜️ ÇOCUK",NICK JR
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/17036?output=ts
 #EXTINF:-1 tvg-id="nickelodeonhd.tr" tvg-name="TR: NICKELODEON HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/NICKELEDON.png" group-title="TR ⚜️ ÇOCUK",NICKELODEON
@@ -5562,78 +5130,6 @@ http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/20524?output=ts
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/90936?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: SMART COCUK FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/SMART.COCUK.png" group-title="TR ⚜️ ÇOCUK",SMART COCUK
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/58639?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: STOON TV" tvg-logo="" group-title="TR ⚜️ ÇOCUK",STOON TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/213817?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PEPEE TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/PEPEE.png" group-title="TR ⚜️ ÇOCUK",PEPEE TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/49356?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KRAL ŞAKİR HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",KRAL ŞAKİR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/51821?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KUKULI TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/KUKULI.png" group-title="TR ⚜️ ÇOCUK",KUKULI TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/17519?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PIJAMA MASKELILER TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",PIJAMA MASKELILER TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/66359?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: RAFADAN TAYFA HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",RAFADAN TAYFA
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/78160?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PAW PATROL TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/PAV.PETROL.png" group-title="TR ⚜️ ÇOCUK",PAW PATROL TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/50245?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: PATRON BEBEK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/PATRON.BEBEK.png" group-title="TR ⚜️ ÇOCUK",PATRON BEBEK
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/51832?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Booba TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BOOBA.png" group-title="TR ⚜️ ÇOCUK",BOOBA TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/25302?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: POKEMON HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/POKEMON.png" group-title="TR ⚜️ ÇOCUK",POKEMON
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/127190?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ODDBODS HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/ODDBODS.png" group-title="TR ⚜️ ÇOCUK",ODDBODS
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/168232?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: SUNGER BOB HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/SUNGERBOB.png" group-title="TR ⚜️ ÇOCUK",SUNGER BOB
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/44026?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ÇOCUK ŞARKILARI HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BLUETV.COCUK.SARKILARI.png" group-title="TR ⚜️ ÇOCUK",ÇOCUK ŞARKILARI
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/27055?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ANİMASYON 1 HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BLUETV.COCUK.1.png" group-title="TR ⚜️ ÇOCUK",ANİMASYON 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/167888?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ANİMASYON HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/BLUETV.COCUK.2.png" group-title="TR ⚜️ ÇOCUK",ANİMASYON
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/127166?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NİLOYA HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/NILOYA.png" group-title="TR ⚜️ ÇOCUK",NİLOYA
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/169152?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ŞİRİNLER HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/SIRINLER.png" group-title="TR ⚜️ ÇOCUK",ŞİRİNLER
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/83843?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: REDKİT HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/REDKIT.png" group-title="TR ⚜️ ÇOCUK",REDKİT
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/159261?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV HE-MAN HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/HEMAN.png" group-title="TR ⚜️ ÇOCUK",BLUETV HE MAN
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/23326?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TOM & JERRY HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/TOM.VE.JERY.png" group-title="TR ⚜️ ÇOCUK",TOM JERRY
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/128777?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: MAŞA ile KOCA AYI HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/MASA.ILE.KOCA.AYI.png" group-title="TR ⚜️ ÇOCUK",MAŞA ILE KOCA AYI
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/124344?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NİNJA KAPLUMBAĞALAR HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/NINJA.KAPLUMBAGALAR.png" group-title="TR ⚜️ ÇOCUK",NİNJA KAPLUMBAĞALAR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/87002?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Müfettiş Gadget HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/MUFETTIS.GADGET.png" group-title="TR ⚜️ ÇOCUK",MÜFETTIŞ GADGET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/156825?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: MOONBUG KIDS TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/MOONBUQ.png" group-title="TR ⚜️ ÇOCUK",MOONBUG KIDS TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/33613?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TRT DIYANET COCUK" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/COCUKK/TRT.DIYANET.COCUK.png" group-title="TR ⚜️ ÇOCUK",TRT DIYANET COCUK
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/36989?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DORU" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",DORU
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/159340?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : GUMBALL" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",GUMBALL
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/92735?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : HEIDI" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",HEIDI
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/57412?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : Limon ile Zeytin" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",LIMON ILE ZEYTIN
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/60356?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR : PIRIL" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",PIRIL
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/133772?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: RICHIE RICH" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",RICHIE RICH
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/111659?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: SCOOBY DOO" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",SCOOBY DOO
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/75681?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ŞEKER HOCA" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",ŞEKER HOCA
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/82791?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Tenten" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",TENTEN
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/160639?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ZORRO" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DOBLYYY/DOLBYY.png" group-title="TR ⚜️ ÇOCUK",ZORRO
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/121973?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️ DİNİ  ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ DİNİ",DİNİ
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/40557?output=ts
 #EXTINF:-1 tvg-id="trtdiyanet.tr" tvg-name="TR: DIYANET TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DIYANET.png" group-title="TR ⚜️ DİNİ",DIYANET TV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/41691?output=ts
 #EXTINF:-1 tvg-id="semerkand.tr" tvg-name="TR: SEMERKAND TV HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/SEMERKAND.png" group-title="TR ⚜️ DİNİ",SEMERKAND TV
@@ -5642,54 +5138,10 @@ http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/79626?output=ts
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/168862?output=ts
 #EXTINF:-1 tvg-id="vav.tr" tvg-name="TR: VAV TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/VAV.png" group-title="TR ⚜️ DİNİ",VAV TV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/51133?output=ts
-#EXTINF:-1 tvg-id="aösunnahalnabawiyah.tr" tvg-name="TR: AL SUNNAH AL NABAWIYAH HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/AL.SUNNAH.png" group-title="TR ⚜️ DİNİ",AL SUNNAH AL NABAWIYAH
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/3273?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KABE TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KABE.png" group-title="TR ⚜️ DİNİ",KABE TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/137001?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: REHBER TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/REHBER.png" group-title="TR ⚜️ DİNİ",REHBER TV
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/3304?output=ts
-#EXTINF:-1 tvg-id="tv5.tr" tvg-name="TR: TV5" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/TV5.png" group-title="TR ⚜️ DİNİ",TV5
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/25797?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DOST TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DOST.png" group-title="TR ⚜️ DİNİ",DOST TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/119016?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KUDUS TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KUDUS.png" group-title="TR ⚜️ DİNİ",KUDUS TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/70533?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: HADI TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/HADI.TV.png" group-title="TR ⚜️ DİNİ",HADI TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/42585?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KANAL 12" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KANAL.12.png" group-title="TR ⚜️ DİNİ",KANAL 12
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/89084?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: CAMIA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/CAMIA.png" group-title="TR ⚜️ DİNİ",CAMIA TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/11249?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: AL ZAHRA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/AL.ZAHRA.png" group-title="TR ⚜️ DİNİ",AL ZAHRA TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/34543?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: IKRA TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DIYAR.TV.png" group-title="TR ⚜️ DİNİ",IKRA TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/8917?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: SUNNAH TV" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/SUNNA.TV.png" group-title="TR ⚜️ DİNİ",SUNNAH TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/123796?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV İLAHİ 1 ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/ILAHI.1.png" group-title="TR ⚜️ DİNİ",BLUETV İLAHİ 1
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/8417?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV İLAHİ 2 ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/ILAHI.2.png" group-title="TR ⚜️ DİNİ",BLUETV İLAHİ 2
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/159637?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: BlueTV İLAHİ 3 ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/ILAHI.3.png" group-title="TR ⚜️ DİNİ",BLUETV İLAHİ 3
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/117702?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: DİNİ SOHBET ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/DINI.SOHBET.png" group-title="TR ⚜️ DİNİ",DİNİ SOHBET
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/41840?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KURAN-ı KERİM ʜᴅ" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/DINI/KURAN.png" group-title="TR ⚜️ DİNİ",KURAN I KERİM
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/68006?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 1 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 1 TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/151385?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 2 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 2 TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/31290?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 3 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 3 TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/18415?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZER DINI 4 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZER DINI 4 TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/94439?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="AZ: AZERI DINI 5 TV" tvg-logo="" group-title="TR ⚜️ DİNİ",AZ AZERI DINI 5 TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/162770?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: AS TV BURSA" tvg-logo="" group-title="TR ⚜️ YEREL",AS TV BURSA
 http://box1.tvben.xyz:2095/kaynaklive/irhh47gdh4p8dsdr4/274142?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="⚜️⚜️  YEREL  ⚜️⚜️" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO/TR/BAYRAK.png" group-title="TR ⚜️ YEREL",YEREL
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/43691?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: TV DEN" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/YEREL/TV.DEN.png" group-title="TR ⚜️ YEREL",TV DEN
 http://box1.tvben.xyz:2095/kaynaklive/irhh47gdh4p8dsdr4/274273?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: KANAL 32" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/YEREL/KANAL.32.png" group-title="TR ⚜️ YEREL",KANAL 32
@@ -5908,37 +5360,3 @@ http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/89959?output=ts
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/27767?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="TR: POWER TÜRK TAPTAZE" tvg-logo="https://cdn.powergroup.com.tr/image/75x75/powerapp/channels/v3/logo_2534.png" group-title="TR ⚜️ MÜZİK",POWER TÜRK TAPTAZE
 http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/46803?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: OYUN HAVALARI HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/OYUN.HAVASI.png" group-title="TR ⚜️ MÜZİK",OYUN HAVALARI
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/119712?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TÜRKÇE POP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/POP.MUZIK.png" group-title="TR ⚜️ MÜZİK",POP
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/63522?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TÜRKÇE RAP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/TURKCE.RAP.png" group-title="TR ⚜️ MÜZİK",RAP
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/168964?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: TÜRKÇE SLOW HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/TURKCE.SLOW.png" group-title="TR ⚜️ MÜZİK",SLOW
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/23810?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: YABANCI RAP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/YABANCI.RAP.png" group-title="TR ⚜️ MÜZİK",YABANCI RAP
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/56456?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: YABANCI POP HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/YABANCI.POP.png" group-title="TR ⚜️ MÜZİK",YABANCI POP
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/112352?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: KARADENİZ MÜZİK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/KARADENIZ.png" group-title="TR ⚜️ MÜZİK",KARADENİZ MÜZİK
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/69905?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ARABESK TÜRK HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/ARABESK.TURK.png" group-title="TR ⚜️ MÜZİK",ARABESK TÜRK
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/150195?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: NEŞET ERTAŞ  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/NESET.ERTAS.png" group-title="TR ⚜️ MÜZİK",NEŞET ERTAŞ
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/61558?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: IBRAHİM TATLISES HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/IBRAHIM.TATLISES.png" group-title="TR ⚜️ MÜZİK",IBRAHİM TATLISES
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/25036?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: ORHAN GENCEBAY  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/ORHAN.GENCEBAY.png" group-title="TR ⚜️ MÜZİK",ORHAN GENCEBAY
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/49128?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: MEYHANE TV  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/MEYHANE.png" group-title="TR ⚜️ MÜZİK",MEYHANE TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/150759?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: AHMET KAYA HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/AHMET.KAYA.png" group-title="TR ⚜️ MÜZİK",AHMET KAYA
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/11837?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FASHION TV FHD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/FASHION.png" group-title="TR ⚜️ MÜZİK",FASHION TV
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/166812?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: Müslüm Gürses   HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/MUSLUM.GURSES.png" group-title="TR ⚜️ MÜZİK",MÜSLÜM GÜRSES
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/129358?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TR: FERDİ TAYFUR  HD" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/TR/MUZIK/FERDI.TAYFUR.png" group-title="TR ⚜️ MÜZİK",FERDİ TAYFUR
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/72278?output=ts
-#EXTINF:-1 tvg-id="" tvg-name="TURKEY NATURE TRIP" tvg-logo="http://bluelogo8990.duckdns.org:8080/LOGO.YENI/SCREENSAVER/TURKEY.png" group-title="TV ⚜️ SCREENSAVER",NATURE TRIP
-http://vip-flying.xyz:2095/mhmt8533/10092025mhmtdmr/39654?output=ts
