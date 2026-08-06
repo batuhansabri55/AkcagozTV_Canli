@@ -65,7 +65,24 @@ YASAKLI_SET = {
     "glife", "cinelux", "max", "TABIISPOR", "TABII", "TR > KARAOKE", "TR | SINEMA VIP", "TR > AKSIYON|GERILIM|SUC",
     
     # Cine, Spor ve Yeşilçam Grupları
-    "tabii spor", "tivibuspor", "tivibu spor", "exxen sports", "cine yesilcam", "cine office"
+    "tabii spor", "tivibuspor", "tivibu spor", "exxen sports", "cine yesilcam", "cine office",
+
+    # Yeni Eklenen Sinema Grupları / Kanalları
+    "TR ⚡️ Sinema | 4K Premium TV", 
+    "TR ⚡️ Sinema | Salon Vizyon Intro", 
+    "AR ★ Shahid | VIP", 
+    "TR ⚡️ Sinema | USK Vizyon Sinema", 
+    "TR ⚡️ Sinema | Nova Sinema", 
+    "TR ⚡️ Sinema | Horrorbox Sinema",
+    "TR ⚡️ Sinema | Kingbox Sinema", 
+    "TR ⚡️ Sinema | Realbox Sinema", 
+    "TR ⚡️ Sinema | Globalbox Sinema", 
+    "TR ⚡️ Sinema | Neocine Sinema", 
+    "TR ⚡️ Sinema | Arenabox Sinema", 
+    "TR ⚡️ Sinema | Megabox Sinema",
+    "TR ⚡️ Sinema | Smartbox Sinema", 
+    "TR ⚡️ Sinema | Proturk Sinema", 
+    "TR ⚡️ Sinema | Sinema Platform"
 }
 
 YASAKLI_PATTERN = re.compile(
@@ -418,7 +435,7 @@ def main():
                                 else:
                                     baslik_yasakli_mi = False
                                     s = havuz_kanal_ismini_temizle(s) + "\n"
-                            
+                        
                             if baslik_yasakli_mi:
                                 continue
                                 
