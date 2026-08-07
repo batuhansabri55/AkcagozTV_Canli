@@ -82,6 +82,7 @@ YASAKLI_SET = {
     "TR ⚡️ Sinema | Megabox Sinema",
     "TR ⚡️ Sinema | Smartbox Sinema", 
     "TR ⚡️ Sinema | Proturk Sinema", 
+    "TR ⚡️ Sinema | Fix Sinema",
     "TR ⚡️ Sinema | Sinema Platform"
 }
 
