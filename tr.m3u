@@ -637,6 +637,8 @@ https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dUtLcFk4TkM1YjBOWlFIa1huL0UrMUYvcjhEcStnVU1TZUpsOVo5QXV4ST0=
 #EXTINF:-1,DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7
+#EXTINF:-1,DMAX
+https://nord.ayakkabiparti.lol/dmax/index.m3u8
 #EXTINF:-1,TLC TV
 https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469&token=V1JHMUZBdGFOV0k2d2szUm5hVzA4RFdmejliTEVnQkZEQWNEN29qNzJ6Yz0=.m3u8
 #EXTINF:-1,TLC TV
@@ -821,12 +823,16 @@ https://proud-river-e20b.pantonum1.workers.dev/bsseries4.m3u8
 https://proud-river-e20b.pantonum1.workers.dev/discs.m3u8
 #EXTINF:0, Discovery Channel
 https://proud-river-e20b.pantonum1.workers.dev/discovery.m3u8
-#EXTINF:0,TRT BELGESEL
+#EXTINF:0,TARIH TV
 https://proud-river-e20b.pantonum1.workers.dev/tarihtv.m3u8
+#EXTINF:0,TARIH TV
+https://nord.ayakkabiparti.lol/tarihtv/index.m3u8
 #EXTINF:0,HISTORY
 https://proud-river-e20b.pantonum1.workers.dev/history.m3u8
 #EXTINF:0,BBC EARTH
 https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
+#EXTINF:0,BBC EARTH
+https://nord.ayakkabiparti.lol/bbc/index.m3u8
 #EXTINF:0,LOVE NATURE
 https://proud-river-e20b.pantonum1.workers.dev/lovenature.m3u8
 #EXTINF:0,VIASAT HISTORY
