@@ -108,6 +108,7 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://raw.githubusercontent.com/kadirsener1/avva/537423d13dd489dd9ec1627c5b5b2bad765e25a5/playlist.m3u",
     "https://m3u.work/pqfhFNTY.m3u",
+    "http://electranextssp.xyz:8080/get.php?username=hasan24ht&password=HasanHt.1982&type=m3u_plus",
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
 ]
 
