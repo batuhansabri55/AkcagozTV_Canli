@@ -53,6 +53,8 @@ https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_360p.m3u8
 https://demiroren.daioncdn.net/kanald/kanald_360p.m3u8?&sid=859jhvmn96hf&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3
 #EXTINF:-1,KANALDYEDEK40
 https://ackaxsqacw.turknet.ercdn.net/ozfkfbbjba/kanald/kanald_1080p.m3u8?checkedby:MyWay
+#EXTINF:-1,KANALDYEDEK39
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web
 #EXTINF:-1,SHOWTVYEDEK42
 https://bstelevision.com/proxy.php?url=http://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
 #EXTINF:-1,SHOWTVYEDEK43
@@ -89,6 +91,8 @@ https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna
 https://ciner.daioncdn.net/showtv/showtv_720p.m3u8?ex=1664766175&sig=ae489f32a87b0659d25bd88421729530&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=7ukrat2ms282&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3
 #EXTINF:-1,SHOWTVYEDEK42
 https://bstelevision.com/proxy.php?url=https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/showtv/showtv.m3u8
+#EXTINF:-1,SHOWTVYEDEK42
+https://ciner.daioncdn.net/showtv/showtv.m3u8?app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
 #EXTINF:-1,STARTVYEDEK36
 http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8?checkedby:MyWay
 #EXTINF:-1,STARTVYEDEK37
@@ -420,6 +424,8 @@ https://bstelevision.com/proxy.php?url=https://rmtftbjlne.turknet.ercdn.net/bpey
 https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
 #EXTINF:-1,HABERTURKYEDEK
 https://tv.ensonhaber.com/haberturk/haberturk_720p.m3u8
+#EXTINF:-1,HABERTURKYEDEK
+https://ciner.daioncdn.net/haberturktv/haberturktv.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b
 #EXTINF:-1,HABERTURKYEDEK
 https://tv.ensonhaber.com/haberturk/haberturk_480p.m3u8
 #EXTINF:-1,HABERTURKYEDEK
