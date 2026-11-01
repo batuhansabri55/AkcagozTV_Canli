@@ -105,6 +105,7 @@ YEDEK_KAYNAKLAR = [
     "https://files.manuscdn.com/user_upload_by_module/session_file/310519663091167371/lXQCJEWGepXILedX.m3u8",
     "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://raw.githubusercontent.com/kadirsener1/avva/537423d13dd489dd9ec1627c5b5b2bad765e25a5/playlist.m3u",
+    "https://m3u.ch/pl/cad153c8a0017ddd0ed9d94626d4e839_ae67b8c979274afbf65045873f61a3ec.m3u",
     "https://m3u.ch/pl/1d84259d4bf3a9832067b3c4be608cbe_6f37cddc89cc539132a35d2ac0248c89.m3u",
     "https://raw.githubusercontent.com/viziago/Canl-tv/main/viziagonormal.m3u",
     "https://iptv-org.github.io/iptv/countries/tr.m3u"
