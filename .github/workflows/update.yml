@@ -10,16 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Kodlari Cek
-        uses: actions/checkout@v3
-        
+        uses: actions/checkout@v4
+
       - name: Python Hazirla
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-        
+
       - name: Paketleri Kur
         run: pip install requests
-        
+
       - name: Botu Calistir
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
