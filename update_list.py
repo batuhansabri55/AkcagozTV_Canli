@@ -97,7 +97,6 @@ YASAKLI_IP_LISTESI = [
 ]
 
 YEDEK_KAYNAKLAR = [
-    "https://raw.githubusercontent.com/hydrokin/M3U/e4e9ba44d54d360ff3de6388220a4dc1019bf34e/tvando.m3u",
     "https://raw.githubusercontent.com/Kral-Turk/Kral-Turk-TV/refs/heads/main/TURK_TV.m3u_plus",
     "https://raw.githubusercontent.com/PRoDi79/Deneme/refs/heads/main/ibb_cams.m3u",
     "https://raw.githubusercontent.com/smtv62/smtv/refs/heads/main/turkce.m3u",
@@ -106,7 +105,6 @@ YEDEK_KAYNAKLAR = [
     "https://raw.githubusercontent.com/hayatiptv/iptv/master/index.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tr.m3u",
     "https://files.manuscdn.com/user_upload_by_module/session_file/310519663091167371/lXQCJEWGepXILedX.m3u8",
-    "https://raw.githubusercontent.com/yasarfalkan/m3u-dosyam/refs/heads/main/YMBK.m3u8",
     "https://raw.githubusercontent.com/kadirsener1/avva/537423d13dd489dd9ec1627c5b5b2bad765e25a5/playlist.m3u",
     "https://m3u.ch/pl/cad153c8a0017ddd0ed9d94626d4e839_ae67b8c979274afbf65045873f61a3ec.m3u",
     "https://m3u.ch/pl/1d84259d4bf3a9832067b3c4be608cbe_6f37cddc89cc539132a35d2ac0248c89.m3u",
