@@ -90,6 +90,8 @@ https://bstelevision.com/proxy.php?url=https://rmtftbjlne.turknet.ercdn.net/bpey
 #EXTINF:-1,SHOWTVYEDEK42
 https://ciner.daioncdn.net/showtv/showtv.m3u8?app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
 #EXTINF:-1,STARTVYEDEK36
+https://dogusdyg-star.lg.mncdn.com/dogusdyg_star/live_1080p3000000kbps/index.m3u8?st=R_NXfP1MWr9b2gnPYmx4lw&e=1795557447
+#EXTINF:-1,STARTVYEDEK36
 http://dygvideo.dygdigital.com/live/hls/startv4puhu?m3u8?checkedby:MyWay
 #EXTINF:-1,STARTVYEDEK37
 http://dygvideo.dygdigital.com/live/hls/startv4puhu/index.m3u8
@@ -671,16 +673,18 @@ https://edge.taksimbilisim.com/birtv/bant1/playlist.m3u8
 https://cdn.ekoturk.net/hls/master.m3u8
 #EXTINF:-1 tvg-id="MinikaCocuk.tr@SD",MINIKA COCUK
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk_720p.m3u8
-
-
-
-
-
-
-
-
-
-
+#EXTINF:-1,Gzt Tv
+https://gzttv-live.lg.mncdn.com/gzttv-live/gzttv/chunklist.m3u8
+#EXTINF:-1,EKOTURKYEDEK
+https://cdn.ekoturk.net/hls/720p.m3u8
+#EXTINF:-1,BLOOMBERG HT
+https://tv.ensonhaber.com/bloomberght/bloomberght_1080p.m3u8
+#EXTINF:-1,CNBC-E
+https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e_1080p.m3u8
+#EXTINF:-1,BENGU TURK
+https://ensonhaber-live.ercdn.net/benguturk/benguturk_720p.m3u8
+#EXTINF:-1,TV 52
+https://edge2.taksimbilisim.com/tv52/bant1/chunks.m3u8?nimblesessionid=615063232
 
 # --- GÜNCEL ULTRA TEMİZ LİSTE (22-11-2026 21:21) --- #
 #EXTINF:-1 tvg-id="4UTV.tr@SD" tvg-logo="https://i.imgur.com/PexhKwp.png" group-title="Entertainment",4U TV
