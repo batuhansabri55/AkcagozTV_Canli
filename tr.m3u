@@ -1471,17 +1471,17 @@ https://yayin30.haber100.com/live/sehirekrani/chunklist_w1128481069.m3u8
 https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/playlist.m3u8
 #EXTINF:0,TRT WORLD
 
-# --- GÜNCEL ULTRA TEMİZ LİSTE (23-11-2026 22:08) --- #
+# --- GÜNCEL ULTRA TEMİZ LİSTE (23-11-2026 23:46) --- #
+#EXTINF:-1 tvg-logo="tv logo" ,DISCOVERY IDX
+https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
+#EXTINF:-1 tvg-id="viasatrec" tvg-name="Viasat History" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/8ea2619561935fed906ee2278d5fa961.png" group-title="Belgesel",VIASAT HISTORY
+https://proud-river-e20b.pantonum1.workers.dev/viasathistory.m3u8
+#EXTINF:-1 tvg-id="discoverychannel" tvg-name="Discovery Channel" tvg-logo="https://img.dsmartgo.com.tr/content/r/9C/11894/Thumbnail.png" group-title="Belgesel",DISCOVERY CHANNEL
+https://proud-river-e20b.pantonum1.workers.dev/discovery.m3u8
 #EXTINF:0,A2
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv_1080p.m3u8
-#EXTINF:0,SINEMA TV 5
-https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
-#EXTINF:0,SINEMA TV 8
-https://host.onlineradyotv.net:8081/sdmtv/tracks-v1a1/mono.m3u8
 #EXTINF:0,KANAL 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:0,BEYAZ TV F
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
 #EXTINF:0,TV 8 5
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_1080p.m3u8?app=tv8bucuk_web&ce=3
 #EXTINF:0,KRAL POP TV F
@@ -1586,8 +1586,6 @@ https://str.yodacdn.net/tmb_tr_app/index.m3u8
 https://edge.kuzeykibrissmart.tv/brt1hd/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR:Tv 5 " tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/043eff4d-bde2-493c-9c7d-c07a698bb0be.png" group-title="DeaTHLesS-TV",TV 5
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
-#EXTINF:-1 xui-id="{XuI_ID}" tvg-id="TR" tvg-name="TR: Fx" tvg-logo="https://i.hizliresim.com/e18xvq8.png" group-title="DeaTHLesS-TV",FX
-https://saran-live.ercdn.net/fx/index.m3u8
 #EXTINF:-1 xui-id="{XuI_ID}" tvg-id="TR" tvg-name="TR: Nat Geo" tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/national-geographic-hd-buyuk.png" group-title="DeaTHLesS-TV",NAT GEO
 https://saran-live.ercdn.net/natgeohd/index.m3u8
 #EXTINF:-1 xui-id="{XuI_ID}" tvg-id="TR" tvg-name="TR: Nat Wild" tvg-logo="https://cdn.digiturkburada.com.tr/kanallar2/logo1_0.jpg" group-title="DeaTHLesS-TV",NAT WILD
@@ -2768,8 +2766,6 @@ https://saran-live.ercdn.net/babytv/index.m3u8
 https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8l4w3lst4co5&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3
 #EXTINF:-1 tvg-id="DisneyJr.tr@SD" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/disneyjr.png" group-title="Animation;Kids",DISNEY JR
 https://saran-live.ercdn.net/disneyjunior/index.m3u8
-#EXTINF:-1 tvg-id="KralPopTV.tr@SD" tvg-logo="https://i.imgur.com/ch365lh.png" group-title="Music",KRAL POP TV
-https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/15QMXNzR/18108-removebg-preview.png" group-title="YEREL KANALLAR",BODRUM KENT TV
 https://edge2.taksimbilisim.com/bodrumkenttv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/koy-tv-buyuk.png?rkt=DfS6Tgv6Hjr93k3" group-title="BELGESEL KANALLARI",KÖY TV
@@ -2778,130 +2774,6 @@ http://176.65.153.3:8042/play/a03c/index.m3u8
 https://live.artidijitalmedya.com/artidijital_on4tv/on4tv/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/sxKkwwWB/37859503-ico.png" group-title="KÜRTÇE KANALLAR",MED MÜZİK TV
 http://54.36.110.140/live3/live3.m3u8
-#EXTINF:-1 tvg-id="TRTMuzik.tr@SD" tvg-logo="https://i.imgur.com/JgUzRH8.png" group-title="Music",TRT MUZIK
-https://stream8.cinerama.uz/1208/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="FlashHaber.tr" tvg-logo="https://i.ibb.co/F5FcvbZ/flash4ok.png" group-title="Ulusal",FLASH TV
-https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
-#EXTINF:-1 tvg-id="teleZEN.tv" tvg-logo="https://i.ibb.co/HTWLwcJB/n-Shot-20261003-233516627.png" group-title="Ulusal-Eğlence",TELEZEN
-https://telezen-stream.freesrv.com/telezen.m3u8
-#EXTINF:-1 tvg-id="24.TV.HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/tr/archive/a/a6/20191109190807%2124_TV_logosu.png" group-title="Haber",24 TV
-https://tv.ensonhaber.com/tv24/tv24.m3u8
-#EXTINF:-1 tvg-id="Cine1.tr" tvg-logo="https://i.ibb.co/dsqy4ydp/logo.webp" group-title="Eglence",CINE 1 TV
-http://canliyayin.cine1.com.tr/memfs/cbaef080-a742-4644-9e9e-2b9f6a5103c3.m3u8
-#EXTINF:-1 tvg-id="A.SPOR.HD.tr" tvg-logo="https://i.ibb.co/20TJ9fJW/logo.png" group-title="Spor",A SPOR
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_720p.m3u8
-#EXTINF:-1 tvg-id="HTSpor.tr" tvg-logo="https://i.ibb.co/F0Tsz1v/htsportr.png" group-title="Spor",HT SPOR
-https://ciner-live.ercdn.net/htspor/htspor.m3u8
-#EXTINF:-1 tvg-id="KralPopTV.tr" tvg-logo="https://i.ibb.co/XrSQjckW/Kral-Poplogosu.png" group-title="Muzik",KRAL POP TV
-https://dogus.daioncdn.net/kralpoptv/kralpoptv.m3u8?app=kralpoptv_web
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",BİLGİLENDİRME
-https://raw.githubusercontent.com/kadirsener1/avva/refs/heads/main/Bilgilendirme.mp4
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 4 İP
-https://65.108.239.207/t4/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 1 AVVA
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/95f0000dd0e/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein2/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 3
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein3/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 4
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein4/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 5
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein5/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",S SPORT 1
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssport1/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",S SPORT 2 AVVA
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssport2/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",S SPORT
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssportplus/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",SMART SPOR
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/smartsport1/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",SMART SPOR 2
-https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/smartsport2/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
-#EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 2 ZEUS
-https://zeus324232.cfd/b2/index.txt
-#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 3 ZEUS
-https://zeus324232.cfd/b3/index.txt
-#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 4 ZEUS
-https://zeus324232.cfd/b4/index.txt
-#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 5 ZEUS
-https://zeus324232.cfd/b5/index.txt
-#EXTINF:-1 tvg-id="ssport" tvg-name="S Sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor-Neon",S SPORT 1
-https://zeus324232.cfd/s1/index.txt
-#EXTINF:-1 tvg-id="ssport" tvg-name="S Sport 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/bcnszq0.png" group-title="Spor-Neon",S SPORT 2
-https://zeus324232.cfd/s2/index.txt
-#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",SPOR SMART 1
-https://zeus324232.cfd/smart1/index.txt
-#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",SPOR SMART 2
-https://zeus324232.cfd/smart2/index.txt
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title="Ulusal",TV 8 5
-https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_480p.m3u8?&sid=7tra76g4cefx&app=bf58ab52-4865-4c81-b223-26b41009801e&ce=3
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b5/NTV_logo.png" group-title="Haber",NTV
-https://livetv.work/play/tr/ntv.php
-#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",CNN TÜRK
-http://cdn.vizitv.workers.dev/12.m3u8
-#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",AKIT TV
-http://cdn.vizitv.workers.dev/56.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Haber",TH TÜRKHABER
-https://edge1.taksimbilisim.com/turkhaber/bant1/chunks.m3u8
-#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",ÜRETEN TÜRKIYE
-https://live.euromediacenter.com/uretenturkiye/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="TR Spor",RED BULL TV
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="TR Spor",HORSE COUNTRY EN
-https://hnc-free-viewlift.amagi.tv/playlist720_p.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",ISVICRE TV
-https://tivi44.ozelip.com:3269/stream/play.m3u8
-#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",CARTOON NETWORK
-http://65.108.239.207:80/cartoonnetwork/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",LOVE NATURE EN
-https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",NATURE TIME FR
-https://bamusa-naturetime-emea-fra-rakuten.amagi.tv/playlist1080_pl.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",TRAVELXP EN
-https://travelxp-travelxp-1-nz.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="TR Spor" tvg-logo="https://i.imgur.com/FabFP5A.png" tvg-id="Dummy" ,TRACE SPORTS STARS
-https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="TR Spor",FIGHT BOX
-http://iptv.prosto.tv:7000/ch118/video.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://cdn-i.pr.trt.com.tr/trtportal/17936234.png" tvg-id="" ,TRT MÜZİK
-https://tv-trtmuzik.medya.trt.com.tr/master_1080.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.imgur.com/slwbux7.png" tvg-id="" ,NUMBER 1 AŞK
-http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/chunklist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/FgCW885/pturkakustik.png" tvg-id="Dummy" ,POWER TÜRK AKUSTİK
-http://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/VLQ6cmV/plove.png" tvg-id="Dummy" ,POWER LOVE
-http://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png" tvg-id="Dummy" ,KNTV AZ
-https://cdn4.yayin.com.tr/kntv/video.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON
-http://65.108.239.207/bsaction1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 1
-http://65.108.239.207/box1/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON 2 2
-http://65.108.239.207/sinemaaksiyon2/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA 1001 2
-http://65.108.239.207/sinema1001/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA KOMEDİ 2
-http://65.108.239.207/sinemakomedi/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 3
-http://65.108.239.207/box3/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX ACTION
-http://65.108.239.207/sinemaaksiyon/index.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX YEŞİLÇAM
-http://65.108.239.207/sinemayerli/index.m3u8
-#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",BHA TV
-https://live.euromediacenter.com/bhatv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/ce/Kanal_7_logosu.png" group-title="Ulusal",TEVE2
-https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd&
-#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",ÇOCUK TV
-https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/cocuklara-ozel-tv/playlist.m3u8
-#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/VLQ6cmV/plove.png" tvg-id="Dummy" ,CHİLL TV
-https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/chill-tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",BELGESEL TV
-https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/belgesel-tv/playlist.m3u8
-#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",5 MINUTES CRAFT
-https://soul-5mincrafteng-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="bein sports haber hd" tvg-logo="https://r.resimlink.com/M9Z1ieK3gF.jpg" group-title="SPOR KANALI",BEINSPORT HABER
 http://hdlocal.de:8080/iptv.kosiptv.comNEW/gJUP3KsM2ENEW/10033
 #EXTINF:-1 tvg-id="bein sports haber hd" tvg-logo="https://r.resimlink.com/M9Z1ieK3gF.jpg" group-title="SPOR KANALI",BEIN SPORTS HABER
@@ -2914,6 +2786,8 @@ https://andro.evrenesoglu101.click/checklist/androstreamlivebs1.m3u8
 http://92.5.166.217:8087/bs1hd
 #EXTINF:-1 tvg-logo="https://r.resimlink.com/5Y8y9AQ1iJ.jpg" group-title="SPOR KANALI" ,BEIN SPORTS FEED1
 http://hdlocal.de:8080/live/maveniptv.tv/e8yvmG8um2yhhgsjhgdd22/10041.ts
+#EXTINF:-1 tvg-logo="https://r.resimlink.com/5Y8y9AQ1iJ.jpg" group-title="SPOR KANALI" ,BEIN SPORTS FEED2
+http://hdlocal.de:8080/live/iptv.kosiptv.comNEW/gJUP3KsM2ENEW/10042.ts
 #EXTINF:-1 tvg-logo="https://r.resimlink.com/5Y8y9AQ1iJ.jpg" group-title="SPOR KANALI" ,WEB BEIN SPORTS
 https://andro.evrenesoglu101.click/checklist/androstreamlivebiraz1.m3u8
 #EXTINF:-1 tvg-logo="https://r.resimlink.com/utFGSwE0dc4.jpg" group-title="SPOR KANALI",BEIN SPORTS 2
@@ -2990,10 +2864,10 @@ http://92.5.166.217:8087/a2
 http://hdlocal.de:8080/maveniptv.tv/e8yvmG8um2yhhgsjhgdd22/10261
 #EXTINF:-1 TRT AVAZ group-title="TR ULUSAL-UHD" ,TRT AVAZ
 http://tv-trtavaz.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/krwgu8g.png" group-title="WEB SPOR KANALI",TRT SPOR
-http://92.5.166.217:8087/trtspor
 #EXTINF:-1 tvg-id="" tvg-name="TR: KANAL 32" tvg-logo="" group-title="TR | GENERAL VIP",KANAL 32
 http://31.43.191.125:8080/restream/restream/140803
+#EXTINF:-1 tvg-id="" tvg-name="TR: KRT TV HD" tvg-logo="" group-title="TR | GENERAL VIP",KRT TV
+http://31.43.191.125:8080/restream/restream/140804
 #EXTINF:-1 tvg-id="" tvg-name="TR: 24 TV FHD" tvg-logo="" group-title="TR | GENERAL VIP",24 TV
 http://31.43.191.125:8080/restream/restream/140805
 #EXTINF:-1 tvg-id="" tvg-name="TR: 360 TV" tvg-logo="" group-title="TR | GENERAL VIP",360 TV
@@ -3004,326 +2878,276 @@ http://31.43.191.125:8080/restream/restream/140811
 http://31.43.191.125:8080/restream/restream/140812
 #EXTINF:-1 tvg-id="" tvg-name="TR: A HABER FHD" tvg-logo="https://docdog.top/logo/countries/turkey/a-haber-tr.png" group-title="TR | GENERAL VIP",A HABER
 http://31.43.191.125:8080/restream/restream/140813
-#EXTINF:-1 tvg-id="" tvg-name="TR: AKSU TV" tvg-logo="" group-title="TR | GENERAL VIP",AKSU TV
-http://31.43.191.125:8080/restream/restream/140835
-#EXTINF:-1 tvg-id="" tvg-name="TR: ANGARA TV HD" tvg-logo="" group-title="TR | GENERAL VIP",ANGARA TV
-http://31.43.191.125:8080/restream/restream/140841
-#EXTINF:-1 tvg-id="" tvg-name="TR: EURO STAR" tvg-logo="https://docdog.top/logo/countries/turkey/euro-star-tr.png" group-title="TR | GENERAL VIP",STAR
-http://31.43.191.125:8080/restream/restream/140971
-#EXTINF:-1 tvg-id="" tvg-name="TR: GINE GOLD GERILIM HD" tvg-logo="" group-title="TR | GENERAL VIP",GINE GOLD GERILIM
-http://31.43.191.125:8080/restream/restream/140988
-#EXTINF:-1 tvg-id="" tvg-name="TR: KRT FHD" tvg-logo="" group-title="TR | GENERAL VIP",KRT
-http://31.43.191.125:8080/restream/restream/141082
+#EXTINF:-1 tvg-id="" tvg-name="TR: A NEWS HD" tvg-logo="" group-title="TR | GENERAL VIP",A NEWS
+http://31.43.191.125:8080/restream/restream/140816
+#EXTINF:-1 tvg-id="" tvg-name="TR: A PARA FHD" tvg-logo="https://docdog.top/logo/countries/turkey/a-para-tr.png" group-title="TR | GENERAL VIP",A PARA
+http://31.43.191.125:8080/restream/restream/140817
+#EXTINF:-1 tvg-id="" tvg-name="TR: BENGUTURK HD" tvg-logo="https://docdog.top/logo/countries/turkey/bengu-turk-tr.png" group-title="TR | GENERAL VIP",BENGUTURK
+http://31.43.191.125:8080/restream/restream/140862
+#EXTINF:-1 tvg-id="" tvg-name="TR: BOOBA TV" tvg-logo="" group-title="TR | GENERAL VIP",BOOBA TV
+http://31.43.191.125:8080/restream/restream/140872
+#EXTINF:-1 tvg-id="" tvg-name="TR: BOOMERANG HD" tvg-logo="https://docdog.top/logo/countries/turkey/boomerang.png" group-title="TR | GENERAL VIP",BOOMERANG
+http://31.43.191.125:8080/restream/restream/140873
+#EXTINF:-1 tvg-id="" tvg-name="TR: CIFTCI TV" tvg-logo="https://docdog.top/logo/countries/turkey/ciftci-tv-tr.png" group-title="TR | GENERAL VIP",CIFTCI TV
+http://31.43.191.125:8080/restream/restream/140893
+#EXTINF:-1 tvg-id="" tvg-name="TR: DISCOVERY IDX HD" tvg-logo="" group-title="TR | GENERAL VIP",DISCOVERY IDX
+http://31.43.191.125:8080/restream/restream/140916
+#EXTINF:-1 tvg-id="" tvg-name="TR: DREAM TURK" tvg-logo="https://docdog.top/logo/countries/turkey/dream-turk-tr.png" group-title="TR | GENERAL VIP",DREAM TURK
+http://31.43.191.125:8080/restream/restream/140947
+#EXTINF:-1 tvg-id="" tvg-name="TR: HABER GLOBAL FHD" tvg-logo="https://docdog.top/logo/countries/turkey/haber-global-tr.png" group-title="TR | GENERAL VIP",HABER GLOBAL
+http://31.43.191.125:8080/restream/restream/140998
+#EXTINF:-1 tvg-id="" tvg-name="TR: HABER TURK FHD" tvg-logo="https://docdog.top/logo/countries/turkey/haberturk-tr.png" group-title="TR | GENERAL VIP",HABER TURK
+http://31.43.191.125:8080/restream/restream/141002
+#EXTINF:-1 tvg-id="" tvg-name="TR: KABE TV" tvg-logo="" group-title="TR | GENERAL VIP",KABE TV
+http://31.43.191.125:8080/restream/restream/141023
+#EXTINF:-1 tvg-id="" tvg-name="TR: KANAL 360 HEVC" tvg-logo="" group-title="TR | GENERAL VIP",KANAL 360
+http://31.43.191.125:8080/restream/restream/141036
+#EXTINF:-1 tvg-id="" tvg-name="TR: KANAL 58" tvg-logo="https://docdog.top/logo/countries/turkey/kanal58.png" group-title="TR | GENERAL VIP",KANAL 58
+http://31.43.191.125:8080/restream/restream/141040
+#EXTINF:-1 tvg-id="" tvg-name="TR: KANAL AVRUPA HD" tvg-logo="https://docdog.top/logo/countries/turkey/kanal-avrupa-tr.png" group-title="TR | GENERAL VIP",KANAL AVRUPA
+http://31.43.191.125:8080/restream/restream/141049
+#EXTINF:-1 tvg-id="" tvg-name="TR: KANAL D FHD" tvg-logo="https://docdog.top/logo/countries/turkey/kanal-d-tr.png" group-title="TR | GENERAL VIP",KANAL D
+http://31.43.191.125:8080/restream/restream/141052
+#EXTINF:-1 tvg-id="" tvg-name="TR: KANAL V ANTALYA" tvg-logo="" group-title="TR | GENERAL VIP",KANAL V ANTALYA
+http://31.43.191.125:8080/restream/restream/141059
+#EXTINF:-1 tvg-id="" tvg-name="TR: KARDELEN TV" tvg-logo="https://docdog.top/logo/countries/turkey/kardelen-tv-tr.png" group-title="TR | GENERAL VIP",KARDELEN TV
+http://31.43.191.125:8080/restream/restream/141062
+#EXTINF:-1 tvg-id="" tvg-name="TR: KAYSERI TV" tvg-logo="" group-title="TR | GENERAL VIP",KAYSERI TV
+http://31.43.191.125:8080/restream/restream/141064
+#EXTINF:-1 tvg-id="" tvg-name="TR: KOZA TV" tvg-logo="" group-title="TR | GENERAL VIP",KOZA TV
+http://31.43.191.125:8080/restream/restream/141078
+#EXTINF:-1 tvg-id="" tvg-name="TR: KRT KULTUR TV" tvg-logo="" group-title="TR | GENERAL VIP",KRT KULTUR TV
+http://31.43.191.125:8080/restream/restream/141083
+#EXTINF:-1 tvg-id="" tvg-name="TR: KUDUS TV" tvg-logo="" group-title="TR | GENERAL VIP",KUDUS TV
+http://31.43.191.125:8080/restream/restream/141086
+#EXTINF:-1 tvg-id="" tvg-name="TR: LALEGUL TV" tvg-logo="https://docdog.top/logo/countries/turkey/lalegul-tv-tr.png" group-title="TR | GENERAL VIP",LALEGUL TV
+http://31.43.191.125:8080/restream/restream/141089
+#EXTINF:-1 tvg-id="" tvg-name="TR: LIDER HABER HD" tvg-logo="" group-title="TR | GENERAL VIP",LIDER HABER
+http://31.43.191.125:8080/restream/restream/141090
+#EXTINF:-1 tvg-id="" tvg-name="TR: LIFE TV (KAYSERI)" tvg-logo="" group-title="TR | GENERAL VIP",LIFE TV
+http://31.43.191.125:8080/restream/restream/141091
 #EXTINF:-1 tvg-id="" tvg-name="TR: LOVE NATURE FHD" tvg-logo="https://docdog.top/logo/countries/turkey/lovenature.png" group-title="TR | GENERAL VIP",LOVE NATURE
 http://31.43.191.125:8080/restream/restream/141094
+#EXTINF:-1 tvg-id="" tvg-name="TR: MALATYA TV" tvg-logo="" group-title="TR | GENERAL VIP",MALATYA TV
+http://31.43.191.125:8080/restream/restream/141099
+#EXTINF:-1 tvg-id="" tvg-name="TR: MAVIKARADENIZ TV" tvg-logo="" group-title="TR | GENERAL VIP",MAVIKARADENIZ TV
+http://31.43.191.125:8080/restream/restream/141101
+#EXTINF:-1 tvg-id="" tvg-name="TR: MEDINE TV" tvg-logo="" group-title="TR | GENERAL VIP",MEDINE TV
+http://31.43.191.125:8080/restream/restream/141105
+#EXTINF:-1 tvg-id="" tvg-name="TR: MEKKE TV" tvg-logo="" group-title="TR | GENERAL VIP",MEKKE TV
+http://31.43.191.125:8080/restream/restream/141108
+#EXTINF:-1 tvg-id="" tvg-name="TR: MELTEM TV" tvg-logo="" group-title="TR | GENERAL VIP",MELTEM TV
+http://31.43.191.125:8080/restream/restream/141109
+#EXTINF:-1 tvg-id="" tvg-name="TR: MESAJ TV" tvg-logo="" group-title="TR | GENERAL VIP",MESAJ TV
+http://31.43.191.125:8080/restream/restream/141110
+#EXTINF:-1 tvg-id="" tvg-name="TR: NILOYA HD" tvg-logo="" group-title="TR | GENERAL VIP",NILOYA
+http://31.43.191.125:8080/restream/restream/141123
+#EXTINF:-1 tvg-id="" tvg-name="TR: NR1 DAMAR" tvg-logo="" group-title="TR | GENERAL VIP",NR1 DAMAR
+http://31.43.191.125:8080/restream/restream/141126
+#EXTINF:-1 tvg-id="" tvg-name="TR: NR1 DAMAR" tvg-logo="" group-title="TR | GENERAL VIP",NR1 DAMAR
+http://31.43.191.125:8080/restream/restream/141127
+#EXTINF:-1 tvg-id="" tvg-name="TR: NR1 HD" tvg-logo="https://docdog.top/logo/countries/turkey/nr1-tr.png" group-title="TR | GENERAL VIP",NR1
+http://31.43.191.125:8080/restream/restream/141128
+#EXTINF:-1 tvg-id="" tvg-name="TR: NR1 TURK" tvg-logo="" group-title="TR | GENERAL VIP",NR1 TURK
+http://31.43.191.125:8080/restream/restream/141129
 #EXTINF:-1 tvg-id="" tvg-name="TR: NTV FHD" tvg-logo="https://docdog.top/logo/countries/turkey/ntv.png" group-title="TR | GENERAL VIP",NTV
 http://31.43.191.125:8080/restream/restream/141130
+#EXTINF:-1 tvg-id="" tvg-name="TR: ODDBODS HD" tvg-logo="" group-title="TR | GENERAL VIP",ODDBODS
+http://31.43.191.125:8080/restream/restream/141138
+#EXTINF:-1 tvg-id="" tvg-name="TR: ON4 TV" tvg-logo="" group-title="TR | GENERAL VIP",ON4 TV
+http://31.43.191.125:8080/restream/restream/141141
+#EXTINF:-1 tvg-id="" tvg-name="TR: ORDU BEL TV" tvg-logo="" group-title="TR | GENERAL VIP",ORDU BEL TV
+http://31.43.191.125:8080/restream/restream/141144
 #EXTINF:-1 tvg-id="" tvg-name="TR: PEPE TV" tvg-logo="" group-title="TR | GENERAL VIP",PEPE TV
 http://31.43.191.125:8080/restream/restream/141148
-#EXTINF:-1 tvg-id="" tvg-name="TR: TV DEN" tvg-logo="" group-title="TR | GENERAL VIP",TV DEN
-http://31.43.191.125:8080/restream/restream/141298
-#EXTINF:-1 tvg-id="" tvg-name="TR: ULUSAL KANAL" tvg-logo="https://docdog.top/logo/countries/turkey/ulusal-tv-tr.png" group-title="TR | GENERAL VIP",ULUSAL KANAL
-http://31.43.191.125:8080/restream/restream/141311
-#EXTINF:-1 tvg-id="" tvg-name="TR: EUROSPORT 1 HD" tvg-logo="" group-title="TR | SPORT VIP",EUROSPORT 1
-http://31.43.191.125:8080/restream/restream/141378
-#EXTINF:-1 tvg-id="" tvg-name="TR: TRT SPOR 2 FHD" tvg-logo="" group-title="TR | SPORT VIP",TRT SPOR 2
-http://31.43.191.125:8080/restream/restream/141447
+#EXTINF:-1 tvg-id="" tvg-name="TR: PIJAMASKELILER" tvg-logo="" group-title="TR | GENERAL VIP",PIJAMASKELILER
+http://31.43.191.125:8080/restream/restream/141150
+#EXTINF:-1 tvg-id="" tvg-name="TR: POWER TV FHD" tvg-logo="" group-title="TR | GENERAL VIP",POWER TV
+http://31.43.191.125:8080/restream/restream/141158
+#EXTINF:-1 tvg-id="" tvg-name="TR: REDBOX TURKCE POP" tvg-logo="" group-title="TR | GENERAL VIP",REDBOX POP
+http://31.43.191.125:8080/restream/restream/141163
+#EXTINF:-1 tvg-id="" tvg-name="TR: REDBOX VIZYON 1 HD" tvg-logo="" group-title="TR | GENERAL VIP",REDBOX VIZYON 1
+http://31.43.191.125:8080/restream/restream/141164
+#EXTINF:-1 tvg-id="" tvg-name="TR: REHBER TV" tvg-logo="" group-title="TR | GENERAL VIP",REHBER TV
+http://31.43.191.125:8080/restream/restream/141165
+#EXTINF:-1 tvg-id="" tvg-name="TR: RTV 23 ELAZIG" tvg-logo="" group-title="TR | GENERAL VIP",RTV 23 ELAZIG
+http://31.43.191.125:8080/restream/restream/141166
+#EXTINF:-1 tvg-id="" tvg-name="TR: SEMERKAND TV" tvg-logo="" group-title="TR | GENERAL VIP",SEMERKAND TV
+http://31.43.191.125:8080/restream/restream/141171
+#EXTINF:-1 tvg-id="" tvg-name="TR: SINETIVI HD" tvg-logo="" group-title="TR | GENERAL VIP",SINETIVI
+http://31.43.191.125:8080/restream/restream/141180
+#EXTINF:-1 tvg-id="" tvg-name="TR: SMART COCUK FHD" tvg-logo="https://docdog.top/logo/countries/turkey/cocuk-smart-tr.png" group-title="TR | GENERAL VIP",SMART COCUK
+http://31.43.191.125:8080/restream/restream/141188
+#EXTINF:-1 tvg-id="" tvg-name="TR: SOZCU TV FHD" tvg-logo="" group-title="TR | GENERAL VIP",SOZCU TV
+http://31.43.191.125:8080/restream/restream/141190
+#EXTINF:-1 tvg-id="" tvg-name="TR: SPONGEBOB" tvg-logo="" group-title="TR | GENERAL VIP",SPONGEBOB
+http://31.43.191.125:8080/restream/restream/141191
+#EXTINF:-1 tvg-id="" tvg-name="TR: STAR TV FHD" tvg-logo="https://docdog.top/logo/countries/turkey/star-tv-tr.png" group-title="TR | GENERAL VIP",STAR TV
+http://31.43.191.125:8080/restream/restream/141192
+#EXTINF:-1 tvg-id="" tvg-name="TR: SUN RTV TV (TARIM TURK)" tvg-logo="" group-title="TR | GENERAL VIP",SUN RTV TV
+http://31.43.191.125:8080/restream/restream/141195
+#EXTINF:-1 tvg-id="" tvg-name="TR: SUN TV (MERSIN)" tvg-logo="" group-title="TR | GENERAL VIP",SUN TV
+http://31.43.191.125:8080/restream/restream/141196
+#EXTINF:-1 tvg-id="" tvg-name="TR: SUNGER BOB TV" tvg-logo="" group-title="TR | GENERAL VIP",SUNGER BOB TV
+http://31.43.191.125:8080/restream/restream/141198
+#EXTINF:-1 tvg-id="" tvg-name="TR: TEK RUMELI TV" tvg-logo="" group-title="TR | GENERAL VIP",TEK RUMELI TV
+http://31.43.191.125:8080/restream/restream/141210
+#EXTINF:-1 tvg-id="" tvg-name="TR: TEMPO TV" tvg-logo="" group-title="TR | GENERAL VIP",TEMPO TV
+http://31.43.191.125:8080/restream/restream/141215
+#EXTINF:-1 tvg-id="" tvg-name="TR: TGRT EU" tvg-logo="https://docdog.top/logo/countries/turkey/tgrt-eu-tr.png" group-title="TR | GENERAL VIP",TGRT
+http://31.43.191.125:8080/restream/restream/141221
+#EXTINF:-1 tvg-id="" tvg-name="TR: TGRT HABER" tvg-logo="https://docdog.top/logo/countries/turkey/tgrt-haber-tr.png" group-title="TR | GENERAL VIP",TGRT HABER
+http://31.43.191.125:8080/restream/restream/141222
+#EXTINF:-1 tvg-id="" tvg-name="TR: TGRT HABER FHD" tvg-logo="https://docdog.top/logo/countries/turkey/tgrt-haber-tr.png" group-title="TR | GENERAL VIP",TGRT HABER
+http://31.43.191.125:8080/restream/restream/141223
+#EXTINF:-1 tvg-id="" tvg-name="TR: TJK FHD" tvg-logo="" group-title="TR | GENERAL VIP",TJK
+http://31.43.191.125:8080/restream/restream/141230
+#EXTINF:-1 tvg-id="" tvg-name="TR: TJK HD" tvg-logo="" group-title="TR | GENERAL VIP",TJK
+http://31.43.191.125:8080/restream/restream/141231
+#EXTINF:-1 tvg-id="" tvg-name="TR: TOKAT SUPER TV" tvg-logo="" group-title="TR | GENERAL VIP",TOKAT SUPER TV
+http://31.43.191.125:8080/restream/restream/141235
+#EXTINF:-1 tvg-id="" tvg-name="TR: TON TV CANAKKALE" tvg-logo="" group-title="TR | GENERAL VIP",TON TV CANAKKALE
+http://31.43.191.125:8080/restream/restream/141237
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT 3 MECLIS TV" tvg-logo="" group-title="TR | GENERAL VIP",TRT 3 MECLIS TV
+http://31.43.191.125:8080/restream/restream/141244
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT ARABIC FHD" tvg-logo="" group-title="TR | GENERAL VIP",TRT ARABIC
+http://31.43.191.125:8080/restream/restream/141246
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT COCUK FHD" tvg-logo="https://docdog.top/logo/countries/turkey/trt-cocuk-tr.png" group-title="TR | GENERAL VIP",TRT COCUK
+http://31.43.191.125:8080/restream/restream/141250
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT DIYANET FHD" tvg-logo="https://docdog.top/logo/countries/turkey/diyanet-tv-tr.png" group-title="TR | GENERAL VIP",TRT DIYANET
+http://31.43.191.125:8080/restream/restream/141253
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT EBA" tvg-logo="" group-title="TR | GENERAL VIP",TRT EBA
+http://31.43.191.125:8080/restream/restream/141254
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT EBA FHD" tvg-logo="" group-title="TR | GENERAL VIP",TRT EBA
+http://31.43.191.125:8080/restream/restream/141255
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT EBA ÇOCUK TV" tvg-logo="" group-title="TR | GENERAL VIP",TRT EBA ÇOCUK TV
+http://31.43.191.125:8080/restream/restream/141257
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT EBATV LİSE" tvg-logo="" group-title="TR | GENERAL VIP",TRT EBATV LİSE
+http://31.43.191.125:8080/restream/restream/141258
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 100 HEVC" tvg-logo="" group-title="TR | GENERAL VIP",TV 100
+http://31.43.191.125:8080/restream/restream/141280
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 2" tvg-logo="" group-title="TR | GENERAL VIP",TV 2
+http://31.43.191.125:8080/restream/restream/141281
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 360 FHD" tvg-logo="" group-title="TR | GENERAL VIP",TV 360
+http://31.43.191.125:8080/restream/restream/141284
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 38" tvg-logo="" group-title="TR | GENERAL VIP",TV 38
+http://31.43.191.125:8080/restream/restream/141285
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 41" tvg-logo="https://docdog.top/logo/countries/turkey/tv41.png" group-title="TR | GENERAL VIP",TV 41
+http://31.43.191.125:8080/restream/restream/141289
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 5" tvg-logo="https://docdog.top/logo/countries/turkey/tv5.png" group-title="TR | GENERAL VIP",TV 5
+http://31.43.191.125:8080/restream/restream/141290
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 52" tvg-logo="" group-title="TR | GENERAL VIP",TV 52
+http://31.43.191.125:8080/restream/restream/141291
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 8 HEVC" tvg-logo="" group-title="TR | GENERAL VIP",TV 8
+http://31.43.191.125:8080/restream/restream/141292
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV 8 INT" tvg-logo="https://docdog.top/logo/countries/turkey/tv8-int-tr.png" group-title="TR | GENERAL VIP",TV 8 INT
+http://31.43.191.125:8080/restream/restream/141293
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV EM" tvg-logo="" group-title="TR | GENERAL VIP",TV EM
+http://31.43.191.125:8080/restream/restream/141299
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV8" tvg-logo="" group-title="TR | GENERAL VIP",TV8
+http://31.43.191.125:8080/restream/restream/141304
+#EXTINF:-1 tvg-id="" tvg-name="TR: TV8 HD" tvg-logo="" group-title="TR | GENERAL VIP",TV8
+http://31.43.191.125:8080/restream/restream/141306
+#EXTINF:-1 tvg-id="" tvg-name="TR: UZAY TV HABER" tvg-logo="" group-title="TR | GENERAL VIP",UZAY TV HABER
+http://31.43.191.125:8080/restream/restream/141314
+#EXTINF:-1 tvg-id="" tvg-name="TR: VIYANA TV" tvg-logo="" group-title="TR | GENERAL VIP",VIYANA TV
+http://31.43.191.125:8080/restream/restream/141317
+#EXTINF:-1 tvg-id="" tvg-name="TR: VIYANA TV" tvg-logo="" group-title="TR | GENERAL VIP",VIYANA TV
+http://31.43.191.125:8080/restream/restream/141318
+#EXTINF:-1 tvg-id="" tvg-name="TR: VTV" tvg-logo="" group-title="TR | GENERAL VIP",VTV
+http://31.43.191.125:8080/restream/restream/141320
+#EXTINF:-1 tvg-id="" tvg-name="TR: YESILCAM TV" tvg-logo="" group-title="TR | GENERAL VIP",YESILCAM TV
+http://31.43.191.125:8080/restream/restream/141325
+#EXTINF:-1 tvg-id="" tvg-name="TR: YILDIZ EN TV" tvg-logo="" group-title="TR | GENERAL VIP",YILDIZ EN TV
+http://31.43.191.125:8080/restream/restream/141326
+#EXTINF:-1 tvg-id="" tvg-name="TR: YILDIZ TV" tvg-logo="" group-title="TR | GENERAL VIP",YILDIZ TV
+http://31.43.191.125:8080/restream/restream/141328
+#EXTINF:-1 tvg-id="" tvg-name="TR: ÜSKÜDAR ÜNIVERSITESI TV" tvg-logo="" group-title="TR | GENERAL VIP",ÜSKÜDAR ÜNIVERSITESI TV
+http://31.43.191.125:8080/restream/restream/141337
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN SPORTS 1 HD*" tvg-logo="https://docdog.top/logo/countries/turkey/beinsports1.png" group-title="TR | SPORT VIP",BEIN SPORTS 1
+http://31.43.191.125:8080/restream/restream/141359
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN SPORTS 1 HD" tvg-logo="https://docdog.top/logo/countries/turkey/beinsports1.png" group-title="TR | SPORT VIP",BEIN SPORTS 1
+http://31.43.191.125:8080/restream/restream/141361
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN SPORTS 2 HD" tvg-logo="https://docdog.top/logo/countries/turkey/beinsports2.png" group-title="TR | SPORT VIP",BEIN SPORTS 2
+http://31.43.191.125:8080/restream/restream/141363
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN SPORTS 3 HD" tvg-logo="https://docdog.top/logo/countries/turkey/beinsports3.png" group-title="TR | SPORT VIP",BEIN SPORTS 3
+http://31.43.191.125:8080/restream/restream/141365
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN SPORTS 4 FHD" tvg-logo="https://docdog.top/logo/countries/turkey/beinsports4.png" group-title="TR | SPORT VIP",BEIN SPORTS 4
+http://31.43.191.125:8080/restream/restream/141366
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN SPORTS 4 HD" tvg-logo="https://docdog.top/logo/countries/turkey/beinsports4.png" group-title="TR | SPORT VIP",BEIN SPORTS 4
+http://31.43.191.125:8080/restream/restream/141367
+#EXTINF:-1 tvg-id="" tvg-name="TR: S SPORT HD" tvg-logo="https://docdog.top/logo/countries/turkey/s-sport-tr.png" group-title="TR | SPORT VIP",S SPORT
+http://31.43.191.125:8080/restream/restream/141402
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT SPOR HD" tvg-logo="https://docdog.top/logo/countries/turkey/trt-spor-tr.png" group-title="TR | SPORT VIP",TRT SPOR
+http://31.43.191.125:8080/restream/restream/141449
+#EXTINF:-1 tvg-id="" tvg-name="TR: TRT SPOR YILDIZ FHD" tvg-logo="" group-title="TR | SPORT VIP",TRT SPOR YILDIZ
+http://31.43.191.125:8080/restream/restream/141451
 #EXTINF:-1 tvg-id="" tvg-name="TR: A SPOR FHD" tvg-logo="https://docdog.top/logo/countries/turkey/a-spor-tr.png" group-title="TR | SPORT VIP",A SPOR
 http://31.43.191.125:8080/restream/restream/141348
-#EXTINF:-1 tvg-id="" tvg-name="TR: SALON 1 HD" tvg-logo="https://docdog.top/logo/countries/turkey/salon1.png" group-title="TR | CINEMA VIP",SALON 1
-http://31.43.191.125:8080/restream/restream/141796
-#EXTINF:-1 tvg-id="" tvg-name="TR: SINEMA NOSTALJIA HD" tvg-logo="" group-title="TR | CINEMA VIP",SINEMA NOSTALJIA
-http://31.43.191.125:8080/restream/restream/141804
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN CONNECT HD 1" tvg-logo="" group-title="TR | SPORT VIP",BEIN CONNECT 1
+http://31.43.191.125:8080/restream/restream/141352
+#EXTINF:-1 tvg-id="" tvg-name="TR: BEIN BOX OFFICE 1 HD" tvg-logo="https://docdog.top/logo/countries/turkey/bein-box-office-1-tr.png" group-title="TR | CINEMA VIP",BEIN BOX OFFICE 1
+http://31.43.191.125:8080/restream/restream/141464
+#EXTINF:-1 tvg-id="" tvg-name="TR: FOX CRIME HD" tvg-logo="https://docdog.top/logo/countries/turkey/foxcrime.png" group-title="TR | CINEMA VIP",FOX CRIME
+http://31.43.191.125:8080/restream/restream/141647
+#EXTINF:-1 tvg-id="" tvg-name="TR: FOX TV FHD" tvg-logo="" group-title="TR | CINEMA VIP",FOX TV
+http://31.43.191.125:8080/restream/restream/141651
+#EXTINF:-1 tvg-id="" tvg-name="TR: REDBOX SINEMA TURK  2 HD" tvg-logo="" group-title="TR | CINEMA VIP",REDBOX SINEMA TURK 2
+http://31.43.191.125:8080/restream/restream/141795
+#EXTINF:-1 tvg-id="" tvg-name="TR: SALON 2 HD" tvg-logo="" group-title="TR | CINEMA VIP",SALON 2
+http://31.43.191.125:8080/restream/restream/141797
+#EXTINF:-1 tvg-id="" tvg-name="TR: SALON 3 HD" tvg-logo="" group-title="TR | CINEMA VIP",SALON 3
+http://31.43.191.125:8080/restream/restream/141798
 #EXTINF:-1 tvg-id="" tvg-name="TR: SINEMA TV 1002 HD" tvg-logo="" group-title="TR | CINEMA VIP",SINEMA TV 1002
 http://31.43.191.125:8080/restream/restream/141807
+#EXTINF:-1 tvg-id="" tvg-name="TR: SINEMA TV 2 FHD" tvg-logo="" group-title="TR | CINEMA VIP",SINEMA TV 2
+http://31.43.191.125:8080/restream/restream/141809
+#EXTINF:-1 tvg-id="" tvg-name="TR: SINEMA TV AILE 2 FHD" tvg-logo="" group-title="TR | CINEMA VIP",SINEMA TV AILE 2
+http://31.43.191.125:8080/restream/restream/141811
+#EXTINF:-1 tvg-id="" tvg-name="TR: SINEMA TV YERLI" tvg-logo="" group-title="TR | CINEMA VIP",SINEMA TV YERLI
+http://31.43.191.125:8080/restream/restream/141819
 #EXTINF:-1 tvg-id="" tvg-name="TR: SLTV GOLD HD" tvg-logo="" group-title="TR | CINEMA VIP",SLTV GOLD
 http://31.43.191.125:8080/restream/restream/141843
-#EXTINF:-1 tvg-id="" tvg-name="TR: SLTV PREMIUM HD" tvg-logo="" group-title="TR | CINEMA VIP",SLTV PREMIUM
-http://31.43.191.125:8080/restream/restream/141848
-#EXTINF:-1 tvg-id="" tvg-name="TR: SLTV YESILCAM 2" tvg-logo="" group-title="TR | CINEMA VIP",SLTV YESILCAM 2
-http://31.43.191.125:8080/restream/restream/141851
-#EXTINF:-1 tvg-id="" tvg-name="TR: DISCOVERY SCIENCE HD" tvg-logo="https://docdog.top/logo/countries/turkey/discoveryscience.png" group-title="TR | ENTERTAINMENT VIP",DISCOVERY SCIENCE
-http://31.43.191.125:8080/restream/restream/141863
-#EXTINF:-1 tvg-id="" tvg-name="TR: CARTOON NETWORK" tvg-logo="https://asiagrandiptv.us/logo/cartoonnetwork.png" group-title="TR | KIDS VIP",CARTOON NETWORK
-http://31.43.191.125:8080/restream/restream/141894
-#EXTINF:-1 tvg-id="" tvg-name="TR: DISNEY JUNIOR HD" tvg-logo="" group-title="TR | KIDS VIP",DISNEY JUNIOR
-http://31.43.191.125:8080/restream/restream/141901
+#EXTINF:-1 tvg-id="" tvg-name="TR: SLTV KEMAL SUNAL" tvg-logo="" group-title="TR | CINEMA VIP",SLTV KEMAL SUNAL
+http://31.43.191.125:8080/restream/restream/141844
+#EXTINF:-1 tvg-id="" tvg-name="TR: SLTV YESILCAM 1" tvg-logo="" group-title="TR | CINEMA VIP",SLTV YESILCAM 1
+http://31.43.191.125:8080/restream/restream/141850
+#EXTINF:-1 tvg-id="" tvg-name="TR: DISCOVERY ID HD" tvg-logo="https://docdog.top/logo/countries/turkey/discoveryidx.png" group-title="TR | ENTERTAINMENT VIP",DISCOVERY ID
+http://31.43.191.125:8080/restream/restream/141862
+#EXTINF:-1 tvg-id="" tvg-name="TR: DISCOVERY TURBO EXTRA HD" tvg-logo="" group-title="TR | ENTERTAINMENT VIP",DISCOVERY TURBO EXTRA
+http://31.43.191.125:8080/restream/restream/141865
+#EXTINF:-1 tvg-id="" tvg-name="TR: FASHION TV" tvg-logo="" group-title="TR | ENTERTAINMENT VIP",FASHION TV
+http://31.43.191.125:8080/restream/restream/141866
+#EXTINF:-1 tvg-id="" tvg-name="TR: NATIONAL GEO HD" tvg-logo="" group-title="TR | ENTERTAINMENT VIP",NATIONAL GEO
+http://31.43.191.125:8080/restream/restream/141869
+#EXTINF:-1 tvg-id="" tvg-name="TR: NATIONAL GEO PEOPLE" tvg-logo="" group-title="TR | ENTERTAINMENT VIP",NATIONAL GEO PEOPLE
+http://31.43.191.125:8080/restream/restream/141870
+#EXTINF:-1 tvg-id="" tvg-name="TR: SHOW TV FHD" tvg-logo="https://docdog.top/logo/countries/turkey/show-tr.png" group-title="TR | ENTERTAINMENT VIP",SHOW TV
+http://31.43.191.125:8080/restream/restream/141880
+#EXTINF:-1 tvg-id="" tvg-name="TR: VIASAT HISTORY" tvg-logo="https://docdog.top/logo/countries/turkey/viasathistory.png" group-title="TR | ENTERTAINMENT VIP",VIASAT HISTORY
+http://31.43.191.125:8080/restream/restream/141887
+#EXTINF:-1 tvg-id="" tvg-name="TR: VIASAT NATURE/HISTORY FHD" tvg-logo="" group-title="TR | ENTERTAINMENT VIP",VIASAT NATURE HISTORY
+http://31.43.191.125:8080/restream/restream/141888
+#EXTINF:-1 tvg-id="" tvg-name="TR: ANIMATION 1 HD" tvg-logo="" group-title="TR | KIDS VIP",ANIMATION 1
+http://31.43.191.125:8080/restream/restream/141889
+#EXTINF:-1 tvg-id="" tvg-name="TR: BABY FIRST HD" tvg-logo="" group-title="TR | KIDS VIP",BABY FIRST
+http://31.43.191.125:8080/restream/restream/141892
+#EXTINF:-1 tvg-id="" tvg-name="TR: BABY TV" tvg-logo="https://docdog.top/logo/countries/turkey/babytv.png" group-title="TR | KIDS VIP",BABY TV
+http://31.43.191.125:8080/restream/restream/141893
+#EXTINF:-1 tvg-id="" tvg-name="TR: CBEEBIES HD" tvg-logo="" group-title="TR | KIDS VIP",CBEEBIES
+http://31.43.191.125:8080/restream/restream/141896
+#EXTINF:-1 tvg-id="" tvg-name="TR: COCUK SMART HD" tvg-logo="" group-title="TR | KIDS VIP",COCUK SMART
+http://31.43.191.125:8080/restream/restream/141897
+#EXTINF:-1 tvg-id="" tvg-name="TR: DISNEY XD" tvg-logo="" group-title="TR | KIDS VIP",DISNEY XD
+http://31.43.191.125:8080/restream/restream/141903
+#EXTINF:-1 tvg-id="" tvg-name="TR: IFLIX ANIMASYON HD" tvg-logo="" group-title="TR | KIDS VIP",IFLIX ANIMASYON
+http://31.43.191.125:8080/restream/restream/141910
 #EXTINF:-1 tvg-id="" tvg-name="TR: MINIKA GO TV" tvg-logo="" group-title="TR | KIDS VIP",MINIKA GO TV
 http://31.43.191.125:8080/restream/restream/141922
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT BUNDESLIGA 6 720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_BUNDESLIGA_6_720P.png" group-title="DE | BUNDESLIGA HD",DE SKY SPORT BUNDESLIGA 6
-http://31.43.191.125:8080/restream/restream/134779
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT BUNDESLIGA 8 720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_BUNDESLIGA_8_720P.png" group-title="DE | BUNDESLIGA HD",DE SKY SPORT BUNDESLIGA 8
-http://31.43.191.125:8080/restream/restream/134782
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT BUNDESLIGA 7" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_BUNDESLIGA_7_HD.png" group-title="DE | BUNDESLIGA",DE SKY SPORT BUNDESLIGA 7
-http://31.43.191.125:8080/restream/restream/134792
-#EXTINF:-1 tvg-id="" tvg-name="DE: HEIMATKANAL" tvg-logo="https://docdog.top/logo/countries/germany/new/HEIMATKANAL.png" group-title="DE | CINEMA SERIEN",DE HEIMATKANAL
-http://31.43.191.125:8080/restream/restream/134801
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY ATLANTIC" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_ATLANTIC_HD.png" group-title="DE | CINEMA SERIEN",DE SKY ATLANTIC
-http://31.43.191.125:8080/restream/restream/134809
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY CINEMA FAMILY" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_CINEMA_FAMILY_HD.png" group-title="DE | CINEMA SERIEN",DE SKY CINEMA FAMILY
-http://31.43.191.125:8080/restream/restream/134812
-#EXTINF:-1 tvg-id="" tvg-name="DE: SYFY" tvg-logo="https://docdog.top/logo/countries/germany/new/SYFY_HD.png" group-title="DE | CINEMA SERIEN",DE SYFY
-http://31.43.191.125:8080/restream/restream/134821
-#EXTINF:-1 tvg-id="" tvg-name="DE: DAZN | DAZN 1" tvg-logo="https://docdog.top/logo/countries/germany/new/DAZN_DE_DAZN_1.png" group-title="DE | DAZN EVENT",DE DAZN DAZN 1
-http://31.43.191.125:8080/restream/restream/134829
-#EXTINF:-1 tvg-id="" tvg-name="DE: DAZN | EVENT 7" tvg-logo="https://docdog.top/logo/countries/germany/new/DAZN_DE_EVENT_7.png" group-title="DE | DAZN EVENT",DE DAZN EVENT 7
-http://31.43.191.125:8080/restream/restream/134857
-#EXTINF:-1 tvg-id="" tvg-name="DE: DAZN A | EVENT 4" tvg-logo="https://docdog.top/logo/countries/germany/new/DAZN_A_DE_EVENT_4.png" group-title="DE | DAZN EVENT",DE DAZN A EVENT 4
-http://31.43.191.125:8080/restream/restream/134884
-#EXTINF:-1 tvg-id="" tvg-name="DE: EWTN KATHOLISCHES TV" tvg-logo="https://docdog.top/logo/countries/germany/new/EWTN_KATHOLISCHES_TV_HD.png" group-title="DE | DEUTSCHLAND",DE EWTN KATHOLISCHES TV
-http://31.43.191.125:8080/restream/restream/134930
-#EXTINF:-1 tvg-id="" tvg-name="DE: HSE EXTRA" tvg-logo="https://docdog.top/logo/countries/germany/new/HSE_EXTRA_HD.png" group-title="DE | DEUTSCHLAND",DE HSE EXTRA
-http://31.43.191.125:8080/restream/restream/134935
-#EXTINF:-1 tvg-id="" tvg-name="DE: HSE24 TREND" tvg-logo="https://docdog.top/logo/countries/germany/new/HSE24_TREND.png" group-title="DE | DEUTSCHLAND",DE HSE24 TREND
-http://31.43.191.125:8080/restream/restream/134937
-#EXTINF:-1 tvg-id="" tvg-name="DE: KABEL EINS" tvg-logo="https://docdog.top/logo/countries/germany/new/KABEL_EINS_HD.png" group-title="DE | DEUTSCHLAND",DE KABEL EINS
-http://31.43.191.125:8080/restream/restream/134945
-#EXTINF:-1 tvg-id="" tvg-name="DE: KIKA" tvg-logo="https://docdog.top/logo/countries/germany/new/KIKA_HD.png" group-title="DE | DEUTSCHLAND",DE KIKA
-http://31.43.191.125:8080/restream/restream/134946
-#EXTINF:-1 tvg-id="" tvg-name="DE: MDR THÜRINGEN" tvg-logo="https://docdog.top/logo/countries/germany/new/MDR_THURINGEN_HD.png" group-title="DE | DEUTSCHLAND",DE MDR THÜRINGEN
-http://31.43.191.125:8080/restream/restream/134950
-#EXTINF:-1 tvg-id="" tvg-name="DE: MARCO POLO TV" tvg-logo="https://docdog.top/logo/countries/germany/new/MARCO_POLO_TV_HD.png" group-title="DE | DEUTSCHLAND",DE MARCO POLO TV
-http://31.43.191.125:8080/restream/restream/134953
-#EXTINF:-1 tvg-id="" tvg-name="DE: NITRO" tvg-logo="https://docdog.top/logo/countries/germany/new/NITRO_HD.png" group-title="DE | DEUTSCHLAND",DE NITRO
-http://31.43.191.125:8080/restream/restream/134959
-#EXTINF:-1 tvg-id="" tvg-name="DE: NOW US" tvg-logo="https://docdog.top/logo/countries/germany/new/NOW_US.png" group-title="DE | DEUTSCHLAND",DE NOW US
-http://31.43.191.125:8080/restream/restream/134960
-#EXTINF:-1 tvg-id="" tvg-name="DE: OTVA" tvg-logo="https://docdog.top/logo/countries/germany/new/OTVA_HD.png" group-title="DE | DEUTSCHLAND",DE OTVA
-http://31.43.191.125:8080/restream/restream/134963
-#EXTINF:-1 tvg-id="" tvg-name="DE: RTL LIVING" tvg-logo="https://docdog.top/logo/countries/germany/new/RTL_LIVING.png" group-title="DE | DEUTSCHLAND",DE RTL LIVING
-http://31.43.191.125:8080/restream/restream/134974
-#EXTINF:-1 tvg-id="" tvg-name="DE: RTLUP" tvg-logo="https://docdog.top/logo/countries/germany/new/RTLUP_HD.png" group-title="DE | DEUTSCHLAND",DE RTLUP
-http://31.43.191.125:8080/restream/restream/134977
-#EXTINF:-1 tvg-id="" tvg-name="DE: SAT.1 GOLD" tvg-logo="https://docdog.top/logo/countries/germany/new/SAT_1_GOLD_HD.png" group-title="DE | DEUTSCHLAND",DE SAT 1 GOLD
-http://31.43.191.125:8080/restream/restream/134981
-#EXTINF:-1 tvg-id="" tvg-name="DE: SR FERNSEHEN" tvg-logo="https://docdog.top/logo/countries/germany/new/SR_FERNSEHEN_HD.png" group-title="DE | DEUTSCHLAND",DE SR FERNSEHEN
-http://31.43.191.125:8080/restream/restream/134986
-#EXTINF:-1 tvg-id="" tvg-name="DE: TLC" tvg-logo="https://docdog.top/logo/countries/germany/new/TLC_HD.png" group-title="DE | DEUTSCHLAND",DE TLC
-http://31.43.191.125:8080/restream/restream/134996
-#EXTINF:-1 tvg-id="" tvg-name="DE: WDR HD AACHEN" tvg-logo="https://docdog.top/logo/countries/germany/new/WDR_HD_AACHEN.png" group-title="DE | DEUTSCHLAND",DE WDR AACHEN
-http://31.43.191.125:8080/restream/restream/135001
-#EXTINF:-1 tvg-id="" tvg-name="DE: WDR HD DÜSSELDORF" tvg-logo="https://docdog.top/logo/countries/germany/new/WDR_HD_DUSSELDORF.png" group-title="DE | DEUTSCHLAND",DE WDR DÜSSELDORF
-http://31.43.191.125:8080/restream/restream/135006
-#EXTINF:-1 tvg-id="" tvg-name="DE: ZDFNEO" tvg-logo="https://docdog.top/logo/countries/germany/new/ZDFNEO_HD.png" group-title="DE | DEUTSCHLAND",DE ZDFNEO
-http://31.43.191.125:8080/restream/restream/135017
-#EXTINF:-1 tvg-id="" tvg-name="DE: KABEL 1" tvg-logo="https://docdog.top/logo/countries/germany/new/KABEL_1_HD.png" group-title="DE | DEUTSCHLAND",DE KABEL 1
-http://31.43.191.125:8080/restream/restream/135021
-#EXTINF:-1 tvg-id="" tvg-name="DE: PEARL.TV HD SHOP" tvg-logo="https://docdog.top/logo/countries/germany/new/PEARL_TV_HD_SHOP.png" group-title="DE | DEUTSCHLAND",DE SHOP
-http://31.43.191.125:8080/restream/restream/135025
-#EXTINF:-1 tvg-id="" tvg-name="DE: BERGBLICK" tvg-logo="https://docdog.top/logo/countries/germany/new/BERGBLICK.png" group-title="DE | DOKU",DE BERGBLICK
-http://31.43.191.125:8080/restream/restream/135035
-#EXTINF:-1 tvg-id="" tvg-name="DE: CURIOSITY CHANNEL" tvg-logo="https://docdog.top/logo/countries/germany/new/CURIOSITY_CHANNEL_HD.png" group-title="DE | DOKU",DE CURIOSITY CHANNEL
-http://31.43.191.125:8080/restream/restream/135038
-#EXTINF:-1 tvg-id="" tvg-name="DE: NATGEO" tvg-logo="https://docdog.top/logo/countries/germany/new/NATGEO.png" group-title="DE | DOKU",DE NATGEO
-http://31.43.191.125:8080/restream/restream/135049
-#EXTINF:-1 tvg-id="" tvg-name="DE: ONE TERRA" tvg-logo="https://docdog.top/logo/countries/germany/new/ONE_TERRA.png" group-title="DE | DOKU",DE ONE TERRA
-http://31.43.191.125:8080/restream/restream/135052
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY DOCUMENTARIES" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_DOCUMENTARIES_HD.png" group-title="DE | DOKU",DE SKY DOCUMENTARIES
-http://31.43.191.125:8080/restream/restream/135054
-#EXTINF:-1 tvg-id="" tvg-name="DE: WAIDWERK" tvg-logo="https://docdog.top/logo/countries/germany/new/WAIDWERK.png" group-title="DE | DOKU",DE WAIDWERK
-http://31.43.191.125:8080/restream/restream/135060
-#EXTINF:-1 tvg-id="" tvg-name="DE: WELT DER WUNDER" tvg-logo="https://docdog.top/logo/countries/germany/new/WELT_DER_WUNDER.png" group-title="DE | DOKU",DE WELT DER WUNDER
-http://31.43.191.125:8080/restream/restream/135061
-#EXTINF:-1 tvg-id="" tvg-name="DE: XPLORE" tvg-logo="https://docdog.top/logo/countries/germany/new/XPLORE.png" group-title="DE | DOKU",DE XPLORE
-http://31.43.191.125:8080/restream/restream/135062
-#EXTINF:-1 tvg-id="" tvg-name="DE: ZDFINFO" tvg-logo="https://docdog.top/logo/countries/germany/new/ZDFINFO_HD.png" group-title="DE | DOKU",DE ZDFINFO
-http://31.43.191.125:8080/restream/restream/135063
-#EXTINF:-1 tvg-id="" tvg-name="DE: DYN | SPORT 5" tvg-logo="https://docdog.top/logo/countries/de/DYN.png" group-title="DE | DYN SPORT",DE DYN SPORT 5
-http://31.43.191.125:8080/restream/restream/135069
-#EXTINF:-1 tvg-id="" tvg-name="DE: DYN | SPORT 7" tvg-logo="https://docdog.top/logo/countries/de/DYN.png" group-title="DE | DYN SPORT",DE DYN SPORT 7
-http://31.43.191.125:8080/restream/restream/135071
-#EXTINF:-1 tvg-id="" tvg-name="DE: DELUXE DANCE" tvg-logo="https://docdog.top/logo/countries/germany/new/DELUXE_DANCE.png" group-title="DE | MUSIK",DE DELUXE DANCE
-http://31.43.191.125:8080/restream/restream/135193
-#EXTINF:-1 tvg-id="" tvg-name="DE: DELUXE MUSIC" tvg-logo="https://docdog.top/logo/countries/germany/new/DELUXE_MUSIC_HD.png" group-title="DE | MUSIK",DE DELUXE MUSIC
-http://31.43.191.125:8080/restream/restream/135196
-#EXTINF:-1 tvg-id="" tvg-name="DE: GUTE LAUNE" tvg-logo="https://docdog.top/logo/countries/germany/new/GUTE_LAUNE.png" group-title="DE | MUSIK",DE GUTE LAUNE
-http://31.43.191.125:8080/restream/restream/135201
-#EXTINF:-1 tvg-id="" tvg-name="DE: JUKEBOX" tvg-logo="https://docdog.top/logo/countries/germany/new/JUKEBOX.png" group-title="DE | MUSIK",DE JUKEBOX
-http://31.43.191.125:8080/restream/restream/135202
-#EXTINF:-1 tvg-id="" tvg-name="DE: MTV" tvg-logo="https://docdog.top/logo/countries/germany/new/MTV_HD.png" group-title="DE | MUSIK",DE MTV
-http://31.43.191.125:8080/restream/restream/135207
-#EXTINF:-1 tvg-id="" tvg-name="DE: VOLKSMUSIK.TV" tvg-logo="https://docdog.top/logo/countries/germany/new/VOLKSMUSIK_TV.png" group-title="DE | MUSIK",DE
-http://31.43.191.125:8080/restream/restream/135218
-#EXTINF:-1 tvg-id="" tvg-name="DE: EURONEWS DEUTSCH" tvg-logo="https://docdog.top/logo/countries/germany/new/EURONEWS_DEUTSCH_HD.png" group-title="DE | NACHRICHTEN",DE EURONEWS DEUTSCH
-http://31.43.191.125:8080/restream/restream/135230
-#EXTINF:-1 tvg-id="" tvg-name="DE: OBERPFALZ TV" tvg-logo="https://docdog.top/logo/countries/germany/new/OBERPFALZ_TV_HD.png" group-title="DE | NACHRICHTEN",DE OBERPFALZ TV
-http://31.43.191.125:8080/restream/restream/135233
-#EXTINF:-1 tvg-id="" tvg-name="DE: N-TV" tvg-logo="https://docdog.top/logo/countries/germany/new/N-TV_HD.png" group-title="DE | NACHRICHTEN",DE N TV
-http://31.43.191.125:8080/restream/restream/135238
-#EXTINF:-1 tvg-id="" tvg-name="DE: TAGESSCHAU24" tvg-logo="https://docdog.top/logo/countries/germany/new/TAGESSCHAU24_HD.png" group-title="DE | NACHRICHTEN",DE TAGESSCHAU24
-http://31.43.191.125:8080/restream/restream/135239
-#EXTINF:-1 tvg-id="" tvg-name="DE: WETTER.COM TV" tvg-logo="https://docdog.top/logo/countries/germany/new/WETTER_COM_TV.png" group-title="DE | NACHRICHTEN",DE TV
-http://31.43.191.125:8080/restream/restream/135240
-#EXTINF:-1 tvg-id="" tvg-name="DE: BADEN TV" tvg-logo="https://docdog.top/logo/countries/germany/new/BADEN_TV.png" group-title="DE | REGIONAL",DE BADEN TV
-http://31.43.191.125:8080/restream/restream/135241
-#EXTINF:-1 tvg-id="" tvg-name="DE: BADEN TV SÜD" tvg-logo="https://docdog.top/logo/countries/germany/new/BADEN_TV_SUD.png" group-title="DE | REGIONAL",DE BADEN TV SÜD
-http://31.43.191.125:8080/restream/restream/135242
-#EXTINF:-1 tvg-id="" tvg-name="DE: FRIESISCHER RUNDFUNK" tvg-logo="https://docdog.top/logo/countries/germany/new/FRIESISCHER_RUNDFUNK.png" group-title="DE | REGIONAL",DE FRIESISCHER RUNDFUNK
-http://31.43.191.125:8080/restream/restream/135244
-#EXTINF:-1 tvg-id="" tvg-name="DE: LAUSITZWELLE" tvg-logo="https://docdog.top/logo/countries/germany/new/LAUSITZWELLE.png" group-title="DE | REGIONAL",DE LAUSITZWELLE
-http://31.43.191.125:8080/restream/restream/135248
-#EXTINF:-1 tvg-id="" tvg-name="DE: MDF.1 FERNSEHEN" tvg-logo="https://docdog.top/logo/countries/germany/new/MDF_1_FERNSEHEN.png" group-title="DE | REGIONAL",DE MDF 1 FERNSEHEN
-http://31.43.191.125:8080/restream/restream/135249
-#EXTINF:-1 tvg-id="" tvg-name="DE: NRWISION" tvg-logo="https://docdog.top/logo/countries/germany/new/NRWISION.png" group-title="DE | REGIONAL",DE NRWISION
-http://31.43.191.125:8080/restream/restream/135253
-#EXTINF:-1 tvg-id="" tvg-name="DE: OBERPFALZ TV" tvg-logo="https://docdog.top/logo/countries/germany/new/OBERPFALZ_TV.png" group-title="DE | REGIONAL",DE OBERPFALZ TV
-http://31.43.191.125:8080/restream/restream/135259
-#EXTINF:-1 tvg-id="" tvg-name="DE: RFH REGIONALFERNSEHEN HARZ" tvg-logo="https://docdog.top/logo/countries/germany/new/RFH_REGIONALFERNSEHEN_HARZ.png" group-title="DE | REGIONAL",DE RFH REGIONALFERNSEHEN HARZ
-http://31.43.191.125:8080/restream/restream/135260
-#EXTINF:-1 tvg-id="" tvg-name="DE: REGIO TV" tvg-logo="https://docdog.top/logo/countries/germany/new/REGIO_TV.png" group-title="DE | REGIONAL",DE REGIO TV
-http://31.43.191.125:8080/restream/restream/135268
-#EXTINF:-1 tvg-id="" tvg-name="DE: TV MITTELRHEIN" tvg-logo="https://docdog.top/logo/countries/germany/new/TV_MITTELRHEIN.png" group-title="DE | REGIONAL",DE TV MITTELRHEIN
-http://31.43.191.125:8080/restream/restream/135276
-#EXTINF:-1 tvg-id="" tvg-name="DE: TV WESTSACHSEN" tvg-logo="https://docdog.top/logo/countries/germany/new/TV_WESTSACHSEN.png" group-title="DE | REGIONAL",DE TV WESTSACHSEN
-http://31.43.191.125:8080/restream/restream/135278
-#EXTINF:-1 tvg-id="" tvg-name="DE: RTL+ EVENT 2" tvg-logo="https://docdog.top/logo/countries/germany/new/RTL_EVENT_2_HD.png" group-title="DE | RTL+ LIVE",DE RTL EVENT 2
-http://31.43.191.125:8080/restream/restream/135288
-#EXTINF:-1 tvg-id="" tvg-name="DE: RTL+ EVENT 12" tvg-logo="https://docdog.top/logo/countries/germany/new/RTL_EVENT_12_HD.png" group-title="DE | RTL+ LIVE",DE RTL EVENT 12
-http://31.43.191.125:8080/restream/restream/135298
-#EXTINF:-1 tvg-id="" tvg-name="DE: RTL+ EVENT 15" tvg-logo="https://docdog.top/logo/countries/germany/new/RTL_EVENT_15_HD.png" group-title="DE | RTL+ LIVE",DE RTL EVENT 15
-http://31.43.191.125:8080/restream/restream/135301
-#EXTINF:-1 tvg-id="" tvg-name="DE: B | RTL+ EVENT 2" tvg-logo="https://docdog.top/logo/countries/germany/new/B_RTL_EVENT_2_HD.png" group-title="DE | RTL+ LIVE",DE B RTL EVENT 2
-http://31.43.191.125:8080/restream/restream/135317
-#EXTINF:-1 tvg-id="" tvg-name="DE: B | RTL+ EVENT 4" tvg-logo="https://docdog.top/logo/countries/germany/new/B_RTL_EVENT_4_HD.png" group-title="DE | RTL+ LIVE",DE B RTL EVENT 4
-http://31.43.191.125:8080/restream/restream/135319
-#EXTINF:-1 tvg-id="" tvg-name="DE: B | RTL+ EVENT 8" tvg-logo="https://docdog.top/logo/countries/germany/new/B_RTL_EVENT_8_HD.png" group-title="DE | RTL+ LIVE",DE B RTL EVENT 8
-http://31.43.191.125:8080/restream/restream/135323
-#EXTINF:-1 tvg-id="" tvg-name="DE: B | RTL+ EVENT 12" tvg-logo="https://docdog.top/logo/countries/germany/new/B_RTL_EVENT_12_HD.png" group-title="DE | RTL+ LIVE",DE B RTL EVENT 12
-http://31.43.191.125:8080/restream/restream/135327
-#EXTINF:-1 tvg-id="" tvg-name="DE: B | RTL+ EVENT 14" tvg-logo="https://docdog.top/logo/countries/germany/new/B_RTL_EVENT_14_HD.png" group-title="DE | RTL+ LIVE",DE B RTL EVENT 14
-http://31.43.191.125:8080/restream/restream/135329
-#EXTINF:-1 tvg-id="" tvg-name="DE: B | RTL+ EVENT 15" tvg-logo="https://docdog.top/logo/countries/germany/new/B_RTL_EVENT_15_HD.png" group-title="DE | RTL+ LIVE",DE B RTL EVENT 15
-http://31.43.191.125:8080/restream/restream/135330
-#EXTINF:-1 tvg-id="" tvg-name="DE: EUROSPORT 2  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/EUROSPORT_2_720P.png" group-title="DE | MIX SPORT HD",DE EUROSPORT 2
-http://31.43.191.125:8080/restream/restream/135339
-#EXTINF:-1 tvg-id="" tvg-name="DE: MOTORVISION+ 720P" tvg-logo="https://docdog.top/logo/countries/germany/new/MOTORVISION_720P.png" group-title="DE | MIX SPORT HD",DE MOTORVISION
-http://31.43.191.125:8080/restream/restream/135340
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT GOLF  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_GOLF_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT GOLF
-http://31.43.191.125:8080/restream/restream/135342
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT MIX  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_MIX_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT MIX
-http://31.43.191.125:8080/restream/restream/135343
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT NEWS  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_NEWS_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT NEWS
-http://31.43.191.125:8080/restream/restream/135344
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT PREMIER LEAGUE  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_PREMIER_LEAGUE_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT PREMIER LEAGUE
-http://31.43.191.125:8080/restream/restream/135345
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT TENNIS  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_TENNIS_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT TENNIS
-http://31.43.191.125:8080/restream/restream/135346
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT TOP EVENT  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_TOP_EVENT_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT TOP EVENT
-http://31.43.191.125:8080/restream/restream/135347
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 1  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_1_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT 1
-http://31.43.191.125:8080/restream/restream/135348
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 10  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_10_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT 10
-http://31.43.191.125:8080/restream/restream/135349
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 6  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_6_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT 6
-http://31.43.191.125:8080/restream/restream/135354
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 7  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_7_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT 7
-http://31.43.191.125:8080/restream/restream/135355
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 8  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_8_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT 8
-http://31.43.191.125:8080/restream/restream/135356
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 9  720P" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_9_720P.png" group-title="DE | MIX SPORT HD",DE SKY SPORT 9
-http://31.43.191.125:8080/restream/restream/135357
-#EXTINF:-1 tvg-id="" tvg-name="DE: AUTO MOTOR UND SPORT" tvg-logo="https://docdog.top/logo/countries/germany/new/AUTO_MOTOR_UND_SPORT_HD.png" group-title="DE | MIX SPORT",DE AUTO MOTOR UND SPORT
-http://31.43.191.125:8080/restream/restream/135419
-#EXTINF:-1 tvg-id="" tvg-name="DE: DAZN FAST" tvg-logo="https://docdog.top/logo/countries/germany/new/DAZN_FAST.png" group-title="DE | MIX SPORT",DE DAZN FAST
-http://31.43.191.125:8080/restream/restream/135421
-#EXTINF:-1 tvg-id="" tvg-name="DE: DAZN RISE (NUR FRAUEN SPORT)" tvg-logo="https://docdog.top/logo/countries/germany/new/DAZN_RISE_NUR_FRAUEN_SPORT.png" group-title="DE | MIX SPORT",DE DAZN RISE
-http://31.43.191.125:8080/restream/restream/135422
-#EXTINF:-1 tvg-id="" tvg-name="DE: MOTORVISION+" tvg-logo="https://docdog.top/logo/countries/germany/new/MOTORVISION.png" group-title="DE | MIX SPORT",DE MOTORVISION
-http://31.43.191.125:8080/restream/restream/135431
-#EXTINF:-1 tvg-id="" tvg-name="DE: ORF SPORT+" tvg-logo="https://docdog.top/logo/countries/germany/new/ORF_SPORT_HD.png" group-title="DE | MIX SPORT",DE ORF SPORT
-http://31.43.191.125:8080/restream/restream/135432
-#EXTINF:-1 tvg-id="" tvg-name="DE: SERVUS TV MOTORSPORT" tvg-logo="https://docdog.top/logo/countries/germany/new/SERVUS_TV_MOTORSPORT_HD.png" group-title="DE | MIX SPORT",DE SERVUS TV MOTORSPORT
-http://31.43.191.125:8080/restream/restream/135434
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT PREMIER LEAGUE" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_PREMIER_LEAGUE.png" group-title="DE | MIX SPORT",DE SKY SPORT PREMIER LEAGUE
-http://31.43.191.125:8080/restream/restream/135439
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT TOP EVENT" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_TOP_EVENT.png" group-title="DE | MIX SPORT",DE SKY SPORT TOP EVENT
-http://31.43.191.125:8080/restream/restream/135441
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 1" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_1_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT 1
-http://31.43.191.125:8080/restream/restream/135442
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 2" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_2_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT 2
-http://31.43.191.125:8080/restream/restream/135443
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 3" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_3_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT 3
-http://31.43.191.125:8080/restream/restream/135444
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 4" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_4_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT 4
-http://31.43.191.125:8080/restream/restream/135445
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 8" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_8_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT 8
-http://31.43.191.125:8080/restream/restream/135449
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT 10" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_10_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT 10
-http://31.43.191.125:8080/restream/restream/135451
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT AUSTRIA 1" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_AUSTRIA_1_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT AUSTRIA 1
-http://31.43.191.125:8080/restream/restream/135452
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT AUSTRIA 2" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_AUSTRIA_2_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT AUSTRIA 2
-http://31.43.191.125:8080/restream/restream/135453
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT AUSTRIA 3" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_AUSTRIA_3_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT AUSTRIA 3
-http://31.43.191.125:8080/restream/restream/135454
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT AUSTRIA 4" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_AUSTRIA_4_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT AUSTRIA 4
-http://31.43.191.125:8080/restream/restream/135455
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT AUSTRIA 7" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_AUSTRIA_7_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT AUSTRIA 7
-http://31.43.191.125:8080/restream/restream/135458
-#EXTINF:-1 tvg-id="" tvg-name="DE: SKY SPORT AUSTRIA 8" tvg-logo="https://docdog.top/logo/countries/germany/new/SKY_SPORT_AUSTRIA_8_HD.png" group-title="DE | MIX SPORT",DE SKY SPORT AUSTRIA 8
-http://31.43.191.125:8080/restream/restream/135459
-#EXTINF:-1 tvg-id="" tvg-name="DE: SPORT 1" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT1_HD.png" group-title="DE | MIX SPORT",DE SPORT 1
-http://31.43.191.125:8080/restream/restream/135460
-#EXTINF:-1 tvg-id="" tvg-name="DE: SPORTDIGITAL EDGE" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORTDIGITAL_EDGE.png" group-title="DE | MIX SPORT",DE SPORTDIGITAL EDGE
-http://31.43.191.125:8080/restream/restream/135461
-#EXTINF:-1 tvg-id="" tvg-name="DE: SPORTDIGITAL FUSSBALL 2" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORTDIGITAL_FUSSBALL_2_HD.png" group-title="DE | MIX SPORT",DE SPORTDIGITAL FUSSBALL 2
-http://31.43.191.125:8080/restream/restream/135462
-#EXTINF:-1 tvg-id="" tvg-name="DE: SPORTDIGITAL FUSSBALL" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORTDIGITAL_FUSSBALL_HD.png" group-title="DE | MIX SPORT",DE SPORTDIGITAL FUSSBALL
-http://31.43.191.125:8080/restream/restream/135463
-#EXTINF:-1 tvg-id="" tvg-name="DE: MS SPORT" tvg-logo="https://docdog.top/logo/countries/germany/new/MS_SPORT.png" group-title="DE | MAGENTA EVENTS",DE MS SPORT
-http://31.43.191.125:8080/restream/restream/142260
-#EXTINF:-1 tvg-id="" tvg-name="DE: MAGENTA SPORT" tvg-logo="https://docdog.top/logo/countries/germany/new/MAGENTA_SPORT.png" group-title="DE | MAGENTA EVENTS",DE MAGENTA SPORT
-http://31.43.191.125:8080/restream/restream/142261
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 1" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_1_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 1
-http://31.43.191.125:8080/restream/restream/142262
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 2" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_2_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 2
-http://31.43.191.125:8080/restream/restream/142263
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 3" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_3_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 3
-http://31.43.191.125:8080/restream/restream/142264
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 5" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_5_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 5
-http://31.43.191.125:8080/restream/restream/142266
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 7" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_7_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 7
-http://31.43.191.125:8080/restream/restream/142268
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 8" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_8_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 8
-http://31.43.191.125:8080/restream/restream/142269
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 11" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_11_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 11
-http://31.43.191.125:8080/restream/restream/142272
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 12" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_12_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 12
-http://31.43.191.125:8080/restream/restream/142273
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 14" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_14_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 14
-http://31.43.191.125:8080/restream/restream/142275
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 15" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_15_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 15
-http://31.43.191.125:8080/restream/restream/142276
-#EXTINF:-1 tvg-id="" tvg-name="DE: MYTEAMTV | SPORT 16" tvg-logo="https://docdog.top/logo/countries/germany/new/SPORT_16_-_MYTEAMTV.png" group-title="DE | MAGENTA EVENTS",DE MYTEAMTV SPORT 16
-http://31.43.191.125:8080/restream/restream/142277
-#EXTINF:-1 tvg-id="" tvg-name="DE: BABYTV" tvg-logo="https://docdog.top/logo/countries/germany/new/BABYTV_MULTILANGUAGE.png" group-title="DE | KINDER",DE BABYTV
-http://31.43.191.125:8080/restream/restream/147085
-#EXTINF:-1 tvg-id="" tvg-name="DE: CARTOON NETWORK" tvg-logo="https://docdog.top/logo/countries/germany/new/CARTOON_NETWORK_HD.png" group-title="DE | KINDER",DE CARTOON NETWORK
-http://31.43.191.125:8080/restream/restream/147086
-#EXTINF:-1 tvg-id="" tvg-name="DE: CARTOONITO" tvg-logo="https://docdog.top/logo/countries/germany/new/CARTOONITO.png" group-title="DE | KINDER",DE CARTOONITO
-http://31.43.191.125:8080/restream/restream/147087
-#EXTINF:-1 tvg-id="" tvg-name="DE: COMEDY CENTRAL" tvg-logo="https://docdog.top/logo/countries/germany/new/COMEDY_CENTRAL_HD.png" group-title="DE | KINDER",DE COMEDY CENTRAL
-http://31.43.191.125:8080/restream/restream/147088
-#EXTINF:-1 tvg-id="" tvg-name="DE: DISNEY CHANNEL" tvg-logo="https://docdog.top/logo/countries/germany/new/DISNEY_CHANNEL_HD.png" group-title="DE | KINDER",DE DISNEY CHANNEL
-http://31.43.191.125:8080/restream/restream/147089
-#EXTINF:-1 tvg-id="" tvg-name="DE: FIX & FOXI" tvg-logo="https://docdog.top/logo/countries/germany/new/FIX_FOXI.png" group-title="DE | KINDER",DE FIX FOXI
-http://31.43.191.125:8080/restream/restream/147091
-#EXTINF:-1 tvg-id="" tvg-name="DE: KIKA" tvg-logo="https://docdog.top/logo/countries/germany/new/KIKA_HD.png" group-title="DE | KINDER",DE KIKA
-http://31.43.191.125:8080/restream/restream/147092
-#EXTINF:-1 tvg-id="" tvg-name="DE: NICK JR." tvg-logo="https://docdog.top/logo/countries/germany/new/NICK_JR_.png" group-title="DE | KINDER",DE NICK JR
-http://31.43.191.125:8080/restream/restream/147093
-#EXTINF:-1 tvg-id="" tvg-name="DE: NICK/COMEDY CENTRAL+1" tvg-logo="https://docdog.top/logo/countries/germany/new/NICKCOMEDY_CENTRAL1_HD.png" group-title="DE | KINDER",DE NICK COMEDY CENTRAL 1
-http://31.43.191.125:8080/restream/restream/147094
-#EXTINF:-1 tvg-id="" tvg-name="DE: NICKTOONS" tvg-logo="https://docdog.top/logo/countries/germany/new/NICKTOONS.png" group-title="DE | KINDER",DE NICKTOONS
-http://31.43.191.125:8080/restream/restream/147095
-#EXTINF:-1 tvg-id="" tvg-name="DE: RIC TODAY" tvg-logo="https://docdog.top/logo/countries/germany/new/RIC_TODAY_HD.png" group-title="DE | KINDER",DE RIC TODAY
-http://31.43.191.125:8080/restream/restream/147097
-#EXTINF:-1 tvg-id="" tvg-name="DE: SUPER RTL" tvg-logo="https://docdog.top/logo/countries/germany/new/SUPER_RTL_HD.png" group-title="DE | KINDER",DE SUPER RTL
-http://31.43.191.125:8080/restream/restream/147098
-#EXTINF:-1 tvg-id="" tvg-name="DE: TOGGO PLUS" tvg-logo="https://docdog.top/logo/countries/germany/new/TOGGO_PLUS.png" group-title="DE | KINDER",DE TOGGO
-http://31.43.191.125:8080/restream/restream/147099
-#EXTINF:-1 tvg-id="" tvg-name="DE: Sky Select 1" tvg-logo="https://docdog.top/logo/countries/germany/Sky_Select.png" group-title="DE | CINEMA SERIEN",DE SKY SELECT 1
-http://31.43.191.125:8080/restream/restream/148911
+#EXTINF:-1 tvg-id="" tvg-name="TR: NICK JR" tvg-logo="https://docdog.top/logo/countries/turkey/nickjr.png" group-title="TR | KIDS VIP",NICK JR
+http://31.43.191.125:8080/restream/restream/141923
+#EXTINF:-1 tvg-id="" tvg-name="TR: NICKELODEON" tvg-logo="https://docdog.top/logo/countries/turkey/nickelodeon.png" group-title="TR | KIDS VIP",NICKELODEON
+http://31.43.191.125:8080/restream/restream/141924
 #EXTINF:-1 tvg-ID="ProSieben.de" tvg-name="|DE| PRO 7 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/pro-sieben-de.png" group-title="BOUQUET GERMANY",DE PRO 7
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11003
 #EXTINF:-1 tvg-ID="ProSieben.de" tvg-name="|DE| PRO 7 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/pro-sieben-de.png" group-title="BOUQUET GERMANY",DE PRO 7
@@ -3438,10 +3262,10 @@ http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11126
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11153
 #EXTINF:-1 tvg-ID="phoenix.de" tvg-name="|DE| PHOENIX HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/phoenix-de.png" group-title="BOUQUET GERMANY",DE PHOENIX
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11154
-#EXTINF:-1 tvg-ID="Heimatkanal.de" tvg-name="|DE| HEIMATKANAL HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/heimatkanal-de.png" group-title="BOUQUET GERMANY",DE HEIMATKANAL
-http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11155
 #EXTINF:-1 tvg-ID="ZDF.de" tvg-name="|DE| FOX HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/fox-de.png" group-title="BOUQUET GERMANY",DE FOX
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11156
+#EXTINF:-1 tvg-ID="" tvg-name="|DE| A&E HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/planete-plus-aventure-fr.png" group-title="BOUQUET GERMANY",DE A E
+http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11157
 #EXTINF:-1 tvg-ID="Kinowelt.de" tvg-name="|DE| KINO WELT HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/kinowelt-de.png" group-title="BOUQUET GERMANY",DE KINO WELT
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11159
 #EXTINF:-1 tvg-ID="SkyCinemaClassics.de" tvg-name="|DE| STINGRAY CLASSICA HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/stingray-classica-de.png" group-title="BOUQUET GERMANY",DE STINGRAY CLASSICA
@@ -3484,8 +3308,6 @@ http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11175
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11176
 #EXTINF:-1 tvg-ID="" tvg-name="|DE| SKY SPORT 8 HD" tvg-logo="https://upload.wikimedia.org/wikipedia/de/0/04/Sky_Sport_7_HD_Logo_2020.png" group-title="BOUQUET GERMANY",DE SKY SPORT 8
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11177
-#EXTINF:-1 tvg-ID="" tvg-name="|DE| SKY SPORT 9 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-icon-uk.png" group-title="BOUQUET GERMANY",DE SKY SPORT 9
-http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11127
 #EXTINF:-1 tvg-ID="" tvg-name="|DE| SKY SPORT 10 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-icon-uk.png" group-title="BOUQUET GERMANY",DE SKY SPORT 10
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11128
 #EXTINF:-1 tvg-ID="SkySportAustria.de" tvg-name="|DE| SKY SPORT AUSTRIA 1 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-icon-uk.png" group-title="BOUQUET GERMANY",DE SKY SPORT AUSTRIA 1
@@ -3560,6 +3382,8 @@ http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11215
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11216
 #EXTINF:-1 tvg-ID="Sportdigitalscooore.de" tvg-name="|DE| SKY SELECT 4 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/sky-select-4-alt-de.png" group-title="BOUQUET GERMANY",DE SKY SELECT 4
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11217
+#EXTINF:-1 tvg-ID="Sportdigitalscooore.de" tvg-name="|DE| SKY SELECT 5 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/sky-select-5-alt-de.png" group-title="BOUQUET GERMANY",DE SKY SELECT 5
+http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11218
 #EXTINF:-1 tvg-ID="Sky Sport Serie A 1" tvg-name="|DE| SKY SELECT 6 HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/sky-select-6-alt-de.png" group-title="BOUQUET GERMANY",DE SKY SELECT 6
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/11219
 #EXTINF:-1 tvg-ID="SuperRTL.de" tvg-name="|DE| RTL PLUS HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/rtl-plus-de.png" group-title="BOUQUET GERMANY",DE RTL
@@ -3568,6 +3392,156 @@ http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/265013071
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/265013438
 #EXTINF:-1 tvg-ID="" tvg-name="|DE| MTV HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/mtv-de.png" group-title="BOUQUET GERMANY",DE MTV
 http://hdlocal.de:8080/group-sky.ddns.net22/sH6JbvQNHVVD/265013766
+#EXTINF:-1 tvg-id="AfroturkTV.tr@SD",AFROTURK TV
+https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="BloombergHT.tr@SD",BLOOMBERG HT
+http://193.123.61.120:3000/kanal/bloomberght
+#EXTINF:-1 tvg-id="BloombergHT.tr@SD",BLOOMBERG HT
+https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8
+#EXTINF:-1 tvg-id="FortunaTV.tr@HD",FORTUNA TV
+https://edge.taksimbilisim.com/ftvturk/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="Haber61TV.tr@SD",HABER61 TV
+https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="KanalDDrama.tr@SD",KANAL D DRAMA
+http://190.93.224.42/KANAL-D-DRAMA/index.m3u8
+#EXTINF:-1 tvg-id="KanalDDrama.tr@SD",KANAL D DRAMA
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
+#EXTINF:-1 tvg-id="MinikaCocuk.tr@SD",MINIKA COCUK
+http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
+#EXTINF:-1 tvg-id="MinikaGo.tr@SD",MINIKA GO
+http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
+#EXTINF:-1 tvg-id="NaturalTV.tr@SD",NATURAL TV
+https://edge1.socialsmart.tv/naturaltv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="Sat7Turk.cy@SD",SAT7 TÜRK
+https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="24TV.tr@SD",TR24 TV
+https://tv.ensonhaber.com/tv24/tv24.m3u8
+#EXTINF:-1 tvg-id="TRTMuzik.tr@SD",TRT MUZIK
+https://stream8.cinerama.uz/1208/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@SD",TRT WORLD
+https://mumbai-edge.smartplaytv.in/TRTWorld/index.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@SD",TRT WORLD
+https://cdn.pishow.tv/ott/live/266/master.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr@SD",TRT WORLD
+https://fta.ektv.in/live/416/master.m3u8
+#EXTINF:-1 tvg-id="FlashHaber.tr" tvg-logo="https://i.ibb.co/F5FcvbZ/flash4ok.png" group-title="Ulusal",FLASH TV
+https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
+#EXTINF:-1 tvg-id="teleZEN.tv" tvg-logo="https://i.ibb.co/HTWLwcJB/n-Shot-20261003-233516627.png" group-title="Ulusal-Eğlence",TELEZEN
+https://telezen-stream.freesrv.com/telezen.m3u8
+#EXTINF:-1 tvg-id="Cine1.tr" tvg-logo="https://i.ibb.co/dsqy4ydp/logo.webp" group-title="Eglence",CINE 1 TV
+http://canliyayin.cine1.com.tr/memfs/cbaef080-a742-4644-9e9e-2b9f6a5103c3.m3u8
+#EXTINF:-1 tvg-id="A.SPOR.HD.tr" tvg-logo="https://i.ibb.co/20TJ9fJW/logo.png" group-title="Spor",A SPOR
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_720p.m3u8
+#EXTINF:-1 tvg-id="HTSpor.tr" tvg-logo="https://i.ibb.co/F0Tsz1v/htsportr.png" group-title="Spor",HT SPOR
+https://ciner-live.ercdn.net/htspor/htspor.m3u8
+#EXTINF:-1 tvg-id="KralPopTV.tr" tvg-logo="https://i.ibb.co/XrSQjckW/Kral-Poplogosu.png" group-title="Muzik",KRAL POP TV
+https://dogus.daioncdn.net/kralpoptv/kralpoptv.m3u8?app=kralpoptv_web
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",BİLGİLENDİRME
+https://raw.githubusercontent.com/kadirsener1/avva/refs/heads/main/Bilgilendirme.mp4
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Diğer",TIVIBU 4 İP
+https://65.108.239.207/t4/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 1 AVVA
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/95f0000dd0e/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 2
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein2/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 3
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein3/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 4
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein4/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",BEIN SPORTS 5
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/bein5/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",S SPORT 1
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssport1/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",S SPORT 2 AVVA
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssport2/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",S SPORT
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/ssportplus/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",SMART SPOR
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/smartsport1/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Avva",SMART SPOR 2
+https://avva.magnitude.workers.dev/?url=https://avvaupdate.com/smartsport2/index.m3u8?o=1%26e=1781703872%26tk=51d8cf311c0961e87873898f38494c8d
+#EXTINF:-1 tvg-id="bein_sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 2 ZEUS
+https://zeus324232.cfd/b2/index.txt
+#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 3 ZEUS
+https://zeus324232.cfd/b3/index.txt
+#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 4 ZEUS
+https://zeus324232.cfd/b4/index.txt
+#EXTINF:-1 tvg-id="bein_sport" tvg-name="BeIN Sport 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Spor-Neon",BEIN SPORT 5 ZEUS
+https://zeus324232.cfd/b5/index.txt
+#EXTINF:-1 tvg-id="ssport" tvg-name="S Sport" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/azfgva3.png" group-title="Spor-Neon",S SPORT 1
+https://zeus324232.cfd/s1/index.txt
+#EXTINF:-1 tvg-id="ssport" tvg-name="S Sport 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/bcnszq0.png" group-title="Spor-Neon",S SPORT 2
+https://zeus324232.cfd/s2/index.txt
+#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 1" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",SPOR SMART 1
+https://zeus324232.cfd/smart1/index.txt
+#EXTINF:-1 tvg-id="spor_smart" tvg-name="Spor Smart 2" tvg-language="Turkish" tvg-country="TR" tvg-logo="https://i.hizliresim.com/a8c6ywb.jpg" group-title="Spor-Neon",SPOR SMART 2
+https://zeus324232.cfd/smart2/index.txt
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png" group-title="Ulusal",TV 8 5
+https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_480p.m3u8?&sid=7tra76g4cefx&app=bf58ab52-4865-4c81-b223-26b41009801e&ce=3
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b5/NTV_logo.png" group-title="Haber",NTV
+https://livetv.work/play/tr/ntv.php
+#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",CNN TÜRK
+http://cdn.vizitv.workers.dev/12.m3u8
+#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",AKIT TV
+http://cdn.vizitv.workers.dev/56.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Haber",TH TÜRKHABER
+https://edge1.taksimbilisim.com/turkhaber/bant1/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",ÜRETEN TÜRKIYE
+https://live.euromediacenter.com/uretenturkiye/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="TR Spor",RED BULL TV
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="TR Spor",HORSE COUNTRY EN
+https://hnc-free-viewlift.amagi.tv/playlist720_p.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",ISVICRE TV
+https://tivi44.ozelip.com:3269/stream/play.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",LOVE NATURE EN
+https://aegis-cloudfront-1.tubi.video/6d6d0f24-8445-4b4c-bdf6-44f9e38beaa4/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",NATURE TIME FR
+https://bamusa-naturetime-emea-fra-rakuten.amagi.tv/playlist1080_pl.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",TRAVELXP EN
+https://travelxp-travelxp-1-nz.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="TR Spor" tvg-logo="https://i.imgur.com/FabFP5A.png" tvg-id="Dummy" ,TRACE SPORTS STARS
+https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="TR Spor",FIGHT BOX
+http://iptv.prosto.tv:7000/ch118/video.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://cdn-i.pr.trt.com.tr/trtportal/17936234.png" tvg-id="" ,TRT MÜZİK
+https://tv-trtmuzik.medya.trt.com.tr/master_1080.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.imgur.com/slwbux7.png" tvg-id="" ,NUMBER 1 AŞK
+http://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e18f9cea15_1/chunklist.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/FgCW885/pturkakustik.png" tvg-id="Dummy" ,POWER TÜRK AKUSTİK
+http://livetv.powerapp.com.tr/pturkakustik/akustik.smil/playlist.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/VLQ6cmV/plove.png" tvg-id="Dummy" ,POWER LOVE
+http://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png" tvg-id="Dummy" ,KNTV AZ
+https://cdn4.yayin.com.tr/kntv/video.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON
+http://65.108.239.207/bsaction1/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 1
+http://65.108.239.207/box1/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA AKSİYON 2 2
+http://65.108.239.207/sinemaaksiyon2/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA 1001 2
+http://65.108.239.207/sinema1001/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",SİNEMA KOMEDİ 2
+http://65.108.239.207/sinemakomedi/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BEİN BOX OFFİCE 3
+http://65.108.239.207/box3/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX ACTION
+http://65.108.239.207/sinemaaksiyon/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Sinema",BYZBOX YEŞİLÇAM
+http://65.108.239.207/sinemayerli/index.m3u8
+#EXTINF:-1 tvg-logo="https://vipotv.com/wp-content/uploads/2019/05/24tv.png" group-title="Haber",BHA TV
+https://live.euromediacenter.com/bhatv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/ce/Kanal_7_logosu.png" group-title="Ulusal",TEVE2
+https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd&
+#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",ÇOCUK TV
+https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/cocuklara-ozel-tv/playlist.m3u8
+#EXTINF:-1 group-title="Müzik" tvg-logo="https://i.ibb.co/VLQ6cmV/plove.png" tvg-id="Dummy" ,CHİLL TV
+https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/chill-tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/kadirsener1/tvmyeni/refs/heads/main/bg.JPG" group-title="Belgesel",BELGESEL TV
+https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/belgesel-tv/playlist.m3u8
+#EXTINF:-1 tvg-id="137" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20210421003212.png" group-title="Çocuk",5 MINUTES CRAFT
+https://soul-5mincrafteng-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 group-title="Ulusal - Yurt Dışı" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/fDbEcrRksiSZiXlF.png" tvg-url="https://kanalavrupa.tv/",KANAL AVRUPA
 http://cdn-kanalavrupa.yayin.com.tr/kanalavrupa/index.m3u8
 #EXTINF:-1 group-title="Ekonomi" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/wzUGHXTqTnYAzacY.png" tvg-url="https://www.apara.com.tr/",A PARA
@@ -3588,6 +3562,8 @@ http://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
 http://livetv.powerapp.com.tr/pturkslow/slow.smil/playlist.m3u8
 #EXTINF:-1 group-title="Müzik" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/AmbjxRavXbOLkuNk.png" tvg-url="https://www.turkuvapp.com/",MÜZIK TV
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/muziktv/playlist.m3u8
+#EXTINF:-1 group-title="Belgesel" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ZNUMZYxeVfKxWmTf.png" tvg-url="https://www.trtbelgesel.com.tr/",TRT BELGESEL
+https://tv-trtbelgesel-dai.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/vYvXKdQxBqmCKcbQ.png" tvg-url="https://www.sat7turk.com/",SAT 7 TÜRK
 https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/sat7turkpublish/sat7turk_source/chunks.m3u8
 #EXTINF:-1 group-title="Dini" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/UVACbpBJPquxmiGV.png" tvg-url="https://www.abnturkey.com/",ABN
@@ -3704,6 +3680,8 @@ https://edge.kuzeykibrissmart.tv/kibrisgenctv/bant1/playlist.m3u8
 https://edge.kuzeykibrissmart.tv/kanalt/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/RQkKZbRVmbkIbzJa.png" tvg-url="https://kibristv.com/",KIBRIS TV
 https://edge.kuzeykibrissmart.tv/kibristv/bant1/playlist.m3u8
+#EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/JLPcLltNCTWGSyAU.png" tvg-url="https://kuzeykibris.tv/",KUZEY KIBRIS TV
+http://old.kuzeykibris.tv/m3u8/kktv.m3u8
 #EXTINF:-1 group-title="Kıbrıs" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/CFVLRrXfgTexQQOz.png" tvg-url="https://www.diyaloggazetesi.com/",TV 2020
 https://edge.kuzeykibrissmart.tv/tv2020/bant1/playlist.m3u8
 #EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/slnehcFtafsvvAvm.png" tvg-url="https://tvsms.club/",ARABESK TV
@@ -3720,38 +3698,6 @@ https://yayin.santraltr.com/hls/rosatv.m3u8
 https://yayin.santraltr.com/hls/toppop.m3u8
 #EXTINF:-1 group-title="Müzik - Diğer" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310519663101870451/ruJJnriKStvAyRem.png" tvg-url="https://foramuzik.com/",FORA MÜZIK
 http://145.239.37.125:20458/foramuzik/foramuzik/playlist.m3u8
-#EXTINF:-1 tvg-logo="tv logo" ,DISCOVERY IDX
-https://proud-river-e20b.pantonum1.workers.dev/bbc.m3u8
-#EXTINF:-1 tvg-id="viasatrec" tvg-name="Viasat History" tvg-logo="https://a.prectv67.lol/uploads/cache/channel_thumb/uploads/png/8ea2619561935fed906ee2278d5fa961.png" group-title="Belgesel",VIASAT HISTORY
-https://proud-river-e20b.pantonum1.workers.dev/viasathistory.m3u8
-#EXTINF:-1 tvg-id="discoverychannel" tvg-name="Discovery Channel" tvg-logo="https://img.dsmartgo.com.tr/content/r/9C/11894/Thumbnail.png" group-title="Belgesel",DISCOVERY CHANNEL
-https://proud-river-e20b.pantonum1.workers.dev/discovery.m3u8
-#EXTINF:-1 tvg-id="AfroturkTV.tr@SD",AFROTURK TV
-https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="BloombergHT.tr@SD",BLOOMBERG HT
-https://tv.ensonhaber.com/bloomberght/bloomberght.m3u8
-#EXTINF:-1 tvg-id="FortunaTV.tr@HD",FORTUNA TV
-https://edge.taksimbilisim.com/ftvturk/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Haber61TV.tr@SD",HABER61 TV
-https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="KanalDDrama.tr@SD",KANAL D DRAMA
-http://190.93.224.42/KANAL-D-DRAMA/index.m3u8
-#EXTINF:-1 tvg-id="KanalDDrama.tr@SD",KANAL D DRAMA
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
-#EXTINF:-1 tvg-id="MinikaCocuk.tr@SD",MINIKA COCUK
-http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8
-#EXTINF:-1 tvg-id="MinikaGo.tr@SD",MINIKA GO
-http://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8
-#EXTINF:-1 tvg-id="NaturalTV.tr@SD",NATURAL TV
-https://edge1.socialsmart.tv/naturaltv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Sat7Turk.cy@SD",SAT7 TÜRK
-https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TRTWorld.tr@SD",TRT WORLD
-https://mumbai-edge.smartplaytv.in/TRTWorld/index.m3u8
-#EXTINF:-1 tvg-id="TRTWorld.tr@SD",TRT WORLD
-https://cdn.pishow.tv/ott/live/266/master.m3u8
-#EXTINF:-1 tvg-id="TRTWorld.tr@SD",TRT WORLD
-https://fta.ektv.in/live/416/master.m3u8
 #EXTINF:-1,ARAS TV
 https://2.rtmp.org/tv217/yayin.stream/chunklist.m3u8
 
@@ -5085,6 +5031,7 @@ http://ruzgarplayer.site:8080/Ye4T49rxv8kG/yrwDktRqQT4E/529396?output=ts
 
 
 
+
 http://ruzgarplayer.site:8080/Ye4T49rxv8kG/yrwDktRqQT4E/530199?output=ts
 #EXTINF:-1 tvg-id="Sinema Tv Aile" tvg-name="TR: SINEMA AILE" tvg-logo="https://ruzgarplayer.site/tv.png/sinema.aile.png" group-title="⫸TR SALON 1 ⫷",SINEMA AILE
 http://ruzgarplayer.site:8080/Ye4T49rxv8kG/yrwDktRqQT4E/65405?output=ts
@@ -5123,6 +5070,7 @@ http://ruzgarplayer.site:8080/Ye4T49rxv8kG/yrwDktRqQT4E/65404?output=ts
 
 
 
+
 http://ruzgarplayer.site:8080/Ye4T49rxv8kG/yrwDktRqQT4E/530038?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="⫸TR SALON 2 ⫷",
 
@@ -5133,8 +5081,10 @@ http://ruzgarplayer.site:8080/Ye4T49rxv8kG/yrwDktRqQT4E/530038?output=ts
 
 
 
+
 http://ruzgarplayer.site:8080/Ye4T49rxv8kG/yrwDktRqQT4E/530066?output=ts
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="⫸TR SALON 2 ⫷",
+
 
 
 
