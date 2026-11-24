@@ -693,7 +693,6 @@ https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e_1080p.m3u8
 https://ensonhaber-live.ercdn.net/benguturk/benguturk_720p.m3u8
 #EXTINF:-1,TV 52
 https://edge2.taksimbilisim.com/tv52/bant1/chunks.m3u8?nimblesessionid=615063232
-
 #EXTINF:-1 tvg-logo="https://i.hizliresim.com/uyxwcqkw.png" group-title="ULUSAL KANALLAR",TV7
 https://supermedya.grubu.workers.dev/tv7tv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/fW9Jdcsz/TRT-1-logo-(2012-2021).png" group-title="ULUSAL KANALLAR",TRT1
@@ -1424,7 +1423,7 @@ https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8laoxi44qj2k&app=a20ac41
 https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
 #EXTINF:0 tvg-id="KANAL.7.tr" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/turkey/kanal-7-tr.png?raw=true" ,KANAL 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
-#EXTINF:0 tvg-id="TV8,5 
+#EXTINF:-1,TV8,5 
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk.m3u8?app=tv8bucuk_web
 #EXTINF:0 tvg-id="TEVE2 HD.tr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHX6JighfKWrgDrlEPOfhJ4pAvrWj2Mbr-qg&s" ,TEVE 2
 http://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
