@@ -265,6 +265,8 @@ https://tv-trtturk.medya.trt.com.tr/master.m3u8
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8
 #EXTINF:-1,TIVI 6
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
+#EXTINF:-1,SZCTVYEDEK
+https://raw.githubusercontent.com/yaskar661-lgtm/stream/refs/heads/main/filbox/szchd.m3u8#all
 #EXTINF:-1,CNNTURKYEDEK
 http://85.117.61.84/cnnturk/index.m3u8#all
 #EXTINF:-1,HABERTURKYEDEK
